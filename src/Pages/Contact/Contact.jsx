@@ -3,7 +3,7 @@ export default function Contact() {
   return (
    <div className="w-full flex  pt-[7rem] justify-center">
 
-<section className="contactWrapper max-w-[1400px] relative w-full bg-[#F9FFF5] px-[1rem] py-[2rem] sm:p-[3rem] ">
+<section className="contactWrapper max-w-[1400px] relative w-full  px-[1rem] py-[2rem] sm:p-[3rem] ">
         <div className="contact  text-center  sm:w-[80%] mx-auto ">
             <h1 className="text-[2.5rem] font-[700] text-[#121212]">Contact</h1>
             <p className="mt-5 mb-8 text-[18px] sm:px-32 text-[#3F403E]">Reach out to us now and discover how we can collaborate to bring your vision to life. Get in touch today!
