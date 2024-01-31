@@ -1,4 +1,4 @@
-import largeImg from "../Assets/largeImg.webp";
+import largeImg from "../../assets/images/handImage.webp";
 
 const About = () => {
   const imageSources = [
@@ -9,8 +9,8 @@ const About = () => {
   ];
 
   return (
-    <>
-      <section className="about-us max-w-7xl ">
+    <div className="w-full flex   justify-center">
+    <section className="about-us max-w-7xl ">
         <div className="px-[5%] w-full py-28">
           <div className="text-center mb-20">
             <div className="mx-auto max-w-3xl font-sans">
@@ -44,7 +44,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

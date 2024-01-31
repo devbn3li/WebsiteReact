@@ -11,6 +11,7 @@ import Layout from './pages/Layout';
 import LandingPage from './pages/LandingPage/LandingPage';
 import NotFound from './pages/NotFound'; // Import the 404 page component
 import Contact from './Pages/Contact/Contact';
+import About from './Pages/About/About';
 
 // Import style sheets
 import './assets/css/index.css';
@@ -24,6 +25,8 @@ export function Application() {
             <Route index element={<LandingPage />} />
             <Route path="*" element={<NotFound />} /> 
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+
 
           </Route>
         </Routes>
