@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Hero from '../../Components/Hero/Hero';
 
@@ -6,6 +7,7 @@ const LandingPage = () => {
 <>
 <div className='flex justify-center  w-full font-inter text-[#121212]'>
       <Hero />
+
     </div>
 
 
