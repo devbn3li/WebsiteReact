@@ -3,9 +3,13 @@ import Hero from '../../Components/Hero/Hero';
 
 const LandingPage = () => {
   return (
-    <div className='flex flex-col font-inter text-[#121212]'>
+<>
+<div className='flex justify-center  w-full font-inter text-[#121212]'>
       <Hero />
     </div>
+
+
+</>
   );
 }
 
