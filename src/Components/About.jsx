@@ -1,4 +1,4 @@
-import largeImg from "../../assets/images/handImage.webp";
+import largeImg from "../assets/images/handImage.webp";
 
 const About = () => {
   const imageSources = [
@@ -44,6 +44,14 @@ const About = () => {
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
+
     </div>
   );
 };

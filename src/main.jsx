@@ -11,7 +11,7 @@ import Layout from './pages/Layout';
 import LandingPage from './pages/LandingPage/LandingPage';
 import NotFound from './pages/NotFound'; // Import the 404 page component
 import Contact from './Pages/Contact/Contact';
-import About from './Pages/About/About';
+import About from './Pages/About/index';
 
 // Import style sheets
 import './assets/css/index.css';
