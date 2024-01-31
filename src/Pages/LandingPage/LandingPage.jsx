@@ -1,9 +1,8 @@
-import React from 'react';
 
 const LandingPage = () => {
   return (
-    <div>
-      <h1>Hiiiiiiiiiiiiiiiii</h1>
+    <div className='min-h-[200vh]'>
+      <h1 className=''></h1>
     </div>
   );
 }
