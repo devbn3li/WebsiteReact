@@ -1,18 +1,19 @@
-import React from 'react'
 
 export default function Contact() {
   return (
-    <section className="contactWrapper relative w-full bg-[#F9FFF5] px-[1rem] py-[2rem] sm:p-[3rem] ">
+   <div className="w-full flex  pt-[7rem] justify-center">
+
+<section className="contactWrapper max-w-[1400px] relative w-full bg-[#F9FFF5] px-[1rem] py-[2rem] sm:p-[3rem] ">
         <div className="contact  text-center  sm:w-[80%] mx-auto ">
             <h1 className="text-[2.5rem] font-[700] text-[#121212]">Contact</h1>
-            <p className="mt-5 mb-8 text-[18px] text-[#3F403E]">Reach out to us now and discover how we can collaborate to bring your vision to life. Get in touch today!
+            <p className="mt-5 mb-8 text-[18px] sm:px-32 text-[#3F403E]">Reach out to us now and discover how we can collaborate to bring your vision to life. Get in touch today!
             </p>
             <form className="grid grid-cols-1 gap-y-6 sm:w-[80%] mx-auto ">
                 <div className="flex gap-[1.5rem]  justify-center flex-col  md:flex-row">
                     <div className="md:w-[50%] flex flex-col items-start">
                         <label className="text-[#3F403E] mb-2 font-[400] text-[1.2rem]">First name</label>
                         <input type="text"
-                               maxlength="50" 
+                               maxLength="50" 
                                pattern="[A-Za-z]+"
                                placeholder="First name" 
                                required 
@@ -23,7 +24,7 @@ export default function Contact() {
                     <input  type="text" 
                             placeholder="Surname" 
                             pattern="[A-Za-z]+"
-                            maxlength="50"
+                            maxLength="50"
                              required 
                              className=" bg-transparent border-[1px] border-[#121212]  w-full p-3 rounded-[10px] outline-none" />
                     </div>
@@ -33,14 +34,14 @@ export default function Contact() {
                             <label className="text-[#3F403E] mb-2 font-[400] text-[1.2rem]">Company name</label>
                             <input type="text"
                                    placeholder="Company name"
-                                   maxlength="50"
+                                   maxLength="50"
                                    required 
                                    className=" bg-transparent border-[1px] border-[#121212]  w-full p-3 rounded-[10px] outline-none " />
                     </div>
                     <div className="md:w-[50%] flex flex-col items-start">
                         <label className="text-[#3F403E] mb-2 font-[400] text-[1.2rem]">Email</label>
                         <input type="email"
-                               maxlength="100" 
+                               maxLength="100" 
                                placeholder="Work email"
                                required
                                className=" bg-transparent border-[1px] border-[#121212]  w-full p-3 rounded-[10px] outline-none" />
@@ -68,5 +69,7 @@ export default function Contact() {
             </form>
         </div>
     </section>
+
+   </div>
   )
 }
