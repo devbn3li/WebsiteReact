@@ -1,9 +1,10 @@
 import React from 'react';
+import Hero from '../../Components/Hero/Hero';
 
 const LandingPage = () => {
   return (
-    <div className='min-h-[200vh]'>
-      <h1 className='bg-red-400'>Hiiiiiiiiiiiiiiiii</h1>
+    <div className='flex flex-col font-inter text-[#121212]'>
+      <Hero />
     </div>
   );
 }
