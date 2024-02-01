@@ -1,10 +1,11 @@
+// Import your external library dependencies and component dependencies
 import React from 'react';
-import img1 from '../../assets/images/person-using-ai-tool-job.avif'
-import img2 from '../../assets/images/discussing-business-documents.avif'
-import img3 from '../../assets/images/young-man-working-office.avif'
+import img1 from '../../assets/images/person-using-ai-tool-job.avif';
+import img2 from '../../assets/images/discussing-business-documents.avif';
+import img3 from '../../assets/images/young-man-working-office.avif';
 import BenefitsCard from './BenefitsCard';
 
-
+// Icons
 const TerminalIcon = () => (
   <svg width=" 100%" height=" 100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 14H18V16H12V14ZM6.29303 9.70697L8.58603 12L6.29303 14.293L7.70703 15.707L11.414 12L7.70703 8.29297L6.29303 9.70697Z" fill="currentColor"></path>
@@ -26,10 +27,14 @@ const LeafIcon = () => (
   </svg>
 )
 
+// Benefits component that renders list of benefits in a section
 const Benefits = () => {
 
+  // Define the static text used in the component
   const sectionTitle = 'Driving Impact with Human Expertise, Science and Data Insights';
   const sectionDescription = 'Welcome to LevelUp, where we combine sustainability technology, science, and human expertise to make a meaningful impact.';
+
+  // Define the benefits fetched from a source or defined statically
   const benefits = [
     {
       icon: <TerminalIcon />,
@@ -49,8 +54,9 @@ const Benefits = () => {
       description: "At LevelUp, we empower with knowledge and resources to navigate emerging topics. Our Academy and Resources Hub strengthen governance for impactful decision-making and growth.",
       imageUrl: img3
     },
-  ]
+  ];
 
+  // Render the section with a title, description and list of BenefitCard components mapped from benefits array
   return (
     <section className='pt-24 px-[5%] gap-3 max-w-[1440px]'>
       <div className='max-w-[39.25rem] mb-10'>
