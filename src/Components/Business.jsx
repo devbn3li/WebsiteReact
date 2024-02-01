@@ -4,11 +4,11 @@ import { faBolt, faDollarSign } from "@fortawesome/free-solid-svg-icons";
 const Business = () => {
   return (
     <>
-      <section className="business max-w-7xl mx-auto">
+      <section className="business sm:mt-12 max-w-7xl mx-auto">
         <div className="px-[5%] w-full pb-20">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="w-full md:w-[50%] md:max-w-[530px]">
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+              <h2 className="text-3xl md:text-5xl mt-0 mb-6   font-bold  ">
                 Sustainable Business Transformation through Collaborative
                 Consulting.
               </h2>
