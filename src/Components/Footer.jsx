@@ -3,8 +3,8 @@ import Logo from "../assets/images/logo.png";
 
 const Footer = () => {
   return (
-    <>
-      <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-28">
+    <div className="w-full flex justify-center">
+      <div className="px-[5%] max-w-[1400px] w-full  bg-[#121212] rounded-t-[40px] mt-28">
         <div className="py-12">
           <div className=" flex gap-8 justify-between mt-4">
             <div>
@@ -16,8 +16,8 @@ const Footer = () => {
                 />
                 <p className="text-white font-bold text-4xl	">LevelUp</p>
               </div>
-              <div className="flex gap-24 text-white  ">
-                <div className="flex flex-col gap-5	duration-[0.45s]">
+              <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-24 text-white  ">
+                <div className="flex  flex-col gap-5	duration-[0.45s]">
                   <p className="font-bold pl-2 ">Pages</p>
                   <a
                     href="/about"
@@ -111,7 +111,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
