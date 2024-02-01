@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import PrimaryBtn from "./Buttons/PrimaryBtn";
 
 const Business = () => {
   return (
@@ -45,9 +46,7 @@ const Business = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <button className="px-6 py-3 rounded-full bg-gray-300 text-black font-bold not-italic font-sans">
-                  Make Impact with Us
-                </button>
+              <PrimaryBtn path='/contact' title='Make Impact with Us' classes='px-6 py-3 bg-[#e6e6e5] border-none !text-black font-semibold	'/>
               </div>
             </div>
             <div className="hidden md:block w-full md:w-[50%] mt-6 md:mt-0">

@@ -28,7 +28,7 @@ const About = () => {
               <img
                 src={largeImg}
                 alt="Large img"
-                className="w-full object-cover rounded-2xl"
+                className="w-full object-cover rounded-2xl cursor-pointer"
               />
             </div>
             <div className="hidden md:grid md:grid-cols-2 md:grid-rows-2 md:gap-8">
@@ -37,7 +37,7 @@ const About = () => {
                   key={index}
                   src={src}
                   alt="image"
-                  className="w-full object-cover h-full rounded-2xl"
+                  className="w-full object-cover h-full rounded-2xl cursor-pointer"
                 />
               ))}
             </div>
