@@ -26,7 +26,7 @@ const Footer = () => {
                     About us
                   </a>
                   <a
-                    href="#"
+                    href="/contact"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
                   >
                     Contact us
@@ -35,25 +35,27 @@ const Footer = () => {
                 <div className="flex flex-col gap-5">
                   <div className="font-bold pl-2 ">Resources</div>
                   <a
-                    href="#"
+                    href="/legal/PRIVACY-POLICY.html"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
                   >
-                    Contact us
+                    Privacy policy
                   </a>
                   <a
-                    href="#"
+                    href="/legal/cookies.html"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
                   >
-                    Contact us
+                    Cookie policy
                   </a>
                 </div>
                 <div className="flex flex-col gap-5">
                   <div className="font-bold pl-2 ">Follow Us</div>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/levelupesg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a] duration-[0.45s]"
                   >
-                    Contact us
+                    LinkedIn
                   </a>
                 </div>
               </div>
