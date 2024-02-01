@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import PrimaryBtn from '../Buttons/PrimaryBtn';
-import sectionImage from '../../assets/images/business-people-shaking-hands-together.avif'
+import sectionImage from '../../assets/images/business-people-shaking-hands-together.avif';
 
+//A component that expands or creates our Increase and Money Icons
 const IncreaseIcon = () => (
   <svg width=" 100%" height=" 100%" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M9.99997 10.914L14 14.914L19.707 9.207L22 11.5V5.5H16L18.293 7.793L14 12.086L9.99997 8.086L2.29297 15.793L3.70697 17.207L9.99997 10.914Z" fill="currentColor"></path>
@@ -15,11 +17,33 @@ const MoneyIcon = () => (
   </svg>
 )
 
-const Offer = () => {
-  // Static string variables used in JSX
-  const sctionTitle = 'Sustainable Business Transformation through Collaborative Consulting.';
-  const sctionDescription = 'We curate optimal project teams, leveraging diverse expertise for client success. Our passionate and experienced impact makers ensure pragmatic and collaborative solutions, delivering faster, deeper insights for lasting impact';
+//Generates each item for rendering
+const OfferItem = ({icon, title, description}, index) => {
+  return (
+    <div className="" key={index}>
+      <div className="mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-10 p-2">
+        {icon}
+      </div>
+      <h3 className="mb-3 text-xl font-bold">{title}</h3>
+      <p>{description}</p>
+    </div>
+  );
+};
 
+// Is it really important? 🤔 { Faisal }
+// OfferItem.prototype = {
+//   icon: PropTypes.object.isRequired,
+//   title: PropTypes.string.isRequired,
+//   description: PropTypes.string.isRequired,
+// }
+
+//Main Component
+const Offer = () => {
+  /* Static data properties */
+  const sectionTitle = 'Sustainable Business Transformation through Collaborative Consulting';
+  const sectionDescription = 'We curate optimal project teams, leveraging diverse expertise for client success. Our passionate and experienced impact makers ensure pragmatic and collaborative solutions, delivering faster, deeper insights for lasting impact';
+
+  /* Inner data structure */
   const items = [
     {
       icon: <IncreaseIcon />,
@@ -30,24 +54,16 @@ const Offer = () => {
       icon: <MoneyIcon />,
       title: 'Purpose and Profit',
       description: 'Enhance your financial performance while concurrently fostering positive societal impact by assembling a dedicated and purpose-driven team focused on sustainable business practices .'
-    }
-  ]
-
+    },
+  ];
+  /* Return JSX component */
   return (
     <section className='mt-[4.5rem] w-full max-w-[1400px] gap-12 px-[5%] pt-28 pb-8 flex justify-between'>
       <div className="w-[55%] gap-10 flex flex-col justify-center max-[996px]:w-full">
-        <h1 className='text-[48px] max-[996px]:text-[44px] font-bold max-[996px]:font-semibold leading-[1.2] w-full inline-block'>{sctionTitle}</h1>
-        <p>{sctionDescription}</p>
+        <h1 className='text-[48px] max-[996px]:text-[44px] font-bold max-[996px]:font-semibold leading-[1.2] w-full inline-block'>{sectionTitle}</h1>
+        <p>{sectionDescription}</p>
         <div className='flex gap-5 max-[479px]:flex-wrap'>
-          {items.map((item, index) => (
-            <div className="" key={index}>
-              <div className="mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-10 p-2">
-                {item.icon}
-              </div>
-              <h3 className="mb-3 text-xl font-bold">{item.title}</h3>
-              <p>{item.description}</p>
-            </div>
-          ))}
+          {items.map(OfferItem)}
         </div>
         <div className='font-bold'>
           <PrimaryBtn path='/contact' title='Make Impact with us' classes='bg-[#e6e6e5] !text-[#121212] border-[#e6e6e5] px-6 py-3 max-[479px]:w-full' />
@@ -59,6 +75,6 @@ const Offer = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Offer;
