@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <header className='mt-[4.5rem] w-full max-w-[1400px] px-[5%] pt-28 pb-8 flex justify-between'>
       <div className="w-[45%] gap-6 flex flex-col justify-center max-[570px]:w-full">
-        <h1 className='text-[56px] font-bold leading-[1.2]'>{headerTitle}</h1>
+        <h1 className='text-[52px] font-bold leading-[1.2]'>{headerTitle}</h1>
         <p>{headerDescription}</p>
         <div className='font-bold gap-4 flex flex-wrap max-[570px]:flex-col'>
           <PrimaryBtn path='/about' title='About us' classes='px-6 py-3'/>
