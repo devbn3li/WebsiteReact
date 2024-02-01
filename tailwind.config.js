@@ -8,5 +8,11 @@ export default {
       },
     },
   },
+  variants: {
+    extend: {
+      translate: ['hover'], // enable translate variant on hover
+      boxShadow: ['hover'], // enable boxShadow variant on hover
+    },
+  },
   plugins: [],
 };
