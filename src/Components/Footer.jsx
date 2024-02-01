@@ -96,6 +96,7 @@ const Footer = () => {
                 />
                 <button
                   type="submit"
+                  name="submit"
                   className="text-white bg-black py-3 px-6 rounded-3xl hover:transform translate-y-[-4px] hover:shadow-md"
                 >
                   Book a Consultation
