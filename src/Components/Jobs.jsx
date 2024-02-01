@@ -4,23 +4,23 @@ import { FaArrowRight } from "react-icons/fa6";
 const jobs = [
   {
     title: "Developer",
-    link: "https://www.linkedin.com/company/levelupesg/jobs/developer",
+    link: "https://www.linkedin.com/company/levelupesg/jobs/",
   },
   {
     title: "Project manager",
-    link: "https://www.linkedin.com/company/levelupesg/jobs/designer",
+    link: "https://www.linkedin.com/company/levelupesg/jobs/",
   },
   {
     title: "Senior Designer",
-    link: "https://www.linkedin.com/company/levelupesg/jobs/designer",
+    link: "https://www.linkedin.com/company/levelupesg/jobs/",
   },
   {
     title: "Operations",
-    link: "https://www.linkedin.com/company/levelupesg/jobs/designer",
+    link: "https://www.linkedin.com/company/levelupesg/jobs/",
   },
   {
     title: "Sales",
-    link: "https://www.linkedin.com/company/levelupesg/jobs/designer",
+    link: "https://www.linkedin.com/company/levelupesg/jobs/",
   },
 ];
 
