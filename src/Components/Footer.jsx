@@ -4,11 +4,11 @@ import Logo from "../assets/images/logo.png";
 const Footer = () => {
   return (
     <>
-      <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-28">
+      <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-64">
         <div className="py-12">
-          <div className=" flex gap-8 justify-between mt-4">
-            <div>
-              <div className="flex items-center mb-20">
+          <div className=" flex gap-8 justify-between mt-4 max-[991px]:flex-col-reverse">
+            <div className="max-[479px]:flex max-[479px]:flex-col max-[479px]:items-center">
+              <div className="flex items-center mb-6 lg:mb-20">
                 <img
                   src={Logo}
                   alt="logo"
@@ -16,7 +16,7 @@ const Footer = () => {
                 />
                 <p className="text-white font-bold text-4xl	">LevelUp</p>
               </div>
-              <div className="flex gap-24 text-white  ">
+              <div className="flex flex-col md:flex-row gap-6 lg:gap-24 text-white  ">
                 <div className="flex flex-col gap-5	duration-[0.45s]">
                   <p className="font-bold pl-2 ">Pages</p>
                   <a
@@ -58,12 +58,12 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="relative ">
-              <div className="absolute top-0 right-0 -translate-y-1/2 flex flex-col gap-6 bg-[#02c2ab] p-10 rounded-2xl">
+            <div className="lg:relative max-[991px]:h-72">
+              <div className="lg:absolute top-0 right-0 -translate-y-1/2 flex flex-col gap-6 bg-[#02c2ab] p-10 rounded-2xl">
                 <div className="text-black text-[32px] font-bold ">
                   Talk to an Impact Maker
                 </div>
-                <div className="flex gap-6 justify-between">
+                <div className="flex gap-6 max-[991px]:flex-col lg:justify-between">
                   <input
                     type="text"
                     name="first name"
@@ -104,7 +104,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-end pt-4 mt-20 border-t-[1px]">
+          <div className="flex flex-col gap-3 justify-around items-center md:items-end md:justify-end pt-4 mt-6 lg:mt-20 border-t-[1px]">
+            <div className="md:hidden"></div>
             <p className="text-white text-sm">
               © 2024 LevelUp. All rights reserved.
             </p>
