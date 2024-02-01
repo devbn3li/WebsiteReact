@@ -2,7 +2,7 @@ import React from 'react';
 import person1 from '../../assets/images/Person_1.jpg';
 import person2 from '../../assets/images/Person_2.webp';
 import person3 from '../../assets/images/Person_3.jpg';
-import TestmonialCard from './TestmonialCard';
+import TestimonialCard from './TestimonialCard';
 
 const ArrowLeft = () => (
   <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,39 +23,37 @@ const Testimonials = () => {
     {
       message: "Dr. Ahmed is a dedicated advocate for sustainable development and ethical business practices through LevelUp ESG. His expertise and commitment to making a positive impact are inspiring, and his ability to empower individuals and enterprises to embed ethical practices is commendable. We need more leaders like him who are driven by purpose.",
       name: 'Samer Jannoun',
-      title: "Head of Regional Ethics & Compliance @Meta"
+      title: "Head of Regional Ethics & Compliance @Meta",
     },
     {
       message: "I had the pleasure of interacting with the impressive LevelUp team—a combination of experts and rising stars, all passionately committed to ESG. Their competence, expertise, and positive energy are exceptional. They embrace diversity, foster a global mindset, and their passion is truly inspiring!",
       name: 'Deepa Rao',
-      title: "Environmental, Social and Governance (ESG) Reporting and Controls Lead @Cognizant"
+      title: "Environmental, Social and Governance (ESG) Reporting and Controls Lead @Cognizant",
     },
-  ]
+  ];
 
   return (
-    <section className='max-w-[1400px] p-[5%] py-28 text-[#B3FFD6] bg-[#121212] rounded-[20px] w-full'>
-      <div className='flex flex-col'>
-        <h1 className='text-5xl font-bold mb-6 max-[679px]:text-4xl'>{sectionTitle}</h1>
-        <span className='flex gap-6 max-w-[39.25rem] max-[679px]:max-w-[360px]'>
-          <div className='flex items-start max-[679px]:hidden'>
-            <div className="aspect-square rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden z-[3]">
-              <img src={person1} alt="Person1" className="min-h-full min-w-full object-cover" />
-            </div>
-            <div className="aspect-square rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden -ml-4 z-[2]">
-              <img src={person2} alt="Person2" className="min-h-full min-w-full object-cover" />
-            </div>
-            <div className="aspect-square rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden -ml-4 z-[1]">
-              <img src={person3} alt="Person3" className="min-h-full min-w-full object-cover" />
-            </div>
+    <section className='max-w-[1400px] mx-auto p-[5%] py-28 text-[#B3FFD6] bg-[#121212] rounded-[20px]'>
+      <div className='flex flex-col items-center text-center'>
+        <h1 className='text-5xl font-bold mb-6'>{sectionTitle}</h1>
+        <div className='flex justify-center gap-6 mb-6'>
+          <div className='hidden md:flex items-start'>
+            <img src={person1} alt="Person 1" className="w-14 h-14 rounded-full border-3 border-[#B3FFD6] overflow-hidden z-30" />
+            <img src={person2} alt="Person 2" className="w-14 h-14 rounded-full border-3 border-[#B3FFD6] overflow-hidden -ml-4 z-20" />
+            <img src={person3} alt="Person 3" className="w-14 h-14 rounded-full border-3 border-[#B3FFD6] overflow-hidden -ml-4 z-10" />
           </div>
-          <p className='text-[18px] max-[679px]:text-base'>{sectionDescription}</p>
-        </span>
-        <div className='flex justify-end gap-6 mb-6'>
-          <button className='aspect-square w-12 hover:scale-110 bg-[#02c2ab] rounded-full text-[#121212] box-border p-4 transition-all duration-[.45s]'><ArrowLeft /></button>
-          <button className='aspect-square w-12 hover:scale-110 bg-[#02c2ab] rounded-full text-[#121212] box-border p-4 transition-all duration-[.45s]'><ArrowRight /></button>
+          <p className='max-w-2xl'>{sectionDescription}</p>
         </div>
-        <div className='flex justify-center gap-8 max-[991px]:overflow-x-scroll pb-4'>
-          {testimonials.map(TestmonialCard)}
+        <div className='flex gap-4 justify-center mb-6'>
+          <button aria-label="Previous testimonial" className='aspect-square w-12 hover:scale-110 bg-[#02c2ab] rounded-full text-[#121212] p-2 transition duration-300 ease-in-out'>
+            <ArrowLeft />
+          </button>
+          <button aria-label="Next testimonial" className='aspect-square w-12 hover:scale-110 bg-[#02c2ab] rounded-full text-[#121212] p-2 transition duration-300 ease-in-out'>
+            <ArrowRight />
+          </button>
+        </div>
+        <div className='flex overflow-x-auto gap-8 pb-4'>
+          {testimonials.map(TestimonialCard)}
         </div>
       </div>
     </section>
