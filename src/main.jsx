@@ -12,6 +12,7 @@ import LandingPage from './pages/LandingPage/LandingPage';
 import NotFound from './pages/NotFound'; // Import the 404 page component
 import Contact from './Pages/Contact/Contact';
 import About from './Pages/About/index';
+import ServicePageTemplete from './Pages/ServicePages/ServicePageTemplete';
 
 // Import style sheets
 import './assets/css/index.css';
@@ -23,11 +24,10 @@ export function Application() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<LandingPage />} />
-            <Route path="*" element={<NotFound />} /> 
             <Route path="/Contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-
-
+            <Route path="/service" element={<ServicePageTemplete />} />
+            <Route path="*" element={<NotFound />} /> 
           </Route>
         </Routes>
     </Router> 
