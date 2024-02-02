@@ -9,25 +9,25 @@ const Why = () => {
     {
       title: "ESG Readiness",
       description:
-        "Our ESG Readiness Assessment can help you to assess how prepared your company is for the future of ESG and where you stand relative to peers.",
+        "Our ESG Readiness Assessment can help you to assess how prepared your company is for the future of ESG.",
       icon: <MdCelebration />,
     },
     {
       title: "ESG IA program",
       description:
-        "Our ESG IA program is designed to help internal audit functions build their ESG capabilities. We offer two main approaches: establishing an ESG IA program as a separate audit or integrating it within the existing IA function.",
+        "Our ESG IA program is designed to help internal audit functions build their ESG capabilities.",
       icon: <PiRobotLight />,
     },
     {
       title: "ESG and Sustainability Strategy & Roadmap",
       description:
-        "We provide comprehensive support to enterprise risk management (ERM) functions in building their ESG capabilities. Our services include the development of an ESG ERM strategy and methodology manual, tailored to your organization's needs.",
+        "We provide comprehensive support to enterprise risk management (ERM) functions in building their ESG capabilities. ",
       icon: <PiStrategy />,
     },
     {
       title: "ESG in ERM Program",
       description:
-        "ESG strategies are crucial for businesses due to regulations, stakeholder pressure, and competitiveness. All businesses can create effective sustainability plans.",
+        "ESG strategies are crucial for businesses due to regulations, stakeholder pressure, and competitiveness.",
       icon: <FaRegLightbulb />,
     },
     {
@@ -39,13 +39,13 @@ const Why = () => {
     {
       title: "ESG Assurance",
       description:
-        "LevelUp assures standardized ESG metrics (ISAE 3000, ISAE 3410), covering emissions, diversity, and pay gaps for consistent non-financial disclosure. We adjust assurance scope with evolving reporting.",
+        "LevelUp assures standardized ESG metrics (ISAE 3000, ISAE 3410), covering emissions, diversity, and pay gaps for consistent non-financial disclosure.",
         icon: <FaLevelUpAlt />,
       },
     {
       title: "Sustainable Supply Chain Consultants",
       description:
-        "Implementing tools for supply chain and data collection, our consultants identify opportunities and climate risks. They deploy ESG strategy throughout your supply chain, engaging all tiers in sustainable practices.",
+        "Implementing tools for supply chain and data collection, our consultants identify opportunities and climate risks.",
         icon: <SiHiveBlockchain />,
       },
     {
