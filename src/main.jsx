@@ -12,7 +12,9 @@ import LandingPage from './pages/LandingPage/LandingPage';
 import NotFound from './pages/NotFound'; // Import the 404 page component
 import Contact from './Pages/Contact/Contact';
 import About from './Pages/About/index';
-import ServicePageTemplete from './Pages/ServicePages/ServicePageTemplete';
+import ESG_Controllership from './Pages/ServicePages/ESG_Controllership';
+import ESG_IA_program from './Pages/ServicePages/ESG_IA_program';
+import ESG_Governance from './Pages/ServicePages/ESG_Governance';
 
 // Import style sheets
 import './assets/css/index.css';
@@ -26,7 +28,9 @@ export function Application() {
             <Route index element={<LandingPage />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path="/service" element={<ServicePageTemplete />} />
+            <Route path="/service/ESG_Controllership" element={<ESG_Controllership />} />
+            <Route path="/service/ESG_IA_program" element={<ESG_IA_program />} />
+            <Route path="/service/ESG_Governance" element={<ESG_Governance />} />
             <Route path="*" element={<NotFound />} /> 
           </Route>
         </Routes>
