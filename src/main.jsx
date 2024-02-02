@@ -5,7 +5,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-Pages
+// Pages
 // Import page components
 import Layout from './Pages/Layout';
 import LandingPage from './Pages/LandingPage/LandingPage';
