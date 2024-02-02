@@ -28,6 +28,7 @@ const Footer = () => {
                   >
                     About us
                   </a>
+                 
                   <a
                     href="/contact"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"

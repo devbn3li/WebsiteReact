@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import NavLink from './NavbarLink';
 import PrimaryBtn from '../Buttons/PrimaryBtn';
 
+
 // Define navigation links
 const NAV_LINKS = [
   { path: '/about', title: 'About us' },
+  { title: 'Services' },
   { path: '/contact', title: 'Contact us' },
+  
 ];
 
 const Navbar = () => {
@@ -15,6 +18,7 @@ const Navbar = () => {
 
   // Function to toggle state of mobile navigation drawer
   const toggleMenu = () => setIsOpen(!isOpen);
+
 
   return (
     <nav className='flex justify-between items-center px-[5%] max-[991px]:px-0 max-w-[1400px] box-border w-screen bg-white h-[4.5rem] font-inter m-auto fixed top-0 left-1/2 -translate-x-1/2 z-50'>
@@ -33,9 +37,12 @@ const Navbar = () => {
                       max-[991px]:flex-col max-[991px]:absolute max-[991px]:w-full max-[991px]:px-[5%] max-w-full max-[991px]:pb-[6.5rem] max-[991px]:h-[calc(100vh-4.5rem)] max-[991px]:text-lg max-[991px]:border-b max-[991px]:border-black
                       `}>
         <div className='flex max-[991px]:flex-col'>
-          {NAV_LINKS.map((link, index) => (
-            <NavLink key={index} path={link.path} title={link.title} />
-          ))}
+          {NAV_LINKS.map((link, index) => {
+              
+              return(
+              
+            <NavLink key={index} path={link.path} title={link.title}  />
+          )})}
         </div>
         <PrimaryBtn path='#' title='Make an Impact' />
       </div>

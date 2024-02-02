@@ -9,7 +9,7 @@ const NavbarLink = ({ path, title }) => {
 
   return (
     <Link to={path} className={linkClasses}>
-      {title}
+      {title} 
     </Link>
   );
 }
