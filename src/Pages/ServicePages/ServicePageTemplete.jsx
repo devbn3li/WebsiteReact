@@ -3,6 +3,7 @@ import { FaAngular } from "react-icons/fa6";
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
 import Hero_Services from '../../Components/Hero_Services';
+import Footer from '../../Components/Footer'
 
 
 const services = [
@@ -75,6 +76,7 @@ const ServicePageTemplete = () => {
       <Hero_Services title={"Title"} subtitle={"SubTitle"} buttonText={"Test"}/>
       <SliderLogos />
       <Cursal services={services}/>
+      <Footer />
     </div>
   );
 }
