@@ -2,6 +2,7 @@ import React from 'react';
 import { FaAngular } from "react-icons/fa6";
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
+import Hero_Services from '../../Components/Hero_Services';
 
 
 const services = [
@@ -71,6 +72,7 @@ const services = [
 const ServicePageTemplete = () => {
   return (
     <div className='pt-[4.5rem] flex flex-col items-center'>
+      <Hero_Services title={"Title"} subtitle={"SubTitle"} buttonText={"Test"}/>
       <SliderLogos />
       <Cursal services={services}/>
     </div>
