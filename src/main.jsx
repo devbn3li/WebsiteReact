@@ -7,9 +7,9 @@ import {
 } from "react-router-dom";
 
 // Import page components
-import Layout from './pages/Layout';
-import LandingPage from './pages/LandingPage/LandingPage';
-import NotFound from './pages/NotFound'; // Import the 404 page component
+import Layout from './Pages/Layout';
+import LandingPage from './Pages/LandingPage/LandingPage';
+import NotFound from './Pages/NotFound'; // Import the 404 page component
 import Contact from './Pages/Contact/Contact';
 import About from './Pages/About/index';
 import ESG_Controllership from './Pages/ServicePages/ESG_Controllership';
