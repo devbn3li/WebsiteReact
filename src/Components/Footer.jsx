@@ -4,7 +4,7 @@ const Footer = () => {
   return (
 
     <>
-      <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-64">
+      <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-64 w-full max-w-[1400px]">
 
         <div className="py-12">
           <div className=" flex gap-8 justify-between mt-4 max-[991px]:flex-col-reverse">
