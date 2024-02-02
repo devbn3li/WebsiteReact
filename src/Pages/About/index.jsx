@@ -1,7 +1,7 @@
 import React from 'react'
 import About from '../../Components/About'
 import Business from '../../Components/Business'
-import Why from '../../Components/why'
+import Why from '../../Components/Why'
 import Jobs from '../../Components/Jobs'
 import Footer from '../../Components/Footer'
 
