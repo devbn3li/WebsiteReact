@@ -3,23 +3,11 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const jobs = [
   {
-    title: "Developer",
+    title: "GHG Specialist (Full or Part-time)",
     link: "https://www.linkedin.com/company/levelupesg/jobs/",
   },
   {
-    title: "Project manager",
-    link: "https://www.linkedin.com/company/levelupesg/jobs/",
-  },
-  {
-    title: "Senior Designer",
-    link: "https://www.linkedin.com/company/levelupesg/jobs/",
-  },
-  {
-    title: "Operations",
-    link: "https://www.linkedin.com/company/levelupesg/jobs/",
-  },
-  {
-    title: "Sales",
+    title: "Corporate Sustainability Subject Matter Expert (SME) - Contract",
     link: "https://www.linkedin.com/company/levelupesg/jobs/",
   },
 ];
