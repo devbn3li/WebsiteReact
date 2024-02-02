@@ -14,7 +14,7 @@ const services = [
     data: {
       title: "ESG Internal Audit (IA) Strategy Development",
       discription: "Our service guides you in meticulously planning and scoping your ESG audits, whether conducted separately or integrated. Our strategies aim for consistent usage and standards, encompassing quantitative metrics, industry standards, and other compliance areas. We ensure that your audits align with the latest sustainability practices, providing a robust foundation for comprehensive ESG evaluation.",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
+      LOTTIEanimationData: "../../assets/images/discussing-business-documents.avif"
     },
   },
   {
@@ -24,7 +24,7 @@ const services = [
     data: {
       title: "ESG IA Methodology Manual",
       discription: "Navigate the evolving ESG landscape confidently with our comprehensive ESG IA Methodology Manual. This detailed guide will outline the methodology for conducting ESG audits, addressing the nuances of new governance frameworks such as the Sustainability COSO framework, The EU Corporate Sustainability Due Diligence Directive (CSDDD), and FCA/anti-greenwashing regulations. It serves as a valuable resource for understanding and implementing best practices in ESG auditing.",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
+      LOTTIEanimationData: "../../assets/images/discussing-business-documents.avif"
     },
   },
   {
@@ -34,7 +34,7 @@ const services = [
     data: {
       title: "Qualitative Risks and Controls",
       discription: "Identifying and managing qualitative risks and controls related to ESG is critical for a thorough audit. We provide expertise in this area, assisting you in navigating the complex landscape of qualitative considerations associated with Environmental, Social, and Governance factors. This ensures a comprehensive approach to risk management within the ESG context.",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
+      LOTTIEanimationData: "../../assets/images/discussing-business-documents.avif"
     },
   },
   {
@@ -44,7 +44,7 @@ const services = [
     data: {
       title: "Requirements Tracking Program",
       discription: "Our detailed ESG Internal Audit Checklist ensures comprehensive scope coverage. Tailored to address the unique aspects of ESG audits, this checklist guarantees that all relevant areas are thoroughly audited, promoting effective evaluation and risk management in line with industry standards and regulatory requirements.",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
+      LOTTIEanimationData: "../../assets/images/discussing-business-documents.avif"
     },
   },
   {
@@ -54,7 +54,7 @@ const services = [
     data: {
       title: "Title",
       discription: "Discription",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
+      LOTTIEanimationData: "../../assets/images/discussing-business-documents.avif"
     },
   },
   {
@@ -64,7 +64,7 @@ const services = [
     data: {
       title: "Title",
       discription: "Discription",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
+      LOTTIEanimationData: "../../assets/images/handImage.wehttps://media.istockphoto.com/id/1814193775/photo/esg-concept-sustainable-development-goal-ideas-for-sustainable-development-and-green-business.jpg?s=612x612&w=0&k=20&c=oQ2s5snKykDbsq_mjaTr1vuzGPYp7IXZAZWkWYG7CZs=bp"
     },
   },
 ]
