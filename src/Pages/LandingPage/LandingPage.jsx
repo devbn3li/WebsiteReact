@@ -4,6 +4,7 @@ import Hero from '../../Components/Hero/Hero';
 import Benefits from '../../Components/Benefits/Benefits';
 import Offer from '../../Components/Offer/Offer';
 import Testimonials from '../../Components/Testimonials/Testimonials';
+import Why from '../../Components/Why';
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <Benefits />
       <Offer />
       <Testimonials />
+      <Why />
     </div>
   );
 }

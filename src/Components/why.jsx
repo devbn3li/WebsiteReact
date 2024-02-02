@@ -47,7 +47,7 @@ const Why = () => {
   ];
 
   return (
-    <section className="why max-w-7xl mx-auto">
+    <section className="why max-w-7xl mx-auto pt-28">
       <div className="px-[5%] w-full pb-20">
         <div className="flex flex-col gap-14">
           <div className="flex flex-col max-w-[628px] gap-3">
