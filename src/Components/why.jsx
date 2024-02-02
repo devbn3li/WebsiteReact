@@ -57,8 +57,10 @@ const Why = () => {
   ];
 
   return (
-    <section className="why max-w-7xl mx-auto">
-      <div className="px-[5%] w-full py-12">
+
+    <section className="why max-w-7xl mx-auto pt-28">
+      <div className="px-[5%] w-full pb-20">
+
         <div className="flex flex-col gap-14">
           <div className="flex flex-col max-w-[628px] gap-3">
             <h2 className="text-5xl font-bold">Why Choosing LevelUp</h2>
