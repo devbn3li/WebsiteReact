@@ -18,6 +18,7 @@ import ESG_Governance from './Pages/ServicePages/ESG_Governance';
 import ESG_Assurance from './Pages/ServicePages/ESG_Assurance';
 import Strategic_Stakeholder from './Pages/ServicePages/Strategic_Stakeholder';
 import ESG_Strategy from './Pages/ServicePages/ESG_Strategy';
+import ESG_Compliance from './Pages/ServicePages/ESG_Compliance';
 
 // Import style sheets
 import './assets/css/index.css';
@@ -37,6 +38,7 @@ export function Application() {
             <Route path="/service/ESG_Assurance" element={<ESG_Assurance />} />
             <Route path="/service/Strategic_Stakeholder" element={<Strategic_Stakeholder />} />
             <Route path="/service/ESG_Strategy" element={<ESG_Strategy />} />
+            <Route path="/service/ESG_Compliance" element={<ESG_Compliance />} />
             <Route path="*" element={<NotFound />} /> 
           </Route>
         </Routes>
