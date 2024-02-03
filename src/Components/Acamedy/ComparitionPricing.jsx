@@ -520,8 +520,7 @@ function ComparitionPricing() {
               </svg>
             </button>
             <p className="text-xs text-gray-500 mt-3">
-              Literally you probably haven't heard of them jean shorts.
-            </p>
+            By clicking the buttons you are confirming that you agree with our terms and conditions            </p>
           </div>
         </div>
         <div className="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-[#02c2ab] relative">
@@ -972,8 +971,7 @@ function ComparitionPricing() {
               </svg>
             </button>
             <p className="text-xs text-gray-500 mt-3">
-              Literally you probably haven't heard of them jean shorts.
-            </p>
+            By clicking the buttons you are confirming that you agree with our terms and conditions            </p>
           </div>
         </div>
         <div className="lg:w-1/3 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
@@ -1434,8 +1432,7 @@ function ComparitionPricing() {
               </svg>
             </button>
             <p className="text-xs text-gray-500 mt-3">
-              Literally you probably haven't heard of them jean shorts.
-            </p>
+            By clicking the buttons you are confirming that you agree with our terms and conditions            </p>
           </div>
         </div>
       </div>
