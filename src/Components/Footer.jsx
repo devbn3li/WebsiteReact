@@ -17,10 +17,8 @@ const Footer = () => {
                 />
                 <p className="text-white font-bold text-4xl	">LevelUp</p>
               </div>
-
-              <div className="flex flex-col md:flex-row gap-6 lg:gap-24 text-white  ">
+              <div className="flex flex-col md:flex-row gap-6 lg:gap-24 text-white max-[991px]:justify-evenly  ">
                 <div className="flex flex-col gap-5	duration-[0.45s]">
-
                   <p className="font-bold pl-2 ">Pages</p>
                   <a
                     href="/about"
@@ -28,7 +26,6 @@ const Footer = () => {
                   >
                     About us
                   </a>
-                 
                   <a
                     href="/contact"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
