@@ -37,13 +37,13 @@ const Footer = () => {
                 <div className="flex flex-col gap-5">
                   <div className="font-bold pl-2 ">Resources</div>
                   <Link
-                    to="/legal/PRIVACY-POLICY.html"
+                    to="/legal/PrivacyPolicy"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
                   >
                     Privacy policy
                   </Link>
                   <Link
-                    to="/legal/cookies.html"
+                    to="/legal/Cookies"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
                   >
                     Cookie policy
