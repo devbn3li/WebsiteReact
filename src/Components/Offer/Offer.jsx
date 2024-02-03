@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PrimaryBtn from '../Buttons/PrimaryBtn';
-import sectionImage from '../../assets/images/business-people-shaking-hands-together.avif';
+import sectionImage from '/public/assets/images/business-people-shaking-hands-together.avif';
 
 //A component that expands or creates our Increase and Money Icons
 const IncreaseIcon = () => (

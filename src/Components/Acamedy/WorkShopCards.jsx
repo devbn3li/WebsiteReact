@@ -46,7 +46,7 @@ function WorkShopCards(props) {
           </ul>
         </div>
       </div>
-      <div className="text-center relative min-h-[300px] min-w-[300px] aspect-square lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center  bg-gray-700">
+      <div className="text-center relative  w-full   h-[300px] max-w-[400px] aspect-square lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center  bg-gray-700">
 <div 
 style={{backgroundImage: `url(${props.image})`}}
 

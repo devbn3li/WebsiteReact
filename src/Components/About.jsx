@@ -1,4 +1,4 @@
-import largeImg from "../assets/images/handImage.webp";
+import largeImg from "/public/assets/images/handImage.webp";
 
 const About = () => {
   const imageSources = [

@@ -1,8 +1,8 @@
 // Import your external library dependencies and component dependencies
 import React from 'react';
-import img1 from '../../assets/images/person-using-ai-tool-job.avif';
-import img2 from '../../assets/images/discussing-business-documents.avif';
-import img3 from '../../assets/images/young-man-working-office.avif';
+import img1 from '/public/assets/images/person-using-ai-tool-job.avif';
+import img2 from '/public/assets/images/discussing-business-documents.avif';
+import img3 from '/public/assets/images/young-man-working-office.avif';
 import BenefitsCard from './BenefitsCard';
 
 // Icons

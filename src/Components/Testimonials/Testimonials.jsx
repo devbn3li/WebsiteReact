@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes for type checking
 
 // Import images for testimonials
-import person1 from '../../assets/images/Person_1.jpg';
-import person2 from '../../assets/images/Person_2.webp';
-import person3 from '../../assets/images/Person_3.jpg';
+import person1 from '/public/assets/images/Person_1.jpg';
+import person2 from '/public/assets/images/Person_2.webp';
+import person3 from '/public/assets/images/Person_3.jpg';
 
 // Import TestimonialCard component
 import TestimonialCard from './TestimonialCard';

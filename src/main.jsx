@@ -24,8 +24,8 @@ import ESG_Diagnostic from './Pages/ServicePages/ESG_Diagnostic';
 import Board_Level from './Pages/ServicePages/Board_Level';
 
 // Import style sheets
-import './assets/css/index.css';
-import './assets/css/fonts.css';
+import '/public/assets/css/index.css';
+import '/public/assets/css/fonts.css';
 import Academy from './Pages/Academy/Academy';
 
 
