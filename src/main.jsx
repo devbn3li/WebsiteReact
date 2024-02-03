@@ -28,6 +28,7 @@ import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
 import Academy from './Pages/Academy/Academy';
 import PrivacyPolicy from './Pages/legal/PrivacyPolicy';
+import Cookies from './Pages/legal/Cookies';
 
 
 export function Application() {
@@ -51,6 +52,8 @@ export function Application() {
             <Route path="/service/board-level" element={<Board_Level />} />
             <Route path="*" element={<NotFound />} /> 
             <Route path= "/legal/PrivacyPolicy" element={<PrivacyPolicy/>} />
+            <Route path= "/legal/cookies" element={<Cookies/>} />
+            
           </Route>
         </Routes>
     </Router> 
