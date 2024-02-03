@@ -71,7 +71,7 @@ const Offer = () => {
       </div>
       <div className="relative rounded-r-3xl w-1/2 overflow-hidden max-[996px]:hidden">
         <img src={sectionImage} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='h-full' />
-        <img src="/src/assets/images/image-Mask.svg" className='absolute top-0 left-0 h-full' />
+        <img src="/assets/images/image-Mask.svg" className='absolute top-0 left-0 h-full' />
       </div>
     </section>
   );
