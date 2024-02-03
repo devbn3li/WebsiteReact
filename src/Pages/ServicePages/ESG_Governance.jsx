@@ -3,7 +3,6 @@ import { FaAngular } from "react-icons/fa6";
 import SliderLogos from "../../Components/SliderLogos/SliderLogos";
 import Cursal from "../../Components/Cursal/Cursal";
 import Hero_Services from "../../Components/Hero_Services";
-import Footer from "../../Components/Footer";
 
 const services = [
   {
@@ -65,17 +64,6 @@ const services = [
     data: {
       title: "Internal Control for ESG Reporting",
       discription: "We will assist in establishing robust internal controls, fortifying the reliability of your ESG disclosures. From risk management to process optimization, we guide your organization in preparing a resilient internal control framework, instilling confidence in the accuracy and integrity of your ESG reporting practices in line with the COSO Framework.",
-      LOTTIEanimationData:
-        "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie",
-    },
-  },
-  {
-    title: "Title 6",
-    description: "Small Description 6",
-    icon: <FaAngular />,
-    data: {
-      title: "Title",
-      discription: "Discription",
       LOTTIEanimationData:
         "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie",
     },

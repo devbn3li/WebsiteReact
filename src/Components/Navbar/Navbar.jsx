@@ -33,13 +33,13 @@ const Navbar = () => {
   // Function to toggle state of mobile navigation drawer
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const openDropdown = () => setIsOpen(true);
-  const closeDropdown = () => setIsOpen(false);
+  // const openDropdown = () => setIsOpen(true);
+  // const closeDropdown = () => setIsOpen(false);
 
   return (
   <nav className="bg-white fixed top-0   font-inter m-auto  -translate-x-1/2 z-50 left-1/2 flex justify-center   w-full">
       <div
-      onClick={closeDropdown}
+      // onClick={closeDropdown}
       className="flex justify-between items-center  px-[5%] max-[991px]:px-0 max-w-[1400px]  box-border w-full bg-white h-[4.5rem]"
     >
       <div className="bg-white z-50 max-[991px]:w-full max-[991px]:flex  max-[991px]:p-[5%] max-[991px]:h-full justify-between items-center">
@@ -55,7 +55,7 @@ const Navbar = () => {
         </Link>
         <button
           className="hidden flex-col aspect-square w-12 justify-center items-center gap-[6px] max-[991px]:flex"
-          onClick={toggleMenu}
+          onClick={ () => toggleMenu()}
         >
           <span
             className={`w-6 h-[2px] bg-[#121212] transition-all duration-[.45s] ${
@@ -93,7 +93,7 @@ const Navbar = () => {
               title={link.title}
               dropdownItems={link.dropdownItems}
               toggleMenu={toggleMenu}
-              openDropdown={openDropdown}
+              // openDropdown={openDropdown}
             />
           ))}
         </div>
