@@ -1,5 +1,7 @@
 import React from 'react';
 import PrimaryBtn from '../Buttons/PrimaryBtn';
+import hero from "../../../public/assets/images/hero.jpg";
+import header_mask from "../../../public/assets/images/Header-Mask.svg";
 
 // Hero component represents hero section of a webpage in the layout
 const Hero = () => {
@@ -18,8 +20,8 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative rounded-r-3xl w-1/2 overflow-hidden max-[991px]:rounded-none max-[991px]:mr-[-5%] max-[570px]:hidden">
-        <img src="../../../public/assets/images/hero.jpg" alt="A green field with windmill" style={{objectFit: 'cover'}} className='h-full'/>
-        <img src="../../../public/assets/images/Header-Mask.svg" className='absolute top-0 left-0 h-full' />
+        <img src={hero} alt="A green field with windmill" style={{objectFit: 'cover'}} className='h-full'/>
+        <img src={header_mask} className='absolute top-0 left-0 h-full' />
       </div>
     </header>
   );

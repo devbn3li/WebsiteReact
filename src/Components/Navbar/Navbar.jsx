@@ -1,7 +1,9 @@
+import Logo from "../../../public/assets/images/logo.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavLink from "./NavbarLink";
 import PrimaryBtn from "../Buttons/PrimaryBtn";
+
 
 // Define navigation links
 const NAV_LINKS = [
@@ -44,7 +46,7 @@ const Navbar = () => {
         <Link to="/" className="flex gap-[6px]">
           <img
             className="aspect-square w-[52px]"
-            src="../../../public/assets/images/logo.png"
+            src={Logo}
             alt="LevelUp logo"
           />
           <span className="text-[35px] font-bold inline-block text-[#333]">
