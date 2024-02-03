@@ -18,8 +18,8 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative rounded-r-3xl w-1/2 overflow-hidden max-[991px]:rounded-none max-[991px]:mr-[-5%] max-[570px]:hidden">
-        <img src="/src/assets/images/hero.jpg" alt="A green field with windmill" style={{objectFit: 'cover'}} className='h-full'/>
-        <img src="/src/assets/images/Header-Mask.svg" className='absolute top-0 left-0 h-full' />
+        <img src="../../../public/assets/images/hero.jpg" alt="A green field with windmill" style={{objectFit: 'cover'}} className='h-full'/>
+        <img src="../../../public/assets/images/Header-Mask.svg" className='absolute top-0 left-0 h-full' />
       </div>
     </header>
   );
