@@ -35,11 +35,12 @@ const Navbar = () => {
   const closeDropdown = () => setIsOpen(false);
 
   return (
-    <nav
+  <nav className="bg-white fixed top-0   font-inter m-auto  -translate-x-1/2 z-50 left-1/2 flex justify-center   w-full">
+      <div
       onClick={closeDropdown}
-      className="flex justify-between items-center px-[5%] max-[991px]:px-0 max-w-[1400px] box-border w-screen bg-white h-[4.5rem] font-inter m-auto fixed top-0 left-1/2 -translate-x-1/2 z-50"
+      className="flex justify-between items-center  px-[5%] max-[991px]:px-0 max-w-[1400px]  box-border w-full bg-white h-[4.5rem]"
     >
-      <div className="bg-white z-50 max-[991px]:w-full max-[991px]:flex max-[991px]:p-[5%] max-[991px]:h-full justify-between items-center">
+      <div className="bg-white z-50 max-[991px]:w-full max-[991px]:flex  max-[991px]:p-[5%] max-[991px]:h-full justify-between items-center">
         <Link to="/" className="flex gap-[6px]">
           <img
             className="aspect-square w-[52px]"
@@ -96,8 +97,11 @@ const Navbar = () => {
         </div>
         <PrimaryBtn path="#" title="Make an Impact" />
       </div>
-    </nav>
-  );
+    </div>
+
+  </nav>
+  
+    );
 };
 
 export default Navbar;
