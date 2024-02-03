@@ -27,6 +27,7 @@ import Board_Level from './Pages/ServicePages/Board_Level';
 import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
 import Academy from './Pages/Academy/Academy';
+import PrivacyPolicy from './Pages/legal/PrivacyPolicy';
 
 
 export function Application() {
@@ -49,6 +50,7 @@ export function Application() {
             <Route path="/service/esg-diagnostic" element={<ESG_Diagnostic />} />
             <Route path="/service/board-level" element={<Board_Level />} />
             <Route path="*" element={<NotFound />} /> 
+            <Route path= "/legal/PrivacyPolicy" element={<PrivacyPolicy/>} />
           </Route>
         </Routes>
     </Router> 
