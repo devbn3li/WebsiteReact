@@ -88,7 +88,7 @@ const ESG_Compliance = () => {
       />
       <SliderLogos />
       <Cursal services={services} />
-      <Footer />
+   
     </div>
   );
 };

@@ -76,7 +76,6 @@ const ESG_Strategy = () => {
       <Hero_Services title={"ESG Strategy"} subtitle={"Our team of ESG thought leaders, strategists and practioneers are committed to helping you setup robust ESG policies and provide essential tools to establish or elevate your ESG program, ensuring a comprehensive and effective approach. We specialize in defining purpose-driven strategies for competitive advantage driven by ESG initiatives and uncover areas of risk to protect and prepare your brand for regulations and future requirements."} buttonText={"Conntact Us"}/>
       <SliderLogos />
       <Cursal services={services}/>
-      <Footer />
     </div>
   );
 }

@@ -76,7 +76,6 @@ const Strategic_Stakeholder = () => {
       <Hero_Services title={"Strategic Stakeholder Management Program"} subtitle={"Our integrated services prioritize stakeholder engagement, communication, and training. Stakeholder Mastery focuses on strategic communication and relationship-building, COSO Framework Training empowers with vital knowledge, Transparent Communication Excellence refines messaging, and Stakeholder-Centric Training fosters a transparent, collaborative, and successful organizational environment"} buttonText={"Contact Us"}/>
       <SliderLogos />
       <Cursal services={services}/>
-      <Footer />
     </div>
   );
 }

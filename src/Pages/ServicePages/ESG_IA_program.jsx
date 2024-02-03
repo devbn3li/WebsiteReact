@@ -76,7 +76,6 @@ const ESG_IA_program = () => {
       <Hero_Services title={"ESG IA program"} subtitle={"We provide comprehensive assistance to internal audit (IA) functions in building their ESG capabilities. Our services include the development of an ESG IA strategy and methodology manual, tailored to your organisation's needs. We understand that there is no one-size-fits-all approach, and we adapt our services based on the maturity of your assurance and overall controls environment."} buttonText={"Contact Us"}/>
       <SliderLogos />
       <Cursal services={services}/>
-      <Footer />
     </div>
   );
 }

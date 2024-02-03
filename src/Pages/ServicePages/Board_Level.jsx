@@ -76,7 +76,7 @@ const Board_Level = () => {
       <Hero_Services title={"Board-Level ESG Consulting"} subtitle={"Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making."} buttonText={"Contact Us"}/>
       <SliderLogos />
       <Cursal services={services}/>
-      <Footer />
+     
     </div>
   );
 }

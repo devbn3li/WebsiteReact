@@ -76,7 +76,6 @@ const ESG_Diagnostic = () => {
       <Hero_Services title={"ESG Diagnostic Assessment"} subtitle={"Our innovative ESG Diagnostics provides a rapid assessment of your current ESG performance against leading practices. The online assessment benchmarks your program and identifies priority actions across governance, environment and social impact. It helps identify and prioritize actions for improvement."} buttonText={"Test"}/>
       <SliderLogos />
       <Cursal services={services}/>
-      <Footer />
     </div>
   );
 }

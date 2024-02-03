@@ -76,7 +76,7 @@ const ESG_Controllership = () => {
       <Hero_Services title={"ESG Controllership"} subtitle={"Our suite of services specializes in guiding companies through the establishment of the ESG Controller role. From crafting the initial job description to providing the essential documents and tools, we offer comprehensive support for the entire ESG governance work process. Our program empowers the role to embody industry-leading practices in ESG controllership, fostering a comprehensive and effective approach to environmental, social, and governance initiatives."} buttonText={"Contact US"}/>
       <SliderLogos />
       <Cursal services={services}/>
-      <Footer />
+      
     </div>
   );
 }

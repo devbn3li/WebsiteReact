@@ -33,11 +33,9 @@ const Jobs = () => {
               {/* Mapping job openings */}
               {jobs.map((job, index) => (
                 <a href={job.link} target="_blank" rel="noopener noreferrer" key={index}>
-                  <div className="mb-6 p-4 border border-[#e6e6e5] rounded-md transition duration-300 hover:bg-[#02c2ab] flex justify-between items-center">
-                    <h3 className="w-[300px] text-lg md:text-xl font-bold">{job.title}</h3>
-                    <div className="w-[200px] text-2xl">
-                      <TiWorld />
-                    </div>
+                  <div className="mb-6 p-4 border border-[#e6e6e5] rounded-3xl transition duration-300 hover:bg-[#02c2ab] flex justify-between items-center">
+                    <h3 className="w-full max-w-[500px] text-lg md:text-xl font-bold">{job.title}</h3>
+                   
                     <div className="flex justify-end items-center w-[200px] gap-4">
                       <span className="">Apply</span>
                       <div className="p-2 text-[20px] rounded-md bg-[#02c2ab]">

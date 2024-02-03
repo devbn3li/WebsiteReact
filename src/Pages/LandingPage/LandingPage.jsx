@@ -15,8 +15,7 @@ const LandingPage = () => {
       <Offer />
       <Testimonials />
       <Why />
-<div className='w-full max-w-[1400px]'>      <Footer/>
-</div>
+
     </div>
   );
 }

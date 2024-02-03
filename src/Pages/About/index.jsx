@@ -12,7 +12,6 @@ function index() {
       <Business />
       <Why />
       <Jobs />
-      <Footer />
     </div>
   )
 }

@@ -94,7 +94,6 @@ const ESG_Governance = () => {
       />
       <SliderLogos />
       <Cursal services={services} />
-      <Footer />
     </div>
   );
 };
