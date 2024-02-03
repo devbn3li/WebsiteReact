@@ -2,7 +2,7 @@ import Footer from "../../Components/Footer";
 
 export default function Contact() {
   return (
-   <div className="w-full   pt-[7rem] ">
+   <div className="w-full flex justify-center  pt-[7rem] ">
 
 <section className="contactWrapper max-w-[1400px] relative w-full  px-[1rem] py-[2rem] sm:p-[3rem] ">
         <div className="contact  text-center  sm:w-[80%] mx-auto ">
@@ -70,7 +70,6 @@ export default function Contact() {
             </form>
         </div>
     </section>
-    <Footer/>
    </div>
   )
 }

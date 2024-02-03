@@ -3,7 +3,7 @@ import Logo from "../assets/images/logo.png";
 const Footer = () => {
   return (
 
-    <>
+    <div className="w-full flex justify-center">
       <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-64 w-full max-w-[1400px]">
 
         <div className="py-12">
@@ -116,7 +116,7 @@ const Footer = () => {
         </div>
       </div>
  
-    </>
+    </div>
 
   );
 };
