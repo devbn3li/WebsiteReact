@@ -22,6 +22,7 @@ import ESG_Compliance from './Pages/ServicePages/ESG_Compliance';
 import ERM_Program from './Pages/ServicePages/ERM_Program';
 import ESG_Diagnostic from './Pages/ServicePages/ESG_Diagnostic';
 import Board_Level from './Pages/ServicePages/Board_Level';
+import Blog from './Pages/Blogs/Blog';
 
 // Import style sheets
 import '/public/assets/css/index.css';
@@ -53,7 +54,8 @@ export function Application() {
             <Route path="/service/board-level" element={<Board_Level />} />
             <Route path= "/legal/PrivacyPolicy" element={<PrivacyPolicy/>} />
             {/* <Route path= "/legal/Cookies" element={<Cookies/>} /> */}
-            <Route path= "/Blogs/blogTemplete" element={<BlogTemplete/>} />
+            <Route path= "/blogs/blogTemplete" element={<BlogTemplete/>} />
+            <Route path= "/blogs/blog" element={<Blog/>} />
           </Route>
           <Route path="*" element={<NotFound />} /> 
         </Routes>
