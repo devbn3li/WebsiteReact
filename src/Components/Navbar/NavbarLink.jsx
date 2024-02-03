@@ -14,9 +14,9 @@ const NavbarLink = ({ path, title ,dropdownItems , toggleMenu ,openDropdown }) =
     return (
       <div className="relative group" >
         <div onClick={handleDropdownClick} className={linkClasses}>{title}</div>
-        <div onclick={openDropdown} className={`absolute hidden w-[250px]  bg-[#03C2AB] mt-5 py-2 px-4 rounded shadow-lg group-hover:block ${dropdownItems ? 'block' : 'hidden'}`}>
+        <div onclick={openDropdown} className={`absolute hidden w-[250px]  bg-[#03C2AB]  py-2 px-4 rounded-3xl shadow-lg group-hover:block ${dropdownItems ? 'block' : 'hidden'}`}>
           {dropdownItems.map((item, index) => (
-            <Link key={index} to={item.path}   onClick={toggleMenu} className="block text-[#fff] hover:text-gray-600 py-1">
+            <Link key={index} to={item.path}   onClick={toggleMenu} className="block text-[#fff] duration-500 hover:text-gray-600 py-1">
               {item.title}
             </Link>
           ))}
