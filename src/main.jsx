@@ -5,7 +5,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-// Pages
+
 // Import page components
 import Layout from './Pages/Layout';
 import LandingPage from './Pages/LandingPage/LandingPage';
@@ -34,18 +34,18 @@ export function Application() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<LandingPage />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path="/service/ESG_Controllership" element={<ESG_Controllership />} />
-            <Route path="/service/ESG_IA_program" element={<ESG_IA_program />} />
-            <Route path="/service/ESG_Governance" element={<ESG_Governance />} />
-            <Route path="/service/ESG_Assurance" element={<ESG_Assurance />} />
-            <Route path="/service/Strategic_Stakeholder" element={<Strategic_Stakeholder />} />
-            <Route path="/service/ESG_Strategy" element={<ESG_Strategy />} />
-            <Route path="/service/ESG_Compliance" element={<ESG_Compliance />} />
-            <Route path="/service/ERM_Program" element={<ERM_Program />} />
-            <Route path="/service/ESG_Diagnostic" element={<ESG_Diagnostic />} />
-            <Route path="/service/Board_Level" element={<Board_Level />} />
+            <Route path="/service/esg-controllership" element={<ESG_Controllership />} />
+            <Route path="/service/esg-ia-program" element={<ESG_IA_program />} />
+            <Route path="/service/esg-governance" element={<ESG_Governance />} />
+            <Route path="/service/esg-assurance" element={<ESG_Assurance />} />
+            <Route path="/service/strategic-stakeholder" element={<Strategic_Stakeholder />} />
+            <Route path="/service/esg-strategy" element={<ESG_Strategy />} />
+            <Route path="/service/esg-compliance" element={<ESG_Compliance />} />
+            <Route path="/service/erm-program" element={<ERM_Program />} />
+            <Route path="/service/esg-diagnostic" element={<ESG_Diagnostic />} />
+            <Route path="/service/board-level" element={<Board_Level />} />
             <Route path="*" element={<NotFound />} /> 
           </Route>
         </Routes>
