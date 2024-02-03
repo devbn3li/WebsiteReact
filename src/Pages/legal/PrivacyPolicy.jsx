@@ -38,14 +38,13 @@ function PrivacyPolicy() {
         </p>
         <h2 className="text-2xl font-bold mb-2">What personal information do we process?</h2>
         <p className="mb-4">
-        When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use.
-         Learn more about personal information you disclose to us.        </p>
+        We collect information based on your interactions with our
+services, choices, and product usage.     </p>
          <h2 className="text-2xl font-bold mb-2">Do we process any sensitive personal information?
 </h2>
 
 <p className="mb-4">
-We do not process sensitive personal information.
-
+No, we do not process sensitive personal information.
         </p>
    
 
@@ -56,8 +55,7 @@ We do not process sensitive personal information.
 
    
 <p className="mb-4">
-We do not receive any information from third parties.
-
+No, we do not receive information from third parties.
 
         </p>
    
@@ -67,16 +65,15 @@ We do not receive any information from third parties.
    
       
 <p className="mb-4">
-We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Learn more about how we process your information.
-
+We process information for service provision, improvement,security, and legal compliance.
         </p>
             <h2 className="text-2xl font-bold mb-2">
-            In what situations and with which parties do we share personal information?</h2>
+            When and with whom do we share personal information?            </h2>
    
          
 <p className="mb-4">
-We may share information in specific situations and with specific third parties. Learn more about when and with whom we share your personal information.
-
+We share information in specific situations and with specific
+third parties.
 
         </p>
       <h2 className="text-2xl font-bold mb-2">
@@ -85,7 +82,9 @@ We may share information in specific situations and with specific third parties.
             
                         </h2> 
                           <p className="mb-4">
-                          We cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Learn more about how we keep your information safe. </p>
+                          We have organizational and technical measures in place.
+However, no system is 100% secure.                          
+                          </p>
 
                <h2 className="text-2xl font-bold mb-2">
                What are your rights?
@@ -133,7 +132,8 @@ We may share information in specific situations and with specific third parties.
               <li>CONTROLS FOR DO-NOT-TRACK FEATURES</li>
               <li>DO WE MAKE UPDATES TO THIS NOTICE?</li>
               <li>HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</li>
-              <li>HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</li>
+              <li>REVIEW, UPDATE, OR DELETE YOUR DATA</li>
+              
             </ol>
 
             <h2 className="text-2xl font-bold mb-2">
@@ -538,15 +538,17 @@ London EC1V 2NP
 England
 
 
-
 </p>
 <h2 className="text-2xl font-bold mb-2">
 DO WE MAKE UPDATES TO THIS NOTICE?
             </h2>
 
 <p className="mb-4">
-In Short: Yes, we will update this notice as necessary to stay compliant with relevant laws. We may update this privacy notice from time to time. The updated version will be indicated by an updated &apos;Revised&apos; date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.
-
+Based on the applicable laws of your country, you may have
+the right to request access to the personal information we
+collect from you, change that information, or delete it. To
+request to review, update, or delete your personal information,
+please visit: https://levelupesg.co/ or Talk2us.
 
 
 </p>
