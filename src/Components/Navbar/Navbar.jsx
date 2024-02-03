@@ -122,7 +122,7 @@ const Navbar = () => {
               />
             ))}
           </div>
-          <PrimaryBtn path="/#contact" title="Make an Impact" />
+          <PrimaryBtn path="/contact" title="Make an Impact" />
         </div>
       </div>
 
