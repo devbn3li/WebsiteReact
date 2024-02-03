@@ -6,6 +6,14 @@ const logos = [
   "/assets/images/company/2.png",
   "/assets/images/company/3.png",
   "/assets/images/company/4.png",
+  "/assets/images/company/1.png",
+  "/assets/images/company/2.png",
+  "/assets/images/company/3.png",
+  "/assets/images/company/4.png",
+  "/assets/images/company/1.png",
+  "/assets/images/company/2.png",
+  "/assets/images/company/3.png",
+  "/assets/images/company/4.png",
 ]
 
 const sliderLogos = () => (
@@ -13,7 +21,7 @@ const sliderLogos = () => (
  
  
  <Slider
-            width="250px"
+            width="70px"
             duration={40}
             pauseOnHover={true}
             blurBorders={false}
