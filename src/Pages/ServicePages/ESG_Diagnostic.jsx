@@ -1,16 +1,15 @@
 import React from 'react';
-import { FaAngular } from "react-icons/fa6";
+import { FaLeaf } from "react-icons/fa";
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
 import Hero_Services from '../../Components/Hero_Services';
-import Footer from '../../Components/Footer'
 
 
 const services = [
   {
     title: "ESG Readiness Assessment",
     description: "We evaluate your company's current ESG policies, initiatives, disclosures, and metrics against leading practices",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "ESG Readiness Assessment",
       discription: "We evaluate your company's current ESG policies, initiatives, disclosures, and metrics against leading practices. This includes understanding and navigating new governance frameworks such as the Sustainability COSO framework, The EU Corporate Sustainability Due Diligence Directive (CSDDD), and FCA/anti-greenwashing regulations.",
@@ -20,7 +19,7 @@ const services = [
   {
     title: "ESG Excellence Analysis and Alignment",
     description: "We conduct a comprehensive analysis to pinpoint gaps and opportunities for improvement within the environmental",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "ESG Excellence Analysis and Alignment",
       discription: "We conduct a comprehensive analysis to pinpoint gaps and opportunities for improvement within the environmental, social, and governance domains. This strategic assessment enables your organization to align its ESG initiatives with industry leaders, enables continuous improvement and staying at the forefront of leading practices",
@@ -30,7 +29,7 @@ const services = [
   {
     title: "Optimization & Compliance Preparedness",
     description: "We offer strategic enhancements for your ESG strategy and disclosures",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "Optimization & Compliance Preparedness",
       discription: "We offer strategic enhancements for your ESG strategy and disclosures, presenting a comprehensive action plan for improvement. This proactive approach ensures your organization is well-prepared for potential audits.",
@@ -40,7 +39,7 @@ const services = [
   {
     title: "CSDR Standards Evaluation and Strategic Advancement",
     description: "We conduct a thorough assessment of your preparedness vis-à-vis CSDR standards",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "CSDR Standards Evaluation and Strategic Advancement",
       discription: "We conduct a thorough assessment of your preparedness vis-à-vis CSDR standards, analyze requirements relative to your current stage, devise strategic roadmaps and enhancements, present actionable plans, meticulously track and monitor progress, and provide guidance for advancing within the specified regulatory timelines",

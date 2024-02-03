@@ -22,6 +22,8 @@ const NAV_LINKS = [
       { path: "/service/board-level", title: "Board" },
     ],
   },  
+  { path: "/academy", title: "Academy" },
+
   { path: "/about", title: "About us" },
 
   { path: "/contact", title: "Contact us" },

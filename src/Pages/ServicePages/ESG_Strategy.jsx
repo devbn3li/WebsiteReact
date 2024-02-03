@@ -1,16 +1,15 @@
 import React from 'react';
-import { FaAngular } from "react-icons/fa6";
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
 import Hero_Services from '../../Components/Hero_Services';
-import Footer from '../../Components/Footer'
+import { FaLeaf } from "react-icons/fa";
 
 
 const services = [
   {
     title: "ESG Strategy",
     description: "Our ESG strategists' partner with your leadership team to embed sustainability throughout your business.",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "ESG Strategy",
       discription: "Our ESG strategists' partner with your leadership team to embed sustainability throughout your business. We help set ESG policies, goals, and KPIs aligned to your purpose and material impacts.",
@@ -20,7 +19,7 @@ const services = [
   {
     title: "Competitive Differentiation",
     description: "We help craft an ESG strategy integrated with business",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "Competitive Differentiation",
       discription: "We help craft an ESG strategy integrated with business objectives to create long-term value and define competitive differentiation driven by ESG initiatives.",
@@ -30,7 +29,7 @@ const services = [
   {
     title: "Risk Identification and Mitigation",
     description: "We identify and mitigate ESG-related risks",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "Risk Identification and Mitigation",
       discription: "We identify and mitigate ESG-related risks, helping your organization to protect its brand and prepare for emerging regulations.",
@@ -40,7 +39,7 @@ const services = [
   {
     title: "Enhanced Disclosures",
     description: "We assist in enhancing disclosures to meet stakeholder expectations",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "Enhanced Disclosures",
       discription: "We assist in enhancing disclosures to meet stakeholder expectations, ensuring that your organization is transparent and accountable in its ESG efforts.",

@@ -1,16 +1,16 @@
 import React from 'react';
-import { FaAngular } from "react-icons/fa6";
+import { FaLeaf } from "react-icons/fa";
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
 import Hero_Services from '../../Components/Hero_Services';
-import { LuHeartHandshake } from "react-icons/lu";
+
 
 
 const services = [
   {
     title: "ESG ERM Strategy Development",
     description: "Our service extends beyond ESG risk management planning to a strategic approach",
-    icon: <LuHeartHandshake />,
+    icon: <FaLeaf />,
     data: {
       title: "ESG ERM Strategy Development",
       discription: "Our service extends beyond ESG risk management planning to a strategic approach that ensures your organization is well-prepared for emerging risks. We assist in planning and scoping your ESG risk management efforts, considering evolving risks related to frameworks such as the Sustainability COSO framework, The EU Corporate Sustainability Due Diligence Directive (CSDDD), and FCA/anti-greenwashing regulations. This proactive strategy positions your organization to navigate the dynamic ESG risk landscape effectively.",
@@ -20,7 +20,7 @@ const services = [
   {
     title: "ESG ERM Methodology Manual",
     description: "Navigate the intricacies of ESG risk management with our comprehensive ESG ERM Methodology Manual",
-    icon: <LuHeartHandshake />,
+    icon: <FaLeaf />,
     data: {
       title: "ESG ERM Methodology Manual",
       discription: " Navigate the intricacies of ESG risk management with our comprehensive ESG ERM Methodology Manual. This guide outlines a robust methodology for managing ESG risks, offering insights to navigate the complex risk landscape. Designed to ensure consistency in risk management practices across your organization, this manual becomes a valuable resource in implementing effective risk mitigation strategies aligned with industry standards.",
@@ -30,7 +30,7 @@ const services = [
   {
     title: "Qualitative Risks and Controls",
     description: "Our expertise extends to identifying and managing qualitative risks and controls related to ESG.",
-    icon: <LuHeartHandshake />,
+    icon: <FaLeaf />,
     data: {
       title: "Qualitative Risks and Controls",
       discription: "Our expertise extends to identifying and managing qualitative risks and controls related to ESG. We assist your organization in understanding and addressing nuanced risks associated with Environmental, Social, and Governance factors. This service ensures a holistic approach to risk management that considers qualitative aspects, contributing to a more comprehensive ESG risk strategy.",
@@ -40,7 +40,7 @@ const services = [
   {
     title: "Title 4",
     description: "Small Description 4",
-    icon: <LuHeartHandshake />,
+    icon: <FaLeaf />,
     data: {
       title: "Title",
       discription: "Discription",
@@ -50,7 +50,7 @@ const services = [
   {
     title: "Risk Management Tracking and Monitoring",
     description: " Proactively manage risks with our detailed Risk Management Tracking and Monitoring service.",
-    icon: <LuHeartHandshake />,
+    icon: <FaLeaf />,
     data: {
       title: "Risk Management Tracking and Monitoring",
       discription: "Proactively manage risks with our detailed Risk Management Tracking and Monitoring service. We provide a comprehensive risk management checklist, ensuring all relevant areas are effectively covered. This not only prepares your organization for potential audits but also establishes a continuous monitoring system, fostering a proactive approach to risk mitigation and compliance in the evolving ESG landscape.",

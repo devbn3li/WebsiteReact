@@ -1,16 +1,15 @@
 import React from "react";
-import { FaAngular } from "react-icons/fa6";
+import { FaLeaf } from "react-icons/fa";
 import SliderLogos from "../../Components/SliderLogos/SliderLogos";
 import Cursal from "../../Components/Cursal/Cursal";
 import Hero_Services from "../../Components/Hero_Services";
-import Footer from "../../Components/Footer";
 
 const services = [
   {
     title: "ESG Regulatory Landscape Analysis",
     description:
       " Stay ahead of the ever-evolving ESG regulatory environment with our Regulatory Landscape Analysis service",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "ESG Regulatory Landscape Analysis",
       discription:
@@ -22,7 +21,7 @@ const services = [
   {
     title: "Customized ESG Policy Development",
     description: "Tailor your ESG compliance program with our Customized ESG Policy Development service.",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "Customized ESG Policy Development",
       discription: "Tailor your ESG compliance program with our Customized ESG Policy Development service. We work closely with your organization to create bespoke policies aligned with your values, industry standards, and regulatory expectations. These policies serve as a foundation for implementing effective ESG practices and demonstrating commitment to sustainability.",
@@ -33,7 +32,7 @@ const services = [
   {
     title: "ESG Training and Awareness Programs",
     description: "Foster a culture of ESG awareness and compliance within your organization through our ESG Training and Awareness Programs",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "ESG Training and Awareness Programs",
       discription: "Foster a culture of ESG awareness and compliance within your organization through our ESG Training and Awareness Programs. We provide targeted training sessions to educate employees at all levels about ESG principles, regulations, and best practices. This empowers your workforce to actively contribute to your ESG compliance efforts.",
@@ -44,7 +43,7 @@ const services = [
   {
     title: "Continuous Monitoring and Reporting",
     description: "Ensure ongoing compliance with our Continuous Monitoring and Reporting service.",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "Continuous Monitoring and Reporting",
       discription: "Ensure ongoing compliance with our Continuous Monitoring and Reporting service. We establish systematic processes for monitoring changes in ESG regulations, track your performance against compliance objectives, and provide regular reports. This service allows your organization to adapt proactively to regulatory shifts and highlight a commitment to sustained ESG compliance.",

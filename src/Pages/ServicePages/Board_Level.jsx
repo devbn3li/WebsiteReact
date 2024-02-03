@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaAngular } from "react-icons/fa6";
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
 import Hero_Services from '../../Components/Hero_Services';
