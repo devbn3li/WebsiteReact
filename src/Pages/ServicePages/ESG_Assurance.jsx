@@ -37,36 +37,7 @@ const services = [
       LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
     },
   },
-  {
-    title: "Title 4",
-    description: "Small Description 4",
-    icon: <FaAngular />,
-    data: {
-      title: "Title",
-      discription: "Discription",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
-    },
-  },
-  {
-    title: "Title 5",
-    description: "Small Description 5",
-    icon: <FaAngular />,
-    data: {
-      title: "Title",
-      discription: "Discription",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
-    },
-  },
-  {
-    title: "Title 6",
-    description: "Small Description 6",
-    icon: <FaAngular />,
-    data: {
-      title: "Title",
-      discription: "Discription",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
-    },
-  },
+
 ]
 
 

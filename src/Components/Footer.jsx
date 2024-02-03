@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-
     <div className="w-full flex justify-center">
       <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-64 w-full max-w-[1400px]">
-
         <div className="py-12">
           <div className=" flex gap-8 justify-between mt-4 max-[991px]:flex-col-reverse">
             <div className="max-[479px]:flex max-[479px]:flex-col max-[479px]:items-center">
@@ -18,7 +16,7 @@ const Footer = () => {
                 />
                 <p className="text-white font-bold text-4xl	">LevelUp</p>
               </div>
-              <div className="flex flex-col md:flex-row gap-6 lg:gap-24 text-white max-[991px]:justify-evenly  ">
+              <div className="flex flex-wrap md:flex-row gap-6 lg:gap-24 text-white max-[991px]:justify-evenly  ">
                 <div className="flex flex-col gap-5	duration-[0.45s]">
                   <p className="font-bold pl-2 ">Pages</p>
                   <Link
@@ -59,6 +57,7 @@ const Footer = () => {
                   >
                     LinkedIn
                   </a>
+
                 </div>
               </div>
             </div>
@@ -116,9 +115,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
- 
     </div>
-
   );
 };
 
