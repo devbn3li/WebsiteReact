@@ -1,8 +1,8 @@
 
 function PrivacyPolicy() {
   return (
-    <div className='mt-[7em]'>
-      <div className="">
+    <div className='mt-[7em]  flex justify-center'>
+      <div className="max-w-[1000px] px-3">
     <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-4">Privacy Notice</h1>
 
