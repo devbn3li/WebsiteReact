@@ -7,7 +7,6 @@ import PrimaryBtn from "../Buttons/PrimaryBtn";
 
 // Define navigation links
 const NAV_LINKS = [
-  { path: "/about", title: "About us" },
   {
     title: "Services",
     dropdownItems: [
@@ -22,7 +21,9 @@ const NAV_LINKS = [
       { path: "/service/esg-diagnostic", title: "Diagnostic " },
       { path: "/service/board-level", title: "Board" },
     ],
-  },
+  },  
+  { path: "/about", title: "About us" },
+
   { path: "/contact", title: "Contact us" },
 ];
 
