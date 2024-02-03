@@ -75,4 +75,4 @@ function WaitingList() {
   )
 }
 
-export default WaitingList
+export default WaitingList;
