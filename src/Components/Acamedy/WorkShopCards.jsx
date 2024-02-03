@@ -5,8 +5,8 @@ function WorkShopCards(props) {
     <div>
         <div className="p-10">
   <div className="relative max-w-7xl mx-auto">
-    <div className="max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
-      <div className="flex-1 px-6 py-8 lg:p-12 bg-gray-600">
+    <div className="max-w-lg mx-auto rounded-3xl shadow-lg overflow-hidden lg:max-w-none lg:flex">
+      <div className="flex-1 px-6 py-8 lg:p-12 lg:w-8/12 w-full  bg-gray-600">
         <h3 className="text-2xl font-extrabold text-white sm:text-3xl">
          {props.title}
         </h3>
@@ -21,7 +21,7 @@ function WorkShopCards(props) {
             role="list"
             className="mt-8w-full  "
           >
-            <ul role="list" className="mt-8 justify-between flex-wrap  w-full flex ">
+            <ul role="list" className="mt-8 space-y-5 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-5">
                 {props.topics && props.topics.map((topic, index) => (
                     <li key={index} className="flex items-start lg:col-span-1">
                         <div className="flex-shrink-0">
@@ -46,16 +46,12 @@ function WorkShopCards(props) {
           </ul>
         </div>
       </div>
-      <div className="text-center relative  w-full   h-[300px] max-w-[400px] aspect-square lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center  bg-gray-700">
-<div 
-style={{backgroundImage: `url(${props.image})`}}
+      <div className="text-center relative lg:w-4/12 w-full  bg-black   min-h-[300px]  lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center  ">
 
-className=' h-full w-full'>
 <img 
 className="h-full w-full object-cover"
  src={props.image} alt="Course image" />
 
-</div>
         {/* <div className="mt-4 flex items-center justify-center text-5xl font-extrabold text-white">
           <span>$19.99</span>
           <span className="ml-3 text-xl font-medium text-gray-50">USD</span>

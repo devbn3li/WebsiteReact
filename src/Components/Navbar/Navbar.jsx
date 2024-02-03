@@ -44,7 +44,7 @@ const Navbar = () => {
         <Link to="/" className="flex gap-[6px]">
           <img
             className="aspect-square w-[52px]"
-            src="/src/assets/images/logo.png"
+            src="/public/assets/images/logo.png"
             alt="LevelUp logo"
           />
           <span className="text-[35px] font-bold inline-block text-[#333]">
