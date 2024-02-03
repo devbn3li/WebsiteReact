@@ -1,5 +1,4 @@
-import React from "react";
-import { FaAngular } from "react-icons/fa6";
+import { FaLeaf } from "react-icons/fa";
 import SliderLogos from "../../Components/SliderLogos/SliderLogos";
 import Cursal from "../../Components/Cursal/Cursal";
 import Hero_Services from "../../Components/Hero_Services";
@@ -9,7 +8,7 @@ const services = [
     title: "ESG Governance Program",
     description:
       "We provide tailored services and essential tools to help establish, structure, streamline, or enhance your ESG initiatives.",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "ESG Governance Program",
       discription:
@@ -22,7 +21,7 @@ const services = [
     title: "Gap Analysis",
     description:
       "Our comprehensive Gap Analysis service involves a meticulous examination of your current reporting practices in comparison to both regulatory requirements and industry-leading practices.",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "Gap Analysis",
       discription:
@@ -35,7 +34,7 @@ const services = [
     title: "Data Collection, Measurement, and Analysis",
     description:
       " Navigating the intricacies of ESG reporting requires a robust approach to data.",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "Data Collection, Measurement, and Analysis",
       discription:
