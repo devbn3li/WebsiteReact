@@ -1,6 +1,6 @@
-import largeImg from "../../public/assets/images/handImage.webp";
+import largeImg from "../../../public/assets/images/handImage.webp";
 
-const About = () => {
+const AboutComponent = () => {
   const imageSources = [
     "https://media.istockphoto.com/id/1359584148/photo/esg-or-environmental-social-governance-the-company-development-of-a-nature-conservation.jpg?s=612x612&w=0&k=20&c=_sg09QMG8EsGHOjJpknHn5LPEPznkFK4rP8iAWegVgU=",
     "https://levelupesg.co/6583120d1a5ca1720a2c682a/6586fc5a089db1f704eb4fd4_galery_02.webp",
@@ -44,16 +44,8 @@ const About = () => {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
     </div>
   );
 };
 
-export default About;
+export default AboutComponent;

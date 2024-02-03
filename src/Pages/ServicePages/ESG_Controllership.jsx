@@ -2,7 +2,7 @@ import React from 'react';
 import { FaLeaf } from "react-icons/fa";
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
-import Hero_Services from '../../Components/Hero_Services';
+import Hero_Services from '../../Components/Hero_Services/Hero_Services';
 
 
 const services = [
@@ -52,7 +52,7 @@ const services = [
 const ESG_Controllership = () => {
   return (
     <div className='pt-[4.5rem] flex flex-col items-center'>
-      <Hero_Services title={"ESG Controllership"} subtitle={"Our suite of services specializes in guiding companies through the establishment of the ESG Controller role. From crafting the initial job description to providing the essential documents and tools, we offer comprehensive support for the entire ESG governance work process. Our program empowers the role to embody industry-leading practices in ESG controllership, fostering a comprehensive and effective approach to environmental, social, and governance initiatives."} buttonText={"Contact US"}/>
+      <Hero_Services title={"ESG Controllership"} subtitle={"Our suite of services specializes in guiding companies through the establishment of the ESG Controller role. From crafting the initial job description to providing the essential documents and tools, we offer comprehensive support for the entire ESG governance work process. Our program empowers the role to embody industry-leading practices in ESG controllership, fostering a comprehensive and effective approach to environmental, social, and governance initiatives."} />
       <SliderLogos />
       <Cursal services={services}/>
       

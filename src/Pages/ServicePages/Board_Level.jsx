@@ -1,7 +1,7 @@
 import React from 'react';
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
-import Hero_Services from '../../Components/Hero_Services';
+import Hero_Services from '../../Components/Hero_Services/Hero_Services';
 import { FaLeaf } from "react-icons/fa";
 
 
@@ -63,7 +63,7 @@ const services = [
 const Board_Level = () => {
   return (
     <div className='pt-[4.5rem] flex flex-col items-center'>
-      <Hero_Services title={"Board-Level ESG Consulting"} subtitle={"Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making."} buttonText={"Contact Us"}/>
+      <Hero_Services title={"Board-Level ESG Consulting"} subtitle={"Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making."}/>
       <SliderLogos />
       <Cursal services={services}/>
      
