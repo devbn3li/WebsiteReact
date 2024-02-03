@@ -22,7 +22,7 @@ const sliderLogos = () => (
  
  <Slider
             width="70px"
-            duration={40}
+            duration={4}
             pauseOnHover={true}
             blurBorders={false}
             blurBoderColor={'#fff'}
