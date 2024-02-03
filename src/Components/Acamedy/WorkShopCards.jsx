@@ -46,10 +46,10 @@ function WorkShopCards(props) {
           </ul>
         </div>
       </div>
-      <div className="text-center relative lg:w-4/12 w-full  bg-black   min-h-[300px]  lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center  ">
+      <div className="text-center overflow-hidden relative lg:w-4/12 w-full  bg-black   min-h-[300px]  lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center  ">
 
 <img 
-className="h-full w-full object-cover"
+className="h-full w-full scale-[150%] object-cover"
  src={props.image} alt="Course image" />
 
         {/* <div className="mt-4 flex items-center justify-center text-5xl font-extrabold text-white">
