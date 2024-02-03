@@ -506,7 +506,7 @@ function ComparitionPricing() {
           </p>
           <div className="border-t border-gray-300 p-6 text-left rounded-bl-lg">
             <button className="flex items-center mt-auto text-center text-white bg-[#02c2ab] border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">
-              Button
+              Start Now
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -957,7 +957,7 @@ function ComparitionPricing() {
           </p>
           <div className="p-6 text-left border-t border-gray-300">
             <button className="flex items-center mt-auto text-white bg-[#02c2ab] border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">
-              Button
+            Start Now
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -1418,7 +1418,7 @@ function ComparitionPricing() {
           </p>
           <div className="p-6 text-left border-t border-gray-300">
             <button className="flex items-center mt-auto text-white bg-[#02c2ab] border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">
-              Button
+            Start Now
               <svg
                 fill="none"
                 stroke="currentColor"
