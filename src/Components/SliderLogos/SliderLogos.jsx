@@ -2,20 +2,18 @@ import React from 'react';
 import Slider from 'react-infinite-logo-slider'
 
 const logos = [
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png",
+  "/assets/images/company/1.png",
+  "/assets/images/company/2.png",
+  "/assets/images/company/3.png",
+  "/assets/images/company/4.png",
+  "/assets/images/company/1.png",
+  "/assets/images/company/2.png",
+  "/assets/images/company/3.png",
+  "/assets/images/company/4.png",
+  "/assets/images/company/1.png",
+  "/assets/images/company/2.png",
+  "/assets/images/company/3.png",
+  "/assets/images/company/4.png",
 ]
 
 const sliderLogos = () => (
@@ -23,7 +21,7 @@ const sliderLogos = () => (
  
  
  <Slider
-            width="250px"
+            width="70px"
             duration={40}
             pauseOnHover={true}
             blurBorders={false}
