@@ -110,7 +110,7 @@ Changes to Our Cookie Policy
 We may update this Cookie Policy from time to time in response to changing legal, technical, or business developments. When we update our Cookie Policy, we will take appropriate measures to inform you, consistent with the significance of the changes we make.
 
 
-
+  
 </p>
 
 <h2 className="text-2xl font-bold mb-2">
