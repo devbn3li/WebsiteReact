@@ -47,7 +47,7 @@ const services = [
     title: "Governance around Reporting",
     description:
       "Establishing effective governance around ESG reporting is pivotal for sustained excellence.",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "Governance around Reporting",
       discription:
@@ -59,7 +59,7 @@ const services = [
   {
     title: "Internal Control for ESG Reporting",
     description: "We will assist in establishing robust internal controls, fortifying the reliability of your ESG disclosures.",
-    icon: <FaAngular />,
+    icon: <FaLeaf />,
     data: {
       title: "Internal Control for ESG Reporting",
       discription: "We will assist in establishing robust internal controls, fortifying the reliability of your ESG disclosures. From risk management to process optimization, we guide your organization in preparing a resilient internal control framework, instilling confidence in the accuracy and integrity of your ESG reporting practices in line with the COSO Framework.",
