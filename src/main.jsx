@@ -52,6 +52,7 @@ export function Application() {
             <Route path="/service/esg-diagnostic" element={<ESG_Diagnostic />} />
             <Route path="/service/board-level" element={<Board_Level />} />
             <Route path= "/legal/PrivacyPolicy" element={<PrivacyPolicy/>} />
+            {/* <Route path= "/legal/Cookies" element={<Cookies/>} /> */}
             <Route path= "/Blogs/blogTemplete" element={<BlogTemplete/>} />
           </Route>
           <Route path="*" element={<NotFound />} /> 
