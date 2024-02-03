@@ -2,7 +2,7 @@ import React from 'react';
 import { FaLeaf } from "react-icons/fa";
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
-import Hero_Services from '../../Components/Hero_Services';
+import Hero_Services from '../../Components/Hero_Services/Hero_Services';
 
 
 const services = [
@@ -43,7 +43,7 @@ const services = [
 const ESG_Assurance = () => {
   return (
     <div className='pt-[4.5rem] flex flex-col items-center'>
-      <Hero_Services title={"ESG Assurance"} subtitle={"We provide ISAE 3000 and ISAE 3410 assurance over companies' ESG information and metrics. We ensure standardized and consistent measurement and disclosure of non-financial information. Our assurance covers a wide range of ESG metrics, from greenhouse gas emissions to workforce diversity and pay gaps."} buttonText={"Contact Us"}/>
+      <Hero_Services title={"ESG Assurance"} subtitle={"We provide ISAE 3000 and ISAE 3410 assurance over companies' ESG information and metrics. We ensure standardized and consistent measurement and disclosure of non-financial information. Our assurance covers a wide range of ESG metrics, from greenhouse gas emissions to workforce diversity and pay gaps."} />
       <SliderLogos />
       <Cursal services={services}/>
     

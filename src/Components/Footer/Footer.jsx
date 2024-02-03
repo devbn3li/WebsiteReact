@@ -1,4 +1,4 @@
-import Logo from "../../public/assets/images/logo.png";
+import Logo from "../../../public/assets/images/logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -61,7 +61,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:relative max-[991px]:h-72">
+            <div className="lg:relative max-[991px]:h-72" id="contact">
               <div className="lg:absolute top-0 right-0 -translate-y-1/2 flex flex-col gap-6 bg-[#02c2ab] p-10 rounded-2xl">
                 <div className="text-black text-[32px] font-bold ">
                   Talk to an Impact Maker

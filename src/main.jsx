@@ -11,7 +11,7 @@ import Layout from './Pages/Layout';
 import LandingPage from './Pages/LandingPage/LandingPage';
 import NotFound from './Pages/NotFound'; // Import the 404 page component
 import Contact from './Pages/Contact/Contact';
-import About from './Pages/About/index';
+import About from './Pages/About/About';
 import ESG_Controllership from './Pages/ServicePages/ESG_Controllership';
 import ESG_IA_program from './Pages/ServicePages/ESG_IA_program';
 import ESG_Governance from './Pages/ServicePages/ESG_Governance';

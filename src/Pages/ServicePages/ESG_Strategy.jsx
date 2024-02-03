@@ -1,7 +1,7 @@
 import React from 'react';
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
-import Hero_Services from '../../Components/Hero_Services';
+import Hero_Services from '../../Components/Hero_Services/Hero_Services';
 import { FaLeaf } from "react-icons/fa";
 
 
@@ -52,7 +52,7 @@ const services = [
 const ESG_Strategy = () => {
   return (
     <div className='pt-[4.5rem] flex flex-col items-center'>
-      <Hero_Services title={"ESG Strategy"} subtitle={"Our team of ESG thought leaders, strategists and practioneers are committed to helping you setup robust ESG policies and provide essential tools to establish or elevate your ESG program, ensuring a comprehensive and effective approach. We specialize in defining purpose-driven strategies for competitive advantage driven by ESG initiatives and uncover areas of risk to protect and prepare your brand for regulations and future requirements."} buttonText={"Conntact Us"}/>
+      <Hero_Services title={"ESG Strategy"} subtitle={"Our team of ESG thought leaders, strategists and practioneers are committed to helping you setup robust ESG policies and provide essential tools to establish or elevate your ESG program, ensuring a comprehensive and effective approach. We specialize in defining purpose-driven strategies for competitive advantage driven by ESG initiatives and uncover areas of risk to protect and prepare your brand for regulations and future requirements."}/>
       <SliderLogos />
       <Cursal services={services}/>
     </div>

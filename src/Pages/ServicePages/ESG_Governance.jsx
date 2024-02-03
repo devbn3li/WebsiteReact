@@ -1,7 +1,7 @@
 import { FaLeaf } from "react-icons/fa";
 import SliderLogos from "../../Components/SliderLogos/SliderLogos";
 import Cursal from "../../Components/Cursal/Cursal";
-import Hero_Services from "../../Components/Hero_Services";
+import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 
 const services = [
   {
@@ -77,7 +77,7 @@ const ESG_Governance = () => {
         subtitle={
           "At LevelUp, we understand the dynamic landscape of Environmental, Social, and Governance (ESG) can be challenging for many businesses. With the increasing volume of mandatory ESG disclosures, expanding the scope of companies required to report, and changing stakeholder expectations, navigating this landscape requires expertise and precision. We provide comprehensive support for ESG reporting, well-versed in various reporting standards including CSRD, ISSB, IFRS, SASBI, and GRI."
         }
-        buttonText={"Contact Us"}
+        
       />
       <SliderLogos />
       <Cursal services={services} />

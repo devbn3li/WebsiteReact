@@ -2,7 +2,7 @@ import React from "react";
 import { FaLeaf } from "react-icons/fa";
 import SliderLogos from "../../Components/SliderLogos/SliderLogos";
 import Cursal from "../../Components/Cursal/Cursal";
-import Hero_Services from "../../Components/Hero_Services";
+import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 
 const services = [
   {
@@ -62,7 +62,7 @@ const ESG_Compliance = () => {
         subtitle={
           "We provide comprehensive support to compliance functions in building their ESG capabilities. Our services include the creation of an ESG compliance strategy and methodology manual, tailored to your organization's needs. We understand that ESG compliance is a dynamic field with evolving regulations and standards, and we adapt our services based on the maturity of your compliance environment."
         }
-        buttonText={"Contact Us"}
+        
       />
       <SliderLogos />
       <Cursal services={services} />
