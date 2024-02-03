@@ -29,6 +29,7 @@ import '/public/assets/css/fonts.css';
 import Academy from './Pages/Academy/Academy';
 import PrivacyPolicy from './Pages/legal/PrivacyPolicy';
 import Cookies from './Pages/legal/Cookies';
+import BlogTemplete from './Pages/Blogs/blogTemplete';
 
 
 export function Application() {
@@ -50,11 +51,10 @@ export function Application() {
             <Route path="/service/erm-program" element={<ERM_Program />} />
             <Route path="/service/esg-diagnostic" element={<ESG_Diagnostic />} />
             <Route path="/service/board-level" element={<Board_Level />} />
-            <Route path="*" element={<NotFound />} /> 
             <Route path= "/legal/PrivacyPolicy" element={<PrivacyPolicy/>} />
-            <Route path= "/legal/cookies" element={<Cookies/>} />
-            
+            <Route path= "/Blogs/blogTemplete" element={<BlogTemplete/>} />
           </Route>
+          <Route path="*" element={<NotFound />} /> 
         </Routes>
     </Router> 
   );
