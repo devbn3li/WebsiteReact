@@ -3,7 +3,8 @@ import About from '../../Components/About'
 import Business from '../../Components/Business'
 import Why from '../../Components/Why'
 import Jobs from '../../Components/Jobs'
-import Footer from '../../Components/Footer'
+import BlogCardList from "../../Components/BlogCard/BlogDataList";
+
 
 function index() {
   return (
@@ -12,6 +13,7 @@ function index() {
       <Business />
       <Why />
       <Jobs />
+      <BlogCardList />
     </div>
   )
 }
