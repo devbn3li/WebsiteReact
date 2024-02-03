@@ -47,26 +47,7 @@ const services = [
       LOTTIEanimationData: "../../assets/images/discussing-business-documents.avif"
     },
   },
-  {
-    title: "Title 5",
-    description: "Small Description 5",
-    icon: <FaAngular />,
-    data: {
-      title: "Title",
-      discription: "Discription",
-      LOTTIEanimationData: "../../assets/images/discussing-business-documents.avif"
-    },
-  },
-  {
-    title: "Title 6",
-    description: "Small Description 6",
-    icon: <FaAngular />,
-    data: {
-      title: "Title",
-      discription: "Discription",
-      LOTTIEanimationData: "../../assets/images/handImage.wehttps://media.istockphoto.com/id/1814193775/photo/esg-concept-sustainable-development-goal-ideas-for-sustainable-development-and-green-business.jpg?s=612x612&w=0&k=20&c=oQ2s5snKykDbsq_mjaTr1vuzGPYp7IXZAZWkWYG7CZs=bp"
-    },
-  },
+
 ]
 
 
