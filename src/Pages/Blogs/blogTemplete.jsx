@@ -3,12 +3,14 @@ import Quote from '../../Components/Blog/Quote'
 import H1 from '../../Components/Blog/H1'
 import H2 from '../../Components/Blog/H2'
 import image from '../../../public/assets/images/blogs/blog_1.jpg';
+import { Link } from 'react-router-dom';
 
 const blogTitle = 'How to improve Web Design Process';
 const writerName = 'John Doe';
 const publishDate = 'December 24, 2023';
 const publishTime = '5 min';
 const imgSrc = image;
+
 const Body = () => (
   <div className='flex flex-col gab-4'>
     <H1 text="Quis earum blanditiis assumenda totam." />
@@ -43,6 +45,13 @@ const BlogTemplete = () => {
       </div>
       <div className='max-w-[44px]'>
         <Body />
+      </div>
+      <div>
+        <div className="flex justify-between">
+          <h1 className='text-[8rem]'>You may also like</h1>
+          <Link to="/blog" className="text-[#121212] pb-1 border-b border-b-[#121212]">View all</Link>
+        </div>
+        <div className="flex"></div>
       </div>
     </div>
   );
