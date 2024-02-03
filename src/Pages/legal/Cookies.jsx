@@ -1,6 +1,6 @@
 import React from 'react'
 
-function cookies() {
+function Cookies() {
   return (
     <div>
  <div className='mt-[7em]  flex justify-center'>
@@ -152,4 +152,4 @@ By using the LevelUp website and services, you consent to the use of cookies in 
   )
 }
 
-export default cookies
+export default Cookies

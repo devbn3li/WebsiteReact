@@ -39,7 +39,6 @@ function ProductsCard({ title, discription, LOTTIEanimationData }) {
           /> */}
 
         </div>
-
         <div className="absolute top-[20%]  sm:top-[30%] text-center left-0 right-0 w-full">
           <div className="w-full text-center justify-center flex relative p-2 rounded h-full">
             <div className="md:max-w-lg relative">
