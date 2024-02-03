@@ -32,33 +32,32 @@ const Footer = () => {
                     Contact us
                   </Link>
                 </div>
-                <div className="flex flex-wrap gap-6">
-                  <div className="flex flex-col gap-5">
-                    <div className="font-bold pl-2 ">Resources</div>
-                    <Link
-                      to="/legal/PrivacyPolicy"
-                      className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
-                    >
-                      Privacy policy
-                    </Link>
-                    <Link
-                      to="/legal/cookies"
-                      className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
-                    >
-                      Cookie policy
-                    </Link>
-                  </div>
-                  <div className="flex flex-col gap-5">
-                    <div className="font-bold pl-2 ">Follow Us</div>
-                    <a
-                      href="https://www.linkedin.com/company/levelupesg/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a] duration-[0.45s]"
-                    >
-                      LinkedIn
-                    </a>
-                  </div>
+                <div className="flex flex-col gap-5">
+                  <div className="font-bold pl-2 ">Resources</div>
+                  <Link
+                    to="/legal/PrivacyPolicy"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
+                  >
+                    Privacy policy
+                  </Link>
+                  <Link
+                    to="/legal/Cookies"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
+                  >
+                    Cookie policy
+                  </Link>
+                </div>
+                <div className="flex flex-col gap-5">
+                  <div className="font-bold pl-2 ">Follow Us</div>
+                  <a
+                    href="https://www.linkedin.com/company/levelupesg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a] duration-[0.45s]"
+                  >
+                    LinkedIn
+                  </a>
+
                 </div>
               </div>
             </div>
