@@ -128,7 +128,7 @@ Green            </h2>
 
             href="/order"
             aria-describedby="product2"
-            className="bg-[#02c2ab] cursor-pointer text-black shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="bg-[#02c2ab] cursor-pointer text-black shadow-sm hover:bg-[#02c2ab]/30 duration-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             Order Now
           </div>
