@@ -1,4 +1,5 @@
 import Logo from "../../public/assets/images/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,33 +21,33 @@ const Footer = () => {
               <div className="flex flex-col md:flex-row gap-6 lg:gap-24 text-white max-[991px]:justify-evenly  ">
                 <div className="flex flex-col gap-5	duration-[0.45s]">
                   <p className="font-bold pl-2 ">Pages</p>
-                  <a
-                    href="/about"
+                  <Link
+                    to="/about"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
                   >
                     About us
-                  </a>
-                  <a
-                    href="/contact"
+                  </Link>
+                  <Link
+                    to="/contact"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
                   >
                     Contact us
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex flex-col gap-5">
                   <div className="font-bold pl-2 ">Resources</div>
-                  <a
-                    href="/legal/PRIVACY-POLICY.html"
+                  <Link
+                    to="/legal/PRIVACY-POLICY.html"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
                   >
                     Privacy policy
-                  </a>
-                  <a
-                    href="/legal/cookies.html"
+                  </Link>
+                  <Link
+                    to="/legal/cookies.html"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
                   >
                     Cookie policy
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex flex-col gap-5">
                   <div className="font-bold pl-2 ">Follow Us</div>
