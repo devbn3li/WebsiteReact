@@ -26,6 +26,7 @@ import Board_Level from './Pages/ServicePages/Board_Level';
 // Import style sheets
 import './assets/css/index.css';
 import './assets/css/fonts.css';
+import Academy from './Pages/Academy/Academy';
 
 
 export function Application() {
@@ -36,6 +37,7 @@ export function Application() {
             <Route index element={<LandingPage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/academy" element={<Academy />} />
             <Route path="/service/esg-controllership" element={<ESG_Controllership />} />
             <Route path="/service/esg-ia-program" element={<ESG_IA_program />} />
             <Route path="/service/esg-governance" element={<ESG_Governance />} />
