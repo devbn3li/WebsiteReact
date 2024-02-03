@@ -85,7 +85,7 @@ const BlogTemplete = () => {
           <h1 className='font-bold text-[28px] my-7'>You may also like</h1>
           <Link to="/blog" className="text-[#121212] pb-1 border-b border-b-[#121212]">View all</Link>
         </div>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap mb-10">
           {blogs.map((blog, index) => (
             <BlogCard key={index} blog={blog} />
           ))}
