@@ -23,7 +23,7 @@ function ProductsCard({ title, discription, LOTTIEanimationData }) {
 
   return (
     <div className="absolute w-full h-full">
-      <div className="bg-[#121212]/80 duration-700 hover:scale-[.97] cursor-pointer p-4 relative rounded-3xl h-full">
+      <div className="bg-[#F9FFF5] text-[#000] duration-700 hover:scale-[.97] cursor-pointer p-4 relative rounded-3xl h-full">
         <div
           style={{
 
@@ -40,13 +40,13 @@ function ProductsCard({ title, discription, LOTTIEanimationData }) {
 
         </div>
 
-        <div className="absolute bottom-5 text-center left-0 right-0 w-full">
+        <div className="absolute top-[20%]  sm:top-[30%] text-center left-0 right-0 w-full">
           <div className="w-full text-center justify-center flex relative p-2 rounded h-full">
             <div className="md:max-w-lg relative">
-              <p className="lg:text-4xl text-xl capitalize text-white font-bold mb-2">
+              <p className="lg:text-4xl text-xl capitalize  font-bold mb-2">
                 {title}{" "}
               </p>
-              <p className="text-white/80 text-sm md:text-md">{discription}</p>
+              <p className="text-black/60 text-sm md:text-md">{discription}</p>
             </div>
           </div>
         </div>
