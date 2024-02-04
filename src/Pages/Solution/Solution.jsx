@@ -1,66 +1,244 @@
-import React from 'react';
+import { SiHiveBlockchain } from 'react-icons/si';
 import HeroSection from '../../Components/Hero_solutions';
-import BenefitsSection from '../../Components/SolCard/CardData';
-import SolutionsCard from '../../Components/Solutions/SolutionsCard';
+import CardData from '../../Components/SolCard/CardData';
+import { FaLevelUpAlt, FaRegLightbulb } from 'react-icons/fa';
+import { MdCelebration, MdOutlineReport } from 'react-icons/md';
+import { PiRobotLight, PiStrategy } from 'react-icons/pi';
+import SolutionHero from '../../Components/Solutions/Hero';
+import backgroundImage from '../../../public/assets/images/bg/1.jpg';
 
-const benefits = [
-  "AI-powered rapid ESG assessment for maximum efficiency and deep insights.",
-  "Comprehensive coverage of the most common ESG factors from leading frameworks.",
-  "Tailored assessment criteria and tools matched to your business size.",
-  "Continuous innovation and updates based on the latest regulations and research.",
-  "Actionable insights to target priority areas for improvement.",
-  "Expert-led advice and strategic roadmap for effective sustainability implementation.",
-  "Automated mapping of the responses against multiple industry standards.",
-];
 
-const howWeHelp = [
-  "Data Integration - We aggregate dispersed ESG data into a unified view.",
-  "Advanced Analytics - Our AI models derive actionable intelligence from the data.",
-  "Impactful Visualizations - Interactive dashboards make insights intuitive and accessible.",
-  "Strategic Recommendations - We provide expert guidance to drive strategy and goal setting.",
-  "With us as your partner, ESG data becomes your roadmap to sustainability leadership. Our analytics translate complex information into focused strategies and measurable progress.",
-];
 
-const sections = [
+const Solution = () => {
+  
+const ESGPulse = [
   {
     title: 'LevelUp ESG Pulse',
     discription: "Sustainability management can be complex, and even more challenging for small and medium enterprises (SMEs) with limited resources and time but with LevelUp it doesn’t have to be."
   },
-
-  {
-    title: 'LevelUp Sustainability Tracker',
-    discription: "Introducing LevelUp Sustainability Tracker - the automated ESG data management platform that empowers your sustainability journey."
-  },
-
-  {
-    title: 'LevelUp Data Lab',
-    discription: "Uncover Sustainability Deep Insights with Data Science Our team of talented data scientists and AI experts empower companies to accelerate their sustainability journey through data."
-  }
 ]
 
-const Solution = () => {
+const SustainabilityTracker  = [
+  {
+    title: 'LevelUp Sustainability Tracker',
+    discription: "Sustainability Tracker makes ESG data collection and reporting simple through intuitive software that works the way you do. Our platform saves you time on data handling, so you can focus on impact creation. "
+  },
+]
+
+const DataLab  = [
+  {
+    title: 'LevelUp Data Lab ',
+    discription: "Our team of talented data scientists and AI experts empower companies to accelerate their sustainability journey through data. "
+  },
+]
+
+
+
+
+
+
+
+
+const SustainabilityTrackerCards =[
+  {
+    title: "Start ",
+    description:
+      "We help you identify and integrate your key ESG data sources or work with manual and various source of data.",
+    icon:(<div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+      1
+    </div>),
+    url: "#",
+  },
+  {
+    title: "Connect ",
+    description:
+      "Our software automatically pulls relevant data on demand or on schedule.  ",
+      icon:(<div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+      2
+    </div>),
+    url: "/service/esg-ia-program",
+  },
+  {
+    title: "Track & Report",
+    description:
+      "Customizable dashboards and reports provide visibility into your ESG performance. ",
+      icon:(<div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+      3
+    </div>),
+    url: "/service/esg-strategy",
+  },
+ 
+];
+
+const DataLabCards =[
+  {
+    title: "AI-powered Rapid ESG Assessment",
+    description:
+      "AI-powered Rapid ESG assessment powered by innovative AI for maximum efficiency and deep insights.",
+    icon: <MdCelebration />,
+    url: "#",
+  },
+  {
+    title: "Comprehensive Coverage",
+    description:
+      "Comprehensive coverage of the most common ESG factors from leading frameworks.",
+    icon: <PiRobotLight />,
+    url: "/service/esg-ia-program",
+  },
+  {
+    title: "Tailored Assessment Criteria",
+    description:
+      "Tailored assessment criteria and tools matched to your business size.",
+    icon: <PiStrategy />,
+    url: "/service/esg-strategy",
+  },
+  {
+    title: "Continuous Innovation",
+    description:
+      "Continuous innovation and updates based on the latest regulations and research.",
+    icon: <FaRegLightbulb />,
+    url: "/service/erm-program",
+  },
+  {
+    title: "Actionable Insights",
+    description:
+      "Actionable insights to target priority areas for improvement.",
+    icon: <MdOutlineReport />,
+    url: "/service/esg-governance",
+  },
+  {
+    title: "Expert-led Advice",
+    description:
+      "Expert-led advice and strategic roadmap for effective sustainability implementation.",
+    icon: <FaLevelUpAlt />,
+    url: "/service/esg-assurance",
+  },
+  {
+    title: "Automated Mapping",
+    description:
+      "Automated mapping of the responses against multiple industry standards.",
+    icon: <SiHiveBlockchain />,
+    url: "#",
+  },
+ 
+];
+
+
+
+const ESGPulseCards = [
+  {
+    title: "AI-powered Rapid ESG Assessment",
+    description:
+      "AI-powered Rapid ESG assessment powered by innovative AI for maximum efficiency and deep insights.",
+    icon: <MdCelebration />,
+    url: "#",
+  },
+  {
+    title: "Comprehensive Coverage",
+    description:
+      "Comprehensive coverage of the most common ESG factors from leading frameworks.",
+    icon: <PiRobotLight />,
+    url: "/service/esg-ia-program",
+  },
+  {
+    title: "Tailored Assessment Criteria",
+    description:
+      "Tailored assessment criteria and tools matched to your business size.",
+    icon: <PiStrategy />,
+    url: "/service/esg-strategy",
+  },
+  {
+    title: "Continuous Innovation",
+    description:
+      "Continuous innovation and updates based on the latest regulations and research.",
+    icon: <FaRegLightbulb />,
+    url: "/service/erm-program",
+  },
+  {
+    title: "Actionable Insights",
+    description:
+      "Actionable insights to target priority areas for improvement.",
+    icon: <MdOutlineReport />,
+    url: "/service/esg-governance",
+  },
+  {
+    title: "Expert-led Advice",
+    description:
+      "Expert-led advice and strategic roadmap for effective sustainability implementation.",
+    icon: <FaLevelUpAlt />,
+    url: "/service/esg-assurance",
+  },
+  {
+    title: "Automated Mapping",
+    description:
+      "Automated mapping of the responses against multiple industry standards.",
+    icon: <SiHiveBlockchain />,
+    url: "#",
+  },
+ 
+];
+
   return (
-    <div>
+    <div
+
+    >
       <HeroSection />
-      <BenefitsSection benefits={benefits} />
-      <BenefitsSection benefits={howWeHelp} />
-      <SolutionsCard />
-      {sections.map((ele, index) => (
-        <section className="bg-white rounded-b-3xl " key={index}>
-          <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-            <a href="#" className="inline-flex justify-between cursor-not-allowed items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-200 bg-[#02c2ab] rounded-full hover:bg-[#02c2ab]/40 duration-500 " role="alert">
-              <span className="text-xs bg-[#02c2ab]/20 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span className="text-sm font-medium">Flowbite is out! See what's new</span>
-              <svg className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg>
-            </a>
-            <div className='w-full flex justify-center'>
-              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
-                {ele.title}
-              </h1>
-            </div>
-            <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 ">{ele.discription}</p>
-          </div>
-        </section>
-      ))}
+ 
+   
+    
+       <SolutionHero
+        title={ESGPulse[0].title}
+        discription={ESGPulse[0].discription}
+      
+       />
+    
+ <CardData
+  title="the key benefits for businesses using LevelUp ESG Pulse"
+  reasons={ESGPulseCards}
+  Sectiondescription ="LevelUp empowers businesses with affordable and innovative
+  corporate sustainability solutions, expert-led advice, assurance,
+  and a knowledge and resources hub."
+
+  />
+
+<div className='bg-[#121212] text-white'>
+<SolutionHero
+        title={SustainabilityTracker[0].title}
+        discription={SustainabilityTracker[0].discription}
+      
+       />
+ <CardData
+  title="automated ESG data management platform for businesses"
+  reasons={SustainabilityTrackerCards}
+  Sectiondescription ="Sustainability Tracker puts essential insights at your fingertips. Gain clarity on your biggest ESG opportunities and progress towards goals. Focus your time on initiatives that drive real change. "
+  />
+
+</div>
+
+
+
+<div  className=' text-black'>
+<SolutionHero
+        title={DataLab[0].title}
+        discription={DataLab[0].discription}
+      
+       />
+ <CardData
+  title="the key benefits for businesses using LevelUp ESG Pulse"
+  reasons={DataLabCards}
+  Sectiondescription ="LevelUp empowers businesses with affordable and innovative
+  corporate sustainability solutions, expert-led advice, assurance,
+  and a knowledge and resources hub."
+  />
+</div>
+
+
+
+
+
+
+
+
 
     </div>
   );
