@@ -5,8 +5,9 @@ import { FaLevelUpAlt, FaRegLightbulb } from 'react-icons/fa';
 import { MdCelebration, MdOutlineReport } from 'react-icons/md';
 import { PiRobotLight, PiStrategy } from 'react-icons/pi';
 import SolutionHero from '../../Components/Solutions/Hero';
-import backgroundImage from '../../../public/assets/images/bg/1.jpg';
-
+import ESG from '../../../public/assets/images/esg.png';
+import DS from '../../../public/assets/images/DS.png';
+import AI from '../../../public/assets/images/AI.webp';
 
 
 const Solution = () => {
@@ -171,6 +172,10 @@ const ESGPulseCards = [
         discription={ESGPulse[0].discription}
       
        />
+       <div className='w-full flex -mt-5 justify-center '>
+
+<img src={ESG} alt="Hero Image" className="w-full h-60  max-w-60" />
+</div>
     
  <CardData
   title="the key benefits for businesses using LevelUp ESG Pulse"
@@ -187,6 +192,12 @@ const ESGPulseCards = [
         discription={SustainabilityTracker[0].discription}
       
        />
+
+<div className='w-full flex -mt-5 justify-center '>
+
+<img src={DS} alt="Hero Image" className="w-full   max-w-96" />
+</div>
+
  <CardData
   title="automated ESG data management platform for businesses"
   reasons={SustainabilityTrackerCards}
@@ -203,12 +214,14 @@ const ESGPulseCards = [
         discription={DataLab[0].discription}
       
        />
+              <div className='w-full flex -mt-5 justify-center '>
+
+<img src={AI} alt="Hero Image" className="w-full  max-w-96" />
+</div>
  <CardData
-  title="the key benefits for businesses using LevelUp ESG Pulse"
+  title="Uncover Sustainability Deep Insights with Data Science "
   reasons={DataLabCards}
-  Sectiondescription ="LevelUp empowers businesses with affordable and innovative
-  corporate sustainability solutions, expert-led advice, assurance,
-  and a knowledge and resources hub."
+  Sectiondescription ="We deliver cutting-edge analytics and insights leveraging advanced statistical modelling, machine learning algorithms, and natural language processing. Our customized dashboards visualize complex ESG data to reveal targeted opportunities for improving your environmental, social and governance performance. "
   />
 </div>
 
