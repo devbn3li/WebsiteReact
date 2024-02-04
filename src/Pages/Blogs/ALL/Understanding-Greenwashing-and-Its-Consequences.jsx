@@ -76,6 +76,8 @@ const Body = () => (
 
 const BlogTemplete = () => {
   return (
+    <div className='w-full flex justify-center'>
+
     <div className='flex flex-col box-border px-[5%] items-center mt-[4.5rem] text-[#121212] max-w-[1400px]'>
       <div className='flex flex-col max-w-[80rem] mt-24 gap-[40px] pb-[40px]'>
         <H1 text={blogTitle} />
@@ -102,6 +104,7 @@ const BlogTemplete = () => {
         </div>
       </div> */}
     </div>
+  </div>
   );
 }
 
