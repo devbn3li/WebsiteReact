@@ -21,29 +21,29 @@ function WaitingListPage() {
             {/* Name input fields */}
             <div className="flex gap-[1.5rem] justify-center flex-col md:flex-row">
               <div className={`${fieldContainer} md:w-[50%]`}>
-                <label htmlFor="first-name" className="field-label">First name</label>
-                <input id="first-name" type="text" name="first name" maxLength="50" pattern="[A-Za-z]+" placeholder="First name" required className="input-field" />
+                <label htmlFor="first-name" className={fieldLabel}>First name</label>
+                <input id="first-name" type="text" name="first name" maxLength="50" pattern="[A-Za-z]+" placeholder="First name" required className={inputField} />
               </div>
-              <div className="field-container md:w-[50%]">
-                <label htmlFor="surname" className="field-label">Surname</label>
-                <input id="surname" type="text" name="surname" placeholder="Surname" pattern="[A-Za-z]+" maxLength="50" required className="input-field" />
+              <div className={`${fieldContainer} md:w-[50%]`}>
+                <label htmlFor="surname" className={fieldLabel}>Surname</label>
+                <input id="surname" type="text" name="surname" placeholder="Surname" pattern="[A-Za-z]+" maxLength="50" required className={inputField} />
               </div>
             </div>
             {/* Company and email input fields */}
             <div className="flex gap-[1.5rem] justify-center flex-col md:flex-row">
-              <div className="field-container md:w-[50%]">
-                <label htmlFor="company-name" className="field-label">Company name</label>
-                <input id="company-name" type="text" name="company name" placeholder="Company name" maxLength="50" required className="input-field" />
+              <div className={`${fieldContainer} md:w-[50%]`}>
+                <label htmlFor="company-name" className={fieldLabel}>Company name</label>
+                <input id="company-name" type="text" name="company name" placeholder="Company name" maxLength="50" required className={inputField} />
               </div>
-              <div className="field-container md:w-[50%]">
+              <div className={`${fieldContainer} md:w-[50%]`}>
                 <label htmlFor="email" className={fieldLabel}>Email</label>
-                <input id="email" type="email" name="email" placeholder="Work email" maxLength="100" required className="input-field" />
+                <input id="email" type="email" name="email" placeholder="Work email" maxLength="100" required className={inputField} />
               </div>
             </div>
             {/* Message textarea */}
-            <div className="field-container w-full">
+            <div className={`${fieldContainer} md:w-full`}>
               <label htmlFor="message" className={fieldLabel}>Your message</label>
-              <textarea id="message" name="message" placeholder="Your message" rows="4" className="input-field"></textarea>
+              <textarea id="message" name="message" placeholder="Your message" rows="4" className={inputField}></textarea>
             </div>
             {/* Submit button */}
             <div className="text-center">

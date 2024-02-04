@@ -36,6 +36,7 @@ import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenw
 // Style Sheets Imports
 import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
+import BlogTemplete from './Pages/Blogs/blogTemplete';
 
 // Application Component
 export function Application() {
@@ -52,7 +53,7 @@ export function Application() {
           <Route path="solution" element={<SolutionPage />} />
           <Route path="waiting-list" element={<WaitingListPage />} />
           <Route path="blogs-discovery" element={<BlogsDiscoveryPage />} />
-          
+
           {/* Legal pages */}
           <Route path="legal/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="legal/cookies" element={<CookiesPolicyPage />} />
@@ -72,9 +73,9 @@ export function Application() {
           {/* Blog article pages */}
           <Route path="blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<EmpoweringCSuiteBlog />} />
           <Route path="blog/all/Empowering-for-Sustainable-Success" element={<EmpoweringForSuccessBlog />} />
-          <Route path="blog/all/Understanding-Greenwashing-and-Its-Consequences" element={<UnderstandingGreenwashingBlog />} />.
+          <Route path="blog/all/Empowering-for-Sustainable-Success" element={<EmpoweringForSuccessBlog />} />
+          <Route path="blog/BlogTemplete" element={<BlogTemplete />} />
         </Route>
-        
         {/* Fallback for unmatched routes */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
