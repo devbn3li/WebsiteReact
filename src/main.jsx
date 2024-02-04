@@ -24,7 +24,6 @@ import ESG_Diagnostic from './Pages/ServicePages/ESG_Diagnostic';
 import Board_Level from './Pages/ServicePages/Board_Level';
 import Blog from './Pages/Blogs/Blog';
 import WaitingList from './Pages/WaitingList/WaitingList';
-import Solution from './Pages/Solution/Solution';
 
 // Import style sheets
 import '/public/assets/css/index.css';
@@ -38,32 +37,31 @@ import BlogTemplete from './Pages/Blogs/blogTemplete';
 export function Application() {
   return (
     <Router>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<LandingPage />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/academy" element={<Academy />} />
-            <Route path="/service/esg-controllership" element={<ESG_Controllership />} />
-            <Route path="/service/esg-ia-program" element={<ESG_IA_program />} />
-            <Route path="/service/esg-governance" element={<ESG_Governance />} />
-            <Route path="/service/esg-assurance" element={<ESG_Assurance />} />
-            <Route path="/service/strategic-stakeholder" element={<Strategic_Stakeholder />} />
-            <Route path="/service/esg-strategy" element={<ESG_Strategy />} />
-            <Route path="/service/esg-compliance" element={<ESG_Compliance />} />
-            <Route path="/service/erm-program" element={<ERM_Program />} />
-            <Route path="/service/esg-diagnostic" element={<ESG_Diagnostic />} />
-            <Route path="/service/board-level" element={<Board_Level />} />
-            <Route path= "/legal/PrivacyPolicy" element={<PrivacyPolicy/>} />
-            <Route path= "/legal/Cookies" element={<Cookies/>} />
-            <Route path= "/blogs/blogTemplete" element={<BlogTemplete/>} />
-            <Route path= "/blogs/blog" element={<Blog/>} />
-            <Route path= "/waiting-list" element={<WaitingList/>} />
-            <Route path= "/solution" element={<Solution/>} />
-          </Route>
-          <Route path="*" element={<NotFound />} /> 
-        </Routes>
-    </Router> 
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<LandingPage />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/academy" element={<Academy />} />
+          <Route path="/service/esg-controllership" element={<ESG_Controllership />} />
+          <Route path="/service/esg-ia-program" element={<ESG_IA_program />} />
+          <Route path="/service/esg-governance" element={<ESG_Governance />} />
+          <Route path="/service/esg-assurance" element={<ESG_Assurance />} />
+          <Route path="/service/strategic-stakeholder" element={<Strategic_Stakeholder />} />
+          <Route path="/service/esg-strategy" element={<ESG_Strategy />} />
+          <Route path="/service/esg-compliance" element={<ESG_Compliance />} />
+          <Route path="/service/erm-program" element={<ERM_Program />} />
+          <Route path="/service/esg-diagnostic" element={<ESG_Diagnostic />} />
+          <Route path="/service/board-level" element={<Board_Level />} />
+          <Route path="/legal/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/legal/Cookies" element={<Cookies />} />
+          <Route path="/blogs/blogTemplete" element={<BlogTemplete />} />
+          <Route path="/blogs/blog" element={<Blog />} />
+          <Route path="/waiting-list" element={<WaitingList />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 
