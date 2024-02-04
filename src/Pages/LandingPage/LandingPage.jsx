@@ -6,6 +6,7 @@ import Testimonials from '../../Components/Testimonials/Testimonials';
 import Why from '../../Components/Why';
 import FAQs from '../../Components/FAQs';
 import Popup from '../../Components/Popup/Popup';
+import BlogCardsList from '../../Components/BlogCard/BlogCardsList';
 
 const LandingPage = () => {  
     const [isModalOpen, setModalOpen] = useState(false);
@@ -28,6 +29,7 @@ const LandingPage = () => {
       <Offer />
       <Testimonials />
       <Why />
+      <BlogCardsList/>
       <FAQs/>
     </div>
   );

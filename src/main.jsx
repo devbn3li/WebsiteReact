@@ -24,6 +24,9 @@ import ESG_Diagnostic from './Pages/ServicePages/ESG_Diagnostic';
 import Board_Level from './Pages/ServicePages/Board_Level';
 import Blog from './Pages/Blogs/Blog';
 import WaitingList from './Pages/WaitingList/WaitingList';
+import Blogone from './Pages/Blogs/ALL/Empowering-the-C-Suite-for-Sustainable-Success';
+import Blogtwo from './Pages/Blogs/ALL/Empowering-for-Sustainable-Success';
+import Blogthree from './Pages/Blogs/ALL/Understanding-Greenwashing-and-Its-Consequences';
 
 // Import style sheets
 import '/public/assets/css/index.css';
@@ -60,6 +63,10 @@ export function Application() {
           <Route path="/blogs/blog" element={<Blog />} />
           <Route path="/solution" element={<Solution />} />
           <Route path="/waiting-list" element={<WaitingList />} />
+          <Route path="/blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<Blogone />} />
+          <Route path="/blog/all/Empowering-for-Sustainable-Success" element={<Blogtwo />} />
+          <Route path="/blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<Blogthree />} />
+
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
