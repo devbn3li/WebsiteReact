@@ -84,7 +84,6 @@ const generateBody = (content) => {
 
       case 'quote':
         return (<Quote key={index} text={element.data} />);
-
       default:
         return null;
     }
@@ -100,7 +99,7 @@ const generateBody = (content) => {
 
 const BlogTemplete = () => {
   return (
-    <div className='flex flex-col box-border px-[5%] items-center mt-[4.5rem] text-[#121212] max-w-[1400px]'>
+    <div className='flex flex-col items-center box-border px-[5%] justify-center mx-auto mt-[4.5rem] text-[#121212] max-w-[1400px]'>
       <div className='flex flex-col max-w-[80rem] mt-24 gap-[40px] pb-[40px]'>
         <H1 text={blogTitle} />
         <div>
