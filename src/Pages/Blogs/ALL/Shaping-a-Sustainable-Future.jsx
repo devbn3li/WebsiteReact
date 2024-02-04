@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import BlogCard from '../../Components/BlogCard/BlogCard';
 
 const blogTitle = 'How to improve Web Design Process';
-const writerName = 'John Doe';
+const writerName = 'Deepa';
 const publishDate = 'December 24, 2023';
 const publishTime = '5 min';
 const imgSrc = image;
@@ -17,7 +17,7 @@ const blogs = [
     title: "Sample Blog Title 1",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    author: "John Doe",
+    author: "Deepa",
     date: "February 3, 2024",
     readingTime: "5 min read",
     link: "/blog/sample-blog-1",
@@ -27,7 +27,7 @@ const blogs = [
     title: "Sample Blog Title 2",
     description:
       "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    author: "Jane Smith",
+    author: "Deepa",
     date: "February 5, 2024",
     readingTime: "8 min read",
     link: "/blog/sample-blog-2",
