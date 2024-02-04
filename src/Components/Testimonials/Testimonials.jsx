@@ -43,25 +43,28 @@ const Testimonials = () => {
 
   // Render Testimonials component
   return (
-    <section className='max-w-[1400px] p-[5%] py-28 text-[#B3FFD6] bg-[#121212] rounded-[20px] w-full'>
+   <div className='w-full bg-[#121212] h-screen grid place-items-center'>
+     <section className='max-w-[1400px] p-[5%] py-28 text-[#B3FFD6] bg-[#121212]/20 border-2 border-gray-200/20 rounded-[20px] w-full'>
       <div className='flex flex-col'>
         {/* Section Title */}
-        <h1 className='text-5xl font-bold mb-6 max-[679px]:text-4xl'>{sectionTitle}</h1>
+        <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-100 capitalize md:text-5xl lg:text-6xl ">
+          {sectionTitle}</h1>
         <span className='flex gap-6 max-w-[39.25rem] max-[679px]:max-w-[360px]'>
           <div className='flex items-start max-[679px]:hidden'>
             {/* Testimonial Images */}
-            <div className="aspect-square rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden z-[3]">
+            <div className="aspect-square hover:scale-110 cursor-pointer select-none duration-500  rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden z-[3]">
               <img src={person1} alt="Person1" className="min-h-full min-w-full object-cover" />
             </div>
-            <div className="aspect-square rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden -ml-4 z-[2]">
+            <div className="aspect-square hover:scale-110 cursor-pointer select-none duration-500  rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden -ml-4 z-[2]">
               <img src={person2} alt="Person2" className="min-h-full min-w-full object-cover" />
             </div>
-            <div className="aspect-square rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden -ml-4 z-[1]">
+            <div className="aspect-square hover:scale-110 cursor-pointer select-none duration-500  rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden -ml-4 z-[1]">
               <img src={person3} alt="Person3" className="min-h-full min-w-full object-cover" />
             </div>
           </div>
           {/* Section Description */}
-          <p className='text-[18px] max-[679px]:text-base'>{sectionDescription}</p>
+          <p className="mb-8 text-lg font-normal text-[#B3FFD6] lg:text-xl  ">
+            {sectionDescription}</p>
         </span>
         <div className='flex justify-end gap-6 mb-6'>
           {/* Previous Testimonial Button */}
@@ -75,6 +78,7 @@ const Testimonials = () => {
         </div>
       </div>
     </section>
+   </div>
   );
 }
 

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const TestimonialCard = ({ name, message, title = '' }, index) => {
   return (
     // The main container for the testimonial card with applied styling for appearance and responsiveness.
-    <div key={index} className='rounded-2xl bg-[#b3ffd6] p-8 text-base flex flex-col justify-between text-[#121212] w-[500px] box-border max-[991px]:flex-shrink-0 max-[991px]:flex-grow-0 max-[550px]:w-[250px]'>
+    <div key={index} className='rounded-2xl bg-[#b3ffd6] p-8 text-base flex flex-col justify-between text-[#121212] min-w-[500px] box-border max-[991px]:flex-shrink-0 max-[991px]:flex-grow-0 max-[550px]:w-[250px]'>
       {/* Displays the message of the testimonial. */}
       <p className='mb-8 pr-1'>{message}</p>
       {/* Container for the name and title (if present) of the person giving the testimonial. */}
