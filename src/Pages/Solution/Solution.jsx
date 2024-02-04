@@ -72,54 +72,34 @@ const SustainabilityTrackerCards =[
 
 const DataLabCards =[
   {
-    title: "AI-powered Rapid ESG Assessment",
+    title: "Data Integration",
     description:
-      "AI-powered Rapid ESG assessment powered by innovative AI for maximum efficiency and deep insights.",
+      "We aggregate dispersed ESG data into a unified view for analysis and insights.",
     icon: <MdCelebration />,
     url: "#",
   },
   {
-    title: "Comprehensive Coverage",
+    title: "Advanced Analytics ",
     description:
-      "Comprehensive coverage of the most common ESG factors from leading frameworks.",
+      " Our AI models derive actionable intelligence from the data.",
     icon: <PiRobotLight />,
     url: "/service/esg-ia-program",
   },
   {
-    title: "Tailored Assessment Criteria",
+    title: "Impactful Visualizations",
     description:
-      "Tailored assessment criteria and tools matched to your business size.",
+      "Interactive dashboards make insights intuitive and accessible. ",
     icon: <PiStrategy />,
     url: "/service/esg-strategy",
   },
   {
-    title: "Continuous Innovation",
+    title: "Strategic Recommendations ",
     description:
-      "Continuous innovation and updates based on the latest regulations and research.",
+      "We provide expert guidance to drive strategy and goal setting.",
     icon: <FaRegLightbulb />,
     url: "/service/erm-program",
   },
-  {
-    title: "Actionable Insights",
-    description:
-      "Actionable insights to target priority areas for improvement.",
-    icon: <MdOutlineReport />,
-    url: "/service/esg-governance",
-  },
-  {
-    title: "Expert-led Advice",
-    description:
-      "Expert-led advice and strategic roadmap for effective sustainability implementation.",
-    icon: <FaLevelUpAlt />,
-    url: "/service/esg-assurance",
-  },
-  {
-    title: "Automated Mapping",
-    description:
-      "Automated mapping of the responses against multiple industry standards.",
-    icon: <SiHiveBlockchain />,
-    url: "#",
-  },
+ 
  
 ];
 
@@ -201,7 +181,7 @@ const ESGPulseCards = [
 
   />
 
-<div className='bg-[#121212] text-white'>
+<div className='bg-[#121212] py-12 md:py-20 text-white'>
 <SolutionHero
         title={SustainabilityTracker[0].title}
         discription={SustainabilityTracker[0].discription}
