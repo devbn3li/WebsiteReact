@@ -69,7 +69,7 @@ const services = [
   },
 ];
 
-const ESG_Governance = () => {
+const ESGGovernancePage = () => {
   return (
     <div className="pt-[4.5rem] flex flex-col items-center">
       <Hero_Services
@@ -85,4 +85,4 @@ const ESG_Governance = () => {
   );
 };
 
-export default ESG_Governance;
+export default ESGGovernancePage;

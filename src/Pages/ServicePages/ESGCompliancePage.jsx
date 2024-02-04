@@ -54,7 +54,7 @@ const services = [
 
 ];
 
-const ESG_Compliance = () => {
+const ESGCompliancePage = () => {
   return (
     <div className="pt-[4.5rem] flex flex-col items-center">
       <Hero_Services
@@ -71,4 +71,4 @@ const ESG_Compliance = () => {
   );
 };
 
-export default ESG_Compliance;
+export default ESGCompliancePage;

@@ -1,4 +1,4 @@
-export default function Contact() {
+export default function ContactPage() {
   return (
     <div className="w-full flex justify-center  pt-[7rem] ">
 
@@ -8,8 +8,8 @@ export default function Contact() {
           <p className="mt-5 mb-8 text-[18px] sm:px-32 text-[#3F403E]">Reach out to us now and discover how we can collaborate to bring your vision to life. Get in touch today!
           </p>
           <form
-           action="https://formsubmit.io/send/fae7788e-a910-41c2-a882-d5ba4dd4acf4"
-          className="grid grid-cols-1 gap-y-6 sm:w-[80%] mx-auto ">
+            action="https://formsubmit.io/send/fae7788e-a910-41c2-a882-d5ba4dd4acf4"
+            className="grid grid-cols-1 gap-y-6 sm:w-[80%] mx-auto ">
             <div className="flex gap-[1.5rem]  justify-center flex-col  md:flex-row">
               <div className="md:w-[50%] flex flex-col items-start">
                 <label className="text-[#3F403E] mb-2 font-[400] text-[1.2rem]">First name</label>

@@ -61,15 +61,14 @@ const services = [
 ]
 
 
-const ERM_Program = () => {
+const ERMProgramPage = () => {
   return (
     <div className='pt-[4.5rem] flex flex-col items-center'>
       <Hero_Services title={"ESG in ERM Program"} subtitle={"We provide comprehensive support to enterprise risk management (ERM) functions in building their ESG capabilities. Our services include the development of an ESG ERM strategy and methodology manual, tailored to your organization's needs. We understand that ESG factors are increasingly important in risk management, and we integrate these factors into your ERM program."} />
       <SliderLogos />
       <Cursal services={services}/>
-    
     </div>
   );
 }
 
-export default ERM_Program;
+export default ERMProgramPage;

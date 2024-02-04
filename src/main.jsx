@@ -1,36 +1,42 @@
-// Import React and required modules from react-router
+// React and Router Imports
 import ReactDOM from 'react-dom/client';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Import page components
+// Layout and Page Component Imports
 import Layout from './Pages/Layout';
 import LandingPage from './Pages/LandingPage/LandingPage';
-import NotFound from './Pages/NotFound'; // Import the 404 page component
-import Contact from './Pages/Contact/Contact';
-import About from './Pages/About/About';
-import ESG_Controllership from './Pages/ServicePages/ESG_Controllership';
-import ESG_IA_program from './Pages/ServicePages/ESG_IA_program';
-import ESG_Governance from './Pages/ServicePages/ESG_Governance';
-import ESG_Assurance from './Pages/ServicePages/ESG_Assurance';
-import Strategic_Stakeholder from './Pages/ServicePages/Strategic_Stakeholder';
-import ESG_Strategy from './Pages/ServicePages/ESG_Strategy';
-import ESG_Compliance from './Pages/ServicePages/ESG_Compliance';
-import ERM_Program from './Pages/ServicePages/ERM_Program';
-import ESG_Diagnostic from './Pages/ServicePages/ESG_Diagnostic';
-import Board_Level from './Pages/ServicePages/Board_Level';
-import Blog from './Pages/Blogs/Blog';
-import WaitingList from './Pages/WaitingList/WaitingList';
-import Blogone from './Pages/Blogs/ALL/Empowering-the-C-Suite-for-Sustainable-Success';
-import Blogtwo from './Pages/Blogs/ALL/Empowering-for-Sustainable-Success';
-import Blogthree from './Pages/Blogs/ALL/Understanding-Greenwashing-and-Its-Consequences';
+import NotFoundPage from './Pages/NotFoundPage';
+import ContactPage from './Pages/ContactPage/ContactPage';
+import AboutPage from './Pages/AboutPage/AboutPage';
+import AcademyPage from './Pages/AcademyPage/AcademyPage';
+import PrivacyPolicyPage from './Pages/LegelPages/PrivacyPolicyPage';
+import CookiesPolicyPage from './Pages/LegelPages/CookiesPolicyPage';
+import SolutionPage from './Pages/SolutionPage/SolutionPage';
+import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
+// import BlogPage from './Pages/BlogPage';
 
-// Import style sheets
+// Service Pages Imports
+import ESGControllershipPage from './Pages/ServicePages/ESGControllershipPage';
+import ESGIAProgramPage from './Pages/ServicePages/ESGIAProgramPage';
+import ESGGovernance from './Pages/ServicePages/ESGGovernancePage';
+import ESGAssurance from './Pages/ServicePages/ESGAssurancePage';
+import StrategicStakeholder from './Pages/ServicePages/StrategicStakeholderPage';
+import ESGStrategy from './Pages/ServicePages/ESGStrategyPage';
+import ESGCompliance from './Pages/ServicePages/ESGCompliancePage';
+import ERMProgram from './Pages/ServicePages/ERMProgramPage';
+import ESGDiagnostic from './Pages/ServicePages/ESGDiagnosticPage';
+import BoardLevel from './Pages/ServicePages/BoardLevelPage';
+
+// Blog Pages Imports
+import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
+import EmpoweringCSuiteBlog from './Pages/Blogs/ALL/EmpoweringCSuiteBlog';
+import EmpoweringForSuccessBlog from './Pages/Blogs/ALL/EmpoweringForSuccessBlog';
+import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenwashingBlog';
+
+// Style Sheets Imports
 import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
+<<<<<<< HEAD
 import Academy from './Pages/Academy/Academy';
 import PrivacyPolicy from './Pages/legal/PrivacyPolicy';
 import Cookies from './Pages/legal/Cookies';
@@ -38,43 +44,63 @@ import BlogTemplete from './Pages/Blogs/blogTemplete';
 import Solution from './Pages/Solution/Solution';
 import ScrollToTop from './Components/ScrollToTop';
 
+=======
+>>>>>>> f5cf28b ([fix])
 
+// Application Component
 export function Application() {
   return (
+<<<<<<< HEAD
     <Router>
     <ScrollToTop />
+=======
+    <BrowserRouter>
+>>>>>>> f5cf28b ([fix])
       <Routes>
+        {/* Layout route wraps all page routes */}
         <Route path="/" element={<Layout />}>
+          {/* Main pages */}
           <Route index element={<LandingPage />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/academy" element={<Academy />} />
-          <Route path="/service/esg-controllership" element={<ESG_Controllership />} />
-          <Route path="/service/esg-ia-program" element={<ESG_IA_program />} />
-          <Route path="/service/esg-governance" element={<ESG_Governance />} />
-          <Route path="/service/esg-assurance" element={<ESG_Assurance />} />
-          <Route path="/service/strategic-stakeholder" element={<Strategic_Stakeholder />} />
-          <Route path="/service/esg-strategy" element={<ESG_Strategy />} />
-          <Route path="/service/esg-compliance" element={<ESG_Compliance />} />
-          <Route path="/service/erm-program" element={<ERM_Program />} />
-          <Route path="/service/esg-diagnostic" element={<ESG_Diagnostic />} />
-          <Route path="/service/board-level" element={<Board_Level />} />
-          <Route path="/legal/PrivacyPolicy" element={<PrivacyPolicy />} />
-          <Route path="/legal/Cookies" element={<Cookies />} />
-          <Route path="/blogs/blogTemplete" element={<BlogTemplete />} />
-          <Route path="/blogs/blog" element={<Blog />} />
-          <Route path="/solution" element={<Solution />} />
-          <Route path="/waitinglist" element={<WaitingList />} />
-          <Route path="/blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<Blogone />} />
-          <Route path="/blog/all/Empowering-for-Sustainable-Success" element={<Blogtwo />} />
-          <Route path="/blog/all/Understanding-Greenwashing-and-Its-Consequences" element={<Blogthree />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="academy" element={<AcademyPage />} />
+          <Route path="solution" element={<SolutionPage />} />
+          <Route path="waiting-list" element={<WaitingListPage />} />
+          <Route path="blogs-discovery" element={<BlogsDiscoveryPage />} />
+          
+          {/* Legal pages */}
+          <Route path="legal/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="legal/cookies" element={<CookiesPolicyPage />} />
 
+          {/* Service pages */}
+          <Route path="service/esg-controllership" element={<ESGControllershipPage />} />
+          <Route path="service/esg-ia-program" element={<ESGIAProgramPage />} />
+          <Route path="service/esg-governance" element={<ESGGovernance />} />
+          <Route path="service/esg-assurance" element={<ESGAssurance />} />
+          <Route path="service/strategic-stakeholder" element={<StrategicStakeholder />} />
+          <Route path="service/esg-strategy" element={<ESGStrategy />} />
+          <Route path="service/esg-compliance" element={<ESGCompliance />} />
+          <Route path="service/erm-program" element={<ERMProgram />} />
+          <Route path="service/esg-diagnostic" element={<ESGDiagnostic />} />
+          <Route path="service/board-level" element={<BoardLevel />} />
+
+          {/* Blog article pages */}
+          <Route path="blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<EmpoweringCSuiteBlog />} />
+          <Route path="blog/all/Empowering-for-Sustainable-Success" element={<EmpoweringForSuccessBlog />} />
+          <Route path="blog/all/Understanding-Greenwashing-and-Its-Consequences" element={<UnderstandingGreenwashingBlog />} />.
         </Route>
-        <Route path="*" element={<NotFound />} />
+        
+        {/* Fallback for unmatched routes */}
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
-const rootContainer = document.getElementById('root');
-ReactDOM.createRoot(rootContainer).render(<Application />);
+// Rendering the Application
+const root = document.getElementById('root');
+if (root) {
+  ReactDOM.createRoot(root).render(<Application />);
+} else {
+  console.error('Failed to find the root element');
+}

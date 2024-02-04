@@ -40,7 +40,7 @@ const Body = () => (
 </div>
 );
 
-const BlogTemplete = () => {
+const UnderstandingGreenwashingBlog = () => {
   return (
     <div className='w-full flex justify-center'>
 
@@ -74,4 +74,5 @@ const BlogTemplete = () => {
   );
 }
 
-export default BlogTemplete;
+export default UnderstandingGreenwashingBlog
+;

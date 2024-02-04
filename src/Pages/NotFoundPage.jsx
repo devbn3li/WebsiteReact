@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar/Navbar';
 
-const NotFound = () => {
+const NotFoundPage = () => {
   return (
     <>
       <Navbar />
@@ -26,4 +26,4 @@ const NotFound = () => {
   );
 }
 
-export default NotFound;
+export default NotFoundPage;

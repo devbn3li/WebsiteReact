@@ -49,7 +49,7 @@ const services = [
 ]
 
 
-const ESG_Diagnostic = () => {
+const ESGDiagnosticPage = () => {
   return (
     <div className='pt-[4.5rem] flex flex-col items-center'>
       <Hero_Services title={"ESG Diagnostic Assessment"} subtitle={"Our innovative ESG Diagnostics provides a rapid assessment of your current ESG performance against leading practices. The online assessment benchmarks your program and identifies priority actions across governance, environment and social impact. It helps identify and prioritize actions for improvement."} buttonText={"Test"}/>
@@ -59,4 +59,4 @@ const ESG_Diagnostic = () => {
   );
 }
 
-export default ESG_Diagnostic;
+export default ESGDiagnosticPage;

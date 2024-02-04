@@ -40,7 +40,7 @@ const services = [
 ]
 
 
-const ESG_Assurance = () => {
+const ESGAssurancePage = () => {
   return (
     <div className='pt-[4.5rem] flex flex-col items-center'>
       <Hero_Services title={"ESG Assurance"} subtitle={"We provide ISAE 3000 and ISAE 3410 assurance over companies' ESG information and metrics. We ensure standardized and consistent measurement and disclosure of non-financial information. Our assurance covers a wide range of ESG metrics, from greenhouse gas emissions to workforce diversity and pay gaps."} />
@@ -51,4 +51,4 @@ const ESG_Assurance = () => {
   );
 }
 
-export default ESG_Assurance;
+export default ESGAssurancePage;
