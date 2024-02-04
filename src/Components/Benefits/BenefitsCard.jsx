@@ -13,8 +13,11 @@ const BenefitsCard = ({ icon, title, description, imageUrl }) => (
       <span className='bg-[#02c2ab] mb-3 text-[#121212] aspect-square max-w-10 box-border p-2 rounded-lg'>
         {icon}
       </span>
-      <h1 className="text-2xl font-bold leading-[1.4] pr-1 box-border">{title}</h1>
-      <p className='text-base min-[991px]:min-h-36'>{description}</p>
+      <h1 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl ">
+        {title}</h1>
+      <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl  ">
+        
+        {description}</p>
     </div>
     <div className='aspect-[1/1.2] w-full rounded-2xl overflow-hidden'>
       <img src={imageUrl} alt={`Benefit: ${title}`} className='object-cover min-h-full min-w-full' />
