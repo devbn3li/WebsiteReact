@@ -36,26 +36,11 @@ import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenw
 // Style Sheets Imports
 import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
-<<<<<<< HEAD
-import Academy from './Pages/Academy/Academy';
-import PrivacyPolicy from './Pages/legal/PrivacyPolicy';
-import Cookies from './Pages/legal/Cookies';
-import BlogTemplete from './Pages/Blogs/blogTemplete';
-import Solution from './Pages/Solution/Solution';
-import ScrollToTop from './Components/ScrollToTop';
-
-=======
->>>>>>> f5cf28b ([fix])
 
 // Application Component
 export function Application() {
   return (
-<<<<<<< HEAD
-    <Router>
-    <ScrollToTop />
-=======
     <BrowserRouter>
->>>>>>> f5cf28b ([fix])
       <Routes>
         {/* Layout route wraps all page routes */}
         <Route path="/" element={<Layout />}>
