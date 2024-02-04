@@ -19,7 +19,7 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="lg:w-1/2">
-          <img src="../../public/assets/images/Hero-s.png" alt="Hero Image" className="w-full" />
+          <img src="/assets/images/Hero-s.png" alt="Hero Image" className="w-full" />
         </div>
       </div>
     </section>

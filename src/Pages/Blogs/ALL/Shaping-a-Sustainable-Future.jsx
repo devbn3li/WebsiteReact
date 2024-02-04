@@ -1,48 +1,13 @@
-import React from 'react';
-import Quote from '../../Components/Blog/Quote'
+
 import H1 from '../../Components/Blog/H1'
 import H2 from '../../Components/Blog/H2'
-import image from '../../../public/assets/images/blogs/blog_1.jpg';
-import { Link } from 'react-router-dom';
-import BlogCard from '../../Components/BlogCard/BlogCard';
+import image from '../../../../public/assets/images/blogs/1.png';
 
 const blogTitle = 'How to improve Web Design Process';
 const writerName = 'Deepa';
 const publishDate = 'December 24, 2023';
 const publishTime = '5 min';
 const imgSrc = image;
-const blogs = [
-  {
-    img: "../../../public/assets/images/business-people-shaking-hands-together.avif",
-    title: "Sample Blog Title 1",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    author: "Deepa",
-    date: "February 3, 2024",
-    readingTime: "5 min read",
-    link: "/blog/sample-blog-1",
-  },
-  {
-    img: "../../../public/assets/images/business-people-shaking-hands-together.avif",
-    title: "Sample Blog Title 2",
-    description:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    author: "Deepa",
-    date: "February 5, 2024",
-    readingTime: "8 min read",
-    link: "/blog/sample-blog-2",
-  },
-  {
-    img: "../../../public/assets/images/business-people-shaking-hands-together.avif",
-    title: "Sample Blog Title 3",
-    description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    author: "Alice Johnson",
-    date: "February 7, 2024",
-    readingTime: "10 min read",
-    link: "/blog/sample-blog-3",
-  },
-];
 
 
 const Body = () => (
