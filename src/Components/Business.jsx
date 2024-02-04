@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faDollarSign } from "@fortawesome/free-solid-svg-icons";
-import PrimaryBtn from "./Buttons/PrimaryBtn";
+import PrimaryBtn from "./Buttons/PrimaryButton";
 
 const Business = () => {
   return (
