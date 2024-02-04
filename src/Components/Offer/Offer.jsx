@@ -20,12 +20,14 @@ const MoneyIcon = () => (
 //Generates each item for rendering
 const OfferItem = ({icon, title, description}, index) => {
   return (
-    <div className="" key={index}>
-      <div className="mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-10 p-2">
+    <div className="hover:bg-[#02c2ab]/20 cursor-pointer hover:scale-105 duration-500 p-4 rounded-3xl" key={index}>
+      <div className="mb-3  flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-10 p-2">
         {icon}
       </div>
-      <h3 className="mb-3 text-xl font-bold">{title}</h3>
-      <p>{description}</p>
+      <h1 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl ">
+        {title}</h1>
+        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl ">
+        {description}</p>
     </div>
   );
 };
@@ -58,14 +60,23 @@ const Offer = () => {
   ];
   /* Return JSX component */
   return (
-    <section className='mt-[4.5rem] w-full max-w-[1400px] gap-12 px-[5%] pt-28 pb-8 flex justify-between'>
-      <div className="w-[55%] gap-10 flex flex-col justify-center max-[996px]:w-full">
-        <h1 className='text-[48px] max-[996px]:text-[44px] font-bold max-[996px]:font-semibold leading-[1.2] w-full inline-block'>{sectionTitle}</h1>
-        <p>{sectionDescription}</p>
-        <div className='flex gap-5 max-[479px]:flex-wrap'>
+  <div className='max-w-[1400px]  py-28 mt-[4.5rem] flex justify-center flex-col'>
+   <div className=' w-full px-[5%]   mb-10'>
+      <h1 className="mb-4 text-4xl  max-w-[1200px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+          {sectionTitle}</h1>
+          <p className=" text-lg font-normal text-gray-500 lg:text-xl  ">
+          
+          {sectionDescription}</p>  
+      </div>
+      <div className='px-[5%]'>  <div className='w-full border-[#02c2ab]  border-b-2     mb-10'></div>
+</div>
+  <section className=' w-full  gap-12 px-[5%]  pb-8 flex justify-between'>
+     
+      <div className="w-[55%] gap-5 flex flex-col justify-center max-[996px]:w-full">
+      
           {items.map(OfferItem)}
-        </div>
-        <div className='font-bold'>
+      
+        <div className='font-bold pt-6'>
           <PrimaryBtn path='/contact' title='Make Impact with us' classes='bg-[#e6e6e5] !text-[#121212] border-[#e6e6e5] px-6 py-3 max-[479px]:w-full' />
         </div>
       </div>
@@ -74,6 +85,7 @@ const Offer = () => {
         <img src="/assets/images/image-Mask.svg" className='absolute top-0 left-0 h-full' />
       </div>
     </section>
+    </div>
   );
 };
 
