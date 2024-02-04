@@ -62,7 +62,7 @@ export function Application() {
           <Route path="/blogs/blogTemplete" element={<BlogTemplete />} />
           <Route path="/blogs/blog" element={<Blog />} />
           <Route path="/solution" element={<Solution />} />
-          <Route path="/waiting-list" element={<WaitingList />} />
+          <Route path="/waitinglist" element={<WaitingList />} />
           <Route path="/blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<Blogone />} />
           <Route path="/blog/all/Empowering-for-Sustainable-Success" element={<Blogtwo />} />
           <Route path="/blog/all/Understanding-Greenwashing-and-Its-Consequences" element={<Blogthree />} />

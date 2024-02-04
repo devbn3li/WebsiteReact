@@ -66,7 +66,9 @@ const Footer = () => {
                 <div className="text-black text-[32px] font-bold ">
                   Talk to an Impact Maker
                 </div>
-                <div className="flex gap-6 max-[991px]:flex-col lg:justify-between">
+                <form 
+                  action="https://formsubmit.io/send/fae7788e-a910-41c2-a882-d5ba4dd4acf4"
+                className="flex gap-6 max-[991px]:flex-col lg:justify-between">
                   <input
                     type="text"
                     name="first name"
@@ -79,7 +81,7 @@ const Footer = () => {
                     placeholder="Surname"
                     className="py-2 px-3 rounded-md"
                   />
-                </div>
+                </form>
                 <input
                   type="email"
                   placeholder="Work email"
