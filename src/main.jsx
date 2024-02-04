@@ -36,11 +36,13 @@ import PrivacyPolicy from './Pages/legal/PrivacyPolicy';
 import Cookies from './Pages/legal/Cookies';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
 import Solution from './Pages/Solution/Solution';
+import ScrollToTop from './Components/ScrollToTop';
 
 
 export function Application() {
   return (
     <Router>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<LandingPage />} />
