@@ -3,6 +3,7 @@ import { MdCelebration, MdOutlineReport, MdLeaderboard } from "react-icons/md";
 import { FaLevelUpAlt } from "react-icons/fa";
 import { PiRobotLight, PiStrategy } from "react-icons/pi";
 import { SiHiveBlockchain } from "react-icons/si";
+import backgroundImage from "../../public/assets/images/bg/1.jpg";
 
 const Why = () => {
   const reasons = [
@@ -65,32 +66,57 @@ const Why = () => {
   ];
 
   return (
-    <section className="why max-w-7xl mx-auto pt-28">
-      <div className="px-[5%] w-full pb-20">
-        <div className="flex flex-col gap-14">
-          <div className="flex flex-col max-w-[628px] gap-3">
-            <h2 className="text-5xl font-bold">Why Choosing LevelUp</h2>
-            <p>
-              LevelUp empowers businesses to address the complexity and costly
-              sustainable transformation by providing affordable yet innovative
+  <div
+  style={ {backgroundImage: `url(${backgroundImage})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat',} }
+  className="w-full bg-[#F9FFF5] shadow-none"
+  >
+      <section
+   
+    className='why max-w-7xl mx-auto pt-28'>
+      <div className='px-[5%] w-full pb-20'>
+        <div className='flex flex-col gap-1'>
+          <div className='flex flex-col max-w-[90.25rem] gap-3'>
+            <h1 className='mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl '>
+              Why Choosing LevelUp
+            </h1>
+            <p className='mb-8 text-lg font-normal text-gray-500 lg:text-xl  '>
+              LevelUp empowers businesses with affordable and innovative
               corporate sustainability solutions, expert-led advice, assurance,
-              knowledge and resources hub.
+              and a knowledge and resources hub.
             </p>
+            <div className=''>
+              {" "}
+              <div className='w-full border-[#02c2ab]  border-b-2     mb-10'></div>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
+
+          <div className='flex flex-wrap gap-4 justify-center'>
             {reasons.map((reason, index) => (
-              <a href={reason.url} key={index} className="reason-link transition duration-500 hover:bg-gray-200 transform hover:scale-95 rounded-md	p-4">
-                <div className="reason-item mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px] ">
+              <a
+                href={reason.url}
+                key={index}
+            
+                className='reason-link max-w-[500px] border-2 border-gray-200/80 backdrop-blur-lg   transition duration-500 hover:bg-gray-200 transform hover:scale-95 rounded-md	p-6'>
+               <div className="flex gap-2">
+               <div className='reason-item mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px] '>
                   {reason.icon}
                 </div>
-                <h3 className="mb-3 text-xl font-bold">{reason.title}</h3>
-                <p>{reason.description}</p>
+                <div className="grid place-items-center">
+                  {" "}
+                  <h3 className='mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl '>{reason.title}</h3>
+                </div>
+               </div>
+               <div className="min-h-[100px] grid place-items-center">
+               <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl ">{reason.description}</p>
+               </div>
+                
               </a>
             ))}
           </div>
         </div>
       </div>
     </section>
+  </div>
   );
 };
 
