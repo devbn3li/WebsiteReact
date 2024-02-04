@@ -32,6 +32,7 @@ import Academy from './Pages/Academy/Academy';
 import PrivacyPolicy from './Pages/legal/PrivacyPolicy';
 import Cookies from './Pages/legal/Cookies';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
+import Solution from './Pages/Solution/Solution';
 
 
 export function Application() {
@@ -57,6 +58,7 @@ export function Application() {
           <Route path="/legal/Cookies" element={<Cookies />} />
           <Route path="/blogs/blogTemplete" element={<BlogTemplete />} />
           <Route path="/blogs/blog" element={<Blog />} />
+          <Route path="/solution" element={<Solution />} />
           <Route path="/waiting-list" element={<WaitingList />} />
         </Route>
         <Route path="*" element={<NotFound />} />
