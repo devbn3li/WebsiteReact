@@ -96,7 +96,7 @@ const Why = () => {
                 href={reason.url}
                 key={index}
             
-                className='reason-link max-w-[500px] border-2 border-gray-200/80 backdrop-blur-lg   transition duration-500 hover:bg-gray-200 transform hover:scale-95 rounded-md	p-6'>
+                className='reason-link max-w-[500px] border-2 border-gray-200/80 backdrop-blur-lg   transition duration-500 hover:bg-gray-200 transform hover:scale-95 rounded-2xl	p-6'>
                <div className="flex gap-2">
                <div className='reason-item mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px] '>
                   {reason.icon}
