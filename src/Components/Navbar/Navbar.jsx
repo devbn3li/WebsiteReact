@@ -5,7 +5,7 @@ import NavLink from "./NavbarLink";
 import PrimaryBtn from "../Buttons/PrimaryBtn";
 import { FaLeaf } from "react-icons/fa6";
 import { IoEarthSharp } from "react-icons/io5";
-import Business from './../Business';
+// import Business from './../Business';
 
 // Define navigation links
 const NAV_LINKS = [
@@ -14,7 +14,7 @@ const NAV_LINKS = [
   { path: "/contact", title: "Contact us" },
 ];
 
-const services = [
+const solutions = [
   { path: "/service/esg-controllership", title: "Controllership " },
   { path: "/service/esg-ia-program", title: "IA-program " },
   { path: "/service/esg-governance", title: "Governance " },
@@ -58,33 +58,30 @@ const Navbar = () => {
             className='hidden flex-col aspect-square w-12 justify-center items-center gap-[6px] max-[991px]:flex'
             onClick={() => toggleMenu()}>
             <span
-              className={`w-6 h-[2px] bg-[#121212] transition-all duration-[.45s] ${
-                isOpen
+              className={`w-6 h-[2px] bg-[#121212] transition-all duration-[.45s] ${isOpen
                   ? "-rotate-45 translate-y-2 delay-[.35s]"
                   : "rotate-0 translate-y-0"
-              } `}></span>
+                } `}></span>
             <span
-              className={`h-[2px] bg-[#121212] transition-all duration-[.45s] ${
-                isOpen ? "w-0" : "w-6 delay-[.35s]"
-              } `}></span>
+              className={`h-[2px] bg-[#121212] transition-all duration-[.45s] ${isOpen ? "w-0" : "w-6 delay-[.35s]"
+                } `}></span>
             <span
-              className={`w-6 h-[2px] bg-[#121212] transition-all duration-[.45s] ${
-                isOpen
+              className={`w-6 h-[2px] bg-[#121212] transition-all duration-[.45s] ${isOpen
                   ? "rotate-45 -translate-y-2 delay-[.35s]"
                   : "rotate-0 translate-y-0"
-              } `}></span>
+                } `}></span>
           </button>
         </div>
         <div
-          className={`flex gap-4 font-bold text-center transition-all duration-[.45s] box-border ${
-            isOpen ? "top-full" : "-top-[100vh]"
-          } left-0 z-40 bg-white
+          className={`flex gap-4 font-bold text-center transition-all duration-[.45s] box-border ${isOpen ? "top-full" : "-top-[100vh]"
+            } left-0 z-40 bg-white
                       max-[991px]:flex-col max-[991px]:absolute max-[991px]:w-full max-[991px]:px-[5%] max-w-full max-[991px]:pb-[6.5rem] max-[991px]:h-[calc(100vh-4.5rem)] max-[991px]:text-lg max-[991px]:border-b max-[991px]:border-black
                       `}>
           <div className='flex max-[991px]:flex-col justify-center items-center'>
-            <div className='relative group cursor-pointer'>
+
+            {/* Services links */}
+            <div className='group cursor-pointer'>
               <div
-                onClick={toggleServicesActive}
                 className='px-4 py-2 hover:bg-[#e6e6e5] rounded-lg transition-all duration-[.45s] inline-block max-[991px]:hover:bg-transparent max-[991px]:px-0 max-[991px]:py-3'>
                 Services
               </div>
@@ -106,18 +103,22 @@ const Navbar = () => {
                   </span>
                   <span>Business Services</span>
                 </Link>
-               
               </div>
             </div>
-            <div className='group cursor-pointer'>
+
+
+            {/* Solutions links */}
+            <div
+              className='group cursor-pointer'
+              onClick={toggleServicesActive}
+            >
               <div className='px-4 py-2 hover:bg-[#e6e6e5] rounded-lg transition-all duration-[.45s] inline-block max-[991px]:hover:bg-transparent max-[991px]:px-0 max-[991px]:py-3'>
                 Solutions
               </div>
               <div
-                className={`w-[250px]  bg-[#03C2AB] overflow-hidden flex flex-col justify-center px-4 min-[991px]:shadow-lg max-[991px]:w-screen group-hover:h-[360px] transition-all min-[991px]:rounded-3xl min-[991px]:absolute ${
-                  isServicesOpen ? "h-[360px]" : "h-0"
-                }`}>
-                {services.map((item, index) => (
+                className={`w-[250px]  bg-[#03C2AB] overflow-hidden flex flex-col justify-center px-4 min-[991px]:shadow-lg max-[991px]:w-screen group-hover:h-[360px] transition-all min-[991px]:rounded-3xl min-[991px]:absolute ${isServicesOpen ? "h-[360px]" : "h-0"
+                  }`}>
+                {solutions.map((item, index) => (
                   <Link
                     key={index}
                     to={item.path}
@@ -129,8 +130,10 @@ const Navbar = () => {
                   </Link>
                 ))}
               </div>
-             
             </div>
+
+
+            {/* Other links */}
             {NAV_LINKS.map((link, index) => (
               <NavLink
                 key={index}
@@ -140,6 +143,7 @@ const Navbar = () => {
               />
             ))}
           </div>
+          {/* CTA Button */}
           <PrimaryBtn path='/contact' title='Make an Impact' />
         </div>
       </div>
