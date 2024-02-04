@@ -20,7 +20,7 @@ const MoneyIcon = () => (
 //Generates each item for rendering
 const OfferItem = ({icon, title, description}, index) => {
   return (
-    <div className="hover:bg-[#02c2ab]/20 cursor-pointer hover:scale-105 duration-500 p-4 rounded-3xl" key={index}>
+    <div className="hover:bg-[#02c2ab]/20 border-2 border-gray-200/80 cursor-pointer hover:scale-105 duration-500 p-4 rounded-3xl" key={index}>
       <div className="mb-3  flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-10 p-2">
         {icon}
       </div>
