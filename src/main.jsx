@@ -24,6 +24,7 @@ import ESG_Diagnostic from './Pages/ServicePages/ESG_Diagnostic';
 import Board_Level from './Pages/ServicePages/Board_Level';
 import Blog from './Pages/Blogs/Blog';
 import WaitingList from './Pages/WaitingList/WaitingList';
+import Solution from './Pages/Solution/Solution';
 
 // Import style sheets
 import '/public/assets/css/index.css';
@@ -58,6 +59,7 @@ export function Application() {
             <Route path= "/blogs/blogTemplete" element={<BlogTemplete/>} />
             <Route path= "/blogs/blog" element={<Blog/>} />
             <Route path= "/waiting-list" element={<WaitingList/>} />
+            <Route path= "/solution" element={<Solution/>} />
           </Route>
           <Route path="*" element={<NotFound />} /> 
         </Routes>
