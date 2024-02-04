@@ -20,7 +20,7 @@ const MoneyIcon = () => (
 //Generates each item for rendering
 const OfferItem = ({icon, title, description}, index) => {
   return (
-    <div className="" key={index}>
+    <div className="hover:bg-[#02c2ab]/20 cursor-pointer hover:scale-105 duration-500 p-4 rounded-3xl" key={index}>
       <div className="mb-3  flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-10 p-2">
         {icon}
       </div>
@@ -76,7 +76,7 @@ const Offer = () => {
       
           {items.map(OfferItem)}
       
-        <div className='font-bold'>
+        <div className='font-bold pt-6'>
           <PrimaryBtn path='/contact' title='Make Impact with us' classes='bg-[#e6e6e5] !text-[#121212] border-[#e6e6e5] px-6 py-3 max-[479px]:w-full' />
         </div>
       </div>
