@@ -1,16 +1,8 @@
 import React from 'react';
 import Card from './Card'; // Make sure to provide the correct path to your Card component
 
-const BenefitsSection = () => {
-  const benefits = [
-    "AI-powered rapid ESG assessment for maximum efficiency and deep insights.",
-    "Comprehensive coverage of the most common ESG factors from leading frameworks.",
-    "Tailored assessment criteria and tools matched to your business size.",
-    "Continuous innovation and updates based on the latest regulations and research.",
-    "Actionable insights to target priority areas for improvement.",
-    "Expert-led advice and strategic roadmap for effective sustainability implementation.",
-    "Automated mapping of the responses against multiple industry standards.",
-  ];
+const BenefitsSection = ({benefits}) => {
+
 
   return (
     <section className="max-w-7xl mx-auto pt-28">
