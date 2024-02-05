@@ -119,7 +119,7 @@ function FAQs() {
                 Leverage our diverse team of sustainability, data, and technology experts spread across the globe. Benefit from a powerful blend of knowledge tailored to address your unique challenges.<br/><br/>
 
                 <span className='font-semibold'>Long-Term Partnership Commitment</span><br/>
-                Choose more than a vendor – choose a partner committed to your success. Our purpose-driven, collaborative approach ensures a lasting ESG impact through enduring partnerships.<br/><br/>
+                Choose more than a tech supplier  – choose a partner committed to your success. Our purpose-driven, collaborative approach ensures a lasting ESG impact through enduring partnerships.<br/><br/>
 
               </p>
             </details>
