@@ -64,7 +64,7 @@ const Testimonials = () => {
               <ArrowRight />
             </button>
           </div>
-          <div className='flex justify-center gap-8 max-w-full overflow-x-auto pb-4'>
+          <div className='sm:max-w-[640] lg:max-w-[1000px] xl:max-w-[1200px] mx-auto  grid grid-flow-col auto-cols-[100%] sm:auto-cols-fr gap-2 sm:gap-8 px-0  overflow-x-auto lg:overflow-x-hidden pb-4'>
             {testimonials.map((testimonial, index) => (
               <TestimonialCard key={index} {...testimonial} />
             ))}
