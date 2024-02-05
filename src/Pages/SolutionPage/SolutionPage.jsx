@@ -15,17 +15,17 @@ import Benefits from "../../Components/LevelUpO2/Benefits";
 const SolutionPage = () => {
   const ESGPulse = [
     {
-      title: "LevelUp ESG Pulse",
+      title: " ESG Pulse® - the future of ESG performance",
       discription:
-        "Sustainability management can be complex, and even more challenging for small and medium enterprises (SMEs) with limited resources and time but with LevelUp it doesn’t have to be.",
+        "LevelUp ESG Pulse is an innovative AI-powered cloud-based ESG diagnostic tool that provides a rapid assessment of your current ESG performance against most common ESG factors.",
     },
   ];
 
   const SustainabilityTracker = [
     {
-      title: "LevelUp Sustainability Tracker",
+      title: "SusTrack AI® - Automated ESG Data Management Platform",
       discription:
-        "Sustainability Tracker makes ESG data collection and reporting simple through intuitive software that works the way you do. Our platform saves you time on data handling, so you can focus on impact creation. ",
+        "SusTrack AI® makes ESG data collection, management and reporting simple through intuitive AI powered software that works the way you do. Our platform saves you time on data handling, so you can focus on impact creation. ",
     },
   ];
 
@@ -180,8 +180,8 @@ const SolutionPage = () => {
 <div className="max-w-[1400px]">
 
 <SolutionHero
-          title={"LevelUp O2"}
-          discription={"offers an innovative and efficient solution for measuring GHG emissions enabling businesses"}
+          title={"LevelUp O2® - AI-powered GHG Emissions Calculator"}
+          discription={"An AI-powered SaaS platform for automated, accurate carbon accounting across your entire value chain emissions and offset management."}
         />
 <Challenge />
    <Solutions />
@@ -202,9 +202,9 @@ const SolutionPage = () => {
         </div>
 
         <CardData
-          title="automated ESG data management platform for businesses"
+          title="Empowering ESG data collection and management for impact"
           reasons={SustainabilityTrackerCards}
-          Sectiondescription="Sustainability Tracker puts essential insights at your fingertips. Gain clarity on your biggest ESG opportunities and progress towards goals. Focus your time on initiatives that drive real change. "
+          Sectiondescription="SusTrack AI® puts essential insights at your fingertips. Gain clarity on your biggest ESG opportunities and progress towards goals. Focus your time on initiatives that drive real change. "
         />
       </div>
 
