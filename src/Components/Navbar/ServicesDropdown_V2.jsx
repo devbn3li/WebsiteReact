@@ -5,7 +5,6 @@ import { FaLeaf } from "react-icons/fa";
 import { IoEarthSharp, IoLeafOutline } from "react-icons/io5";
 import { MdArrowRight } from "react-icons/md";
 import SubNavbarLink from "./SubNavbarLink";
-import Business from "./../Business";
 
 const ESGSmallCards = [
   {

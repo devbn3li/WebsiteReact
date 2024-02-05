@@ -11,6 +11,7 @@ const navigationLinks = [
   { path: "/academy", title: "Academy" },
   { path: "/about", title: "About us" },
   { path: "/contact", title: "Contact us" },
+  
 ];
 
 const Navbar_V2 = () => {
@@ -74,6 +75,13 @@ const Navbar_V2 = () => {
           <div
             className={`flex h-full text-[20px] font-normal max-[1130px]:flex-col justify-center items-center max-[1130px]:w-full`}
           >
+               <NavbarLink_V2
+                path={"/esg-software"}
+                title={"ESG Software"}
+                toggleNavigation={toggleNavigation}
+              />
+
+
             {/* Solutions Dropdown */}
             <SolutionsDropdown
               isSolutionsOpen={isSolutionsOpen}
