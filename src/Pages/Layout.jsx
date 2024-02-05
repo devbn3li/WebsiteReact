@@ -6,8 +6,8 @@ import Footer from '../Components/Footer/Footer';
 function Layout() {
   return (
     <div className="flex justify-center flex-col   bg-[#F9FFF5]">
-      <Navbar />
-      {/* <Navbar_V2 /> */}
+      {/* <Navbar /> */}
+      <Navbar_V2 />
       <Outlet />
       <Footer/>
     </div>

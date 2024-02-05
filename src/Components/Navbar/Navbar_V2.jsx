@@ -43,7 +43,7 @@ const Navbar_V2 = () => {
           </button>
         </div>
         {/* Navigation Links, Services, and Solutions */}
-        <div className={`flex gap-5 max-[1130px]:gap-0 justify-between flex-grow h-full items-center font-bold text-center transition-all duration-[.45s] box-border ${isNavOpen ? "top-full" : "-top-[100vh]"} left-0 z-40 bg-white max-[1130px]:flex-col max-[1130px]:absolute max-[1130px]:w-full max-w-full max-[1130px]:pb-[6.5rem] max-[1130px]:h-[calc(100vh-4.5rem)] max-[1130px]:text-lg max-[1130px]:border-b max-[1130px]:border-black`}>
+        <div className={`flex gap-5 max-[1130px]:gap-0 justify-end flex-grow h-full items-center font-bold text-center transition-all duration-[.45s] box-border ${isNavOpen ? "top-full" : "-top-[100vh]"} left-0 z-40 bg-white max-[1130px]:flex-col max-[1130px]:absolute max-[1130px]:w-full max-w-full max-[1130px]:pb-[6.5rem] max-[1130px]:h-[calc(100vh-4.5rem)] max-[1130px]:text-lg max-[1130px]:border-b max-[1130px]:border-black`}>
           <div className={`flex h-full text-[20px] font-normal max-[1130px]:flex-col justify-center items-center max-[1130px]:w-full`}>
             {/* Services Dropdown */}
             <ServicesDropdown_V2 toggleNavigation={toggleNavigation} isServicesOpen={isServicesOpen} toggleServices={toggleServices} />
@@ -53,12 +53,14 @@ const Navbar_V2 = () => {
             {navigationLinks.map((link, index) => (
               <NavbarLink_V2 key={index} path={link.path} title={link.title} toggleNavigation={toggleNavigation} />
             ))}
+                        <PrimaryButton path='/contact' title='Make an Impact' classes='max-[1130px]:py-4 ' />
+
           </div>
           {/* Call to Action Button */}
-          <div className="flex gap-5 max-[1130px]:flex-col w-full px-2 mt-2">
+          {/* <div className="flex gap-5 max-[1130px]:flex-col justify-end w-full px-2 mt-2">
             <PrimaryButton path='/contact' title='Make an Impact' classes='max-[1130px]:py-4 ' />
             <PrimaryButton path='/contact' title='Start free' classes='max-[1130px]:py-4 bg-transparent border-2 !text-[#02c2ab]  hover:drop-shadow-md hover:shadow-[0_0_20px_-10px_rgba(0,0,0,.2),inset_0_0_20px_-10px_rgba(0,0,0,.2)]' />
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
