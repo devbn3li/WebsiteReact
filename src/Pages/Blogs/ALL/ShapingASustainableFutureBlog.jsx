@@ -54,7 +54,7 @@ const ShapingASustainableFuture = () => {
             <span>{publishDate} • {publishTime}</span>
           </div>
         </div>
-        <div className='overflow-hidden rounded-xl mb-24 aspect-[2/1] '>
+        <div className='overflow-hidden rounded-xl border-2 mb-24 aspect-[2/1] '>
           <img src={imgSrc} alt={blogTitle} className="min-h-full min-w-full object-cover" />
         </div>
         <div className='max-w-[80rem]'>
