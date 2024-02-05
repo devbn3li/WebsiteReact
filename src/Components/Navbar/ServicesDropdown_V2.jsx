@@ -5,34 +5,86 @@ import { FaLeaf } from 'react-icons/fa';
 import { IoEarthSharp, IoLeafOutline } from 'react-icons/io5';
 import { MdArrowRight } from 'react-icons/md';
 import SubNavbarLink from './SubNavbarLink';
+import Business from './../Business';
 
-const services = [
+const ESGSmallCards = [
   {
-    title: 'ESG Strategy',
+    title: 'Diagnostic Assessment',
+    icon: IoEarthSharp,
+    path: 'service/esg-diagnostic'
+  },
+  {
+    title: 'Strategy',
     icon: IoEarthSharp,
     path: 'service/esg-strategy'
   },
   {
-    title: 'ESG Strategy',
+    title: 'Board Advisory',
     icon: IoEarthSharp,
-    path: 'service/esg-strategy'
+    path: 'service/board-level'
+  }, 
+ 
+    {
+    title: 'Strategic Stakeholder',
+    icon: IoEarthSharp,
+    path: 'service/strategic-stakeholder'
+  }, {
+    title: 'Compliance',
+    icon: IoEarthSharp,
+    path: 'service/esg-compliance'
+  }, {
+    title: 'ERM',
+    icon: IoEarthSharp,
+    path: 'service/esg-compliance'
+  },
+  
+  {
+    title: 'Assurance',
+    icon: IoEarthSharp,
+    path: 'service/esg-assurance'
   },
   {
-    title: 'ESG Strategy',
+    title: 'Controllership',
     icon: IoEarthSharp,
-    path: 'service/esg-strategy'
+    path: 'service/esg-controllership'
   },
   {
-    title: 'ESG Strategy',
+    title: 'Internal Audit program',
     icon: IoEarthSharp,
-    path: 'service/esg-strategy'
+    path: 'service/esg-ia-program'
   },
   {
-    title: 'ESG Strategy',
+    title: 'Strategy',
     icon: IoEarthSharp,
     path: 'service/esg-strategy'
   },
 ]
+
+
+const BusinessSmallCards = [
+  {
+    title: 'Internal Audit',
+    icon: IoEarthSharp,
+    path: 'service/esg-diagnostic'
+  },
+  {
+    title: 'Compliance',
+    icon: IoEarthSharp,
+    path: 'service/esg-strategy'
+  },
+  {
+    title: 'Risk management',
+    icon: IoEarthSharp,
+    path: 'service/board-level'
+  }, 
+
+    {
+    title: 'business transformation',
+    icon: IoEarthSharp,
+    path: 'service/strategic-stakeholder'
+  }
+]
+
 
 const ServicesDropdown_V2 = ({ isServicesOpen, toggleServices, toggleNavigation }) => {
   return (
@@ -61,11 +113,24 @@ const ServicesDropdown_V2 = ({ isServicesOpen, toggleServices, toggleNavigation 
               <span className="text-[5rem]"><IoEarthSharp /></span>
             </Link>
           </div>
-          <div className='flex flex-wrap w-full'>
-            {services.map((service, index) => (
-              <SubNavbarLink title={service.title} Icon={service.icon} path={service.icon} key={index} clear={()=>{toggleNavigation();toggleServices();}}/>
-            ))}
-          </div>
+       <div className='w-full justify-between flex'>
+       <div className='flex flex-wrap gap-x-4 gap-y-0 mx-4 w-1/2'>
+          
+          {ESGSmallCards.slice(0, 5).map((service, index) => (
+           <Link to={service.path} key={index}>
+           <SubNavbarLink title={service.title} Icon={service.icon} path={service.icon}  clear={()=>{toggleNavigation();toggleServices();}}/>
+       </Link> ))}
+        
+      </div>
+      <div className='flex flex-wrap gap-4 w-1/2'>
+      
+      {BusinessSmallCards.slice(0, 5).map((service, index) => (
+       <Link to={service.path} key={index}>
+       <SubNavbarLink title={service.title} Icon={service.icon} path={service.icon}  clear={()=>{toggleNavigation();toggleServices();}}/>
+   </Link> ))}
+    
+  </div>
+       </div>
         </div>
       </div>
     </div>

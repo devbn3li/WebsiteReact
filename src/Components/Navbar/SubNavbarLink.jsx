@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 const SubNavbarLink = ({ Icon, title, path, clear }) => {
   return (
-    <Link to={path} className='flex justify-center items-center gap-4 font-semibold p-5 group/subLink hover:text-[#121212] text-[#02c2ab]' onClick={clear}>
-      <span className='rounded-lg bg-[#02c2ab] text-white p-[6px] text-xl group-hover/subLink:bg-[#121212] transition-all'><Icon /></span>
-      <span>{title}</span>
+    <Link to={path} className='flex justify-center items-center gap-2 font-semibold p-2 group/subLink hover:text-[#121212] text-[#02c2ab] text-sm' onClick={clear}>
+      <span className='rounded-lg bg-[#02c2ab] text-white p-[4px] text-base group-hover/subLink:bg-[#121212] transition-all'><Icon /></span>
+      <span className="text-sm">{title}</span>
     </Link>
   );
 }
