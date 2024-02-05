@@ -8,6 +8,9 @@ import SolutionHero from "../../Components/Solutions/Hero";
 import ESG from "../../../public/assets/images/esg.png";
 import DS from "../../../public/assets/images/DS.png";
 import AI from "../../../public/assets/images/AI.webp";
+import Challenge from "../../Components/LevelUpO2/Challenge";
+import Solutions from "../../Components/LevelUpO2/Solutions";
+import Benefits from "../../Components/LevelUpO2/Benefits";
 
 const SolutionPage = () => {
   const ESGPulse = [
@@ -204,6 +207,35 @@ const SolutionPage = () => {
           Sectiondescription="We deliver cutting-edge analytics and insights leveraging advanced statistical modelling, machine learning algorithms, and natural language processing. Our customized dashboards visualize complex ESG data to reveal targeted opportunities for improving your environmental, social and governance performance. "
         />
       </div>
+
+
+
+
+
+
+{/* permenant Fro Production services */}
+
+<div className="flex justify-center w-full">
+<div className="max-w-[1400px]">
+
+
+<Challenge />
+   <Solutions />
+   <Benefits />
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };
