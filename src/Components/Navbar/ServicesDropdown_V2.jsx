@@ -71,18 +71,18 @@ const BusinessSmallCards = [
   {
     title: "Compliance",
     icon: IoEarthSharp,
-    path: "service/esg-strategy",
+    path: "service/compliance",
   },
   {
     title: "Risk management",
     icon: IoEarthSharp,
-    path: "service/board-level",
+    path: "service/risk-management",
   },
 
   {
     title: "business transformation",
     icon: IoEarthSharp,
-    path: "service/strategic-stakeholder",
+    path: "service/finance",
   },
 ];
 
@@ -167,7 +167,7 @@ const ServicesDropdown_V2 = ({
                   <SubNavbarLink
                     title={service.title}
                     Icon={service.icon}
-                    path={service.icon}
+                    path={service.path}
                     clear={() => {
                       toggleNavigation();
                       toggleServices();
@@ -182,7 +182,7 @@ const ServicesDropdown_V2 = ({
                   <SubNavbarLink
                     title={service.title}
                     Icon={service.icon}
-                    path={service.icon}
+                    path={service.path}
                     clear={() => {
                       toggleNavigation();
                       toggleServices();
