@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../Components/Navbar/Navbar';
+import Navbar_V2 from '../Components/Navbar/Navbar_V2';
+import Footer from '../Components/Footer/Footer';
 
 const NotFoundPage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar_V2 />
       <div className='w-full box-border h-screen min-h-[400px]'>
         <main className="w-full h-full flex flex-col justify-center items-center ">
           <h1 className="text-9xl font-extrabold text-black tracking-widest">404</h1>
@@ -22,6 +23,7 @@ const NotFoundPage = () => {
           </button>
         </main>
       </div>
+      <Footer />
     </>
   );
 }
