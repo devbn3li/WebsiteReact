@@ -6,14 +6,12 @@ const logos = [
   "/assets/images/company/2.png",
   "/assets/images/company/3.png",
   "/assets/images/company/4.png",
-  "/assets/images/company/1.png",
-  "/assets/images/company/2.png",
-  "/assets/images/company/3.png",
-  "/assets/images/company/4.png",
-  "/assets/images/company/1.png",
-  "/assets/images/company/2.png",
-  "/assets/images/company/3.png",
-  "/assets/images/company/4.png",
+  "/assets/images/company/5.png",
+  "/assets/images/company/6.png",
+  "/assets/images/company/7.png",
+  "/assets/images/company/8.png",
+  "/assets/images/company/9.png",
+
 ]
 
 const sliderLogos = () => (
@@ -21,15 +19,17 @@ const sliderLogos = () => (
  
  
  <Slider
-            width="70px"
+            width="150px"
             duration={4}
             pauseOnHover={true}
-            blurBorders={false}
+            blurBorders={true}
             blurBoderColor={'#fff'}
         >
 
 {logos.map((url, index) => (
-            <Slider.Slide key={index}>
+            <Slider.Slide  
+            className="mx-12 "   
+            key={index}>
                 <img  src={url} alt="any" className='w-36' />
             </Slider.Slide>
              ))}

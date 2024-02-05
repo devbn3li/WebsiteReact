@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full flex justify-center">
+    <footer className="w-full flex justify-center">
       <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-64 w-full max-w-[1400px]">
         <div className="py-12">
           <div className=" flex gap-8 justify-between mt-4 max-[991px]:flex-col-reverse">
@@ -35,7 +35,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-5">
                   <div className="font-bold pl-2 ">Resources</div>
                   <Link
-                    to="/legal/PrivacyPolicy"
+                    to="legal/privacy-policy"
                     className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
                   >
                     Privacy policy
@@ -66,7 +66,9 @@ const Footer = () => {
                 <div className="text-black text-[32px] font-bold ">
                   Talk to an Impact Maker
                 </div>
-                <div className="flex gap-6 max-[991px]:flex-col lg:justify-between">
+                <form
+                  action="https://formsubmit.io/send/fae7788e-a910-41c2-a882-d5ba4dd4acf4"
+                  className="flex gap-6 max-[991px]:flex-col lg:justify-between">
                   <input
                     type="text"
                     name="first name"
@@ -79,7 +81,7 @@ const Footer = () => {
                     placeholder="Surname"
                     className="py-2 px-3 rounded-md"
                   />
-                </div>
+                </form>
                 <input
                   type="email"
                   placeholder="Work email"
@@ -115,7 +117,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

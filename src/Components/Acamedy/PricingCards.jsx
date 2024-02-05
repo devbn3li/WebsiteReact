@@ -102,7 +102,7 @@ Green            </h2>
                   clipRule="evenodd"
                 />
               </svg>
-              and more
+              see more details below
             </li>
           </ul>
         </div>
@@ -198,7 +198,7 @@ Green            </h2>
                   clipRule="evenodd"
                 />
               </svg>
-      and more
+      see more details below
             </li>
           </ul>
         </div>
@@ -209,11 +209,11 @@ Green            </h2>
               id="product3"
               className="text-lg sm:text-5xl  font-semibold leading-8 text-black"
             >
-              platinum
+              Platinum
             </h2>
           </div>
           <p className="mt-4 text-sm leading-6 text-gray-900">
-            Product details for Product Type 3
+          Everything in Gold, plus more features and personalized support
           </p>
          
           <a
@@ -288,7 +288,7 @@ Green            </h2>
                   clipRule="evenodd"
                 />
               </svg>
-and more
+see more details below
             </li>
           </ul>
         </div>

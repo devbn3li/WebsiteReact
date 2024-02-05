@@ -5,7 +5,8 @@ import Offer from '../../Components/Offer/Offer';
 import Testimonials from '../../Components/Testimonials/Testimonials';
 import Why from '../../Components/Why';
 import FAQs from '../../Components/FAQs';
-import Popup from '../../Components/Popup/Popup';
+import Popup from '../../Components/Hero_Services/Popup/Popup';
+import BlogCardsList from '../../Components/BlogCard/BlogCardsList';
 
 const LandingPage = () => {  
     const [isModalOpen, setModalOpen] = useState(false);
@@ -19,15 +20,13 @@ const LandingPage = () => {
     }, []); // Empty dependency array ensures the effect runs only once
   return (
     <div className='flex flex-col justify-center items-center w-full font-inter text-[#121212]'>
-    
-     <Popup isOpen={isModalOpen} closeModal={closeModal} />
- 
+     {/* <Popup isOpen={isModalOpen} closeModal={closeModal} /> */}
       <Hero />
-   
       <Benefits />
       <Offer />
       <Testimonials />
       <Why />
+      <BlogCardsList/>
       <FAQs/>
     </div>
   );

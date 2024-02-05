@@ -1,11 +1,12 @@
 import React from 'react';
-import PrimaryBtn from '../Buttons/PrimaryBtn';
+import PrimaryBtn from '../Buttons/PrimaryButton';
 import hero from "../../../public/assets/images/hero.jpg";
 import header_mask from "../../../public/assets/images/Header-Mask.svg";
 
 // Hero component represents hero section of a webpage in the layout
 const Hero = () => {
   // Static string variables used in JSX
+  
   const headerTitle = 'LevelUp for Better Business & Planet.';
   const headerDescription = 'Welcome to LevelUp, where we combine sustainability technology, science, and human expertise to make a meaningful impact.';
   

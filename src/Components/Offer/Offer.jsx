@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PrimaryBtn from '../Buttons/PrimaryBtn';
+import PrimaryBtn from '../Buttons/PrimaryButton';
 import sectionImage from '../../../public/assets/images/business-people-shaking-hands-together.avif';
 
 //A component that expands or creates our Increase and Money Icons
@@ -20,7 +20,7 @@ const MoneyIcon = () => (
 //Generates each item for rendering
 const OfferItem = ({icon, title, description}, index) => {
   return (
-    <div className="hover:bg-[#02c2ab]/20 cursor-pointer hover:scale-105 duration-500 p-4 rounded-3xl" key={index}>
+    <div className="hover:bg-[#02c2ab]/20 border-2 border-gray-200/80 cursor-pointer hover:scale-105 duration-500 p-4 rounded-3xl" key={index}>
       <div className="mb-3  flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-10 p-2">
         {icon}
       </div>
@@ -42,20 +42,20 @@ const OfferItem = ({icon, title, description}, index) => {
 //Main Component
 const Offer = () => {
   /* Static data properties */
-  const sectionTitle = 'Sustainable Business Transformation through Collaborative Consulting';
-  const sectionDescription = 'We curate optimal project teams, leveraging diverse expertise for client success. Our passionate and experienced impact makers ensure pragmatic and collaborative solutions, delivering faster, deeper insights for lasting impact';
+  const sectionTitle = 'ESG Impact Made Simple & Affordable';
+  const sectionDescription = 'Drive real ESG impact without the hefty price tag. Our AI-powered solutions, data science, and human expertise simplify sustainability execution. We provide actionable insights to advance your goals affordably.';
 
   /* Inner data structure */
   const items = [
     {
       icon: <IncreaseIcon />,
       title: 'Innovation and Expertise',
-      description: 'we support our clients in tackling the world’s greatest sustainability challenges by combining cutting-edge technology, data-driven science, and an unparalleled expert network.'
+      description: 'We support our clients in tackling the world’s greatest sustainability challenges by combining cutting-edge technology, data-driven science, and an unparalleled expert network.'
     },
     {
       icon: <MoneyIcon />,
       title: 'Purpose and Profit',
-      description: 'Enhance your financial performance while concurrently fostering positive societal impact by assembling a dedicated and purpose-driven team focused on sustainable business practices .'
+      description: 'Enhance your financial performance while concurrently fostering positive Environmental and societal impact by assembling a dedicated and purpose-driven team focused on sustainable business practices .'
     },
   ];
   /* Return JSX component */
