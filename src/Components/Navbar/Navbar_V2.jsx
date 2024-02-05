@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import NavbarLink from './NavbarLink';
 import PrimaryButton from '../Buttons/PrimaryButton'; // Renamed for better readability
-import ServicesDropdown from './ServicesDropdown';
 import SolutionsDropdown from './SolutionsDropdown';
 import LogoImage from '../../../public/assets/images/logo.png'; // Import name made explicit
 import ServicesDropdown_V2 from './ServicesDropdown_V2';
@@ -45,10 +43,11 @@ const Navbar_V2 = () => {
         {/* Navigation Links, Services, and Solutions */}
         <div className={`flex gap-5 max-[1130px]:gap-0 justify-end flex-grow h-full items-center font-bold text-center transition-all duration-[.45s] box-border ${isNavOpen ? "top-full" : "-top-[100vh]"} left-0 z-40 bg-white max-[1130px]:flex-col max-[1130px]:absolute max-[1130px]:w-full max-w-full max-[1130px]:pb-[6.5rem] max-[1130px]:h-[calc(100vh-4.5rem)] max-[1130px]:text-lg max-[1130px]:border-b max-[1130px]:border-black`}>
           <div className={`flex h-full text-[20px] font-normal max-[1130px]:flex-col justify-center items-center max-[1130px]:w-full`}>
+             {/* Solutions Dropdown */}
+             <SolutionsDropdown isSolutionsOpen={isSolutionsOpen} toggleSolutions={toggleSolutions} />
+           
             {/* Services Dropdown */}
             <ServicesDropdown_V2 toggleNavigation={toggleNavigation} isServicesOpen={isServicesOpen} toggleServices={toggleServices} />
-            {/* Solutions Dropdown */}
-            <SolutionsDropdown isSolutionsOpen={isSolutionsOpen} toggleSolutions={toggleSolutions} />
             {/* Static Navigation Links */}
             {navigationLinks.map((link, index) => (
               <NavbarLink_V2 key={index} path={link.path} title={link.title} toggleNavigation={toggleNavigation} />
