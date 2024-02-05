@@ -1,6 +1,6 @@
 import Quote from '../../../Components/Blog/Quote'
 import H1 from '../../../Components/Blog/H1'
-import image from '../../../../public/assets/images/blogs/1.png';
+import image from '/assets/images/blogs/1.png';
 
 const blogTitle = 'How to improve Web Design Process';
 const writerName = 'Deepa';
@@ -13,7 +13,7 @@ const Body = () => (
   <div className='flex flex-col gap-4'>
     <H1 text="Empowering the C-Suite for Sustainable Success: Navigating Complexities and Driving Unified Action" />
     <p>
-      In today's business landscape, the responsibility of driving sustainability initiatives often falls on the CEO. However, the success of these endeavors heavily relies on the collective efforts of the C-suite team. To avoid any accusations of Greenwashing, it's crucial for the C-suite leaders to actively participate in monitoring and tracking sustainability goals within their respective teams.
+      In today&apos;s business landscape, the responsibility of driving sustainability initiatives often falls on the CEO. However, the success of these endeavors heavily relies on the collective efforts of the C-suite team. To avoid any accusations of Greenwashing, it&apos;s crucial for the C-suite leaders to actively participate in monitoring and tracking sustainability goals within their respective teams.
     </p>
 
     <p>
@@ -21,7 +21,7 @@ const Body = () => (
     </p>
 
     <p>
-      Leading sustainability initiatives calls for C-suite leaders to develop a deep understanding of the strategies that align with their organization's goals. They must actively support these initiatives and be accountable for their outcomes. Additionally, it is essential for all leaders to communicate in a unified language and align their thinking to ensure a cohesive and impactful approach.
+      Leading sustainability initiatives calls for C-suite leaders to develop a deep understanding of the strategies that align with their organization&apos;s goals. They must actively support these initiatives and be accountable for their outcomes. Additionally, it is essential for all leaders to communicate in a unified language and align their thinking to ensure a cohesive and impactful approach.
     </p>
 
     <p>

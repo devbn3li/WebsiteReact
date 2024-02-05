@@ -1,6 +1,6 @@
 import Quote from '../../../Components/Blog/Quote'
 import H1 from '../../../Components/Blog/H1'
-import image from '../../../../public/assets/images/blogs/1.png';
+import image from '/assets/images/blogs/1.png';
 
 const blogTitle = 'How to improve Web Design Process';
 const writerName = 'Deepa';

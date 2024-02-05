@@ -1,7 +1,7 @@
 
 import H1 from '../../Components/Blog/H1'
 import H2 from '../../Components/Blog/H2'
-import image from '../../../../public/assets/images/blogs/1.png';
+import image from '/assets/images/blogs/1.png';
 
 const blogTitle = 'How to improve Web Design Process';
 const writerName = 'Deepa';
@@ -14,17 +14,17 @@ const Body = () => (
   <div className='flex flex-col gap-4'>
     <H1 text="Shaping a Sustainable Future: Decoding the Environmental, Social, and Governance Factors" />
     <p>
-      In an era marked by rising social consciousness and heightened environmental concerns, the acronym "ESG" has risen to prominence, captivating the attention of investors, businesses, and consumers alike. But what exactly does ESG stand for, and how do these factors interweave to impact our world? This below aims to demystify the essential elements of ESG, offering a foundation for further exploration and informed decision-making.
+      In an era marked by rising social consciousness and heightened environmental concerns, the acronym &apos;ESG&apos; has risen to prominence, captivating the attention of investors, businesses, and consumers alike. But what exactly does ESG stand for, and how do these factors interweave to impact our world? This below aims to demystify the essential elements of ESG, offering a foundation for further exploration and informed decision-making.
     </p>
 
     <H2 text="E is for Environment:" />
     <p>
-      This pillar addresses the impact of an organization's activities on the natural world. Key considerations include climate change mitigation, resource management, energy efficiency, water management, pollution control, and biodiversity conservation. Businesses demonstrating a commitment to environmental sustainability are increasingly viewed as responsible and forward-thinking, attracting stakeholders who prioritize a healthy planet.
+      This pillar addresses the impact of an organization&apos;s activities on the natural world. Key considerations include climate change mitigation, resource management, energy efficiency, water management, pollution control, and biodiversity conservation. Businesses demonstrating a commitment to environmental sustainability are increasingly viewed as responsible and forward-thinking, attracting stakeholders who prioritize a healthy planet.
     </p>
 
     <H2 text="S is for Social:" />
     <p>
-      This facet focuses on the social impact of an organization's operations and practices. Areas of concern encompass employee well-being, diversity and inclusion, community engagement, human rights, and responsible sourcing. By demonstrating ethical treatment of employees, fostering responsible sourcing practices, and promoting social justice, organizations can build trust and loyalty with stakeholders who value responsible conduct.
+      This facet focuses on the social impact of an organization&apos;s operations and practices. Areas of concern encompass employee well-being, diversity and inclusion, community engagement, human rights, and responsible sourcing. By demonstrating ethical treatment of employees, fostering responsible sourcing practices, and promoting social justice, organizations can build trust and loyalty with stakeholders who value responsible conduct.
     </p>
 
     <H2 text="G is for Governance:" />
@@ -33,7 +33,7 @@ const Body = () => (
     </p>
 
     <p>
-      Understanding the interconnectedness of these three pillars is crucial. For example, adopting environmentally friendly practices (E) may positively impact employee health and well-being (S). Conversely, strong governance (G) can ensure transparent reporting on environmental and social performance, fostering trust with stakeholders.
+      Understanding the interconnectedness of these three pillars is crucial. For example, adopting environmentally friendly practices -E- may positively impact employee health and well-being -S-. Conversely, strong governance -G- can ensure transparent reporting on environmental and social performance, fostering trust with stakeholders.
     </p>
 
     <H2 text="Importance of ESG Factors:" />
