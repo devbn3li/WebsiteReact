@@ -29,7 +29,7 @@ import ESGDiagnostic from './Pages/ServicePages/ESGDiagnosticPage';
 import BoardLevel from './Pages/ServicePages/BoardLevelPage';
 import InternalAudit from './Pages/BusinessServices/InternalAudit';
 import Compliance from './Pages/BusinessServices/Compliance';
-
+import RiskManagement from './Pages/BusinessServices/RiskManagement';
 // Blog Pages Imports
 import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
 import EmpoweringCSuiteBlog from './Pages/Blogs/ALL/EmpoweringCSuiteBlog';
@@ -75,6 +75,7 @@ export function Application() {
           <Route path="service/board-level" element={<BoardLevel />} />
           <Route path="service/internal-audit" element={<InternalAudit />} />
           <Route path="service/compliance" element={<Compliance />} />
+          <Route path="service/risk-management" element={<RiskManagement />} />
 
           {/* Blog article pages */}
           <Route path="blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<EmpoweringCSuiteBlog />} />
