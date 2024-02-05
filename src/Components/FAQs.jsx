@@ -109,16 +109,16 @@ function FAQs() {
                 </span>
               </summary>
               <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
-                <span className='font-semibold'>- Cutting-Edge Technology for Meaningful Impact</span><br/>
+                <span className='font-semibold'> Cutting-Edge Technology for Meaningful Impact</span><br/>
                 Experience innovation with LevelUp's cutting-edge technology and AI integration, empowering businesses to gain greater control over their data and create a lasting ESG impact.<br/><br/>
 
-                <span className='font-semibold'>- Affordability & Customization</span><br/>
+                <span className='font-semibold'> Affordability & Customization</span><br/>
                 Unlock tailored ESG solutions at accessible prices, designed exclusively for your business's needs. No one-size-fits-all – just solutions crafted for sustainable success.<br/><br/>
 
-                <span className='font-semibold'>- Global Expertise at Your Fingertips</span><br/>
+                <span className='font-semibold'> Global Expertise at Your Fingertips</span><br/>
                 Leverage our diverse team of sustainability, data, and technology experts spread across the globe. Benefit from a powerful blend of knowledge tailored to address your unique challenges.<br/><br/>
 
-                <span className='font-semibold'>- Long-Term Partnership Commitment</span><br/>
+                <span className='font-semibold'>Long-Term Partnership Commitment</span><br/>
                 Choose more than a vendor – choose a partner committed to your success. Our purpose-driven, collaborative approach ensures a lasting ESG impact through enduring partnerships.<br/><br/>
 
               </p>
