@@ -51,7 +51,7 @@ const Benefits = () => {
     {
       icon: <LeafIcon />,
       title: "LevelUp Academy and Resources Hub",
-      description: "Our Academy and Resources Hub empower individuals and businesses with the latest knowledge, insights and tools to advance governance and sustainability. Apply your knowledge to drive growth with purpose and positive impact.",
+      description: "It empowers individuals and businesses with the latest knowledge, insights and tools to advance governance and sustainability. Apply your knowledge to drive growth with purpose and  impact.",
       imageUrl: img3
     },
   ];
