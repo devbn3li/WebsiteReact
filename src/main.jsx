@@ -28,6 +28,7 @@ import ERMProgram from './Pages/ServicePages/ERMProgramPage';
 import ESGDiagnostic from './Pages/ServicePages/ESGDiagnosticPage';
 import BoardLevel from './Pages/ServicePages/BoardLevelPage';
 import InternalAudit from './Pages/BusinessServices/InternalAudit';
+import Compliance from './Pages/BusinessServices/Compliance';
 
 // Blog Pages Imports
 import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
@@ -73,6 +74,7 @@ export function Application() {
           <Route path="service/esg-diagnostic" element={<ESGDiagnostic />} />
           <Route path="service/board-level" element={<BoardLevel />} />
           <Route path="service/internal-audit" element={<InternalAudit />} />
+          <Route path="service/compliance" element={<Compliance />} />
 
           {/* Blog article pages */}
           <Route path="blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<EmpoweringCSuiteBlog />} />
