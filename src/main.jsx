@@ -83,6 +83,7 @@ export function Application() {
           <Route path="blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<EmpoweringCSuiteBlog />} />
           <Route path="blog/all/Empowering-for-Sustainable-Success" element={<EmpoweringForSuccessBlog />} />
           <Route path="blog/all/Understanding-Greenwashing-and-Its-Consequences" element={<EmpoweringForSuccessBlog />} />
+          <Route path="blog/all/Understanding-Green-washing" element={<UnderstandingGreenwashingBlog />} />
           <Route path="blog/BlogTemplete" element={<BlogTemplete />} />
         </Route>
         {/* Fallback for unmatched routes */}

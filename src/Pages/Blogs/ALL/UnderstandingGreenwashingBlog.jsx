@@ -74,5 +74,4 @@ const UnderstandingGreenwashingBlog = () => {
   );
 }
 
-export default UnderstandingGreenwashingBlog
-;
+export default UnderstandingGreenwashingBlog;
