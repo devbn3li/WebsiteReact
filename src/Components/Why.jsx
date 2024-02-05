@@ -9,17 +9,15 @@ const Why = () => {
   const reasons = [
     {
       title: "ESG Readiness",
-      description:
-        "Our ESG Readiness Assessment can help you to assess how prepared your company is for the future of ESG.",
+      description: "Our ESG Readiness Assessment can help you to assess how prepared your company is for the future of ESG.",
       icon: <MdCelebration />,
       url: "#",
     },
     {
-      title: "ESG IA program",
-      description:
-        "Our ESG IA program is designed to help internal audit functions build their ESG capabilities.",
-      icon: <PiRobotLight />,
-      url: "/service/esg-ia-program",
+      title: "LevelUp ESG Pulse",
+      description: "an innovative AI-powered online ESG Diagnostic platform that provides a rapid assessment of your current ESG performance against most common ESG factors",
+      icon: <MdCelebration />,
+      url: "#",
     },
     {
       title: "ESG and Sustainability Strategy & Roadmap",
@@ -29,11 +27,10 @@ const Why = () => {
       url: "/service/esg-strategy",
     },
     {
-      title: "ESG in ERM Program",
-      description:
-        "ESG strategies are crucial for businesses due to regulations, stakeholder pressure, and competitiveness.",
-      icon: <FaRegLightbulb />,
-      url: "/service/erm-program",
+      title: "LevelUp Sustainability Tracker",
+      description: "an AI-powered ESG data management platform that empowers your sustainability journey.",
+      icon: <MdOutlineReport />,
+      url: "/service/esg-governance",
     },
     {
       title: "ESG Reporting",
@@ -50,18 +47,17 @@ const Why = () => {
       url: "/service/esg-assurance",
     },
     {
-      title: "Sustainable Supply Chain Consultants",
-      description:
-        "Implementing tools for supply chain and data collection, our consultants identify opportunities and climate risks.",
-      icon: <SiHiveBlockchain />,
-      url: "#",
+      title: "LevelUp O2",
+      description: "accurately calculate your GHG emissions with our AI-powered calculator. Gain insights to reduce your carbon footprint.",
+      icon: <FaLevelUpAlt />,
+      url: "/service/esg-assurance",
     },
     {
-      title: "Board-Level ESG Consulting",
+      title: "LevelUp Data Lab",
       description:
-        "Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance.",
-      icon: <MdLeaderboard />,
-      url: "/service/board-level",
+        "our customized dashboards visualize complex ESG data to reveal targeted opportunities for improving your environmental, social and governance performance.",
+      icon: <FaLevelUpAlt />,
+      url: "/service/esg-assurance",
     },
   ];
 
@@ -82,7 +78,7 @@ const Why = () => {
             <p className='mb-8 text-lg font-normal text-gray-500 lg:text-xl  '>
               LevelUp empowers businesses with affordable and innovative
               corporate sustainability solutions, expert-led advice, assurance,
-              and a knowledge and resources hub.
+              and a knowledge and resources hub.Our AI engines, service offerings, and data science simplify ESG execution, driving measurable impact.
             </p>
             <div className=''>
               {" "}

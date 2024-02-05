@@ -12,6 +12,7 @@ import AcademyPage from './Pages/AcademyPage/AcademyPage';
 import PrivacyPolicyPage from './Pages/LegelPages/PrivacyPolicyPage';
 import CookiesPolicyPage from './Pages/LegelPages/CookiesPolicyPage';
 import SolutionPage from './Pages/SolutionPage/SolutionPage';
+import LevelUpO2 from './Pages/LevelUpO2/LevelUpO2';
 import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
 // import BlogPage from './Pages/BlogPage';
 
@@ -51,6 +52,7 @@ export function Application() {
           <Route path="about" element={<AboutPage />} />
           <Route path="academy" element={<AcademyPage />} />
           <Route path="solution" element={<SolutionPage />} />
+          <Route path="solution/level-up-o2" element={<LevelUpO2 />} />
           <Route path="waiting-list" element={<WaitingListPage />} />
           <Route path="blogs-discovery" element={<BlogsDiscoveryPage />} />
 
