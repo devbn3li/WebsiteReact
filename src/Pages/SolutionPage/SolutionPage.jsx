@@ -218,7 +218,10 @@ const SolutionPage = () => {
 <div className="flex justify-center w-full">
 <div className="max-w-[1400px]">
 
-
+<SolutionHero
+          title={"LevelUp O2"}
+          discription={"offers an innovative and efficient solution for measuring GHG emissions enabling businesses"}
+        />
 <Challenge />
    <Solutions />
    <Benefits />
