@@ -176,6 +176,21 @@ const SolutionPage = () => {
   and a knowledge and resources hub."
       />
 
+<div className="flex justify-center w-full">
+<div className="max-w-[1400px]">
+
+<SolutionHero
+          title={"LevelUp O2"}
+          discription={"offers an innovative and efficient solution for measuring GHG emissions enabling businesses"}
+        />
+<Challenge />
+   <Solutions />
+   <Benefits />
+
+</div>
+</div>
+
+
       <div className="bg-[#121212] py-12 md:py-20 text-white">
         <SolutionHero
           title={SustainabilityTracker[0].title}
@@ -215,19 +230,6 @@ const SolutionPage = () => {
 
 {/* permenant Fro Production services */}
 
-<div className="flex justify-center w-full">
-<div className="max-w-[1400px]">
-
-<SolutionHero
-          title={"LevelUp O2"}
-          discription={"offers an innovative and efficient solution for measuring GHG emissions enabling businesses"}
-        />
-<Challenge />
-   <Solutions />
-   <Benefits />
-
-</div>
-</div>
 
 
 

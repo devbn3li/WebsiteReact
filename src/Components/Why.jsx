@@ -8,17 +8,31 @@ import backgroundImage from "../../public/assets/images/bg/1.jpg";
 const Why = () => {
   const reasons = [
     {
-      title: "ESG Readiness",
-      description: "Our ESG Readiness Assessment can help you to assess how prepared your company is for the future of ESG.",
+      title: "LevelUp ESG Pulse",
+      description: "An innovative AI-powered online ESG Diagnostic platform that provides a rapid assessment of your current ESG performance against most common ESG factors",
       icon: <MdCelebration />,
       url: "#",
     },
     {
-      title: "LevelUp ESG Pulse",
-      description: "an innovative AI-powered online ESG Diagnostic platform that provides a rapid assessment of your current ESG performance against most common ESG factors",
-      icon: <MdCelebration />,
-      url: "#",
+      title: "LevelUp O2",
+      description: "Accurately calculate your GHG emissions with our AI-powered calculator. Gain insights to reduce your carbon footprint.",
+      icon: <FaLevelUpAlt />,
+      url: "/service/esg-assurance",
     },
+    {
+      title: "LevelUp Sustainability Tracker",
+      description: "An AI-powered ESG data management platform that empowers your sustainability journey.",
+      icon: <MdOutlineReport />,
+      url: "/service/esg-governance",
+    },
+    {
+      title: "LevelUp Data Lab",
+      description:
+        "Our customized dashboards visualize complex ESG data to reveal targeted opportunities for improving your environmental, social and governance performance.",
+      icon: <FaLevelUpAlt />,
+      url: "/service/esg-assurance",
+    },
+   
     {
       title: "ESG and Sustainability Strategy & Roadmap",
       description:
@@ -26,12 +40,7 @@ const Why = () => {
       icon: <PiStrategy />,
       url: "/service/esg-strategy",
     },
-    {
-      title: "LevelUp Sustainability Tracker",
-      description: "an AI-powered ESG data management platform that empowers your sustainability journey.",
-      icon: <MdOutlineReport />,
-      url: "/service/esg-governance",
-    },
+  
     {
       title: "ESG Reporting",
       description:
@@ -47,18 +56,12 @@ const Why = () => {
       url: "/service/esg-assurance",
     },
     {
-      title: "LevelUp O2",
-      description: "accurately calculate your GHG emissions with our AI-powered calculator. Gain insights to reduce your carbon footprint.",
-      icon: <FaLevelUpAlt />,
-      url: "/service/esg-assurance",
+      title: "ESG Readiness",
+      description: "Our ESG Readiness Assessment can help you to assess how prepared your company is for the future of ESG.",
+      icon: <MdCelebration />,
+      url: "#",
     },
-    {
-      title: "LevelUp Data Lab",
-      description:
-        "our customized dashboards visualize complex ESG data to reveal targeted opportunities for improving your environmental, social and governance performance.",
-      icon: <FaLevelUpAlt />,
-      url: "/service/esg-assurance",
-    },
+   
   ];
 
   return (

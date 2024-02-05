@@ -42,7 +42,7 @@ const OfferItem = ({icon, title, description}, index) => {
 //Main Component
 const Offer = () => {
   /* Static data properties */
-  const sectionTitle = 'LevelUp: ESG Impact Made Simple & Affordable';
+  const sectionTitle = 'ESG Impact Made Simple & Affordable';
   const sectionDescription = 'Drive real ESG impact without the hefty price tag. Our AI-powered solutions, data science, and human expertise simplify sustainability execution. We provide actionable insights to advance your goals affordably.';
 
   /* Inner data structure */
@@ -50,7 +50,7 @@ const Offer = () => {
     {
       icon: <IncreaseIcon />,
       title: 'Innovation and Expertise',
-      description: 'we support our clients in tackling the world’s greatest sustainability challenges by combining cutting-edge technology, data-driven science, and an unparalleled expert network.'
+      description: 'We support our clients in tackling the world’s greatest sustainability challenges by combining cutting-edge technology, data-driven science, and an unparalleled expert network.'
     },
     {
       icon: <MoneyIcon />,
