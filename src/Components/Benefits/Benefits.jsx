@@ -32,7 +32,7 @@ const Benefits = () => {
 
   // Define the static text used in the component
   const sectionTitle = 'Driving Impact with Human Expertise, Science and Data Insights';
-  const sectionDescription = 'Welcome to LevelUp, where we combine sustainability technology, science, and human expertise to make a meaningful impact.';
+  const sectionDescription = 'Our AI-powered solutions, data science, and human expertise simplify sustainability execution. We provide solutions and insights to advance your goals affordably.';
 
   // Define the benefits fetched from a source or defined statically
   const benefits = [
@@ -44,14 +44,14 @@ const Benefits = () => {
     },
     {
       icon: <RocketIcon />,
-      title: 'Ongoing Consulting and Assurance',
+      title: 'Ongoing Expert-led Advice and Assurance',
       description: "Elevate your business with LevelUp's sustainable consulting, ensuring control, informed decisions, and purpose-driven impact through innovative tools and insights.",
       imageUrl: img2
     },
     {
       icon: <LeafIcon />,
       title: "LevelUp Academy and Resources Hub",
-      description: "At LevelUp, we empower with knowledge and resources to navigate emerging topics. Our Academy and Resources Hub strengthen governance for impactful decision-making and growth.",
+      description: "Our Academy and Resources Hub empower individuals and businesses with the latest knowledge, insights and tools to advance governance and sustainability. Apply your knowledge to drive growth with purpose and positive impact.",
       imageUrl: img3
     },
   ];
