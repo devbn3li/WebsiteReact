@@ -42,8 +42,8 @@ const OfferItem = ({icon, title, description}, index) => {
 //Main Component
 const Offer = () => {
   /* Static data properties */
-  const sectionTitle = 'Sustainable Business Transformation through Collaborative Consulting';
-  const sectionDescription = 'We curate optimal project teams, leveraging diverse expertise for client success. Our passionate and experienced impact makers ensure pragmatic and collaborative solutions, delivering faster, deeper insights for lasting impact';
+  const sectionTitle = 'LevelUp: ESG Impact Made Simple & Affordable';
+  const sectionDescription = 'Drive real ESG impact without the hefty price tag. Our AI-powered solutions, data science, and human expertise simplify sustainability execution. We provide actionable insights to advance your goals affordably.';
 
   /* Inner data structure */
   const items = [
@@ -55,7 +55,7 @@ const Offer = () => {
     {
       icon: <MoneyIcon />,
       title: 'Purpose and Profit',
-      description: 'Enhance your financial performance while concurrently fostering positive societal impact by assembling a dedicated and purpose-driven team focused on sustainable business practices .'
+      description: 'Enhance your financial performance while concurrently fostering positive Environmental and societal impact by assembling a dedicated and purpose-driven team focused on sustainable business practices .'
     },
   ];
   /* Return JSX component */
