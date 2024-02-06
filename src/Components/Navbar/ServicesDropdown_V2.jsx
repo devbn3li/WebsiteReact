@@ -11,6 +11,11 @@ const ESGSmallCards = [
     path: "service/esg-diagnostic",
   },
   {
+    title: "ESG Pulse",
+    icon: IoEarthSharp,
+    path: "service/esg-pulse",
+  },
+  {
     title: "Strategy",
     icon: IoEarthSharp,
     path: "service/esg-strategy",
@@ -19,6 +24,11 @@ const ESGSmallCards = [
     title: "Board Advisory",
     icon: IoEarthSharp,
     path: "service/board-level",
+  },
+  {
+    title: "LevelUp O2",
+    icon: IoEarthSharp,
+    path: "service/levelup-o2",
   },
   {
     title: "Strategic Stakeholder",
@@ -30,12 +40,6 @@ const ESGSmallCards = [
     icon: IoEarthSharp,
     path: "service/esg-compliance",
   },
-  {
-    title: "ERM",
-    icon: IoEarthSharp,
-    path: "service/esg-compliance",
-  },
-
   {
     title: "Assurance",
     icon: IoEarthSharp,
@@ -50,11 +54,6 @@ const ESGSmallCards = [
     title: "Internal Audit program",
     icon: IoEarthSharp,
     path: "service/esg-ia-program",
-  },
-  {
-    title: "Strategy",
-    icon: IoEarthSharp,
-    path: "service/esg-strategy",
   },
 ];
 
