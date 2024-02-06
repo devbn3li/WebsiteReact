@@ -19,7 +19,7 @@ const SolutionsDropdown = ({ isSolutionsOpen, toggleSolutions }) => {
   return (
     <div className="group cursor-pointer min-[1130px]:h-full max-[1130px]:w-full" onClick={toggleSolutions}>
 
-      <Link to="/solution" className="px-4 max-[1130px]:py-8 min-[1130px]:h-full hover:font-bold box-border transition-all max-[1130px]:w-full flex items-center justify-center duration-[.45s] max-[991px]:hover:bg-transparent relative after:absolute after:h-[2px] after:bg-[#121212] after:w-0 after:left-1/2 after:-translate-x-1/2 after:hover:w-full after:transition-all after:bottom-0">
+      <Link to="/solution" className="px-4 max-[1130px]:py-8 min-[1130px]:h-full  box-border transition-all max-[1130px]:w-full flex items-center justify-center duration-[.45s] max-[991px]:hover:bg-transparent relative after:absolute after:h-[2px] after:bg-[#121212] after:w-0 after:left-1/2 after:-translate-x-1/2 after:hover:w-full after:transition-all after:bottom-0">
           Solutions
       </Link>
 
