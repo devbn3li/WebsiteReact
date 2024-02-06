@@ -18,6 +18,7 @@ import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
 // import BlogPage from './Pages/BlogPage';
 
 // Service Pages Imports
+import EsgServices from './Pages/Services/EsgServices';
 import ESGControllershipPage from './Pages/ServicePages/ESGControllershipPage';
 import ESGIAProgramPage from './Pages/ServicePages/ESGIAProgramPage';
 import ESGGovernance from './Pages/ServicePages/ESGGovernancePage';
@@ -67,6 +68,7 @@ export function Application() {
           <Route path="legal/cookies" element={<CookiesPolicyPage />} />
 
           {/* Service pages */}
+          <Route path="service/esg" element={<EsgServices />} />
           <Route path="service/esg-controllership" element={<ESGControllershipPage />} />
           <Route path="service/esg-ia-program" element={<ESGIAProgramPage />} />
           <Route path="service/esg-governance" element={<ESGGovernance />} />
