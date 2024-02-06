@@ -1,4 +1,5 @@
-import React from 'react'
+import SVG from "./SVG"
+
 
 function index() {
   return (
@@ -144,16 +145,32 @@ function index() {
         </div>
       </div>
       {/* Faux Sides */}
-      <div className="absolute left-0 border-l border-r border-black h-16 w-full" />
+      <div className="absolute  left-0 border-l border-r border-black h-16 w-full" />
     </div>
     {/* Page Content  */}
-    <div className="w-full">
-      <div className="container text-center">
+    <div className="w-full relative">
+      <div className="container relative text-center">
   
-      
+      <SVG/>
       </div>
     </div>
  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
   </div>
   
   )

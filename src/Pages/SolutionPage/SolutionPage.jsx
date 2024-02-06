@@ -133,7 +133,7 @@ const SolutionPage = () => {
       />
 
 
-<Dash/>
+{/* <Dash/> */}
 
      
       <div className=" text-black">
