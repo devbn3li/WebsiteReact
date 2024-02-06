@@ -21,7 +21,7 @@ const Hero = () => {
           {headerDescription}</p>
         <div className='font-bold gap-4 flex flex-wrap max-[570px]:flex-col'>
           <PrimaryBtn path='/about' title='About us' classes='px-6 py-3'/>
-          <PrimaryBtn path='/contact' title='Make an Impact, Together' classes='bg-[#e6e6e5] !text-[#121212] border-[#e6e6e5] px-6 py-3'/>
+          <PrimaryBtn path="#contact" title='Make an Impact, Together' classes='bg-[#e6e6e5] !text-[#121212] border-[#e6e6e5] px-6 py-3'/>
         </div>
       </div>
       <div className="relative rounded-r-3xl w-1/2 overflow-hidden max-[991px]:rounded-none max-[991px]:mr-[-5%] max-[570px]:hidden">
