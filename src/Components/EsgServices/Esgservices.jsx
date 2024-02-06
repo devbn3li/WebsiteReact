@@ -7,35 +7,35 @@ const Why = () => {
     {
       title: "ESG Diagnostic Assessment",
       description:
-        "Our innovative ESG Diagnostics provides a rapid assessment of your current ESG performance against leading practices. The online assessment benchmarks your program and identifies priority actions across governance, environment and social impact. It helps identify and prioritize actions for improvement.",
+        "ESG Diagnostics rapidly assess ESG performance online, highlighting governance, environmental, and social areas for improvement and benchmarking against leading practices.",
       icon: <MdCelebration />,
       url: "esg-diagnostic",
     },
     {
       title: "ESG Strategy",
       description:
-        "Our team of ESG thought leaders, strategists and practioneers are committed to helping you setup robust ESG policies and provide essential tools to establish or elevate your ESG program, ensuring a comprehensive and effective approach. We specialize in defining purpose-driven strategies for competitive advantage driven by ESG initiatives and uncover areas of risk to protect and prepare your brand for regulations and future requirements.",
+        "Our ESG experts assist in crafting robust policies and tools for effective ESG programs, fostering competitive advantage, risk management, and compliance readiness.",
       icon: <FaLevelUpAlt />,
       url: "/service/esg-assurance",
     },
     {
       title: "Board-Level ESG Consulting",
       description:
-        "Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making.",
+        "Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles, promoting responsible governance and strategic foresight.",
       icon: <MdOutlineReport />,
       url: "/service/esg-governance",
     },
     {
       title: "Strategic Stakeholder Management Program",
       description:
-        "At LevelUp, we understand the dynamic landscape of Environmental, Social, and Governance (ESG) can be challenging for many businesses. With the increasing volume of mandatory ESG disclosures, expanding the scope of companies required to report, and changing stakeholder expectations, navigating this landscape requires expertise and precision. We provide comprehensive support for ESG reporting, well-versed in various reporting standards including CSRD, ISSB, IFRS, SASBI, and GRI.",
+        "LevelUp offers expert support for ESG reporting, addressing the evolving challenges of ESG disclosures and complying with standards like CSRD, ISSB, IFRS, SASB, and GRI.",
       icon: <FaLevelUpAlt />,
       url: "/service/esg-assurance",
     },
     {
       title: "ESG Compliance Program",
       description:
-        "Our integrated services prioritize stakeholder engagement, communication, and training. Stakeholder Mastery focuses on strategic communication and relationship-building, COSO Framework Training empowers with vital knowledge, Transparent Communication Excellence refines messaging, and Stakeholder-Centric Training fosters a transparent, collaborative, and successful organizational environment",
+        "Integrated services prioritize stakeholder engagement, communication, and training for organizational success, fostering transparency, collaboration, and strategic excellence.",
       icon: <MdCelebration />,
       url: "#",
     },
