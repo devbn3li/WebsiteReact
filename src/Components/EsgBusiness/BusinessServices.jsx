@@ -5,40 +5,34 @@ import backgroundImage from "../../../public/assets/images/bg/1.jpg";
 const Why = () => {
   const reasons = [
     {
-      title: "ESG Diagnostic Assessment",
+      title: "Internal Audit",
       description:
-        "ESG Diagnostics rapidly assess ESG performance online, highlighting governance, environmental, and social areas for improvement and benchmarking against leading practices.",
+        "Our internal audit services deliver assurance and advice to improve your operations. Our flexible",
       icon: <MdCelebration />,
-      url: "/service/esg-diagnostic",
+      url: "/service/internal-audit",
     },
     {
-      title: "ESG Strategy",
+      title: "Compliance",
       description:
-        "Our ESG experts assist in crafting robust policies and tools for effective ESG programs, fostering competitive advantage, risk management, and compliance readiness.",
+        "We assist in monitoring regulations, assessing compliance risk, building effective programs, and providing compliance reviews and audits for assurance and reputation protection",
       icon: <FaLevelUpAlt />,
-      url: "/service/esg-strategy",
+      url: "/service/compliance",
     },
     {
-      title: "Board-Level ESG Consulting",
+      title: "Risk Management and Business Continuity",
       description:
-        "Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles, promoting responsible governance and strategic foresight.",
+        "Our risk management services map, assess, and mitigate risks while assisting in business continuity planning to minimize disruptions, ensuring readiness for uncertainty.",
       icon: <MdOutlineReport />,
-      url: "/service/board-level",
+      url: "/service/risk-management",
     },
     {
-      title: "Strategic Stakeholder Management Program",
+      title: "Finance and Business Transformation",
       description:
-        "LevelUp offers expert support for ESG reporting, addressing the evolving challenges of ESG disclosures and complying with standards like CSRD, ISSB, IFRS, SASB, and GRI.",
+        "We evaluate finance capabilities, drive transformation, and optimize functions with technology, ensuring enhanced performance for insights and value. Contact us for integrated GRC services.",
       icon: <FaLevelUpAlt />,
-      url: "/service/esg-assurance",
+      url: "/service/finance",
     },
-    {
-      title: "ESG Compliance Program",
-      description:
-        "Integrated services prioritize stakeholder engagement, communication, and training for organizational success, fostering transparency, collaboration, and strategic excellence.",
-      icon: <MdCelebration />,
-      url: "#",
-    },
+
   ];
 
   return (
@@ -56,13 +50,12 @@ const Why = () => {
           <div className="flex flex-col gap-1">
             <div className="flex flex-col max-w-[90.25rem] gap-3">
               <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
-              Discover Our Comprehensive ESG Services
+                Navigate Success with Our Services
               </h1>
               <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl  ">
-                Explore our specialized ESG services designed to enhance your
-                sustainability journey. From diagnostics to compliance, our
-                solutions cover all aspects to guide your business towards ESG
-                excellence.
+                Explore our suite of services designed for robust governance,
+                compliance, risk management, and transformative financial
+                insights. Elevate your business&apos;s potential today.
               </p>
               <div className="">
                 {" "}
