@@ -90,8 +90,7 @@ const BusinessSmallCards = [
 
 const ServicesDropdown_V2 = ({ isServicesOpen, toggleServices, toggleNavigation }) => (
   <div
-    className="group h-full cursor-pointer max-[1130px]:w-full"
-    onClick={toggleServices}
+    className="group min-[1130px]:h-full cursor-pointer max-[1130px]:w-full"
   >
     <div className="group min-[1130px]:h-full cursor-pointer max-[1130px]:w-full" onClick={toggleServices}>
       <span className="px-4 hover:font-bold max-[1130px]:py-8 flex items-center justify-center min-[1130px]:h-full transition-all duration-[.45s] max-[1130px]:hover:bg-transparent max-[1130px]:px-0 relative 
