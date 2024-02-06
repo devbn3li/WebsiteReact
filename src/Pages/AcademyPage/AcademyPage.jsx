@@ -8,8 +8,7 @@ function AcademyPage() {
   return (
     <div className="mt-[7em]">
       <Mentors />
-      <PricingCards />
-      <ComparitionPricing />
+
       <WorkShop />
     </div>
   )

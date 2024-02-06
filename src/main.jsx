@@ -9,6 +9,7 @@ import NotFoundPage from './Pages/NotFoundPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import AcademyPage from './Pages/AcademyPage/AcademyPage';
+import Pricing from './Pages/AcademyPage/Pricing';
 import PrivacyPolicyPage from './Pages/LegelPages/PrivacyPolicyPage';
 import CookiesPolicyPage from './Pages/LegelPages/CookiesPolicyPage';
 import SolutionPage from './Pages/SolutionPage/SolutionPage';
@@ -55,6 +56,7 @@ export function Application() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="academy" element={<AcademyPage />} />
+          <Route path="pricing" element={<Pricing />} />
           <Route path="solution" element={<SolutionPage />} />
           <Route path="solution/level-up-o2" element={<LevelUpO2 />} />
           <Route path="waiting-list" element={<WaitingListPage />} />
