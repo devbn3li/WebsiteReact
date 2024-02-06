@@ -7,9 +7,7 @@ import { PiRobotLight, PiStrategy } from "react-icons/pi";
 import SolutionHero from "../../Components/Solutions/Hero";
 import ESG from "../../../public/assets/images/esg.png";
 import AI from "../../../public/assets/images/AI.webp";
-import Challenge from "../../Components/LevelUpO2/Challenge";
-import Solutions from "../../Components/LevelUpO2/Solutions";
-import Benefits from "../../Components/LevelUpO2/Benefits";
+import Dash from "../../Components/Dash/index";
 
 const SolutionPage = () => {
   const ESGPulse = [
@@ -135,7 +133,7 @@ const SolutionPage = () => {
       />
 
 
-
+<Dash/>
 
      
       <div className=" text-black">

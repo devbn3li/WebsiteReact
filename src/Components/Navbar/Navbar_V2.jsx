@@ -10,7 +10,7 @@ import NavbarLink_V2 from "./NavbarLink_V2";
 const navigationLinks = [
   { path: "/academy", title: "Academy" },
   { path: "/about", title: "About us" },
-  { path: "/contact", title: "Contact us" },
+  // { path: "/contact", title: "Contact us" },
   
 ];
 
@@ -21,9 +21,24 @@ const Navbar_V2 = () => {
   const [isServicesOpen, setServicesOpen] = useState(false);
 
   // Toggles for UI elements, making it clear what they do
-  const toggleNavigation = () => setNavOpen(!isNavOpen);
-  const toggleSolutions = () => setSolutionsOpen(!isSolutionsOpen);
-  const toggleServices = () => setServicesOpen(!isServicesOpen);
+  const toggleNavigation = () =>{ setNavOpen(!isNavOpen)
+    scrollToTop ()
+  };
+  const toggleSolutions = () => {setSolutionsOpen(!isSolutionsOpen)
+    scrollToTop ()
+  };
+  const toggleServices = () => {setServicesOpen(!isServicesOpen)
+    scrollToTop ()
+  };
+
+  // Function to bring the user to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
 
   return (
     <nav className="bg-white fixed top-0 font-inter m-auto -translate-x-1/2 z-50 left-1/2 flex justify-center w-full border-b border-b-[#02c2ab] shadow-md">
@@ -68,6 +83,7 @@ const Navbar_V2 = () => {
         </div>
         {/* Navigation Links, Services, and Solutions */}
         <div className={`flex items-center min-[1130px]:justify-end max-[1130px]:flex-col text-[20px] font-normal h-full max-[1130px]:w-full gap-5 max-[1130px]:gap-0 max-[1130px]:overflow-y-scroll max-[1130px]:overflow-x-hidden w-screen  flex-grow text-center transition-all box-border duration-[.45s] ${isNavOpen ? "max-[1130px]:translate-y-0" : "max-[1130px]:-translate-y-[120%]"} top-full left-0 text-black bg-white max-[1130px]:flex-col max-[1130px]:absolute max-[1130px]:w-full max-[1130px]:pb-[6.5rem] max-[1130px]:h-[calc(100vh-4.5rem)] max-[1130px]:text-lg max-[1130px]:border-b max-[1130px]:border-black`}>
+        <NavbarLink_V2  path={"/esg-software"} title={"ESG Software"} toggleNavigation={toggleNavigation} />
 
           {/* Solutions Dropdown */}
           <SolutionsDropdown isSolutionsOpen={isSolutionsOpen} toggleSolutions={toggleSolutions} />
