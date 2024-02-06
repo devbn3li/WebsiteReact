@@ -21,9 +21,24 @@ const Navbar_V2 = () => {
   const [isServicesOpen, setServicesOpen] = useState(false);
 
   // Toggles for UI elements, making it clear what they do
-  const toggleNavigation = () => setNavOpen(!isNavOpen);
-  const toggleSolutions = () => setSolutionsOpen(!isSolutionsOpen);
-  const toggleServices = () => setServicesOpen(!isServicesOpen);
+  const toggleNavigation = () =>{ setNavOpen(!isNavOpen)
+    scrollToTop ()
+  };
+  const toggleSolutions = () => {setSolutionsOpen(!isSolutionsOpen)
+    scrollToTop ()
+  };
+  const toggleServices = () => {setServicesOpen(!isServicesOpen)
+    scrollToTop ()
+  };
+
+  // Function to bring the user to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
 
   return (
     <nav className="bg-white fixed top-0 font-inter m-auto -translate-x-1/2 z-50 left-1/2 flex justify-center w-full border-b border-b-[#02c2ab] shadow-md">
