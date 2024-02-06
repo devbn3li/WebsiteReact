@@ -8,16 +8,16 @@ function index() {
        <div className="relative ">
       {/* Toolbars */}
       <div className="w-full">
-        <div className="bg-gray-300 border border-gray-400 rounded-t-lg flex items-stretch">
+        <div className="bg-[#02c2ab] border border-black rounded-t-lg flex items-stretch">
           <div className="px-4 pt-4 pb-3 mr-4 text-sm flex-0 text-gray-400 whitespace-no-wrap">
             <i className="mx-1 rounded-full w-3 h-3 bg-gray-400 inline-block" />
             <i className="mx-1 rounded-full w-3 h-3 bg-gray-400 inline-block" />
             <i className="mx-1 rounded-full w-3 h-3 bg-gray-400 inline-block" />
           </div>
-          <div className="relative px-4 py-2 mt-2 -mb-px flex-0 border-t border-gray-400 bg-gray-100 rounded-t-lg">
+          <div className="relative px-4 py-2 mt-2 -mb-px flex-0 border-t border-black bg-gray-100 rounded-t-lg">
             {/* Left side of tab */}
             <div
-              className="absolute bottom-0 w-4 h-8 border-b border-r border-gray-400 bg-gray-300 rounded-br-lg sh"
+              className="absolute bottom-0 w-4 h-8 border-b border-r border-black bg-[#02c2ab] rounded-br-lg sh"
               style={{ right: "100%" }}
             />
             {/* Tab text */}
@@ -50,12 +50,12 @@ function index() {
             </div>
             {/* Right side of tab */}
             <div
-              className="absolute bottom-0 w-4 h-8 border-b border-l border-gray-400 bg-gray-300 rounded-bl-lg sh"
+              className="absolute bottom-0 w-4 h-8 border-b border-l border-black bg-[#02c2ab] rounded-bl-lg sh"
               style={{ left: "100%" }}
             />
           </div>
         </div>
-        <div className="bg-gray-100 border-l border-r border-b border-gray-400 flex flex-row py-2">
+        <div className="bg-gray-100 border-l border-r border-b border-black flex flex-row py-2">
           <div className="px-4 py-2 flex-0 text-gray-400 whitespace-no-wrap">
             {/* <i class="mx-1 fas fa-arrow-left"></i> */}
             <svg
@@ -97,7 +97,7 @@ function index() {
               />
             </svg>
           </div>
-          <div className="px-4 py-2 my-auto flex-1 border border-gray-400 bg-white rounded-md whitespace-no-wrap overflow-hidden">
+          <div className="px-4 py-2 my-auto flex-1 border border-black bg-white rounded-md whitespace-no-wrap overflow-hidden">
             https://dash.levelupesg.co/Solutions/ESGPulse
           </div>
           <div className="px-4 py-2  flex-0 text-gray-400 whitespace-no-wrap">
@@ -144,7 +144,7 @@ function index() {
         </div>
       </div>
       {/* Faux Sides */}
-      <div className="absolute left-0 border-l border-r border-gray-400 h-16 w-full" />
+      <div className="absolute left-0 border-l border-r border-black h-16 w-full" />
     </div>
     {/* Page Content  */}
     <div className="w-full">
