@@ -51,7 +51,7 @@ const Navbar = () => {
             ))}
           </div>
           {/* Call to Action Button */}
-          <PrimaryButton path='/contact' title='Make an Impact' />
+          <PrimaryButton  path="#contact" title='Make an Impact' />
         </div>
       </div>
     </nav>
