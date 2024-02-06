@@ -41,6 +41,7 @@ import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenw
 import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
+import ESGSoftware from './Pages/ESGsoftware/ESGSoftware';
 
 // Application Component
 export function Application() {
@@ -78,6 +79,9 @@ export function Application() {
           <Route path="service/compliance" element={<Compliance />} />
           <Route path="service/risk-management" element={<RiskManagement />} />
           <Route path="service/finance" element={<Finance />} />
+          {/* /esg-software */}
+          <Route path="/esg-software" element={<ESGSoftware />} />
+
 
           {/* Blog article pages */}
           <Route path="blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<EmpoweringCSuiteBlog />} />

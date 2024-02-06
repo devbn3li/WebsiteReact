@@ -5,8 +5,8 @@ import Offer from '../../Components/Offer/Offer';
 import Testimonials from '../../Components/Testimonials/Testimonials';
 import Why from '../../Components/Why';
 import FAQs from '../../Components/FAQs';
-import Popup from '../../Components/Hero_Services/Popup/Popup';
 import BlogCardsList from '../../Components/BlogCard/BlogCardsList';
+import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 
 const LandingPage = () => {  
     const [isModalOpen, setModalOpen] = useState(false);
@@ -27,6 +27,8 @@ const LandingPage = () => {
       <Testimonials />
       <Why />
       <BlogCardsList/>
+      <SliderLogos />
+
       <FAQs/>
     </div>
   );
