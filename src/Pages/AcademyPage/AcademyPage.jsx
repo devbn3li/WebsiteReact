@@ -1,17 +1,20 @@
-import React from 'react'
-import PricingCards from '../../Components/Acamedy/PricingCards'
-import ComparitionPricing from '../../Components/Acamedy/ComparitionPricing'
+
 import WorkShop from '../../Components/Acamedy/WorkShop'
 import Mentors from '../../Components/Acamedy/Mentors'
+import Hero from '../../Components/Acamedy/Hero/index'
+import WhyOurTraining from '../../Components/Acamedy/WhyOurTraining/index'
 
 function AcademyPage() {
   return (
-    <div className="mt-[7em]">
+   <div class="w-full flex justify-center">
+     <div className="mt-[7em] max-w-[1400px]">
+      <Hero />
+      <WhyOurTraining />
       <Mentors />
-      <PricingCards />
-      <ComparitionPricing />
+
       <WorkShop />
     </div>
+   </div>
   )
 }
 
