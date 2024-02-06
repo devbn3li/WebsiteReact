@@ -52,7 +52,7 @@ function ESGSoftware() {
   return (
     <div>
       <div className="flex justify-center w-full">
-        <div className="max-w-[1400px]">
+        <div className="max-w-[1400px] mt-20">
           <SolutionHero
             title={"LevelUp O2® - AI-powered GHG Emissions Calculator"}
             discription={
