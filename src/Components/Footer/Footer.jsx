@@ -68,36 +68,38 @@ const Footer = () => {
                 </div>
                 <form
                   action="https://formsubmit.io/send/fae7788e-a910-41c2-a882-d5ba4dd4acf4"
-                  className="flex gap-6 max-[991px]:flex-col lg:justify-between">
+                  className="flex gap-6 flex-col max-[991px]:flex-col lg:justify-between">
+                  <div className="flex gap-5 max-[991px]:flex-col">
+                        <input
+                            type="text"
+                            name="first name"
+                            placeholder="First name"
+                            className="py-2 px-3 rounded-md outline-none "
+                        />
+                        <input
+                            type="text"
+                            name="surname"
+                            placeholder="Surname"
+                            className="py-2 px-3 rounded-md outline-none "
+                        />
+                  </div>
+                  
                   <input
-                    type="text"
-                    name="first name"
-                    placeholder="First name"
-                    className="py-2 px-3 rounded-md"
-                  />
-                  <input
-                    type="text"
-                    name="surname"
-                    placeholder="Surname"
-                    className="py-2 px-3 rounded-md"
-                  />
-                </form>
-                <input
                   type="email"
                   placeholder="Work email"
-                  className="py-2 px-3 rounded-md"
+                  className="py-2 px-3 rounded-md outline-none"
                 />
                 <input
                   type="tel"
                   name="phone"
                   placeholder="Phone number"
-                  className="py-2 px-3 rounded-md"
+                  className="py-2 px-3 rounded-md outline-none"
                 />
                 <input
                   type="text"
                   name="company name"
                   placeholder="Company name"
-                  className="py-2 px-3 rounded-md"
+                  className="py-2 px-3 rounded-md outline-none"
                 />
                 <button
                   type="submit"
@@ -106,6 +108,8 @@ const Footer = () => {
                 >
                   Book a Consultation
                 </button>
+                </form>
+                
               </div>
             </div>
           </div>

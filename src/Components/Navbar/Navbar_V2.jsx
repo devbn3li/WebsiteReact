@@ -104,7 +104,7 @@ const Navbar_V2 = () => {
               />
             ))}
             <PrimaryButton
-              path="/contact"
+              path="#contact"
               title="Make an Impact"
               classes="max-[1130px]:py-4 "
             />
