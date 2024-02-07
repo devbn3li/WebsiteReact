@@ -3,6 +3,8 @@ import AboutComponent from '../../Components/AboutComponent/AboutComponent';
 import Business from '../../Components/Business';
 import Why from '../../Components/Why';
 import Jobs from '../../Components/Jobs';
+import PurposeComponent from '../../Components/AboutComponent/Purpose';
+
 import FounderNote from '../../Components/Qoute'
 import ContPeople from '../../Components/AboutComponent/ContPeople';
 import Companys from '../../Components/AboutComponent/Companys';
@@ -12,8 +14,10 @@ function About() {
     <div>
       <AboutComponent />
       <Business />
+      <PurposeComponent/>
       <Why />
       <Jobs />
+      
       <FounderNote />
       <ContPeople />
       <Companys />
