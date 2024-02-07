@@ -76,10 +76,10 @@ const Why = () => {
       <div className='px-[5%] w-full pb-20'>
         <div className='flex flex-col gap-1'>
           <div className='flex flex-col max-w-[90.25rem] gap-3'>
-            <h1 className='mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl '>
+            <h1 className='mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#112b65] md:text-5xl lg:text-6xl '>
               Why Choosing LevelUp
             </h1>
-            <p className='mb-8 text-lg font-normal text-gray-500 lg:text-xl  '>
+            <p className='mb-8 text-lg font-normal text-[#112b65] lg:text-xl  '>
               LevelUp empowers businesses with affordable and innovative
               corporate sustainability solutions, expert-led advice, assurance,
               and a knowledge and resources hub.Our AI engines, service offerings, and data science simplify ESG execution, driving measurable impact.
@@ -103,11 +103,11 @@ const Why = () => {
                 </div>
                 <div className="grid place-items-center">
                   {" "}
-                  <h3 className='mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl '>{reason.title}</h3>
+                  <h3 className='mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-[#112b65] md:text-2xl lg:text-3xl '>{reason.title}</h3>
                 </div>
                </div>
                <div className="min-h-[100px] grid place-items-center">
-               <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl ">{reason.description}</p>
+               <p className="mb-8 text-lg font-normal text-[#112b65]/70 lg:text-xl ">{reason.description}</p>
                </div>
                 
               </a>
