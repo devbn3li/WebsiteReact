@@ -121,14 +121,14 @@ const Footer = () => {
                   alt=""
                 />
               </div>
-              <div className="grid place-items-center ">
+              <div className="grid place-items-center  ">
                 <img
                   className="w-[100px]"
                   src="../../../public/assets/images/innovator-international-white.png"
                   alt=""
                 />
               </div>
-              <div className="grid place-items-center ">
+              <div className="grid place-items-center scale-90">
                 <img
                   className="w-[100px]"
                   src="../../../public/assets/images/home-office-logo-0F594C8106-seeklogo.com.png"
