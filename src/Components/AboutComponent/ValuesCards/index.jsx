@@ -28,7 +28,7 @@ const dataValue = [
 ];
 
 const Card = ({ title, description }) => (
-  <div className="p-6 bg-white rounded-lg shadow-md">
+  <div className="p-6 bg-[#02c2ab]/30 hover:bg-[#02c2ab] duration-500 cursor-pointer hover:scale-105 rounded-lg shadow-md">
     <h3 className="text-2xl !font-extrabold text-[#112b65]  mb-4">{title}</h3>
     <p className="text-lg text-[#112b65]">{description}</p>
   </div>
