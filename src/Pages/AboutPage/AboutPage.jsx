@@ -2,6 +2,7 @@ import React from 'react';
 import AboutComponent from '../../Components/AboutComponent/AboutComponent';
 import Business from '../../Components/Business';
 import Why from '../../Components/Why';
+// import Founders from '../../Components/Founders/Founders';
 import Jobs from '../../Components/Jobs';
 import PurposeComponent from '../../Components/AboutComponent/Purpose';
 
@@ -16,6 +17,7 @@ function About() {
       <Business />
       <PurposeComponent/>
       <Why />
+      {/* <Founders /> */}
       <Jobs />
       
       <FounderNote />

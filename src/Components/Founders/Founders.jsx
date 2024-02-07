@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Lottie from 'lottie-react';
 import wave from '../../Lottie/story.json';
 import { Link } from "react-router-dom";
-import DRAhmedImg from '../../../public/assets/images/person_1.jpg';
+import DRAhmedImg from '../../../public/assets/images/DrAhmedShawky.png';
 
 
 const SlideComponent = (founder) => (
@@ -45,7 +45,7 @@ const SlideComponent = (founder) => (
 
 function TeamTestimonial() {
   const founder = {
-    imgSrc: '../../../public/assets/images/person_1.jpg',
+    imgSrc: '../../../public/assets/images/DrAhmedShawky.png',
     name: "Dr. Ahmed Shawky",
     jobTitle: "Founder and Manging Dictor, LevelUp Ltd.",
     message: "To lead the global shift toward affordable, data-driven sustainability envision a world where our AI-powered solutions provide insights to businesses of all sizes guiding them to thrive sustainably and drive positive change",

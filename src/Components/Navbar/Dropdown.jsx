@@ -55,10 +55,8 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
               <div className='flex flex-col w-1/2 max-[1130px]:w-[90%] max-[1130px]:mx-[5%] max-[1130px]:my-5 gap-4'>
                 <div className="text-black font-bold text-lg min-[1130px]:hidden">- {data.moreLinks1.title}: </div>
                 <div className="flex flex-wrap">
-                  {data.moreLinks1.links.slice(0, 7).map((service, index) => (
-                    <Link to={service.path} key={index}>
-                      <SubNavbarLink title={service.title} Icon={service.Icon} path={service.path} clear={closeTab} />
-                    </Link>
+                  {data.moreLinks1.links.slice(0, 7).map((link, index) => (
+                    <SubNavbarLink key={index} title={link.title} Icon={link.Icon} path={link.path} clear={closeTab} />
                   ))}
                 </div>
               </div>
@@ -68,10 +66,8 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
               <div className='flex flex-wrap w-1/2 max-[1130px]:w-[90%] max-[1130px]:mx-[5%] max-[1130px]:my-5 gap-4'>
                 <div className="text-black font-bold text-lg min-[1130px]:hidden"> - {data.moreLinks2.title}: </div>
                 <div className="flex flex-wrap">
-                  {data.moreLinks2.links.slice(0, 7).map((service, index) => (
-                    <Link to={service.path} key={index}>
-                      <SubNavbarLink title={service.title} Icon={service.Icon} path={service.path} clear={closeTab} />
-                    </Link>
+                  {data.moreLinks2.links.slice(0, 7).map((link, index) => (
+                      <SubNavbarLink title={link.title} Icon={link.Icon} path={link.path} clear={closeTab} key={index} />
                   ))}
                 </div>
               </div>
@@ -89,7 +85,6 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
 }
 
 Dropdown.propTypes = {
-  closeNavigation: PropTypes.func.isRequired,
   toggleTab: PropTypes.func.isRequired,
   closeTab: PropTypes.func.isRequired,
   isTabOpen: PropTypes.bool.isRequired,
@@ -98,18 +93,18 @@ Dropdown.propTypes = {
     tab1: PropTypes.shape({
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      Icon: PropTypes.elementType.isRequired
+      Icon: PropTypes.object.isRequired
     }),
     tab2: PropTypes.shape({
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      Icon: PropTypes.elementType.isRequired,
+      Icon: PropTypes.object.isRequired,
     }),
     moreLinks1: PropTypes.shape({
       title: PropTypes.string.isRequired,
       links: PropTypes.arrayOf(PropTypes.shape({
         title: PropTypes.string.isRequired,
-        icon: PropTypes.elementType.isRequired,
+        Icon: PropTypes.object.isRequired,
         path: PropTypes.string.isRequired,
       })),
     }).isRequired,
@@ -117,7 +112,7 @@ Dropdown.propTypes = {
       title: PropTypes.string,
       links: PropTypes.arrayOf(PropTypes.shape({
         title: PropTypes.string.isRequired,
-        icon: PropTypes.elementType.isRequired,
+        Icon: PropTypes.object.isRequired,
         path: PropTypes.string.isRequired,
       })).isRequired,
     }),

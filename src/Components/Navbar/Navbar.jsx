@@ -12,12 +12,12 @@ const servicesTabData = {
   title: "Services",
   tab1: {
     title: "ESG Services",
-    discription: "ESG Services assist companies in implementing sustainable and ethical operational practices.",
+    description: "ESG Services assist companies in implementing sustainable and ethical operational practices.",
     Icon: IoLeafOutline,
   },
   tab2: {
     title: "Business Services",
-    discription: "Business Services offer essential support for enhancing company efficiency and growth.",
+    description: "Business Services offer essential support for enhancing company efficiency and growth.",
     Icon: IoEarthSharp,
   },
   moreLinks1: {
@@ -25,52 +25,52 @@ const servicesTabData = {
     links: [
       {
         title: "Diagnostic Assessment",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/esg-diagnostic",
       },
       {
         title: "ESG Pulse",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/esg-pulse",
       },
       {
         title: "Strategy",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/esg-strategy",
       },
       {
         title: "Board Advisory",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/board-level",
       },
       {
         title: "LevelUp O2",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/levelup-o2",
       },
       {
         title: "Strategic Stakeholder",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/strategic-stakeholder",
       },
       {
         title: "Compliance",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/esg-compliance",
       },
       {
         title: "Assurance",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/esg-assurance",
       },
       {
         title: "Controllership",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/esg-controllership",
       },
       {
         title: "Internal Audit program",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/esg-ia-program",
       },
     ],
@@ -80,27 +80,27 @@ const servicesTabData = {
     links: [
       {
         title: "Internal Audit",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/internal-audit",
       },
       {
         title: "Compliance",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/compliance",
       },
       {
         title: "Risk management",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/risk-management",
       },
       {
         title: "business transformation",
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: 'service/board-level'
       },
       {
         title: 'business transformation',
-        icon: IoEarthSharp,
+        Icon: IoEarthSharp,
         path: "service/finance",
       },
     ]
