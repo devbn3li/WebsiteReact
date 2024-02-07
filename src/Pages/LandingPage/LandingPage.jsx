@@ -19,7 +19,7 @@ const LandingPage = () => {
       setModalOpen(true);
     }, []); // Empty dependency array ensures the effect runs only once
   return (
-    <div className='flex flex-col justify-center items-center w-full font-inter text-[#121212]'>
+    <div className='flex flex-col justify-center items-center w-full font-inter text-[#002E70]'>
      {/* <Popup isOpen={isModalOpen} closeModal={closeModal} /> */}
       <Hero />
       <Benefits />

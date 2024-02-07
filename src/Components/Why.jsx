@@ -1,8 +1,6 @@
-import { FaRegLightbulb } from "react-icons/fa";
-import { MdCelebration, MdOutlineReport, MdLeaderboard } from "react-icons/md";
+import { MdCelebration, MdOutlineReport } from "react-icons/md";
 import { FaLevelUpAlt } from "react-icons/fa";
-import { PiRobotLight, PiStrategy } from "react-icons/pi";
-import { SiHiveBlockchain } from "react-icons/si";
+import { PiStrategy } from "react-icons/pi";
 import backgroundImage from "../../public/assets/images/bg/1.jpg";
 
 const Why = () => {
@@ -76,10 +74,11 @@ const Why = () => {
       <div className='px-[5%] w-full pb-20'>
         <div className='flex flex-col gap-1'>
           <div className='flex flex-col max-w-[90.25rem] gap-3'>
-            <h1 className='mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl '>
+            <h1 className='mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl '>
               Why Choosing LevelUp
             </h1>
-            <p className='mb-8 text-lg font-normal text-gray-500 lg:text-xl  '>
+            <p className='mb-8 text-lg font-normal text-[#002E70]/80 lg:text-xl  '>
+
               LevelUp empowers businesses with affordable and innovative
               corporate sustainability solutions, expert-led advice, assurance,
               and a knowledge and resources hub.Our AI engines, service offerings, and data science simplify ESG execution, driving measurable impact.
@@ -98,16 +97,17 @@ const Why = () => {
             
                 className='reason-link max-w-[500px] border-2 border-gray-200/80 backdrop-blur-lg   transition duration-500 hover:bg-gray-200 transform hover:scale-95 rounded-2xl	p-6'>
                <div className="flex gap-2">
-               <div className='reason-item mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px] '>
+               <div className='reason-item mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-[40px] h-[40px] '>
                   {reason.icon}
                 </div>
                 <div className="grid place-items-center">
                   {" "}
-                  <h3 className='mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl '>{reason.title}</h3>
+                  <h3 className='mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-[#002E70] md:text-2xl lg:text-3xl '>{reason.title}</h3>
                 </div>
                </div>
                <div className="min-h-[100px] grid place-items-center">
-               <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl ">{reason.description}</p>
+               <p className="mb-8 text-lg font-normal text-[#002E70] lg:text-xl ">{reason.description}</p>
+
                </div>
                 
               </a>
