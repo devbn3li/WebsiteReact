@@ -18,7 +18,7 @@ export default function TeamMembers() {
           <h2 className='text-3xl  md:text-7xl font-bold  text-[2.625rem] mb-[.5rem] text-center '>
             <mark className=' px-4  rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]'>
               {" "}
-              Our Leaders
+              Our   Team
             </mark>
           </h2>
 
