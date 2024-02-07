@@ -23,22 +23,26 @@ const softwareSolutions = [
 
 const ESGSoftwareSection = () => {
   return (
-    <section className="bg-gray-100 py-20 px-[5%]">
+   <div className='w-full flex justify-center'>
+     <section className=" max-w-[1400px] py-20 px-[5%]">
       <div className="container text-[#002E70] mx-auto">
         <h2 className="text-2xl md:text-5xl font-extrabold text-center mb-8">Enhance Your ESG Performance with Our Software Solutions</h2>
-        <div className="flex flex-col items-center lg:flex-row flex-wrap justify-center gap-8">
+        <div className='mx-auto pt-12 h-full max-w-[1400px] p-2'>
+        <div className="grid grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-3">
           {softwareSolutions.map((solution, index) => (
-            <div key={index} className="flex-1 text-center mb-8 max-w-md">
-              <h3 className="text-xl font-semibold mb-4">{solution.name}</h3>
-              <p className="mb-4">{solution.description}</p>
+            <div key={index} className="p-6 bg-[#02c2ab]/30 hover:bg-[#02c2ab] duration-500 cursor-pointer hover:scale-105 rounded-lg shadow-md">
+              <h3 className="text-2xl !font-extrabold text-[#112b65]  mb-4">{solution.name}</h3>
+              <p className="text-lg text-[#112b65]">{solution.description}</p>
             </div>
           ))}
+        </div>
         </div>
         <div className="text-center mt-8">
           <PrimaryButton path="/contact" title="Explore Our Solutions" />
         </div>
       </div>
     </section>
+   </div>
   );
 };
 

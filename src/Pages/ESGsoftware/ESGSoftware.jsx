@@ -52,7 +52,8 @@ function ESGSoftware() {
   ];
 
   return (
-    <div>
+   <div >
+     <div className="">
       <HeroSoftware />
       <ESGSoftwareSection />
       <div className="flex justify-center w-full">
@@ -86,6 +87,7 @@ function ESGSoftware() {
         />
       </div>
     </div>
+   </div>
   );
 }
 
