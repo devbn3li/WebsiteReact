@@ -14,8 +14,8 @@ const AboutComponent = () => {
         <div className="px-[5%] w-full py-28">
           <div className="text-center mb-20">
             <div className="mx-auto max-w-3xl font-sans">
-              <h2 className="text-5xl font-bold mb-8">About us</h2>
-              <p className="text-lg">
+              <h2 className=" text-[#112b65]  mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl ">About us</h2>
+              <p className="text-lg text-[#112b65] mb-8  font-normal lg:text-xl  ">
                 LevelUp is a corporate sustainability technology, consulting and
                 assurance firm. We provide innovative yet affordable
                 sustainability solutions, business consulting, impactful
