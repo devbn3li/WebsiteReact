@@ -26,7 +26,7 @@ const sliderLogos = () => (
       <div className="container mx-auto px-[5%] flex flex-col lg:flex-row items-center justify-center">
         <div className="lg:pr-10  mb-10 lg:mb-0">
           <h1 className="mb-4 text-2xl max-w-[1000px] text-center font-extrabold tracking-tight leading-none text-[#002E70] md:text-3xl lg:text-4xl">
-            ESG software and solutions support major sustainability and ESG
+          LevelUp's ESG software and solutions support major sustainability and ESG
             standards and frameworks
           </h1>
         </div>

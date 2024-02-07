@@ -25,13 +25,14 @@ import logo21 from "../../../public/assets/images/company/pvh.svg";
 import logo22 from "../../../public/assets/images/company/qatar-foundation-logo-vector.svg";
 import logo23 from "../../../public/assets/images/company/Cognizant_logo_2022.svg";
 import logo24 from "../../../public/assets/images/company/Protiviti_logo.svg";
+import logod3 from "../../../public/assets/images/company/3.png";
 
 const logos = [
   logo1, logo2, logo3, logo4, logo5,
   logo6, logo7, logo8, logo9, logo10,
   logo11, logo12, logo13, logo14, logo15,
   logo16, logo17, logo18, logo19, logo20,
-  logo21, logo22, logo23, logo24,
+  logo21, logo22, logo23, logo24,logod3
 ];
 
 const Companys = () => {
