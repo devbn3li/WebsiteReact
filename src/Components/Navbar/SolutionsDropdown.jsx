@@ -17,17 +17,15 @@ import { Link } from 'react-router-dom';
 
 const SolutionsDropdown = ({ isSolutionsOpen, toggleSolutions }) => {
   return (
-    <div className="group cursor-pointer" onClick={toggleSolutions}>
-      
-<Link to="/solution" className=" duration-500 hover:text-gray-600 py-1">
-<div className="px-4 py-2 hover:bg-[#e6e6e5] rounded-lg transition-all duration-[.45s] inline-block max-[991px]:hover:bg-transparent max-[991px]:px-0 max-[991px]:py-3">
-        Solutions
-      </div>
+    <div className="group cursor-pointer min-[1130px]:h-full max-[1130px]:w-full" onClick={toggleSolutions}>
+
+      <Link to="/solution" className="px-4 max-[1130px]:py-8 min-[1130px]:h-full  box-border transition-all max-[1130px]:w-full flex items-center justify-center duration-[.45s] max-[991px]:hover:bg-transparent relative after:absolute after:h-[2px] after:bg-[#121212] after:w-0 after:left-1/2 after:-translate-x-1/2 after:hover:w-full after:transition-all after:bottom-0">
+          Solutions
       </Link>
 
 
 
-      {/* <div className={`w-[250px] bg-[#03C2AB] overflow-hidden flex flex-col justify-center px-4 min-[991px]:shadow-lg max-[991px]:w-screen group-hover:h-auto transition-all min-[991px]:rounded-3xl min-[991px]:absolute ${isSolutionsOpen ? "h-auto" : "h-0"}`}>
+      {/* <div className={`w-[250px] bg-[#03C2AB] overflow-hidden flex flex-col justify-center px-4 ${isSolutionsOpen ? "h-auto" : "h-0"}`}>
         {solutions.map((item, index) => (
           <Link
             key={index}

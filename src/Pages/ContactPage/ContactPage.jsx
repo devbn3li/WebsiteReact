@@ -1,8 +1,15 @@
+import React from 'react'
+import Jobs from '../../Components/Jobs'
+import FAQs from '../../Components/FAQs'
+
 export default function ContactPage() {
   return (
-    <div className="w-full flex justify-center  pt-[7rem] ">
+    <div className="w-full  pt-[7rem] flex justify-center ">
+<div className='w-full max-w-[1400px]'>
 
-      <section className="contactWrapper max-w-[1400px] relative w-full  px-[1rem] py-[2rem] sm:p-[3rem] ">
+
+  
+<section className="contactWrapper max-w-[1400px] relative w-full  px-[1rem] py-[2rem] sm:p-[3rem] ">
         <div className="contact  text-center  sm:w-[80%] mx-auto ">
           <h1 className="text-[2.5rem] font-[700] text-[#121212]">Contact</h1>
           <p className="mt-5 mb-8 text-[18px] sm:px-32 text-[#3F403E]">Reach out to us now and discover how we can collaborate to bring your vision to life. Get in touch today!
@@ -67,6 +74,9 @@ export default function ContactPage() {
           </form>
         </div>
       </section>
+      <Jobs />
+      <FAQs/>
+</div>
     </div>
   )
 }

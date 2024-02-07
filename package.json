@@ -25,6 +25,7 @@
     "react-infinite-logo-slider": "^1.0.13",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.21.3",
+    "react-router-hash-link": "^2.4.3",
     "sort-by": "^0.0.2",
     "styled-components": "^6.1.8"
   },
