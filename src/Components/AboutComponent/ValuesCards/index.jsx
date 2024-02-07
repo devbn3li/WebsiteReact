@@ -37,7 +37,7 @@ const Card = ({ title, description }) => (
 const index = () => {
   return (
     <div className="relative flex h-full flex-col justify-center  w-full">
-      <div className="mx-auto h-full max-w-[1400px] p-2">
+      <div className="mx-auto pt-12 h-full max-w-[1400px] p-2">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {dataValue.map((item, index) => (
             <Card key={index} title={item.title} description={item.description} />
