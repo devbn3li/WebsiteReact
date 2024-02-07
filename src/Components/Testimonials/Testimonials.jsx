@@ -34,7 +34,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className='w-full bg-[#121212] min-h-screen flex justify-center items-center'>
+    <div className='w-full  bg-gradient-to-r from-[#1C4987] to-[#159D9B] min-h-screen flex justify-center items-center'>
       <section className='max-w-[1400px] p-4 md:p-10 lg:p-20 text-[#B3FFD6] bg-[#121212]/20 border-2 border-gray-200/20 rounded-[20px] w-full'>
         <div className='flex flex-col'>
           <h1 className='mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-gray-100 capitalize'>
