@@ -26,43 +26,22 @@ import logo22 from "../../../public/assets/images/company/8.png";
 import logo23 from "../../../public/assets/images/company/8.png";
 import logo24 from "../../../public/assets/images/company/8.png";
 import logo25 from "../../../public/assets/images/company/8.png";
-// Import the rest of your logos...
 
 const logos = [
-  logo1,
-  logo2,
-  logo3,
-  logo4,
-  logo5,
-  logo6,
-  logo7,
-  logo8,
-  logo9,
-  logo10,
-  logo11,
-  logo12,
-  logo13,
-  logo14,
-  logo15,
-  logo16,
-  logo17,
-  logo18,
-  logo19,
-  logo20,
-  logo21,
-  logo22,
-  logo23,
-  logo24,
-  logo25,
+  logo1, logo2, logo3, logo4, logo5,
+  logo6, logo7, logo8, logo9, logo10,
+  logo11, logo12, logo13, logo14, logo15,
+  logo16, logo17, logo18, logo19, logo20,
+  logo21, logo22, logo23, logo24, logo25,
 ];
 
 const Companys = () => {
   return (
     <div className="container mx-auto mt-20 px-[5%]">
-      <h1 className="text-5xl text-center font-extrabold mb-12 text-[#112b65]">
+      <h1 className="text-3xl md:text-5xl text-center font-extrabold mb-12 text-[#112b65]">
         Our ESG experts have worked with the best companies in every category
       </h1>
-      <div className="grid grid-cols-5 justify-items-center gap-4">
+      <div className="grid grid-cols-2  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 justify-items-center gap-4">
         {logos.map((logo, index) => (
           <img
             key={index}
