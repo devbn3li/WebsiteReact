@@ -62,7 +62,7 @@ const Offer = () => {
   return (
   <div className='max-w-[1400px]  py-28 mt-[4.5rem] flex justify-center flex-col'>
    <div className=' w-full px-[5%]   mb-10'>
-      <h1 className="mb-4 text-4xl  max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70]/80 md:text-5xl lg:text-6xl ">
+      <h1 className="mb-4 text-4xl  max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
           {sectionTitle}</h1>
           <p className=" text-lg font-normal text-[#002E70] lg:text-xl  ">
           
