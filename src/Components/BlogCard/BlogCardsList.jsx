@@ -37,7 +37,7 @@ function BlogCardsList() {
   ];
 
   return (
-    <div className="container  mx-auto py-8 mt-20 px-[5%]">
+    <div className="container text-[#002E70]  mx-auto py-8 mt-20 px-[5%]">
         <SolutionHero
         title={"Learn from our impact makers"}
         subtitle={"Our blog is a great resource for learning about the latest trends in sustainability, ESG, and corporate governance."}
