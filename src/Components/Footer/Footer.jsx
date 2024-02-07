@@ -2,6 +2,9 @@ import Logo from "../../../public/assets/images/logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  let date = new Date();
+  let year = date.getFullYear();
+
   return (
     <footer className="w-full flex justify-center">
       <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-64 w-full max-w-[1400px]">
@@ -145,7 +148,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="text-white text-sm">
-                © 2024 LevelUp. All rights reserved.
+                © {year} LevelUp. All rights reserved.
               </p>
             </div>
           </div>
