@@ -25,7 +25,7 @@ const SlideComponent = (founder) => (
             strokeWidth='1.5'></path>
         </svg>
       </div>
-      <h1 className='text-3xl md:text-7xl font-bold'>{founder.classes}</h1>
+      <h1 className='text-3xl md:text-7xl font-bold '>{founder.classes}</h1>
       <p className={`text-${founder.message.length > 170 ? 'xl' : '2xl'} max-lg:text-[20px] font-medium pb-32 lg:pb-0 box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-100`}>
         {founder.message}
       </p>
@@ -128,10 +128,10 @@ function Founders() {
                   fontWeight: "bold",
                   lineHeight: "120%",
                 }}
-                className='text-3xl md:text-7xl font-bold leading-120%'>
+                className='text-3xl text-[#112b65] md:text-7xl font-bold leading-120%'>
                 Our Mission
               </h1>
-              <p className='text-[24px] max-lg:text-[20px] font-medium  box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-700'>
+              <p className='text-[24px] text-[#112b65] max-lg:text-[20px] font-medium  box-border  max-lg:px-28 max-md:px-0 leading-[150%] '>
                 To empower SMEs to advance sutainability through AI-powered solutions and strategic guidance
               </p>{" "}
             </div>
