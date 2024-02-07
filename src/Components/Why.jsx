@@ -1,8 +1,6 @@
-import { FaRegLightbulb } from "react-icons/fa";
-import { MdCelebration, MdOutlineReport, MdLeaderboard } from "react-icons/md";
+import { MdCelebration, MdOutlineReport } from "react-icons/md";
 import { FaLevelUpAlt } from "react-icons/fa";
-import { PiRobotLight, PiStrategy } from "react-icons/pi";
-import { SiHiveBlockchain } from "react-icons/si";
+import { PiStrategy } from "react-icons/pi";
 import backgroundImage from "../../public/assets/images/bg/1.jpg";
 
 const Why = () => {
