@@ -8,7 +8,7 @@ function FAQs() {
           <h2 className="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">
             FAQ
           </h2>
-          <p className="mt-3 text-lg text-neutral-500 md:text-xl">
+          <p className="mt-3 text-lg text-[#002E70] md:text-xl">
             Frequenty asked questions
           </p>
         </div>
@@ -16,7 +16,7 @@ function FAQs() {
           <div className="py-5">
             <details className="group">
               <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span> What is LevelUp?</span>
+                <span className='font-bold'> What is LevelUp?</span>
                 <span className="transition group-open:rotate-180">
                   <svg
                     fill="none"
@@ -33,7 +33,7 @@ function FAQs() {
                   </svg>
                 </span>
               </summary>
-              <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
+              <p className="group-open:animate-fadeIn mt-3 text-[#002E70]">
                 LevelUp is a London-based sustainability technology and consulting firm. We make sustainability attainable for businesses of all sizes by providing innovative yet affordable ESG solutions, business consulting, training, and assurance services. Our team of global experts helps companies integrate sustainability into their business strategy.
               </p>
             </details>
@@ -41,7 +41,7 @@ function FAQs() {
           <div className="py-5">
             <details className="group">
               <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span> What is LevelUp's purpose?</span>
+                <span className='font-bold'> What is LevelUp's purpose?</span>
                 <span className="transition group-open:rotate-180">
                   <svg
                     fill="none"
@@ -58,7 +58,7 @@ function FAQs() {
                   </svg>
                 </span>
               </summary>
-              <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
+              <p className="group-open:animate-fadeIn mt-3 text-[#002E70]">
                 Our purpose is to contribute to making sustainable and good business practices accessible for every business. We believe that sustainability should not be a luxury but a fundamental aspect of thriving in today's business landscape.
               </p>
             </details>
@@ -66,7 +66,7 @@ function FAQs() {
           <div className="py-5">
             <details className="group">
               <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span>What is LevelUp's mission?</span>
+                <span className='font-bold'>What is LevelUp's mission?</span>
                 <span className="transition group-open:rotate-180">
                   <svg
                     fill="none"
@@ -83,7 +83,7 @@ function FAQs() {
                   </svg>
                 </span>
               </summary>
-              <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
+              <p className="group-open:animate-fadeIn mt-3 text-[#002E70]">
                 Our mission is to elevate our clients’ sustainability and business practices while mitigating risks.We achieve this by leveraging innovative AI technology and strategic expertise to deliver tailored solutions that drive measurable impact. Our human-led, tech-enabled approach simplifies executing ESG initiatives, empowering organizations to advance their goals and make meaningful progress.
               </p>
             </details>
@@ -91,7 +91,7 @@ function FAQs() {
           <div className="py-5">
             <details className="group">
               <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span> What makes LevelUp unique?</span>
+                <span className='font-bold'> What makes LevelUp unique?</span>
                 <span className="transition group-open:rotate-180">
                   <svg
                     fill="none"
@@ -108,7 +108,7 @@ function FAQs() {
                   </svg>
                 </span>
               </summary>
-              <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
+              <p className="group-open:animate-fadeIn mt-3 text-[#002E70]">
                 <span className='font-semibold'> Cutting-Edge Technology for Meaningful Impact</span><br/>
                 Experience innovation with LevelUp's cutting-edge technology and AI integration, empowering businesses to gain greater control over their data and create a lasting ESG impact.<br/><br/>
 
@@ -127,7 +127,7 @@ function FAQs() {
           <div className="py-5">
             <details className="group">
               <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span> Do you have any promotions or deals?</span>
+                <span className='font-bold'> Do you have any promotions or deals?</span>
                 <span className="transition group-open:rotate-180">
                   <svg
                     fill="none"
@@ -144,7 +144,7 @@ function FAQs() {
                   </svg>
                 </span>
               </summary>
-              <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
+              <p className="group-open:animate-fadeIn mt-3 text-[#002E70]">
                 Yes, we offer extremely discounted and special pricing for third-sector and micro businesses.
               </p>
             </details>
@@ -152,7 +152,7 @@ function FAQs() {
           <div className="py-5">
             <details className="group">
               <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                <span> Where is LevelUp located?</span>
+                <span className='font-bold'> Where is LevelUp located?</span>
                 <span className="transition group-open:rotate-180">
                   <svg
                     fill="none"
@@ -169,7 +169,7 @@ function FAQs() {
                   </svg>
                 </span>
               </summary>
-              <p className="group-open:animate-fadeIn mt-3 text-neutral-600">Our office address is 128 City Road, London, UK, EC1V 2NX</p>
+              <p className="group-open:animate-fadeIn mt-3 text-[#002E70]">Our office address is 128 City Road, London, UK, EC1V 2NX</p>
             </details>
           </div>
         </div>
