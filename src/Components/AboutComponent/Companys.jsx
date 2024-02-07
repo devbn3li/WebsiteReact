@@ -42,12 +42,14 @@ const Companys = () => {
       </h1>
       <div className="grid grid-cols-2 place-items-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 justify-items-center gap-2">
         {logos.map((logo, index) => (
-          <img
-            key={index}
+         <div   key={index} className="hover:bg-[#112b65]/20 duration-500 ease-linear cursor-pointer hover:scale-95 p-4 h-full w-full grid place-items-center rounded-3xl ">
+ <img
+          
             src={logo}
             alt={`Logo ${index + 1}`}
-            className="w-full h-auto sm:w-20 scale-75 md:w-24 lg:w-28 xl:w-32 object-cover"
+            className="w-full h-auto sm:w-20   md:w-24 lg:w-28 xl:w-32 object-cover"
           />
+          </div>
         ))}
       </div>
     </div>
