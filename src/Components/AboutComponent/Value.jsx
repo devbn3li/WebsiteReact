@@ -37,13 +37,13 @@ function Values() {
     <section className='w-full h-screen  my-[2rem] mb-[6rem] bg-[#002E70]  '>
       <div className='relative sm:w-[90%]  mx-auto h-full  p-[2rem]  md:p-[4rem] '>
         <div className='w-[100%] pt-12 bg-[#F9FFF5] h-full  p-[2rem] rounded-3xl  border-t-8 border-[#03C2AB]'>
+        <p className='text-center break-words mb-2 text-[#112b65]/80 font-bold text-4xl md:text-2xl leading-[1.2]'>We believe in</p>
           <h2 className='text-3xl  md:text-7xl font-bold  text-[2.625rem] mb-[.5rem] text-center '>
             <mark className=' px-4  rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]'>
               {" "}
               Our Values{" "} 
             </mark>
           </h2>
-          <p className='text-center mb-5 break-words'>We believe in:</p>
           <div className='grid sm:grid-cols-2 lg:grid-cols-3  gap-x-5 gap-y-5'>
             {dataValue.map((e, i) => {
               return (
