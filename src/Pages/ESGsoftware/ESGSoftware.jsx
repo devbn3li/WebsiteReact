@@ -4,6 +4,8 @@ import DS from "../../../public/assets/images/DS.png";
 import Challenge from "../../Components/LevelUpO2/Challenge";
 import Solutions from "../../Components/LevelUpO2/Solutions";
 import Benefits from "../../Components/LevelUpO2/Benefits";
+import HeroSoftware from "../../Components/HeroSoftware";
+import ESGSoftwareSection from "../../Components/ESGSoftwareSection";
 
 function ESGSoftware() {
   const SustainabilityTracker = [
@@ -51,6 +53,8 @@ function ESGSoftware() {
 
   return (
     <div>
+      <HeroSoftware />
+      <ESGSoftwareSection />
       <div className="flex justify-center w-full">
         <div className="max-w-[1400px] mt-20">
           <SolutionHero

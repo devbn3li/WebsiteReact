@@ -13,18 +13,21 @@ const [cookies, setCookies] = useState(localStorage.getItem("cookiesAccepted") =
     <div className=' '>
       {/* component */}
       <div
-        className='fixed left-5 max-w-[700px] bg-white rounded-3xl overflow-hidden shadow-2xl bottom-20 z-40 '
+        className='fixed left-5 max-w-[700px] bg-[#baede7] rounded-3xl overflow-hidden shadow-2xl bottom-20 z-40 '
         data-x-data='{cookies: true}'
         data-x-init='$watch("cookies", o => !o &amp;&amp; window.setTimeout(() => (cookies = true), 1000)); setTimeout(() => cookies = true, 1500)'
         onKeyDown={handleKeyDown}>
         <div style={{ display: cookies ? "block" : "none" }}>
           {/* Text */}
           <div className=''>
-            <div className='relative overflow-hidden px-8 pt-8'>
+            <div className='relative  overflow-hidden px-8 pt-8'>
+            <div className="absolute top-4 right-4 z-40">
+                  <img src='/assets/images/logo.png' className="h12 w-12 drop-shadow-3xl shadow-[#baede7]" />
+                </div>
               <div
                 width={80}
                 height={77}
-                className='absolute -top-10 -right-10 text-yellow-500'>
+                className='absolute -top-10 -right-10 text-[#02c2ab]'>
                 <svg
                   width={120}
                   height={119}
@@ -37,12 +40,14 @@ const [cookies, setCookies] = useState(localStorage.getItem("cookiesAccepted") =
                     fill='currentColor'
                   />
                 </svg>
+
+               
               </div>
-              <div className='text-2xl flex flex-col pb-4'>
+              <div className='text-2xl text-[#112b65]  flex flex-col pb-4'>
                 <small>Hello there..</small>
                 <span className='text-3xl font-bold'>We are the Cookies !</span>
               </div>
-              <div className='pb-4'>
+              <div className='pb-4 text-[#112b65] '>
                 <p>
                   We use cookies to enhance your browsing experience and collect
                   analytics data to improve our website. By using our site, you
@@ -53,9 +58,9 @@ const [cookies, setCookies] = useState(localStorage.getItem("cookiesAccepted") =
             </div>
           </div>
           {/* Buttons */}
-          <div className='w-full flex justify-center items-center border-t border-solid border-gray-200'>
+          <div className='w-full flex justify-center items-center border-t border-solid border-[#112b65]/20 '>
             <button
-              className='border-r border-gray-200 flex-1 px-4 py-3 text-gray-500 hover:text-white hover:bg-red-400 duration-150'
+              className='border-r text-[#112b65]  border-[#112b65]/20 flex-1 px-4 py-3  hover:text-white hover:bg-red-400 duration-150'
               onClick={() =>{ setCookies(false)
                 localStorage.setItem("cookiesAccepted", false);
 
@@ -63,7 +68,7 @@ const [cookies, setCookies] = useState(localStorage.getItem("cookiesAccepted") =
               No thanks!
             </button>
             <button
-              className='flex-1 px-4 py-3 text-gray-500 hover:text-white hover:bg-green-400 duration-150'
+              className='flex-1 px-4 py-3 text-[#112b65]  hover:text-white hover:bg-green-400 duration-150'
             onClick={() => {
                 setCookies(false);
                 localStorage.setItem("cookiesAccepted", true);

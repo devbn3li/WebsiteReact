@@ -9,6 +9,7 @@ import PurposeComponent from '../../Components/AboutComponent/PurposeComponent';
 import FounderNote from '../../Components/Qoute'
 import ContPeople from '../../Components/AboutComponent/ContPeople';
 import Companys from '../../Components/AboutComponent/Companys';
+import Values from '../../Components/AboutComponent/Value';
 import Leaders from '../../Components/Leaders';
 
 function About() {
@@ -20,6 +21,7 @@ function About() {
       <Why />
       <Founders />
       <Jobs />
+      <Values/>
       <FounderNote />
       <Leaders/>
       <ContPeople />

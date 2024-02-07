@@ -60,9 +60,9 @@ const Benefits = () => {
   return (
     <section className='pt-24 px-[5%] gap-3 max-w-[1440px]'>
       <div className='max-w-[90.25rem] mb-10'>
-      <h1 className="mb-4 text-4xl max-w-[1200px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+      <h1 className="mb-4 text-4xl max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
           {sectionTitle}</h1>
-          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl  ">
+          <p className="mb-8 text-lg font-normal text-[#002E70]/80 lg:text-xl  ">
           
           {sectionDescription}</p>  
       </div>

@@ -12,13 +12,13 @@ const servicesTabData = {
   title: "Services",
   tab1: {
     title: "ESG Services",
-    path: 'esgservices',
+    path: 'service/esg',
     description: "ESG Services assist companies in implementing sustainable and ethical operational practices.",
     Icon: IoLeafOutline,
   },
   tab2: {
     title: "Business Services",
-    path: 'businessservices',
+    path: 'service/business',
     description: "Business Services offer essential support for enhancing company efficiency and growth.",
     Icon: IoEarthSharp,
   },
@@ -113,13 +113,13 @@ const solutionsTabData = {
   title: "Solutions",
   tab1: {
     title: "ESG Pulse",
-    path: "/solutions/esgpulse",
+    path: "service/esg-pulse",
     description: "ESG Pulse offers real-time insights and analytics on sustainability performance metrics.",
     Icon: IoLeafOutline,
   },
   tab2: {
     title: "LevelUp O2",
-    path: "/solutions/esglevelup-o2",
+    path: "service/levelup-o2",
     description: "LevelUp O2 simplifies carbon footprint tracking and reporting with AI and expert insights.",
     Icon: IoEarthSharp,
   }
