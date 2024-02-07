@@ -14,7 +14,7 @@ export default function TeamMembers() {
   return (
     <div className='flex justify-center'>
       <section className='relative w-full max-w-[1400px] py-[4rem] sm:px-[3rem]'>
-        <div className='w-[80%] mx-auto'>
+        <div className='w-[80%] mx-auto flex flex-col gap-6'>
           <h2 className='text-3xl  md:text-7xl font-bold  text-[2.625rem] mb-[.5rem] text-center '>
             <mark className=' px-4  rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]'>
               {" "}
@@ -22,20 +22,24 @@ export default function TeamMembers() {
             </mark>
           </h2>
 
+          <p className="text-[24px] text-center text-[#112b65] max-lg:text-[20px] font-medium leading-[150%] max-lg:px-28 max-md:px-0">
+            Our Leadership Team guides our organization with integrity and innovation, driving us towards success through collaboration and visionary leadership.
+          </p>
+
          
           <div className=' mt-[5rem]  grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center gap-y-5 sm:gap-x-32 lg:gap-x-52  xl:gap-32'>
             {dataTeam.map(({ id, photo, userName }) => (
               <div
                 className='relative duration-1000 rounded-3xl overflow-hidden h-[300px] w-[230px] xl:w-[280px]'
                 key={id}>
-                <div className='w-full h-[100%] scale-75 rounded-md overflow-hidden'>
+                <div className='w-full h-[100%] rounded-md overflow-hidden'>
                   <img
                     src={photo}
                     alt={userName}
                     className='h-full w-full object-cover'
                   />
                 </div>
-                <div className='absolute bottom-4 left-0 right-0  px-5 rounded-bl-3xl rounded-br-3xl'>
+                <div className='absolute bottom-0 left-0 right-0   rounded-bl-3xl rounded-br-3xl'>
                   <h2 className='text-center bg-gradient-to-r from-[#1C4987] to-[#159D9B] text-white p-1 text-[1.125rem] font-[700]'>
                     {userName}
                   </h2>
