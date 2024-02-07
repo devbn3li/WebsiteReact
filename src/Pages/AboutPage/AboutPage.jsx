@@ -9,6 +9,7 @@ import PurposeComponent from '../../Components/AboutComponent/PurposeComponent';
 import FounderNote from '../../Components/Qoute'
 import ContPeople from '../../Components/AboutComponent/ContPeople';
 import Companys from '../../Components/AboutComponent/Companys';
+import Leaders from '../../Components/Leaders';
 
 function About() {
   return (
@@ -20,6 +21,7 @@ function About() {
       <Founders />
       <Jobs />
       <FounderNote />
+      <Leaders/>
       <ContPeople />
       <Companys />
     </div>
