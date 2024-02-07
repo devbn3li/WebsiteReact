@@ -24,9 +24,9 @@ const OfferItem = ({icon, title, description}, index) => {
       <div className="mb-3  flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-10 p-2">
         {icon}
       </div>
-      <h1 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl ">
+      <h1 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-[#002E70] md:text-2xl lg:text-3xl ">
         {title}</h1>
-        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl ">
+        <p className="mb-8 text-lg font-normal text-[#002E70] lg:text-xl ">
         {description}</p>
     </div>
   );
@@ -62,9 +62,9 @@ const Offer = () => {
   return (
   <div className='max-w-[1400px]  py-28 mt-[4.5rem] flex justify-center flex-col'>
    <div className=' w-full px-[5%]   mb-10'>
-      <h1 className="mb-4 text-4xl  max-w-[1200px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+      <h1 className="mb-4 text-4xl  max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70]/80 md:text-5xl lg:text-6xl ">
           {sectionTitle}</h1>
-          <p className=" text-lg font-normal text-gray-500 lg:text-xl  ">
+          <p className=" text-lg font-normal text-[#002E70] lg:text-xl  ">
           
           {sectionDescription}</p>  
       </div>
@@ -77,7 +77,7 @@ const Offer = () => {
           {items.map(OfferItem)}
       
         <div className='font-bold pt-6'>
-          <PrimaryBtn path='/contact' title='Make Impact with us' classes='bg-[#e6e6e5] !text-[#121212] border-[#e6e6e5] px-6 py-3 max-[479px]:w-full' />
+          <PrimaryBtn path='/contact' title='Make Impact with us' classes='bg-[#e6e6e5] !text-[#002E70] border-[#e6e6e5] px-6 py-3 max-[479px]:w-full' />
         </div>
       </div>
       <div className="relative rounded-r-3xl w-1/2 overflow-hidden max-[996px]:hidden">
