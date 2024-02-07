@@ -30,7 +30,7 @@ import ESGCompliance from './Pages/ServicePages/ESGCompliancePage';
 import ERMProgram from './Pages/ServicePages/ERMProgramPage';
 import ESGDiagnostic from './Pages/ServicePages/ESGDiagnosticPage';
 import BoardLevel from './Pages/ServicePages/BoardLevelPage';
-import ESGPluse from './Pages/WaitingListPage/WaitingListPage';    // ESGPluse
+import ESGPluse from './Pages/PulsePage/PulsePage';    // ESGPluse
 import InternalAudit from './Pages/BusinessServices/InternalAudit';
 import Compliance from './Pages/BusinessServices/Compliance';
 import RiskManagement from './Pages/BusinessServices/RiskManagement';
@@ -100,7 +100,11 @@ export function Application() {
           <Route path="blog/all/Understanding-Greenwashing-and-Its-Consequences" element={<EmpoweringForSuccessBlog />} />
           <Route path="blog/all/Understanding-Green-washing" element={<UnderstandingGreenwashingBlog />} />
           <Route path="blog/BlogTemplete" element={<BlogTemplete />} />
+
+          {/* Waiting Page */}
+          <Route path="waiting-page" element={<WaitingListPage />} />
         </Route>
+
         {/* Fallback for unmatched routes */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
