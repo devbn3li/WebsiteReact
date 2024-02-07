@@ -26,7 +26,7 @@ const ESGSoftwareSection = () => {
    <div className='w-full flex justify-center'>
      <section className=" max-w-[1400px] py-20 px-[5%]">
       <div className="container text-[#002E70] mx-auto">
-        <h2 className="text-2xl md:text-5xl font-extrabold text-center mb-8">Enhance Your ESG Performance with Our Software Solutions</h2>
+        <h2 className="mb-4 text-4xl text-center max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">Enhance Your ESG Performance with Our Software Solutions</h2>
         <div className='mx-auto pt-12 h-full max-w-[1400px] p-2'>
         <div className="grid grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-3">
           {softwareSolutions.map((solution, index) => (

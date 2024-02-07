@@ -15,7 +15,7 @@ const HeroSection = () => {
      
     >
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl mt-12 font-bold mb-4">
+        <h1 className="mb-4 text-4xl max-w-[1200px] font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl ">
           ESG Software Solutions
         </h1>
         <p className="mb-8 text-lg font-normal text-white/80 lg:text-xl  ">
