@@ -2,9 +2,9 @@ import React from 'react';
 import AboutComponent from '../../Components/AboutComponent/AboutComponent';
 import Business from '../../Components/Business';
 import Why from '../../Components/Why';
-// import Founders from '../../Components/Founders/Founders';
+import Founders from '../../Components/Founders/Founders';
 import Jobs from '../../Components/Jobs';
-import PurposeComponent from '../../Components/AboutComponent/Purpose';
+import PurposeComponent from '../../Components/AboutComponent/PurposeComponent';
 
 import FounderNote from '../../Components/Qoute'
 import ContPeople from '../../Components/AboutComponent/ContPeople';
@@ -17,9 +17,8 @@ function About() {
       <Business />
       <PurposeComponent/>
       <Why />
-      {/* <Founders /> */}
+      <Founders />
       <Jobs />
-      
       <FounderNote />
       <ContPeople />
       <Companys />

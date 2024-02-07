@@ -36,4 +36,4 @@ function  PurposeComponent() {
   )
 }
 
-export default  PurposeComponent
+export default  PurposeComponent;
