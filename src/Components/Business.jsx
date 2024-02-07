@@ -42,7 +42,7 @@ const Business = () => {
                   </h2>
                   <p className="text-[#112b65]">
                     Enhance your financial performance while concurrently
-                    fostering positive societal impact by assembling a dedicated
+                    fostering positive Environmental and societal impact by assembling a dedicated
                     and purpose-driven team focused on sustainable business
                     practices.
                   </p>
