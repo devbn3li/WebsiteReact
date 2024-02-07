@@ -10,21 +10,22 @@ const Business = () => {
           <div className="flex flex-col md:flex-row justify-between">
             <div className="w-full md:w-[50%] md:max-w-[530px]">
               <h2 className="text-3xl md:text-5xl mt-0 mb-6  text-[#112b65]  font-bold  ">
-                Sustainable Business Transformation through Collaborative
-                Consulting.
+                LevelUp: ESG Impact Made Simple & Affordable
               </h2>
               <p className="mb-6 text-lg text-[#112b65]">
-                We curate optimal project teams, leveraging diverse expertise
-                for client success. Our passionate and experienced impact makers
-                ensure pragmatic and collaborative solutions, delivering faster,
-                deeper insights for lasting impact
+                Drive real ESG impact without the hefty price tag. Our
+                AI-powered solutions, data science, and human expertise simplify
+                sustainability execution. We provide actionable insights to
+                advance your goals affordably.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 py-1 gap-6">
                 <div>
                   <div className="mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px]">
                     <FontAwesomeIcon icon={faBolt} />
                   </div>
-                  <h2 className="mb-3 text-xl text-[#112b65] font-bold">Innovation and Expertise</h2>
+                  <h2 className="mb-3 text-xl text-[#112b65] font-bold">
+                    Innovation and Expertise
+                  </h2>
                   <p className="text-[#112b65]">
                     We support our clients in tackling the world’s greatest
                     sustainability challenges by combining cutting-edge
@@ -36,7 +37,9 @@ const Business = () => {
                   <div className="mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px]">
                     <FontAwesomeIcon icon={faDollarSign} />
                   </div>
-                  <h2 className="mb-3 text-xl font-bold text-[#112b65]">Purpose and Profit</h2>
+                  <h2 className="mb-3 text-xl font-bold text-[#112b65]">
+                    Purpose and Profit
+                  </h2>
                   <p className="text-[#112b65]">
                     Enhance your financial performance while concurrently
                     fostering positive societal impact by assembling a dedicated
@@ -46,7 +49,11 @@ const Business = () => {
                 </div>
               </div>
               <div className="mt-6">
-              <PrimaryBtn path='/contact' title='Make Impact with Us' classes='px-6 py-3 text-[#112b65] border-none !text-black font-semibold	'/>
+                <PrimaryBtn
+                  path="/contact"
+                  title="Make Impact with Us"
+                  classes="px-6 py-3 text-[#112b65] border-none !text-black font-semibold	"
+                />
               </div>
             </div>
             <div className="hidden md:block w-full md:w-[50%] mt-6 md:mt-0 rounded-2xl overflow-hidden">
