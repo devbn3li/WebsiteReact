@@ -48,7 +48,7 @@ const Companys = () => {
           
             src={logo}
             alt={`Logo ${index + 1}`}
-            className="w-full h-auto sm:w-20   md:w-24 lg:w-28 xl:w-32 object-cover"
+            className="w-full h-auto sm:w-20 grayscale  md:w-24 lg:w-28 xl:w-32 object-cover"
           />
           </div>
         ))}
