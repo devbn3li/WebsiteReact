@@ -8,14 +8,14 @@ const SlideComponent = (founder) => (
   <div className='py-12 pt-0'>
     <div className='flex flex-col gap-6 text-white text-center px-0 lg:px-16 max-w-[890px] mx-auto'>
       <div className="flex justify-center">
-      {/* <div className='bg-[#02c2ab] aspect-square  w-[116px] h-[116px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] '>
+      <div className='bg-[#02c2ab] aspect-square  w-[116px] h-[116px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] '>
               <Lottie
                 animationData={wave}
                 autoplay
                 loop
                 style={{ width: "100%", height: "100%" }}
               />
-            </div>{" "} */}
+            </div>{" "}
       </div>
       <h1 className='text-3xl md:text-7xl font-bold '>{founder.classes}</h1>
       <p className={`text-${founder.message.length > 170 ? 'xl' : '2xl'} max-lg:text-[20px] font-medium pb-32 lg:pb-0 box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-100`}>
@@ -50,6 +50,7 @@ function TeamTestimonial() {
     <div className='w-full flex flex-col justify-between items-center gap-6'>
       <div className='w-full flex justify-center mb-0 p-2'>
         <div className='w-full bg-[#1c4987] bg-gradient-to-l from-[#1C4987] to-[#159D9B]  min-h-[1100px] md:min-h-[700px] rounded-3xl overflow-hidden max-w-[1500px] '>
+         
           <div className='w-full  relative h-full  flex-col justify-center items-center lg:flex-row  px-2 flex overflow-hidden'>
             {/* // option lg:w-1/2  for the a size   */}
             <div
