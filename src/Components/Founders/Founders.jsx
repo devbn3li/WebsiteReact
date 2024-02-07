@@ -9,21 +9,14 @@ const SlideComponent = (founder) => (
   <div className='py-12 pt-0'>
     <div className='flex flex-col gap-6 text-white text-center px-0 lg:px-16 max-w-[890px] mx-auto'>
       <div className="flex justify-center">
-        <svg
-          fill='none'
-          height='28'
-          viewBox='0 0 28 28'
-          width='28'
-          xmlns='http://www.w3.org/2000/svg'
-          slot='icon'
-          key='67_0'>
-          <path
-            d='M9.20898 13.9987H22.7923M6.20898 6.70703H12.7923M4.20898 21.2904H14.4173'
-            stroke='#E2E8FF'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            strokeWidth='1.5'></path>
-        </svg>
+      <div className='bg-[#02c2ab] aspect-square  w-[116px] h-[116px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] '>
+              <Lottie
+                animationData={wave}
+                autoplay
+                loop
+                style={{ width: "100%", height: "100%" }}
+              />
+            </div>{" "}
       </div>
       <h1 className='text-3xl md:text-7xl font-bold '>{founder.classes}</h1>
       <p className={`text-${founder.message.length > 170 ? 'xl' : '2xl'} max-lg:text-[20px] font-medium pb-32 lg:pb-0 box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-100`}>
