@@ -12,13 +12,13 @@ const servicesTabData = {
   title: "Services",
   tab1: {
     title: "ESG Services",
-    path: 'esgservices',
+    path: 'service/esg',
     description: "ESG Services assist companies in implementing sustainable and ethical operational practices.",
     Icon: IoLeafOutline,
   },
   tab2: {
     title: "Business Services",
-    path: 'businessservices',
+    path: 'service/business',
     description: "Business Services offer essential support for enhancing company efficiency and growth.",
     Icon: IoEarthSharp,
   },

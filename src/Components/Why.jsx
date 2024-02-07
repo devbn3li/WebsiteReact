@@ -80,6 +80,7 @@ const Why = () => {
               Why Choosing LevelUp
             </h1>
             <p className='mb-8 text-lg font-normal text-[#002E70]/80 lg:text-xl  '>
+
               LevelUp empowers businesses with affordable and innovative
               corporate sustainability solutions, expert-led advice, assurance,
               and a knowledge and resources hub.Our AI engines, service offerings, and data science simplify ESG execution, driving measurable impact.
@@ -108,6 +109,7 @@ const Why = () => {
                </div>
                <div className="min-h-[100px] grid place-items-center">
                <p className="mb-8 text-lg font-normal text-[#002E70] lg:text-xl ">{reason.description}</p>
+
                </div>
                 
               </a>
