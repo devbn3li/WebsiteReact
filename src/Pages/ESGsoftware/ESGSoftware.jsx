@@ -52,7 +52,8 @@ function ESGSoftware() {
   ];
 
   return (
-    <div>
+   <div >
+     <div className="">
       <HeroSoftware />
       <ESGSoftwareSection />
       <div className="flex justify-center w-full">
@@ -69,7 +70,7 @@ function ESGSoftware() {
         </div>
       </div>
 
-      <div className="bg-[#121212] py-12 md:py-20 text-white">
+      <div className=" py-12 md:py-20 ">
         <SolutionHero
           title={SustainabilityTracker[0].title}
           discription={SustainabilityTracker[0].discription}
@@ -86,6 +87,7 @@ function ESGSoftware() {
         />
       </div>
     </div>
+   </div>
   );
 }
 

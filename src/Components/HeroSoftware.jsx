@@ -8,24 +8,22 @@ const HeroSection = () => {
 
   return (
     <div
-      className="relative text-white px-[5%] py-28 mt-18 flex items-center justify-center"
-      style={customBackgroundStyle}
+    style={customBackgroundStyle}
+    className="flex justify-center h-[90vh]">
+      <div
+      className="relative text-white px-[5%] max-w-[1400px] w-full py-28 mt-18 flex items-center justify-center"
+     
     >
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-3xl md:text-5xl mt-12 font-bold mb-4">
+        <h1 className="mb-4 text-4xl max-w-[1200px] font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl ">
           ESG Software Solutions
         </h1>
-        <p className="mb-8 text-xl">
-          Unlock the full potential of your Environmental, Social, and
-          Governance (ESG) initiatives with our suite of innovative ESG software
-          solutions. Designed to empower businesses of all sizes, our software
-          enables you to seamlessly navigate the complexities of ESG management,
-          from diagnostics to reporting and beyond. Our offerings include
-          LevelUp ESG Pulse, Sustainability Tracker, LevelUp O2, and LevelUp
-          Data Lab, each tailored to meet your specific ESG needs.
+        <p className="mb-8 text-lg font-normal text-white/80 lg:text-xl  ">
+          Unlock the full potential of your ESG initiatives with our innovative software solutions. From diagnostics to reporting and beyond, LevelUp offers tailored tools such as ESG Pulse, Sustainability Tracker, O2, and Data Lab.
         </p>
         <PrimaryButton path="/contact" title="Request Access" classes="mt-4" />
       </div>
+    </div>
     </div>
   );
 };
