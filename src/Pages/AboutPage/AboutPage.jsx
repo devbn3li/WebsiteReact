@@ -5,6 +5,7 @@ import Why from '../../Components/Why';
 import Jobs from '../../Components/Jobs';
 import FounderNote from '../../Components/Qoute'
 import ContPeople from '../../Components/AboutComponent/ContPeople';
+import Companys from '../../Components/AboutComponent/Companys';
 
 function About() {
   return (
@@ -15,6 +16,7 @@ function About() {
       <Jobs />
       <FounderNote />
       <ContPeople />
+      <Companys />
     </div>
   )
 }
