@@ -30,7 +30,7 @@ export default function TeamMembers() {
           <div className=' mt-[5rem]  grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center gap-y-5 sm:gap-x-32 lg:gap-x-52  xl:gap-32'>
             {dataTeam.map(({ id, photo, userName }) => (
               <div
-                className='relative duration-1000 rounded-3xl overflow-hidden h-[300px] w-[230px] xl:w-[280px]'
+                className='relative hover:scale-105 ease-linear duration-500 cursor-pointer hover:shadow-2xl rounded-3xl overflow-hidden h-[300px]  w-[90%] sm:h-[300px] sm:w-[230px] xl:w-[280px]'
                 key={id}>
                 <div className='w-full h-[100%] rounded-md overflow-hidden'>
                   <img

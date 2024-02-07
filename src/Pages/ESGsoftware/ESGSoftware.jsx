@@ -5,7 +5,7 @@ import Challenge from "../../Components/LevelUpO2/Challenge";
 import Solutions from "../../Components/LevelUpO2/Solutions";
 import Benefits from "../../Components/LevelUpO2/Benefits";
 import HeroSoftware from "../../Components/HeroSoftware";
-import ESGSoftwareSection from "../../Components/ESGSoftwareSection";
+import ESGSoftwareSection from "../../Components/Esgsoftwaresection";
 
 function ESGSoftware() {
   const SustainabilityTracker = [
