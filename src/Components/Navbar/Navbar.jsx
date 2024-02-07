@@ -12,11 +12,13 @@ const servicesTabData = {
   title: "Services",
   tab1: {
     title: "ESG Services",
+    path: 'esgservices',
     description: "ESG Services assist companies in implementing sustainable and ethical operational practices.",
     Icon: IoLeafOutline,
   },
   tab2: {
     title: "Business Services",
+    path: 'businessservices',
     description: "Business Services offer essential support for enhancing company efficiency and growth.",
     Icon: IoEarthSharp,
   },
@@ -106,6 +108,22 @@ const servicesTabData = {
     ]
   }
 };
+
+const solutionsTabData = {
+  title: "Solutions",
+  tab1: {
+    title: "ESG Pulse",
+    path: "/solutions/esgpulse",
+    description: "ESG Pulse offers real-time insights and analytics on sustainability performance metrics.",
+    Icon: IoLeafOutline,
+  },
+  tab2: {
+    title: "LevelUp O2",
+    path: "/solutions/esglevelup-o2",
+    description: "LevelUp O2 simplifies carbon footprint tracking and reporting with AI and expert insights.",
+    Icon: IoEarthSharp,
+  }
+}
 
 
 // Navigation links configuration for cleaner code
@@ -206,7 +224,7 @@ const Navbar = () => {
           <NavbarLink path={"/esg-software"} title={"ESG Software"} closeNavigation={closeNavigation} />
 
           {/* Solutions Dropdown */}
-          <SolutionsDropdown isSolutionsOpen={isSolutionsOpen} toggleSolutions={toggleSolutions} />
+          <Dropdown isTabOpen={isSolutionsOpen} toggleTab={toggleSolutions} closeTab={closeSolutions} data={solutionsTabData} />
 
           {/* Services Dropdown */}
           <Dropdown isTabOpen={isServicesOpen} closeTab={closeServices} toggleTab={toggleServices} data={servicesTabData} />
