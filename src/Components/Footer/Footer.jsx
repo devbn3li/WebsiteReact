@@ -2,6 +2,9 @@ import Logo from "../../../public/assets/images/logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  let date = new Date();
+  let year = date.getFullYear();
+
   return (
     <footer className="w-full flex justify-center">
       <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-64 w-full max-w-[1400px]">
@@ -113,29 +116,29 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex max-w-2xl:flex-col md:justify-between items-center gap-3 pt-4 mt-6 lg:mt-20 border-t-[1px]">
-            <div className="flex gap-4 ">
-              <div>
+            <div className="flex gap-4 place-content-center justify-center  ">
+              <div className="grid place-items-center ">
                 <img
-                  className="w-[50px]"
+                  className="w-[50px] scale-75"
                   src="../../../public/assets/images/pngwing.com.png"
                   alt=""
                 />
               </div>
-              <div>
+              <div className="grid place-items-center  ">
                 <img
                   className="w-[100px]"
                   src="../../../public/assets/images/innovator-international-white.png"
                   alt=""
                 />
               </div>
-              <div>
+              <div className="grid place-items-center scale-90">
                 <img
                   className="w-[100px]"
                   src="../../../public/assets/images/home-office-logo-0F594C8106-seeklogo.com.png"
                   alt=""
                 />
               </div>
-              <div>
+              <div className="grid place-items-center ">
                 <img
                   className="w-[100px]"
                   src="../../../public/assets/images/reward.svg"
@@ -145,7 +148,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="text-white text-sm">
-                © 2024 LevelUp. All rights reserved.
+                © {year} LevelUp. All rights reserved.
               </p>
             </div>
           </div>
