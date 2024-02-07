@@ -40,15 +40,15 @@ const Testimonials = () => {
           <h1 className='mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-gray-100 capitalize'>
             {sectionTitle}
           </h1>
-          <div className='flex flex-col md:flex-row md:items-start gap-6 md:max-w-[39.25rem] md:max-[679px]:max-w-[360px]'>
-            <div className='flex items-start overflow-x-auto'>
-              <div className='aspect-square hover:scale-110 cursor-pointer select-none duration-500 rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden z-[3]'>
+          <div className='flex flex-col overflow-hidden md:flex-row md:items-start gap-6 md:max-w-[39.25rem] md:max-[679px]:max-w-[360px]'>
+            <div className='flex items-start  overflow-hidden '>
+              <div className='aspect-square hover:scale-95 cursor-pointer select-none duration-500 rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden z-[3]'>
                 <img src={person1} alt='Person1' className='min-h-full min-w-full object-cover' />
               </div>
-              <div className='aspect-square hover:scale-110 cursor-pointer select-none duration-500 rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden -ml-4 z-[2]'>
+              <div className='aspect-square hover:scale-95 cursor-pointer select-none duration-500 rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden -ml-4 z-[2]'>
                 <img src={person2} alt='Person2' className='min-h-full min-w-full object-cover' />
               </div>
-              <div className='aspect-square hover:scale-110 cursor-pointer select-none duration-500 rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden -ml-4 z-[1]'>
+              <div className='aspect-square hover:scale-95 cursor-pointer select-none duration-500 rounded-full w-14 border-[3px] border-[#B3FFD6] overflow-hidden -ml-4 z-[1]'>
                 <img src={person3} alt='Person3' className='min-h-full min-w-full object-cover' />
               </div>
             </div>
