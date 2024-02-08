@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLeaf } from "react-icons/fa";
-import SliderLogos from "../../Components/SliderLogos/SliderLogos";
+
 import Cursal from "../../Components/Cursal/Cursal";
 import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 
@@ -64,7 +64,7 @@ const ESGCompliancePage = () => {
         }
         
       />
-      <SliderLogos />
+
       <Cursal services={services} />
    
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import SliderLogos from '../../Components/SliderLogos/SliderLogos';
+
 import Cursal from '../../Components/Cursal/Cursal';
 import Hero_Services from '../../Components/Hero_Services/Hero_Services';
 import { FaLeaf } from "react-icons/fa";
@@ -54,7 +54,7 @@ const StrategicStakeholderPage = () => {
   return (
     <div className='pt-[4.5rem] flex flex-col items-center'>
       <Hero_Services title={"Strategic Stakeholder Management Program"} subtitle={"Our integrated services prioritize stakeholder engagement, communication, and training. Stakeholder Mastery focuses on strategic communication and relationship-building, COSO Framework Training empowers with vital knowledge, Transparent Communication Excellence refines messaging, and Stakeholder-Centric Training fosters a transparent, collaborative, and successful organizational environment"} />
-      <SliderLogos />
+
       <Cursal services={services}/>
     </div>
   );
