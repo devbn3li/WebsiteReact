@@ -31,11 +31,6 @@ const servicesTabData = {
         path: "service/esg-diagnostic",
       },
       {
-        title: "ESG Pulse",
-        Icon: IoEarthSharp,
-        path: "service/esg-pulse",
-      },
-      {
         title: "Strategy",
         Icon: IoEarthSharp,
         path: "service/esg-strategy",
@@ -44,11 +39,6 @@ const servicesTabData = {
         title: "Board Advisory",
         Icon: IoEarthSharp,
         path: "service/board-level",
-      },
-      {
-        title: "LevelUp O2",
-        Icon: IoEarthSharp,
-        path: "service/levelup-o2",
       },
       {
         title: "Strategic Stakeholder",
@@ -99,11 +89,6 @@ const servicesTabData = {
         title: "business transformation",
         Icon: IoEarthSharp,
         path: 'service/board-level'
-      },
-      {
-        title: 'business transformation',
-        Icon: IoEarthSharp,
-        path: "service/finance",
       },
     ]
   }
