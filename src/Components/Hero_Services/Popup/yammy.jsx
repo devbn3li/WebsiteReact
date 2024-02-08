@@ -14,7 +14,7 @@ function Yammy() {
   return (
     <div>
       <div
-        className="fixed inset-x-0 bottom-20 max-w-full bg-[#baede7] rounded-t-3xl overflow-hidden shadow-2xl z-40 sm:rounded-3xl sm:max-w-[90vw] md:max-w-[700px] md:left-5 md:right-5 lg:max-w-[30vw] lg:left-10 lg:right-auto"
+        className="fixed inset-x-0 lg:left-5 bottom-0 lg:bottom-5 max-w-full bg-[#baede7] rounded-t-3xl overflow-hidden shadow-2xl z-40 sm:rounded-3xl sm:max-w-[90vw] md:max-w-[700px]  lg:max-w-[30vw]  "
         onKeyDown={handleKeyDown}
       >
         <div style={{ display: cookies ? "block" : "none" }}>
@@ -31,7 +31,7 @@ function Yammy() {
               <div
                 className="absolute -top-10 -right-10 text-[#02c2ab]"
               >
-                {/* SVG code remains the same */}
+               
               </div>
               <div className="text-2xl text-[#112b65] flex flex-col pb-4">
                 <small>Hello there..</small>
@@ -69,13 +69,7 @@ function Yammy() {
             </button>
           </div>
         </div>
-        {/* Button - This button will be hidden on mobile screens */}
-        <button
-          className="hidden md:fixed md:flex left-4 bottom-2 uppercase text-sm px-4 py-3 bg-[#002e70] text-white rounded-full"
-          onClick={() => setCookies(!cookies)}
-        >
-          Cookies
-        </button>
+       
       </div>
     </div>
   );
