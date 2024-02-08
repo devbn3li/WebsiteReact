@@ -166,40 +166,38 @@ function ESGSoftware() {
   };
 
   return (
-    <div >
-      <div className="">
-        <Hero_2 {...heroData} />
-        <ESGSoftwareSection />
-        <div className="flex justify-center w-full">
-          <div className="max-w-[1400px] mt-20">
-            <SolutionHero
-              title={"LevelUp O2® - AI-powered GHG Emissions Calculator"}
-              discription={
-                "An AI-powered SaaS platform for automated, accurate carbon accounting across your entire value chain emissions and offset management."
-              }
-            />
-            <Challenge {...challengeData} />
-            <Solutions {...solutionsData} />
-            <Benefits {...benefitsData} />
-          </div>
-        </div>
-
-        <div className=" py-12 md:py-20 ">
+    <div className="flex flex-col justify-center">
+      <Hero_2 {...heroData} />
+      <ESGSoftwareSection />
+      <div className="flex justify-center w-full">
+        <div className="max-w-[1400px] mt-20">
           <SolutionHero
-            title={SustainabilityTracker[0].title}
-            discription={SustainabilityTracker[0].discription}
+            title={"LevelUp O2® - AI-powered GHG Emissions Calculator"}
+            discription={
+              "An AI-powered SaaS platform for automated, accurate carbon accounting across your entire value chain emissions and offset management."
+            }
           />
-
-          <div className="w-full flex -mt-5 justify-center ">
-            <img src={DS} alt="Hero Image" className="w-full   max-w-96" />
-          </div>
-
-          <CardData
-            title="Empowering ESG data collection and management for impact"
-            reasons={SustainabilityTrackerCards}
-            Sectiondescription="SusTrack AI® puts essential insights at your fingertips. Gain clarity on your biggest ESG opportunities and progress towards goals. Focus your time on initiatives that drive real change. "
-          />
+          <Challenge {...challengeData} />
+          <Solutions {...solutionsData} />
+          <Benefits {...benefitsData} />
         </div>
+      </div>
+
+      <div className=" py-12 md:py-20 ">
+        <SolutionHero
+          title={SustainabilityTracker[0].title}
+          discription={SustainabilityTracker[0].discription}
+        />
+
+        <div className="w-full flex -mt-5 justify-center ">
+          <img src={DS} alt="Hero Image" className="w-full   max-w-96" />
+        </div>
+
+        <CardData
+          title="Empowering ESG data collection and management for impact"
+          reasons={SustainabilityTrackerCards}
+          Sectiondescription="SusTrack AI® puts essential insights at your fingertips. Gain clarity on your biggest ESG opportunities and progress towards goals. Focus your time on initiatives that drive real change. "
+        />
       </div>
     </div>
   );
