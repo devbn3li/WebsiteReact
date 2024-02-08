@@ -4,6 +4,7 @@ import Why from "../../Components/DataLab/Why";
 import Call from "../../Components/DataLab/Call";
 import How from "../../Components/DataLab/How";
 import Qoute from "../../Components/DataLab/Qoute";
+import Dash from "../../Components/DataLab/Dash";
 
 function DataLab() {
   const heroData = {
@@ -17,6 +18,7 @@ function DataLab() {
   return (
     <div>
         <Hero_2 {...heroData} />
+        <Dash />
         <Why />
         <Call />
         <How />
