@@ -1,10 +1,10 @@
 import React from 'react';
 import PrimaryButton from '../../Components/Buttons/PrimaryButton';
 import CardData from "../../Components/SolCard/CardData";
+import Futures from '../../Components/PulsePageCompontent/Futures';
 import hero from "../../../public/assets/images/hero.jpg";
 import header_mask from "../../../public/assets/images/Header-Mask.svg";
 import DS from "../../../public/assets/images/DS.png";
-import Testimonials from '../../Components/Testimonials/Testimonials';
 import { MdCelebration, MdOutlineReport } from "react-icons/md";
 import { FaLevelUpAlt } from "react-icons/fa";
 import { PiStrategy } from "react-icons/pi";
@@ -110,8 +110,9 @@ const PulsePage = () => {
       </header>
       {/* End header ============================================= */}
 
-      {/* Testimonial ============================================== */}
-      <Testimonials />
+      {/* Start Futures ============================================ */}
+      <Futures />
+      {/* End Futures ============================================ */}
 
 
       {/* Start why section ======================================== */}
@@ -199,6 +200,7 @@ const PulsePage = () => {
         </div>
       </div>
       {/* End about section ====================================== */}
+
 
       {/* CTA Card */}
       <div className='w-screen flex justify-center items-center bg-gradient-to-r box-border overflow-hidden from-[#1C4987] to-[#159D9B] my-16 pb-16'>
