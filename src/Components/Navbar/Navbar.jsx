@@ -163,13 +163,13 @@ const academyTabData = {
 const ESGSoftwareTabData = {
   title: "ESG Software",
   tab1: {
-    title: "LevelUp O2",
+    title: "LevelUp O2®",
     path: "service/levelup-o2",
     description: "AI-driven carbon accounting for your entire value chain.",
     Icon: GiFootprint,
   },
   tab2: {
-    title: "Sustainability Tracker",
+    title: "SusTracker AI®",
     path: "service/sustainability-tracker",
     description: "Streamline ESG management for enhanced real-time insights.",
     Icon: FaChartLine,
