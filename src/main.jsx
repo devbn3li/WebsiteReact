@@ -35,6 +35,7 @@ import InternalAudit from './Pages/BusinessServices/InternalAudit';
 import Compliance from './Pages/BusinessServices/Compliance';
 import RiskManagement from './Pages/BusinessServices/RiskManagement';
 import Finance from './Pages/BusinessServices/Finance';
+import DataLab from './Pages/DataLab/DataLab';
 
 // Blog Pages Imports
 import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
@@ -91,6 +92,7 @@ export function Application() {
           <Route path="service/compliance" element={<Compliance />} />
           <Route path="service/risk-management" element={<RiskManagement />} />
           <Route path="service/finance" element={<Finance />} />
+          <Route path="service/data-lab" element={<DataLab />} />
 
           {/* /esg-software */}
           <Route path="/esg-software" element={<ESGSoftware />} />
