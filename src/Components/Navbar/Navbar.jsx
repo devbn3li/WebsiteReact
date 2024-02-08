@@ -5,8 +5,8 @@ import LogoImage from "../../../public/assets/images/logo.png"; // Import name m
 import Dropdown from "./Dropdown";
 import NavbarLink from "./NavbarLink";
 import { IoEarthSharp, IoLeafOutline } from "react-icons/io5";
-import { FaBook, FaChalkboardTeacher, FaBlog, FaBroadcastTower } from 'react-icons/fa';
-
+import { FaBook, FaChalkboardTeacher, FaBlog, FaBroadcastTower, FaDatabase, FaChartLine } from 'react-icons/fa';
+import { GiFootprint } from 'react-icons/gi';
 
 
 const servicesTabData = {
@@ -98,17 +98,17 @@ const servicesTabData = {
 const solutionsTabData = {
   title: "Solutions",
   tab1: {
-    title: "ESG Pulse",
+    title: "ESG Pules",
     path: "service/esg-pulse",
     description: "ESG Pulse offers real-time insights and analytics on sustainability performance metrics.",
-    Icon: IoLeafOutline,
+    Icon: IoEarthSharp,
   },
   tab2: {
-    title: "LevelUp O2",
-    path: "service/levelup-o2",
-    description: "LevelUp O2 simplifies carbon footprint tracking and reporting with AI and expert insights.",
-    Icon: IoEarthSharp,
-  }
+    title: "Data Lab",
+    path: "service/data-lab",
+    description: "Unlock insights with our advanced ESG data analytics and reporting lab.",
+    Icon: FaDatabase,
+  },
 }
 
 const academyTabData = {
@@ -160,6 +160,22 @@ const academyTabData = {
   },
 };
 
+const ESGSoftwareTabData = {
+  title: "ESG Software",
+  tab1: {
+    title: "LevelUp O2",
+    path: "service/levelup-o2",
+    description: "AI-driven carbon accounting for your entire value chain.",
+    Icon: GiFootprint,
+  },
+  tab2: {
+    title: "Sustainability Tracker",
+    path: "service/sustainability-tracker",
+    description: "Streamline ESG management for enhanced real-time insights.",
+    Icon: FaChartLine,
+  },
+}
+
 
 // Navigation links configuration for cleaner code
 const navigationLinks = [
@@ -173,6 +189,7 @@ const Navbar = () => {
   const [isSolutionsOpen, setSolutionsOpen] = useState(false);
   const [isServicesOpen, setServicesOpen] = useState(false);
   const [isAcademyOpen, setAcademyOpen] = useState(false);
+  const [isESGSoftwareOpen, setESGSoftwareOpen] = useState(false);
 
   // Toggles and close for UI elements, making it clear what they do
   // Navbar functions
@@ -204,10 +221,19 @@ const Navbar = () => {
 
   // Academy tab functions
   const toggleAcademy = () => {
-    setServicesOpen(!isServicesOpen);
+    setAcademyOpen(!isServicesOpen);
   };
   const closeAcademy = () => {
-    setServicesOpen(false);
+    setAcademyOpen(false);
+    closeNavigation();
+  };
+
+  // Academy tab functions
+  const toggleESGSoftware = () => {
+    setESGSoftwareOpen(!isServicesOpen);
+  };
+  const closeESGSoftware = () => {
+    setESGSoftwareOpen(false);
     closeNavigation();
   };
 
@@ -264,7 +290,9 @@ const Navbar = () => {
 
         {/* Navigation Links and CTA Button */}
         <div className={`flex items-center min-[1130px]:justify-end max-[1130px]:flex-col text-[20px] font-normal h-full max-[1130px]:w-full gap-5 max-[1130px]:gap-0 max-[1130px]:overflow-y-scroll max-[1130px]:overflow-x-hidden w-screen  flex-grow text-center transition-all box-border duration-[.45s] ${isNavOpen ? "max-[1130px]:translate-y-0" : "max-[1130px]:-translate-y-[120%]"} top-full left-0 text-black bg-white max-[1130px]:flex-col max-[1130px]:absolute max-[1130px]:w-full max-[1130px]:pb-[6.5rem] max-[1130px]:h-[calc(100vh-4.5rem)] max-[1130px]:text-lg max-[1130px]:border-b max-[1130px]:border-black`}>
-          <NavbarLink path={"/esg-software"} title={"ESG Software"} closeNavigation={closeNavigation} />
+
+          {/* ESG Software Dropdown */}
+          <Dropdown isTabOpen={isESGSoftwareOpen} closeTab={closeESGSoftware} toggleTab={toggleESGSoftware} data={ESGSoftwareTabData} />
 
           {/* Solutions Dropdown */}
           <Dropdown isTabOpen={isSolutionsOpen} toggleTab={toggleSolutions} closeTab={closeSolutions} data={solutionsTabData} />
@@ -274,6 +302,7 @@ const Navbar = () => {
 
           {/* Academy Dropdown */}
           <Dropdown isTabOpen={isAcademyOpen} closeTab={closeAcademy} toggleTab={toggleAcademy} data={academyTabData} />
+
           {/* Static Navigation Links */}
           {navigationLinks.map((link, index) => (
             <NavbarLink key={index} path={link.path} title={link.title} toggleNavigation={toggleNavigation} />
