@@ -49,9 +49,9 @@ const Business = () => {
               <PrimaryBtn path='/contact' title='Make Impact with Us' classes='px-6 py-3 text-[#112b65] border-none !text-black font-semibold	'/>
               </div>
             </div>
-            <div className="hidden md:block w-full md:w-[50%] mt-6 md:mt-0 rounded-2xl overflow-hidden">
+            <div className="hidden md:block w-full md:w-[45%] h-full mt-6 md:mt-0 rounded-2xl overflow-hidden">
               <img
-                className="w-full h-[300px] md:h-[640px] object-cover "
+                className="w-full md:h-[640px] object-cover "
                 src="https://img.freepik.com/free-photo/business-people-shaking-hands-together_53876-13391.jpg?w=826&t=st=1706137903~exp=1706138503~hmac=cfbc5fab392e60d7864f89003e46f74922d16ca7b762432f348691c53df40bd6"
                 alt="img"
               />
