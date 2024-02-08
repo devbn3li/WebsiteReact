@@ -2,6 +2,7 @@ import React from "react";
 import Hero_2 from "../../Components/Hero/Hero_2";
 import Why from "../../Components/DataLab/Why";
 import Call from "../../Components/DataLab/Call";
+import How from "../../Components/DataLab/How";
 
 function DataLab() {
   const heroData = {
@@ -17,6 +18,7 @@ function DataLab() {
         <Hero_2 {...heroData} />
         <Why />
         <Call />
+        <How />
     </div>
   );
 }
