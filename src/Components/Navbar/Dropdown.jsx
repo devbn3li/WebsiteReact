@@ -103,7 +103,7 @@ Dropdown.propTypes = {
       Icon: PropTypes.object.isRequired,
     }),
     moreLinks1: PropTypes.shape({
-      title: PropTypes.string.isRequired,
+      title: PropTypes.string,
       links: PropTypes.arrayOf(PropTypes.shape({
         title: PropTypes.string.isRequired,
         Icon: PropTypes.object.isRequired,
