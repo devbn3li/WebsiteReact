@@ -1,4 +1,3 @@
-import React from "react";
 import personImagePath from "../../public/assets/images/DrAhmedShawky.png";
 
 const FounderNote = () => {
