@@ -3,16 +3,14 @@ import PrimaryButton from '../Components/Buttons/PrimaryButton';
 
 // Data for software solutions
 const softwareSolutions = [
- 
-  {
-    name: 'Sustainability Tracker',
-    description: 'Simplify your ESG data management and reporting with our intuitive software, enabling real-time insights and performance tracking.'
-  },
   {
     name: 'LevelUp O2',
     description: 'Automate your carbon accounting and manage your entire value chain emissions efficiently with our AI-powered GHG emissions calculator.'
   },
-  
+  {
+    name: 'Sustainability Tracker',
+    description: 'Simplify your ESG data management and reporting with our intuitive software, enabling real-time insights and performance tracking.'
+  },
 ];
 
 const ESGSoftwareSection = () => {
