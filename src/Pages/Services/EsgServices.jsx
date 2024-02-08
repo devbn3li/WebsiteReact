@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Hero from '../../Components/EsgServices/Hero';
 import Why from '../../Components/EsgServices/Esgservices';
-import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 
 const EsgServices = () => {  
   return (

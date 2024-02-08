@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '../../Components/EsgBusiness/Hero';
 import Why from '../../Components/EsgBusiness/BusinessServices';
-import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 
 const BusinessServices = () => {  
   return (
