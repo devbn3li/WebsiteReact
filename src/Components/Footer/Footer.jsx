@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
             <div className="lg:relative max-[991px]:h-72" id="contact">
               <div className="lg:absolute top-0 right-0 -translate-y-1/2 flex flex-col gap-6 bg-[#238f99] p-10 rounded-2xl">
-                <div className="text-black text-[32px] font-bold ">
+                <div className="text-white text-[32px] font-bold ">
                   Talk to an Impact Maker
                 </div>
                 <form
@@ -107,7 +107,7 @@ const Footer = () => {
                   <button
                     type="submit"
                     name="submit"
-                    className="text-white bg-black py-3 px-6 rounded-3xl hover:transform translate-y-[-4px] hover:shadow-md"
+                    className="text-white bg-[#3bc9b9] py-3 px-6 rounded-3xl hover:transform translate-y-[-4px] hover:shadow-md"
                   >
                     Book a Consultation
                   </button>
