@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="lg:relative max-[991px]:h-72" id="contact">
-              <div className="lg:absolute top-0 right-0 -translate-y-1/2 flex flex-col gap-6 bg-[#238f99] p-10 rounded-2xl">
+              <div className="lg:absolute top-0 right-0 -translate-y-1/2 flex flex-col gap-6 bg-[#238f99]/60 backdrop-blur-md p-10 rounded-2xl">
                 <div className="text-white text-[32px] font-bold ">
                   Talk to an Impact Maker
                 </div>
