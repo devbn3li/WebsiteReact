@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero_2 from '../../Components/Hero/Hero_2';
 import Challenge from '../../Components/Challenge/Challenge';
+import CardData from "../../Components/SolCard/CardData";
 import challengeImg from "../../../public/assets/images/instingo_challenge_page.svg";
 import Solutions from '../../Components/SolutionCompo/Solutions';
 import Benefits from '../../Components/Benefits/Benefits';
@@ -118,12 +119,50 @@ const ServiceTempletePage = () => {
     ]
   };
 
+  const howToData = {
+    title: "Empowering ESG data collection and management for impact",
+    Sectiondescription: "SusTrack AI® puts essential insights at your fingertips. Gain clarity on your biggest ESG opportunities and progress towards goals. Focus your time on initiatives that drive real change. ",
+    reasons: [
+      {
+        title: "Start",
+        description: "Small description...",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            1
+          </div>
+        ),
+        url: "#",
+      },
+      {
+        title: "Second",
+        description: "Small description...",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            2
+          </div>
+        ),
+        url: "#",
+      },
+      {
+        title: "Final",
+        description: "Small description...",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            3
+          </div>
+        ),
+        url: "#",
+      }
+    ]
+  };
+
   return (
     <div className='w-full flex flex-col justify-center items-center'>
       <Hero_2 {...heroData} />
       <Challenge {...challengeData} />
       <Solutions {...solutionsData} />
       <Benefits {...benefitsData} />
+      <CardData {...howToData} />
     </div>
   );
 }
