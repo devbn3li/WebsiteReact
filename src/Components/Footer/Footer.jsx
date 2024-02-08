@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full flex justify-center">
-      <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-64 w-full max-w-[1400px]">
+      <div className="px-[5%] bg-gradient-to-r from-[#112b65] to-[#02c2ab] rounded-t-[40px] mt-64 w-full max-w-[1400px]">
         <div className="py-12">
           <div className=" flex gap-8 justify-between mt-4 max-[991px]:flex-col-reverse">
             <div className="max-[479px]:flex max-[479px]:flex-col max-[479px]:items-center">
@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="lg:relative max-[991px]:h-72" id="contact">
-              <div className="lg:absolute top-0 right-0 -translate-y-1/2 flex flex-col gap-6 bg-[#02c2ab] p-10 rounded-2xl">
+              <div className="lg:absolute top-0 right-0 -translate-y-1/2 flex flex-col gap-6 bg-[#238f99] p-10 rounded-2xl">
                 <div className="text-black text-[32px] font-bold ">
                   Talk to an Impact Maker
                 </div>
