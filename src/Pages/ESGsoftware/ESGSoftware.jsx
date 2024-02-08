@@ -1,11 +1,12 @@
 import SolutionHero from "../../Components/Solutions/Hero";
 import CardData from "../../Components/SolCard/CardData";
 import DS from "../../../public/assets/images/DS.png";
-import Challenge from "../../Components/LevelUpO2/Challenge";
-import Solutions from "../../Components/LevelUpO2/Solutions";
+import Challenge from "../../Components/Challenge/Challenge";
+import Solutions from "../../Components/SolutionCompo/Solutions";
 import Benefits from "../../Components/LevelUpO2/Benefits";
-import HeroSoftware from "../../Components/HeroSoftware";
 import ESGSoftwareSection from "../../Components/Esgsoftwaresection";
+import Hero_2 from "../../Components/Hero/Hero_2";
+import challengeImg from "../../../public/assets/images/instingo_challenge_page.svg";
 
 function ESGSoftware() {
   const SustainabilityTracker = [
@@ -15,6 +16,7 @@ function ESGSoftware() {
         "SusTrack AI® makes ESG data collection, management and reporting simple through intuitive AI powered software that works the way you do. Our platform saves you time on data handling, so you can focus on impact creation. ",
     },
   ];
+
   const SustainabilityTrackerCards = [
     {
       title: "Start ",
@@ -51,43 +53,74 @@ function ESGSoftware() {
     },
   ];
 
+  const heroData = {
+    title: "sustainability and  ESG Softwares",
+    description: "Unlock the full potential of your  sustainability and ESG initiatives with our innovative software solutions. From diagnostics to reporting and beyond, LevelUp offers tailored tools such as ESG Pulse, Sustainability Tracker, O2, and Data Lab.",
+    CTATitle: "Request Access",
+    CTAPath: "/contact"
+  }
+
+  const challengeData = {
+    title: "The Challenge of GHG Emissions",
+    description: "Calculating greenhouse gas (GHG) emissions can be complex and time-consuming, but it is essential for understanding and mitigating environmental impact.",
+    imgSrc: challengeImg,
+  }
+
+  const solutionsData = {
+    description: "Introducing LevelUp O2, your one-stop solution for streamlined and efficient carbon accounting. Our powerful platform, powered by expert guidance and robust AI, empowers you to",
+    solutions: [
+      {
+        title: "Measure",
+        description: "Quickly and confidently calculate your Scope 1, 2, and 3 emissions, gaining a comprehensive understanding of your carbon footprint across all operations."
+      },
+      {
+        title: "Reduce",
+        description: "Visualize your footprint by scope to identify high-impact areas and set data-driven ESG targets for effective emissions reduction."
+      },
+      {
+        title: "Report",
+        description: "Generate audit-ready emissions data tailored to leading investor, supply chain, and regulatory frameworks (GRI, CDP, SASB, TCFB, ISSB)."
+      },
+    ]
+  }
+
   return (
-   <div >
-     <div className="">
-      <HeroSoftware />
-      <ESGSoftwareSection />
-      <div className="flex justify-center w-full">
-        <div className="max-w-[1400px] mt-20">
+    <div >
+      <div className="">
+        <Hero_2 {...heroData} />
+        <ESGSoftwareSection />
+        <div className="flex justify-center w-full">
+          <div className="max-w-[1400px] mt-20">
+            <SolutionHero
+              title={"LevelUp O2® - AI-powered GHG Emissions Calculator"}
+              discription={
+                "An AI-powered SaaS platform for automated, accurate carbon accounting across your entire value chain emissions and offset management."
+              }
+            />
+            <Challenge {...challengeData} />
+            <Solutions {...solutionsData} />
+            <Benefits />
+          </div>
+        </div>
+
+        <div className=" py-12 md:py-20 ">
           <SolutionHero
-            title={"LevelUp O2® - AI-powered GHG Emissions Calculator"}
-            discription={
-              "An AI-powered SaaS platform for automated, accurate carbon accounting across your entire value chain emissions and offset management."
-            }
+            title={SustainabilityTracker[0].title}
+            discription={SustainabilityTracker[0].discription}
           />
-          <Challenge />
-          <Solutions />
-          <Benefits />
+
+          <div className="w-full flex -mt-5 justify-center ">
+            <img src={DS} alt="Hero Image" className="w-full   max-w-96" />
+          </div>
+
+          <CardData
+            title="Empowering ESG data collection and management for impact"
+            reasons={SustainabilityTrackerCards}
+            Sectiondescription="SusTrack AI® puts essential insights at your fingertips. Gain clarity on your biggest ESG opportunities and progress towards goals. Focus your time on initiatives that drive real change. "
+          />
         </div>
-      </div>
-
-      <div className=" py-12 md:py-20 ">
-        <SolutionHero
-          title={SustainabilityTracker[0].title}
-          discription={SustainabilityTracker[0].discription}
-        />
-
-        <div className="w-full flex -mt-5 justify-center ">
-          <img src={DS} alt="Hero Image" className="w-full   max-w-96" />
-        </div>
-
-        <CardData
-          title="Empowering ESG data collection and management for impact"
-          reasons={SustainabilityTrackerCards}
-          Sectiondescription="SusTrack AI® puts essential insights at your fingertips. Gain clarity on your biggest ESG opportunities and progress towards goals. Focus your time on initiatives that drive real change. "
-        />
       </div>
     </div>
-   </div>
   );
 }
 

@@ -47,6 +47,7 @@ import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
 import ESGSoftware from './Pages/ESGsoftware/ESGSoftware';
+import ServiceTempletePage from './Pages/ServicePages/ServiceTempletePage';
 
 // Application Component
 export function Application() {
@@ -73,6 +74,7 @@ export function Application() {
           {/* Service pages */}
           <Route path="service/esg" element={<EsgServices />} />
           <Route path="service/business" element={<BusinessServices />} />
+          <Route path="service/serviceTemplete" element={<ServiceTempletePage />} />
           <Route path="service/esg-controllership" element={<ESGControllershipPage />} />
           <Route path="service/esg-ia-program" element={<ESGIAProgramPage />} />
           <Route path="service/esg-governance" element={<ESGGovernance />} />
