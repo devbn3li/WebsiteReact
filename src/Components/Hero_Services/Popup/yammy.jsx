@@ -71,7 +71,7 @@ function Yammy() {
         </div>
         {/* Button - This button will be hidden on mobile screens */}
         <button
-          className="hidden md:fixed md:flex left-4 bottom-2 uppercase text-sm px-4 py-3 bg-gray-900 text-white rounded-full"
+          className="hidden md:fixed md:flex left-4 bottom-2 uppercase text-sm px-4 py-3 bg-[#002e70] text-white rounded-full"
           onClick={() => setCookies(!cookies)}
         >
           Cookies
