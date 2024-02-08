@@ -8,7 +8,6 @@ const BusinessServices = () => {
     <div className='flex flex-col justify-center items-center w-full font-inter text-[#121212]'>
       <Hero />
       <Why />
-      <SliderLogos />
     </div>
   );
 }
