@@ -17,7 +17,7 @@ const BenefitsCard = ({ icon, title, description, imageUrl }) => (
         {title}</h1>
       <p className="mb-8 text-lg font-normal text-gray-500 text-[#002E70]/80 lg:text-xl  ">{description}</p>
     </div>
-    <div className='aspect-[1/1.2] hover:scale-105 duration-700 cursor-pointer w-full rounded-2xl overflow-hidden'>
+    <div className={`${!imageUrl && 'hidden'} aspect-[1/1.2] hover:scale-105 duration-700 cursor-pointer w-full rounded-2xl overflow-hidden`}>
       <img src={imageUrl} alt={`Benefit: ${title}`} className='object-cover min-h-full min-w-full' />
     </div>
   </div>
@@ -28,7 +28,7 @@ BenefitsCard.propTypes = {
   icon: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired
+  imageUrl: PropTypes.string
 };
 
 
