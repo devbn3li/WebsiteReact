@@ -90,7 +90,6 @@ function LevelUpO2() {
     ]
   }
 
-
   const benefitsData = {
     title: 'Driving Impact with Human Expertise, Science and Data Insights',
     description: 'Our AI-powered solutions, data science, and human expertise simplify sustainability execution. We provide solutions and insights to advance your goals affordably.',
