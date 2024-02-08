@@ -1,5 +1,5 @@
 import { FaLeaf } from "react-icons/fa";
-import SliderLogos from "../../Components/SliderLogos/SliderLogos";
+
 import Cursal from "../../Components/Cursal/Cursal";
 import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 import EndServices from "../../Components/EndServices";
@@ -80,7 +80,7 @@ const ESGGovernancePage = () => {
         }
         
       />
-      <SliderLogos />
+
       <Cursal services={services} />
       <EndServices description={"We understand that the main differences lie in the focus and scope of the ESG reporting efforts, and we are committed to providing a service that is tailored to your organization's specific needs."}/>
     </div>

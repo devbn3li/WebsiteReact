@@ -1,5 +1,5 @@
 import React from 'react';
-import SliderLogos from '../../Components/SliderLogos/SliderLogos';
+
 import Cursal from '../../Components/Cursal/Cursal';
 import Hero_Services from '../../Components/Hero_Services/Hero_Services';
 import { FaLeaf } from "react-icons/fa";
@@ -55,7 +55,7 @@ const ESGIAProgramPage = () => {
   return (
     <div className='pt-[4.5rem] flex flex-col items-center'>
       <Hero_Services title={"ESG IA program"} subtitle={"We provide comprehensive assistance to internal audit (IA) functions in building their ESG capabilities. Our services include the development of an ESG IA strategy and methodology manual, tailored to your organisation's needs. We understand that there is no one-size-fits-all approach, and we adapt our services based on the maturity of your assurance and overall controls environment."} />
-      <SliderLogos />
+
       <Cursal services={services}/>
       <EndServices description={"We understand that the main differences lie in the focus and scope of the audits, and we are committed to providing a service that is tailored to your organization's specific needs."}/>
     </div>
