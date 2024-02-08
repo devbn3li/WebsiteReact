@@ -114,16 +114,26 @@ const solutionsTabData = {
 const academyTabData = {
   title: "Academy",
   tab1: {
+    title: "Workshops & Training",
+    path: "/academy/workshops-training",
+    description: "Join our Corporate Workshops for comprehensive ESG training.",
+    Icon: FaChalkboardTeacher
+  },
+  tab2: {
     title: "Resources Hub",
     path: "/academy/resources-hub",
     description: "Explore our Resources Hub tiers for exclusive content and materials.",
     Icon: FaBook
   },
-  tab2: {
-    title: "Workshops & Training",
-    path: "/academy/workshops-training",
-    description: "Join our Corporate Workshops for comprehensive ESG training.",
-    Icon: FaChalkboardTeacher
+  subTab1: {
+    title: "Blogs",
+    Icon: FaBlog,
+    path: "/academy/blogs",
+  },
+  subTab2: {
+    title: "News & Podcast",
+    Icon: FaBroadcastTower,
+    path: "/academy/news-podcast",
   },
   moreLinks1: {
     links: [
@@ -141,20 +151,6 @@ const academyTabData = {
         title: "Coaching & Mentoring",
         Icon: FaChalkboardTeacher,
         path: "/academy/coaching-mentoring"
-      },
-    ]
-  },
-  moreLinks2: {
-    links: [
-      {
-        title: "Blogs",
-        Icon: FaBlog,
-        path: "/academy/blogs"
-      },
-      {
-        title: "News & Podcast",
-        Icon: FaBroadcastTower,
-        path: "/academy/news-podcast"
       },
     ]
   },
@@ -305,7 +301,7 @@ const Navbar = () => {
 
           {/* Static Navigation Links */}
           {navigationLinks.map((link, index) => (
-            <NavbarLink key={index} path={link.path} title={link.title} toggleNavigation={toggleNavigation} />
+            <NavbarLink key={index} path={link.path} title={link.title} toggleNavigation={toggleNavigation} closeNavigation={closeNavigation} />
           ))}
           {/* CTA Button */}
           <PrimaryButton path='/contact' title='Make an Impact' classes='max-[1130px]:py-4 max-[1130px]:mt-5' />
