@@ -8,7 +8,7 @@ const Benefits = ({ title, description, benefits }) => {
 
   // Render the section with a title, description and list of BenefitCard components mapped from benefits array
   return (
-    <section className='pt-24 px-[5%] gap-3 max-w-[1440px]'>
+    <section className='w-full max-w-[1400px] pt-24 px-[5%] gap-3'>
       <div className='max-w-[90.25rem] mb-10'>
         <h1 className="mb-4 text-4xl max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
           {title}</h1>

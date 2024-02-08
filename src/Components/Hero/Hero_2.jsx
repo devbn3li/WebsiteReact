@@ -10,7 +10,7 @@ const Hero_2 = ({ title, description, CTATitle, CTAPath }) => {
   return (
     <div
       style={customBackgroundStyle}
-      className="flex justify-center h-[90vh] rounded-3xl">
+      className="flex justify-center w-full max-w-[1400px] h-[90vh] rounded-3xl">
       <div className="relative text-white px-[5%] max-w-[1400px] w-full py-28 mt-18 flex items-center justify-center">
         <div className="container mx-auto px-4 text-center">
           <h1 className="mb-4 text-4xl max-w-[1200px] font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl ">
