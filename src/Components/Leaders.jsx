@@ -1,20 +1,22 @@
 import React from "react";
-import Prasad from "../../public/assets/Prasad.jpeg";
-import Don from "../../public/assets/Don.jpeg";
-import Ekta from "../../public/assets/Ekta-Soni (1).jpeg";
-import Hamdy from "../../public/assets/Hamdy.jpeg";
+import Ahmed from "../../public/assets/images/Leaders/Untitled.png";
+import Prasad from "../../public/assets/images/Leaders/Untitled (1).png";
+import Don from "../../public/assets/images/Leaders/Untitled (4).png";
+import Ekta from "../../public/assets/images/Leaders/Untitled (3).png";
+import Hamdy from "../../public/assets/images/Leaders/Untitled (2).png";
 
 export default function TeamMembers() {
   const dataTeam = [
-    { id: 1, photo: Don, userName: "Don Liyanage" },
-    { id: 2, photo: Prasad, userName: "Prasad Bhalerao" },
+    { id: 1, photo: Ahmed, userName: "Ahmed Shawky" },
+    { id: 2, photo: Don, userName: "Don Liyanage" },
     { id: 3, photo: Ekta, userName: "Ekta Soni" },
-    { id: 4, photo: Hamdy, userName: "Hamdy Saad" },
+    { id: 4, photo: Prasad, userName: "Prasad Bhalerao" },
+    { id: 5, photo: Hamdy, userName: "Hamdy Saad" },
   ];
   return (
-    <div className='flex justify-center'>
-      <section className='relative w-full max-w-[1400px] py-[4rem] sm:px-[3rem]'>
-        <div className='w-[80%] mx-auto flex flex-col gap-6'>
+    <div className='flex justify-center '>
+      <section className='relative w-full max-w-[1400px] py-[4rem] sm:px-[3rem] '>
+        <div className='w-[100%] xl:w-[80%] mx-auto flex flex-col gap-6'>
           <h2 className='text-3xl  md:text-7xl font-bold  text-[2.625rem] mb-[.5rem] text-center '>
             <mark className=' px-4  rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]'>
               {" "}
@@ -27,12 +29,12 @@ export default function TeamMembers() {
           </p>
 
          
-          <div className=' mt-[5rem]  grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center gap-y-5 sm:gap-x-32 lg:gap-x-52  xl:gap-32'>
+          <div className='relative mt-[5rem]   grid sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-y-4 md:gap-x-[4rem]  xl:gap-x-0 '>
             {dataTeam.map(({ id, photo, userName }) => (
               <div
-                className='relative hover:scale-105 ease-linear duration-500 cursor-pointer hover:shadow-2xl rounded-3xl overflow-hidden h-[300px]  w-[90%] sm:h-[300px] sm:w-[230px] xl:w-[280px]'
+                className='relative overflow-hidden  bg-gradient-to-r from-[#1C4987] to-[#159D9B] hover:scale-105 ease-linear duration-500 cursor-pointer hover:shadow-2xl rounded-3xl h-[350px]  sm:h-[300px] w-[230px] lg:w-[280px]  2xl:w-[330px]'
                 key={id}>
-                <div className='w-full h-[100%] rounded-md overflow-hidden'>
+                <div className='  w-full h-[100%] rounded-md '>
                   <img
                     src={photo}
                     alt={userName}
@@ -40,7 +42,7 @@ export default function TeamMembers() {
                   />
                 </div>
                 <div className='absolute bottom-0 left-0 right-0   rounded-bl-3xl rounded-br-3xl'>
-                  <h2 className='text-center bg-gradient-to-r from-[#1C4987] to-[#159D9B] text-white p-1 text-[1.125rem] font-[700]'>
+                  <h2 className='text-center  bg-gradient-to-r from-[#1C4987] to-[#159D9B] overflow-hidden  text-white p-1 text-[1.125rem] font-[700]'>
                     {userName}
                   </h2>
                 </div>
