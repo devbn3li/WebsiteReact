@@ -5,6 +5,7 @@ import Hero_Services from '../../Components/Hero_Services/Hero_Services';
 import { FaLeaf } from "react-icons/fa";
 
 
+
 const services = [
   {
     title: "Our board-level advisory suite navigates the ESG landscape",
@@ -66,7 +67,7 @@ const BoardLevelPage = () => {
       <Hero_Services title={"Board-Level ESG Consulting"} subtitle={"Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making."}/>
       <SliderLogos />
       <Cursal services={services}/>
-     
+    
     </div>
   );
 }

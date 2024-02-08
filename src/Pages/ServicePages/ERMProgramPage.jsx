@@ -3,6 +3,7 @@ import { FaLeaf } from "react-icons/fa";
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
 import Hero_Services from '../../Components/Hero_Services/Hero_Services';
+import EndServices from '../../Components/EndServices';
 
 
 
@@ -67,6 +68,7 @@ const ERMProgramPage = () => {
       <Hero_Services title={"ESG in ERM Program"} subtitle={"We provide comprehensive support to enterprise risk management (ERM) functions in building their ESG capabilities. Our services include the development of an ESG ERM strategy and methodology manual, tailored to your organization's needs. We understand that ESG factors are increasingly important in risk management, and we integrate these factors into your ERM program."} />
       <SliderLogos />
       <Cursal services={services}/>
+      <EndServices description={"Recognizing that distinctions in risk management efforts stem from varying focuses and scopes, our commitment lies in delivering a tailored service designed precisely to address the unique needs of your organization."}/>
     </div>
   );
 }

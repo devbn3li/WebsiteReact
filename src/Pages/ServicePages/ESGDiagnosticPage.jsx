@@ -3,6 +3,7 @@ import { FaLeaf } from "react-icons/fa";
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import Cursal from '../../Components/Cursal/Cursal';
 import Hero_Services from '../../Components/Hero_Services/Hero_Services';
+import EndServices from '../../Components/EndServices';
 
 
 const services = [
@@ -55,6 +56,7 @@ const ESGDiagnosticPage = () => {
       <Hero_Services title={"ESG Diagnostic Assessment"} subtitle={"Our innovative ESG Diagnostics provides a rapid assessment of your current ESG performance against leading practices. The online assessment benchmarks your program and identifies priority actions across governance, environment and social impact. It helps identify and prioritize actions for improvement."} buttonText={"Test"}/>
       <SliderLogos />
       <Cursal services={services}/>
+      <EndServices description={"We understand the looming landscape and resonate with the prevailing needs and that the main differences lie in the focus and scope of the ESG diagnostic efforts, our dedication lies in delivering a customized service aligned with the specific needs of your business."}/>
     </div>
   );
 }
