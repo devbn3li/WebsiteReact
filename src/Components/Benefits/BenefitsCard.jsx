@@ -15,9 +15,7 @@ const BenefitsCard = ({ icon, title, description, imageUrl }) => (
       </span>
       <h1 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-[#002E70] md:text-2xl lg:text-3xl ">
         {title}</h1>
-      <p className="mb-8 text-lg font-normal text-gray-500 text-[#002E70]/80 lg:text-xl  ">
-        
-        {description}</p>
+      <p className="mb-8 text-lg font-normal text-gray-500 text-[#002E70]/80 lg:text-xl  ">{description}</p>
     </div>
     <div className='aspect-[1/1.2] hover:scale-105 duration-700 cursor-pointer w-full rounded-2xl overflow-hidden'>
       <img src={imageUrl} alt={`Benefit: ${title}`} className='object-cover min-h-full min-w-full' />
