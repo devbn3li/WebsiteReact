@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 
 const BenefitsSection = (props) => {
   return (
-    <div className="w-full  backdrop-blur-md rounded-e-3xl shadow-none">
-      <section className="why max-w-7xl mx-auto pt-28">
+    <div className="w-full max-w-[1400px] backdrop-blur-md rounded-e-3xl shadow-none">
+      <section className="w-full mx-auto pt-28">
         <div className="px-[5%] w-full pb-20">
-          <div className="flex flex-col gap-1">
+          <div className="w-full flex flex-col gap-1">
             <div className="flex flex-col max-w-[90.25rem] gap-3">
               <h1 className="mb-4 text-4xl capitalize max-w-[1000px] font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl ">
                 {props.title}
@@ -18,7 +18,7 @@ const BenefitsSection = (props) => {
                 <div className="w-full border-[#02c2ab]  border-b-2     mb-10"></div>
               </div>
             </div>
-            <div className="flex flex-wrap gap-4  justify-center">
+            <div className="flex w-full flex-wrap gap-4  justify-center">
               {props.reasons.map((reason, index) => (
                 <a
                   href={reason.url}
