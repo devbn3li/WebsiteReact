@@ -17,6 +17,16 @@ const ESGSoftwareSection = () => {
   return (
    <div className='w-full flex justify-center'>
      <section className=" max-w-[1400px] py-20 px-[5%]">
+    <div className='w-full justify-center flex  py-4 pb-8'>
+    <div className='bg-[#02c2ab] aspect-square  w-[116px] h-[116px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] '>
+              {/* <Lottie
+                animationData={wave}
+                autoplay
+                loop
+                style={{ width: "100%", height: "100%" }}
+              /> */}
+            </div>{" "}
+    </div>
       <div className="container text-[#002E70] mx-auto">
         <h2 className="mb-4 text-4xl text-center max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">Enhance Your ESG Performance with Our Software Solutions</h2>
         <div className='mx-auto pt-12 h-full max-w-[1400px] p-2'>

@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div
     style={customBackgroundStyle}
-    className="flex justify-center h-[90vh]">
+    className="flex justify-center h-[90vh] rounded-3xl">
       <div
       className="relative text-white px-[5%] max-w-[1400px] w-full py-28 mt-18 flex items-center justify-center"
      
