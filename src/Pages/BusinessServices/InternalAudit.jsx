@@ -22,7 +22,7 @@ const ServiceTempletePage = () => {
     description: "In the rapidly evolving business environment, ensuring robust governance, risk management, and compliance (GRC) is more critical than ever. Our services are designed to help you stay ahead, ensuring resilience and driving growth.",
     imgSrc: challengeImg,
   }
-  
+
   const solutionsData = {
     description: "Our tailored internal audit solutions empower your organization to address key areas effectively:",
     solutions: [
@@ -40,7 +40,7 @@ const ServiceTempletePage = () => {
       },
     ]
   }
-  
+
   const benefitsData = {
     title: 'Key Benefits of Choosing LevelUp',
     description: 'Our internal audit services offer unparalleled advantages:',
@@ -62,7 +62,7 @@ const ServiceTempletePage = () => {
       },
     ]
   };
-  
+
   const howToData = {
     title: "Empowering Your Internal Audit Capabilities",
     Sectiondescription: "From risk-based auditing to enhancing your team's expertise, discover how LevelUp transforms your internal audit function for greater impact.",
@@ -99,12 +99,12 @@ const ServiceTempletePage = () => {
       }
     ]
   };
-  
+
   const CTA2Data = {
     "title": "Take Your Governance and Compliance to the Next Level",
     "CTATitle": "Get Started Today",
     "CTAPath": "/contact"
-  }  
+  }
 
   return (
     <div className='w-full flex flex-col justify-center items-center'>
