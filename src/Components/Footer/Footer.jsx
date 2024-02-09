@@ -28,13 +28,13 @@ const Footer = () => {
                   <p className="font-bold pl-2 ">Pages</p>
                   <Link
                     to="/about"
-                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#238f99]/60 hover:backdrop-blur-md	duration-[0.45s]"
                   >
                     About us
                   </Link>
                   <Link
                     to="/contact"
-                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#238f99]/60 hover:backdrop-blur-md	duration-[0.45s]"
                   >
                     Contact us
                   </Link>
@@ -43,13 +43,13 @@ const Footer = () => {
                   <div className="font-bold pl-2 ">Resources</div>
                   <Link
                     to="legal/privacy-policy"
-                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#238f99]/60 hover:backdrop-blur-md	duration-[0.45s]"
                   >
                     Privacy policy
                   </Link>
                   <Link
                     to="/legal/Cookies"
-                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#238f99]/60 hover:backdrop-blur-md	duration-[0.45s]"
                   >
                     Cookie policy
                   </Link>
@@ -60,7 +60,7 @@ const Footer = () => {
                     href="https://www.linkedin.com/company/levelupesg/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a] duration-[0.45s]"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#238f99]/60 hover:backdrop-blur-md duration-[0.45s]"
                   >
                     LinkedIn
                   </a>
@@ -119,7 +119,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex max-w-2xl:flex-col md:justify-between items-center gap-3 pt-4 mt-6 lg:mt-20 border-t-[1px]">
+          <div className="flex max-md:flex-col max-w-2xl:flex-col md:justify-between items-center gap-3 pt-4 mt-6 lg:mt-20 border-t-[1px]">
             <div className="flex gap-4 place-content-center justify-center  ">
               <div className="grid place-items-center ">
                 <img
