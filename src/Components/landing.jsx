@@ -1,7 +1,7 @@
 import React from "react";
 import img from "../../public/assets/Premasset/488f3192-902f-46cd-bcb7-6a50c298d1f5.png";
 import img2 from "../../public/assets/Premasset/0da8ef77-4960-4cfa-96fb-65136217e617.png";
-import img3 from "../../public/assets/Premasset/photo1.png";
+import img3 from "../../public/assets/Premasset/dashhero2.png";
 import PrimaryButton from "./Buttons/PrimaryButton";
 
 const LandingSection = () => {
