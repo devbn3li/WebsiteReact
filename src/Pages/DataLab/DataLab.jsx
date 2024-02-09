@@ -5,7 +5,7 @@ import Call from "../../Components/DataLab/Call";
 import How from "../../Components/DataLab/How";
 import Dashboard from "../../Components/Dashboard";
 import img from "../../../public/assets/Dashboard.png";
-import Qoute from "../../Components/DataLab/Qoute";
+import CTA2 from "../../Components/CTA/CTA_2";
 
 function DataLab() {
   const dynamicContent = `We deliver cutting-edge analytics and insights leveraging advanced
@@ -22,9 +22,11 @@ function DataLab() {
     CTAPath: "/contact",
   };
 
-  const dynamicQuote = `Let our data science reveal what matters most to your stakeholders and
-  growth. Start your sustainability journey on the right path today.`;
-
+  const CTASectionData = {
+    title: "Let our data science reveal what matters most to your stakeholders and growth. Start your sustainability journey on the right path today.",
+    CTATitle: "Book a consultation",
+    CTAPath: "/contact",
+  }
   return (
     <div>
       <Hero_2 {...heroData} />
@@ -35,13 +37,9 @@ function DataLab() {
         buttonPath="/contact"
       />
       <Why />
-      <Qoute
-        quoteText={dynamicQuote}
-        buttonTitle="Book a consultation"
-        buttonPath="/contact"
-      />
       <Call />
       <How />
+      <CTA2 {...CTASectionData} />
     </div>
   );
 }
