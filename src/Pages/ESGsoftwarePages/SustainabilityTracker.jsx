@@ -4,6 +4,10 @@ import Challenge from '../../Components/Challenge/Challenge';
 import challengeImg from '../../../public/assets/Premasset/0da8ef77-4960-4cfa-96fb-65136217e617.png';
 import Solutions from '../../Components/SolutionCompo/Solutions';
 import CTA1 from '../../Components/CTA/CTA_1';
+import CardData from "../../Components/SolCard/CardData";
+import Benefits from '../../Components/Benefits/Benefits';
+import CTA2 from "../../Components/CTA/CTA_2";
+import { FaRegLightbulb, FaSyncAlt, FaShieldAlt } from 'react-icons/fa';
 
 const SustainabilityTracker = () => {
   const heroData = {
@@ -45,12 +49,80 @@ const SustainabilityTracker = () => {
     ]    
   }
 
+  const howToData = {
+    title: "How Sustainability Tracker Works",
+    Sectiondescription: "Designed for complex industrial processes, ST centralizes and analyzes sustainability data across various indicators, including GHG emissions, water, energy, and more, using advanced machine learning for accuracy and reliability.",
+    reasons: [
+      {
+        title: "Data Integration",
+        description: "ST seamlessly integrates with your existing systems, automatically gathering data from multiple sources across operations and supply chains, ensuring comprehensive coverage.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            1
+          </div>
+        ),
+        url: "#",
+      },
+      {
+        title: "Machine Learning Analysis",
+        description: "Utilizing machine learning, ST validates, organizes, and corrects the collected data, providing accurate analysis and insights into your sustainability performance.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            2
+          </div>
+        ),
+        url: "#",
+      },
+      {
+        title: "Sustainability Reporting",
+        description: "Generate detailed reports and deep analysis across key sustainability indicators, enabling compliance with global frameworks and informed decision-making.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            3
+          </div>
+        ),
+        url: "#",
+      }
+    ]
+  };
+
+  const benefitsData = {
+    title: 'Unlock the Benefits of Sustainability Tracking',
+    description: 'Leverage ST to enhance your sustainability reporting and performance management, enabling a more sustainable and compliant future.',
+    benefits: [
+      {
+        icon: <FaRegLightbulb />,
+        title: "Enhanced Decision Making",
+        description: "Gain actionable insights with comprehensive analytics on GHG emissions, energy use, and more for informed sustainability decisions.",
+      },
+      {
+        icon: <FaSyncAlt />,
+        title: "Seamless Integration",
+        description: "Effortlessly integrate with existing systems, automating data collection and management for a holistic view of your sustainability performance.",
+      },
+      {
+        icon: <FaShieldAlt />,
+        title: "Compliance & Reporting",
+        description: "Stay ahead of regulatory requirements with detailed, automated reporting that aligns with global sustainability frameworks and standards.",
+      },
+    ]
+  };
+
+  const CTA2Data = {
+    "title": "Ready to Elevate Your Sustainability Journey?",
+    "CTATitle": "Discover Sustainability Tracker",
+    "CTAPath": "#"
+  }
+  
   return (
     <div className='flex flex-col justify-center items-center'>
       <Hero_2 {...heroData} />
       <Challenge  {...challengeData} />
       <Solutions {...solutionData} />
       <CTA1 path="waiting-page" />
+      <Benefits {...benefitsData} />   
+      <CardData {...howToData} />
+      <CTA2 {...CTA2Data} />
     </div>
   );
 }

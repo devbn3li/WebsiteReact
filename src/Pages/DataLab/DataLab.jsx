@@ -3,8 +3,8 @@ import Hero_2 from "../../Components/Hero/Hero_2";
 import Why from "../../Components/DataLab/Why";
 import Call from "../../Components/DataLab/Call";
 import How from "../../Components/DataLab/How";
-import Qoute from "../../Components/DataLab/Qoute";
 import Dash from "../../Components/DataLab/Dash";
+import CTA2 from "../../Components/CTA/CTA_2";
 
 function DataLab() {
   const heroData = {
@@ -15,6 +15,11 @@ function DataLab() {
     CTAPath: "/contact",
   };
 
+  const CTASectionData = {
+    title: "Let our data science reveal what matters most to your stakeholders and growth. Start your sustainability journey on the right path today.",
+    CTATitle: "Book a consultation", 
+    CTAPath: "/contact", 
+  }
   return (
     <div>
         <Hero_2 {...heroData} />
@@ -22,7 +27,7 @@ function DataLab() {
         <Why />
         <Call />
         <How />
-        <Qoute />
+        <CTA2 {...CTASectionData} />
     </div>
   );
 }
