@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
  * It accepts props icon, title, description, imageUrl
  */
 
-const BenefitsCard = ({ icon, title, description, imageUrl }) => (
+const BenefitsCard = ({ icon, title, description, imageUrl, Class }) => (
   <div className='flex flex-col border-t  border-[#02c2ab] pt-6 gap-6 max-[996px]:flex-row max-[479px]:flex-col'>
     <div className='flex flex-col max-[991px]:w-11/12'>
       <span className='flex justify-center items-center bg-[#02c2ab] hover:rotate-6 duration-700 cursor-pointer hover:scale-110 mb-3 text-[#002E70] aspect-square max-w-10 box-border p-2 rounded-lg'>
@@ -17,8 +17,8 @@ const BenefitsCard = ({ icon, title, description, imageUrl }) => (
         {title}</h1>
       <p className="mb-8 text-lg font-normal text-gray-500 text-[#002E70]/80 lg:text-xl  ">{description}</p>
     </div>
-    <div className={`${!imageUrl && 'hidden'} aspect-[1/1.2] hover:scale-105 duration-700 cursor-pointer w-full rounded-2xl overflow-hidden`}>
-      <img src={imageUrl} alt={`Benefit: ${title}`} className='object-cover min-h-full min-w-full' />
+    <div className={`${!imageUrl && 'hidden'}   hover:scale-105 duration-700 cursor-pointer object-cover w-[80%] h-[250px] rounded-2xl overflow-hidden`}>
+      <img src={imageUrl} class={Class} alt={`Benefit: ${title}`} className='object-cover h-full w-full' />
     </div>
   </div>
 );

@@ -1,5 +1,7 @@
 import React from "react";
 import img from "../../public/assets/Premasset/488f3192-902f-46cd-bcb7-6a50c298d1f5.png";
+import img2 from "../../public/assets/Premasset/0da8ef77-4960-4cfa-96fb-65136217e617.png";
+import img3 from "../../public/assets/Premasset/photo1.png";
 import PrimaryButton from "./Buttons/PrimaryButton";
 
 const LandingSection = () => {
@@ -25,15 +27,10 @@ const LandingSection = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 mt-4 md:mt-0 max-md:hidden">
-            <div className="flex justify-center bg-gray-100 p-4 rounded-lg my-6">
-              <img src={img} className="w-32" alt="Landing section" />
+            <div className="flex justify-center  p-4 rounded-lg my-6">
+              <img src={img3} className="w-[80%]" alt="Landing section" />
             </div>
-            <div className="flex justify-center bg-gray-100 p-4 rounded-lg my-6">
-              <img src={img} className="w-20" alt="Landing section" />
-            </div>
-            <div className="flex justify-center bg-gray-100 p-4 rounded-lg">
-              <img src={img} className="w-64" alt="Landing section" />
-            </div>
+
           </div>
         </div>
       </div>

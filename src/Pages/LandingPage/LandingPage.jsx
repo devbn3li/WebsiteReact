@@ -6,9 +6,9 @@ import Why from '../../Components/Why';
 import FAQs from '../../Components/FAQs';
 import BlogCardsList from '../../Components/BlogCard/BlogCardsList';
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
-import img1 from '../../../public/assets/images/person-using-ai-tool-job.avif';
-import img2 from '../../../public/assets/images/discussing-business-documents.avif';
-import img3 from '../../../public/assets/images/young-man-working-office.avif';
+import img1 from '../../../public/assets/Premasset/photo7.png';
+import img2 from '../../../public/assets/Premasset/photo8.png';
+import img3 from '../../../public/assets/Premasset/photo12.png';
 import LandingSection from '../../Components/landing';
 
 // Icons
@@ -43,7 +43,8 @@ const LandingPage = () => {
         icon: <TerminalIcon />,
         title: 'Solutions, Data Science and Innovation',
         description: 'Sustainable Data Solutions: Empowering companies with control, informed decisions, and purpose-driven impact through modern, innovative tools and actionable insights.',
-        imageUrl: img1
+        imageUrl: img1,
+        Class:'mt-[-4rem]'
       },
       {
         icon: <RocketIcon />,
