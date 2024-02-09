@@ -1,8 +1,8 @@
 import React from "react";
 import Hero_Services from "../../Components/Hero_Services/Hero_Services";
-import Qoute from "../../Components/DataLab/Qoute";
+import CTA2 from "../../Components/CTA/CTA_2";
 import Dashboard from "../../Components/Dashboard";
-import img from "../../../public/assets/Premasset/Dash.png";
+import img from "../../../public/assets/Dashboard.png";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
 
@@ -63,10 +63,10 @@ const ESGDiagnosticPage = () => {
         buttonTitle="Contact Us"
         buttonPath="/contact"
       />
-      <Qoute
-        quoteText={dynamicQuote}
-        buttonTitle="Contact Us"
-        buttonPath="/contact"
+      <CTA2
+        title={dynamicQuote}
+        CTATitle="Contact Us"
+        CTAPath="/contact"
       />
     </div>
   );
