@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import vision from '../../../public/assets/images/logo.png';
 
 const SlideComponent = (founder) => (
-  <div className='py-12 pt-0'>
+  <div className='py-2 lg:py-12'>
     <div className='flex flex-col gap-6 text-white text-center px-0 lg:px-16 max-w-[890px] mx-auto'>
       <div className="flex justify-center">
-      <div className='bg-[#02c2ab] aspect-square  w-[116px] h-[116px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] '>
+      <div className='bg-[#02c2ab] aspect-square  w-[100px] h-[100px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] '>
               <Lottie
                 animationData={wave}
                 autoplay
@@ -47,15 +47,15 @@ function TeamTestimonial() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   return (
-    <div className='w-full flex flex-col justify-between items-center gap-6'>
-      <div className='w-full flex justify-center mb-0 p-2'>
-        <div className='w-full bg-[#1c4987] bg-gradient-to-l from-[#1C4987] to-[#159D9B]  min-h-[1100px] md:min-h-[700px] rounded-3xl overflow-hidden max-w-[1500px] '>
+    <div className='w-full   h-full  flex flex-col justify-between items-center gap-6'>
+      <div className='w-full  h-full  flex justify-center mb-0 p-2'>
+        <div className='w-full  h-full bg-[#1c4987] bg-gradient-to-l from-[#1C4987] to-[#159D9B]   rounded-3xl overflow-hidden max-w-[1500px] '>
          
-          <div className='w-full  relative h-full  flex-col justify-center items-center lg:flex-row  px-2 flex overflow-hidden'>
+          <div className='w-full  relative h-full  flex-col justify-center items-center lg:flex-row gap-2 px-2 flex overflow-hidden'>
             {/* // option lg:w-1/2  for the a size   */}
             <div
-              className='cursor-pointer w-1/2 hover:opacity-80 duration-1000 hover:contrast-150  p-4 px-2  md:col-span-2  relative flex justify-center items-center'>
-                <div className='rounded-xl w-full h-full bg-white/80 aspect-square flex justify-center items-center'>
+              className='cursor-pointer w-[40%] hover:opacity-80 duration-1000 hover:contrast-150  p-4    relative flex justify-center items-center'>
+                <div className='rounded-xl w-full h-full aspect-square flex justify-center items-center'>
                   <img
                     alt=''
                     className={` w-4/5 overflow-hidden  object-center `}
@@ -65,7 +65,7 @@ function TeamTestimonial() {
                 </div>
             </div>
 
-            <div className='w-1/2 h-full text-end md:col-span-2 relative flex justify-end items-center'>
+            <div className='w-[80%] lg:w-[45%] h-full text-end  relative flex  items-center'>
             <SlideComponent {...founder} />
             </div>
           </div>
@@ -88,9 +88,9 @@ function Founders() {
           }}
           className='  bg-white  flex flex-col items-center '>
           {/* Hero content wrapper */}
-          <div className='box-border px-2 lg:px-16 py-28 mt-1 flex flex-col justify-center items-center gap-6'>
+          <div className='box-border px-2 lg:px-16 py-20 mt-1 flex flex-col justify-center items-center gap-6'>
             {/* Hero Texts */}
-            <div className='bg-[#02c2ab] aspect-square  w-[116px] h-[116px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] '>
+            <div className='bg-[#02c2ab] aspect-square  w-[100px] h-[100px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] '>
               <Lottie
                 animationData={wave}
                 autoplay
