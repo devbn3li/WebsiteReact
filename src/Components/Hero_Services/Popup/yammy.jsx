@@ -14,7 +14,7 @@ function Yammy() {
   return (
     <div>
       <div
-        className="fixed inset-x-0 lg:left-5 bottom-0 lg:bottom-5 max-w-full bg-[#baede7] rounded-t-3xl overflow-hidden shadow-2xl z-40 sm:rounded-3xl sm:max-w-[90vw] md:max-w-[700px]  lg:max-w-[30vw]  "
+        className="fixed left-2 sm:left-5 bottom-5 max-w-[calc(100%-16px)] bg-[#baede7] overflow-hidden shadow-2xl z-40 max-[300px]:rounded-lg rounded-3xl sm:max-w-[90vw] md:max-w-[700px] lg:max-w-[30vw] "
         onKeyDown={handleKeyDown}
       >
         <div style={{ display: cookies ? "block" : "none" }}>
@@ -50,7 +50,7 @@ function Yammy() {
           {/* Buttons */}
           <div className="w-full flex justify-center items-center border-t border-solid border-[#112b65]/20">
             <button
-              className="border-r text-[#112b65] border-[#112b65]/20 flex-1 px-4 py-3 hover:text-white hover:bg-red-400 duration-150"
+              className="inline-block border-r w-1/2 text-[#112b65] border-[#112b65]/20 py-3 hover:text-white hover:bg-red-400 duration-150"
               onClick={() => {
                 setCookies(false);
                 localStorage.setItem("cookiesAccepted", "false");
@@ -59,9 +59,9 @@ function Yammy() {
               No thanks!
             </button>
             <button
-              className="flex-1 px-4 py-3 text-[#112b65] hover:text-white hover:bg-green-400 duration-150"
+              className="inline-block flex-shrink w-1/2 py-3 box-border h-full text-[#112b65] hover:text-white hover:bg-green-400 duration-150"
               onClick={() => {
-                setCookies(true);
+                setCookies(false);
                 localStorage.setItem("cookiesAccepted", "true");
               }}
             >
