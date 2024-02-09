@@ -5,7 +5,7 @@ const Challenge = ({ title, description, imgSrc }) => {
   return (
     <section className="w-full max-w-[1400px] rounded-3xl py-20">
       <div className="container mx-auto px-[5%] flex flex-col lg:flex-row items-center justify-center">
-        <div className="lg:w-1/2 lg:pr-10 mb-10 lg:mb-0">
+        <div className="lg:w-[60%] lg:pr-10 mb-10 lg:mb-0">
           <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
             {title}
           </h1>
@@ -13,11 +13,11 @@ const Challenge = ({ title, description, imgSrc }) => {
             {description}
           </p>
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-[40%]">
           <img
             src={imgSrc}
             alt="Hero Image"
-            className="w-full"
+            className="w-full animate-bounce"
           />
         </div>
       </div>
