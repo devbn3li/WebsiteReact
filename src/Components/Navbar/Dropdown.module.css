@@ -1,0 +1,23 @@
+@media (min-width: 1130px) {
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[250px\] {
+    height: 250px;
+  }
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[90px\] {
+    height: 90px;
+  }
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[70px\] {
+    height: 70px;
+  }
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[410px\] {
+    height: 410px;
+  }
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[340px\] {
+    height: 340px;
+  }
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[320px\] {
+    height: 320px;
+  }
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[160px\] {
+    height: 160px;
+  }
+}

@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { MdArrowRight } from "react-icons/md";
 import SubNavbarLink from "./SubNavbarLink";
+import './Dropdown.module.css';
 
 const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
   var height = 0;
