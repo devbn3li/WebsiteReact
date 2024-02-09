@@ -6,7 +6,6 @@ import How from "../../Components/DataLab/How";
 import Dashboard from "../../Components/Dashboard";
 import img from "../../../public/assets/Dashboard.png";
 import CTA2 from "../../Components/CTA/CTA_2";
-import Qoute from "../../Components/DataLab/Qoute";
 
 function DataLab() {
   const dynamicContent = `We deliver cutting-edge analytics and insights leveraging advanced
@@ -23,7 +22,6 @@ function DataLab() {
     CTAPath: "/contact",
   };
 
-<<<<<<< HEAD
   const CTASectionData = {
     title: "Let our data science reveal what matters most to your stakeholders and growth. Start your sustainability journey on the right path today.",
     CTATitle: "Book a consultation",
