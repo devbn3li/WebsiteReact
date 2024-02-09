@@ -21,10 +21,10 @@ const FounderNote = () => {
               simple, affordable and impactful.
             </p> */}
             <div className="md:mb-8">
-              <cite className="not-italic font-extrabold text-gray-600 ">
+              <cite className="not-italic text-2xl font-extrabold text-gray-600 ">
                 Dr. Ahmed Shawky
                 <br />
-              <span className="opacity-60 text-gray-600">Founder and Managing Director, LevelUp Ltd.</span>  
+              <span className="opacity-60 text-gray-600 text-xl">Founder and Managing Director, LevelUp Ltd.</span>  
               </cite>
             </div>
           </blockquote>

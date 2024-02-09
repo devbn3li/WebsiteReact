@@ -10,7 +10,7 @@ const Business = () => {
           <div className="flex flex-col md:flex-row justify-between">
             <div className="w-full md:w-[50%] md:max-w-[530px]">
               <h2 className="text-3xl md:text-5xl mt-0 mb-6  text-[#112b65]  font-bold  ">
-                LevelUp: ESG Impact Made Simple & Affordable
+                ESG Impact Made Simple & Affordable
               </h2>
               <p className="mb-6 text-lg text-[#112b65]">
                 Drive real ESG impact without the hefty price tag. Our

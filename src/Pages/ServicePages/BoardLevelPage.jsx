@@ -5,6 +5,7 @@ import Dashboard from "../../Components/Dashboard";
 import img from "../../../public/assets/Dashboard.png";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
+import StrategicStakeholderPage from "./StrategicStakeholderPage";
 
 const dynamicContent = `Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making.`;
 const dynamicSolutions = [
@@ -67,6 +68,9 @@ const BoardLevelPage = () => {
         buttonTitle="Contact Us"
         buttonPath="/contact"
       />
+
+<StrategicStakeholderPage />
+
     </div>
   );
 };

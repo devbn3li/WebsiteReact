@@ -40,29 +40,9 @@ const servicesTabData = {
         path: "service/esg-diagnostic",
       },
       {
-        title: "Strategy",
+        title: "Materiality & Strategy",
         Icon: IoEarthSharp,
         path: "service/esg-strategy",
-      },
-      {
-        title: "Board Advisory",
-        Icon: IoEarthSharp,
-        path: "service/board-level",
-      },
-      {
-        title: "Strategic Stakeholder",
-        Icon: IoEarthSharp,
-        path: "service/strategic-stakeholder",
-      },
-      {
-        title: "Compliance",
-        Icon: IoEarthSharp,
-        path: "service/esg-compliance",
-      },
-      {
-        title: "Assurance",
-        Icon: IoEarthSharp,
-        path: "service/esg-assurance",
       },
       {
         title: "Controllership",
@@ -70,9 +50,31 @@ const servicesTabData = {
         path: "service/esg-controllership",
       },
       {
-        title: "Internal Audit program",
+        title: "Strategic Stakeholder & Board Advisory",
+        Icon: IoEarthSharp,
+        path: "service/board-level",
+      },
+      // {
+      //   title: "",
+      //   Icon: IoEarthSharp,
+      //   path: "service/strategic-stakeholder",
+      // },
+      // {
+      //   title: "Compliance",
+      //   Icon: IoEarthSharp,
+      //   path: "service/esg-compliance",
+      // },
+      
+     
+      {
+        title: "ESG Internal Audit program",
         Icon: IoEarthSharp,
         path: "service/esg-ia-program",
+      },
+      {
+        title: "ESG Assurance",
+        Icon: IoEarthSharp,
+        path: "service/esg-assurance",
       },
     ],
   },
@@ -94,11 +96,11 @@ const servicesTabData = {
         Icon: IoEarthSharp,
         path: "service/risk-management",
       },
-      {
-        title: "Finance",
-        Icon: IoEarthSharp,
-        path: "service/finance",
-      },
+      // {
+      //   title: "Finance",
+      //   Icon: IoEarthSharp,
+      //   path: "service/finance",
+      // },
     ],
   },
 };
