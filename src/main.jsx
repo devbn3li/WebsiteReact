@@ -37,6 +37,8 @@ import RiskManagement from './Pages/BusinessServices/RiskManagement';
 import Finance from './Pages/BusinessServices/Finance';
 import DataLab from './Pages/DataLab/DataLab';
 
+import SustainabilityTracker from './Pages/ESGsoftwarePages/SustainabilityTracker';
+
 // Blog Pages Imports
 import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
 import EmpoweringCSuiteBlog from './Pages/Blogs/ALL/EmpoweringCSuiteBlog';
@@ -47,7 +49,7 @@ import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenw
 import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
-import ESGSoftware from './Pages/ESGsoftware/ESGSoftware';
+import ESGSoftware from './Pages/ESGsoftwarePages/ESGSoftware';
 import ServiceTempletePage from './Pages/ServicePages/ServiceTempletePage';
 
 // Application Component
@@ -94,9 +96,9 @@ export function Application() {
           <Route path="service/finance" element={<Finance />} />
           <Route path="service/data-lab" element={<DataLab />} />
 
-          {/* /esg-software */}
-          <Route path="/esg-software" element={<ESGSoftware />} />
-
+          {/* esg-software */}
+          <Route path="esg-software" element={<ESGSoftware />} />
+          <Route path="esg-software/sustainability-tracker" element={<SustainabilityTracker />} />
 
           {/* Blog article pages */}
           <Route path="blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<EmpoweringCSuiteBlog />} />

@@ -166,7 +166,7 @@ const ESGSoftwareTabData = {
   },
   tab2: {
     title: "SusTracker AI®",
-    path: "service/sustainability-tracker",
+    path: "esg-software/sustainability-tracker",
     description: "Streamline ESG management for enhanced real-time insights.",
     Icon: FaChartLine,
   },
