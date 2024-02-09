@@ -76,12 +76,12 @@ const LandingSection = () => {
               <PrimaryButton
                 path="/about"
                 title="About Us"
-                additionalClasses="hover:bg-blue-600 transition duration-300"
+                Classes="hover:bg-blue-600 transition duration-300 !font-bold"
               />
               <PrimaryButton
-                path="/impact"
+                path="/contact"
                 title="Make an Impact, Together"
-                additionalClasses="hover:bg-gray-300 transition duration-300"
+                classes="bg-[#E6E6E5] hover:bg-[#02c2ab] hover:!text-white border-none !text-[#002e70] font-bold"
               />
             </div>
           </motion.div>
