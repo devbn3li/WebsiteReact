@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Hero_servise = ({ title, subtitle }) => {
   return (
-    <section className="bg-white rounded-3xl ">
+    <section className="rounded-3xl ">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <a href="#" className="inline-flex justify-between cursor-not-allowed items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-200 bg-[#02c2ab] rounded-full hover:bg-[#02c2ab]/40 duration-500 " role="alert">
           <span className="text-xs bg-[#02c2ab]/20 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span className="text-sm font-medium">
