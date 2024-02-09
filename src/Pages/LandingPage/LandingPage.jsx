@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Hero from '../../Components/Hero/Hero';
 import Benefits from '../../Components/Benefits/Benefits';
 import Offer from '../../Components/Offer/Offer';
 import Testimonials from '../../Components/Testimonials/Testimonials';
@@ -10,6 +9,7 @@ import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import img1 from '../../../public/assets/images/person-using-ai-tool-job.avif';
 import img2 from '../../../public/assets/images/discussing-business-documents.avif';
 import img3 from '../../../public/assets/images/young-man-working-office.avif';
+import LandingSection from '../../Components/landing';
 
 // Icons
 const TerminalIcon = () => (
@@ -73,7 +73,7 @@ const LandingPage = () => {
   return (
     <div className='flex flex-col justify-center items-center w-full font-inter text-[#002E70]'>
       {/* <Popup isOpen={isModalOpen} closeModal={closeModal} /> */}
-      <Hero />
+      <LandingSection />
       <Benefits {...benefitsData} />
       <Offer />
       <Testimonials />
