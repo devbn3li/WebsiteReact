@@ -18,7 +18,7 @@ const BenefitsCard = ({ icon, title, description, imageUrl, Class }) => (
       <p className="mb-8 text-lg font-normal text-gray-500 text-[#002E70]/80 lg:text-xl  ">{description}</p>
     </div>
     <div className={`${!imageUrl && 'hidden'}   hover:scale-105 duration-700 cursor-pointer object-cover w-[80%] h-[250px] rounded-2xl overflow-hidden`}>
-      <img src={imageUrl} class={Class} alt={`Benefit: ${title}`} className='object-cover h-full w-full' />
+      <img src={imageUrl} class={Class} alt={`Benefit: ${title}`} className='object-contain  h-full w-full' />
     </div>
   </div>
 );

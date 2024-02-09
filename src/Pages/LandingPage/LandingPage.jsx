@@ -7,8 +7,8 @@ import FAQs from '../../Components/FAQs';
 import BlogCardsList from '../../Components/BlogCard/BlogCardsList';
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import img1 from '../../../public/assets/Premasset/photo7.png';
-import img2 from '../../../public/assets/Premasset/photo8.png';
-import img3 from '../../../public/assets/Premasset/photo12.png';
+import img3 from '../../../public/assets/Premasset/book.png';
+import img2 from '../../../public/assets/Premasset/photo12.png';
 import LandingSection from '../../Components/landing';
 
 // Icons
