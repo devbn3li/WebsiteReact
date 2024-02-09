@@ -87,9 +87,9 @@ const servicesTabData = {
         path: "service/risk-management",
       },
       {
-        title: "business transformation",
+        title: "Finance",
         Icon: IoEarthSharp,
-        path: 'service/board-level'
+        path: 'service/finance'
       },
     ]
   }
