@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { MdArrowRight } from "react-icons/md";
 import SubNavbarLink from "./SubNavbarLink";
-import './Dropdown.module.css';
+import styles from'./Dropdown.module.css';
 
 const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
   var height = 0;
@@ -12,8 +12,7 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
 
   return (
     <div
-      className="group min-[1130px]:h-full cursor-pointer max-[1130px]:w-full text-[#121212]"
-    >
+      className={"group min-[1130px]:h-full cursor-pointer max-[1130px]:w-full text-[#121212] " + styles["group"]}>
       <div className="group min-[1130px]:h-full cursor-pointer max-[1130px]:w-full">
         {/* Start Button */}
         <span className="px-4  max-[1130px]:py-8 flex items-center justify-center min-[1130px]:h-full transition-all duration-[.45s] max-[1130px]:hover:bg-transparent max-[1130px]:px-0 relative 
@@ -23,7 +22,7 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
         {/* End Button */}
 
         {/* Start Dropdown */}
-        <div className={`w-screen transition-all flex justify-center items-center min-[1130px]:absolute min-[1130px]:left-1/2 min-[1130px]:top-[calc(100%+1px)] box-border min-[1130px]:-translate-x-1/2 min-[1130px]:shadow-md group-hover:border-b border-b-[#02c2ab] bg-white h-0 min-[1130px]:group-hover:h-[${height}px] ${isTabOpen && "max-[1130px]:h-auto max-[1130px]:py-5"} overflow-hidden`}>
+        <div className={`w-screen transition-all flex justify-center items-center min-[1130px]:absolute min-[1130px]:left-1/2 min-[1130px]:top-[calc(100%+1px)] box-border min-[1130px]:-translate-x-1/2 min-[1130px]:shadow-md group-hover:border-b border-b-[#02c2ab] bg-white h-0 ${isTabOpen && "max-[1130px]:h-auto max-[1130px]:py-5"} overflow-hidden ` + styles[`min-[1130px]:group-hover:h-[${height}px]`]}>
           {/* Start Inner Container */}
           <div className='max-w-[1400px] flex-col w-full text-start flex items-center transition-all px-4 box-border max-[1130px]:flex-col'>
 
