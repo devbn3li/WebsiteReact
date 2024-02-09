@@ -5,6 +5,8 @@ import CardData from "../../Components/SolCard/CardData";
 import challengeImg from "../../../public/assets/images/instingo_challenge_page.svg";
 import Solutions from '../../Components/SolutionCompo/Solutions';
 import Benefits from '../../Components/Benefits/Benefits';
+import CTA2 from '../../Components/CTA/CTA_2';
+import CTA1 from '../../Components/CTA/CTA_1';
 
 
 // Icons
@@ -67,14 +69,14 @@ const LeafIcon = () => (
 
 const ServiceTempletePage = () => {
   const heroData = {
-    title: "Templete page",
+    title: "title",
     description: "Some description to introduce the service",
-    CTATitle: "Get Started with Your Assessment",
+    CTATitle: "CTA title",
     CTAPath: "/contact"
   }
 
   const challengeData = {
-    title: "Challenge",
+    title: "title",
     description: "Descripe it here...",
     imgSrc: challengeImg,
   }
@@ -102,17 +104,17 @@ const ServiceTempletePage = () => {
     description: 'Small Description for this section...',
     benefits: [
       {
-        icon: <TerminalIcon />,
+        icon: <TerminalIcon />, // import consistence icon from react-icons
         title: "benefit 1",
         description: "small description",
       },
       {
-        icon: <RocketIcon />,
+        icon: <RocketIcon />, // import consistence icon from react-icons
         title: "benefit 2",
         description: "small description",
       },
       {
-        icon: <LeafIcon />,
+        icon: <LeafIcon />, // import consistence icon from react-icons
         title: "benefit 3",
         description: "small description",
       },
@@ -156,13 +158,21 @@ const ServiceTempletePage = () => {
     ]
   };
 
+  const CTA2Data = {
+    "title": "title",
+    "CTATitle": "title",
+    "CTAPath": "#"
+  }
+
   return (
     <div className='w-full flex flex-col justify-center items-center'>
       <Hero_2 {...heroData} />
       <Challenge {...challengeData} />
       <Solutions {...solutionsData} />
+      <CTA1 />
       <Benefits {...benefitsData} />
       <CardData {...howToData} />
+      <CTA2 {...CTA2Data} />
     </div>
   );
 }
