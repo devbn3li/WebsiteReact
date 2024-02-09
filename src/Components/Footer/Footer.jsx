@@ -1,5 +1,9 @@
 import Logo from "../../../public/assets/images/logo.png";
 import { Link } from "react-router-dom";
+import reward from "../../../public/assets/images/pngwing.com.png"
+import reward2 from "../../../public/assets/images/innovator-international-white.png"
+import reward3 from "../../../public/assets/images/home-office-logo-0F594C8106-seeklogo.com.png"
+import reward4 from "../../../public/assets/images/reward.svg"
 
 const Footer = () => {
   let date = new Date();
@@ -120,28 +124,28 @@ const Footer = () => {
               <div className="grid place-items-center ">
                 <img
                   className="w-[50px] scale-75"
-                  src="../../../public/assets/images/pngwing.com.png"
-                  alt=""
+                  src={reward}
+                  alt="Reward logo"
                 />
               </div>
               <div className="grid place-items-center  ">
                 <img
                   className="w-[100px]"
-                  src="../../../public/assets/images/innovator-international-white.png"
+                  src={reward2}
                   alt=""
                 />
               </div>
               <div className="grid place-items-center scale-90">
                 <img
                   className="w-[100px]"
-                  src="../../../public/assets/images/home-office-logo-0F594C8106-seeklogo.com.png"
+                  src={reward3}
                   alt=""
                 />
               </div>
               <div className="grid place-items-center ">
                 <img
                   className="w-[100px]"
-                  src="../../../public/assets/images/reward.svg"
+                  src={reward4}
                   alt=""
                 />
               </div>
