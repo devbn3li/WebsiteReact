@@ -35,13 +35,13 @@ function DataLab() {
         buttonPath="/contact"
       />
       <Why />
-      <Call />
-      <How />
       <Qoute
         quoteText={dynamicQuote}
         buttonTitle="Book a consultation"
         buttonPath="/contact"
       />
+      <Call />
+      <How />
     </div>
   );
 }
