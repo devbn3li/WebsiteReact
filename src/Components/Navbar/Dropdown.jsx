@@ -8,7 +8,7 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
   var height = 0;
   if (data.tab1) height += 250;
   if (data.subTab1) height += 90;
-  if (data.moreLinks1 || data.moreLinks2) height += 70;
+  if (data.moreLinks1 || data.moreLinks2) height += 110;
 
   return (
     <div

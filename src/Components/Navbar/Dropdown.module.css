@@ -1,23 +1,26 @@
 @media (min-width: 1130px) {
+  /* 250 */
   .group:hover .min-\[1130px\]\:group-hover\:h-\[250px\] {
     height: 250px;
   }
+  /* 90 */
   .group:hover .min-\[1130px\]\:group-hover\:h-\[90px\] {
     height: 90px;
   }
-  .group:hover .min-\[1130px\]\:group-hover\:h-\[70px\] {
-    height: 70px;
+  /* 110 */
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[110px\] {
+    height: 110px;
   }
-  .group:hover .min-\[1130px\]\:group-hover\:h-\[410px\] {
-    height: 410px;
-  }
+  /* 250 + 90 */
   .group:hover .min-\[1130px\]\:group-hover\:h-\[340px\] {
     height: 340px;
   }
-  .group:hover .min-\[1130px\]\:group-hover\:h-\[320px\] {
-    height: 320px;
+  /* 250 + 110 */
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[360px\] {
+    height: 360px;
   }
-  .group:hover .min-\[1130px\]\:group-hover\:h-\[160px\] {
-    height: 160px;
+  /* 110 + 90 */
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[200px\] {
+    height: 200px;
   }
 }

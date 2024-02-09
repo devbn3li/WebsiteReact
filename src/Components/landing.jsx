@@ -10,10 +10,10 @@ const LandingSection = () => {
       <div className="container mx-auto px-[5%]">
         <div className="flex flex-wrap justify-between items-center">
           <div className="w-full md:w-1/2 text-left">
-            <h2 className="text-6xl font-extrabold text-[#002e70] max-md:text-center">
+            <h2 className="text-6xl max-[400px]:text-5xl font-extrabold text-[#002e70] max-md:text-center">
               LevelUp for Better Business & Planet.
             </h2>
-            <p className="my-12 text-[#002e70] max-md:text-center text-2xl">
+            <p className="my-12 text-[#002e70] max-md:text-center text-2xl max-[400px]:text-xl">
               Welcome to LevelUp, where we combine sustainability technology,
               science, and human expertise to make a meaningful impact.
             </p>

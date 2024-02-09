@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Benefits from '../../Components/Benefits/Benefits';
 import Offer from '../../Components/Offer/Offer';
 import Testimonials from '../../Components/Testimonials/Testimonials';
@@ -63,7 +63,6 @@ const LandingPage = () => {
 
   return (
     <div className='flex flex-col justify-center items-center w-full font-inter text-[#002E70]'>
-      {/* <Popup isOpen={isModalOpen} closeModal={closeModal} /> */}
       <LandingSection />
       <Benefits {...benefitsData} />
       <Offer />
