@@ -1,74 +1,74 @@
-import React from 'react';
+import React from "react";
+import Hero_Services from "../../Components/Hero_Services/Hero_Services";
+import Qoute from "../../Components/DataLab/Qoute";
+import Dashboard from "../../Components/Dashboard";
+import img from "../../../public/assets/Premasset/Dash.png";
+import How from "../../Components/How";
+import Call from "../../Components/Call";
 
-import Cursal from '../../Components/Cursal/Cursal';
-import Hero_Services from '../../Components/Hero_Services/Hero_Services';
-import { FaLeaf } from "react-icons/fa";
-
-
-
-const services = [
+const dynamicContent = `Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making.`;
+const dynamicSolutions = [
   {
-    title: "Our board-level advisory suite navigates the ESG landscape",
-    description: "Strategic Governance aligns goals with resilience",
-    icon: <FaLeaf />,
-    data: {
-      title: "Our board-level advisory suite navigates the ESG landscape",
-      discription: "Strategic Governance aligns goals with resilience, Risk Management ensures proactive risk mitigation, Stakeholder-Centric Advisory prioritizes meaningful engagements, and Regulatory Compliance keeps boards informed and compliant, demonstrating leadership in responsible governance.",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
-    },
+    name: "Strategic Sustainability Governance Advisory",
+    description:
+      "Elevate your board's strategic decision-making by providing expert guidance on integrating sustainability into corporate governance. Our advisory service ensures alignment between ESG principles and your organization's long-term strategic goals, fostering responsible and resilient business practices.",
   },
   {
-    title: "Strategic Sustainability Governance Advisory",
-    description: "Elevate your board's strategic decision-making by providing expert guidance",
-    icon: <FaLeaf />,
-    data: {
-      title: "Strategic Sustainability Governance Advisory",
-      discription: "Elevate your board's strategic decision-making by providing expert guidance on integrating sustainability into corporate governance. Our advisory service ensures alignment between ESG principles and your organization's long-term strategic goals, fostering responsible and resilient business practices.",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
-    },
+    name: "ESG Risk Management Consultation for Boards",
+    description:
+      "Safeguard your board's interests with our ESG risk management consultation. We assess, identify, and mitigate potential risks associated with environmental, social, and governance factors. Our comprehensive approach empowers boards to proactively address challenges, ensuring sustainable growth and resilience.",
   },
   {
-    title: "ESG Risk Management Consultation for Boards",
-    description: "Safeguard your board's interests with our ESG risk management consultation. ",
-    icon: <FaLeaf />,
-    data: {
-      title: "ESG Risk Management Consultation for Boards",
-      discription: "Safeguard your board's interests with our ESG risk management consultation. We assess, identify, and mitigate potential risks associated with environmental, social, and governance factors. Our comprehensive approach empowers boards to proactively address challenges, ensuring sustainable growth and resilience.",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
-    },
+    name: "Stakeholder-Centric ESG Advisory for Boards",
+    description:
+      "Enhance board effectiveness by prioritizing stakeholder engagement in ESG strategies. Our advisory service assists boards in developing stakeholder-centric approaches, fostering meaningful dialogues with investors, customers, employees, and communities. Elevate your board's understanding and responsiveness to diverse stakeholder expectations.",
   },
   {
-    title: "Stakeholder-Centric ESG Advisory for Boards",
-    description: "Enhance board effectiveness by prioritizing stakeholder engagement in ESG strategies",
-    icon: <FaLeaf />,
-    data: {
-      title: "Stakeholder-Centric ESG Advisory for Boards",
-      discription: "Enhance board effectiveness by prioritizing stakeholder engagement in ESG strategies. Our advisory service assists boards in developing stakeholder-centric approaches, fostering meaningful dialogues with investors, customers, employees, and communities. Elevate your board's understanding and responsiveness to diverse stakeholder expectations.",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
-    },
+    name: "ESG Regulatory Compliance and Reporting Advisory",
+    description:
+      "Stay ahead of evolving ESG regulations with our specialized advisory service for boards. We provide in-depth insights into regulatory landscapes, ensuring your board remains well-informed and compliant. From guiding on reporting requirements to navigating complex regulatory frameworks, we empower boards to demonstrate leadership in responsible governance.",
   },
   {
-    title: "ESG Regulatory Compliance and Reporting Advisory",
-    description: "Stay ahead of evolving ESG regulations with our specialized advisory service for boards",
-    icon: <FaLeaf />,
-    data: {
-      title: "ESG Regulatory Compliance and Reporting Advisory",
-      discription: "Stay ahead of evolving ESG regulations with our specialized advisory service for boards. We provide in-depth insights into regulatory landscapes, ensuring your board remains well-informed and compliant. From guiding on reporting requirements to navigating complex regulatory frameworks, we empower boards to demonstrate leadership in responsible governance.",
-      LOTTIEanimationData: "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
-    },
+    name: "Strategic Planning for ESG Integration",
+    description:
+      "Develop strategic plans to integrate ESG principles into your organization's overall strategy. Our consultancy services help boards identify key areas for ESG integration, set actionable goals, and measure progress, ensuring alignment with long-term sustainability objectives.",
   },
-
-]
-
+];
+const dynamicTitle = "Board-Level ESG Consulting";
+const dynamicSubtitle =
+  "Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making.";
+const dynamicQuote = `We understand that the main differences lie in the focus and scope of the ESG governance and strategy efforts, and we are committed to providing a service that is tailored to your organization's specific needs.`;
 
 const BoardLevelPage = () => {
   return (
-    <div className='pt-[4.5rem] flex flex-col items-center'>
-      <Hero_Services title={"Board-Level ESG Consulting"} subtitle={"Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making."}/>     
-      <Cursal services={services}/>
-    
+    <div className="pt-[4.5rem] flex flex-col items-center">
+      <Hero_Services title={dynamicTitle} subtitle={dynamicSubtitle} />
+
+      <Dashboard
+        imgSrc={img}
+        content={dynamicContent}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
+      />
+      <How
+        solutions={dynamicSolutions}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
+      />
+      <Call
+        imgSrc={img}
+        title={dynamicTitle}
+        paragraph={dynamicSubtitle}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
+      />
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
+      />
     </div>
   );
-}
+};
 
 export default BoardLevelPage;
