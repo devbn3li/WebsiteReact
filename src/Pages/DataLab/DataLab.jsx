@@ -20,9 +20,10 @@ function DataLab() {
         <Hero_2 {...heroData} />
         <Dash />
         <Why />
-        <Call />
+        <Qoute />  
+         <Call />
         <How />
-        <Qoute />
+     
     </div>
   );
 }
