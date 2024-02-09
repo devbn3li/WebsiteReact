@@ -3,10 +3,18 @@ import Hero_2 from "../../Components/Hero/Hero_2";
 import Why from "../../Components/DataLab/Why";
 import Call from "../../Components/DataLab/Call";
 import How from "../../Components/DataLab/How";
-import Dash from "../../Components/DataLab/Dash";
+import Dashboard from "../../Components/Dashboard";
+import img from "../../../public/assets/Dashboard.png";
 import CTA2 from "../../Components/CTA/CTA_2";
+import Qoute from "../../Components/DataLab/Qoute";
 
 function DataLab() {
+  const dynamicContent = `We deliver cutting-edge analytics and insights leveraging advanced
+  statistical modelling, machine learning algorithms, and natural
+  language processing. Our customized dashboards visualize complex ESG
+  data to reveal targeted opportunities for improving your
+  environmental, social and governance performance.`;
+
   const heroData = {
     title: "Empower Your Sustainability Journey with Data Science",
     description:
@@ -15,19 +23,25 @@ function DataLab() {
     CTAPath: "/contact",
   };
 
+<<<<<<< HEAD
   const CTASectionData = {
     title: "Let our data science reveal what matters most to your stakeholders and growth. Start your sustainability journey on the right path today.",
-    CTATitle: "Book a consultation", 
-    CTAPath: "/contact", 
+    CTATitle: "Book a consultation",
+    CTAPath: "/contact",
   }
   return (
     <div>
-        <Hero_2 {...heroData} />
-        <Dash />
-        <Why />
-        <Call />
-        <How />
-        <CTA2 {...CTASectionData} />
+      <Hero_2 {...heroData} />
+      <Dashboard
+        imgSrc={img}
+        content={dynamicContent}
+        buttonTitle="Book a consultation"
+        buttonPath="/contact"
+      />
+      <Why />
+      <Call />
+      <How />
+      <CTA2 {...CTASectionData} />
     </div>
   );
 }
