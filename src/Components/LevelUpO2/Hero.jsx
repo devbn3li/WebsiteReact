@@ -27,11 +27,10 @@ const HeroSection = () => {
           </svg>
         </a>
         <h1 className="text-4xl text-[#002e70] font-bold mb-8">
-          Breathe New Life into Your Sustainability Journey
+        Elevate Your Carbon Management with LevelUp O2®
         </h1>
-        <p className="text-lg text-[#002e70]">
-          An AI-powered SaaS platform for automated, accurate carbon accounting
-          across your entire value chain emissions and offset management.
+        <p className="text-lg text-[#002e70] md:px-20">
+        Discover the future of carbon accounting with LevelUp O2®, the AI-powered platform designed to simplify and optimize your entire value chain emissions and offset management. Measure, reduce, and report your greenhouse gas emissions with unparalleled accuracy and efficiency. Join the sustainability leaders transforming their environmental impact into a competitive advantage.
         </p>
       </div>
     </section>
