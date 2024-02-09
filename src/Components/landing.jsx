@@ -28,6 +28,9 @@ const LandingSection = () => {
             <div className="flex justify-center bg-gray-100 p-4 rounded-lg my-6">
               <img src={img} className="w-32" alt="Landing section" />
             </div>
+            <div className="flex justify-center bg-gray-100 p-4 rounded-lg my-6">
+              <img src={img} className="w-20" alt="Landing section" />
+            </div>
             <div className="flex justify-center bg-gray-100 p-4 rounded-lg">
               <img src={img} className="w-64" alt="Landing section" />
             </div>
