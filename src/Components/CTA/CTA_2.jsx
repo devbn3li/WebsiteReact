@@ -15,7 +15,6 @@ const CTA2 = ({ title, CTATitle, CTAPath }) => {
   );
 };
 
-
 CTA2.propTypes = {
   title: PropTypes.string.isRequired, 
   CTATitle: PropTypes.string.isRequired, 
