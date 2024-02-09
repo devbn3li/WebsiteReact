@@ -1,124 +1,122 @@
-import React from "react";
-import SliderLogos from "../../Components/SliderLogos/SliderLogos";
-import Hero_Services from "../../Components/Hero_Services/Hero_Business";
+import React from 'react';
+import Hero_2 from '../../Components/Hero/Hero_2';
+import Challenge from '../../Components/Challenge/Challenge';
+import CardData from "../../Components/SolCard/CardData";
+import challengeImg from "../../../public/assets/images/instingo_challenge_page.svg";
+import Solutions from '../../Components/SolutionCompo/Solutions';
+import Benefits from '../../Components/Benefits/Benefits';
+import CTA2 from '../../Components/CTA/CTA_2';
+import CTA1 from '../../Components/CTA/CTA_1';
+import { FaTools, FaChartLine, FaUserTie } from 'react-icons/fa';
 
-// Existing imports for icons - consider adding or changing icons as appropriate
-import { MdOutlineReport, MdLeaderboard } from "react-icons/md";
-import { FaLevelUpAlt, FaRegLightbulb } from "react-icons/fa";
-// Import additional icons if needed
+const ServiceTempletePage = () => {
+  const heroData = {
+    title: "Future Proof Your Business with Our Audit Services",
+    description: "Strengthen your governance, risk management, and compliance practices with our comprehensive internal audit and GRC services. Build resilience, gain insights, and drive performance with LevelUp.",
+    CTATitle: "Explore Our Services",
+    CTAPath: "/contact"
+  }
 
-import backgroundImage from "../../../public/assets/images/bg/1.jpg";
-
-const Why = () => {
-  // New reasons array tailored to Internal Audit services
-  const reasons = [
-    {
-      title: "Risk-based Auditing",
-      description:
-        "Focus on priority areas with our risk-based auditing approach, ensuring efficient use of resources and targeted assurance.",
-      icon: <MdOutlineReport />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Data Analytics",
-      description:
-        "Leverage data analytics for deeper insights and risk identification, enhancing the precision of our audit processes.",
-      icon: <FaRegLightbulb />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Audit Committee Support",
-      description:
-        "Provide comprehensive support and recommendations to the audit committee, enhancing governance and oversight.",
-      icon: <MdLeaderboard />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Internal Audit Training",
-      description:
-        "Strengthen your team's capabilities with our internal audit training and capability building programs.",
-      icon: <FaLevelUpAlt />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Quality Assurance Reviews",
-      description:
-        "Conduct quality assurance reviews of internal audit functions to ensure high standards and continuous improvement.",
-      icon: <FaLevelUpAlt />,
-      url: "#", // Update or keep as placeholder
-    },
-  ];
-
-  return (
-    <div
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-      className="w-full bg-[#F9FFF5] shadow-none"
-    >
-      <section className="why max-w-7xl mx-auto pt-28">
-        <div className="px-[5%] w-full pb-20">
-          <div className="flex flex-col gap-1">
-            <div className="flex flex-col max-w-[90.25rem] gap-3">
-              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
-                Why Choosing LevelUp for Internal Audit?
-              </h1>
-              <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
-                Our internal audit services deliver assurance and advice to
-                improve your operations. Our flexible, pragmatic approach
-                includes risk-based auditing, data analytics, and more, driving
-                measurable impact.
-              </p>
-              <div className="w-full border-[#02c2ab] border-b-2 mb-10"></div>
-            </div>
-
-            <div className="flex flex-wrap gap-4 justify-center">
-              {reasons.map((reason, index) => (
-                <a
-                  href={reason.url}
-                  key={index}
-                  className="reason-link max-w-[500px] border-2 border-gray-200/80 backdrop-blur-lg transition duration-500 hover:bg-gray-200 transform hover:scale-95 rounded-2xl p-6"
-                >
-                  <div className="flex gap-2">
-                    <div className="reason-item mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px]">
-                      {reason.icon}
-                    </div>
-                    <div className="grid place-items-center">
-                      <h3 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl">
-                        {reason.title}
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="min-h-[100px] grid place-items-center">
-                    <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
-                      {reason.description}
-                    </p>
-                  </div>
-                </a>
-              ))}
-            </div>
+  const challengeData = {
+    title: "Navigating Business Challenges",
+    description: "In the rapidly evolving business environment, ensuring robust governance, risk management, and compliance (GRC) is more critical than ever. Our services are designed to help you stay ahead, ensuring resilience and driving growth.",
+    imgSrc: challengeImg,
+  }
+  
+  const solutionsData = {
+    description: "Our tailored internal audit solutions empower your organization to address key areas effectively:",
+    solutions: [
+      {
+        title: "Risk-based Auditing",
+        description: "Prioritize critical areas with our risk-based approach, optimizing resource allocation and providing targeted assurance."
+      },
+      {
+        title: "Data Analytics",
+        description: "Enhance audit precision and risk identification through advanced data analytics, offering deeper insights into operations."
+      },
+      {
+        title: "Audit Committee Support",
+        description: "Strengthen governance with comprehensive support and actionable recommendations for the audit committee."
+      },
+    ]
+  }
+  
+  const benefitsData = {
+    title: 'Key Benefits of Choosing LevelUp',
+    description: 'Our internal audit services offer unparalleled advantages:',
+    benefits: [
+      {
+        icon: <FaTools />,
+        title: "Pragmatic Approach",
+        description: "Benefit from a flexible, pragmatic auditing approach that drives measurable improvements in your operations.",
+      },
+      {
+        icon: <FaChartLine />,
+        title: "Enhanced Insights",
+        description: "Leverage cutting-edge data analytics for deeper operational insights and more effective risk management.",
+      },
+      {
+        icon: <FaUserTie />,
+        title: "Expertise and Support",
+        description: "Gain expert advice and comprehensive support for your audit committee, enhancing governance and oversight.",
+      },
+    ]
+  };
+  
+  const howToData = {
+    title: "Empowering Your Internal Audit Capabilities",
+    Sectiondescription: "From risk-based auditing to enhancing your team's expertise, discover how LevelUp transforms your internal audit function for greater impact.",
+    reasons: [
+      {
+        title: "Comprehensive Auditing",
+        description: "Experience our holistic audit approach, focusing on your most critical risk areas for efficient and effective assurance.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            1
           </div>
-        </div>
-      </section>
-    </div>
-  );
-};
+        ),
+        url: "#",
+      },
+      {
+        title: "Insightful Analytics",
+        description: "Utilize our data analytics capabilities for a deeper understanding and identification of risks across your operations.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            2
+          </div>
+        ),
+        url: "#",
+      },
+      {
+        title: "Enhanced Governance",
+        description: "Strengthen your governance framework with our expert support to the audit committee, ensuring oversight and strategic guidance.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            3
+          </div>
+        ),
+        url: "#",
+      }
+    ]
+  };
+  
+  const CTA2Data = {
+    "title": "Take Your Governance and Compliance to the Next Level",
+    "CTATitle": "Get Started Today",
+    "CTAPath": "/contact"
+  }  
 
-const InternalAudit = () => {
   return (
-    <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services
-        title="Future Proof Your Business with Our Internal Audit and Governance, Risk, and Compliance Services"
-        subtitle="In today's fast-changing business landscape, strong governance, risk management, and compliance practices are crucial to future-proofing your organization. Our experienced team provides internal audit and integrated GRC services to help you build resilience, gain insights, and drive performance."
-      />
-
-      <SliderLogos />
-      <Why />
+    <div className='w-full flex flex-col justify-center items-center'>
+      <Hero_2 {...heroData} />
+      <Challenge {...challengeData} />
+      <Solutions {...solutionsData} />
+      <CTA1 />
+      <Benefits {...benefitsData} />
+      <CardData {...howToData} />
+      <CTA2 {...CTA2Data} />
     </div>
   );
-};
+}
 
-export default InternalAudit;
+export default ServiceTempletePage;
