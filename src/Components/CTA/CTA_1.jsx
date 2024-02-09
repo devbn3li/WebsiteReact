@@ -7,7 +7,7 @@ const demoImageUrl = "https://via.placeholder.com/300x350";
 
 const CTA1 = ({ path }) => {
   return (
-    <div className='w-[90%] max-w-[1400px] rounded-3xl flex max-[1000px]:flex-col justify-center gap-28 p-24 max-[500px]:px-6 py-6 items-center bg-[#02c2ab] box-border overflow-hidden my-16'>
+    <div className='w-[90%] max-w-[1400px] rounded-3xl flex max-[1000px]:flex-col justify-center gap-28 p-24 max-[500px]:px-6 py-6 items-center bg-gradient-to-tl from-[#078D92] to-[#02c2ab] box-border overflow-hidden my-16'>
         <div className='max-w-[300px] max-[340px]:hidden max-h-[350px] rounded-t-full overflow-hidden'><img src={demoImageUrl} alt="demo" className='min-w-full min-h-full object-cover' /></div>
         <div className='max-[1000px]:w-full w-1/2 max-[600px]:px-0 flex flex-col justify-center items-start box-border text-[#121212] font-semibold px-[5%]'>
           <h1 className="text-4xl w-full my-12 font-bold max-[500px]:text-2xl">Join the growing list of companies commited to
