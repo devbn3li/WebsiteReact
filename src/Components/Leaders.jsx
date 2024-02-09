@@ -7,8 +7,8 @@ import Hamdy from "../../public/assets/images/Leaders/Untitled (2).png";
 
 export default function TeamMembers() {
   const dataTeam = [
-    { id: 1, photo: Ahmed, userName: "Ahmed Shawky" },
-    { id: 2, photo: Don, userName: "Don Liyanage" },
+    { id: 1, photo: Ahmed, userName: "Ahmed Shawky", },
+    { id: 2, photo: Don, userName: "Don Liyanage",Class:"" },
     { id: 3, photo: Ekta, userName: "Ekta Soni" },
     { id: 4, photo: Prasad, userName: "Prasad Bhalerao" },
     { id: 5, photo: Hamdy, userName: "Hamdy Saad" },
@@ -29,22 +29,25 @@ export default function TeamMembers() {
           </p>
 
          
-          <div className='relative mt-[5rem]   grid sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-y-4 md:gap-x-[4rem]  xl:gap-x-0 '>
+          <div className='relative mt-[5rem]   grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 justify-items-center gap-y-[6rem] md:gap-x-[6rem]  lg:gap-x-[6rem] '>
             {dataTeam.map(({ id, photo, userName }) => (
               <div
-                className='relative overflow-hidden  bg-gradient-to-r from-[#1C4987] to-[#159D9B] hover:scale-105 ease-linear duration-500 cursor-pointer hover:shadow-2xl rounded-3xl h-[350px]  sm:h-[300px] w-[230px] lg:w-[280px]  2xl:w-[330px]'
+                className='relative rounder-bl-3xl rounder-br-3xl  hover:scale-105 ease-linear duration-500 cursor-pointer  rounded-3xl h-[250px] w-[250px] lg:h-[200px] lg:w-[200px] '
                 key={id}>
-                <div className='  w-full h-[100%] rounded-md '>
-                  <img
-                    src={photo}
-                    alt={userName}
-                    className='h-full w-full object-cover'
-                  />
+                <div className='bg-gradient-to-r from-[#1C4987] to-[#159D9B]  w-full h-[78.6%] lg:h-[73.4%] rounded-tl-3xl rounded-tr-3xl'>
+                    <div className='absolute top-[-3.3rem] h-full'>
+                        <img
+                        src={photo}
+                        alt={userName}
+                        className='h-full w-full object-cover '
+                    />
+                    </div>
                 </div>
-                <div className='absolute bottom-0 left-0 right-0   rounded-bl-3xl rounded-br-3xl'>
-                  <h2 className='text-center  bg-gradient-to-r from-[#1C4987] to-[#159D9B] overflow-hidden  text-white p-1 text-[1.125rem] font-[700]'>
+                <div className='relative'>
+                  <h2 className=' text-center p-3 bg-white text-[#112b65]  text-[1.125rem] font-[700]'>
                     {userName}
                   </h2>
+                
                 </div>
               </div>
             ))}
