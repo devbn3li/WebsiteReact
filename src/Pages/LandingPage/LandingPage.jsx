@@ -34,16 +34,6 @@ const LeafIcon = () => (
 )
 
 const LandingPage = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
-  useEffect(() => {
-    // Open the modal after the component mounts
-    setModalOpen(true);
-  }, []);
-
   // Benefits data
   const benefitsData = {
     title: 'Driving Impact with Human Expertise, Science and Data Insights',

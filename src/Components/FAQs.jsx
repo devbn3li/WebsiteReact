@@ -34,7 +34,7 @@ function FAQs() {
                 </span>
               </summary>
               <p className="group-open:animate-fadeIn mt-3 text-[#002E70]">
-                LevelUp is a London-based sustainability technology and consulting firm. We make sustainability attainable for businesses of all sizes by providing innovative yet affordable ESG solutions, advice, scientists, and operations. Our team of global experts helps companies integrate sustainability into their business strategy.
+                LevelUp is a London-based sustainability technology and consulting firm. We make sustainability attainable for businesses of all sizes by providing innovative yet affordable ESG solutions, and advice. Our team of global experts and scientists helps companies integrate sustainability into their business strategy and operations.
               </p>
             </details>
           </div>
