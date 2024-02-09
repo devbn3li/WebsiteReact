@@ -1,6 +1,6 @@
 import React from "react";
 import Hero_Services from "../../Components/Hero_Services/Hero_Services";
-import CTA2 from "../../Components/CTA/CTA_2";
+import Qoute from "../../Components/DataLab/Qoute";
 import Dashboard from "../../Components/Dashboard";
 import img from "../../../public/assets/Dashboard.png";
 import How from "../../Components/How";
@@ -62,10 +62,10 @@ const BoardLevelPage = () => {
         buttonTitle="Contact Us"
         buttonPath="/contact"
       />
-      <CTA2
-        title={dynamicQuote}
-        CTATitle="Contact Us"
-        CTAPath="/contact"
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
       />
     </div>
   );

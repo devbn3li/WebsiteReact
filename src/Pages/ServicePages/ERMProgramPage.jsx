@@ -4,7 +4,7 @@ import Dashboard from "../../Components/Dashboard";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
 import img from "../../../public/assets/Dashboard.png";
-import CTA2 from "../../Components/CTA/CTA_2";
+import Qoute from "../../Components/DataLab/Qoute";
 
 const dynamicTitle = "ESG in ERM Program";
 const dynamicSubtitle =
@@ -64,10 +64,10 @@ const ERMProgramPage = () => {
         buttonTitle="Contact Us"
         buttonPath="/contact"
       />
-      <CTA2
-        title={dynamicQuote}
-        CTATitle="Contact Us"
-        CTAPath="/contact"
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
       />
     </div>
   );
