@@ -27,6 +27,13 @@ function DataLab() {
 
   return (
     <div>
+        <Hero_2 {...heroData} />
+        <Dash />
+        <Why />
+        <Qoute />  
+         <Call />
+        <How />
+     
       <Hero_2 {...heroData} />
       <Dashboard
         imgSrc={img}
