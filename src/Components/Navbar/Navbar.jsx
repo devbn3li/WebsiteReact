@@ -13,7 +13,7 @@ import {
   FaDatabase,
   FaChartLine,
 } from "react-icons/fa";
-import { GiFootprint } from "react-icons/gi";
+import { TbChartBubbleFilled } from "react-icons/tb";
 
 const servicesTabData = {
   title: "Services",
@@ -175,7 +175,7 @@ const ESGSoftwareTabData = {
     title: "LevelUp O2®",
     path: "service/levelup-o2",
     description: "AI-driven carbon accounting for your entire value chain.",
-    Icon: GiFootprint,
+    Icon: TbChartBubbleFilled,
   },
   tab2: {
     title: "SusTracker AI®",
