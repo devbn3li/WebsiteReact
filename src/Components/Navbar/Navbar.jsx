@@ -2,17 +2,17 @@ import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import PrimaryButton from "../Buttons/PrimaryButton"; // Renamed for better readability
-import LogoImage from "../../../public/assets/images/logo.png"; // Import name made explicit
+import LogoImage from "/assets/images/logo.png"; // Import name made explicit
 import Dropdown from "./Dropdown";
 import NavbarLink from "./NavbarLink";
-import levelUp_O2_img from '../../../public/assets/Dash/ESGNAV/o2.png';
-import sustracker_img from '../../../public/assets/Dash/ESGNAV/sustracker.png';
-import datalab_img from '../../../public/assets/Dash/SolutionNAV/lab.png';
-import pulse_img from '../../../public/assets/Dash/SolutionNAV/puls.png';
-import resources_img from '../../../public/assets/Dash/academy/resources.png';
-import workshop_img from '../../../public/assets/Dash/academy/workshop.png';
-import business_img from '../../../public/assets/Dash/ESG_services.svg';
-import ESG_img from '../../../public/assets/Dash/3.png';
+import levelUp_O2_img from '/assets/Dash/ESGNAV/o2.png';
+import sustracker_img from '/assets/Dash/ESGNAV/sustracker.png';
+import datalab_img from '/assets/Dash/SolutionNAV/lab.png';
+import pulse_img from '/assets/Dash/SolutionNAV/puls.png';
+import resources_img from '/assets/Dash/academy/resources.png';
+import workshop_img from '/assets/Dash/academy/workshop.png';
+import business_img from '/assets/Dash/ESG_services.svg';
+import ESG_img from '/assets/Dash/3.png';
 import { IoBarChartSharp, IoGlobeOutline, IoAnalyticsSharp, IoPeopleCircleSharp, IoDocumentTextSharp, IoShieldCheckmarkSharp, IoSearchSharp, IoShieldCheckmarkOutline, IoWarningOutline } from 'react-icons/io5';
 import {
   FaChalkboardTeacher,
