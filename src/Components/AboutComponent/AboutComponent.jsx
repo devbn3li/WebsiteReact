@@ -1,12 +1,11 @@
 import largeImg from "../../../public/assets/images/handImage.webp";
+import image1 from "../../../public/assets/images/image1.jpg";
+import image2 from "../../../public/assets/images/image2.webp";
+import image3 from "../../../public/assets/images/image3.avif";
+import image4 from "../../../public/assets/images/image4.avif";
 
 const AboutComponent = () => {
-  const imageSources = [
-    "https://media.istockphoto.com/id/1359584148/photo/esg-or-environmental-social-governance-the-company-development-of-a-nature-conservation.jpg?s=612x612&w=0&k=20&c=_sg09QMG8EsGHOjJpknHn5LPEPznkFK4rP8iAWegVgU=",
-    "https://www.touchpoint.com/wp-content/uploads/2023/11/Featured-image-copy.png",
-    "https://img.freepik.com/free-photo/view-green-forest-trees-with-co2_23-2149675039.jpg?w=1380&t=st=1706137349~exp=1706137949~hmac=76a51d4888c43974e55eefc15ed63456daedeedcd86706951842b95a40db6216",
-    "https://img.freepik.com/premium-photo/esg-environmental-social-governance-sustainable-industry-global-warming-reduction-concept_539854-1823.jpg?w=826",
-  ];
+  const imageSources = [image1, image2, image3, image4];
 
   return (
     <div className="w-full flex   justify-center">
