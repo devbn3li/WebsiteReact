@@ -10,16 +10,19 @@ const AboutComponent = () => {
 
   return (
     <div className="w-full flex   justify-center">
-    <section className="about-us max-w-7xl ">
+      <section className="about-us max-w-7xl ">
         <div className="px-[5%] w-full py-28">
           <div className="text-center mb-20">
             <div className="mx-auto max-w-3xl font-sans">
-              <h2 className=" text-[#112b65]  mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl ">About us</h2>
+              <h2 className=" text-[#112b65]  mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl ">
+                About us
+              </h2>
               <p className="text-lg text-[#112b65] mb-8  font-normal lg:text-xl  ">
-                LevelUp is a corporate sustainability technology, consulting and
-                assurance firm. We provide innovative yet affordable
-                sustainability solutions, business consulting, impactful
-                learning, and objective assurance services.
+                At LevelUp, we&apos;re a passionate team of sustainability
+                experts and scientists with a mission: to make ESG practices
+                achievable for businesses of all sizes. We achieve this by
+                offering innovative and affordable ESG solutions alongside
+                expert advice.
               </p>
             </div>
           </div>
