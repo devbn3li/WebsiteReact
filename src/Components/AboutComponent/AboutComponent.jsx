@@ -27,7 +27,7 @@ const AboutComponent = () => {
                 About us
               </h2>
               <p className="text-lg text-[#112b65] mb-8 font-normal lg:text-xl">
-                At LevelUp, we're a passionate team of sustainability experts and scientists with a mission: to make ESG practices achievable for businesses of all sizes. We achieve this by offering innovative and affordable ESG solutions alongside expert advice.
+                At LevelUp, we're a passionate team of sustainability experts and scientists with a mission to make corporate sustainability and  ESG practices achievable for businesses of all sizes. We achieve this by offering innovative and affordable ESG solutions alongside expert advice.
               </p>
             </div>
           </div>

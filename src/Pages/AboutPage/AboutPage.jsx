@@ -29,18 +29,18 @@ function About() {
       },
       {
         icon: <MdOutlineMiscellaneousServices />,
-        title: "Tailored Consulting Services",
+        title: "Tailored  Advice",
         description: "Our experts will guide you through developing a comprehensive ESG programme, from policy creation to stakeholder engagement.",
       },
       {
         icon: <GrTechnology />,
-        title: "Accessible Technology Solutions",
+        title: "Accessible Solutions",
         description: "Leverage our innovative tools to streamline data collection, track progress, and communicate your sustainability efforts effectively.",
       },
     ]
   };
 
-  const dynamicQuote = `Whether you're a small or medium-sized enterprise (SME) just starting your sustainability journey or an established company looking to refine your existing programme, we're here to help. Our team of global specialists will work closely with you to develop a bespoke ESG strategy that aligns with your business goals and values.`;
+  const dynamicQuote = `Whether you're a small or medium-sized enterprise (SME) just starting your sustainability journey or an established company looking to refine your existing programme, we're here to help. Our team of global specialists will work closely with you to provide the right solution and advice that align with your business needs and goals.`;
   return (
     <div>
       <AboutComponent />
