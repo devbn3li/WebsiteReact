@@ -50,7 +50,7 @@ function About() {
         buttonPath="/contact"
       />
       <Benefits {...benefitsData} />
-      <Business />
+      {/* <Business /> */}
       <PurposeComponent />
       <Why />
       <Founders />

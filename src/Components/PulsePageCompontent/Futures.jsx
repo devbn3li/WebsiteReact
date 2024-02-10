@@ -1,8 +1,8 @@
 // FeatureSection.jsx
 import React from 'react';
-import target from '../../../public/assets/Premasset/target.png';
-import Monitor from '../../../public/assets/Premasset/monitor.png';
-import target2 from '../../../public/assets/Premasset/target2.png';
+import target from '/assets/Premasset/target.png';
+import Monitor from '/assets/Premasset/monitor.png';
+import target2 from '/assets/Premasset/target2.png';
 
 
 const features = [
