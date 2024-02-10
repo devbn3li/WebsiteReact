@@ -52,7 +52,7 @@ const Business = () => {
                 <PrimaryBtn
                   path="/contact"
                   title="Make Impact with Us"
-                  classes="px-6 py-3 text-[#112b65] border-none !text-black font-semibold	"
+                  classes="px-6 py-3 text-[#112b65] border-none !text-white font-semibold	"
                 />
               </div>
             </div>
