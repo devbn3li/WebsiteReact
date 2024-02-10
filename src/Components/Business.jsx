@@ -20,7 +20,7 @@ const Business = () => {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 py-1 gap-6">
                 <div>
-                  <div className="mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px]">
+                  <div className="flex justify-center items-center bg-[#02c2ab] hover:rotate-6 duration-700 cursor-pointer hover:scale-110 mb-3 text-[#002E70] aspect-square max-w-10 box-border p-2 rounded-lg">
                     <FontAwesomeIcon icon={faBolt} />
                   </div>
                   <h2 className="mb-3 text-xl text-[#112b65] font-bold">
@@ -34,8 +34,8 @@ const Business = () => {
                   </p>
                 </div>
                 <div>
-                  <div className="mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px]">
-                    <FontAwesomeIcon icon={faDollarSign} />
+                  <div className="flex justify-center items-center bg-[#02c2ab] hover:rotate-6 duration-700 cursor-pointer hover:scale-110 mb-3 text-[#002E70] aspect-square max-w-10 box-border p-2 rounded-lg">
+                    <FontAwesomeIcon icon={faDollarSign}  />
                   </div>
                   <h2 className="mb-3 text-xl font-bold text-[#112b65]">
                     Purpose and Profit
