@@ -65,10 +65,7 @@ const LandingSection = () => {
             <h2 className="text-6xl font-extrabold text-[#002e70] max-md:text-center">
               LevelUp for Better Business & Planet.
             </h2>
-            <motion.p
-              className="my-12 text-[#002e70] max-md:text-center text-2xl"
-              variants={itemVariants}
-            >
+            <p className="my-12 text-[#002e70] max-md:text-center text-2xl">
               Welcome to LevelUp, where we combine sustainability technology,
               science, and human expertise to make a meaningful impact.
             </motion.p>
