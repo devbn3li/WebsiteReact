@@ -106,7 +106,7 @@ const servicesTabData = {
 const solutionsTabData = {
   title: "Solutions",
   tab1: {
-    title: "ESG Pules",
+    title: "ESG Pulse",
     path: "service/esg-pulse",
     description:
       "ESG Pulse offers real-time insights and analytics on sustainability performance metrics.",
