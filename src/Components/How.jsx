@@ -1,5 +1,7 @@
 import React from "react";
 import PrimaryButton from "./Buttons/PrimaryButton";
+import Lottie from "lottie-react";
+import wave from "../Lottie/story.json";
 
 const How = ({ solutions, buttonTitle, buttonPath }) => {
   return (
@@ -7,7 +9,14 @@ const How = ({ solutions, buttonTitle, buttonPath }) => {
       <section className="max-w-[1400px] py-20 px-[5%]">
         <div className="w-full justify-center flex py-4 pb-8">
           <div className="bg-[#02c2ab] aspect-square w-[116px] h-[116px] p-2 relative shadow-2xl shadow-[#02c2ab] rounded-[2rem]">
-            {/* Animation or icon */}
+            <div className="bg-[#02c2ab] aspect-square  w-[100px] h-[100px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] ">
+              <Lottie
+                animationData={wave}
+                autoplay
+                loop
+                style={{ width: "100%", height: "100%" }}
+              />
+            </div>
           </div>
         </div>
         <div className="container text-[#002E70] mx-auto">

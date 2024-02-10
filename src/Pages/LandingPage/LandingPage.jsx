@@ -2,7 +2,7 @@ import React from 'react';
 import Benefits from '../../Components/Benefits/Benefits';
 import Offer from '../../Components/Offer/Offer';
 import Testimonials from '../../Components/Testimonials/Testimonials';
-import Why from '../../Components/Why';
+import Why from '../../Components/LandingWhy';
 import FAQs from '../../Components/FAQs';
 import BlogCardsList from '../../Components/BlogCard/BlogCardsList';
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
