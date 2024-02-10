@@ -1,19 +1,34 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import PrimaryButton from "../Buttons/PrimaryButton"; // Renamed for better readability
 import LogoImage from "../../../public/assets/images/logo.png"; // Import name made explicit
 import Dropdown from "./Dropdown";
 import NavbarLink from "./NavbarLink";
-import { IoEarthSharp, IoLeafOutline } from "react-icons/io5";
+import levelUp_O2_img from '../../../public/assets/Dash/ESGNAV/o2.png';
+import sustracker_img from '../../../public/assets/Dash/ESGNAV/sustracker.png';
+import datalab_img from '../../../public/assets/Dash/SolutionNAV/lab.png';
+import pulse_img from '../../../public/assets/Dash/SolutionNAV/puls.png';
+import resources_img from '../../../public/assets/Dash/academy/resources.png';
+import workshop_img from '../../../public/assets/Dash/academy/workshop.png';
+import business_img from '../../../public/assets/Dash/ESG_services.svg';
+import ESG_img from '../../../public/assets/Dash/3.png';
+import { IoBarChartSharp, IoGlobeOutline, IoAnalyticsSharp, IoPeopleCircleSharp, IoDocumentTextSharp, IoShieldCheckmarkSharp, IoSearchSharp, IoShieldCheckmarkOutline, IoWarningOutline } from 'react-icons/io5';
 import {
-  FaBook,
   FaChalkboardTeacher,
   FaBlog,
   FaBroadcastTower,
-  FaDatabase,
-  FaChartLine,
 } from "react-icons/fa";
-import { TbChartBubbleFilled } from "react-icons/tb";
+
+const simpleFloatAnimation = {
+  y: ["-20px", "22px"],
+  transition: {
+    repeat: Infinity,
+    repeatType: "reverse",
+    duration: 4,
+    ease: "easeInOut",
+  },
+};
 
 const servicesTabData = {
   title: "Services",
@@ -22,58 +37,46 @@ const servicesTabData = {
     path: "service/esg",
     description:
       "ESG Services assist companies in implementing sustainable and ethical operational practices.",
-    Icon: IoLeafOutline,
+    Icon: <motion.img src={ESG_img} alt="icon" animate={simpleFloatAnimation} />,
   },
   tab2: {
     title: "Business Services",
     path: "service/business",
     description:
       "Business Services offer essential support for enhancing company efficiency and growth.",
-    Icon: IoEarthSharp,
+    Icon: <motion.img src={business_img} alt="icon" animate={simpleFloatAnimation} />,
   },
   moreLinks1: {
     title: "Some ESG Services",
     links: [
       {
         title: "Diagnostic Assessment",
-        Icon: IoEarthSharp,
+        Icon: IoAnalyticsSharp,
         path: "service/esg-diagnostic",
       },
       {
         title: "Materiality & Strategy",
-        Icon: IoEarthSharp,
+        Icon: IoBarChartSharp,
         path: "service/esg-strategy",
       },
       {
         title: "Controllership",
-        Icon: IoEarthSharp,
+        Icon: IoGlobeOutline,
         path: "service/esg-controllership",
       },
       {
         title: "Strategic Stakeholder & Board Advisory",
-        Icon: IoEarthSharp,
+        Icon: IoPeopleCircleSharp,
         path: "service/board-level",
       },
-      // {
-      //   title: "",
-      //   Icon: IoEarthSharp,
-      //   path: "service/strategic-stakeholder",
-      // },
-      // {
-      //   title: "Compliance",
-      //   Icon: IoEarthSharp,
-      //   path: "service/esg-compliance",
-      // },
-      
-     
       {
         title: "ESG Internal Audit program",
-        Icon: IoEarthSharp,
+        Icon: IoDocumentTextSharp,
         path: "service/esg-ia-program",
       },
       {
         title: "ESG Assurance",
-        Icon: IoEarthSharp,
+        Icon: IoShieldCheckmarkSharp,
         path: "service/esg-assurance",
       },
     ],
@@ -83,24 +86,19 @@ const servicesTabData = {
     links: [
       {
         title: "Internal Audit",
-        Icon: IoEarthSharp,
+        Icon: IoSearchSharp,
         path: "service/internal-audit",
       },
       {
         title: "Compliance",
-        Icon: IoEarthSharp,
+        Icon: IoShieldCheckmarkOutline,
         path: "service/compliance",
       },
       {
         title: "Risk management",
-        Icon: IoEarthSharp,
+        Icon: IoWarningOutline,
         path: "service/risk-management",
-      },
-      // {
-      //   title: "Finance",
-      //   Icon: IoEarthSharp,
-      //   path: "service/finance",
-      // },
+      }
     ],
   },
 };
@@ -112,14 +110,14 @@ const solutionsTabData = {
     path: "service/esg-pulse",
     description:
       "ESG Pulse offers real-time insights and analytics on sustainability performance metrics.",
-    Icon: IoEarthSharp,
+    Icon: <motion.img src={pulse_img} alt="icon" animate={simpleFloatAnimation} />,
   },
   tab2: {
     title: "Data Lab",
     path: "service/data-lab",
     description:
       "Unlock insights with our advanced ESG data analytics and reporting lab.",
-    Icon: FaDatabase,
+    Icon: <motion.img src={datalab_img} alt="icon" animate={simpleFloatAnimation} />,
   },
 };
 
@@ -129,14 +127,14 @@ const academyTabData = {
     title: "Workshops & Training",
     path: "/academy/workshops-training",
     description: "Join our Corporate Workshops for comprehensive ESG training.",
-    Icon: FaChalkboardTeacher,
+    Icon: <motion.img src={workshop_img} alt="icon" animate={simpleFloatAnimation} />,
   },
   tab2: {
     title: "Resources Hub",
     path: "/academy/resources-hub",
     description:
       "Explore our Resources Hub tiers for exclusive content and materials.",
-    Icon: FaBook,
+    Icon: <motion.img src={resources_img} alt="icon" animate={simpleFloatAnimation} />,
   },
   subTab1: {
     title: "Blogs",
@@ -175,13 +173,13 @@ const ESGSoftwareTabData = {
     title: "LevelUp O2®",
     path: "service/levelup-o2",
     description: "AI-driven carbon accounting for your entire value chain.",
-    Icon: TbChartBubbleFilled,
+    Icon: <motion.img src={levelUp_O2_img} alt="icon" animate={simpleFloatAnimation} />,
   },
   tab2: {
     title: "SusTracker AI®",
     path: "esg-software/sustainability-tracker",
     description: "Streamline ESG management for enhanced real-time insights.",
-    Icon: FaChartLine,
+    Icon: <motion.img src={sustracker_img} alt="icon" animate={simpleFloatAnimation} />,
   },
 };
 

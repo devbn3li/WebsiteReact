@@ -23,4 +23,8 @@
   .group:hover .min-\[1130px\]\:group-hover\:h-\[200px\] {
     height: 200px;
   }
+  /* 250 + 110 + 90 */
+  .group:hover .min-\[1130px\]\:group-hover\:h-\[450px\] {
+    height: 450px;
+  } 
 }

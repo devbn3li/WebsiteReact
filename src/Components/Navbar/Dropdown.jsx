@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { MdArrowRight } from "react-icons/md";
 import SubNavbarLink from "./SubNavbarLink";
-import styles from'./Dropdown.module.css';
+import styles from './Dropdown.module.css';
 
 const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
   var height = 0;
@@ -37,7 +37,7 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
                   <span className=''>{data.tab1.description}</span>
                   <span className='max-[1130px]:mb-5 flex justify-center items-center group-hover/learn:ml-5 group-hover/learn:text-[#02c2ab] transition-all font-light mt-2'>Learn More <span className='text-lg box-border pt-1'><MdArrowRight /></span></span>
                 </span>
-                <span className="text-[5rem] max-[1130px]:hidden "><data.tab1.Icon /></span>
+                <span className="text-[5rem] max-[1130px]:hidden inline-block max-w-[25%] ">{data.tab1.Icon}</span>
               </Link>
               {/* End Tab One */}
 
@@ -48,7 +48,7 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
                   <span className=''>{data.tab2.description}</span>
                   <span className='max-[1130px]:mb-5 flex justify-center items-center group-hover/learn:ml-5 group-hover/learn:text-[#02c2ab] transition-all font-light mt-2'>Learn More <span className='text-lg box-border pt-1'><MdArrowRight /></span></span>
                 </span>
-                <span className="text-[5rem] max-[1130px]:hidden"><data.tab2.Icon /></span>
+                <span className="text-[5rem] max-[1130px]:hidden inline-block max-w-[25%]">{data.tab2.Icon}</span>
               </Link>
               {/* End Tab Two */}
             </div>
@@ -65,7 +65,7 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
                   <span className="text-[3rem]"><data.subTab1.Icon /></span>
                 </Link>
                 {/* End SubTab One */}
-                
+
                 {/* Start SubTab Two */}
                 <Link to={data.subTab2.path} className="max-[1130px]:py-3 w-1/2 max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2" onClick={closeTab}>
                   <span className='flex flex-col items-start'>
@@ -125,13 +125,13 @@ Dropdown.propTypes = {
       title: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      Icon: PropTypes.elementType.isRequired // elementType for components
+      Icon: PropTypes.object.isRequired // elementType for components
     }),
     tab2: PropTypes.shape({
       title: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      Icon: PropTypes.elementType.isRequired // elementType for components
+      Icon: PropTypes.object.isRequired // elementType for components
     }),
     subTab1: PropTypes.shape({
       title: PropTypes.string.isRequired,
