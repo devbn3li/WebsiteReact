@@ -28,11 +28,31 @@ import logo24 from "../../../public/assets/images/company/Protiviti_logo.svg";
 import logod3 from "../../../public/assets/images/company/3.png";
 
 const logos = [
-  logo1, logo2, logo3, logo4, logo5,
-  logo6, logo7, logo8, logo9, logo10,
-  logo11, logo12, logo13, logo14, logo15,
-  logo16, logo17, logo18, logo19, logo20,
-  logo21, logo22, logo23, logo24,logod3
+  logo1,
+  logo2,
+  logo3,
+  logo4,
+  logo5,
+  logo6,
+  logo7,
+  logo8,
+  logo9,
+  logo10,
+  logo11,
+  logo12,
+  logo13,
+  logo14,
+  logo15,
+  logo16,
+  logo17,
+  logo18,
+  logo19,
+  logo20,
+  logo21,
+  logo22,
+  logo23,
+  logo24,
+  logod3,
 ];
 
 const Companys = () => {
@@ -43,13 +63,15 @@ const Companys = () => {
       </h1>
       <div className="grid grid-cols-2 place-items-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 justify-items-center gap-2">
         {logos.map((logo, index) => (
-         <div   key={index} className="hover:bg-[#112b65]/20 duration-500 ease-linear cursor-pointer hover:scale-95 p-4 h-full w-full grid place-items-center rounded-3xl ">
- <img
-          
-            src={logo}
-            alt={`Logo ${index + 1}`}
-            className="w-full h-auto sm:w-20 grayscale  md:w-24 lg:w-28 xl:w-32 object-cover"
-          />
+          <div
+            key={index}
+            className="hover:bg-[#112b65]/20 duration-500 ease-linear group cursor-pointer hover:scale-95 p-4 h-full w-full grid place-items-center rounded-3xl "
+          >
+            <img
+              src={logo}
+              alt={`Logo ${index + 1}`}
+              className="w-full h-auto sm:w-20 grayscale duration-500 group-hover:grayscale-0 md:w-24 lg:w-28 xl:w-32 object-cover"
+            />
           </div>
         ))}
       </div>
