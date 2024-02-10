@@ -1,5 +1,4 @@
-// FeatureSection.jsx
-import React from 'react';
+
 import target from '/assets/Premasset/target.png';
 import Monitor from '/assets/Premasset/monitor.png';
 import target2 from '/assets/Premasset/target2.png';
