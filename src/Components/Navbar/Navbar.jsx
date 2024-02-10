@@ -70,7 +70,7 @@ const servicesTabData = {
         path: "service/board-level",
       },
       {
-        title: "ESG Internal Audit program",
+        title: "ESG IA program",
         Icon: IoDocumentTextSharp,
         path: "service/esg-ia-program",
       },
