@@ -1,31 +1,32 @@
 // FeatureSection.jsx
 import React from 'react';
+import target from '../../../public/assets/Premasset/target.png';
+import Monitor from '../../../public/assets/Premasset/monitor.png';
+import target2 from '../../../public/assets/Premasset/target2.png';
 
-// Replace with your actual image paths or URLs
-const demoImageUrl = "https://via.placeholder.com/200x150";
 
 const features = [
   {
     title: 'Measure accurately',
     description: 'Measure your carbon footprint using state-of-the-art technology, allowing you to easily account for your 3 emissions scopes.',
-    imageUrl: demoImageUrl
+    imageUrl: target
   },
   {
     title: 'Monitor with ease',
     description: 'Analyze your emissions, set your targets and achieve significant reductions with the help of our experts.',
-    imageUrl: demoImageUrl
+    imageUrl: Monitor
   },
   {
     title: 'Measure physical & monitary flows',
     description: 'Monetary and physical approaches are complementary, and are essential to thoroughly assess your CO2 emissions.',
-    imageUrl: demoImageUrl
+    imageUrl: target2
   }
 ];
 
 const FeatureCard = ({ title, description, imageUrl }) => {
   return (
-    <div className="flex flex-col p-4 max-w-sm  hover:scale-95 hover:bg-[#02c2ab]/20 rounded-xl transition-all duration-500 cursor-pointer">
-      <img src={imageUrl} alt={title} className="mb-4 w-full object-cover rounded-lg shadow-lg" />
+    <div className="flex flex-col p-4  max-w-sm aspect-square hover:scale-95 hover:bg-[#02c2ab]/20 rounded-xl transition-all duration-500 cursor-pointer">
+      <img src={imageUrl} alt={title} className="mb-4 w-full aspect-square bg-gradient-to-r hover:bg-gradient-to-b hover:scale-95  duration-500  from-[#112b65] to-[#02c2ab] object-contain rounded-lg shadow-lg" />
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <p className="text-gray-600 text-sm">{description}</p>
     </div>
