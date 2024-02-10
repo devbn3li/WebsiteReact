@@ -11,8 +11,8 @@ import datalab_img from '/assets/Dash/SolutionNAV/lab.png';
 import pulse_img from '/assets/Dash/SolutionNAV/puls.png';
 import resources_img from '/assets/Dash/academy/resources.png';
 import workshop_img from '/assets/Dash/academy/workshop.png';
-import business_img from '/assets/Dash/ESG_services.svg';
-import ESG_img from '/assets/Dash/3.png';
+import business_img from '/assets/Dash/Solutions/Biz.png';
+import ESG_img from '/assets/Dash/Solutions/ESG.png';
 import { IoBarChartSharp, IoGlobeOutline, IoAnalyticsSharp, IoPeopleCircleSharp, IoDocumentTextSharp, IoShieldCheckmarkSharp, IoSearchSharp, IoShieldCheckmarkOutline, IoWarningOutline } from 'react-icons/io5';
 import {
   FaChalkboardTeacher,
