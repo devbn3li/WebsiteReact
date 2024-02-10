@@ -1,7 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { motion } from "framer-motion";
 
 const Challenge = ({ title, description, imgSrc }) => {
+  const simpleFloatAnimation = {
+    y: ["-20px", "22px"],
+    transition: {
+      repeat: Infinity,
+      repeatType: "reverse",
+      duration: 4,
+      ease: "easeInOut",
+    },
+  };
+
   return (
     <section className="w-full max-w-[1400px] rounded-3xl py-20">
       <div className="container mx-auto px-[5%] flex flex-col lg:flex-row items-center justify-center">
@@ -14,10 +25,11 @@ const Challenge = ({ title, description, imgSrc }) => {
           </p>
         </div>
         <div className="lg:w-[40%]">
-          <img
+          <motion.img
             src={imgSrc}
             alt="Hero Image"
-            className="w-full animate-bounce"
+            className="w-full "
+            animate={simpleFloatAnimation}
           />
         </div>
       </div>

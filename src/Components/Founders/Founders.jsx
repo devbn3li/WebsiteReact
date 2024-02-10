@@ -3,6 +3,7 @@ import Lottie from "lottie-react";
 import wave from "../../Lottie/story.json";
 import { Link } from "react-router-dom";
 import vision from "../../../public/assets/Premasset/box.png";
+import { motion } from "framer-motion";
 
 const SlideComponent = (founder) => (
   <div className="py-2 lg:py-12">
@@ -50,7 +51,15 @@ function TeamTestimonial() {
   };
 
   const [isImageLoaded, setIsImageLoaded] = useState(false);
-
+  const simpleFloatAnimation = {
+    y: ["-20px", "22px"],
+    transition: {
+      repeat: Infinity,
+      repeatType: "reverse",
+      duration: 4,
+      ease: "easeInOut",
+    },
+  };
   return (
     <div className="w-full   h-full  flex flex-col justify-between items-center gap-6">
       <div className="w-full px-[5%] h-full  flex justify-center mb-0 p-2">
@@ -59,11 +68,12 @@ function TeamTestimonial() {
             {/* // option lg:w-1/2  for the a size   */}
             <div className="cursor-pointer w-[40%] hover:opacity-80 duration-1000 hover:contrast-150  p-4    relative flex justify-center items-center">
               <div className="rounded-xl w-full h-full aspect-square flex justify-center items-center">
-                <img
+                <motion.img
                   alt=""
                   className={` w-4/5 overflow-hidden  object-center `}
                   src={vision}
                   onLoad={() => setIsImageLoaded(true)}
+                  animate={simpleFloatAnimation}
                 />
               </div>
             </div>
