@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Lottie from 'lottie-react';
 import wave from '../../Lottie/story.json';
 import { Link } from "react-router-dom";
-import vision from '../../../public/assets/images/logo.png';
+import vision from '../../../public/assets/Premasset/box.png';
 
 const SlideComponent = (founder) => (
   <div className='py-2 lg:py-12'>
