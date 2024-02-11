@@ -92,7 +92,7 @@ export default function ContactPage() {
               <div>
                 <button
                   type="submit"
-                  className="flex bg-[#02C2AB] my-4 text-white font-bold py-4 rounded-[10rem] translate-y-2 hover:translate-y-0 hover:shadow-2xl hover:shadow-slate-400 w-[200px] duration-1000 justify-center border-none"
+                  className="flex bg-[#02C2AB] my-4 max-sm:w-full text-white hover:bg-white hover:text-[#02C2AB] font-bold py-4 rounded-[10rem] translate-y-2 hover:translate-y-0 hover:shadow-2xl hover:shadow-slate-400 w-[200px] duration-500 justify-center border-none"
                 >
                   Send message
                 </button>

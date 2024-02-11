@@ -43,12 +43,12 @@ const Jobs = () => {
                   key={index}
                 >
                   <div className="group mb-6 p-4 border border-[#e6e6e5] rounded-3xl transition duration-300 hover:bg-[#02c2ab] flex justify-between items-center">
-                    <h3 className="w-full group-hover:pl-2 duration-500 max-w-[500px] text-lg md:text-xl font-bold text-[#112b65]">
+                    <h3 className="w-full group-hover:pl-2 group-hover:text-white duration-500 max-w-[500px] text-lg md:text-xl font-bold text-[#112b65]">
                       {job.title}
                     </h3>
                     <div className="flex justify-end items-center w-[200px] gap-4">
-                      <span className="text-[#112b65]">Apply</span>
-                      <div className="p-2 text-[20px] rounded-md bg-[#02c2ab]">
+                      <span className="text-[#112b65] duration-500 group-hover:text-white ">Apply</span>
+                      <div className="p-2 text-[20px] rounded-md bg-[#02c2ab] duration-500 group-hover:text-white ">
                         <FaArrowRight />
                       </div>
                     </div>
