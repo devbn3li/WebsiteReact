@@ -19,7 +19,7 @@ const SlideComponent = (founder) => (
         </div>{" "}
       </div>
       <h1 className="text-3xl md:text-7xl font-bold ">{founder.classes}</h1>
-      <h2 className="text-bold text-2xl w-[80%] text-center">Driving the shift to affordable data-driven sustainability.</h2>
+      <h2 className="font-bold text-2xl w-[80%] text-center">Driving the shift to affordable data-driven sustainability.</h2>
       <p
         className={`text-${
           founder.message.length > 170 ? "xl" : "2xl"
