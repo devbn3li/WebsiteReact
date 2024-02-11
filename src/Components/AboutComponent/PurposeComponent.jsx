@@ -25,21 +25,33 @@ function PurposeComponent() {
           </h2>
           <div className="flex justify-between flex-wrap md:flex-nowrap">
             <div className="sm:w-[400px]">
+              <h2 className="font-bold text-xl mb-4">
+                Unlocking sustainability and growth through innovation and
+                technology.
+              </h2>
               <p className="mb-2">
                 At our core, LevelUp is a purpose-driven organisation. Our
-                purpose is to make sustainability accessible for every business
-                through AI-powered solutions and expert guidance.
+                purpose is to make sustainability accessible for every business.
+                We empower organisations of all sizes to improve decisions,
+                reduce costs, and minimise environmental impact through
+                innovative solutions, cutting-edge technology, and human-led
+                guidance.
               </p>
               <p className="mb-2">
-                We exist to empower businesses to improve decisions, make an
-                impact, and contribute to the sustainability of the economy,
-                environment and society.
+                By integrating sustainability into operations and strategies, we
+                help unlock new potential for efficiency, resilience and
+                positive impact. Our technology clearly links value creation
+                with benefits for the planet and society, driving widespread
+                adoption of ESG and sustainability leading practices.
               </p>
               <p className={click ? "block" : "hidden"} ref={descriptionRef}>
-                We believe technology catalyses the integration of ESG into
-                business models and strategies. By facilitating a clear link
-                between value creation and sustainability, we impact the
-                adoption of ESG and corporate sustainability best practices.
+                Fundamentally, we believe in the immense power of data and
+                technology to drive positive change when combined with human
+                expertise. Our solutions harness this potential, enabling
+                businesses to optimise operations, build resilience, and benefit
+                their bottom line while caring for the planet. We are catalysing
+                a wave of sustainable growth empowered by tech and guided by
+                strategic human insight.
               </p>
               <button
                 onClick={handelClick}
