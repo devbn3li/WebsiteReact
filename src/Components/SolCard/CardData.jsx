@@ -1,12 +1,23 @@
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const BenefitsSection = (props) => {
   return (
     <div className="w-full max-w-[1400px] backdrop-blur-md rounded-e-3xl shadow-none">
       <section className="w-full mx-auto pt-28">
-        <div className="px-[5%] w-full pb-20">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="px-[5%] w-full pb-20"
+        >
           <div className="w-full flex flex-col gap-1">
-            <div className="flex flex-col max-w-[90.25rem] gap-3">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              className="flex flex-col max-w-[90.25rem] gap-3"
+            >
               <h1 className="mb-4 text-4xl capitalize max-w-[1000px] font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl ">
                 {props.title}
               </h1>
@@ -18,7 +29,11 @@ const BenefitsSection = (props) => {
                 <div className="w-full border-[#02c2ab]  border-b-2     mb-10"></div>
               </div>
             </div>
-            <div className="flex w-full flex-wrap gap-4  justify-center">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1800"
+              className="flex w-full flex-wrap gap-4  justify-center"
+            >
               {props.reasons.map((reason, index) => (
                 <a
                   href={reason.url}

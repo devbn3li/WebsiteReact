@@ -1,6 +1,9 @@
+import React, { useEffect } from "react";
 import { MdCelebration, MdOutlineReport } from "react-icons/md";
 import { FaLevelUpAlt } from "react-icons/fa";
 import backgroundImage from "/assets/images/bg/1.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Why = () => {
   const reasons = [
@@ -53,10 +56,14 @@ const Why = () => {
     >
       <section className="why max-w-7xl mx-auto pt-28">
         <div className="px-[5%] w-full pb-20">
-          <div className="flex flex-col gap-1">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            className="flex flex-col gap-1"
+          >
             <div className="flex flex-col max-w-[90.25rem] gap-3">
               <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
-              Discover Our Comprehensive ESG Services
+                Discover Our Comprehensive ESG Services
               </h1>
               <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl  ">
                 Explore our specialized ESG services designed to enhance your
@@ -70,7 +77,8 @@ const Why = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div           data-aos="fade-up"
+          data-aos-duration="1600" className="flex flex-wrap gap-4 justify-center">
               {reasons.map((reason, index) => (
                 <a
                   href={reason.url}

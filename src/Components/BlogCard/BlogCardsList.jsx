@@ -1,12 +1,16 @@
-import BlogCard from './BlogCard';
-import SolutionHero from '../Hero_Services/Hero_Services';
+import React, { useEffect } from "react";
+import BlogCard from "./BlogCard";
+import SolutionHero from "../Hero_Services/Hero_Services";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 function BlogCardsList() {
- // Array of blog objects
- const blogs = [
+  // Array of blog objects
+  const blogs = [
     {
       img: "/assets/images/business-people-shaking-hands-together.avif",
-      title: "Empowering for Sustainable Success: Navigating Complexities and Driving Unified Action",
+      title:
+        "Empowering for Sustainable Success: Navigating Complexities and Driving Unified Action",
       description:
         " In today's business landscape, the responsibility of driving sustainability initiatives often falls on the CEO. However, the success of these endeavors heavily relies on the collective efforts of the leadership team. To avoid any accusations of Greenwashing, it's crucial for the business leaders to actively participate in monitoring and tracking sustainability goals within their respective teams.",
       author: "Deppa",
@@ -37,14 +41,22 @@ function BlogCardsList() {
   ];
 
   return (
-    <div className="container text-[#002E70]  mx-auto py-8 mt-20 px-[5%]">
-        <SolutionHero
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      className="container text-[#002E70]  mx-auto py-8 mt-20 px-[5%]"
+    >
+      <SolutionHero
         title={"Learn from our impact makers"}
-        subtitle={"Our blog is a great resource for learning about the latest trends in sustainability, ESG, and corporate governance."}
-      
-       />
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        subtitle={
+          "Our blog is a great resource for learning about the latest trends in sustainability, ESG, and corporate governance."
+        }
+      />
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1800"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+      >
         {blogs.map((blog, index) => (
           <BlogCard key={index} blog={blog} />
         ))}
@@ -53,4 +65,4 @@ function BlogCardsList() {
   );
 }
 
-export default BlogCardsList
+export default BlogCardsList;
