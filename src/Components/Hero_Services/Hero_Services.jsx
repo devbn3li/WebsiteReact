@@ -13,7 +13,7 @@ const Hero_servise = ({ title, subtitle }) => {
     >
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <a
-          href="#"
+          href="/service/esg-pulse"
           className="inline-flex justify-between cursor-not-allowed items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-200 bg-[#02c2ab] rounded-full hover:bg-[#02c2ab]/40 duration-500 "
           role="alert"
         >

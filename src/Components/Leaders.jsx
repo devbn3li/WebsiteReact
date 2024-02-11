@@ -8,6 +8,9 @@ import Don from "/assets/images/Leaders/don.png";
 import Ekta from "/assets/images/Leaders/ekta.png";
 import Hamdy from "/assets/images/Leaders/hamdy.png";
 import yana from "/assets/images/Leaders/yana.png";
+import Ramin from "/assets/images/Leaders/Ramin.png";
+import Wang from "/assets/images/Leaders/WanNorashikin.png";
+import MaribelEsparcia from "/assets/images/Leaders/MaribelEsparcia.png";
 
 export default function TeamMembers() {
   const dataTeam = [
@@ -18,6 +21,11 @@ export default function TeamMembers() {
     { id: 6, photo: yana, userName: "Yana Moldovan" },
     { id: 4, photo: Prasad, userName: "Prasad Bhalerao" },
     { id: 5, photo: Hamdy, userName: "Hamdy Saad" },
+    { id: 6, photo: Ramin, userName: "Ramin Takin" },
+    { id: 7, photo: Wang, userName: "Wan Norashikin" },
+    { id: 8, photo: MaribelEsparcia, userName: "Maribel Esparcia" },
+
+
   ];
   return (
     <div className="flex justify-center w-full ">
