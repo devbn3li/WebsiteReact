@@ -1,6 +1,9 @@
+import React, { useEffect } from "react";
 import { MdCelebration, MdOutlineReport } from "react-icons/md";
 import { FaLevelUpAlt } from "react-icons/fa";
 import backgroundImage from "/assets/images/bg/1.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Why = () => {
   const reasons = [
@@ -45,7 +48,11 @@ const Why = () => {
       className="w-full bg-[#F9FFF5] shadow-none"
     >
       <section className="why max-w-7xl mx-auto pt-28">
-        <div className="px-[5%] w-full pb-20">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          className="px-[5%] w-full pb-20"
+        >
           <div className="flex flex-col gap-1">
             <div className="flex flex-col max-w-[90.25rem] gap-3">
               <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
@@ -64,7 +71,8 @@ const Why = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div           data-aos="fade-up"
+          data-aos-duration="1800" className="flex flex-wrap gap-4 justify-center">
               {reasons.map((reason, index) => (
                 <a
                   href={reason.url}
