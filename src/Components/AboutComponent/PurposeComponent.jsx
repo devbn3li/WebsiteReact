@@ -37,14 +37,13 @@ function PurposeComponent() {
                 innovative solutions, cutting-edge technology, and human-led
                 guidance.
               </p>
-              <p className="mb-2">
+              <p className={click ? "block" : "hidden"} ref={descriptionRef}>
                 By integrating sustainability into operations and strategies, we
                 help unlock new potential for efficiency, resilience and
                 positive impact. Our technology clearly links value creation
                 with benefits for the planet and society, driving widespread
                 adoption of ESG and sustainability leading practices.
-              </p>
-              <p className={click ? "block" : "hidden"} ref={descriptionRef}>
+                <br /><br />
                 Fundamentally, we believe in the immense power of data and
                 technology to drive positive change when combined with human
                 expertise. Our solutions harness this potential, enabling

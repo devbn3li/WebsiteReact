@@ -7,7 +7,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 
 const SlideComponent = (founder) => (
   <div className="py-2 lg:py-12">
-    <div className="flex flex-col gap-6 text-white text-center px-0 lg:px-16 max-w-[890px] mx-auto">
+    <div className="flex flex-col items-center gap-6 text-white text-center px-0 lg:px-6 max-w-[890px] mx-auto">
       <div className="flex justify-center">
         <div className="bg-[#02c2ab] aspect-square  w-[100px] h-[100px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] ">
           <Lottie
@@ -19,6 +19,7 @@ const SlideComponent = (founder) => (
         </div>{" "}
       </div>
       <h1 className="text-3xl md:text-7xl font-bold ">{founder.classes}</h1>
+      <h2 className="text-bold text-2xl w-[80%] text-center">Driving the shift to affordable data-driven sustainability.</h2>
       <p
         className={`text-${
           founder.message.length > 170 ? "xl" : "2xl"
@@ -46,7 +47,7 @@ function TeamTestimonial() {
     name: "Dr. Ahmed Shawky",
     jobTitle: "Founder and Manging Dictor, LevelUp Ltd.",
     message:
-      "To lead the global shift toward affordable, data-driven sustainability envision a world where our AI-powered solutions provide insights to businesses of all sizes guiding them to thrive sustainably and drive positive change",
+      "We envision a future where businesses of all sizes embrace insights and automation to drive prosperity while protecting the planet. As an emerging leader in eco-conscious technology, we act as a catalyst for this transformation - spearheading the shift to data-driven, sustainable business practices. Together with our clients, we are building a brighter, greener tomorrow.",
     classes: "Our Vision",
   };
 
@@ -142,9 +143,16 @@ function Founders() {
               >
                 Our Mission
               </h1>
+              <h2 className="font-bold text-3xl text-[#112b65]">
+                Empowering SMEs to thrive sustainably.
+              </h2>
               <p className="text-[24px] text-[#112b65] max-lg:text-[20px] font-medium  box-border  max-lg:px-28 max-md:px-0 leading-[150%] ">
-                To empower SMEs to advance sutainability through AI-powered
-                solutions and strategic guidance
+                We provide affordable, AI-powered solutions and strategic
+                guidance, enabling small and medium enterprises (SMEs ) to
+                optimize operations, reduce costs, and build resilience - all
+                while minimizing environmental impact. Our expertise guides
+                businesses to leverage data and technology for sustainable
+                growth.
               </p>{" "}
             </div>
           </div>
