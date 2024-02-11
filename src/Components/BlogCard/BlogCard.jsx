@@ -10,8 +10,8 @@ const BlogCard = ({ blog }) => {
   return (
     <a href={link}           data-aos="fade-up"
     data-aos-duration="1500" className="block p-4 w-full rounded-lg overflow-hidden text-[#002E70] hover:bg-[#02c2ab]/20 transition duration-500 ease-in-out">
-      <div className="rounded-lg  overflow-hidden ">
-        <img src={img} alt={title} className="w-full h-auto transition-transform duration-300 ease-in-out transform object-cover scale-100 hover:scale-110" />
+      <div className="rounded-lg px-2  h-[300px] overflow-hidden ">
+        <img src={img} alt={title} className="w-full h-full animate-pulse transition-transform duration-300 ease-in-out transform object-cover scale-100 hover:scale-110" />
       </div>
       <div className="p-4">
         <h2 className="text-2xl font-bold mb-2">{title}</h2>

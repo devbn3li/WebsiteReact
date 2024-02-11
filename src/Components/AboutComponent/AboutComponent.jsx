@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import largeImg from "/assets/images/handImage.webp";
-import image1 from "/assets/images/image1.jpg";
-import image2 from "/assets/images/image2.webp";
-import image3 from "/assets/images/image3.avif";
-import image4 from "/assets/images/image4.avif";
+import image1 from "/assets/images/plant.jpg";
+import image2 from "/assets/images/earth-day-environment.jpg";
+import image3 from "/assets/images/image1.jpg";
+import image4 from "/assets/images/3dGreen.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
