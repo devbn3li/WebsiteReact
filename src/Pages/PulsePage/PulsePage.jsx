@@ -7,7 +7,7 @@ import { FaLevelUpAlt } from "react-icons/fa";
 import { FaBrain, FaUniversalAccess, FaChartLine } from "react-icons/fa";
 import { PiStrategy } from "react-icons/pi";
 import backgroundImage from "/assets/images/bg/1.jpg";
-import Hero_2 from "../../Components/Hero/Hero_2";
+import LandingSection from "./landing"
 import Benefits from "../../Components/Benefits/Benefits";
 import CTA1 from "../../Components/CTA/CTA_1";
 import CTA2 from "../../Components/CTA/CTA_2";
@@ -144,7 +144,7 @@ const PulsePage = () => {
   return (
     <div className="flex justify-center items-center flex-col">
       {/* Start header ============================================= */}
-      <Hero_2 {...heroData} />
+      <LandingSection />
       {/* End header ============================================= */}
 
       {/* Start Futures ============================================ */}
