@@ -47,7 +47,6 @@ const AboutComponent = () => {
                   alt={`image ${index}`}
                   className="w-full object-cover h-full rounded-2xl cursor-pointer"
                   data-aos="zoom-in"
-                  data-aos-delay={`${index * 100 + 200}`} // Increase delay for each image
                   data-aos-duration="1600"
                 />
               ))}

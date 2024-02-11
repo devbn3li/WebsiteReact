@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 // Import your logos here
 import logo1 from "/assets/images/company/logo-blab.svg";
@@ -57,11 +59,23 @@ const logos = [
 
 const Companys = () => {
   return (
-    <div className="container mx-auto mt-20 px-[5%]">
-      <h1 className="text-3xl md:text-5xl text-center font-extrabold mb-16 text-[#112b65]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      className="container mx-auto mt-20 px-[5%]"
+    >
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="1400"
+        className="text-3xl md:text-5xl text-center font-extrabold mb-16 text-[#112b65]"
+      >
         Our ESG experts have worked with the best companies in every category
       </h1>
-      <div className="grid grid-cols-2 place-items-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 justify-items-center gap-2">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1800"
+        className="grid grid-cols-2 place-items-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 justify-items-center gap-2"
+      >
         {logos.map((logo, index) => (
           <div
             key={index}

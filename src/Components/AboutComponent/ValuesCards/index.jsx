@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const dataValue = [
   {
@@ -49,7 +51,8 @@ const Card = ({num, title, description,Class }) => (
 
 const index = () => {
   return (
-    <div className="relative flex h-full flex-col justify-center  w-full">
+    <div           data-aos="fade-up"
+    data-aos-duration="1800" className="relative flex h-full flex-col justify-center  w-full">
       <div className="mx-auto pt-12 h-full max-w-[1400px] p-2">
         <div className="grid gap-6 sm:grid-cols-2  lg:grid-cols-3">
           {dataValue.map((item, index) => (

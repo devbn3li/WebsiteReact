@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ValuesCards from "./ValuesCards/index";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 function Values() {
   return (
-    <section className="w-full h-full rounded-3xl py-2  flex justify-center bg-[#002E70]  ">
-      <div className="relative w-[90%]  mx-auto h-full   max-w-[1400px]">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      className="w-full h-full rounded-3xl py-2  flex justify-center bg-[#002E70]  "
+    >
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1400"
+        className="relative w-[90%]  mx-auto h-full   max-w-[1400px]"
+      >
         <div className="w-full p-4  xl:p-8 mt-8 relative  bg-[#F9FFF5] h-full rounded-3xl  border-t-8 border-[#03C2AB]">
           <div className="flex justify-center pt-2">
             <p className="mb-5 text-lg font-normal text-[#002E70]/80 lg:text-xl  ">
@@ -17,7 +27,6 @@ function Values() {
               Our Values{" "}
             </mark>
           </h2>
-
           <ValuesCards />
         </div>
       </div>
