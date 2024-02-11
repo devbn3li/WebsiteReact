@@ -1,14 +1,10 @@
 import React from "react";
-import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 import Dashboard from "../../Components/Dashboard";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
 import img from "/assets/Dashboard.png";
 import Qoute from "../../Components/DataLab/Qoute";
-
-const dynamicTitle = "ESG in ERM Program";
-const dynamicSubtitle =
-  "We provide comprehensive support to enterprise risk management (ERM) functions in building their ESG capabilities. Our services include the development of an ESG ERM strategy and methodology manual, tailored to your organization's needs. We understand that ESG factors are increasingly important in risk management, and we integrate these factors into your ERM program.";
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
 const dynamicContent = `Our ESG in ERM program is designed to help ERM functions build their ESG capabilities. We offer a strategic approach to integrating ESG factors into your ERM program, ensuring that your organization is prepared for the evolving risk landscape.`;
 const dynamicSolutions = [
@@ -44,8 +40,12 @@ const dynamicQuote = `Recognizing that distinctions in risk management efforts s
 const ERMProgramPage = () => {
   return (
     <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services title={dynamicTitle} subtitle={dynamicSubtitle} />
-
+      <DynamicLandingHero
+        title="ESG in ERM Program"
+        subtitle="We provide comprehensive support to enterprise risk management (ERM) functions in building their ESG capabilities. Our services include the development of an ESG ERM strategy and methodology manual, tailored to your organization's needs. We understand that ESG factors are increasingly important in risk management, and we integrate these factors into your ERM program."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
+      />
       <Dashboard
         imgSrc={img}
         content={dynamicContent}

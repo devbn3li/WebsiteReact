@@ -1,10 +1,10 @@
 import React from "react";
-import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 import Qoute from "../../Components/DataLab/Qoute";
 import Dashboard from "../../Components/Dashboard";
 import img from "/assets/Premasset/Dash.png";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
 const dynamicContent = `Our integrated services prioritize stakeholder engagement, communication, and training. Stakeholder Mastery focuses on strategic communication and relationship-building, COSO Framework Training empowers with vital knowledge, Transparent Communication Excellence refines messaging, and Stakeholder-Centric Training fosters a transparent, collaborative, and successful organizational environment.`;
 const dynamicSolutions = [
@@ -29,15 +29,17 @@ const dynamicSolutions = [
       "Invest in the growth and understanding of your team with our Stakeholder-Centric Training Programs. These programs go beyond conventional training, focusing on equipping your workforce with the skills needed to navigate stakeholder dynamics effectively. From conflict resolution to stakeholder prioritization, empower your team to excel in stakeholder management, ensuring sustained organizational success.",
   },
 ];
-const dynamicTitle = "Strategic Stakeholder Management Program";
-const dynamicSubtitle =
-  "Our integrated services prioritize stakeholder engagement, communication, and training. Stakeholder Mastery focuses on strategic communication and relationship-building, COSO Framework Training empowers with vital knowledge, Transparent Communication Excellence refines messaging, and Stakeholder-Centric Training fosters a transparent, collaborative, and successful organizational environment.";
 const dynamicQuote = `We understand that the main differences lie in the focus and scope of the strategic stakeholder management efforts, and we are committed to providing a service that is tailored to your organization's specific needs.`;
 
 const StrategicStakeholderPage = () => {
   return (
     <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services title={dynamicTitle} subtitle={dynamicSubtitle} />
+      <DynamicLandingHero
+        title="Strategic Stakeholder Management Program"
+        subtitle="Our integrated services prioritize stakeholder engagement, communication, and training. Stakeholder Mastery focuses on strategic communication and relationship-building, COSO Framework Training empowers with vital knowledge, Transparent Communication Excellence refines messaging, and Stakeholder-Centric Training fosters a transparent, collaborative, and successful organizational environment."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
+      />
 
       <Dashboard
         imgSrc={img}

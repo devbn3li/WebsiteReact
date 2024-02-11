@@ -8,7 +8,6 @@ import Benefits from '../../Components/Benefits/Benefits';
 import CTA2 from '../../Components/CTA/CTA_2';
 import CTA1 from '../../Components/CTA/CTA_1';
 
-
 // Icons
 const TerminalIcon = () => (
   <svg

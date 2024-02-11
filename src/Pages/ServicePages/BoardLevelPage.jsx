@@ -1,11 +1,11 @@
 import React from "react";
-import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 import Qoute from "../../Components/DataLab/Qoute";
 import Dashboard from "../../Components/Dashboard";
 import img from "/assets/Dashboard.png";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
 import StrategicStakeholderPage from "./StrategicStakeholderPage";
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
 const dynamicContent = `Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making.`;
 const dynamicSolutions = [
@@ -35,16 +35,18 @@ const dynamicSolutions = [
       "Develop strategic plans to integrate ESG principles into your organization's overall strategy. Our consultancy services help boards identify key areas for ESG integration, set actionable goals, and measure progress, ensuring alignment with long-term sustainability objectives.",
   },
 ];
-const dynamicTitle = "Board-Level ESG Consulting";
-const dynamicSubtitle =
-  "Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making.";
+
 const dynamicQuote = `We understand that the main differences lie in the focus and scope of the ESG governance and strategy efforts, and we are committed to providing a service that is tailored to your organization's specific needs.`;
 
 const BoardLevelPage = () => {
   return (
     <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services title={dynamicTitle} subtitle={dynamicSubtitle} />
-
+      <DynamicLandingHero
+        title="Board-Level ESG Consulting"
+        subtitle="Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
+      />
       <Dashboard
         imgSrc={img}
         content={dynamicContent}
@@ -69,8 +71,7 @@ const BoardLevelPage = () => {
         buttonPath="/contact"
       />
 
-<StrategicStakeholderPage />
-
+      <StrategicStakeholderPage />
     </div>
   );
 };

@@ -1,11 +1,10 @@
 import React from "react";
-import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 import Qoute from "../../Components/DataLab/Qoute";
 import Dashboard from "../../Components/Dashboard";
 import img from "/assets/Premasset/Dash.png";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
-
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 const dynamicContent = `We provide comprehensive support to compliance functions in building their ESG capabilities. Our services include the creation of an ESG compliance strategy and methodology manual, tailored to your organization's needs. We understand that ESG compliance is a dynamic field with evolving regulations and standards, and we adapt our services based on the maturity of your compliance environment.`;
 const dynamicSolutions = [
   {
@@ -29,16 +28,17 @@ const dynamicSolutions = [
       "Ensure ongoing compliance with our Continuous Monitoring and Reporting service. We establish systematic processes for monitoring changes in ESG regulations, track your performance against compliance objectives, and provide regular reports. This service allows your organization to adapt proactively to regulatory shifts and highlight a commitment to sustained ESG compliance.",
   },
 ];
-const dynamicTitle = "ESG Compliance program";
-const dynamicSubtitle =
-  "Our ESG Compliance program is designed to help compliance functions build their ESG capabilities. We offer a strategic approach to ESG compliance, ensuring that your organization is prepared for the evolving regulatory landscape.";
 const dynamicQuote = `We understand that the main differences lie in the focus and scope of the compliance efforts, and we are committed to providing a service that is tailored to your organization's specific needs.`;
 
 const ESGCompliancePage = () => {
   return (
     <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services title={dynamicTitle} subtitle={dynamicSubtitle} />
-
+      <DynamicLandingHero
+        title="ESG Compliance program"
+        subtitle="Our ESG Compliance program is designed to help compliance functions build their ESG capabilities. We offer a strategic approach to ESG compliance, ensuring that your organization is prepared for the evolving regulatory landscape."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
+      />
       <Dashboard
         imgSrc={img}
         content={dynamicContent}
