@@ -3,7 +3,6 @@ import Qoute from "../../Components/DataLab/Qoute";
 import Dashboard from "../../Components/Dashboard";
 import img from "/assets/Premasset/Dash.png";
 import How from "../../Components/How";
-import Call from "../../Components/Call";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
 const dynamicContent = `Our suite of services specializes in guiding companies through the establishment of the ESG Controller role. From crafting the initial job description to providing the essential documents and tools, we offer comprehensive support for the entire ESG governance work process. Our program empowers the role to embody industry-leading practices in ESG controllership, fostering a comprehensive and effective approach to environmental, social, and governance initiatives.`;
@@ -29,7 +28,6 @@ const dynamicSolutions = [
       "Our service guarantees a holistic and effective approach to managing environmental, social, and governance initiatives. From identifying and managing qualitative risks and controls associated with ESG to providing a detailed compliance checklist, we ensure that your organization's initiatives align with best practices. This service is designed to enhance the overall effectiveness and impact of your ESG endeavors.",
   },
 ];
-
 const dynamicQuote = `We understand that the main differences lie in the focus and scope of the ESG controllership efforts, and we are committed to providing a service that is tailored to your organization's specific needs.`;
 
 const ESGControllershipPage = () => {
@@ -49,13 +47,6 @@ const ESGControllershipPage = () => {
       />
       <How
         solutions={dynamicSolutions}
-        buttonTitle="Contact Us"
-        buttonPath="/contact"
-      />
-      <Call
-        imgSrc={img}
-        title={dynamicTitle}
-        paragraph={dynamicSubtitle}
         buttonTitle="Contact Us"
         buttonPath="/contact"
       />

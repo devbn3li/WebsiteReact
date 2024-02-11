@@ -3,7 +3,6 @@ import Qoute from "../../Components/DataLab/Qoute";
 import Dashboard from "../../Components/Dashboard";
 import img from "/assets/Dashboard.png";
 import How from "../../Components/How";
-import Call from "../../Components/Call";
 import StrategicStakeholderPage from "./StrategicStakeholderPage";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
@@ -41,12 +40,13 @@ const dynamicQuote = `We understand that the main differences lie in the focus a
 const BoardLevelPage = () => {
   return (
     <div className="pt-[4.5rem] flex flex-col items-center">
-      <DynamicLandingHero
+            <DynamicLandingHero
         title="Board-Level ESG Consulting"
         subtitle="Our Strategic Sustainability Governance Advisory empowers boards to align long-term goals with ESG principles showcasing leadership in responsible governance. Together, these services equip boards to navigate the complexities of ESG, promoting strategic foresight and responsible decision-making."
         button1={{ path: "/about", label: "About Us" }}
         button2={{ path: "/contact", label: "Make an Impact, Together" }}
       />
+
       <Dashboard
         imgSrc={img}
         content={dynamicContent}
@@ -58,20 +58,14 @@ const BoardLevelPage = () => {
         buttonTitle="Contact Us"
         buttonPath="/contact"
       />
-      <Call
-        imgSrc={img}
-        title={dynamicTitle}
-        paragraph={dynamicSubtitle}
-        buttonTitle="Contact Us"
-        buttonPath="/contact"
-      />
       <Qoute
         quoteText={dynamicQuote}
         buttonTitle="Contact Us"
         buttonPath="/contact"
       />
 
-      <StrategicStakeholderPage />
+<StrategicStakeholderPage />
+
     </div>
   );
 };

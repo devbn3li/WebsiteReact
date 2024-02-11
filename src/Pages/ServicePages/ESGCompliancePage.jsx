@@ -3,7 +3,6 @@ import Qoute from "../../Components/DataLab/Qoute";
 import Dashboard from "../../Components/Dashboard";
 import img from "/assets/Premasset/Dash.png";
 import How from "../../Components/How";
-import Call from "../../Components/Call";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
 const dynamicContent = `We provide comprehensive support to compliance functions in building their ESG capabilities. Our services include the creation of an ESG compliance strategy and methodology manual, tailored to your organization's needs. We understand that ESG compliance is a dynamic field with evolving regulations and standards, and we adapt our services based on the maturity of your compliance environment.`;
 const dynamicSolutions = [
@@ -47,13 +46,6 @@ const ESGCompliancePage = () => {
       />
       <How
         solutions={dynamicSolutions}
-        buttonTitle="Contact Us"
-        buttonPath="/contact"
-      />
-      <Call
-        imgSrc={img}
-        title={dynamicTitle}
-        paragraph={dynamicSubtitle}
         buttonTitle="Contact Us"
         buttonPath="/contact"
       />
