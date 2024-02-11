@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const BlogCard = ({ blog }) => {
   // Destructure the blog object
@@ -6,7 +8,8 @@ const BlogCard = ({ blog }) => {
 
 
   return (
-    <a href={link} className="block p-4 w-full rounded-lg overflow-hidden text-[#002E70] hover:bg-[#02c2ab]/20 transition duration-500 ease-in-out">
+    <a href={link}           data-aos="fade-up"
+    data-aos-duration="1500" className="block p-4 w-full rounded-lg overflow-hidden text-[#002E70] hover:bg-[#02c2ab]/20 transition duration-500 ease-in-out">
       <div className="rounded-lg  overflow-hidden ">
         <img src={img} alt={title} className="w-full h-auto transition-transform duration-300 ease-in-out transform object-cover scale-100 hover:scale-110" />
       </div>

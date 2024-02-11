@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PrimaryButton from "./Buttons/PrimaryButton";
 import Lottie from "lottie-react";
 import wave from "../Lottie/story.json";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const How = ({ solutions, buttonTitle, buttonPath }) => {
   return (
     <div className="w-full flex justify-center">
-      <section className="max-w-[1400px] py-20 px-[5%]">
+      <section           data-aos="fade-up"
+          data-aos-duration="1200" className="max-w-[1400px] py-20 px-[5%]">
         <div className="w-full justify-center flex py-4 pb-8">
           <div className="bg-[#02c2ab] aspect-square w-[116px] h-[116px] p-2 relative shadow-2xl shadow-[#02c2ab] rounded-[2rem]">
             <div className="bg-[#02c2ab] aspect-square  w-[100px] h-[100px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] ">
@@ -24,7 +27,8 @@ const How = ({ solutions, buttonTitle, buttonPath }) => {
             Here&apos;s how we can help
           </h2>
           <div className="mx-auto pt-12 h-full max-w-[1400px] p-2">
-            <div className="grid grid-cols-1 justify-center gap-6 md:grid-cols-2 ">
+            <div           data-aos="fade-up"
+          data-aos-duration="1800" className="grid grid-cols-1 justify-center gap-6 md:grid-cols-2 ">
               {solutions.map((solution, index) => (
                 <div
                   key={index}
