@@ -1,12 +1,12 @@
 import React from "react";
 import CardData from "../../Components/SolCard/CardData";
 import Futures from "../../Components/PulsePageCompontent/Futures";
-import DS from "../../../public/assets/images/DS.png";
+import DS from "/assets/images/DS.png";
 import { MdCelebration, MdOutlineReport } from "react-icons/md";
 import { FaLevelUpAlt } from "react-icons/fa";
 import { FaBrain, FaUniversalAccess, FaChartLine } from "react-icons/fa";
 import { PiStrategy } from "react-icons/pi";
-import backgroundImage from "../../../public/assets/images/bg/1.jpg";
+import backgroundImage from "/assets/images/bg/1.jpg";
 import Hero_2 from "../../Components/Hero/Hero_2";
 import Benefits from "../../Components/Benefits/Benefits";
 import CTA1 from "../../Components/CTA/CTA_1";

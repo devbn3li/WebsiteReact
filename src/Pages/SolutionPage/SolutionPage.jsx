@@ -5,8 +5,8 @@ import { FaLevelUpAlt, FaRegLightbulb } from "react-icons/fa";
 import { MdCelebration, MdOutlineReport } from "react-icons/md";
 import { PiRobotLight, PiStrategy } from "react-icons/pi";
 import SolutionHero from "../../Components/Solutions/Hero";
-import ESG from "../../../public/assets/images/esg.png";
-import AI from "../../../public/assets/images/AI.webp";
+import ESG from "/assets/images/esg.png";
+import AI from "/assets/images/AI.webp";
 import Dash from "../../Components/Dash/index";
 
 const SolutionPage = () => {

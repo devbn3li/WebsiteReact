@@ -4,7 +4,7 @@ import Challenge from '../../Components/Challenge/Challenge';
 import Solutions from '../../Components/SolutionCompo/Solutions';
 import Benefits from '../../Components/Benefits/Benefits';
 import Call from '../../Components/LevelUpO2/Call.jsx';
-import challengeImg from "../../../public/assets/images/instingo_challenge_page.svg";
+import challengeImg from "/assets/images/instingo_challenge_page.svg";
 
 // Icons
 const TerminalIcon = () => (

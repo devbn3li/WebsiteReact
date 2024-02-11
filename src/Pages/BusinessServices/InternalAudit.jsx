@@ -2,7 +2,7 @@ import React from 'react';
 import Hero_2 from '../../Components/Hero/Hero_2';
 import Challenge from '../../Components/Challenge/Challenge';
 import CardData from "../../Components/SolCard/CardData";
-import challengeImg from "../../../public/assets/images/instingo_challenge_page.svg";
+import challengeImg from "/assets/images/instingo_challenge_page.svg";
 import Solutions from '../../Components/SolutionCompo/Solutions';
 import Benefits from '../../Components/Benefits/Benefits';
 import CTA2 from '../../Components/CTA/CTA_2';

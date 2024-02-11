@@ -1,12 +1,12 @@
 import SolutionHero from "../../Components/Solutions/Hero";
 import CardData from "../../Components/SolCard/CardData";
-import DS from "../../../public/assets/images/DS.png";
+import DS from "/assets/images/DS.png";
 import Challenge from "../../Components/Challenge/Challenge";
 import Solutions from "../../Components/SolutionCompo/Solutions";
 import Benefits from "../../Components/Benefits/Benefits";
 import ESGSoftwareSection from "../../Components/Esgsoftwaresection";
 import Hero_2 from "../../Components/Hero/Hero_2";
-import challengeImg from "../../../public/assets/images/instingo_challenge_page.svg";
+import challengeImg from "/assets/images/instingo_challenge_page.svg";
 
 // Icons
 const TerminalIcon = () => (

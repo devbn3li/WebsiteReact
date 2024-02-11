@@ -4,7 +4,7 @@ import Why from "../../Components/DataLab/Why";
 import Call from "../../Components/DataLab/Call";
 import How from "../../Components/DataLab/How";
 import Dashboard from "../../Components/Dashboard";
-import img from "../../../public/assets/Dashboard.png";
+import img from "/assets/Dashboard.png";
 import Qoute from "../../Components/DataLab/Qoute";
 
 function DataLab() {

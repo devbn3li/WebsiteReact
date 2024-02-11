@@ -5,7 +5,7 @@ const Blog = () => {
   // Array of blog objects
   const blogs = [
     {
-      img: "../../../public/assets/images/business-people-shaking-hands-together.avif",
+      img: "/assets/images/business-people-shaking-hands-together.avif",
       title: "Sample Blog Title 1",
       description:
         "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -15,7 +15,7 @@ const Blog = () => {
       link: "/blog/sample-blog-1",
     },
     {
-      img: "../../../public/assets/images/business-people-shaking-hands-together.avif",
+      img: "/assets/images/business-people-shaking-hands-together.avif",
       title: "Sample Blog Title 2",
       description:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -25,7 +25,7 @@ const Blog = () => {
       link: "/blog/sample-blog-2",
     },
     {
-      img: "../../../public/assets/images/business-people-shaking-hands-together.avif",
+      img: "/assets/images/business-people-shaking-hands-together.avif",
       title: "Sample Blog Title 3",
       description:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",

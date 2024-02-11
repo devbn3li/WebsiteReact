@@ -2,7 +2,7 @@ import React from "react"
 import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 import Qoute from "../../Components/DataLab/Qoute";
 import Dashboard from "../../Components/Dashboard";
-import img from "../../../public/assets/Dashboard.png";
+import img from "/assets/Dashboard.png";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
 

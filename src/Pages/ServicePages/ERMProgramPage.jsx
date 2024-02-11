@@ -3,7 +3,7 @@ import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 import Dashboard from "../../Components/Dashboard";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
-import img from "../../../public/assets/Dashboard.png";
+import img from "/assets/Dashboard.png";
 import Qoute from "../../Components/DataLab/Qoute";
 
 const dynamicTitle = "ESG in ERM Program";

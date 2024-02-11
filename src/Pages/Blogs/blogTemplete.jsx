@@ -2,7 +2,7 @@ import React from 'react';
 import Quote from '../../Components/Blog/Quote'
 import H1 from '../../Components/Blog/H1'
 import H2 from '../../Components/Blog/H2'
-import image from '../../../public/assets/images/blogs/blog_1.jpg';
+import image from '/assets/images/blogs/blog_1.jpg';
 // import { Link } from 'react-router-dom';
 // import BlogCard from '../../Components/BlogCard/BlogCard';
 
