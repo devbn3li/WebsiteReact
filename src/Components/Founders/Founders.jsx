@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import wave from "../../Lottie/story.json";
-import { Link } from "react-router-dom";
-import vision from "/assets/Premasset/box.png";
+import vision from "/assets/Premasset/5f8b4f8c-9db1-4429-920f-a7cdf3a9a9d8.png";
 import { motion } from "framer-motion";
-import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
 const SlideComponent = (founder) => (
