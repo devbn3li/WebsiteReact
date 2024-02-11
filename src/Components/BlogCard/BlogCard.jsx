@@ -22,7 +22,7 @@ const BlogCard = ({ blog }) => {
     >
       <div className='group block p-4 w-full rounded-lg overflow-hidden text-[#002E70] hover:bg-[#02c2ab]/20 transition duration-500 ease-in-out'>
         <div className="rounded-lg overflow-hidden">
-          <img src={img} alt={title} className="w-full aspect-square transition-transform duration-300 ease-in-out transform object-cover scale-100 group-hover:scale-110" />
+          <img src={img} alt={title} className="w-full aspect-square transition-transform duration-300 ease-in-out transform object-contain hover:bg-gradient-to-l bg-gradient-to-r from-[#112b65] to-[#02c2ab] scale-100 group-hover:scale-95 rounded-2xl" />
         </div>
         <div className="p-4">
           <h2 className="text-2xl font-bold mb-2">{title.slice(0, 52) + (title.length > 52 && '...')}</h2>
