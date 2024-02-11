@@ -46,6 +46,7 @@ import EmpoweringForSuccessBlog from './Pages/Blogs/ALL/EmpoweringForSuccessBlog
 import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenwashingBlog';
 
 // Style Sheets Imports
+// none-assets file should have it's own absolute path
 import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
