@@ -1,4 +1,7 @@
+import React, { useEffect } from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 // Data for software solutions
 const softwareSolutions = [
@@ -25,7 +28,11 @@ const softwareSolutions = [
 const How = () => {
   return (
     <div className="w-full flex justify-center">
-      <section className=" max-w-[1400px] py-20 px-[5%]">
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className=" max-w-[1400px] py-20 px-[5%]"
+      >
         <div className="w-full justify-center flex  py-4 pb-8">
           <div className="bg-[#02c2ab] aspect-square  w-[116px] h-[116px] p-2  relative shadow-2xl shadow-[#02c2ab] rounded-[2rem] ">
             {/* <Lottie
@@ -37,11 +44,19 @@ const How = () => {
           </div>{" "}
         </div>
         <div className="container text-[#002E70] mx-auto">
-          <h2 className="mb-4 text-4xl text-center max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            className="mb-4 text-4xl text-center max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl "
+          >
             Here&apos;s how we can help
           </h2>
           <div className="mx-auto pt-12 h-full max-w-[1400px] p-2">
-            <div className="grid grid-cols-1 justify-center gap-6 md:grid-cols-2 ">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1800"
+              className="grid grid-cols-1 justify-center gap-6 md:grid-cols-2 "
+            >
               {softwareSolutions.map((solution, index) => (
                 <div
                   key={index}
