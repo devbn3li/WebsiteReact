@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import img3 from "/assets/Dash/2.png";
+import img3 from "/assets/Dash/SolutionNAV/lab.png";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
