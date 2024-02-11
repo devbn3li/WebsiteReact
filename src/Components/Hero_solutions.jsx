@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '../../public/assets/images/bg/1.jpg';
+import backgroundImage from '/assets/images/bg/1.jpg';
 
 
 const HeroSection = () => {

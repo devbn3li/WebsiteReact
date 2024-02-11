@@ -1,10 +1,10 @@
 import React from 'react';
-import HeroSection from '../../Components/LevelUpO2/Hero';
 import Challenge from '../../Components/Challenge/Challenge';
 import Solutions from '../../Components/SolutionCompo/Solutions';
 import Benefits from '../../Components/Benefits/Benefits';
 import Call from '../../Components/LevelUpO2/Call.jsx';
 import challengeImg from "/assets/images/instingo_challenge_page.svg";
+import LandingSection from '../../Components/LevelUpO2/landing';
 
 // Icons
 const TerminalIcon = () => (
@@ -114,7 +114,7 @@ function LevelUpO2() {
 
   return (
     <div className='flex flex-col justify-center items-center'>
-      <HeroSection />
+      <LandingSection />
       <Challenge {...challengeData} />
       <Solutions {...solutionsData} />
       <Benefits {...benefitsData} />

@@ -7,15 +7,10 @@ import CTA1 from '../../Components/CTA/CTA_1';
 import CardData from "../../Components/SolCard/CardData";
 import Benefits from '../../Components/Benefits/Benefits';
 import CTA2 from "../../Components/CTA/CTA_2";
+import LandingSection from './landing';
 import { FaRegLightbulb, FaSyncAlt, FaShieldAlt } from 'react-icons/fa';
 
 const SustainabilityTracker = () => {
-  const heroData = {
-    title: "Sustainability Analytics: Transform Data into Action",
-    description: "Empower your sustainability journey with the Sustainability Tracker (ST). Our platform revolutionizes how you manage and report sustainability by centralizing industrial data, simulating operations with a digital twin, and conducting an asset-wide mass and energy balance. Get detailed, actionable insights and comply with global sustainability frameworks effortlessly.",
-    CTATitle: "Start Your Sustainability Transformation",
-    CTAPath: "#",
-  }
 
   const challengeData = {
     title: "Facing the Tide of Sustainability Compliance",
@@ -116,7 +111,7 @@ const SustainabilityTracker = () => {
   
   return (
     <div className='flex flex-col justify-center items-center'>
-      <Hero_2 {...heroData} />
+      <LandingSection />
       <Challenge  {...challengeData} />
       <Solutions {...solutionData} />
       <CTA1 path="waiting-page" />

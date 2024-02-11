@@ -1,15 +1,27 @@
 import React from 'react';
 import Benefits from '../../Components/Benefits/Benefits';
+import BlogCardsList from '../../Components/BlogCard/BlogCardsList';
 import Offer from '../../Components/Offer/Offer';
 import Testimonials from '../../Components/Testimonials/Testimonials';
 import Why from '../../Components/LandingWhy';
 import FAQs from '../../Components/FAQs';
-import BlogCardsList from '../../Components/BlogCard/BlogCardsList';
+import Challenge from '../../Components/Challenge/Challenge';
+import Solutions from '../../Components/SolutionCompo/Solutions';
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import img1 from '/assets/Premasset/photo7.png';
 import img3 from '/assets/Premasset/book.png';
 import img2 from '/assets/Premasset/photo12.png';
+import challengeImg from "/assets/images/instingo_challenge_page.svg";
 import LandingSection from '../../Components/landing';
+import { AiOutlineRise } from 'react-icons/ai'; // Example for growth or improvement
+import { MdOutlineEco } from 'react-icons/md'; // Example for eco-friendly or sustainability
+import { FaRegLightbulb } from 'react-icons/fa'; // Example for ideas or insights
+import { FiMonitor } from 'react-icons/fi'; // Example for technology or monitoring
+import { RiHandCoinLine } from 'react-icons/ri'; // Example for cost-effectiveness or investment
+import { BsGraphUp } from 'react-icons/bs'; // Example for analytics or improvement
+import { GiWorld } from 'react-icons/gi'; // Example for global or worldwide
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io'; // Example for assurance or quality
+
 
 // Icons
 const TerminalIcon = () => (
@@ -35,7 +47,7 @@ const LeafIcon = () => (
 
 const LandingPage = () => {
   // Benefits data
-  const benefitsData = {
+  const benefitsData1 = {
     title: 'Driving Impact with Human Expertise, Science and Data Insights',
     description: 'Our AI-powered solutions, data science, and human expertise simplify sustainability execution. We provide solutions and insights to advance your goals affordably.',
     benefits: [
@@ -44,7 +56,7 @@ const LandingPage = () => {
         title: 'Solutions, Data Science and Innovation',
         description: 'Sustainable Data Solutions: Empowering companies with control, informed decisions, and purpose-driven impact through modern, innovative tools and actionable insights.',
         imageUrl: img1,
-        Class:'mt-[-4rem]'
+        Class: 'mt-[-4rem]'
       },
       {
         icon: <RocketIcon />,
@@ -61,13 +73,110 @@ const LandingPage = () => {
     ]
   };
 
+
+  const challengeData = {
+    title: "Navigating ESG Complexity",
+    description: "The ESG landscape is evolving rapidly, presenting a complex challenge of compliance, data management, and strategy without expert insights. LevelUp helps you navigate this with ease.",
+    imgSrc: challengeImg,
+  };
+
+
+  const solutionsData = {
+    description: "LevelUp Solutions are engineered to address the complex challenges of ESG regulation compliance and data management. Our suite of tools and expert guidance ensures your business stays ahead in the sustainability curve.",
+    solutions: [
+      {
+        title: "Tailored Guidance",
+        description: "Clear, targeted insights and tailored guidance for your industry to navigate the ESG landscape."
+      },
+      {
+        title: "Expertise Network",
+        description: "A diverse team of experts provides unambiguous interpretations and recommendations."
+      },
+      {
+        title: "AI Automation",
+        description: "AI-powered solutions to automate data collection and management, enhancing efficiency."
+      },
+      {
+        title: "Policy Templates",
+        description: "Expert-developed policies and templates informed by data insights and leading practices."
+      },
+      {
+        title: "Misinformation Filter",
+        description: "Curated resources to filter out misleading information, ensuring you receive only verified data."
+      },
+      {
+        title: "Cost-effective Tools",
+        description: "Affordable tools and platforms to implement your ESG strategies without financial strain."
+      },
+      {
+        title: "Learning and Support",
+        description: "Access to industry-leading experts through workshops, resources, and support."
+      },
+      {
+        title: "Data Readiness",
+        description: "Data integration solutions and audit-ready data to streamline your reporting processes."
+      }
+    ]
+  };
+
+
+  const benefitsData2 = {
+    title: 'Benefits and Impact of LevelUp',
+    description: 'Our solutions offer tangible benefits that help streamline your ESG reporting, enhance decision-making, and enable sustainable growth.',
+    benefits: [
+      {
+        icon: <AiOutlineRise />,
+        title: "Regulatory Compliance",
+        description: "Stay ahead of the curve, mitigate compliance risks, and avoid disappointing stakeholders."
+      },
+      {
+        icon: <FiMonitor />,
+        title: "Informed Decision-Making",
+        description: "Gain clarity, be informed and ensure your understanding is accurate to make decisions confidently."
+      },
+      {
+        icon: <MdOutlineEco />,
+        title: "Resource Optimization",
+        description: "Free up resources and reduce time spent on manual tasks, enabling a focus on strategic initiatives."
+      },
+      {
+        icon: <BsGraphUp />,
+        title: "Growth and Foundation",
+        description: "Unlock green growth and build a strong foundation for success with confidence."
+      },
+      {
+        icon: <FaRegLightbulb />,
+        title: "Insightful Analysis",
+        description: "Make informed decisions based on trusted, science-backed insights."
+      },
+      {
+        icon: <RiHandCoinLine />,
+        title: "Knowledge Bridging",
+        description: "Bridge knowledge gaps and deliver value, regardless of budget size."
+      },
+      {
+        icon: <GiWorld />,
+        title: "Global Expertise",
+        description: "Gain valuable knowledge and guidance from diverse and experienced professionals via our resources hub."
+      },
+      {
+        icon: <IoMdCheckmarkCircleOutline />,
+        title: "Quality Assurance",
+        description: "Enhanced data quality and audit-ready reports for your peace of mind."
+      }
+    ]
+  };
+
   return (
     <div className='flex flex-col justify-center items-center w-full font-inter text-[#002E70]'>
       <LandingSection />
-      <Benefits {...benefitsData} />
+      <Benefits {...benefitsData1} />
       <Offer />
       <Testimonials />
       <Why />
+      <Challenge {...challengeData} />
+      <Solutions {...solutionsData} />
+      <Benefits {...benefitsData2} />
       <BlogCardsList />
       <SliderLogos />
       <FAQs />

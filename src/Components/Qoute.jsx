@@ -1,4 +1,4 @@
-import personImagePath from "../../public/assets/images/DrAhmedShawky.png";
+import personImagePath from "/assets/images/DrAhmedShawky.png";
 
 const FounderNote = () => {
   return (

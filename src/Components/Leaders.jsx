@@ -1,11 +1,11 @@
 import React from "react";
 
-import Ahmed from "../../public/assets/images/Leaders/ahmed.png";
-import Prasad from "../../public/assets/images/Leaders/prasad.png";
-import Don from "../../public/assets/images/Leaders/don.png";
-import Ekta from "../../public/assets/images/Leaders/ekta.png";
-import Hamdy from "../../public/assets/images/Leaders/hamdy.png";
-import yana from "../../public/assets/images/Leaders/yana.png";
+import Ahmed from "/assets/images/Leaders/ahmed.png";
+import Prasad from "/assets/images/Leaders/prasad.png";
+import Don from "/assets/images/Leaders/don.png";
+import Ekta from "/assets/images/Leaders/ekta.png";
+import Hamdy from "/assets/images/Leaders/hamdy.png";
+import yana from "/assets/images/Leaders/yana.png";
 
 export default function TeamMembers() {
   const dataTeam = [
