@@ -13,13 +13,6 @@ import CTA1 from "../../Components/CTA/CTA_1";
 import CTA2 from "../../Components/CTA/CTA_2";
 
 const PulsePage = () => {
-  const heroData = {
-    title: "Empower Your Sustainability Journey with LevelUp ESG Pulse",
-    description:
-      "Accelerate your business growth and sustainability impact with AI-powered ESG assessments",
-    CTATitle: "Learn More",
-    CTAPath: "/contact",
-  };
 
   const benefitsData = {
     title: "Core Advantages of LevelUp ESG Pulse",
