@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CardData from "../../Components/SolCard/CardData";
 import Futures from "../../Components/PulsePageCompontent/Futures";
 import DS from "/assets/images/DS.png";
@@ -11,6 +11,8 @@ import LandingSection from "./landing"
 import Benefits from "../../Components/Benefits/Benefits";
 import CTA1 from "../../Components/CTA/CTA_1";
 import CTA2 from "../../Components/CTA/CTA_2";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const PulsePage = () => {
 
@@ -156,7 +158,8 @@ const PulsePage = () => {
       >
         <section className="why max-w-7xl mx-auto pt-28">
           <div className="px-[5%] w-full pb-20">
-            <div className="flex flex-col gap-1">
+            <div           data-aos="fade-up"
+          data-aos-duration="1200" className="flex flex-col gap-1">
               <div className="flex flex-col max-w-[90.25rem] gap-3">
                 <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
                   Why Choose LevelUp ESG Pulse?
@@ -173,8 +176,8 @@ const PulsePage = () => {
                   <div className="w-full border-[#02c2ab]  border-b-2     mb-10"></div>
                 </div>
               </div>
-
-              <div className="flex flex-wrap gap-4 justify-center">
+              <div           data-aos="fade-up"
+          data-aos-duration="1600" className="flex flex-wrap gap-4 justify-center">
                 {reasons.map((reason, index) => (
                   <a
                     href={reason.url}
@@ -216,7 +219,8 @@ const PulsePage = () => {
 
       {/* Start about section ====================================== */}
       <div className=" py-12 md:py-20 text-[#002e70] w-full flex flex-col justify-center items-center">
-        <div className="w-full flex -mt-5 justify-center ">
+        <div           data-aos="fade-up"
+          data-aos-duration="1800" className="w-full flex -mt-5 justify-center ">
           <img src={DS} alt="Hero Image" className="w-full max-w-96" />
         </div>
 
