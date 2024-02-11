@@ -1,109 +1,124 @@
-import React from "react";
-import SliderLogos from "../../Components/SliderLogos/SliderLogos";
-import Hero_Services from "../../Components/Hero_Services/Hero_Business";
+import React from 'react';
+import Hero_2 from '../../Components/Hero/Hero_2';
+import Challenge from '../../Components/Challenge/Challenge';
+import CardData from "../../Components/SolCard/CardData";
+import challengeImg from "/assets/images/instingo_challenge_page.svg";
+import Solutions from '../../Components/SolutionCompo/Solutions';
+import Benefits from '../../Components/Benefits/Benefits';
+import CTA2 from '../../Components/CTA/CTA_2';
+import CTA1 from '../../Components/CTA/CTA_1';
+import { FaRegCheckCircle, FaRegBuilding, FaBookOpen } from 'react-icons/fa';
 
-import { MdOutlineReport } from "react-icons/md";
-import { FaRegLightbulb } from "react-icons/fa";
-import { AiOutlineAudit } from "react-icons/ai"; // Example icon added for compliance
+const ServiceTempletePage = () => {
+  const heroData = {
+    title: "Secure Your Future with Our Compliance Services",
+    description: "Navigate the complexities of governance, risk management, and compliance (GRC) with LevelUp. Our team ensures your business remains resilient, insightful, and performance-driven amidst the rapidly changing regulatory landscape.",
+    CTATitle: "Learn More",
+    CTAPath: "/contact"
+  }
 
-import backgroundImage from "../../../public/assets/images/bg/1.jpg";
+  const challengeData = {
+    title: "The Compliance Challenge",
+    description: "In a landscape of ever-evolving regulations, maintaining compliance is a formidable challenge. LevelUp provides the expertise to not only navigate these waters but to transform compliance into a competitive advantage.",
+    imgSrc: challengeImg,
+  }
 
-const Why = () => {
-  // Updated reasons array tailored to Compliance services
-  const reasons = [
-    {
-      title: "Regulation Monitoring",
-      description:
-        "We help you stay ahead by monitoring regulations, ensuring your operations remain within legal frameworks and avoid penalties.",
-      icon: <MdOutlineReport />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Compliance Program Development",
-      description:
-        "Build effective compliance programs tailored to your business needs, enhancing your ability to manage and mitigate risks.",
-      icon: <FaRegLightbulb />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Compliance Reviews and Audits",
-      description:
-        "Our comprehensive compliance reviews and audits evaluate your adherence to regulations, providing assurance to leadership and regulators.",
-      icon: <AiOutlineAudit />,
-      url: "#", // Update or keep as placeholder
-    },
-  ];
+  const solutionsData = {
+    description: "LevelUp's compliance solutions empower your business through:",
+    solutions: [
+      {
+        title: "Regulation Monitoring",
+        description: "Proactively monitor regulations to ensure your operations consistently align with current legal frameworks, avoiding potential penalties."
+      },
+      {
+        title: "Compliance Program Development",
+        description: "Develop and implement bespoke compliance programs, designed to effectively manage and mitigate your specific business risks."
+      },
+      {
+        title: "Compliance Reviews and Audits",
+        description: "Conduct thorough compliance reviews and audits to evaluate your adherence to regulations, offering assurance to both leadership and regulators."
+      },
+    ]
+  }
 
-  return (
-    <div
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-      className="w-full bg-[#F9FFF5] shadow-none"
-    >
-      <section className="why max-w-7xl mx-auto pt-28">
-        <div className="px-[5%] w-full pb-20">
-          <div className="flex flex-col gap-1">
-            <div className="flex flex-col max-w-[90.25rem] gap-3">
-              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
-                Why Choosing LevelUp for Compliance?
-              </h1>
-              <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
-                We help you monitor regulations, assess compliance risk, build
-                effective compliance programs, and train staff. Our compliance
-                reviews and audits evaluate adherence and provide assurance for
-                leadership and regulators. With compliant operations, you can
-                avoid penalties and reputation damage.
-              </p>
-              <div className="w-full border-[#02c2ab] border-b-2 mb-10"></div>
-            </div>
+  const benefitsData = {
+    title: 'Benefits of Partnering with LevelUp for Compliance',
+    description: 'LevelUp\'s compliance services provide significant advantages:',
+    benefits: [
+      {
+        icon: <FaRegCheckCircle />,
+        title: "Regulatory Compliance",
+        description: "Stay ahead of regulations and avoid penalties with our proactive monitoring and risk assessment strategies.",
+      },
+      {
+        icon: <FaRegBuilding />,
+        title: "Custom Compliance Programs",
+        description: "Benefit from custom-tailored compliance programs that fit your organization's needs and enhance risk management.",
+      },
+      {
+        icon: <FaBookOpen />,
+        title: "Expert Reviews and Audits",
+        description: "Gain confidence with comprehensive reviews and audits that ensure your operations meet all regulatory requirements.",
+      },
+    ]
+  };
 
-            <div className="flex flex-wrap gap-4 justify-center">
-              {reasons.map((reason, index) => (
-                <a
-                  href={reason.url}
-                  key={index}
-                  className="reason-link max-w-[500px] border-2 border-gray-200/80 backdrop-blur-lg transition duration-500 hover:bg-gray-200 transform hover:scale-95 rounded-2xl p-6"
-                >
-                  <div className="flex gap-2">
-                    <div className="reason-item mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px]">
-                      {reason.icon}
-                    </div>
-                    <div className="grid place-items-center">
-                      <h3 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl">
-                        {reason.title}
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="min-h-[100px] grid place-items-center">
-                    <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
-                      {reason.description}
-                    </p>
-                  </div>
-                </a>
-              ))}
-            </div>
+
+  const howToData = {
+    title: "Navigating Compliance with LevelUp",
+    Sectiondescription: "Discover the steps to achieving and maintaining compliance with LevelUp's comprehensive services, designed for today's dynamic regulatory environment.",
+    reasons: [
+      {
+        title: "Stay Informed",
+        description: "Leverage our expertise in regulation monitoring to keep your operations compliant and penalty-free.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            1
           </div>
-        </div>
-      </section>
-    </div>
-  );
-};
+        ),
+        url: "#",
+      },
+      {
+        title: "Build Resilience",
+        description: "Create robust compliance programs that are as dynamic as the regulatory landscape, tailored to your business needs.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            2
+          </div>
+        ),
+        url: "#",
+      },
+      {
+        title: "Ensure Accountability",
+        description: "With our comprehensive audits and reviews, provide assurance to stakeholders that your business adheres to the highest compliance standards.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            3
+          </div>
+        ),
+        url: "#",
+      }
+    ]
+  };
 
-const Compliance = () => {
+  const CTA2Data = {
+    title: "Elevate Your Compliance Strategy with LevelUp",
+    CTATitle: "Get Started",
+    CTAPath: "/contact"
+  }
+
+
   return (
-    <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services
-        title="Future Proof Your Business with Our Internal Audit and Governance, Risk, and Compliance Services"
-        subtitle="In today's fast-changing business landscape, strong governance, risk management, and compliance practices are crucial to future-proofing your organization. Our experienced team provides internal audit and integrated GRC services to help you build resilience, gain insights, and drive performance."
-      />
-      <SliderLogos />
-      <Why />
+    <div className='w-full flex flex-col justify-center items-center'>
+      <Hero_2 {...heroData} />
+      <Challenge {...challengeData} />
+      <Solutions {...solutionsData} />
+      <CTA1 />
+      <Benefits {...benefitsData} />
+      <CardData {...howToData} />
+      <CTA2 {...CTA2Data} />
     </div>
   );
-};
+}
 
-export default Compliance;
+export default ServiceTempletePage;

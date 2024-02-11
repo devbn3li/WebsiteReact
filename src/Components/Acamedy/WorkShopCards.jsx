@@ -6,7 +6,7 @@ function WorkShopCards(props) {
         <div className="p-10">
   <div className="relative max-w-7xl mx-auto">
     <div className="max-w-lg mx-auto rounded-3xl shadow-lg overflow-hidden lg:max-w-none lg:flex">
-      <div className="flex-1 px-6 py-8 lg:p-12 lg:w-8/12 w-full  bg-gray-600">
+      <div className="flex-1 px-6 py-8 lg:p-12 lg:w-8/12 w-full  bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
         <h3 className="text-2xl font-extrabold text-white sm:text-3xl">
          {props.title}
         </h3>
@@ -61,7 +61,7 @@ className="h-full w-full scale-[150%] object-cover"
          <div className="rounded-md max-w-[200px] shadow">
             <a
               href="#"
-              className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600"
+              className="w-[200px] h-[50px] flex items-center justify-center text-[1.3rem] font-bold rounded-[2.5rem] select-none cursor-pointer text-center bg-[#03C2AB] border border-none transition-all duration-[.45s] py-2 px-5 hover:shadow-[0_4px_16px_rgba(0,0,0,.2)] hover:-translate-y-1 inline-block text-white "
             >
               Buy now
             </a>

@@ -1,115 +1,123 @@
-import React from "react";
-import SliderLogos from "../../Components/SliderLogos/SliderLogos";
-import Hero_Services from "../../Components/Hero_Services/Hero_Business";
-import { MdLeaderboard, MdOutlineAssessment } from "react-icons/md";
-import { FaTools, FaHandshake } from "react-icons/fa";
+import React from 'react';
+import Hero_2 from '../../Components/Hero/Hero_2';
+import Challenge from '../../Components/Challenge/Challenge';
+import CardData from "../../Components/SolCard/CardData";
+import challengeImg from "/assets/images/instingo_challenge_page.svg";
+import Solutions from '../../Components/SolutionCompo/Solutions';
+import Benefits from '../../Components/Benefits/Benefits';
+import CTA2 from '../../Components/CTA/CTA_2';
+import CTA1 from '../../Components/CTA/CTA_1';
+import { FaSearchDollar, FaProjectDiagram, FaRegLightbulb } from 'react-icons/fa';
 
-import backgroundImage from "../../../public/assets/images/bg/1.jpg";
+const ServiceTempletePage = () => {
+  const heroData = {
+    title: "Transform Your Finance Function with LevelUp",
+    description: "At LevelUp, we specialize in enhancing your finance operations through capability assessments, strategic program management, and the implementation of new technologies and best practices. Our approach ensures your finance functions are primed to drive insights and value.",
+    CTATitle: "Explore Transformation Services",
+    CTAPath: "/services/finance-transformation"
+  }
 
-const Why = () => {
-  // Updated reasons array tailored to Finance and Business Transformation services
-  const reasons = [
-    {
-      title: "Finance Capabilities Assessment",
-      description:
-        "We assess your finance capabilities, systems, and processes to pinpoint transformation opportunities, preparing your finance function for the future.",
-      icon: <MdOutlineAssessment />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Program Management",
-      description:
-        "Our program management ensures initiatives are successfully implemented, aligning projects with strategic business goals for maximum impact.",
-      icon: <MdLeaderboard />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Optimizing Finance Functions",
-      description:
-        "We optimize finance functions by deploying new technologies and best practices, enhancing finance performance to drive insights and value.",
-      icon: <FaTools />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Consult Our Experts",
-      description:
-        "Get in touch with our experts to discuss how our internal audit and integrated GRC services can help future proof your business.",
-      icon: <FaHandshake />,
-      url: "#", // Update or keep as placeholder
-    },
-  ];
+  const challengeData = {
+    title: "Evolving Finance for Future Success",
+    description: "In a rapidly changing economic environment, modernizing finance functions is key to staying ahead. LevelUp's services are designed to transform your finance operations, ensuring they're resilient, insightful, and strategically aligned with your business goals.",
+    imgSrc: challengeImg,
+  }
 
-  return (
-    <div
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-      className="w-full bg-[#F9FFF5] shadow-none"
-    >
-      <section className="why max-w-7xl mx-auto pt-28">
-        <div className="px-[5%] w-full pb-20">
-          <div className="flex flex-col gap-1">
-            <div className="flex flex-col max-w-[90.25rem] gap-3">
-              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
-                Finance and Business Transformation at LevelUp
-              </h1>
-              <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
-                We assess your finance capabilities, systems, and processes to
-                pinpoint transformation opportunities. Our program management
-                gets initiatives successfully implemented. We also optimize
-                finance functions by deploying new technologies and best
-                practices. The outcome is enhanced finance performance to drive
-                insights and value.
-              </p>
-              <div className="w-full border-[#02c2ab] border-b-2 mb-10"></div>
-            </div>
+  const solutionsData = {
+    description: "Discover how LevelUp propels your finance function into the future:",
+    solutions: [
+      {
+        title: "Finance Capabilities Assessment",
+        description: "We conduct thorough assessments to identify transformation opportunities, preparing your finance function for future challenges and opportunities."
+      },
+      {
+        title: "Program Management",
+        description: "Our expert program management ensures your strategic initiatives are executed flawlessly, aligning with and advancing your business goals."
+      },
+      {
+        title: "Optimizing Finance Functions",
+        description: "By deploying cutting-edge technologies and adopting best practices, we enhance your finance performance, unlocking valuable insights and value."
+      },
+    ]
+  }
 
-            <div className="flex flex-wrap gap-4 justify-center">
-              {reasons.map((reason, index) => (
-                <a
-                  href={reason.url}
-                  key={index}
-                  className="reason-link max-w-[500px] border-2 border-gray-200/80 backdrop-blur-lg transition duration-500 hover:bg-gray-200 transform hover:scale-95 rounded-2xl p-6"
-                >
-                  <div className="flex gap-2">
-                    <div className="reason-item mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px]">
-                      {reason.icon}
-                    </div>
-                    <div className="grid place-items-center">
-                      <h3 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl">
-                        {reason.title}
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="min-h-[100px] grid place-items-center">
-                    <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
-                      {reason.description}
-                    </p>
-                  </div>
-                </a>
-              ))}
-            </div>
+  const benefitsData = {
+    title: 'Benefits of Finance Transformation with LevelUp',
+    description: 'LevelUp\'s finance transformation services offer critical advantages: ',
+    benefits: [
+      {
+        icon: <FaSearchDollar />,
+        title: "Comprehensive Assessments",
+        description: "Gain deep insights into your finance capabilities and uncover opportunities for significant improvement and modernization.",
+      },
+      {
+        icon: <FaProjectDiagram />,
+        title: "Strategic Program Management",
+        description: "Benefit from meticulously managed programs that ensure the successful implementation of key initiatives, driving strategic value.",
+      },
+      {
+        icon: <FaRegLightbulb />,
+        title: "Function Optimization",
+        description: "Leverage the latest technologies and best practices to optimize your finance functions, enhancing overall performance and insight generation.",
+      },
+    ]
+  };
+
+
+  const howToData = {
+    title: "Empowering Your Finance Transformation Journey",
+    Sectiondescription: "From capability assessments to the optimization of your finance functions, LevelUp guides you through every step to ensure your finance operations are future-ready.",
+    reasons: [
+      {
+        title: "Assess and Identify",
+        description: "Begin with a comprehensive assessment to identify transformation opportunities within your finance functions.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            1
           </div>
-        </div>
-      </section>
-    </div>
-  );
-};
+        ),
+        url: "#",
+      },
+      {
+        title: "Implement with Precision",
+        description: "Leverage our program management expertise to implement initiatives that align with your strategic goals.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            2
+          </div>
+        ),
+        url: "#",
+      },
+      {
+        title: "Optimize and Enhance",
+        description: "Adopt new technologies and best practices to optimize your finance functions, driving enhanced performance and value.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            3
+          </div>
+        ),
+        url: "#",
+      }
+    ]
+  };
+  
+  const CTA2Data = {
+    title: "Start Your Finance Transformation Journey",
+    CTATitle: "Consult Our Experts",
+    CTAPath: "/contact"
+  }  
 
-const Finance = () => {
   return (
-    <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services
-        title="Future Proof Your Business with Our Internal Audit and Governance, Risk, and Compliance Services"
-        subtitle="In today's fast-changing business landscape, strong governance, risk management, and compliance practices are crucial to future-proofing your organization. Our experienced team provides internal audit and integrated GRC services to help you build resilience, gain insights, and drive performance."
-      />
-      <SliderLogos />
-      <Why />
+    <div className='w-full flex flex-col justify-center items-center'>
+      <Hero_2 {...heroData} />
+      <Challenge {...challengeData} />
+      <Solutions {...solutionsData} />
+      <CTA1 />
+      <Benefits {...benefitsData} />
+      <CardData {...howToData} />
+      <CTA2 {...CTA2Data} />
     </div>
   );
-};
+}
 
-export default Finance;
+export default ServiceTempletePage;

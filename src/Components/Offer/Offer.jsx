@@ -1,7 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PrimaryBtn from '../Buttons/PrimaryButton';
-import sectionImage from '../../../public/assets/images/business-people-shaking-hands-together.avif';
+import sectionImage from '/assets/Premasset/photo13.png';
+import sectionImage2 from '/assets/Premasset/photo14.png';
+import sectionImage3 from '/assets/Premasset/photo16.png';
+import sectionImage4 from '/assets/Premasset/photo4.png';
+import sectionImage5 from '/assets/Premasset/photo17.png';
+import sectionImage6 from '/assets/Premasset/photo18.png';
+import sectionImage7 from '/assets/Premasset/photo11.png';
 
 //A component that expands or creates our Increase and Money Icons
 const IncreaseIcon = () => (
@@ -76,12 +82,18 @@ const Offer = () => {
       
           {items.map(OfferItem)}
       
-        <div className='font-bold pt-6'>
+        <div className='font-bold pt-6 animate-bounce'>
           <PrimaryBtn path='/contact' title='Make Impact with us' classes='bg-[#e6e6e5] !text-[#002E70] border-[#e6e6e5] px-6 py-3 max-[479px]:w-full' />
         </div>
       </div>
-      <div className="relative rounded-r-3xl w-1/2 overflow-hidden max-[996px]:hidden">
-        <img src={sectionImage} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='h-full' />
+      <div className="relative animate-pulse  rounded-r-3xl w-[45%] h-[550px] overflow-hidden max-[996px]:hidden">
+        <img src={sectionImage} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='w-[200px] absolute top-10 right-5' />
+        <img src={sectionImage2} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute bottom-10 right-0 w-[200px]' />
+        <img src={sectionImage3} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute top-10 right-50 w-[200px]' />
+        <img src={sectionImage4} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute left-10 top-10 w-[200px]' />
+        <img src={sectionImage5} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute top-32 right-10 w-[300px]' />
+        <img src={sectionImage6} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute top-52 left-10 w-[300px]' />
+        <img src={sectionImage7} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute top-0 right-10 w-[300px]' />
       </div>
     </section>
     </div>

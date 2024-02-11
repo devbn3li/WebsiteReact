@@ -1,109 +1,124 @@
-import React from "react";
-import SliderLogos from "../../Components/SliderLogos/SliderLogos";
-import Hero_Services from "../../Components/Hero_Services/Hero_Business";
+import React from 'react';
+import Hero_2 from '../../Components/Hero/Hero_2';
+import Challenge from '../../Components/Challenge/Challenge';
+import CardData from "../../Components/SolCard/CardData";
+import challengeImg from "/assets/images/instingo_challenge_page.svg";
+import Solutions from '../../Components/SolutionCompo/Solutions';
+import Benefits from '../../Components/Benefits/Benefits';
+import CTA2 from '../../Components/CTA/CTA_2';
+import CTA1 from '../../Components/CTA/CTA_1';
+import { FaMapMarkedAlt, FaShieldAlt, FaBusinessTime } from 'react-icons/fa';
 
-import { MdOutlineReport } from "react-icons/md";
-import { AiOutlineSafety } from "react-icons/ai"; // Added for business continuity
-import { RiShieldCheckLine } from "react-icons/ri"; // Added for risk management
+const ServiceTempletePage = () => {
+  const heroData = {
+    title: "Elevate Your Risk Management Strategy",
+    description: "In an unpredictable business world, LevelUp offers unparalleled governance, risk management, and compliance (GRC) services to safeguard your organization. Our team empowers you with strategic insights and robust risk mitigation, ensuring business continuity and performance.",
+    CTATitle: "Discover Our Solutions",
+    CTAPath: "/services/risk-management"
+  }
 
-import backgroundImage from "../../../public/assets/images/bg/1.jpg";
+  const challengeData = {
+    title: "Confronting Uncertainty Head-On",
+    description: "As businesses navigate through volatile environments, the importance of proactive risk management and business continuity planning becomes paramount. LevelUp's dedicated approach offers the clarity and strategy needed to turn risk into opportunity.",
+    imgSrc: challengeImg,
+  }
 
-const Why = () => {
-  // Updated reasons array tailored to Risk Management and Business Continuity services
-  const reasons = [
-    {
-      title: "Risk Landscape Mapping",
-      description:
-        "Mapping your risk landscape to identify and evaluate the magnitude of risks, providing a solid foundation for mitigation strategies.",
-      icon: <RiShieldCheckLine />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Risk Mitigation Strategies",
-      description:
-        "Advising on robust mitigation strategies to manage and minimize risks, ensuring your business remains resilient in the face of challenges.",
-      icon: <MdOutlineReport />,
-      url: "#", // Update or keep as placeholder
-    },
-    {
-      title: "Business Continuity Planning",
-      description:
-        "Helping create and test business continuity plans to minimize disruptions and ensure operational resilience during unforeseen events.",
-      icon: <AiOutlineSafety />,
-      url: "#", // Update or keep as placeholder
-    },
-  ];
+  const solutionsData = {
+    description: "LevelUp's risk management solutions are designed to fortify your business:",
+    solutions: [
+      {
+        title: "Risk Landscape Mapping",
+        description: "Identify and evaluate risks with our comprehensive mapping, laying the groundwork for effective mitigation strategies."
+      },
+      {
+        title: "Risk Mitigation Strategies",
+        description: "Implement tailored risk mitigation strategies that safeguard your business, ensuring resilience against potential threats."
+      },
+      {
+        title: "Business Continuity Planning",
+        description: "Develop and test business continuity plans with our guidance, minimizing disruptions and maintaining operational integrity during crises."
+      },
+    ]
+  }
 
-  return (
-    <div
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-      className="w-full bg-[#F9FFF5] shadow-none"
-    >
-      <section className="why max-w-7xl mx-auto pt-28">
-        <div className="px-[5%] w-full pb-20">
-          <div className="flex flex-col gap-1">
-            <div className="flex flex-col max-w-[90.25rem] gap-3">
-              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
-                Why Choose LevelUp for Risk Management and Business Continuity?
-              </h1>
-              <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
-                Our risk management services involve mapping your risk
-                landscape, evaluating the magnitude of risks, and advising on
-                mitigation strategies. We also help create and test business
-                continuity plans to minimize disruptions. With rigorous risk
-                management, you are ready to tackle uncertainty.
-              </p>
-              <div className="w-full border-[#02c2ab] border-b-2 mb-10"></div>
-            </div>
+  const benefitsData = {
+    title: 'Advantages of Risk Management with LevelUp',
+    description: 'Embrace comprehensive risk management with LevelUp to safeguard and strategically advance your business:',
+    benefits: [
+      {
+        icon: <FaMapMarkedAlt />,
+        title: "Comprehensive Risk Mapping",
+        description: "Gain a clear understanding of your risk landscape, enabling proactive risk identification and assessment.",
+      },
+      {
+        icon: <FaShieldAlt />,
+        title: "Effective Risk Mitigation",
+        description: "Benefit from strategic advice on risk mitigation, enhancing your organization's resilience and stability.",
+      },
+      {
+        icon: <FaBusinessTime />,
+        title: "Robust Business Continuity",
+        description: "Ensure your business remains operational through unforeseen events with our thorough continuity planning.",
+      },
+    ]
+  };
 
-            <div className="flex flex-wrap gap-4 justify-center">
-              {reasons.map((reason, index) => (
-                <a
-                  href={reason.url}
-                  key={index}
-                  className="reason-link max-w-[500px] border-2 border-gray-200/80 backdrop-blur-lg transition duration-500 hover:bg-gray-200 transform hover:scale-95 rounded-2xl p-6"
-                >
-                  <div className="flex gap-2">
-                    <div className="reason-item mb-3 flex items-center justify-center rounded-md bg-[#02c2ab] w-[40px] h-[40px]">
-                      {reason.icon}
-                    </div>
-                    <div className="grid place-items-center">
-                      <h3 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl">
-                        {reason.title}
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="min-h-[100px] grid place-items-center">
-                    <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
-                      {reason.description}
-                    </p>
-                  </div>
-                </a>
-              ))}
-            </div>
+
+
+  const howToData = {
+    title: "Mastering Risk Management with LevelUp",
+    Sectiondescription: "From risk identification to continuity planning, LevelUp guides your business through each step to ensure comprehensive resilience and strategic foresight.",
+    reasons: [
+      {
+        title: "Identify Risks",
+        description: "Start with a detailed risk landscape mapping to understand potential vulnerabilities within your business.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            1
           </div>
-        </div>
-      </section>
-    </div>
-  );
-};
+        ),
+        url: "#",
+      },
+      {
+        title: "Mitigate Strategically",
+        description: "Implement targeted risk mitigation strategies to protect and future-proof your operations.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            2
+          </div>
+        ),
+        url: "#",
+      },
+      {
+        title: "Ensure Continuity",
+        description: "Develop and rigorously test business continuity plans to maintain operational integrity, no matter what.",
+        icon: (
+          <div className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            3
+          </div>
+        ),
+        url: "#",
+      }
+    ]
+  };
 
-const RiskManagement = () => {
+  const CTA2Data = {
+    title: "Strengthen Your Business Against Risks",
+    CTATitle: "Start Your Risk Management Journey",
+    CTAPath: "/contact"
+  }  
+
   return (
-    <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services
-        title="Future Proof Your Business with Our Internal Audit and Governance, Risk, and Compliance Services"
-        subtitle="In today's fast-changing business landscape, strong governance, risk management, and compliance practices are crucial to future-proofing your organization. Our experienced team provides internal audit and integrated GRC services to help you build resilience, gain insights, and drive performance."
-      />
-      <SliderLogos />
-      <Why />
+    <div className='w-full flex flex-col justify-center items-center'>
+      <Hero_2 {...heroData} />
+      <Challenge {...challengeData} />
+      <Solutions {...solutionsData} />
+      <CTA1 />
+      <Benefits {...benefitsData} />
+      <CardData {...howToData} />
+      <CTA2 {...CTA2Data} />
     </div>
   );
-};
+}
 
-export default RiskManagement;
+export default ServiceTempletePage;

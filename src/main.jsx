@@ -35,6 +35,9 @@ import InternalAudit from './Pages/BusinessServices/InternalAudit';
 import Compliance from './Pages/BusinessServices/Compliance';
 import RiskManagement from './Pages/BusinessServices/RiskManagement';
 import Finance from './Pages/BusinessServices/Finance';
+import DataLab from './Pages/DataLab/DataLab';
+
+import SustainabilityTracker from './Pages/ESGsoftwarePages/SustainabilityTracker';
 
 // Blog Pages Imports
 import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
@@ -43,10 +46,12 @@ import EmpoweringForSuccessBlog from './Pages/Blogs/ALL/EmpoweringForSuccessBlog
 import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenwashingBlog';
 
 // Style Sheets Imports
+// none-assets file should have it's own absolute path
 import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
-import ESGSoftware from './Pages/ESGsoftware/ESGSoftware';
+import ESGSoftware from './Pages/ESGsoftwarePages/ESGSoftware';
+import ServiceTempletePage from './Pages/ServicePages/ServiceTempletePage';
 
 // Application Component
 export function Application() {
@@ -73,6 +78,7 @@ export function Application() {
           {/* Service pages */}
           <Route path="service/esg" element={<EsgServices />} />
           <Route path="service/business" element={<BusinessServices />} />
+          <Route path="service/serviceTemplete" element={<ServiceTempletePage />} />
           <Route path="service/esg-controllership" element={<ESGControllershipPage />} />
           <Route path="service/esg-ia-program" element={<ESGIAProgramPage />} />
           <Route path="service/esg-governance" element={<ESGGovernance />} />
@@ -89,10 +95,11 @@ export function Application() {
           <Route path="service/compliance" element={<Compliance />} />
           <Route path="service/risk-management" element={<RiskManagement />} />
           <Route path="service/finance" element={<Finance />} />
+          <Route path="service/data-lab" element={<DataLab />} />
 
-          {/* /esg-software */}
-          <Route path="/esg-software" element={<ESGSoftware />} />
-
+          {/* esg-software */}
+          <Route path="esg-software" element={<ESGSoftware />} />
+          <Route path="esg-software/sustainability-tracker" element={<SustainabilityTracker />} />
 
           {/* Blog article pages */}
           <Route path="blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<EmpoweringCSuiteBlog />} />

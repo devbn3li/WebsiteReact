@@ -4,7 +4,6 @@ import Slider from "react-infinite-logo-slider";
 const logos = [
   "/assets/FLORENCE.png",
   "/assets/Harsh.png",
-  // "../../../public/assets/Jean.png",
   "/assets/Josly.png",
   "/assets/Jun.png",
   "/assets/Marko.png",

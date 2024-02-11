@@ -1,5 +1,3 @@
-import React from 'react'
-import Pricing from './../../../Pages/AcademyPage/Pricing';
 
 function index() {
   return (

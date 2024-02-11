@@ -1,6 +1,5 @@
 
 import PropTypes from "prop-types";
-import { DotLottiePlayer } from "@dotlottie/react-player";
 
 import { useEffect, useState } from "react";
 

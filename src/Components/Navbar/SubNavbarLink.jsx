@@ -12,7 +12,7 @@ const SubNavbarLink = ({ Icon, title, path, clear }) => {
 }
 
 SubNavbarLink.propTypes = {
-  Icon: PropTypes.object.isRequired, 
+  Icon: PropTypes.elementType.isRequired, 
   title: PropTypes.string.isRequired, 
   path: PropTypes.string.isRequired,
   clear: PropTypes.func.isRequired,

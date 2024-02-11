@@ -1,5 +1,9 @@
-import Logo from "../../../public/assets/images/logo.png";
+import Logo from "/assets/images/logo.png";
 import { Link } from "react-router-dom";
+import reward from "/assets/images/pngwing.com.png"
+import reward2 from "/assets/images/innovator-international-white.png"
+import reward3 from "/assets/images/home-office-logo-0F594C8106-seeklogo.com.png"
+import reward4 from "/assets/images/reward.svg"
 
 const Footer = () => {
   let date = new Date();
@@ -7,7 +11,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full flex justify-center">
-      <div className="px-[5%] bg-[#121212] rounded-t-[40px] mt-64 w-full max-w-[1400px]">
+      <div className="px-[5%] bg-gradient-to-r from-[#112b65] to-[#02c2ab] rounded-t-[40px] mt-64 w-full max-w-[1400px]">
         <div className="py-12">
           <div className=" flex gap-8 justify-between mt-4 max-[991px]:flex-col-reverse">
             <div className="max-[479px]:flex max-[479px]:flex-col max-[479px]:items-center">
@@ -24,13 +28,13 @@ const Footer = () => {
                   <p className="font-bold pl-2 ">Pages</p>
                   <Link
                     to="/about"
-                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#238f99]/60 hover:backdrop-blur-md	duration-[0.45s]"
                   >
                     About us
                   </Link>
                   <Link
                     to="/contact"
-                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#238f99]/60 hover:backdrop-blur-md	duration-[0.45s]"
                   >
                     Contact us
                   </Link>
@@ -39,13 +43,13 @@ const Footer = () => {
                   <div className="font-bold pl-2 ">Resources</div>
                   <Link
                     to="legal/privacy-policy"
-                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#238f99]/60 hover:backdrop-blur-md	duration-[0.45s]"
                   >
                     Privacy policy
                   </Link>
                   <Link
                     to="/legal/Cookies"
-                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a]	duration-[0.45s]"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#238f99]/60 hover:backdrop-blur-md	duration-[0.45s]"
                   >
                     Cookie policy
                   </Link>
@@ -56,7 +60,7 @@ const Footer = () => {
                     href="https://www.linkedin.com/company/levelupesg/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#2a2a2a] duration-[0.45s]"
+                    className="text-sm w-fit rounded-md py-1 px-2 hover:bg-[#238f99]/60 hover:backdrop-blur-md duration-[0.45s]"
                   >
                     LinkedIn
                   </a>
@@ -64,8 +68,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="lg:relative max-[991px]:h-72" id="contact">
-              <div className="lg:absolute top-0 right-0 -translate-y-1/2 flex flex-col gap-6 bg-[#02c2ab] p-10 rounded-2xl">
-                <div className="text-black text-[32px] font-bold ">
+              <div className="lg:absolute top-0 right-0 -translate-y-1/2 flex flex-col gap-6 bg-[#238f99]/60 backdrop-blur-md p-10 rounded-2xl">
+                <div className="text-white text-[32px] font-bold ">
                   Talk to an Impact Maker
                 </div>
                 <form
@@ -107,7 +111,7 @@ const Footer = () => {
                   <button
                     type="submit"
                     name="submit"
-                    className="text-white bg-black py-3 px-6 rounded-3xl hover:transform translate-y-[-4px] hover:shadow-md"
+                    className="text-white bg-[#3bc9b9] py-3 px-6 rounded-3xl hover:transform translate-y-[-4px] hover:shadow-md"
                   >
                     Book a Consultation
                   </button>
@@ -115,33 +119,33 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex max-w-2xl:flex-col md:justify-between items-center gap-3 pt-4 mt-6 lg:mt-20 border-t-[1px]">
+          <div className="flex max-md:flex-col max-w-2xl:flex-col md:justify-between items-center gap-3 pt-4 mt-6 lg:mt-20 border-t-[1px]">
             <div className="flex gap-4 place-content-center justify-center  ">
               <div className="grid place-items-center ">
                 <img
                   className="w-[50px] scale-75"
-                  src="../../../public/assets/images/pngwing.com.png"
-                  alt=""
+                  src={reward}
+                  alt="Reward logo"
                 />
               </div>
               <div className="grid place-items-center  ">
                 <img
                   className="w-[100px]"
-                  src="../../../public/assets/images/innovator-international-white.png"
+                  src={reward2}
                   alt=""
                 />
               </div>
               <div className="grid place-items-center scale-90">
                 <img
                   className="w-[100px]"
-                  src="../../../public/assets/images/home-office-logo-0F594C8106-seeklogo.com.png"
+                  src={reward3}
                   alt=""
                 />
               </div>
               <div className="grid place-items-center ">
                 <img
                   className="w-[100px]"
-                  src="../../../public/assets/images/reward.svg"
+                  src={reward4}
                   alt=""
                 />
               </div>
