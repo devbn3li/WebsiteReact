@@ -46,8 +46,8 @@ import EmpoweringForSuccessBlog from './Pages/Blogs/ALL/EmpoweringForSuccessBlog
 import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenwashingBlog';
 
 // Style Sheets Imports
-import '/assets/css/index.css';
-import '/assets/css/fonts.css';
+import '/public/assets/css/index.css';
+import '/public/assets/css/fonts.css';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
 import ESGSoftware from './Pages/ESGsoftwarePages/ESGSoftware';
 import ServiceTempletePage from './Pages/ServicePages/ServiceTempletePage';
