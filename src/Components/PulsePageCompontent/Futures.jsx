@@ -1,24 +1,19 @@
 
-import target from '/assets/Premasset/target.png';
-import Monitor from '/assets/Premasset/monitor.png';
-import target2 from '/assets/Premasset/target2.png';
-
-
 const features = [
   {
     title: 'Measure accurately',
     description: 'Measure your carbon footprint using state-of-the-art technology, allowing you to easily account for your 3 emissions scopes.',
-    imageUrl: target
+    imageUrl: '/assets/Premasset/target.png'
   },
   {
     title: 'Monitor with ease',
     description: 'Analyze your emissions, set your targets and achieve significant reductions with the help of our experts.',
-    imageUrl: Monitor
+    imageUrl: '/assets/Premasset/monitor.png'
   },
   {
     title: 'Measure physical & monitary flows',
     description: 'Monetary and physical approaches are complementary, and are essential to thoroughly assess your CO2 emissions.',
-    imageUrl: target2
+    imageUrl: '/assets/Premasset/target2.png'
   }
 ];
 
