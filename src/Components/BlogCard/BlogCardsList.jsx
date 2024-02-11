@@ -5,8 +5,15 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
 function BlogCardsList() {
-  // Array of blog objects
-  const blogs = [
+  useEffect(() => {
+    AOS.init({
+      once: true, // Whether animation should happen only once - while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
+
+ // Array of blog objects
+ const blogs = [
     {
       img: "/assets/Premasset/SVGs/3.svg",
       title:
