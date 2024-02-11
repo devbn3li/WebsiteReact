@@ -1,5 +1,7 @@
-import { TiWorld } from "react-icons/ti";
+import React, { useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa6";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const jobs = [
   {
@@ -20,7 +22,7 @@ const Jobs = () => {
       <section className="jobs max-w-7xl mx-auto">
         <div className="w-full py-28 px-4 md:px-8 lg:px-0">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center">
+            <div data-aos="fade-up" data-aos-duration="1200" className="text-center">
               <h2 className="mb-6 text-[#112b65] font-bold text-4xl md:text-5xl leading-[1.2]">
                 Job openings
               </h2>
@@ -29,7 +31,7 @@ const Jobs = () => {
                 Maker.
               </p>
             </div>
-            <div className="mt-8">
+            <div data-aos="fade-up" data-aos-duration="1800" className="mt-8">
               {/* Mapping job openings */}
               {jobs.map((job, index) => (
                 <a href={job.link} target="_blank" rel="noopener noreferrer" key={index}>
