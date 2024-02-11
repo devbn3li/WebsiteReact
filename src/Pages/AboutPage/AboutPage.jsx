@@ -14,6 +14,7 @@ import Qoute from "../../Components/AboutComponent/Call";
 import { FaTools } from "react-icons/fa";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
 import { GrTechnology } from "react-icons/gr";
+import Teams from "../../Components/Teams";
 
 
 function About() {
@@ -57,6 +58,7 @@ function About() {
       <FounderNote />
       <Leaders />
       <ContPeople />
+      <Teams/>
       <Companys />
     </div>
   );
