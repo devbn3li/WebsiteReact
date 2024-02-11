@@ -38,7 +38,7 @@ const LandingSection = () => {
             data-aos-duration="1400"
           >
             <div data-aos="flip-left" data-aos-delay="150">
-              <PrimaryButton path="/contact" classes="font-bold hover:bg-white hover:!text-[#02c2ab] border-none max-md:w-full" title="About Us" />
+              <PrimaryButton path="/about" classes="font-bold hover:bg-white hover:!text-[#02c2ab] border-none max-md:w-full" title="About Us" />
             </div>
             <div data-aos="flip-right" data-aos-delay="300">
               <PrimaryButton

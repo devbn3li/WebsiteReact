@@ -1,6 +1,5 @@
 import React from "react";
 import AboutComponent from "../../Components/AboutComponent/AboutComponent";
-import Business from "../../Components/Business";
 import Why from "../../Components/Why";
 import Founders from "../../Components/Founders/Founders";
 import Jobs from "../../Components/Jobs";
@@ -50,7 +49,6 @@ function About() {
         buttonPath="/contact"
       />
       <Benefits {...benefitsData} />
-      {/* <Business /> */}
       <PurposeComponent />
       <Why />
       <Founders />
