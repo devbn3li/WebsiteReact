@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { motion } from "framer-motion";
 import PrimaryBtn from '../Buttons/PrimaryButton';
 import sectionImage from '/assets/Premasset/photo13.png';
 import sectionImage2 from '/assets/Premasset/photo14.png';
@@ -8,6 +9,52 @@ import sectionImage4 from '/assets/Premasset/photo4.png';
 import sectionImage5 from '/assets/Premasset/photo17.png';
 import sectionImage6 from '/assets/Premasset/photo18.png';
 import sectionImage7 from '/assets/Premasset/photo11.png';
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+
+
+const simpleFloatAnimation1 = {
+  y: ["-20px", "22px"],
+  transition: {
+    repeat: Infinity,
+    repeatType: "reverse",
+    duration: 4,
+    ease: "easeInOut",
+  },
+};
+
+const simpleFloatAnimation2 = {
+  y: ["-20px", "22px"],
+  transition: {
+    repeat: Infinity,
+    repeatType: "reverse",
+    duration: 3,
+    ease: "easeInOut",
+  },
+};
+
+
+const simpleFloatAnimation3 = {
+  y: ["-20px", "22px"],
+  transition: {
+    repeat: Infinity,
+    repeatType: "reverse",
+    duration: 3.5,
+    ease: "easeInOut",
+  },
+};
+
+
+const simpleFloatAnimation4 = {
+  y: ["-20px", "22px"],
+  transition: {
+    repeat: Infinity,
+    repeatType: "reverse",
+    duration: 3.6,
+    ease: "easeInOut",
+  },
+};
+
 
 //A component that expands or creates our Increase and Money Icons
 const IncreaseIcon = () => (
@@ -24,29 +71,31 @@ const MoneyIcon = () => (
 )
 
 //Generates each item for rendering
-const OfferItem = ({icon, title, description}, index) => {
+const OfferItem = ({ icon, title, description }, index) => {
   return (
-    <div className="hover:bg-[#02c2ab]/20 border-2 border-gray-200/80 cursor-pointer hover:scale-105 duration-500 p-4 rounded-3xl" key={index}>
+    <div
+      className="hover:bg-[#02c2ab]/20 border-2 border-gray-200/80 transition-all bg-transparent cursor-pointer hover:scale-105 duration-500 p-4 rounded-3xl"
+      key={index}
+    >
       <div className="mb-3  flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-10 p-2">
         {icon}
       </div>
       <h1 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-[#002E70] md:text-2xl lg:text-3xl ">
         {title}</h1>
-        <p className="mb-8 text-lg font-normal text-[#002E70] lg:text-xl ">
+      <p className="mb-8 text-lg font-normal text-[#002E70] lg:text-xl ">
         {description}</p>
     </div>
   );
 };
 
-// Is it really important? 🤔 { Faisal }
-// OfferItem.prototype = {
-//   icon: PropTypes.object.isRequired,
-//   title: PropTypes.string.isRequired,
-//   description: PropTypes.string.isRequired,
-// }
-
 //Main Component
 const Offer = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true, // Whether animation should happen only once - while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
   /* Static data properties */
   const sectionTitle = 'ESG Impact Made Simple & Affordable';
   const sectionDescription = 'Drive real ESG impact without the hefty price tag. Our AI-powered solutions, data science, and human expertise simplify sustainability execution. We provide actionable insights to advance your goals affordably.';
@@ -66,36 +115,106 @@ const Offer = () => {
   ];
   /* Return JSX component */
   return (
-  <div className='max-w-[1400px]  py-28 mt-[4.5rem] flex justify-center flex-col'>
-   <div className=' w-full px-[5%]   mb-10'>
-      <h1 className="mb-4 text-4xl  max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
+    <div className='max-w-[1400px]  py-28 mt-[4.5rem] flex justify-center flex-col'>
+      <div className=' w-full px-[5%]   mb-10'
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      >
+        <h1
+          className="mb-4 text-4xl  max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl "
+        >
           {sectionTitle}</h1>
-          <p className=" text-lg font-normal text-[#002E70] lg:text-xl  ">
-          
-          {sectionDescription}</p>  
+        <p className=" text-lg font-normal text-[#002E70] lg:text-xl  ">
+
+          {sectionDescription}</p>
       </div>
       <div className='px-[5%]'>  <div className='w-full border-[#02c2ab]  border-b-2     mb-10'></div>
-</div>
-  <section className=' w-full  gap-12 px-[5%]  pb-8 flex justify-between'>
-     
-      <div className="w-[55%] gap-5 flex flex-col justify-center max-[996px]:w-full">
-      
+      </div>
+      <section className=' w-full  gap-12 px-[5%]  pb-8 flex justify-between'>
+
+        <div className="w-[55%] gap-5 flex flex-col justify-center max-[996px]:w-full"
+          data-aos="zoom-in-out"
+          data-aos-duration="1000"
+        >
+
           {items.map(OfferItem)}
-      
-        <div className='font-bold pt-6 animate-bounce'>
-          <PrimaryBtn path='/contact' title='Make Impact with us' classes='bg-[#e6e6e5] !text-[#002E70] hover:bg-[#002E70] hover:!text-[#e6e6e5] border-[#e6e6e5] px-6 py-3 max-[479px]:w-full' />
+
+          <div className='font-bold pt-6 animate-bounce'>
+            <PrimaryBtn path='/contact' title='Make Impact with us' classes='bg-[#e6e6e5] !text-[#002E70] hover:bg-[#002E70] hover:!text-[#e6e6e5] border-[#e6e6e5] px-6 py-3 max-[479px]:w-full' />
+          </div>
         </div>
-      </div>
-      <div className="relative animate-pulse  rounded-r-3xl w-[45%] h-[550px] overflow-hidden max-[996px]:hidden">
-        <img src={sectionImage} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='w-[200px] absolute top-10 right-5' />
-        <img src={sectionImage2} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute bottom-10 right-0 w-[200px]' />
-        <img src={sectionImage3} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute top-10 right-50 w-[200px]' />
-        <img src={sectionImage4} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute left-10 top-10 w-[200px]' />
-        <img src={sectionImage5} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute top-32 right-10 w-[300px]' />
-        <img src={sectionImage6} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute top-52 left-10 w-[300px]' />
-        <img src={sectionImage7} alt="A green field with windmill" style={{ objectFit: 'cover' }} className='absolute top-0 right-10 w-[300px]' />
-      </div>
-    </section>
+        <div className="relative  rounded-r-3xl w-[45%] h-[550px] overflow-hidden max-[996px]:hidden">
+          <motion.img
+            animate={simpleFloatAnimation1}
+            src={sectionImage}
+            alt="A green field with windmill"
+            style={{ objectFit: 'cover' }}
+            className='w-[200px] absolute top-10 right-5'
+            data-aos="zoom-in-out"
+            data-aos-duration="1000"
+          />
+          <motion.img
+            animate={simpleFloatAnimation2}
+            src={sectionImage2}
+            alt="A green field with windmill"
+            style={{ objectFit: 'cover' }}
+            className='absolute bottom-10 right-0 w-[200px]'
+
+            data-aos="zoom-in-out"
+            data-aos-duration="1000"
+          />
+          <motion.img
+            animate={simpleFloatAnimation3}
+            src={sectionImage3}
+            alt="A green field with windmill"
+            style={{ objectFit: 'cover' }}
+            className='absolute top-10 right-50 w-[200px]'
+
+            data-aos="zoom-in-out"
+            data-aos-duration="1000"
+          />
+          <motion.img
+            animate={simpleFloatAnimation4}
+            src={sectionImage4}
+            alt="A green field with windmill"
+            style={{ objectFit: 'cover' }}
+            className='absolute left-10 top-10 w-[200px]'
+
+            data-aos="zoom-in-out"
+            data-aos-duration="1000"
+          />
+          <motion.img
+            animate={simpleFloatAnimation1}
+            src={sectionImage5}
+            alt="A green field with windmill"
+            style={{ objectFit: 'cover' }}
+            className='absolute top-32 right-10 w-[300px]'
+
+            data-aos="zoom-in-out"
+            data-aos-duration="1000"
+          />
+          <motion.img
+            animate={simpleFloatAnimation2}
+            src={sectionImage6}
+            alt="A green field with windmill"
+            style={{ objectFit: 'cover' }}
+            className='absolute top-52 left-10 w-[300px]'
+
+            data-aos="zoom-in-out"
+            data-aos-duration="1000"
+          />
+          <motion.img
+            animate={simpleFloatAnimation3}
+            src={sectionImage7}
+            alt="A green field with windmill"
+            style={{ objectFit: 'cover' }}
+            className='absolute top-0 right-10 w-[300px]'
+
+            data-aos="zoom-in-out"
+            data-aos-duration="1000"
+          />
+        </div>
+      </section>
     </div>
   );
 };

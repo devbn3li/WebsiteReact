@@ -8,7 +8,22 @@ const Qoute = ({ quoteText, buttonTitle, buttonPath }) => {
         <p className="md:text-xl text-center md:font-semibold mb-4 md:mb-12">
           {quoteText}
         </p>
-        <PrimaryButton title={buttonTitle} path={buttonPath} />
+        <div
+            className="relative z-10 flex flex-wrap gap-6 justify-center max-md:flex-col-reverse"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
+            <div data-aos="flip-left" data-aos-delay="150">
+              <PrimaryButton path="/contact" classes="font-bold hover:bg-white hover:!text-[#02c2ab] border-none max-md:w-full" title="Contact Us" />
+            </div>
+            <div data-aos="flip-right" data-aos-delay="300">
+              <PrimaryButton
+                path="/contact"
+                classes="bg-[#E6E6E5] border-none !text-[#002e70] font-bold hover:bg-[#002e70] hover:!text-white max-md:w-full"
+                title="Make an Impact, Together"
+              />
+            </div>
+          </div>
       </div>
     </div>
   );

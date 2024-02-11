@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import person1 from '/assets/images/Person_1.jpg';
 import person2 from '/assets/images/Person_2.webp';
 import person3 from '/assets/images/Person_3.jpg';
 import TestimonialCard from './TestimonialCard';
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const ArrowLeft = () => (
   <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,6 +20,13 @@ const ArrowRight = () => (
 );
 
 const Testimonials = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true, // Whether animation should happen only once - while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
+
   const sectionTitle = 'Customer testimonials';
   const sectionDescription = "Our product has a positive impact on our customers' operations, which they love.";
   const testimonials = [
@@ -36,7 +45,10 @@ const Testimonials = () => {
   return (
     <div className='w-full  bg-gradient-to-r py-5 from-[#1C4987] to-[#159D9B] min-h-screen flex justify-center items-center'>
       <section className='max-w-[1400px] p-4 md:p-10 lg:p-20 text-[#B3FFD6] bg-[#121212]/20 border-2 border-gray-200/20 rounded-[20px] w-full'>
-        <div className='flex flex-col'>
+        <div className='flex flex-col'
+          data-aos-duration="1000"
+          data-aos="fade-down"
+          >
           <h1 className='mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-gray-100 capitalize'>
             {sectionTitle}
           </h1>
@@ -57,14 +69,24 @@ const Testimonials = () => {
             </p>
           </div>
           <div className='flex justify-end gap-6 mb-6'>
-            <button aria-label='Previous testimonial' className='aspect-square w-12 hover:scale-110 bg-[#02c2ab] rounded-full text-[#121212] box-border p-4 transition-all duration-[.45s]'>
+            <button aria-label='Previous testimonial' className='aspect-square w-12 hover:scale-110 bg-[#02c2ab] rounded-full text-[#121212] box-border p-4 transition-all duration-[.45s]'
+              data-aos-duration="1200"
+              data-aos="zoom-in-up"
+            >
               <ArrowLeft />
             </button>
-            <button aria-label='Next testimonial' className='aspect-square w-12 hover:scale-110 bg-[#02c2ab] rounded-full text-[#121212] box-border p-4 transition-all duration-[.45s]'>
+            <button aria-label='Next testimonial' className='aspect-square w-12 hover:scale-110 bg-[#02c2ab] rounded-full text-[#121212] box-border p-4 transition-all duration-[.45s]'
+              data-aos-duration="1200"
+              data-aos="zoom-in-up"
+            >
               <ArrowRight />
             </button>
           </div>
-          <div className='sm:max-w-[640]  lg:max-w-[1000px] xl:max-w-[1200px] mx-auto  grid grid-flow-col auto-cols-[100%] sm:auto-cols-fr gap-2 sm:gap-8 px-0  overflow-x-auto lg:overflow-x-hidden pb-4'>
+          <div
+            className='sm:max-w-[640]  lg:max-w-[1000px] xl:max-w-[1200px] mx-auto  grid grid-flow-col auto-cols-[100%] sm:auto-cols-fr gap-2 sm:gap-8 px-0  overflow-x-auto lg:overflow-x-hidden pb-4'
+            data-aos="zoom-in-up"
+            data-aos-duration="1600"
+          >
             {testimonials.map((testimonial, index) => (
               <TestimonialCard key={index} {...testimonial} />
             ))}

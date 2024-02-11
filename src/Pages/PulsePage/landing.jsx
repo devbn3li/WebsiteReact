@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import img3 from "/assets/Dash/2.png";
+import img3 from "/assets/Dash/SolutionNAV/puls.png";
 import PrimaryButton from "../../Components/Buttons/PrimaryButton";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -41,7 +41,7 @@ const LandingSection = () => {
           >
             <div data-aos="flip-left" data-aos-delay="150">
               <PrimaryButton
-                path="/contact"
+                path="/about"
                 classes="font-bold hover:bg-white hover:!text-[#02c2ab] border-none max-md:w-full"
                 title="About Us"
               />

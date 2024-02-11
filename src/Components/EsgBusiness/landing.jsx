@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import img3 from "/assets/Dash/2.png";
+import img3 from "/assets/Dash/Solutions/Biz.png";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -17,7 +17,7 @@ const LandingSection = () => {
       <div className="container pt-32 pb-20 mx-auto px-[5%] md:h-[800px] overflow-hidden bg-gradient-to-b from-[#112b65] to-[#02c2ab] rounded-b-[40px]">
         <div className="flex flex-col justify-center items-center text-center">
           <h2
-            className="text-5xl max-md:text-4xl md:w-[60%] font-extrabold text-white"
+            className="text-5xl max-md:text-4xl md:w-[50%] font-extrabold text-white"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
@@ -41,7 +41,7 @@ const LandingSection = () => {
           >
             <div data-aos="flip-left" data-aos-delay="150">
               <PrimaryButton
-                path="/contact"
+                path="/about"
                 classes="font-bold hover:bg-white hover:!text-[#02c2ab] border-none max-md:w-full"
                 title="About Us"
               />
