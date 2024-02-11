@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import largeImg from "/assets/images/handImage.webp";
-import image1 from "/assets/images/image1.jpg";
+import largeImg from "/assets/images/AI.webp";
+import image1 from "/assets/Premasset/image7.png";
 import image2 from "/assets/images/image2.webp";
-import image3 from "/assets/images/image3.avif";
-import image4 from "/assets/images/image4.avif";
+import image3 from "/assets/Premasset/photo1.png";
+import image4 from "/assets/Dash/ESG_services.svg";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 

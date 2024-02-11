@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import photo from "/assets/images/company/3.png";
+import photo from "/assets/Premasset/AI.png";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
@@ -51,7 +51,7 @@ function PurposeComponent() {
             <div
               data-aos="fade-up"
               data-aos-duration="1600"
-              className="opacity-[.2]"
+              className="opacity-[.2] w-[70%] mx-auto md:w-[40%]"
             >
               <img src={photo} alt="img" />
             </div>
