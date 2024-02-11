@@ -1,7 +1,7 @@
 import { MdCelebration, MdOutlineReport } from "react-icons/md";
 import { FaLevelUpAlt } from "react-icons/fa";
 import { PiStrategy } from "react-icons/pi";
-import backgroundImage from "../../public/assets/images/bg/1.jpg";
+import backgroundImage from "/assets/images/bg/1.jpg";
 
 const Why = () => {
   const reasons = [
