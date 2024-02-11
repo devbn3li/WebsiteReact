@@ -6,8 +6,17 @@ import { IoAnalyticsSharp } from 'react-icons/io5'; // for data visualization
 import { RiRoadMapLine } from 'react-icons/ri'; // for strategy & roadmap
 import { FaRegChartBar } from 'react-icons/fa'; // for reporting
 import { BiCertification } from 'react-icons/bi'; // for assurance
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Why = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true, // Whether animation should happen only once - while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
+
   const reasons = [
     {
       title: "ESG Pulse®",
@@ -81,10 +90,16 @@ const Why = () => {
         <div className="px-[5%] w-full pb-20">
           <div className="flex flex-col gap-1">
             <div className="flex flex-col max-w-[90.25rem] gap-3">
-              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
+              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl "
+                data-aos="fade-down"
+                data-aos-duration="1600"
+              >
                 Why Choosing LevelUp
               </h1>
-              <p className="mb-8 text-lg font-normal text-[#002E70]/80 lg:text-xl  ">
+              <p className="mb-8 text-lg font-normal text-[#002E70]/80 lg:text-xl  "
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 LevelUp empowers businesses with affordable and innovative
                 corporate sustainability solutions, expert-led advice,
                 assurance, and a knowledge and resources hub.Our AI engines,
@@ -96,7 +111,10 @@ const Why = () => {
                 <div className="w-full border-[#02c2ab]  border-b-2     mb-10"></div>
               </div>
             </div>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-4 justify-center"
+              data-aos="zoom-in-up"
+              data-aos-duration="1600"
+            >
               {reasons.map((reason, index) => (
                 <a
                   href={reason.url}
