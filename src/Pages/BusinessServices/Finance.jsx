@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero_2 from '../../Components/Hero/Hero_2';
 import Challenge from '../../Components/Challenge/Challenge';
 import CardData from "../../Components/SolCard/CardData";
 import challengeImg from "/assets/images/instingo_challenge_page.svg";
@@ -8,14 +7,9 @@ import Benefits from '../../Components/Benefits/Benefits';
 import CTA2 from '../../Components/CTA/CTA_2';
 import CTA1 from '../../Components/CTA/CTA_1';
 import { FaSearchDollar, FaProjectDiagram, FaRegLightbulb } from 'react-icons/fa';
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
 const ServiceTempletePage = () => {
-  const heroData = {
-    title: "Transform Your Finance Function with LevelUp",
-    description: "At LevelUp, we specialize in enhancing your finance operations through capability assessments, strategic program management, and the implementation of new technologies and best practices. Our approach ensures your finance functions are primed to drive insights and value.",
-    CTATitle: "Explore Transformation Services",
-    CTAPath: "/services/finance-transformation"
-  }
 
   const challengeData = {
     title: "Evolving Finance for Future Success",
@@ -109,7 +103,12 @@ const ServiceTempletePage = () => {
 
   return (
     <div className='w-full flex flex-col justify-center items-center'>
-      <Hero_2 {...heroData} />
+            <DynamicLandingHero
+        title="Transform Your Finance Function with LevelUp"
+        subtitle="At LevelUp, we specialize in enhancing your finance operations through capability assessments, strategic program management, and the implementation of new technologies and best practices. Our approach ensures your finance functions are primed to drive insights and value."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
+      />
       <Challenge {...challengeData} />
       <Solutions {...solutionsData} />
       <CTA1 />
