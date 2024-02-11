@@ -1,7 +1,11 @@
-import { MdCelebration, MdOutlineReport } from "react-icons/md";
-import { FaLevelUpAlt } from "react-icons/fa";
-import { PiStrategy } from "react-icons/pi";
 import backgroundImage from "/assets/images/bg/1.jpg";
+import { AiFillExperiment } from 'react-icons/ai'; // for innovative platforms
+import { GiCaesar } from 'react-icons/gi'; // for GHG emissions related
+import { BsGraphUp } from 'react-icons/bs'; // for data management platforms
+import { IoAnalyticsSharp } from 'react-icons/io5'; // for data visualization
+import { RiRoadMapLine } from 'react-icons/ri'; // for strategy & roadmap
+import { FaRegChartBar } from 'react-icons/fa'; // for reporting
+import { BiCertification } from 'react-icons/bi'; // for assurance
 
 const Why = () => {
   const reasons = [
@@ -9,58 +13,56 @@ const Why = () => {
       title: "ESG Pulse®",
       description:
         "An innovative AI-powered online ESG Diagnostic platform that provides a rapid assessment of your current ESG performance against most common ESG factors",
-      icon: <MdCelebration />,
+      icon: <AiFillExperiment />,
       url: "/service/esg-pulse",
     },
     {
       title: "LevelUp O2®",
       description:
         "Accurately calculate your GHG emissions with our AI-powered calculator. Gain insights to reduce your carbon footprint.",
-      icon: <FaLevelUpAlt />,
+      icon: <GiCaesar />,
       url: "/service/levelup-o2",
     },
     {
       title: "SusTrack AI®",
       description:
         "An AI-powered ESG data management platform that empowers your sustainability journey.",
-      icon: <MdOutlineReport />,
+      icon: <BsGraphUp />,
       url: "/esg-software/sustainability-tracker",
     },
     {
       title: "LevelUp Data Lab",
       description:
         "Our customized dashboards visualize complex ESG data to reveal targeted opportunities for improving your environmental, social and governance performance.",
-      icon: <FaLevelUpAlt />,
+      icon: <IoAnalyticsSharp />,
       url: "/service/data-lab",
     },
     {
       title: "ESG Readiness",
       description:
         "Our ESG Readiness Assessment can help you to assess how prepared your company is for the future of ESG.",
-      icon: <MdCelebration />,
+      icon: <AiFillExperiment />,
       url: "#",
     },
-
     {
       title: "ESG and Sustainability Strategy & Roadmap",
       description:
-        "We provide comprehensive support to enterprise risk management (ERM) functions in building their ESG capabilities. ",
-      icon: <PiStrategy />,
+        "We provide comprehensive support to enterprise risk management (ERM) functions in building their ESG capabilities.",
+      icon: <RiRoadMapLine />,
       url: "/service/esg-strategy",
     },
-
     {
       title: "ESG Reporting",
       description:
         "Navigating the complex ESG landscape demands expertise. At LevelUp, our experts adeptly handle evolving reporting standards like CSRD, ISSB, TCFD, SASBI, and GRI amid changing expectations.",
-      icon: <MdOutlineReport />,
+      icon: <FaRegChartBar />,
       url: "/service/esg-governance",
     },
     {
       title: "ESG Assurance",
       description:
         "LevelUp assures standardized ESG metrics (ISAE 3000, ISAE 3410), covering emissions, diversity, and pay gaps for consistent non-financial disclosure.",
-      icon: <FaLevelUpAlt />,
+      icon: <BiCertification />,
       url: "/service/esg-assurance",
     },
   ];
