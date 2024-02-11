@@ -19,11 +19,11 @@ const SlideComponent = (founder) => (
         </div>{" "}
       </div>
       <h1 className="text-3xl md:text-7xl font-bold ">{founder.classes}</h1>
-      <h2 className="font-bold text-2xl w-[80%] text-center">Driving the shift to affordable data-driven sustainability.</h2>
+      <h2 className="font-bold text-2xl max-md:text-xl max-md:w-full w-[80%] text-center">Driving the shift to affordable data-driven sustainability.</h2>
       <p
         className={`text-${
           founder.message.length > 170 ? "xl" : "2xl"
-        } max-lg:text-[20px] font-medium pb-32 lg:pb-0 box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-100`}
+        } max-lg:text-[20px]  font-medium max-md:pb-6 box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-100`}
       >
         {founder.message}
       </p>
@@ -79,11 +79,11 @@ function TeamTestimonial() {
               <div
                 data-aos="fade-down"
                 data-aos-duration="1600"
-                className="rounded-xl w-full h-full aspect-square flex justify-center items-center"
+                className="rounded-xl max-md:hidden w-full h-full aspect-square flex justify-center items-center"
               >
                 <motion.img
                   alt=""
-                  className={` w-4/5 overflow-hidden  object-center `}
+                  className={` w-4/5 overflow-hidden object-center `}
                   src={vision}
                   onLoad={() => setIsImageLoaded(true)}
                   animate={simpleFloatAnimation}

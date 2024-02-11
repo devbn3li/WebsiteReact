@@ -11,14 +11,14 @@ function PurposeComponent() {
   };
   return (
     <>
-      <section className="w-full my-[2rem] relative">
+      <section className=" w-full my-[2rem] relative">
         <div
           data-aos="fade-up"
           data-aos-duration="1200"
-          className="relative w-[80%] xl:w-[60%] mx-auto rounded-3xl  bg-gradient-to-r from-[#1C4987] to-[#159D9B] text-white p-[2rem] sm:p-[4rem]  "
+          className="group relative w-[80%] xl:w-[60%] mx-auto rounded-3xl  bg-gradient-to-r from-[#1C4987] to-[#159D9B] text-white p-[2rem] sm:p-[4rem]  "
         >
           <div className="hidden sm:block w-[50px] h-[50px]  bg-[#F9FFF5] absolute right-[-5px] top-[-5px]"></div>
-          <div className="hidden sm:block w-[50px] h-[50px] rounded-tr-3xl bg-[#159D9B] absolute right-[-20px] top-[-20px]"></div>
+          <div className="hidden sm:block w-[50px] h-[50px] rounded-tr-3xl bg-[#159c9b] absolute right-[-20px] duration-500 group-hover:right-0 top-[-20px] group-hover:top-0"></div>
           <h2 className="text-[2.625rem] font-[600] mb-[.5rem]">
             {" "}
             Our Purpose
@@ -62,7 +62,7 @@ function PurposeComponent() {
             <div
               data-aos="fade-up"
               data-aos-duration="1600"
-              className="opacity-[.2] w-[70%] mx-auto md:w-[40%]"
+              className="opacity-[.2] max-md:hidden w-[70%] mx-auto md:w-[40%]"
             >
               <img src={photo} alt="img" />
             </div>
