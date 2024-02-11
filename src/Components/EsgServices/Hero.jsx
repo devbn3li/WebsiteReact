@@ -1,7 +1,6 @@
-import React from "react";
 import PrimaryBtn from "../Buttons/PrimaryButton";
-import hero from "../../../public/assets/images/hero.jpg";
-import header_mask from "../../../public/assets/images/Header-Mask.svg";
+import hero from "/assets/images/hero.jpg";
+import header_mask from "/assets/images/Header-Mask.svg";
 
 // Hero component represents hero section of a webpage in the layout
 const Hero = () => {

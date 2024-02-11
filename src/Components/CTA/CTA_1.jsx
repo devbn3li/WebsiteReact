@@ -1,7 +1,6 @@
-import React from "react";
 import PropTypes from "prop-types";
 import PrimaryButton from "../Buttons/PrimaryButton";
-import CTA from "../../../public/assets/Premasset/CTA.png";
+import CTA from "/assets/Premasset/CTA.png";
 
 const CTA1 = ({ path }) => {
   return (

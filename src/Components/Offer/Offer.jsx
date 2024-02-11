@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PrimaryBtn from '../Buttons/PrimaryButton';
-import sectionImage from '../../../public/assets/Premasset/photo13.png';
-import sectionImage2 from '../../../public/assets/Premasset/photo14.png';
-import sectionImage3 from '../../../public/assets/Premasset/photo16.png';
-import sectionImage4 from '../../../public/assets/Premasset/photo4.png';
-import sectionImage5 from '../../../public/assets/Premasset/photo17.png';
-import sectionImage6 from '../../../public/assets/Premasset/photo18.png';
-import sectionImage7 from '../../../public/assets/Premasset/photo11.png';
+import sectionImage from '/assets/Premasset/photo13.png';
+import sectionImage2 from '/assets/Premasset/photo14.png';
+import sectionImage3 from '/assets/Premasset/photo16.png';
+import sectionImage4 from '/assets/Premasset/photo4.png';
+import sectionImage5 from '/assets/Premasset/photo17.png';
+import sectionImage6 from '/assets/Premasset/photo18.png';
+import sectionImage7 from '/assets/Premasset/photo11.png';
 
 //A component that expands or creates our Increase and Money Icons
 const IncreaseIcon = () => (

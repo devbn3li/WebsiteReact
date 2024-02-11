@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Lottie from "lottie-react";
 import wave from "../../Lottie/story.json";
 import { Link } from "react-router-dom";
-import vision from "../../../public/assets/Premasset/box.png";
+import vision from "/assets/Premasset/box.png";
 import { motion } from "framer-motion";
 
 const SlideComponent = (founder) => (
@@ -42,7 +42,7 @@ const SlideComponent = (founder) => (
 
 function TeamTestimonial() {
   const founder = {
-    imgSrc: "../../../public/assets/images/DrAhmedShawky.png",
+    imgSrc: "/assets/images/DrAhmedShawky.png",
     name: "Dr. Ahmed Shawky",
     jobTitle: "Founder and Manging Dictor, LevelUp Ltd.",
     message:

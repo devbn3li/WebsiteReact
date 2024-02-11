@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../../public/assets/call.png";
+import img from "/assets/call.png";
 import PrimaryButton from "../Buttons/PrimaryButton";
 
 const Call = () => {

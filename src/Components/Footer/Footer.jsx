@@ -1,9 +1,9 @@
-import Logo from "../../../public/assets/images/logo.png";
+import Logo from "/assets/images/logo.png";
 import { Link } from "react-router-dom";
-import reward from "../../../public/assets/images/pngwing.com.png"
-import reward2 from "../../../public/assets/images/innovator-international-white.png"
-import reward3 from "../../../public/assets/images/home-office-logo-0F594C8106-seeklogo.com.png"
-import reward4 from "../../../public/assets/images/reward.svg"
+import reward from "/assets/images/pngwing.com.png"
+import reward2 from "/assets/images/innovator-international-white.png"
+import reward3 from "/assets/images/home-office-logo-0F594C8106-seeklogo.com.png"
+import reward4 from "/assets/images/reward.svg"
 
 const Footer = () => {
   let date = new Date();

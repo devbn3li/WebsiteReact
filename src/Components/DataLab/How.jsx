@@ -1,4 +1,3 @@
-import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
 
 // Data for software solutions

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import photo from '../../../public/assets/images/company/3.png'
+import photo from '/assets/images/company/3.png'
 
 
 
