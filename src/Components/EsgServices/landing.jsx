@@ -21,18 +21,18 @@ const LandingSection = () => {
             data-aos="fade-down"
             data-aos-duration="1000"
           >
-            Empower Your{" "}
+            ESG Excellence{" "}
             <span className="text-[#40cdbc] ease-in duration-300 hover:text-white">
-              Sustainability{" "}
+              Unlocked
             </span>
-            Journey with LevelUp ESG Pulse
           </h2>
           <p
-            className="my-12 md:w-[80%] text-white text-xl md:text-2xl"
+            className="my-12 md:w-[70%] text-white text-xl md:text-2xl"
             data-aos="fade-up"
             data-aos-duration="1200"
           >
-            Accelerate your business growth and sustainability impact with AI-powered ESG assessments
+            Empower your ESG journey with tailored diagnostics, strategy, and
+            compliance solutions for sustainable business excellence.
           </p>
           <div
             className="relative z-10 flex flex-wrap gap-6 justify-center max-md:flex-col-reverse"

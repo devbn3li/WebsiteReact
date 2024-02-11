@@ -13,7 +13,7 @@ const LandingSection = () => {
   }, []);
 
   return (
-    <section className="my-18">
+    <section className="my-18 w-full">
       <div className="container pt-32 pb-20 mx-auto px-[5%] md:h-[800px] overflow-hidden bg-gradient-to-b from-[#112b65] to-[#02c2ab] rounded-b-[40px]">
         <div className="flex flex-col justify-center items-center text-center">
           <h2

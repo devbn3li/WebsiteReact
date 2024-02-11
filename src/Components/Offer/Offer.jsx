@@ -83,7 +83,7 @@ const Offer = () => {
           {items.map(OfferItem)}
       
         <div className='font-bold pt-6 animate-bounce'>
-          <PrimaryBtn path='/contact' title='Make Impact with us' classes='bg-[#e6e6e5] !text-[#002E70] border-[#e6e6e5] px-6 py-3 max-[479px]:w-full' />
+          <PrimaryBtn path='/contact' title='Make Impact with us' classes='bg-[#e6e6e5] !text-[#002E70] hover:bg-[#002E70] hover:!text-[#e6e6e5] border-[#e6e6e5] px-6 py-3 max-[479px]:w-full' />
         </div>
       </div>
       <div className="relative animate-pulse  rounded-r-3xl w-[45%] h-[550px] overflow-hidden max-[996px]:hidden">
