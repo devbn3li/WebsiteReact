@@ -1,5 +1,5 @@
 import React from "react";
-import AboutComponent from "../../Components/AboutComponent/AboutComponent";
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 import Why from "../../Components/Why";
 import Founders from "../../Components/Founders/Founders";
 import Jobs from "../../Components/Jobs";
@@ -42,7 +42,12 @@ function About() {
   const dynamicQuote = `Whether you're a small or medium-sized enterprise (SME) just starting your sustainability journey or an established company looking to refine your existing programme, we're here to help. Our team of global specialists will work closely with you to provide the right solution and advice that align with your business needs and goals.`;
   return (
     <div>
-      <AboutComponent />
+      <DynamicLandingHero
+        title="About Us"
+        subtitle="At LevelUp, we&apos;re a passionate team of sustainability experts and scientists with a mission to make corporate sustainability and  ESG practices achievable for businesses of all sizes. We achieve this by offering innovative and affordable ESG solutions alongside expert advice."
+        button1={{ path: "/contact", label: "Contact Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
+      />
       <Qoute
         quoteText={dynamicQuote}
         buttonTitle="Contact Us"

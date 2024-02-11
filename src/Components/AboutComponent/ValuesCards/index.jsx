@@ -7,7 +7,7 @@ const dataValue = [
     num:1,
     title: 'Doing the right thing',
     description: 'At LevelUp, we prioritize ethical behavior and integrity. ',
-    Class:"h-[180px] w-[250px] mt-[3rem] "
+    Class:"h-[180px] w-[250px] mt-[3rem] max-md:mt-[1rem] "
   },
   {
     num:2,
@@ -53,7 +53,7 @@ const index = () => {
   return (
     <div           data-aos="fade-up"
     data-aos-duration="1800" className="relative flex h-full flex-col justify-center  w-full">
-      <div className="mx-auto pt-12 h-full max-w-[1400px] p-2">
+      <div className="mx-auto pt-12 max-md:pt-4 h-full max-w-[1400px] p-2">
         <div className="grid gap-6 sm:grid-cols-2  lg:grid-cols-3">
           {dataValue.map((item, index) => (
             <Card key={index} num={item.num} title={item.title} description={item.description} Class={item.Class} />

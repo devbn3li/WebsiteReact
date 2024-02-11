@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero_2 from '../../Components/Hero/Hero_2';
 import Challenge from '../../Components/Challenge/Challenge';
 import CardData from "../../Components/SolCard/CardData";
 import challengeImg from "/assets/images/instingo_challenge_page.svg";
@@ -8,14 +7,9 @@ import Benefits from '../../Components/Benefits/Benefits';
 import CTA2 from '../../Components/CTA/CTA_2';
 import CTA1 from '../../Components/CTA/CTA_1';
 import { FaRegCheckCircle, FaRegBuilding, FaBookOpen } from 'react-icons/fa';
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
 const ServiceTempletePage = () => {
-  const heroData = {
-    title: "Secure Your Future with Our Compliance Services",
-    description: "Navigate the complexities of governance, risk management, and compliance (GRC) with LevelUp. Our team ensures your business remains resilient, insightful, and performance-driven amidst the rapidly changing regulatory landscape.",
-    CTATitle: "Learn More",
-    CTAPath: "/contact"
-  }
 
   const challengeData = {
     title: "The Compliance Challenge",
@@ -110,7 +104,12 @@ const ServiceTempletePage = () => {
 
   return (
     <div className='w-full flex flex-col justify-center items-center'>
-      <Hero_2 {...heroData} />
+            <DynamicLandingHero
+        title="Secure Your Future with Our Compliance Services"
+        subtitle="Navigate the complexities of governance, risk management, and compliance (GRC) with LevelUp. Our team ensures your business remains resilient, insightful, and performance-driven amidst the rapidly changing regulatory landscape."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
+      />
       <Challenge {...challengeData} />
       <Solutions {...solutionsData} />
       <CTA1 />

@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero_2 from '../../Components/Hero/Hero_2';
 import Challenge from '../../Components/Challenge/Challenge';
 import CardData from "../../Components/SolCard/CardData";
 import challengeImg from "/assets/images/instingo_challenge_page.svg";
@@ -8,11 +7,12 @@ import Benefits from '../../Components/Benefits/Benefits';
 import CTA2 from '../../Components/CTA/CTA_2';
 import CTA1 from '../../Components/CTA/CTA_1';
 import { FaMapMarkedAlt, FaShieldAlt, FaBusinessTime } from 'react-icons/fa';
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
 const ServiceTempletePage = () => {
   const heroData = {
-    title: "Elevate Your Risk Management Strategy",
-    description: "In an unpredictable business world, LevelUp offers unparalleled governance, risk management, and compliance (GRC) services to safeguard your organization. Our team empowers you with strategic insights and robust risk mitigation, ensuring business continuity and performance.",
+    title: "",
+    description: "",
     CTATitle: "Discover Our Solutions",
     CTAPath: "/services/risk-management"
   }
@@ -110,7 +110,12 @@ const ServiceTempletePage = () => {
 
   return (
     <div className='w-full flex flex-col justify-center items-center'>
-      <Hero_2 {...heroData} />
+            <DynamicLandingHero
+        title="Elevate Your Risk Management Strategy"
+        subtitle="In an unpredictable business world, LevelUp offers unparalleled governance, risk management, and compliance (GRC) services to safeguard your organization. Our team empowers you with strategic insights and robust risk mitigation, ensuring business continuity and performance."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
+      />
       <Challenge {...challengeData} />
       <Solutions {...solutionsData} />
       <CTA1 />

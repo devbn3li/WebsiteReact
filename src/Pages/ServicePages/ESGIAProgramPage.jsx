@@ -5,11 +5,8 @@ import Dashboard from "../../Components/Dashboard";
 import img from "/assets/Premasset/Dash.png";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
-
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 // Updated dynamic content for the ESG IA program
-const dynamicTitle = "ESG IA Program";
-const dynamicSubtitle =
-  "Our ESG IA program is designed to help internal audit functions build their ESG capabilities. We offer two main approaches: establishing an ESG IA program as a separate audit or integrating it within the existing IA function.";
 const dynamicContent = `We provide comprehensive assistance to internal audit (IA) functions in building their ESG capabilities. Our services include the development of an ESG IA strategy and methodology manual, tailored to your organisation's needs. We understand that there is no one-size-fits-all approach, and we adapt our services based on the maturity of your assurance and overall controls environment.`;
 const dynamicSolutions = [
   {
@@ -38,7 +35,12 @@ const dynamicQuote = `We understand that the main differences lie in the focus a
 const ESGIAProgramPage = () => {
   return (
     <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services title={dynamicTitle} subtitle={dynamicSubtitle} />
+            <DynamicLandingHero
+        title="ESG IA Program"
+        subtitle="Our ESG IA program is designed to help internal audit functions build their ESG capabilities. We offer two main approaches: establishing an ESG IA program as a separate audit or integrating it within the existing IA function."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
+      />
       <Dashboard
         imgSrc={img}
         content={dynamicContent}
@@ -47,13 +49,6 @@ const ESGIAProgramPage = () => {
       />
       <How
         solutions={dynamicSolutions}
-        buttonTitle="Contact Us"
-        buttonPath="/contact"
-      />
-      <Call
-        imgSrc={img}
-        title={dynamicTitle}
-        paragraph={dynamicSubtitle}
         buttonTitle="Contact Us"
         buttonPath="/contact"
       />

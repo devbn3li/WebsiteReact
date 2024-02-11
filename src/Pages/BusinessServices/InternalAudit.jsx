@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero_2 from '../../Components/Hero/Hero_2';
 import Challenge from '../../Components/Challenge/Challenge';
 import CardData from "../../Components/SolCard/CardData";
 import challengeImg from "/assets/images/instingo_challenge_page.svg";
@@ -8,14 +7,9 @@ import Benefits from '../../Components/Benefits/Benefits';
 import CTA2 from '../../Components/CTA/CTA_2';
 import CTA1 from '../../Components/CTA/CTA_1';
 import { FaTools, FaChartLine, FaUserTie } from 'react-icons/fa';
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
 const ServiceTempletePage = () => {
-  const heroData = {
-    title: "Future Proof Your Business with Our Audit Services",
-    description: "Strengthen your governance, risk management, and compliance practices with our comprehensive internal audit and GRC services. Build resilience, gain insights, and drive performance with LevelUp.",
-    CTATitle: "Explore Our Services",
-    CTAPath: "/contact"
-  }
 
   const challengeData = {
     title: "Navigating Business Challenges",
@@ -108,7 +102,12 @@ const ServiceTempletePage = () => {
 
   return (
     <div className='w-full flex flex-col justify-center items-center'>
-      <Hero_2 {...heroData} />
+            <DynamicLandingHero
+        title="Future Proof Your Business with Our Audit Services"
+        subtitle="Strengthen your governance, risk management, and compliance practices with our comprehensive internal audit and GRC services. Build resilience, gain insights, and drive performance with LevelUp."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
+      />
       <Challenge {...challengeData} />
       <Solutions {...solutionsData} />
       <CTA1 />

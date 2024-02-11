@@ -67,7 +67,7 @@ const LandingPage = () => {
       {
         icon: <LeafIcon />,
         title: "LevelUp Academy and Resources Hub",
-        description: "It empowers individuals and businesses with the latest knowledge, insights and tools to advance governance and sustainability. Apply your knowledge to drive growth with purpose and  impact.",
+        description: "Empowers individuals and businesses with latest insights to advance governance, driving growth with purpose.",
         imageUrl: img3
       },
     ]

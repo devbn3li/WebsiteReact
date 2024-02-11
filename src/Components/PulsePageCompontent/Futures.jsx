@@ -13,7 +13,7 @@ const features = [
     title: "Monitor with ease",
     description:
       "Analyze your emissions, set your targets and achieve significant reductions with the help of our experts.",
-    imageUrl: "/assets/Premasset/Monitor.png",
+    imageUrl: "/assets/Premasset/cc945934-87b8-4912-8a5d-ae46771cdaba.png",
   },
   {
     title: "Measure physical & monitary flows",

@@ -1,7 +1,6 @@
 import { FaLeaf } from "react-icons/fa";
-
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 import Cursal from "../../Components/Cursal/Cursal";
-import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 import EndServices from "../../Components/EndServices";
 
 const services = [
@@ -59,11 +58,13 @@ const services = [
   },
   {
     title: "Internal Control for ESG Reporting",
-    description: "We will assist in establishing robust internal controls, fortifying the reliability of your ESG disclosures.",
+    description:
+      "We will assist in establishing robust internal controls, fortifying the reliability of your ESG disclosures.",
     icon: <FaLeaf />,
     data: {
       title: "Internal Control for ESG Reporting",
-      discription: "We will assist in establishing robust internal controls, fortifying the reliability of your ESG disclosures. From risk management to process optimization, we guide your organization in preparing a resilient internal control framework, instilling confidence in the accuracy and integrity of your ESG reporting practices in line with the COSO Framework.",
+      discription:
+        "We will assist in establishing robust internal controls, fortifying the reliability of your ESG disclosures. From risk management to process optimization, we guide your organization in preparing a resilient internal control framework, instilling confidence in the accuracy and integrity of your ESG reporting practices in line with the COSO Framework.",
       LOTTIEanimationData:
         "http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie",
     },
@@ -73,16 +74,18 @@ const services = [
 const ESGGovernancePage = () => {
   return (
     <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services
-        title={"ESG Governance & Reporting Excellence"}
-        subtitle={
-          "At LevelUp, we understand the dynamic landscape of Environmental, Social, and Governance (ESG) can be challenging for many businesses. With the increasing volume of mandatory ESG disclosures, expanding the scope of companies required to report, and changing stakeholder expectations, navigating this landscape requires expertise and precision. We provide comprehensive support for ESG reporting, well-versed in various reporting standards including CSRD, ISSB, IFRS, SASBI, and GRI."
-        }
-        
+      <DynamicLandingHero
+        title="ESG Governance & Reporting Excellence"
+        subtitle="At LevelUp, we understand the dynamic landscape of Environmental, Social, and Governance (ESG) can be challenging for many businesses. With the increasing volume of mandatory ESG disclosures, expanding the scope of companies required to report, and changing stakeholder expectations, navigating this landscape requires expertise and precision. We provide comprehensive support for ESG reporting, well-versed in various reporting standards including CSRD, ISSB, IFRS, SASBI, and GRI."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
       />
-
       <Cursal services={services} />
-      <EndServices description={"We understand that the main differences lie in the focus and scope of the ESG reporting efforts, and we are committed to providing a service that is tailored to your organization's specific needs."}/>
+      <EndServices
+        description={
+          "We understand that the main differences lie in the focus and scope of the ESG reporting efforts, and we are committed to providing a service that is tailored to your organization's specific needs."
+        }
+      />
     </div>
   );
 };

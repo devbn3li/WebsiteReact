@@ -53,7 +53,7 @@ const LandingSection = () => {
             data-aos="zoom-in-up"
             data-aos-duration="1600"
           >
-            <img src={img3} className="absolute -z-10 w-[80%] ease-in duration-500 hover:-mt-52" alt="Landing section" />
+            <img src={img3} className="absolute opacity-35 -z-10 w-[80%] ease-in duration-500 hover:-mt-52" alt="Landing section" />
           </div>
         </div>
       </div>

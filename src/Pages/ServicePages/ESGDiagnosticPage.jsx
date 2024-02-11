@@ -1,10 +1,10 @@
 import React from "react";
-import Hero_Services from "../../Components/Hero_Services/Hero_Services";
 import Qoute from "../../Components/DataLab/Qoute";
 import Dashboard from "../../Components/Dashboard";
 import img from "/assets/Dashboard.png";
 import How from "../../Components/How";
 import Call from "../../Components/Call";
+import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
 const dynamicContent = `Our ESG Diagnostic Assessment is designed to evaluate your company's current ESG policies, initiatives, disclosures, and metrics against leading practices. We offer a strategic approach to ESG diagnostics, ensuring that your organization is prepared for the evolving ESG landscape.`;
 const dynamicQuote = `We understand the looming landscape and resonate with the prevailing needs and that the main differences lie in the focus and scope of the ESG diagnostic efforts, our dedication lies in delivering a customized service aligned with the specific needs of your business.`;
@@ -38,12 +38,11 @@ const dynamicParagraph =
 const ESGDiagnosticPage = () => {
   return (
     <div className="pt-[4.5rem] flex flex-col items-center">
-      <Hero_Services
-        title={"ESG Diagnostic Assessment"}
-        subtitle={
-          "Our innovative ESG Diagnostics provides a rapid assessment of your current ESG performance against leading practices. The online assessment benchmarks your program and identifies priority actions across governance, environment and social impact. It helps identify and prioritize actions for improvement."
-        }
-        buttonText={"Test"}
+      <DynamicLandingHero
+        title="ESG Diagnostic Assessment"
+        subtitle="Our innovative ESG Diagnostics provides a rapid assessment of your current ESG performance against leading practices. The online assessment benchmarks your program and identifies priority actions across governance, environment and social impact. It helps identify and prioritize actions for improvement."
+        button1={{ path: "/about", label: "About Us" }}
+        button2={{ path: "/contact", label: "Make an Impact, Together" }}
       />
       <Dashboard
         imgSrc={img}

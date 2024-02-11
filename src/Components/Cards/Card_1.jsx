@@ -17,7 +17,7 @@ const Card1 = ({ title, description }) => {
       data-aos="fade-up"
       data-aos-duration="1200"
     >
-      <div className="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer hover:scale-105 hover:rotate-1 rotate-0 transition-all">
+      <div className="border-l-[2px] hover:border-[2px] border-[#159D9B] bg-white shadow-md rounded-lg p-6 text-center cursor-pointer hover:scale-105 transition-all">
         <h3 className="text-xl font-semibold mb-4">{title}</h3>
         <p className="text-gray-600 mb-6">
           {description}
