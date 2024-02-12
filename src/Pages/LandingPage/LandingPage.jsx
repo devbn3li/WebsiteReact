@@ -74,62 +74,63 @@ const LandingPage = () => {
   const challengesData = [
     {
       icon: <MdDataUsage />,
-      title: "Keeping up with evolving ESG regulations",
-      description: "The regulatory environment for environmental, social, and governance (ESG) criteria is rapidly evolving, posing a challenge for businesses to keep pace. New legislation, stakeholder pressures, and market forces demand an adaptive and knowledgeable approach to maintain compliance and industry standing."
+      title: "Evolving ESG Regulations",
+      description: "Businesses must rapidly adapt to new ESG regulations to maintain compliance and uphold their market reputation."
     },
     {
       icon: <FaRegSadTear />,
-      title: "Complex and confusing landscape",
-      description: "The ESG landscape is fraught with complexities, often leaving businesses mired in confusion. With a myriad of guidelines, standards, and expectations to meet, organizations find it challenging to navigate the path to sustainable and ethical operations."
+      title: "Complex ESG Landscape",
+      description: "The multitude of ESG standards and guidelines creates a challenging environment for sustainable operations."
     },
     {
       icon: <FaHandshake />,
-      title: "Manually managing data",
-      description: "Manual data management for ESG reporting is cumbersome and prone to errors. Companies struggle with collecting, verifying, and reporting data, which can lead to inaccuracies and inefficiencies in their ESG disclosures."
+      title: "Manual Data Management",
+      description: "Manual processes for ESG data are prone to errors, leading to potential inaccuracies in sustainability reporting."
     },
     {
       icon: <FaBrain />,
-      title: "Developing strategies without expert insights",
-      description: "Formulating effective ESG strategies without expert insights can leave companies at a disadvantage. The lack of informed guidance may result in missed opportunities for sustainability and corporate responsibility advancements."
+      title: "Strategy Without Expertise",
+      description: "Lack of expert insights in strategy development can result in overlooked sustainability opportunities."
     },
     {
       icon: <FaBinoculars />,
-      title: "Sifting through irrelevant data",
-      description: "Organizations often find themselves sifting through a deluge of data, struggling to identify what is relevant for ESG reporting. This can result in wasted time and resources, detracting from strategic decision-making."
+      title: "Irrelevant Data Filtering",
+      description: "Organizations struggle to efficiently distill relevant ESG data from the plethora they encounter."
     },
     {
       icon: <AiOutlineAudit />,
-      title: "Scattered data sources for ESG disclosures, reporting and audit trail",
-      description: "With data scattered across various systems and departments, creating a cohesive ESG report with a clear audit trail is a significant challenge. Consolidating this information requires a streamlined approach to ensure accuracy and accountability."
+      title: "Scattered Data Consolidation",
+      description: "The challenge lies in unifying scattered ESG data to produce coherent and accountable reports."
     },
   ];
-
+  
   const solutionsData = [
     {
-      title: "Clear, targeted insights and tailored guidance for your industry",
-      description: "Our comprehensive solution provides clear, targeted insights and tailored guidance that align with your industry's specific ESG challenges. With our support, your company will be equipped to navigate the ESG landscape confidently and effectively."
+      title: "Industry-Specific Guidance",
+      description: "We deliver precise insights and guidance tailored to meet your industry's ESG challenges for effective navigation."
     },
     {
-      title: "Diverse team of experts provides unambiguous interpretations",
-      description: "Our diverse team of ESG experts provides unambiguous interpretations and actionable advice, helping you to make sense of complex regulations and standards. With their support, you can turn ESG challenges into opportunities for growth and leadership."
+      title: "Unambiguous Expert Advice",
+      description: "Our diverse ESG experts offer clear interpretations and advice, turning ESG complexity into growth opportunities."
     },
     {
-      title: "AI-powered solutions automate data collection and management",
-      description: "We leverage AI-powered solutions to automate the tedious process of data collection and management, ensuring that your ESG reporting is accurate, efficient, and streamlined."
+      title: "Automated ESG Management",
+      description: "Our AI-driven solutions streamline the ESG data management process for enhanced accuracy and efficiency."
     },
     {
-      title: "Expert-developed policies and templates informed by data insights and leading practices",
-      description: "Our solutions include expert-developed policies and templates that are informed by data insights and industry-leading practices, providing a solid foundation for your ESG strategy and reporting."
+      title: "Informed ESG Templates",
+      description: "Expert-developed ESG policies and templates, rooted in data and best practices, underpin your strategic reporting."
     },
     {
-      title: "Curated resources filter out misleading information",
-      description: "We offer a suite of curated resources that filter out misleading information, ensuring that you have access to accurate and reliable data for your ESG initiatives."
+      title: "Accurate ESG Resources",
+      description: "Our curated resources ensure the reliability of the ESG data you access, filtering out misinformation."
     },
     {
-      title: "Data integration solutions and audit-ready data",
-      description: "Our data integration solutions provide a centralized platform for managing your ESG data, making it easier to compile reports and maintain an audit-ready trail."
+      title: "Integrated Data Solutions",
+      description: "Our centralized data platform simplifies ESG management, supporting coherent reporting and audit preparation."
     },
   ];
+  
 
 
   const benefitsData2 = {

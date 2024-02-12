@@ -2,11 +2,19 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import ProductsCard from './ProductsCard';
 import { Suspense } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 
 const bg = "bg-[#03C2AB]";
 
 const Cursal = ({services}) => {
+  useEffect(() => {
+    AOS.init({
+      once: true, // Whether animation should happen only once - while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
 
   const [activeProductIndex, setActiveProductIndex] = useState(0);
   const handleActiveProduct = (index) => setActiveProductIndex(index);
@@ -27,9 +35,12 @@ const Cursal = ({services}) => {
 
   return (
     <section
-      className={`rounded-[40px] m-auto  my-12 mt-0 p-4  w-11/12 lg:flex-row flex flex-col gap-4 h-full max-w-[calc(1400px-10%)] text-[#fff] ${bg}`}
+      className={`rounded-[40px] m-auto  my-12 mt-0 p-4  w-11/12 lg:flex-row flex flex-col gap-4 h-full max-w-[calc(1400px-10%)] text-[#fff] bg-gradient-to-r  from-[#1C4987] to-[#159D9B]  `}
       aria-label='services Section'
-      role='region'>
+      role='region'
+      data-aos="zoom-in-out"
+      data-aos-duration="1500"
+      >
       <div className={productAreaClass}>
         {services.slice(0, productCount).map((product, index) => (
           <button
@@ -59,8 +70,9 @@ const Cursal = ({services}) => {
           </button>
         ))}
       </div>
+      
       <div
-        className='lg:w-3/5 w-full  min-h-[400px] bg-[#fff]/20 relative rounded-3xl overflow-hidden '
+        className='lg:w-3/5 w-full  min-h-[400px] h-full bg-[#fff]/20 relative rounded-3xl overflow-hidden'
         role='tabpanel'
         id={`product-tab-${activeProductIndex}`}>
           {/* { services.data } */}

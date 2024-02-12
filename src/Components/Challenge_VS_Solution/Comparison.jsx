@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Lottie from "lottie-react";
 import CompareCard from './CompareCard';
 import Cursal from '../Cursal/Cursal';
 import wave from "../../Lottie/lighting.json";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 
 const Comparison = ({ challenges, solutions }) => {
+  useEffect(() => {
+    AOS.init({
+      once: true, // Whether animation should happen only once - while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
+
 
   const services = challenges.map((challenge, index) => {
     return {
@@ -30,7 +39,11 @@ const Comparison = ({ challenges, solutions }) => {
           style={{ width: "100%", height: "100%" }}
         />
       </div>
-      <h1 className='font-bold text-6xl mb-20'> Challenges <span className="text-red-600">V</span><span className="text-blue-600">S</span> Our Solutions</h1>
+      <h1
+        className='font-bold text-6xl mb-20'
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      > Challenges and Our Solutions</h1>
       <Cursal services={services} />
     </div>
   );
