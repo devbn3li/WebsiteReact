@@ -21,8 +21,7 @@ const FounderNote = () => {
               sustainability journey.
             </p>
             <p className="mb-6">
-              Join us in shaping a future where sustainability is accessible,
-              cost-effective, and impactful.
+            Together, we can unlock green growth and make a meaningful impact.
             </p>
             {/* <p className="mb-8">
               Let&apos;s build a future where sustainability is
