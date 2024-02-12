@@ -35,7 +35,7 @@ const Cursal = ({services}) => {
 
   return (
     <section
-      className={`rounded-[40px] m-auto  my-12 mt-0 p-4  w-11/12 lg:flex-row flex flex-col gap-4 h-full max-w-[calc(1400px-10%)] text-[#fff] bg-gradient-to-r  from-[#1C4987] to-[#159D9B]  `}
+      className={`rounded-[40px] m-auto place-items-center  my-12 mt-0 p-4  w-11/12 lg:flex-row flex flex-col gap-4 h-full max-w-[calc(1400px-10%)] text-[#fff] bg-gradient-to-r  from-[#1C4987] to-[#159D9B]  `}
       aria-label='services Section'
       role='region'
       data-aos="zoom-in-out"
