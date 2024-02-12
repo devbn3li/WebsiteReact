@@ -13,7 +13,7 @@ import Jun from "/assets/Jun.png";
 
 export default function Teams() {
   const dataTeam = [
-    { id: 1, photo: deepa, userName: "Deepa Rao", Class: "overflow-hidden" },
+    // { id: 1, photo: deepa, userName: "Deepa Rao", Class: "overflow-hidden" },
     { id: 2, photo: Josly, userName: "Josly jose", Class: "" },
     { id: 3, photo: Marko, userName: "Marko Peric" },
     { id: 6, photo: Harsh, userName: "Harsh Parmar" },
@@ -21,7 +21,8 @@ export default function Teams() {
     { id: 5, photo: Jun, userName: "Jun Jie Choo" },   
   ];
   return (
-    <div className="flex justify-center w-full ">
+  <div className="flex justify-center">
+      <div className="flex justify-center   max-w-[1400px] overflow-hidden w-full ">
       <section
         data-aos="fade-up"
         data-aos-duration="1200"
@@ -31,24 +32,27 @@ export default function Teams() {
           <h2 className="text-3xl  md:text-7xl font-bold  text-[2.625rem] mb-[.5rem] text-center ">
             <mark className=" px-6  rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
               {" "}
-              Team Members
+              Our impact makers
             </mark>
           </h2>
           <div className="flex justify-center  w-full">
             <Slider
-                width="180px"
+                width="230px"
                 duration={20}
                 pauseOnHover={true}
+                blurBorders={true}
+                blurBoderColor={"#fff"}
                 data-aos="fade-up"
-                data-aos-duration="1800"
+                data-aos-duration="1600"
                 className="relative mt-[5rem] w-[90%] justify-center flex flex-wrap justify-items-center gap-2 "
             >
               {dataTeam.map(({ id, photo, userName }) => (
                 <Slider.Slide
-                  className="relative mt-[7rem] flex flex-col rounded-xl hover:scale-105 ease-linear duration-500 cursor-pointer    h-[180px] w-[180px] "
+                  className="relative mt-[7rem]  flex flex-col rounded-xl hover:scale-105 ease-linear duration-500 cursor-pointer    h-[180px] w-[180px] "
                   key={id}
                 >
-                  <div className="flex justify-center ">
+                 <div className="hover:bg-sky-200/40 duration-500 p-4 aspect-square rounded-3xl">
+                 <div className="flex justify-center  ">
                     <div className="bg-gradient-to-r from-[#1C4987] to-[#159D9B] border-[4px] border-[#77f2f0] rounded-full  w-[100px] h-[100px]  ">
                       <img
                         src={photo}
@@ -58,10 +62,11 @@ export default function Teams() {
                     </div>
                   </div>
                   <div className="relative mt-5">
-                    <h2 className=" text-center  text-[#112b65]  text-[1.125rem] font-[700]">
+                    <h2 className={`text-center text-[#112b65] text-${userName.length > 10 ? 'sm' : 'base'} font-[700]`}>
                       {userName}
                     </h2>
                   </div>
+                 </div>
                 </Slider.Slide>
               ))}
             </Slider>
@@ -69,5 +74,6 @@ export default function Teams() {
         </div>
       </section>
     </div>
+  </div>
   );
 }

@@ -57,7 +57,7 @@ function About() {
       <Values />
       <FounderNote />
       <Leaders />
-      <ContPeople />
+      {/* <ContPeople /> */}
       <Teams/>
       <Companys />
     </div>
