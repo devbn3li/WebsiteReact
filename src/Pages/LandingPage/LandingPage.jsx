@@ -5,22 +5,20 @@ import Offer from '../../Components/Offer/Offer';
 import Testimonials from '../../Components/Testimonials/Testimonials';
 import Why from '../../Components/LandingWhy';
 import FAQs from '../../Components/FAQs';
-import Challenge from '../../Components/Challenge/Challenge';
-import Solutions from '../../Components/SolutionCompo/Solutions';
 import SliderLogos from '../../Components/SliderLogos/SliderLogos';
 import img1 from '/assets/Premasset/photo7.png';
 import img3 from '/assets/Premasset/book.png';
 import img2 from '/assets/Premasset/photo12.png';
-import challengeImg from "/assets/images/instingo_challenge_page.svg";
 import LandingSection from '../../Components/landing';
-import { AiOutlineRise } from 'react-icons/ai'; // Example for growth or improvement
-import { MdOutlineEco } from 'react-icons/md'; // Example for eco-friendly or sustainability
-import { FaRegLightbulb } from 'react-icons/fa'; // Example for ideas or insights
-import { FiMonitor } from 'react-icons/fi'; // Example for technology or monitoring
-import { RiHandCoinLine } from 'react-icons/ri'; // Example for cost-effectiveness or investment
-import { BsGraphUp } from 'react-icons/bs'; // Example for analytics or improvement
-import { GiWorld } from 'react-icons/gi'; // Example for global or worldwide
-import { IoMdCheckmarkCircleOutline } from 'react-icons/io'; // Example for assurance or quality
+import { AiOutlineRise, AiOutlineAudit } from 'react-icons/ai'
+import { MdOutlineEco, MdDataUsage } from 'react-icons/md';
+import { FaRegLightbulb, FaRegSadTear, FaHandshake, FaBrain, FaBinoculars } from 'react-icons/fa';
+import { FiMonitor } from 'react-icons/fi';
+import { RiHandCoinLine } from 'react-icons/ri';
+import { BsGraphUp } from 'react-icons/bs';
+import { GiWorld } from 'react-icons/gi';
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
+import Comparison from '../../Components/Challenge_VS_Solution/Comparison';
 
 
 // Icons
@@ -73,51 +71,65 @@ const LandingPage = () => {
     ]
   };
 
+  const challengesData = [
+    {
+      icon: <MdDataUsage />,
+      title: "Keeping up with evolving ESG regulations",
+      description: "The regulatory environment for environmental, social, and governance (ESG) criteria is rapidly evolving, posing a challenge for businesses to keep pace. New legislation, stakeholder pressures, and market forces demand an adaptive and knowledgeable approach to maintain compliance and industry standing."
+    },
+    {
+      icon: <FaRegSadTear />,
+      title: "Complex and confusing landscape",
+      description: "The ESG landscape is fraught with complexities, often leaving businesses mired in confusion. With a myriad of guidelines, standards, and expectations to meet, organizations find it challenging to navigate the path to sustainable and ethical operations."
+    },
+    {
+      icon: <FaHandshake />,
+      title: "Manually managing data",
+      description: "Manual data management for ESG reporting is cumbersome and prone to errors. Companies struggle with collecting, verifying, and reporting data, which can lead to inaccuracies and inefficiencies in their ESG disclosures."
+    },
+    {
+      icon: <FaBrain />,
+      title: "Developing strategies without expert insights",
+      description: "Formulating effective ESG strategies without expert insights can leave companies at a disadvantage. The lack of informed guidance may result in missed opportunities for sustainability and corporate responsibility advancements."
+    },
+    {
+      icon: <FaBinoculars />,
+      title: "Sifting through irrelevant data",
+      description: "Organizations often find themselves sifting through a deluge of data, struggling to identify what is relevant for ESG reporting. This can result in wasted time and resources, detracting from strategic decision-making."
+    },
+    {
+      icon: <AiOutlineAudit />,
+      title: "Scattered data sources for ESG disclosures, reporting and audit trail",
+      description: "With data scattered across various systems and departments, creating a cohesive ESG report with a clear audit trail is a significant challenge. Consolidating this information requires a streamlined approach to ensure accuracy and accountability."
+    },
+  ];
 
-  const challengeData = {
-    title: "Navigating ESG Complexity",
-    description: "The ESG landscape is evolving rapidly, presenting a complex challenge of compliance, data management, and strategy without expert insights. LevelUp helps you navigate this with ease.",
-    imgSrc: challengeImg,
-  };
-
-
-  const solutionsData = {
-    description: "LevelUp Solutions are engineered to address the complex challenges of ESG regulation compliance and data management. Our suite of tools and expert guidance ensures your business stays ahead in the sustainability curve.",
-    solutions: [
-      {
-        title: "Tailored Guidance",
-        description: "Clear, targeted insights and tailored guidance for your industry to navigate the ESG landscape."
-      },
-      {
-        title: "Expertise Network",
-        description: "A diverse team of experts provides unambiguous interpretations and recommendations."
-      },
-      {
-        title: "AI Automation",
-        description: "AI-powered solutions to automate data collection and management, enhancing efficiency."
-      },
-      {
-        title: "Policy Templates",
-        description: "Expert-developed policies and templates informed by data insights and leading practices."
-      },
-      {
-        title: "Misinformation Filter",
-        description: "Curated resources to filter out misleading information, ensuring you receive only verified data."
-      },
-      {
-        title: "Cost-effective Tools",
-        description: "Affordable tools and platforms to implement your ESG strategies without financial strain."
-      },
-      {
-        title: "Learning and Support",
-        description: "Access to industry-leading experts through workshops, resources, and support."
-      },
-      {
-        title: "Data Readiness",
-        description: "Data integration solutions and audit-ready data to streamline your reporting processes."
-      }
-    ]
-  };
+  const solutionsData = [
+    {
+      title: "Clear, targeted insights and tailored guidance for your industry",
+      description: "Our comprehensive solution provides clear, targeted insights and tailored guidance that align with your industry's specific ESG challenges. With our support, your company will be equipped to navigate the ESG landscape confidently and effectively."
+    },
+    {
+      title: "Diverse team of experts provides unambiguous interpretations",
+      description: "Our diverse team of ESG experts provides unambiguous interpretations and actionable advice, helping you to make sense of complex regulations and standards. With their support, you can turn ESG challenges into opportunities for growth and leadership."
+    },
+    {
+      title: "AI-powered solutions automate data collection and management",
+      description: "We leverage AI-powered solutions to automate the tedious process of data collection and management, ensuring that your ESG reporting is accurate, efficient, and streamlined."
+    },
+    {
+      title: "Expert-developed policies and templates informed by data insights and leading practices",
+      description: "Our solutions include expert-developed policies and templates that are informed by data insights and industry-leading practices, providing a solid foundation for your ESG strategy and reporting."
+    },
+    {
+      title: "Curated resources filter out misleading information",
+      description: "We offer a suite of curated resources that filter out misleading information, ensuring that you have access to accurate and reliable data for your ESG initiatives."
+    },
+    {
+      title: "Data integration solutions and audit-ready data",
+      description: "Our data integration solutions provide a centralized platform for managing your ESG data, making it easier to compile reports and maintain an audit-ready trail."
+    },
+  ];
 
 
   const benefitsData2 = {
@@ -174,8 +186,7 @@ const LandingPage = () => {
       <Offer />
       <Testimonials />
       <Why />
-      <Challenge {...challengeData} />
-      <Solutions {...solutionsData} />
+      <Comparison challenges={challengesData} solutions={solutionsData} />
       <Benefits {...benefitsData2} />
       <BlogCardsList />
       <SliderLogos />
