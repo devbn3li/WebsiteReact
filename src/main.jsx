@@ -69,7 +69,7 @@ export function Application() {
           <Route path="solution" element={<SolutionPage />} />
           <Route path="solution/level-up-o2" element={<LevelUpO2 />} />
           <Route path="waiting-list" element={<WaitingListPage />} />
-          <Route path="blogs-discovery" element={<BlogsDiscoveryPage />} />
+          <Route path="academy/blogs" element={<BlogsDiscoveryPage />} />
 
           {/* Legal pages */}
           <Route path="legal/privacy-policy" element={<PrivacyPolicyPage />} />
@@ -107,7 +107,7 @@ export function Application() {
           <Route path="blog/all/Understanding-Greenwashing-and-Its-Consequences" element={<EmpoweringForSuccessBlog />} />
           <Route path="blog/all/Understanding-Green-washing" element={<UnderstandingGreenwashingBlog />} />
           
-          <Route path="blog/:id" element={<BlogTemplete />} />
+          <Route path="academy/blogs/:id" element={<BlogTemplete />} />
           
 
           {/* Waiting Page */}

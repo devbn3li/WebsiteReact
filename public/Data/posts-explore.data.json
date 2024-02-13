@@ -1,0 +1,23 @@
+[
+  {
+    "_id": 0,
+    "title": "Exploring the Future of Technology",
+    "image": "/assets/images/business-people-shaking-hands-together.avif",
+    "keywords": ["Technology", "Innovation"],
+    "summary": "A deep dive into how emerging technologies are shaping our future."
+  },
+  {
+    "_id": 1,
+    "title": "The Impact of Globalization on Local Cultures",
+    "image": "/assets/images/business-people-shaking-hands-together.avif",
+    "keywords": ["Globalization", "Culture"],
+    "summary": "An analysis of globalization's effects on the preservation of local cultural identities."
+  },
+  {
+    "_id": 2,
+    "title": "Sustainable Living: Practices for a Healthier Planet",
+    "image": "/assets/images/business-people-shaking-hands-together.avif",
+    "keywords": ["Sustainability", "Environment"],
+    "summary": "Practical tips for living in a way that supports environmental sustainability."
+  }
+]

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Quote from '../../Components/Blog/Quote'
 import H1 from '../../Components/Blog/H1'
 import H2 from '../../Components/Blog/H2'
-import { useParams } from 'react-router-dom';
+import { useParams, redirect } from 'react-router-dom';
+
 // import { Link } from 'react-router-dom';
 // import BlogCard from '../../Components/BlogCard/BlogCard';
 
@@ -37,20 +38,21 @@ const generateBody = (content) => {
 const BlogTemplete = () => {
   const { id } = useParams();
   const [post, setPost] = useState(null);
+  // const navigate = useNavigate();
+
+  
 
   useEffect(() => {
-    // Assume you have a json file `posts.json` in the public folder
-    // or an API endpoint that returns your posts
-    fetch(`/src/data/posts.data.json`)
+    fetch(process.env.BLOG_API_URL)
       .then((response) => response.json())
       .then((data) => {
-        // Find the post with the matching id
-        const matchingPost = data.find((p) => p['id'].toString() === id);
-        setPost(matchingPost);
-      });
+        if (process.env.BLOG_API_URL == '/Data/posts.data.json') {
+          const matchingPost = data.find((p) => p['id'].toString() === id);
+          setPost(matchingPost);
+        }else setPost(data);
+      }).catch((error) => console.error(error));
   }, [id]);
 
-  console.log(post);
 
   if (!post) return <div>Loading...</div>;
 
