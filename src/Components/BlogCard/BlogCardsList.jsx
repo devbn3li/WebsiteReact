@@ -35,8 +35,7 @@ function BlogCardsList() {
     "keywords": ["Sustainability", "Environment"],
     "summary": "Practical tips for living in a way that supports environmental sustainability."
   }
-]
-fi;
+];
 
   return (
     <div
