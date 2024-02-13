@@ -3,22 +3,46 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import Slider from "react-infinite-logo-slider";
 
-import deepa from "/assets/images/deepa-.png";
+import Elvis from "/assets/Teams/Elvis.png";
 import Josly from "/assets/Josly.png";
 import Marko from "/assets/Marko.png";
 import Harsh from "/assets/Harsh.png";
 import FLORENCE from "/assets/FLORENCE.png";
 import Jun from "/assets/Jun.png";
-
+import seyit from "/assets/Teams/Seyit-copy.png";
+import Luana from "/assets/Teams/luana.png";
+import Kavya from "/assets/Teams/Kavya.png";
+import Maribel from "/assets/Teams/marible.png";
+import nonie from "/assets/Teams/nonie.png";
+import faysal from "/assets/Teams/Faysal.png";
+import sondos from "/assets/Teams/sondos.png";
+import salah from "/assets/Teams/Salah.png";
+import muhamed from "/assets/Teams/Muhamed.png";
+import maria from "/assets/Teams/Maria.png";
+import eleonora from "/assets/Teams/eleonora.png";
+import Fabio from "/assets/Teams/Fabio.png";
 
 export default function Teams() {
   const dataTeam = [
-    // { id: 1, photo: deepa, userName: "Deepa Rao", Class: "overflow-hidden" },
-    { id: 2, photo: Josly, userName: "Josly jose", Class: "" },
-    { id: 3, photo: Marko, userName: "Marko Peric" },
-    { id: 6, photo: Harsh, userName: "Harsh Parmar" },
-    { id: 4, photo: FLORENCE, userName: "Florence Adedigba" },
-    { id: 5, photo: Jun, userName: "Jun Jie Choo" },   
+    { id: 1, photo: Elvis, userName: "Elvis Shoko",  },
+    { id: 2, photo: Josly, userName: "Josly jose", Class: "pt-1" },
+    { id: 3, photo: seyit, userName: "seyit A. Colak" }, 
+    { id: 4, photo: Marko, userName: "Marko Peric" },
+    { id: 5, photo: Harsh, userName: "Harsh Parmar" },
+    { id: 6, photo: Luana, userName: "Luana Izzicupo",Class: "" },
+    { id: 7, photo: FLORENCE, userName: "Florence Adedigba" },
+    { id: 8, photo: Kavya, userName: "Kavya Gowda" },
+    { id: 9, photo: Maribel, userName: "Maribel Esparcia" },
+    { id: 10, photo: Jun, userName: "Jun Jie Choo" },   
+    { id: 11, photo: nonie, userName: "Nonie Mohd" },   
+    { id: 12, photo: faysal, userName: "Faysal Ebrahim" },   
+    { id: 13, photo: sondos, userName: "Sondos Mohamed" },   
+    { id: 14, photo: salah, userName: "Salaheldin Mohamed" },   
+    { id: 15, photo: muhamed, userName: "Muhammed Ali" },   
+    { id: 16, photo: maria, userName: "Maria Siddiqui" },   
+    { id: 17, photo: eleonora, userName: "Eleonora Tossini" },   
+    { id: 18, photo: Fabio, userName: "Dr. Fabio Puntillo" },   
+     
   ];
   return (
   <div className="flex justify-center">
@@ -46,7 +70,7 @@ export default function Teams() {
                 data-aos-duration="1600"
                 className="relative mt-[5rem] w-[90%] justify-center flex flex-wrap justify-items-center gap-2 "
             >
-              {dataTeam.map(({ id, photo, userName }) => (
+              {dataTeam.map(({ id, photo, userName,Class }) => (
                 <Slider.Slide
                   className="relative mt-[7rem]  flex flex-col rounded-xl hover:scale-105 ease-linear duration-500 cursor-pointer    h-[180px] w-[180px] "
                   key={id}
@@ -57,7 +81,7 @@ export default function Teams() {
                       <img
                         src={photo}
                         alt={userName}
-                        className="h-full w-full rounded-full object-cover "
+                        className={`${Class} h-full w-full rounded-full object-cover `}
                       />
                     </div>
                   </div>
