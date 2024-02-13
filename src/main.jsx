@@ -1,6 +1,6 @@
 // React and Router Imports
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route  } from "react-router-dom";
 
 // Layout and Page Component Imports
 import Layout from './Pages/Layout';
@@ -44,12 +44,12 @@ import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
 import EmpoweringCSuiteBlog from './Pages/Blogs/ALL/EmpoweringCSuiteBlog';
 import EmpoweringForSuccessBlog from './Pages/Blogs/ALL/EmpoweringForSuccessBlog';
 import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenwashingBlog';
+import BlogTemplete from './Pages/Blogs/blogTemplete';
 
 // Style Sheets Imports
 // none-assets file should have it's own absolute path
 import '/public/assets/css/index.css';
 import '/public/assets/css/fonts.css';
-import BlogTemplete from './Pages/Blogs/blogTemplete';
 import ESGSoftware from './Pages/ESGsoftwarePages/ESGSoftware';
 import ServiceTempletePage from './Pages/ServicePages/ServiceTempletePage';
 
@@ -69,7 +69,7 @@ export function Application() {
           <Route path="solution" element={<SolutionPage />} />
           <Route path="solution/level-up-o2" element={<LevelUpO2 />} />
           <Route path="waiting-list" element={<WaitingListPage />} />
-          <Route path="blogs-discovery" element={<BlogsDiscoveryPage />} />
+          <Route path="academy/blogs" element={<BlogsDiscoveryPage />} />
 
           {/* Legal pages */}
           <Route path="legal/privacy-policy" element={<PrivacyPolicyPage />} />
@@ -106,7 +106,9 @@ export function Application() {
           <Route path="blog/all/Empowering-for-Sustainable-Success" element={<EmpoweringForSuccessBlog />} />
           <Route path="blog/all/Understanding-Greenwashing-and-Its-Consequences" element={<EmpoweringForSuccessBlog />} />
           <Route path="blog/all/Understanding-Green-washing" element={<UnderstandingGreenwashingBlog />} />
-          <Route path="blog/BlogTemplete" element={<BlogTemplete />} />
+          
+          <Route path="academy/blogs/:id" element={<BlogTemplete />} />
+          
 
           {/* Waiting Page */}
           <Route path="waiting-page" element={<WaitingListPage />} />
