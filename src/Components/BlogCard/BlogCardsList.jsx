@@ -14,38 +14,28 @@ function BlogCardsList() {
 
  // Array of blog objects
  const blogs = [
-    {
-      img: "/assets/Premasset/SVGs/3.svg",
-      title:
-        "Empowering for Sustainable Success: Navigating Complexities and Driving Unified Action",
-      description:
-        " In today's business landscape, the responsibility of driving sustainability initiatives often falls on the CEO. However, the success of these endeavors heavily relies on the collective efforts of the leadership team. To avoid any accusations of Greenwashing, it's crucial for the business leaders to actively participate in monitoring and tracking sustainability goals within their respective teams.",
-      author: "Deppa",
-      date: "February 1, 2024",
-      readingTime: "5 min read",
-      link: "/blog/all/Empowering-for-Sustainable-Success",
-    },
-    {
-      img: "/assets/Premasset/AI2.png",
-      title: "Empowering the C Suite for Sustainable Success",
-      description:
-        " In today's business landscape, the responsibility of driving sustainability initiatives often falls on the CEO. However, the success of these endeavors heavily relies on the collective efforts of the C-suite team. To avoid any accusations of Greenwashing, it's crucial for the C-suite leaders to actively participate in monitoring and tracking sustainability goals within their respective teams.",
-      author: "Deppa",
-      date: "February 5, 2024",
-      readingTime: "8 min read",
-      link: "/blog/all/Empowering-the-C-Suite-for-Sustainable-Success",
-    },
-    {
-      img: "/assets/Premasset/target.png",
-      title: "Understanding Greenwashing and Its Consequences",
-      description:
-        " The term greenwashing is used across various industries, but its meaning lacks consistency, creating challenges for companies seeking clarity. For this reason, the three European Supervisory Authorities (ESAs) have offered guidance in their recent call for evidence on greenwashing. This guidance outlines core characteristics associated with greenwashing, such as misleading communications occurring intentionally or unintentionally at the entity, product, or service level. Trying to combine the various definitions proposed, greenwashing can be interpreted as: the act of providing a deceptive or inaccurate portrayal of the environmental advantages of a product, service, or organization.",
-      author: "Deppa",
-      date: "February 2, 2024",
-      readingTime: "10 min read",
-      link: "/blog/all/Understanding-Greenwashing-and-Its-Consequences",
-    },
-  ];
+  {
+    "_id": 0,
+    "title": "Exploring the Future of Technology",
+    "image": "/assets/images/business-people-shaking-hands-together.avif",
+    "keywords": ["Technology", "Innovation"],
+    "summary": "A deep dive into how emerging technologies are shaping our future."
+  },
+  {
+    "_id": 1,
+    "title": "The Impact of Globalization on Local Cultures",
+    "image": "/assets/images/business-people-shaking-hands-together.avif",
+    "keywords": ["Globalization", "Culture"],
+    "summary": "An analysis of globalization's effects on the preservation of local cultural identities."
+  },
+  {
+    "_id": 2,
+    "title": "Sustainable Living: Practices for a Healthier Planet",
+    "image": "/assets/images/business-people-shaking-hands-together.avif",
+    "keywords": ["Sustainability", "Environment"],
+    "summary": "Practical tips for living in a way that supports environmental sustainability."
+  }
+];
 
   return (
     <div
