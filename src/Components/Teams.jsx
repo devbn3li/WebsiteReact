@@ -24,7 +24,7 @@ import Fabio from "/assets/Teams/Fabio.png";
 
 export default function Teams() {
   const dataTeam = [
-    { id: 1, photo: Elvis, userName: "Elvis Shoko" },
+    // { id: 1, photo: Elvis, userName: "Elvis Shoko" },
     { id: 2, photo: Josly, userName: "Josly jose", Class: "pt-1" },
     { id: 3, photo: seyit, userName: "seyit A. Colak" },
     { id: 4, photo: Marko, userName: "Marko Peric" },
@@ -32,9 +32,9 @@ export default function Teams() {
     { id: 6, photo: Luana, userName: "Luana Izzicupo", Class: "" },
     { id: 7, photo: FLORENCE, userName: "Florence Adedigba" },
     { id: 8, photo: Kavya, userName: "Kavya Gowda" },
-    { id: 9, photo: Maribel, userName: "Maribel Esparcia" },
+    // { id: 9, photo: Maribel, userName: "Maribel Esparcia" },
     { id: 10, photo: Jun, userName: "Jun Jie Choo" },
-    { id: 11, photo: nonie, userName: "Nonie Mohd" },
+    // { id: 11, photo: nonie, userName: "Nonie Mohd" },
     { id: 12, photo: faysal, userName: "Faysal Ebrahim" },
     { id: 13, photo: sondos, userName: "Sondos Mohamed" },
     { id: 14, photo: salah, userName: "Salaheldin Mohamed" },
