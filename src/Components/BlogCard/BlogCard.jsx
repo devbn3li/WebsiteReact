@@ -16,7 +16,7 @@ const BlogCard = ({ blog }) => {
 
   return (
     <Link
-      to={`${_id}`}
+      to={`academy/blogs/${_id}`}
       className="block"
       data-aos="zoom-in-out"
       data-aos-duration="1600"
