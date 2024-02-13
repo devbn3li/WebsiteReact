@@ -55,7 +55,7 @@ export default function Teams() {
             <h2 className="text-3xl md:text-7xl font-bold  text-[2.625rem] max-sm:text-4xl mb-[.5rem] text-center ">
               <mark className="px-6 max-sm:px-4 rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
                 {" "}
-                Our impact makers
+                Our Impact Makers
               </mark>
             </h2>
             <div className="flex justify-center  w-full">
