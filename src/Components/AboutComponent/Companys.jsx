@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 
 // Import your logos here
 import logo1 from "/assets/images/company/logo-blab.svg";
@@ -18,12 +17,12 @@ import logo12 from "/assets/images/company/mckinsey.svg";
 import logo13 from "/assets/images/company/hp.svg";
 import logo14 from "/assets/images/company/HM-Treasury.svg";
 import logo15 from "/assets/images/company/mit.svg";
-import logo16 from "/assets/images/company/iema-1.svg";
+import logo16 from "/assets/images/company/BlackRock.png";
 import logo17 from "/assets/images/company/KPMG_logo.svg";
 import logo18 from "/assets/images/company/sustainalytics.svg";
 import logo19 from "/assets/images/company/deloitte.svg";
 import logo20 from "/assets/images/company/Salesforce.com_logo.svg";
-import logo21 from "/assets/images/company/pvh.svg";
+import logo21 from "/assets/images/company/msci-logo.png";
 import logo22 from "/assets/images/company/qatar-foundation-logo-vector.svg";
 import logo23 from "/assets/images/company/Cognizant_logo_2022.svg";
 import logo24 from "/assets/images/company/Protiviti_logo.svg";

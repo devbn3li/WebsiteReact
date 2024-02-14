@@ -102,9 +102,7 @@ const Why = () => {
               >
                 LevelUp empowers businesses with affordable and innovative
                 corporate sustainability solutions, expert-led advice,
-                assurance, and a knowledge and resources hub.Our AI engines,
-                service offerings, and data science simplify ESG execution,
-                driving measurable impact.
+                assurance, and a knowledge and resources hub.Our AI-powered solutions and scientific approach simplify ESG execution while delivering measurable impact.
               </p>
               <div className="">
                 {" "}
