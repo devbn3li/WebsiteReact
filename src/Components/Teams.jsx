@@ -31,7 +31,7 @@ export default function Teams() {
     { id: 5, photo: Harsh, userName: "Harsh Parmar" },
     { id: 6, photo: Luana, userName: "Luana Izzicupo", Class: "" },
     { id: 7, photo: FLORENCE, userName: "Florence Adedigba" },
-    { id: 8, photo: Kavya, userName: "Kavya Gowda" },
+    // { id: 8, photo: Kavya, userName: "Kavya Gowda" },
     // { id: 9, photo: Maribel, userName: "Maribel Esparcia" },
     { id: 10, photo: Jun, userName: "Jun Jie Choo" },
     // { id: 11, photo: nonie, userName: "Nonie Mohd" },
