@@ -55,10 +55,10 @@ const Why = () => {
         <div className="px-[5%] w-full pb-20">
           <div className="flex flex-col gap-1">
             <div className="flex flex-col max-w-[90.25rem] gap-3">
-              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900  ">
                 Unlocking the Potential of ESG Data
               </h1>
-              <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl  ">
+              <p className="mb-8 text-lg font-normal text-gray-500   ">
                 At LevelUp Data Lab, we&apos;re more than just data scientists;
                 we&apos;re pioneers on a mission to redefine sustainability
                 through the lens of advanced data analytics. In a world where
@@ -89,13 +89,13 @@ const Why = () => {
                     </div>
                     <div className="grid place-items-center">
                       {" "}
-                      <h3 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 md:text-2xl lg:text-3xl ">
+                      <h3 className="mb-4 text-xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-gray-900 ">
                         {reason.title}
                       </h3>
                     </div>
                   </div>
                   <div className="min-h-[100px] grid place-items-center">
-                    <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl ">
+                    <p className="mb-8 text-lg font-normal text-gray-500 ">
                       {reason.description}
                     </p>
                   </div>

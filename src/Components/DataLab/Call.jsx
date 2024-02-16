@@ -25,12 +25,12 @@ const Call = () => {
           <h1
             data-aos="fade-up"
             data-aos-duration="1400"
-            className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002e70] md:text-3xl lg:text-6xl "
+            className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-[1px] leading-[1.5] text-[#002e70] "
           >
             Ready to Shape Your Thriving Future with Data-Driven Sustainability?
           </h1>
           <p
-            className="mb-8 text-lg font-normal text-[#002e70] lg:text-xl"
+            className="mb-8 text-lg font-normal text-[#002e70] leading-[2]"
             data-aos="fade-up"
             data-aos-duration="1600"
           >

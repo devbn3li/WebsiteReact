@@ -35,11 +35,11 @@ const Hero_servise = ({ title, subtitle }) => {
           </svg>
         </a>
         <div className="w-full flex justify-center">
-          <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
+          <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70] ">
             {title}
           </h1>
         </div>
-        <p className="mb-8 text-lg font-normal !text-[#002E70] lg:text-xl sm:px-16 xl:px-48 ">
+        <p className="mb-8 text-lg font-normal !text-[#002E70]  sm:px-16 xl:px-48 ">
           {subtitle}
         </p>
       </div>

@@ -26,7 +26,7 @@ const BlogCard = ({ blog }) => {
           <img src={image} alt={title} className="min-w-full min-h-full object-cover aspect-square transition-transform duration-300 ease-in-out transform group-hover:bg-gradient-to-l bg-gradient-to-r from-[#112b65] to-[#02c2ab] scale-100 group-hover:scale-95 rounded-2xl" />
         </div>
         <div className="p-4">
-          <h2 className="text-2xl font-bold mb-2">{title.slice(0, 52) + (title.length > 52 && '...')}</h2>
+          <h2 className="text-xl font-bold mb-2">{title.slice(0, 52) + (title.length > 52 && '...')}</h2>
           <p className="text-[#002E70]/80 mb-4">{summary.slice(0, 90) + (summary.length > 52 && '...')}</p>
           {/* <div className="text-sm text-[#002E70]">
             <p>reading time {readingTime}</p>
