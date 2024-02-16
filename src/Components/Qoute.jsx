@@ -13,7 +13,7 @@ const FounderNote = () => {
       <div className="relative max-md:p-4 p-6 max-md:pr-0 rounded-lg max-w-6xl w-full ">
         {/* Text content container with custom borders */}
         <div className="relative before:content-['“'] before:absolute before:text-6xl max-sm:w-[63%] before:text-[#4dcfb7] before:-top-8 md:before:-top-6 before:left-0 md:before:left-0 md:border-r-[6px] md:border-b-[6px] md:border-[#4dcfb7] max-md:pr-0">
-          <blockquote className="lg:text-3xl md:max-w-[60%] font-bold text-[#002E70]">
+          <blockquote className="text-xl md:max-w-[60%] font-bold text-[#002E70]">
             <p className="mb-6 ">
               At LevelUp, we aim to make sustainability achievable for
               organisations of all sizes. Our impact makers and AI-powered
@@ -28,7 +28,7 @@ const FounderNote = () => {
               simple, affordable and impactful.
             </p> */}
             <div className="md:mb-8">
-              <cite className="not-italic md:text-2xl font-extrabold text-gray-600 ">
+              <cite className="not-italic md:text-xl font-extrabold text-gray-600 ">
                 Dr. Ahmed Shawky
                 <br />
                 <span className="opacity-60 text-gray-600 text-xl">

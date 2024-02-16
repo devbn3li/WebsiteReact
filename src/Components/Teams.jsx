@@ -52,8 +52,8 @@ export default function Teams() {
           className="relative w-full  max-w-[1400px] py-[4rem] sm:px-[3rem] "
         >
           <div className="w-[100%] xl:w-[80%] mx-auto flex flex-col gap-6">
-            <h2 className="text-3xl md:text-7xl font-bold  text-[2.625rem] max-sm:text-4xl mb-[.5rem] text-center ">
-              <mark className="px-6 max-sm:px-4 rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
+            <h2 className="text-4xl  font-bold  text-[2.625rem] max-sm:text-4xl mb-[.5rem] text-center ">
+              <mark className="px-6 py-2 max-sm:px-4 rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
                 {" "}
                 Our Impact Makers
               </mark>

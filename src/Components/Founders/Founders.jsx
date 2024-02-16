@@ -18,12 +18,12 @@ const SlideComponent = (founder) => (
           />
         </div>{" "}
       </div>
-      <h1 className="text-3xl md:text-7xl font-bold ">{founder.classes}</h1>
-      <h2 className="font-bold text-2xl max-md:text-xl max-md:w-full w-[80%] text-center">Driving the shift to affordable data-driven sustainability.</h2>
+      <h1 className="text-4xl  font-bold ">{founder.classes}</h1>
+      <h2 className="font-bold text-lg  max-md:w-full w-[80%] text-center leading-[1.5]">Driving the shift to affordable data-driven sustainability.</h2>
       <p
         className={`text-${
-          founder.message.length > 170 ? "xl" : "2xl"
-        } max-lg:text-[20px]  font-medium max-md:pb-6 box-border  max-lg:px-28 max-md:px-0 leading-[150%] text-gray-100`}
+          founder.message.length > 170 ? "md" : "lg"
+        } max-lg:text-[20px]  font-medium max-md:pb-6 box-border  max-lg:px-28 max-md:px-0 leading-[1.5] text-gray-100`}
       >
         {founder.message}
       </p>
@@ -139,14 +139,14 @@ function Founders() {
                   fontWeight: "bold",
                   lineHeight: "120%",
                 }}
-                className="text-3xl text-[#112b65] md:text-7xl font-bold leading-120%"
+                className="text-4xl text-[#112b65]  font-bold leading-120%"
               >
                 Our Mission
               </h1>
-              <h2 className="font-bold text-3xl text-[#112b65]">
+              <h2 className="font-bold text-2xl text-[#112b65]">
                 Empowering SMEs to thrive sustainably.
               </h2>
-              <p className="text-[24px] text-[#112b65] max-lg:text-[20px] font-medium  box-border  max-lg:px-28 max-md:px-0 leading-[150%] ">
+              <p className="text-lg text-[#112b65]  font-medium  box-border  max-lg:px-28 max-md:px-0 leading-[150%] ">
                 We provide affordable, AI-powered solutions and strategic
                 guidance, enabling small and medium enterprises (SMEs ) to
                 optimize operations, reduce costs, and build resilience - all
