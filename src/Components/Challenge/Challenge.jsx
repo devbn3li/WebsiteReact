@@ -26,13 +26,13 @@ const Challenge = ({ title, description, imgSrc }) => {
       <div className="container mx-auto px-[5%] flex flex-col lg:flex-row items-center justify-center">
         <div className="lg:w-[60%] lg:pr-10 mb-10 lg:mb-0">
           <h1
-            className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-gray-900  "
+            className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-[1.2] text-gray-900  "
             data-aos="fade-down"
             data-aos-duration="1600"
           >
             {title}
           </h1>
-          <p className="mb-8 text-lg font-normal text-gray-500 "
+          <p className="mb-8 text-lg font-normal leading-[2] text-gray-500 "
             data-aos="fade-down"
             data-aos-duration="1000"
           >
