@@ -49,7 +49,7 @@ const Testimonials = () => {
           data-aos-duration="1000"
           data-aos="fade-down"
           >
-          <h1 className='mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-gray-100 capitalize'>
+          <h1 className='mb-4 text-4xl  font-extrabold tracking-tight leading-none text-gray-100 capitalize'>
             {sectionTitle}
           </h1>
           <div className='flex flex-col overflow-hidden md:flex-row md:items-start gap-6 md:max-w-[39.25rem] md:max-[679px]:max-w-[360px]'>
@@ -64,7 +64,7 @@ const Testimonials = () => {
                 <img src={person3} alt='Person3' className='min-h-full min-w-full object-cover' />
               </div>
             </div>
-            <p className='mb-8 text-lg md:text-xl font-normal text-[#B3FFD6]'>
+            <p className='mb-8 text-lg font-normal text-[#B3FFD6]'>
               {sectionDescription}
             </p>
           </div>

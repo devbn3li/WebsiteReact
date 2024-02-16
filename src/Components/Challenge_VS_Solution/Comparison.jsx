@@ -40,7 +40,7 @@ const Comparison = ({ challenges, solutions }) => {
         />
       </div>
       <h1
-        className='font-bold text-6xl mb-20'
+        className='font-bold text-4xl mb-20'
         data-aos="fade-down"
         data-aos-duration="1000"
       > Challenges and Our Solutions</h1>
