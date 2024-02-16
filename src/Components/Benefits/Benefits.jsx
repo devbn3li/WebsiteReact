@@ -23,9 +23,9 @@ const Benefits = ({ title, description, benefits }) => {
       data-aos="fade-down"
       data-aos-duration="1600"
       >
-        <h1 className="mb-4 text-4xl max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
+        <h1 className="mb-4 text-4xl max-w-[1200px] leading-[1.2] font-extrabold tracking-[.5px]  text-[#002E70]  ">
           {title}</h1>
-        <p className="mb-8 text-lg font-normal text-[#002E70]/80 lg:text-xl  ">
+        <p className="mb-8 text-lg font-normal text-[#002E70]/80  leading-[1.5] ">
           {description}</p>
       </div>
       <div className="grid grid-cols-3 max-[991px]:flex max-[991px]:flex-col gap-6">
