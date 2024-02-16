@@ -130,8 +130,6 @@ const LandingPage = () => {
       description: "Our centralized data platform simplifies ESG management, supporting coherent reporting and audit preparation."
     },
   ];
-  
-
 
   const benefitsData2 = {
     title: 'Benefits and Impact of LevelUp',

@@ -41,9 +41,6 @@ import SustainabilityTracker from './Pages/ESGsoftwarePages/SustainabilityTracke
 
 // Blog Pages Imports
 import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
-import EmpoweringCSuiteBlog from './Pages/Blogs/ALL/EmpoweringCSuiteBlog';
-import EmpoweringForSuccessBlog from './Pages/Blogs/ALL/EmpoweringForSuccessBlog';
-import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenwashingBlog';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
 
 // Style Sheets Imports

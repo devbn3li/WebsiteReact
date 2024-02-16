@@ -6,7 +6,7 @@ import Yammy from '../Components/Hero_Services/Popup/yammy';
 function Layout() {
   return (
     <div className="flex justify-center flex-col max-w-screen overflow-hidden bg-[#F9FFF5]">    
-      {/* <Navbar /> */}
+      <Navbar />
       <Outlet />
       <Footer />
       <Yammy />

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const H2 = ({ text }) => {
   return (
-    <h1 className='text-[40xpx] font-bold'>
+    <h1 className='text-[40px] font-bold'>
       {text}
     </h1>
   );

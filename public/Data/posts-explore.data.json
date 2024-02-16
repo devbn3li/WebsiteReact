@@ -16,7 +16,7 @@
   },
   {
     "_id": 1,
-    "image": "/assets/images/blogs/blog_2.jpg",
+    "image": "/assets/images/blogs/blog_2.png",
     "title": "Empowering business leaders for Sustainable Success: Navigating Complexities and Driving Unified Action",
     "keywords": [
       "sustainability",
@@ -30,7 +30,7 @@
   },
   {
     "_id": 2,
-    "image": "/assets/images/blogs/blog_3.jpg",
+    "image": "/assets/images/blogs/blog_3.png",
     "title": "Understanding Greenwashing and Its Consequences",
     "keywords": [
       "greenwashing",

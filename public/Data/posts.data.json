@@ -15,7 +15,11 @@
     "content": [
       {
         "type": "h1",
-        "data": "In an era marked by rising social consciousness and heightened environmental concerns, the acronym \"ESG\" has risen to prominence, captivating the attention of investors, businesses, and consumers alike. But what exactly does ESG stand for, and how do these factors interweave to impact our world? This below aims to demystify the essential elements of ESG, offering a foundation for further exploration and informed decision-making."
+        "data": "The Rise of ESG: Unraveling Its Impact in Today's World"
+      },
+      {
+        "type": "p",
+        "data": "In an era where social consciousness and environmental concerns are at their peak, the term 'ESG' has become a buzzword across the globe, attracting investors, businesses, and consumers. But what lies behind the acronym, and how do its components—Environmental, Social, and Governance—interlace to influence our planet and society? This discussion seeks to clarify the core aspects of ESG, providing a base for deeper understanding and thoughtful decision-making. As we delve into the significance of each element, we uncover how they collectively shape corporate practices and investment strategies, steering us towards a more sustainable and equitable future"
       },
       {
         "type": "h2",
@@ -57,7 +61,7 @@
   },
   {
     "_id": 1,
-    "image": "/assets/images/blogs/blog_2.jpg",
+    "image": "/assets/images/blogs/blog_2.png",
     "title": "Empowering business leaders for Sustainable Success: Navigating Complexities and Driving Unified Action",
     "keywords": [
       "sustainability",
@@ -104,7 +108,7 @@
   },
   {
     "_id": 2,
-    "image": "/assets/images/blogs/blog_3.jpg",
+    "image": "/assets/images/blogs/blog_3.png",
     "title": "Understanding Greenwashing and Its Consequences",
     "keywords": [
       "greenwashing",

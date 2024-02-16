@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import BlogCard from "./BlogCard";
 import SolutionHero from "../Hero_Services/Hero_Services";
 import AOS from "aos";
@@ -11,7 +11,7 @@ function BlogCardsList() {
       once: true, // Whether animation should happen only once - while scrolling down
       mirror: false, // Whether elements should animate out while scrolling past them
     });
-    
+
     fetch(process.env.BLOG_EXPLORE_API_URL)
       .then((response) => response.json())
       .then((data) => {
@@ -19,7 +19,8 @@ function BlogCardsList() {
       })
   }, []);
 
-  return (
+  
+  if (blogs) return (
     <div
       data-aos="fade-up"
       data-aos-duration="1200"
