@@ -19,14 +19,14 @@ const Call = () => {
           <h1
             data-aos="fade-up"
             data-aos-duration="1600"
-            className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002e70] md:text-5xl lg:text-6xl "
+            className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002e70] "
           >
             Ready to calculate your carbon emissions?
           </h1>
           <p
             data-aos="fade-up"
             data-aos-duration="1900"
-            className="mb-8 text-lg font-normal text-[#002e70] lg:text-xl"
+            className="mb-8 text-lg font-normal text-[#002e70] "
           >
             Reach out to learn how your business can measure and reduce
             greenhouse gas emissions with the software developed by LevelUp.
