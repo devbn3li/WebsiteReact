@@ -61,7 +61,6 @@ const BlogTemplete = () => {
       <div className='flex flex-col max-w-[80rem] mt-24 gap-[40px] pb-[40px]'>
         <H1 text={post.title} />
         <div>
-          <h4 className='font-bold'>LevelUp</h4>
         </div>
       </div>
       <div className='overflow-hidden rounded-xl mb-24 aspect-[2/1] '>
