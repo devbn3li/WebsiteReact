@@ -102,11 +102,6 @@ export function Application() {
           <Route path="esg-software/sustainability-tracker" element={<SustainabilityTracker />} />
 
           {/* Blog article pages */}
-          <Route path="blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<EmpoweringCSuiteBlog />} />
-          <Route path="blog/all/Empowering-for-Sustainable-Success" element={<EmpoweringForSuccessBlog />} />
-          <Route path="blog/all/Understanding-Greenwashing-and-Its-Consequences" element={<EmpoweringForSuccessBlog />} />
-          <Route path="blog/all/Understanding-Green-washing" element={<UnderstandingGreenwashingBlog />} />
-          
           <Route path="academy/blogs/:id" element={<BlogTemplete />} />
           
 

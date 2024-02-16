@@ -47,7 +47,7 @@ const BlogTemplete = () => {
       .then((response) => response.json())
       .then((data) => {
         if (process.env.BLOG_API_URL == '/Data/posts.data.json') {
-          const matchingPost = data.find((p) => p['id'].toString() === id);
+          const matchingPost = data.find((p) => p['_id'].toString() === id);
           setPost(matchingPost);
         }else setPost(data);
       }).catch((error) => console.error(error));

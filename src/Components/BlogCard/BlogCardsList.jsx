@@ -5,37 +5,19 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
 function BlogCardsList() {
+  const [blogs, setBlogs] = useState(null);
   useEffect(() => {
     AOS.init({
       once: true, // Whether animation should happen only once - while scrolling down
       mirror: false, // Whether elements should animate out while scrolling past them
     });
+    
+    fetch(process.env.BLOG_EXPLORE_API_URL)
+      .then((response) => response.json())
+      .then((data) => {
+        setBlogs(Array.from(data));
+      })
   }, []);
-
- // Array of blog objects
- const blogs = [
-  {
-    "_id": 0,
-    "title": "Exploring the Future of Technology",
-    "image": "/assets/images/business-people-shaking-hands-together.avif",
-    "keywords": ["Technology", "Innovation"],
-    "summary": "A deep dive into how emerging technologies are shaping our future."
-  },
-  {
-    "_id": 1,
-    "title": "The Impact of Globalization on Local Cultures",
-    "image": "/assets/images/business-people-shaking-hands-together.avif",
-    "keywords": ["Globalization", "Culture"],
-    "summary": "An analysis of globalization's effects on the preservation of local cultural identities."
-  },
-  {
-    "_id": 2,
-    "title": "Sustainable Living: Practices for a Healthier Planet",
-    "image": "/assets/images/business-people-shaking-hands-together.avif",
-    "keywords": ["Sustainability", "Environment"],
-    "summary": "Practical tips for living in a way that supports environmental sustainability."
-  }
-];
 
   return (
     <div
