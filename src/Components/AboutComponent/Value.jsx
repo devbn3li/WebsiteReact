@@ -20,7 +20,7 @@ function Values() {
               We believe in
             </p>
           </div>
-          <h2 className="text-3xl  md:text-7xl font-bold  text-[2.625rem] mb-[.5rem] text-center ">
+          <h2 className="text-4xl   font-bold   mb-[.5rem] text-center ">
             <mark className=" px-6  rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
               {" "}
               Our Values{" "}

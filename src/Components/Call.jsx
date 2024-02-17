@@ -15,10 +15,10 @@ const Call = ({ imgSrc, title, paragraph, buttonTitle, buttonPath }) => {
           <img src={imgSrc} alt="Hero Image" className="w-full" />
         </div>
         <div className="lg:w-1/2 lg:pr-10 mb-10 lg:mb-0">
-          <h1 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002e70] md:text-3xl lg:text-6xl ">
+          <h1 className="mb-4 leading-[1.5] text-4xl max-w-[1000px] font-extrabold tracking-tight  text-[#002e70] ">
             {title}
           </h1>
-          <p className="mb-8 text-lg font-normal text-[#002e70] lg:text-xl">
+          <p className="mb-8 text-lg font-normal  leading-[2] text-[#002e70] ">
             {paragraph}
           </p>
           <PrimaryButton title={buttonTitle} path={buttonPath} />

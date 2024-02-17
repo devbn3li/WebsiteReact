@@ -47,7 +47,7 @@ const How = () => {
           <h2
             data-aos="fade-up"
             data-aos-duration="1400"
-            className="mb-4 text-4xl text-center max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl "
+            className="mb-4 text-4xl text-center max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70]"
           >
             Here&apos;s how we can help
           </h2>
@@ -62,7 +62,7 @@ const How = () => {
                   key={index}
                   className="p-6 bg-[#02c2ab]/30 hover:bg-[#02c2ab] duration-500 cursor-pointer hover:scale-105 rounded-lg shadow-md"
                 >
-                  <h3 className="text-2xl !font-extrabold text-[#112b65]  mb-4">
+                  <h3 className="text-xl !font-extrabold text-[#112b65]  mb-4">
                     {solution.name}
                   </h3>
                   <p className="text-lg text-[#112b65]">

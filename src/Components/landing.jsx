@@ -17,7 +17,7 @@ const LandingSection = () => {
       <div className="container pt-32 pb-20 mx-auto px-[5%] md:h-[800px] overflow-hidden bg-gradient-to-b from-[#112b65] to-[#02c2ab] rounded-b-[40px]">
         <div className="flex flex-col justify-center items-center text-center">
           <h2
-            className="text-6xl max-md:text-4xl md:w-[50%] font-extrabold text-white"
+            className="text-4xl md:w-[50%] font-extrabold text-white leading-[1.5]"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
@@ -25,7 +25,7 @@ const LandingSection = () => {
             & Planet.
           </h2>
           <p
-            className="my-12 md:w-[70%] text-white text-xl md:text-2xl"
+            className="my-12 md:w-[70%] text-white text-xl  leading-[1.7]"
             data-aos="fade-up"
             data-aos-duration="1200"
           >
