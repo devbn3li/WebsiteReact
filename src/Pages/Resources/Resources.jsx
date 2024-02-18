@@ -5,6 +5,7 @@ import BlogView from "../../Components/Resources/BlogView";
 import TopRecommendedBlog from "../../Components/Resources/TopRecommendedBlog";
 import LatestNews from "../../Components/Resources/LatestNews";
 import CallToAction from "../../Components/Resources/CallToAction";
+import CTAWithDrAhmed from "../../Components/Resources/CTAWithDrAhmed";
 
 function Resources() {
   return (
@@ -20,6 +21,7 @@ function Resources() {
       <PopularResources/>
       <LatestNews/>
       <BlogView/>
+      <CTAWithDrAhmed/>
     </div>
   );
 }

@@ -10,9 +10,9 @@ const LatestNews = () => {
 
   // Static news items
   const newsItems = [
-    { id: 1, title: "News Item 1", summary: "Summary of news item 1", link: "/news/1" },
-    { id: 2, title: "News Item 2", summary: "Summary of news item 2", link: "/news/2" },
-    { id: 3, title: "News Item 3", summary: "Summary of news item 3", link: "/news/3" },
+    { id: 1, title: "News Item 1", summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", link: "/news/1" },
+    { id: 2, title: "News Item 2", summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", link: "/news/2" },
+    { id: 3, title: "News Item 3", summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", link: "/news/3" },
   ];
 
   return (
