@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import PopularResources from "../../Components/Resources/PopularResources";
 
 function Resources() {
   return (
@@ -10,6 +11,7 @@ function Resources() {
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Make an Impact, Together" }}
       />
+      <PopularResources/>
     </div>
   );
 }

@@ -102,6 +102,7 @@ export function Application() {
 
           {/* Blog article pages */}
           <Route path="academy/blogs/:id" element={<BlogTemplete />} />
+          <Route path="academy/resources" element={<Resources />} />
           
 
           {/* Waiting Page */}
