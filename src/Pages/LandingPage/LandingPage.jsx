@@ -189,7 +189,7 @@ const LandingPage = () => {
       <Benefits {...benefitsData2} />
       <BlogCardsList />
       <SliderLogos />
-      <FAQs />
+      <FAQs />  
     </div>
   );
 }
