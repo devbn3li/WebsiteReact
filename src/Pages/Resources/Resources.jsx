@@ -1,6 +1,7 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
 import PopularResources from "../../Components/Resources/PopularResources";
+import BlogView from "../../Components/Resources/BlogView";
 
 function Resources() {
   return (
@@ -12,6 +13,7 @@ function Resources() {
         button2={{ path: "/contact", label: "Make an Impact, Together" }}
       />
       <PopularResources/>
+      <BlogView/>
     </div>
   );
 }

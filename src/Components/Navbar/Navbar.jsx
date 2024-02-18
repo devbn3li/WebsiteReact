@@ -131,7 +131,7 @@ const academyTabData = {
   },
   tab2: {
     title: "Resources Hub",
-    path: "/academy/resources-hub",
+    path: "/academy/resources",
     description:
       "Explore our Resources Hub tiers for exclusive content and materials.",
     Icon: <motion.img src={resources_img} alt="icon" animate={simpleFloatAnimation} />,
