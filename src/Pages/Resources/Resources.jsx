@@ -2,6 +2,9 @@ import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
 import PopularResources from "../../Components/Resources/PopularResources";
 import BlogView from "../../Components/Resources/BlogView";
+import TopRecommendedBlog from "../../Components/Resources/TopRecommendedBlog";
+import LatestNews from "../../Components/Resources/LatestNews";
+import CallToAction from "../../Components/Resources/CallToAction";
 
 function Resources() {
   return (
@@ -12,7 +15,10 @@ function Resources() {
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Make an Impact, Together" }}
       />
+      <TopRecommendedBlog/>
+      <CallToAction/>
       <PopularResources/>
+      <LatestNews/>
       <BlogView/>
     </div>
   );
