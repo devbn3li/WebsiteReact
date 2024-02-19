@@ -56,7 +56,7 @@ const servicesTabData = {
     Icon: <motion.img src={ESG_img} alt="icon" animate={simpleFloatAnimation} />,
   },
   tab2: {
-    title: "Business Services",
+    title: "Business Assurance",
     path: "service/business",
     description:
       "Business Services offer essential support for enhancing company efficiency and growth.",

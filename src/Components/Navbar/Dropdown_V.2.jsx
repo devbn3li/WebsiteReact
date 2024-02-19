@@ -63,7 +63,7 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
               {/* Start Other Tabs Two */}
               <div className={`flex flex-col max-[1130px]:w-[90%] max-[1130px]:mx-[5%] max-[1130px]:my-5 gap-4`}>
                 <div className={`text-black font-bold text-lg min-[1130px]:hidden ${!data.moreLinks2.title && 'hidden'}`}> - {data.moreLinks2.title}: </div>
-                <div className="flex flex-col">
+                <div className="flex max-[1130px]:flex-col flex-wrap">
                   {data.moreLinks2.links.map((link, index) => (
                     <SubNavbarLink title={link.title} Icon={link.Icon} path={link.path} clear={closeTab} key={index} className='!justify-start'/>
                   ))}
