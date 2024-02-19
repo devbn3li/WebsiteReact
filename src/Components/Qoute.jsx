@@ -8,7 +8,7 @@ const FounderNote = () => {
     <div
       data-aos="fade-up"
       data-aos-duration="1200"
-      className="relative flex justify-center items-center my-12 px-4 md:px-[5%] max-md:pr-0"
+      className="relative flex justify-center items-center my-12 mt-32 md:mt-52 px-4 md:px-[5%] max-md:pr-0"
     >
       <div className="relative max-md:p-4 p-6 max-md:pr-0 rounded-lg max-w-6xl w-full ">
         {/* Text content container with custom borders */}
