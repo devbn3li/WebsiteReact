@@ -45,6 +45,9 @@ import ESGGovern from './Pages/Levelling-Up/ESGGovernance';
 import ESGDataManagement from './Pages/Levelling-Up/ESGDataManagement';
 import GreenwashingControls from './Pages/Levelling-Up/GreenwashingControls';
 import ESGDisclosuresReporting from './Pages/Levelling-Up/ESGDisclosuresReporting';
+import ESGThirdPartyAssurance from './Pages/Assurance/ESGThirdPartyAssurance';
+import ESGSupplyChainAudits from './Pages/Assurance/ESGSupplyChainAudits';
+import CorporateSustainabilityDueDiligence from './Pages/Assurance/CorporateSustainabilityDueDiligence';
 
 import SustainabilityTracker from './Pages/ESGsoftwarePages/SustainabilityTracker';
 
@@ -107,12 +110,15 @@ export function Application() {
           
           <Route path="services/esg-program-establishment" element={<ESGProgramEstablishment />} />
           <Route path="services/esg-gap-assessment-&-benchmarking" element={<ESGGAp />} />
-          <Route path="Mservices/materiality-assessment-&-strategy" element={<MaterialityAssessmentStrategy />} />
+          <Route path="services/materiality-assessment-&-strategy" element={<MaterialityAssessmentStrategy />} />
           <Route path="services/sustainability-managed-services" element={<ESGSustainabilityManagedServices />} />
           <Route path="services/esg-governance" element={<ESGGovern />} />
           <Route path="services/esg-data-management" element={<ESGDataManagement />} />  
           <Route path="services/greenwashing-controls" element={<GreenwashingControls />} />
           <Route path="services/esg-disclosures-&-reporting" element={<ESGDisclosuresReporting />} />
+          <Route path="services/esg-third-party-assurance" element={<ESGThirdPartyAssurance />} />
+          <Route path="services/esg-supply-chain-audits" element={<ESGSupplyChainAudits />} />
+          <Route path="services/corporate-sustainability-due-diligence" element={<CorporateSustainabilityDueDiligence />} />
 
           {/* esg-software */}
           <Route path="esg-software" element={<ESGSoftware />} />
