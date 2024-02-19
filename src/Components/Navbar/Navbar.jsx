@@ -21,14 +21,20 @@ import {
   IoShieldCheckmark,
   IoAnalytics,
   IoTrendingUp,
-  IoWarning
+  IoWarning,
+  IoSearchSharp, 
+  IoShieldCheckmarkOutline, 
+  IoWarningOutline
 } from 'react-icons/io5';
+
 import {
   FaChalkboardTeacher,
   FaBlog,
   FaBroadcastTower,
 } from "react-icons/fa";
 import Dropdown_V2 from "./Dropdown_V.2";
+import business_img from '/assets/Dash/Solutions/Biz.png';
+import ESG_img from '/assets/Dash/Solutions/ESG.png';
 
 const simpleFloatAnimation = {
   y: ["-20px", "22px"],
@@ -42,6 +48,20 @@ const simpleFloatAnimation = {
 
 const servicesTabData = {
   title: "Services",
+  tab1: {
+    title: "ESG Services",
+    path: "service/esg",
+    description:
+      "ESG Services assist companies in implementing sustainable and ethical operational practices.",
+    Icon: <motion.img src={ESG_img} alt="icon" animate={simpleFloatAnimation} />,
+  },
+  tab2: {
+    title: "Business Services",
+    path: "service/business",
+    description:
+      "Business Services offer essential support for enhancing company efficiency and growth.",
+    Icon: <motion.img src={business_img} alt="icon" animate={simpleFloatAnimation} />,
+  },
   cat: [
     {
       title: "Getting Started",
@@ -113,7 +133,27 @@ const servicesTabData = {
         },
       ]
     },
-  ]
+  ],
+  moreLinks2: {
+    title: "Some Business Services",
+    links: [
+      {
+        title: "Internal Audit",
+        Icon: IoSearchSharp,
+        path: "service/internal-audit",
+      },
+      {
+        title: "Compliance",
+        Icon: IoShieldCheckmarkOutline,
+        path: "service/compliance",
+      },
+      {
+        title: "Risk management",
+        Icon: IoWarningOutline,
+        path: "service/risk-management",
+      }
+    ],
+  }
 };
 
 const solutionsTabData = {
