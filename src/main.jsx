@@ -15,11 +15,7 @@ import CookiesPolicyPage from './Pages/LegelPages/CookiesPolicyPage';
 import SolutionPage from './Pages/SolutionPage/SolutionPage';
 import LevelUpO2 from './Pages/LevelUpO2/LevelUpO2';
 import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
-<<<<<<< HEAD
-=======
 import Resources from './Pages/Resources/Resources';
-// import BlogPage from './Pages/BlogPage';
->>>>>>> 0a09153a912c3ad03c363e97d0133da1c19cbe59
 
 // Service Pages Imports
 import EsgServices from './Pages/Services/EsgServices';
