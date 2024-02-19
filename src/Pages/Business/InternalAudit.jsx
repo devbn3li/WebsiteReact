@@ -89,7 +89,7 @@ function InternalAudit() {
   return (
     <div>
       <DynamicLandingHero
-        title="Internal Audit Transformation"
+        title="Internal Audit"
         subtitle="Optimize your internal audit function to proactively meet the needs of tomorrow."
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Learn More" }}

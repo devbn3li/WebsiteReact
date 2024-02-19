@@ -6,9 +6,7 @@ const ImageGrid = () => {
     "/assets/Business/img2.png",
     "/assets/Business/img3.png",
     "/assets/Business/img4.png",
-    "/assets/Business/img5.png",
     "/assets/Business/img6.png",
-    "/assets/Business/img7.png",
   ];
 
   return (
