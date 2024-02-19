@@ -15,6 +15,11 @@ import CookiesPolicyPage from './Pages/LegelPages/CookiesPolicyPage';
 import SolutionPage from './Pages/SolutionPage/SolutionPage';
 import LevelUpO2 from './Pages/LevelUpO2/LevelUpO2';
 import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
+<<<<<<< HEAD
+=======
+import Resources from './Pages/Resources/Resources';
+// import BlogPage from './Pages/BlogPage';
+>>>>>>> 0a09153a912c3ad03c363e97d0133da1c19cbe59
 
 // Service Pages Imports
 import EsgServices from './Pages/Services/EsgServices';
@@ -67,6 +72,7 @@ export function Application() {
           <Route path="solution/level-up-o2" element={<LevelUpO2 />} />
           <Route path="waiting-list" element={<WaitingListPage />} />
           <Route path="academy/blogs" element={<BlogsDiscoveryPage />} />
+          <Route path="resources" element={<Resources />} />
 
           {/* Legal pages */}
           <Route path="legal/privacy-policy" element={<PrivacyPolicyPage />} />
@@ -100,6 +106,7 @@ export function Application() {
 
           {/* Blog article pages */}
           <Route path="academy/blogs/:id" element={<BlogTemplete />} />
+          <Route path="academy/resources" element={<Resources />} />
           
           {/* Dashboards */}
           <Route path='dashboards/blog-dashboard' element={<BlogDashBoard />} />
