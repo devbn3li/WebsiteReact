@@ -12,8 +12,9 @@ function Resources() {
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Make an Impact, Together" }}
       />
-      <PopularResources/>
       <BlogView/>
+      <PopularResources/>
+      
     </div>
   );
 }
