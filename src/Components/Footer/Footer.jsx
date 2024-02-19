@@ -130,9 +130,9 @@ const Footer = () => {
                 />
               </div>
   */}
-              <div className="grid place-items-center  ">
+              {/* <div className="grid place-items-center  ">
                 <img className="w-[100px]" src={reward2} alt="" />
-              </div>
+              </div> */}
               <div className="grid place-items-center scale-90">
                 <img className="w-[100px]" src={reward3} alt="" />
               </div>
