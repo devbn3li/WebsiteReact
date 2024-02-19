@@ -26,12 +26,10 @@ import ESGGovernance from './Pages/ServicePages/ESGGovernancePage';
 import ESGAssurance from './Pages/ServicePages/ESGAssurancePage';
 import StrategicStakeholder from './Pages/ServicePages/StrategicStakeholderPage';
 import ESGStrategy from './Pages/ServicePages/ESGStrategyPage';
-// import ESGCompliance from './Pages/ServicePages/ESGCompliancePage';
 import ERMProgram from './Pages/ServicePages/ERMProgramPage';
 import ESGDiagnostic from './Pages/ServicePages/ESGDiagnosticPage';
 import BoardLevel from './Pages/ServicePages/BoardLevelPage';
 import ESGPluse from './Pages/PulsePage/PulsePage';    // ESGPluse
-// import InternalAudit from './Pages/BusinessServices/InternalAudit';
 import Compliance from './Pages/BusinessServices/Compliance';
 import RiskManagement from './Pages/BusinessServices/RiskManagement';
 import Finance from './Pages/BusinessServices/Finance';
@@ -99,17 +97,18 @@ export function Application() {
           <Route path="service/esg-assurance" element={<ESGAssurance />} />
           <Route path="service/strategic-stakeholder" element={<StrategicStakeholder />} />
           <Route path="service/esg-strategy" element={<ESGStrategy />} />
-          {/* <Route path="service/esg-compliance" element={<ESGCompliance />} /> */}
+          <Route path="service/esg-compliance" element={<ESGCompliance />} />
           <Route path="service/erm-program" element={<ERMProgram />} />
           <Route path="service/esg-diagnostic" element={<ESGDiagnostic />} />
           <Route path="service/esg-pulse" element={<ESGPluse />} />
           <Route path="service/levelup-o2" element={<LevelUpO2 />} />
           <Route path="service/board-level" element={<BoardLevel />} />
-          {/* <Route path="service/internal-audit" element={<InternalAudit />} /> */}
+          <Route path="service/internal-audit" element={<InternalAudit />} />
           <Route path="service/compliance" element={<Compliance />} />
           <Route path="service/risk-management" element={<RiskManagement />} />
           <Route path="service/finance" element={<Finance />} />
           <Route path="service/data-lab" element={<DataLab />} />
+          <Route path="service/esg-erm-resilience" element={<ESGERMResilience />} />
           
           <Route path="services/esg-program-establishment" element={<ESGProgramEstablishment />} />
           <Route path="services/esg-gap-assessment-&-benchmarking" element={<ESGGAp />} />
@@ -122,7 +121,7 @@ export function Application() {
           <Route path="services/esg-third-party-assurance" element={<ESGThirdPartyAssurance />} />
           <Route path="services/esg-supply-chain-audits" element={<ESGSupplyChainAudits />} />
           <Route path="services/corporate-sustainability-due-diligence" element={<CorporateSustainabilityDueDiligence />} />
-
+          
           {/* esg-software */}
           <Route path="esg-software" element={<ESGSoftware />} />
           <Route path="esg-software/sustainability-tracker" element={<SustainabilityTracker />} />
