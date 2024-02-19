@@ -11,14 +11,24 @@ import datalab_img from '/assets/Dash/SolutionNAV/lab.png';
 import pulse_img from '/assets/Dash/SolutionNAV/puls.png';
 import resources_img from '/assets/Dash/academy/resources.png';
 import workshop_img from '/assets/Dash/academy/workshop.png';
-import business_img from '/assets/Dash/Solutions/Biz.png';
-import ESG_img from '/assets/Dash/Solutions/ESG.png';
-import { IoBarChartSharp, IoGlobeOutline, IoAnalyticsSharp, IoPeopleCircleSharp, IoDocumentTextSharp, IoShieldCheckmarkSharp, IoSearchSharp, IoShieldCheckmarkOutline, IoWarningOutline } from 'react-icons/io5';
+import {
+  IoLeaf,
+  IoStatsChart,
+  IoEarth,
+  IoPeople,
+  IoBusiness,
+  IoDocumentText,
+  IoShieldCheckmark,
+  IoAnalytics,
+  IoTrendingUp,
+  IoWarning
+} from 'react-icons/io5';
 import {
   FaChalkboardTeacher,
   FaBlog,
   FaBroadcastTower,
 } from "react-icons/fa";
+import Dropdown_V2 from "./Dropdown_V.2";
 
 const simpleFloatAnimation = {
   y: ["-20px", "22px"],
@@ -32,75 +42,78 @@ const simpleFloatAnimation = {
 
 const servicesTabData = {
   title: "Services",
-  tab1: {
-    title: "ESG Services",
-    path: "service/esg",
-    description:
-      "ESG Services assist companies in implementing sustainable and ethical operational practices.",
-    Icon: <motion.img src={ESG_img} alt="icon" animate={simpleFloatAnimation} />,
-  },
-  tab2: {
-    title: "Business Services",
-    path: "service/business",
-    description:
-      "Business Services offer essential support for enhancing company efficiency and growth.",
-    Icon: <motion.img src={business_img} alt="icon" animate={simpleFloatAnimation} />,
-  },
-  moreLinks1: {
-    title: "Some ESG Services",
-    links: [
-      {
-        title: "Diagnostic Assessment",
-        Icon: IoAnalyticsSharp,
-        path: "service/esg-diagnostic",
-      },
-      {
-        title: "Materiality & Strategy",
-        Icon: IoBarChartSharp,
-        path: "service/esg-strategy",
-      },
-      {
-        title: "Controllership",
-        Icon: IoGlobeOutline,
-        path: "service/esg-controllership",
-      },
-      {
-        title: "Strategic Stakeholder & Board Advisory",
-        Icon: IoPeopleCircleSharp,
-        path: "service/board-level",
-      },
-      {
-        title: "ESG IA program",
-        Icon: IoDocumentTextSharp,
-        path: "service/esg-ia-program",
-      },
-      {
-        title: "ESG Assurance",
-        Icon: IoShieldCheckmarkSharp,
-        path: "service/esg-assurance",
-      },
-    ],
-  },
-  moreLinks2: {
-    title: "Some Business Services",
-    links: [
-      {
-        title: "Internal Audit",
-        Icon: IoSearchSharp,
-        path: "service/internal-audit",
-      },
-      {
-        title: "Compliance",
-        Icon: IoShieldCheckmarkOutline,
-        path: "service/compliance",
-      },
-      {
-        title: "Risk management",
-        Icon: IoWarningOutline,
-        path: "service/risk-management",
-      }
-    ],
-  },
+  cat: [
+    {
+      title: "Getting Started",
+      links: [
+        {
+          Icon: IoStatsChart,
+          title: "ESG Program Establishment",
+          path: "services/esg-program-establishment"
+        },
+        {
+          Icon: IoAnalytics,
+          title: "ESG GAP Assessment & Benchmarking",
+          path: "services/esg-gap-assessment-&-benchmarking"
+        },
+        {
+          Icon: IoEarth,
+          title: "Materiality Assessment & Strategy",
+          path: "services/materiality-assessment-&-strategy"
+        },
+        {
+          Icon: IoLeaf,
+          title: "ESG / Sustainability Managed Services",
+          path: "services/sustainability-managed-services"
+        },
+      ]
+    },
+    {
+      title: "Levelling-Up",
+      links: [
+        {
+          Icon: IoBusiness,
+          title: "ESG Governance",
+          path: "services/esg-governance"
+        },
+        {
+          Icon: IoDocumentText,
+          title: "ESG Data Management",
+          path: "services/esg-data-management"
+        },
+        {
+          Icon: IoWarning,
+          title: "Greenwashing Controls",
+          path: "services/greenwashing-controls"
+        },
+        {
+          Icon: IoShieldCheckmark,
+          title: "ESG Disclosures & Reporting",
+          path: "services/esg-disclosures-&-reporting"
+        },
+      ]
+    },
+    {
+      title: "Assurance",
+      links: [
+        {
+          Icon: IoTrendingUp,
+          title: "ESG Third-Party Assurance",
+          path: "services/esg-third-party-assurance"
+        },
+        {
+          Icon: IoPeople,
+          title: "ESG Supply Chain Audits",
+          path: "services/esg-supply-chain-audits"
+        },
+        {
+          Icon: IoLeaf,
+          title: "Corporate Sustainability Due Diligence",
+          path: "services/corporate-sustainability-due-diligence"
+        },
+      ]
+    },
+  ]
 };
 
 const solutionsTabData = {
@@ -182,12 +195,6 @@ const ESGSoftwareTabData = {
     Icon: <motion.img src={sustracker_img} alt="icon" animate={simpleFloatAnimation} />,
   },
 };
-
-// Navigation links configuration for cleaner code
-const navigationLinks = [
-  { path: "/about", title: "About us" },
-  // { path: "/contact", title: "Contact us" },
-];
 
 const Navbar = () => {
   // State hooks for controlling UI elements
@@ -274,34 +281,30 @@ const Navbar = () => {
           >
             {/* Simplified class names for readability */}
             <span
-              className={`w-6 h-[2px] bg-[#121212] transition-all duration-[.45s] ${
-                isNavOpen
-                  ? "-rotate-45 translate-y-2 delay-300"
-                  : "rotate-0 translate-y-0"
-              }`}
+              className={`w-6 h-[2px] bg-[#121212] transition-all duration-[.45s] ${isNavOpen
+                ? "-rotate-45 translate-y-2 delay-300"
+                : "rotate-0 translate-y-0"
+                }`}
             ></span>
             <span
-              className={`h-[2px] bg-[#121212] transition-all duration-[.45s] ${
-                isNavOpen ? "w-0" : "w-6 delay-300"
-              }`}
+              className={`h-[2px] bg-[#121212] transition-all duration-[.45s] ${isNavOpen ? "w-0" : "w-6 delay-300"
+                }`}
             ></span>
             <span
-              className={`w-6 h-[2px] bg-[#121212] transition-all duration-[.45s] ${
-                isNavOpen
-                  ? "rotate-45 -translate-y-2 delay-300"
-                  : "rotate-0 translate-y-0"
-              }`}
+              className={`w-6 h-[2px] bg-[#121212] transition-all duration-[.45s] ${isNavOpen
+                ? "rotate-45 -translate-y-2 delay-300"
+                : "rotate-0 translate-y-0"
+                }`}
             ></span>
           </button>
         </div>
 
         {/* Navigation Links and CTA Button */}
         <div
-          className={`flex items-center min-[1130px]:justify-end max-[1130px]:flex-col text-[20px] font-normal h-full max-[1130px]:w-full gap-5 max-[1130px]:gap-0 max-[1130px]:overflow-y-scroll max-[1130px]:overflow-x-hidden w-screen  flex-grow text-center transition-all box-border duration-[.45s] ${
-            isNavOpen
-              ? "max-[1130px]:translate-y-0"
-              : "max-[1130px]:-translate-y-[120%]"
-          } top-full left-0 text-black bg-white max-[1130px]:flex-col max-[1130px]:absolute max-[1130px]:w-full max-[1130px]:pb-[6.5rem] max-[1130px]:h-[calc(100vh-4.5rem)] max-[1130px]:text-lg max-[1130px]:border-b max-[1130px]:border-black`}
+          className={`flex items-center min-[1130px]:justify-end max-[1130px]:flex-col text-[20px] font-normal h-full max-[1130px]:w-full gap-5 max-[1130px]:gap-0 max-[1130px]:overflow-y-scroll max-[1130px]:overflow-x-hidden w-screen  flex-grow text-center transition-all box-border duration-[.45s] ${isNavOpen
+            ? "max-[1130px]:translate-y-0"
+            : "max-[1130px]:-translate-y-[120%]"
+            } top-full left-0 text-black bg-white max-[1130px]:flex-col max-[1130px]:absolute max-[1130px]:w-full max-[1130px]:pb-[6.5rem] max-[1130px]:h-[calc(100vh-4.5rem)] max-[1130px]:text-lg max-[1130px]:border-b max-[1130px]:border-black`}
         >
           {/* ESG Software Dropdown */}
           <Dropdown
@@ -320,7 +323,7 @@ const Navbar = () => {
           />
 
           {/* Services Dropdown */}
-          <Dropdown
+          <Dropdown_V2
             isTabOpen={isServicesOpen}
             closeTab={closeServices}
             toggleTab={toggleServices}
@@ -336,15 +339,13 @@ const Navbar = () => {
           />
 
           {/* Static Navigation Links */}
-          {navigationLinks.map((link, index) => (
-            <NavbarLink
-              key={index}
-              path={link.path}
-              title={link.title}
-              toggleNavigation={toggleNavigation}
-              closeNavigation={closeNavigation}
-            />
-          ))}
+
+          <NavbarLink
+            path="/about"
+            title="About us"
+            toggleNavigation={toggleNavigation}
+            closeNavigation={closeNavigation}
+          />
           {/* CTA Button */}
           <PrimaryButton
             path="/contact"

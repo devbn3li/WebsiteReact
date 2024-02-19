@@ -16,7 +16,6 @@ import SolutionPage from './Pages/SolutionPage/SolutionPage';
 import LevelUpO2 from './Pages/LevelUpO2/LevelUpO2';
 import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
 import Resources from './Pages/Resources/Resources';
-// import BlogPage from './Pages/BlogPage';
 
 // Service Pages Imports
 import EsgServices from './Pages/Services/EsgServices';
@@ -37,6 +36,7 @@ import Compliance from './Pages/BusinessServices/Compliance';
 import RiskManagement from './Pages/BusinessServices/RiskManagement';
 import Finance from './Pages/BusinessServices/Finance';
 import DataLab from './Pages/DataLab/DataLab';
+
 import ESGProgramEstablishment from './Pages/GettingStarted/ESGProgramEstablishment';
 import ESGGAp from './Pages/GettingStarted/ESGGAP';
 import MaterialityAssessmentStrategy from './Pages/GettingStarted/MaterialityAssessmentStrategy';
@@ -52,6 +52,7 @@ import CorporateSustainabilityDueDiligence from './Pages/Assurance/CorporateSust
 import SustainabilityTracker from './Pages/ESGsoftwarePages/SustainabilityTracker';
 
 // Blog Pages Imports
+import BlogDashBoard from './Pages/DashBoards/BlogDashBoard/BlogDashBoard';
 import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
 
@@ -95,8 +96,8 @@ export function Application() {
           <Route path="service/esg-assurance" element={<ESGAssurance />} />
           <Route path="service/strategic-stakeholder" element={<StrategicStakeholder />} />
           <Route path="service/esg-strategy" element={<ESGStrategy />} />
-          <Route path="service/esg-compliance" element={<ESGCompliance />} />
-          <Route path="service/erm-program" element={<ERMProgram />} />
+          <Route path="service/esg-" element={<ESGCompliance />} />
+          <Route path="service/erm-program" elcomplianceement={<ERMProgram />} />
           <Route path="service/esg-diagnostic" element={<ESGDiagnostic />} />
           <Route path="service/esg-pulse" element={<ESGPluse />} />
           <Route path="service/levelup-o2" element={<LevelUpO2 />} />
@@ -106,17 +107,18 @@ export function Application() {
           <Route path="service/risk-management" element={<RiskManagement />} />
           <Route path="service/finance" element={<Finance />} />
           <Route path="service/data-lab" element={<DataLab />} />
-          <Route path="ESGProgramEstablishment" element={<ESGProgramEstablishment />} />
-          <Route path="ESGGAP" element={<ESGGAp />} />
-          <Route path="MaterialityAssessmentStrategy" element={<MaterialityAssessmentStrategy />} />
-          <Route path="ESGSustainabilityManagedServices" element={<ESGSustainabilityManagedServices />} />
-          <Route path="ESGGovern" element={<ESGGovern />} />
-          <Route path="ESGDataManagement" element={<ESGDataManagement />} />  
-          <Route path="GreenwashingControls" element={<GreenwashingControls />} />
-          <Route path="ESGDisclosuresReporting" element={<ESGDisclosuresReporting />} />
-          <Route path="ESGThirdPartyAssurance" element={<ESGThirdPartyAssurance />} />
-          <Route path="ESGSupplyChainAudits" element={<ESGSupplyChainAudits />} />
-          <Route path="CorporateSustainabilityDueDiligence" element={<CorporateSustainabilityDueDiligence />} />
+          
+          <Route path="services/esg-program-establishment" element={<ESGProgramEstablishment />} />
+          <Route path="services/esg-gap-assessment-&-benchmarking" element={<ESGGAp />} />
+          <Route path="services/materiality-assessment-&-strategy" element={<MaterialityAssessmentStrategy />} />
+          <Route path="services/sustainability-managed-services" element={<ESGSustainabilityManagedServices />} />
+          <Route path="services/esg-governance" element={<ESGGovern />} />
+          <Route path="services/esg-data-management" element={<ESGDataManagement />} />  
+          <Route path="services/greenwashing-controls" element={<GreenwashingControls />} />
+          <Route path="services/esg-disclosures-&-reporting" element={<ESGDisclosuresReporting />} />
+          <Route path="services/esg-third-party-assurance" element={<ESGThirdPartyAssurance />} />
+          <Route path="services/esg-supply-chain-audits" element={<ESGSupplyChainAudits />} />
+          <Route path="services/corporate-sustainability-due-diligence" element={<CorporateSustainabilityDueDiligence />} />
 
           {/* esg-software */}
           <Route path="esg-software" element={<ESGSoftware />} />
@@ -126,6 +128,8 @@ export function Application() {
           <Route path="academy/blogs/:id" element={<BlogTemplete />} />
           <Route path="academy/resources" element={<Resources />} />
           
+          {/* Dashboards */}
+          <Route path='dashboards/blog-dashboard' element={<BlogDashBoard />} />
 
           {/* Waiting Page */}
           <Route path="waiting-page" element={<WaitingListPage />} />
