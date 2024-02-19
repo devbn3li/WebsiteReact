@@ -27,7 +27,7 @@ import ESGGovernance from './Pages/ServicePages/ESGGovernancePage';
 import ESGAssurance from './Pages/ServicePages/ESGAssurancePage';
 import StrategicStakeholder from './Pages/ServicePages/StrategicStakeholderPage';
 import ESGStrategy from './Pages/ServicePages/ESGStrategyPage';
-import ESGCompliance from './Pages/ServicePages/ESGCompliancePage';
+// import ESGCompliance from './Pages/ServicePages/ESGCompliancePage';
 import ERMProgram from './Pages/ServicePages/ERMProgramPage';
 import ESGDiagnostic from './Pages/ServicePages/ESGDiagnosticPage';
 import BoardLevel from './Pages/ServicePages/BoardLevelPage';
@@ -49,6 +49,9 @@ import ESGThirdPartyAssurance from './Pages/Assurance/ESGThirdPartyAssurance';
 import ESGSupplyChainAudits from './Pages/Assurance/ESGSupplyChainAudits';
 import CorporateSustainabilityDueDiligence from './Pages/Assurance/CorporateSustainabilityDueDiligence';
 import InternalAudit from './Pages/Business/InternalAudit';
+import ESGCompliance from './Pages/Business/ESGCompliance';
+import ESGERMResilience from './Pages/Business/ESGERMResilience';
+
 import SustainabilityTracker from './Pages/ESGsoftwarePages/SustainabilityTracker';
 
 // Blog Pages Imports
@@ -95,7 +98,7 @@ export function Application() {
           <Route path="service/esg-assurance" element={<ESGAssurance />} />
           <Route path="service/strategic-stakeholder" element={<StrategicStakeholder />} />
           <Route path="service/esg-strategy" element={<ESGStrategy />} />
-          <Route path="service/esg-compliance" element={<ESGCompliance />} />
+          {/* <Route path="service/esg-compliance" element={<ESGCompliance />} /> */}
           <Route path="service/erm-program" element={<ERMProgram />} />
           <Route path="service/esg-diagnostic" element={<ESGDiagnostic />} />
           <Route path="service/esg-pulse" element={<ESGPluse />} />
@@ -118,6 +121,8 @@ export function Application() {
           <Route path="ESGSupplyChainAudits" element={<ESGSupplyChainAudits />} />
           <Route path="CorporateSustainabilityDueDiligence" element={<CorporateSustainabilityDueDiligence />} />
           <Route path='InternalAudit' element={<InternalAudit />} />
+          <Route path='ESGCompliance' element={<ESGCompliance />} />
+          <Route path='ESGERMResilience' element={<ESGERMResilience />} />
 
           {/* esg-software */}
           <Route path="esg-software" element={<ESGSoftware />} />
