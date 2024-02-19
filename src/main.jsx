@@ -15,7 +15,6 @@ import CookiesPolicyPage from './Pages/LegelPages/CookiesPolicyPage';
 import SolutionPage from './Pages/SolutionPage/SolutionPage';
 import LevelUpO2 from './Pages/LevelUpO2/LevelUpO2';
 import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
-// import BlogPage from './Pages/BlogPage';
 
 // Service Pages Imports
 import EsgServices from './Pages/Services/EsgServices';
@@ -40,6 +39,7 @@ import DataLab from './Pages/DataLab/DataLab';
 import SustainabilityTracker from './Pages/ESGsoftwarePages/SustainabilityTracker';
 
 // Blog Pages Imports
+import BlogDashBoard from './Pages/DashBoards/BlogDashBoard/BlogDashBoard';
 import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
 
@@ -82,8 +82,8 @@ export function Application() {
           <Route path="service/esg-assurance" element={<ESGAssurance />} />
           <Route path="service/strategic-stakeholder" element={<StrategicStakeholder />} />
           <Route path="service/esg-strategy" element={<ESGStrategy />} />
-          <Route path="service/esg-compliance" element={<ESGCompliance />} />
-          <Route path="service/erm-program" element={<ERMProgram />} />
+          <Route path="service/esg-" element={<ESGCompliance />} />
+          <Route path="service/erm-program" elcomplianceement={<ERMProgram />} />
           <Route path="service/esg-diagnostic" element={<ESGDiagnostic />} />
           <Route path="service/esg-pulse" element={<ESGPluse />} />
           <Route path="service/levelup-o2" element={<LevelUpO2 />} />
@@ -101,6 +101,8 @@ export function Application() {
           {/* Blog article pages */}
           <Route path="academy/blogs/:id" element={<BlogTemplete />} />
           
+          {/* Dashboards */}
+          <Route path='dashboards/blog-dashboard' element={<BlogDashBoard />} />
 
           {/* Waiting Page */}
           <Route path="waiting-page" element={<WaitingListPage />} />
