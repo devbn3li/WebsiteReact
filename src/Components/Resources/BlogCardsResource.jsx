@@ -16,7 +16,7 @@ function BlogCardsResource() {
   return (
     <div className=''> 
         <div className="container mx-auto py-8 mt-5 px-[5%]">
-            <div className="grid grid-cols-1 lg:grid-cols-2  gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3  gap-4">
             {blogs.map((blog, index) => (
                 <BlogCard key={index} blog={{...blog}} />
             ))}

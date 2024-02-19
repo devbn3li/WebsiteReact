@@ -36,6 +36,14 @@ import Compliance from './Pages/BusinessServices/Compliance';
 import RiskManagement from './Pages/BusinessServices/RiskManagement';
 import Finance from './Pages/BusinessServices/Finance';
 import DataLab from './Pages/DataLab/DataLab';
+import ESGProgramEstablishment from './Pages/GettingStarted/ESGProgramEstablishment';
+import ESGGAp from './Pages/GettingStarted/ESGGAP';
+import MaterialityAssessmentStrategy from './Pages/GettingStarted/MaterialityAssessmentStrategy';
+import ESGSustainabilityManagedServices from './Pages/GettingStarted/ESGSustainabilityManagedServices';
+import ESGGovern from './Pages/Levelling-Up/ESGGovernance';
+import ESGDataManagement from './Pages/Levelling-Up/ESGDataManagement';
+import GreenwashingControls from './Pages/Levelling-Up/GreenwashingControls';
+import ESGDisclosuresReporting from './Pages/Levelling-Up/ESGDisclosuresReporting';
 
 import SustainabilityTracker from './Pages/ESGsoftwarePages/SustainabilityTracker';
 
@@ -95,6 +103,14 @@ export function Application() {
           <Route path="service/risk-management" element={<RiskManagement />} />
           <Route path="service/finance" element={<Finance />} />
           <Route path="service/data-lab" element={<DataLab />} />
+          <Route path="ESGProgramEstablishment" element={<ESGProgramEstablishment />} />
+          <Route path="ESGGAP" element={<ESGGAp />} />
+          <Route path="MaterialityAssessmentStrategy" element={<MaterialityAssessmentStrategy />} />
+          <Route path="ESGSustainabilityManagedServices" element={<ESGSustainabilityManagedServices />} />
+          <Route path="ESGGovern" element={<ESGGovern />} />
+          <Route path="ESGDataManagement" element={<ESGDataManagement />} />  
+          <Route path="GreenwashingControls" element={<GreenwashingControls />} />
+          <Route path="ESGDisclosuresReporting" element={<ESGDisclosuresReporting />} />
 
           {/* esg-software */}
           <Route path="esg-software" element={<ESGSoftware />} />
