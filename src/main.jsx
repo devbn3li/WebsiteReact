@@ -45,6 +45,9 @@ import ESGGovern from './Pages/Levelling-Up/ESGGovernance';
 import ESGDataManagement from './Pages/Levelling-Up/ESGDataManagement';
 import GreenwashingControls from './Pages/Levelling-Up/GreenwashingControls';
 import ESGDisclosuresReporting from './Pages/Levelling-Up/ESGDisclosuresReporting';
+import ESGThirdPartyAssurance from './Pages/Assurance/ESGThirdPartyAssurance';
+import ESGSupplyChainAudits from './Pages/Assurance/ESGSupplyChainAudits';
+import CorporateSustainabilityDueDiligence from './Pages/Assurance/CorporateSustainabilityDueDiligence';
 
 import SustainabilityTracker from './Pages/ESGsoftwarePages/SustainabilityTracker';
 
@@ -111,6 +114,9 @@ export function Application() {
           <Route path="ESGDataManagement" element={<ESGDataManagement />} />  
           <Route path="GreenwashingControls" element={<GreenwashingControls />} />
           <Route path="ESGDisclosuresReporting" element={<ESGDisclosuresReporting />} />
+          <Route path="ESGThirdPartyAssurance" element={<ESGThirdPartyAssurance />} />
+          <Route path="ESGSupplyChainAudits" element={<ESGSupplyChainAudits />} />
+          <Route path="CorporateSustainabilityDueDiligence" element={<CorporateSustainabilityDueDiligence />} />
 
           {/* esg-software */}
           <Route path="esg-software" element={<ESGSoftware />} />
