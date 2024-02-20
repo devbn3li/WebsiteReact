@@ -36,7 +36,7 @@ import Finance from './Pages/BusinessServices/Finance';
 import DataLab from './Pages/DataLab/DataLab';
 
 import ESGProgramEstablishment from './Pages/GettingStarted/ESGProgramEstablishment';
-import ESGGAp from './Pages/GettingStarted/ESGGAP';
+import ESGGAp from './Pages/GettingStarted/ESGGAp';
 import MaterialityAssessmentStrategy from './Pages/GettingStarted/MaterialityAssessmentStrategy';
 import ESGSustainabilityManagedServices from './Pages/GettingStarted/ESGSustainabilityManagedServices';
 import ESGGovern from './Pages/Levelling-Up/ESGGovernance';
