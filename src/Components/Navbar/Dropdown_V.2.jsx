@@ -18,7 +18,7 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
         {/* End Button */}
 
         {/* Start Dropdown */}
-        <div className={`w-screen transition-all flex justify-center items-center min-[1130px]:absolute min-[1130px]:left-1/2 min-[1130px]:top-[calc(100%+1px)] box-border min-[1130px]:-translate-x-1/2 min-[1130px]:shadow-md group-hover:border-b border-b-[#02c2ab] bg-white h-0 ${isTabOpen && "max-[1130px]:h-auto max-[1130px]:py-5"} overflow-hidden min-[1130px]:group-hover:h-[calc(700px)]`}>
+        <div className={`w-screen transition-all flex justify-center items-center min-[1130px]:absolute min-[1130px]:left-1/2 min-[1130px]:top-[calc(100%+1px)] box-border min-[1130px]:-translate-x-1/2 min-[1130px]:shadow-md group-hover:border-b border-b-[#02c2ab] bg-white h-0 ${isTabOpen && "max-[1130px]:h-auto max-[1130px]:py-5"} overflow-hidden min-[1190px]:group-hover:h-[622px] min-[1130px]:group-hover:h-[640px]`}>
           {/* Start Inner Container */}
           <div className='max-w-[1400px] text-start gap-3 w-full justify-start flex items-start pt-10 transition-all px-4 box-border max-[1130px]:flex-col h-full'>
             <div className="w-4/5 max-[1130px]:w-full">
@@ -63,9 +63,9 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
               {/* Start Other Tabs Two */}
               <div className={`flex flex-col max-[1130px]:w-[90%] max-[1130px]:mx-[5%] max-[1130px]:my-5 gap-4`}>
                 <div className={`text-black font-bold text-lg min-[1130px]:hidden ${!data.moreLinks2.title && 'hidden'}`}> - {data.moreLinks2.title}: </div>
-                <div className="flex max-[1130px]:flex-col flex-wrap">
+                <div className="flex flex-col flex-wrap ml-12 gap-5 mt-4">
                   {data.moreLinks2.links.map((link, index) => (
-                    <SubNavbarLink title={link.title} Icon={link.Icon} path={link.path} clear={closeTab} key={index} className='!justify-start'/>
+                    <SubNavbarLink title={link.title} Icon={link.Icon} path={link.path} clear={closeTab} key={index} className='!justify-start scale-125'/>
                   ))}
                 </div>
               </div>
