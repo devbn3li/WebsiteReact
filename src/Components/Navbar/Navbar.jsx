@@ -8,7 +8,7 @@ import NavbarLink from "./NavbarLink";
 import levelUp_O2_img from '/assets/Dash/ESGNAV/o2.png';
 import sustracker_img from '/assets/Dash/ESGNAV/sustracker.png';
 import datalab_img from '/assets/Dash/SolutionNAV/lab.png';
-import pulse_img from '/assets/Dash/SolutionNAV/puls.png';
+import pulse_img from '/assets/Premasset/279b4dee-988e-4168-9745-09c71397741a.png';
 import resources_img from '/assets/Dash/academy/resources.png';
 import workshop_img from '/assets/Dash/academy/workshop.png';
 import {
