@@ -19,6 +19,7 @@ import { BsGraphUp } from 'react-icons/bs';
 import { GiWorld } from 'react-icons/gi';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import Comparison from '../../Components/Challenge_VS_Solution/Comparison';
+import Chatbot from '../chatbot/Chatbot';
 
 
 // Icons
@@ -183,6 +184,7 @@ const LandingPage = () => {
       <LandingSection />
       <Benefits {...benefitsData1} />
       <Offer />
+      <Chatbot />
       <Testimonials />
       <Why />
       <Comparison challenges={challengesData} solutions={solutionsData} />
