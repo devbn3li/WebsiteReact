@@ -21,7 +21,7 @@ import muhamed from "/assets/Teams/Muhamed.png";
 import maria from "/assets/Teams/Maria.png";
 import eleonora from "/assets/Teams/eleonora.png";
 import Fabio from "/assets/Teams/Fabio.png";
-import charlen from "/assets/Teams/charlen.png";
+import charlene from "/assets/Teams/charlene.png";
 
 export default function Teams() {
   const dataTeam = [
@@ -43,7 +43,7 @@ export default function Teams() {
     { id: 16, photo: maria, userName: "Maria Siddiqui" },
     { id: 17, photo: eleonora, userName: "Eleonora Tossini" },
     { id: 18, photo: Fabio, userName: "Dr. Fabio Puntillo" },
-    { id: 19, photo: charlen, userName: "charlen" },
+    { id: 19, photo: charlene, userName: "Charlene Gabrielle" },
   ];
   return (
     <div className="flex justify-center">
