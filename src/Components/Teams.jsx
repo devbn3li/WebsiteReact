@@ -4,7 +4,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 import Slider from "react-infinite-logo-slider";
 
 import Elvis from "/assets/Teams/Elvis.png";
-import Josly from "/assets/Josly.png";
+import Josly from "/assets/Teams/josly.png";
 import Marko from "/assets/Marko.png";
 import Harsh from "/assets/Harsh.png";
 import FLORENCE from "/assets/FLORENCE.png";
@@ -21,6 +21,7 @@ import muhamed from "/assets/Teams/Muhamed.png";
 import maria from "/assets/Teams/Maria.png";
 import eleonora from "/assets/Teams/eleonora.png";
 import Fabio from "/assets/Teams/Fabio.png";
+import charlen from "/assets/Teams/charlen.png";
 
 export default function Teams() {
   const dataTeam = [
@@ -42,6 +43,7 @@ export default function Teams() {
     { id: 16, photo: maria, userName: "Maria Siddiqui" },
     { id: 17, photo: eleonora, userName: "Eleonora Tossini" },
     { id: 18, photo: Fabio, userName: "Dr. Fabio Puntillo" },
+    { id: 19, photo: charlen, userName: "charlen" },
   ];
   return (
     <div className="flex justify-center">
