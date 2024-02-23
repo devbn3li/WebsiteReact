@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import axios from "axios";
-import { FiSearch, FiX } from "react-icons/fi";
+import { FiSearch, FiX } from "react-icons/fi"; // Import icons
 
 function Chatbot() {
   const [inputText, setInputText] = useState("");
@@ -45,30 +45,30 @@ function Chatbot() {
 
   return (
     <>
-      <section className="bg-gradient-to-r from-[#1C4987] to-[#159D9B] w-full rounded-2xl py-[4rem]">
+      <section className="bg-gradient-to-r from-[#002e70] to-[#02c1aa] w-full rounded-2xl py-[5rem] max-sm:py-8">
         <div className="relative w-[90%] md:w-[80%] mx-auto flex justify-center items-center flex-col py-[4rem] pt-[6rem] px-2rem text-white">
-          <h1 className="text-[3rem] max-w-[800px] text-center font-bold tracking-wider mb-10">
+          <h1 className="text-2xl md:text-5xl max-w-[700px] text-center md:font-bold tracking-wider mb-10">
             Ask any question about Internal audits
           </h1>
           <form onSubmit={handleFormSubmit} className="relative flex items-center mb-10">
             <input
-              ref={inputRef} // Attach the ref to the input field
+              ref={inputRef}
               type="text"
-              placeholder="Ask Me about Internal Audit!"
-              className="max-[400px]:w-[250px] w-[300px] sm:w-[400px] md:w-[500px] p-3 rounded-[5rem] outline-none text-black text-xl"
+              placeholder="Ask Me!"
+              className="input-placeholder max-[400px]:w-[300px] w-[300px] sm:w-[400px] md:w-[500px] py-3 px-4 rounded-[5rem] outline-none text-white text-xl bg-white/30 backdrop-blur-lg border border-gray-200/50"
               value={inputText}
               onChange={handleInputChange}
             />
             <div
-              className="flex justify-center items-center cursor-pointer absolute right-2 bg-gray-400 w-[30px] h-[30px] rounded-full text-xl"
+              className="flex justify-center items-center cursor-pointer absolute right-2 font-bold w-[30px] h-[30px] rounded-full text-xl"
               onClick={iconType === "search" ? handleFormSubmit : clearInput}
             >
               {iconType === "search" ? <FiSearch className="text-white" /> : <FiX className="text-white" />}
             </div>
           </form>
-          <div className="relative max-[400px]:w-[250px] w-[350px] sm:w-[500px] md:w-[700px] h-[300px] bg-white p-4 rounded-xl outline-none text-black text-xl overflow-auto">
+          <div className="relative max-[400px]:w-[330px] w-[350px] sm:w-[500px] md:w-[700px] h-[350px] bg-white/30 p-4 rounded-xl outline-none text-white text-xl overflow-auto backdrop-blur-lg border border-gray-200/50">
             {isLoading ? (
-              <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-white bg-opacity-75 backdrop-blur-sm">
+              <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center  bg-opacity-50 backdrop-blur-sm">
                 <div className="w-8 h-8 border-4 border-t-blue-500 border-r-blue-500 border-b-transparent border-l-transparent rounded-full animate-spin"></div>
               </div>
             ) : error ? (
@@ -86,7 +86,7 @@ function Chatbot() {
               </>
             )}
           </div>
-          <div className="mt-4 text-sm text-center text-white w-[60%]">
+          <div className="mt-4 px-2 text-center text-white md:w-[60%]">
             Please note: The information provided by the chatbot may not always be accurate. Use it as a guide and verify details independently.
           </div>
         </div>

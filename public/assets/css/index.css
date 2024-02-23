@@ -9,3 +9,8 @@ body {
     background-color: #f9fff5;
     font-family: 'Inter', sans-serif;
   }
+
+  .input-placeholder::placeholder {
+    color: white;
+  }
+  
