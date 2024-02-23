@@ -121,7 +121,7 @@ const Offer = () => {
       data-aos-duration="1000"
       >
         <h1
-          className="mb-4 text-4xl  max-w-[1200px] font-extrabold leading-[1.5] tracking-[.5px]  text-[#002E70]  "
+          className="mb-4 text-3xl md:text-4xl  max-w-[1200px] font-extrabold leading-[1.5] tracking-[.5px]  text-[#002E70]  "
         >
           {sectionTitle}</h1>
         <p className=" text-lg font-normal text-[#002E70]  leading-[1.5] ">

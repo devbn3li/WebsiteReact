@@ -90,7 +90,7 @@ const Why = () => {
         <div className="px-[5%] w-full pb-20">
           <div className="flex flex-col gap-1">
             <div className="flex flex-col max-w-[90.25rem] gap-3">
-              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70]  "
+              <h1 className="mb-4 text-3xl md:text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70]  "
                 data-aos="fade-down"
                 data-aos-duration="1600"
               >

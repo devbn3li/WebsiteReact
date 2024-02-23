@@ -14,7 +14,7 @@ const Call = ({ imgSrc, title, paragraph, buttonTitle, buttonPath }) => {
         <div data-aos="fade-up" data-aos-duration="1400" className="lg:w-1/2">
           <img src={imgSrc} alt="Hero Image" className="w-full" />
         </div>
-        <div className="lg:w-1/2 lg:pr-10 mb-10 lg:mb-0">
+        <div className="lg:w-1/2 lg:pr-10 mb-10 lg:mb-0 max-sm:text-center">
           <h1 className="mb-4 leading-[1.5] text-4xl max-w-[1000px] font-extrabold tracking-tight  text-[#002e70] ">
             {title}
           </h1>

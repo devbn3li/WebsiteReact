@@ -31,7 +31,7 @@ const DynamicLandingHero = ({ title, subtitle, button1, button2 }) => {
             {subtitle}
           </p>
           <div
-            className="relative z-10 flex flex-wrap gap-6 justify-center max-md:flex-col-reverse"
+            className="relative z-10 flex flex-wrap gap-6 justify-center "
             data-aos="fade-up"
             data-aos-duration="1400"
           >

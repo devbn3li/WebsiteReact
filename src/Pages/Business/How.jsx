@@ -41,7 +41,7 @@ const How = () => {
     <div className="w-full flex justify-center">
       <section className="max-w-[1400px] py-20 px-[5%]">
         <div className="container text-[#002E70] mx-auto">
-          <h2 className="mb-4 text-4xl text-center font-extrabold tracking-tight leading-none text-[#002E70]">
+          <h2 className="mb-4 text-3xl md:text-4xl text-center font-bold md:font-extrabold md:tracking-tight md:leading-none text-[#002E70]">
             Aligning Internal Audit with Corporate Purpose
           </h2>
           <div className="mx-auto pt-12 h-full p-2">

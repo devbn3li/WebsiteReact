@@ -24,8 +24,6 @@ export default function TeamMembers() {
     { id: 6, photo: Ramin, userName: "Ramin Takin" },
     { id: 7, photo: Wang, userName: "Wan Norashikin" },
     { id: 8, photo: MaribelEsparcia, userName: "Maribel Esparcia" },
-
-
   ];
   return (
     <div className="flex justify-center w-full ">
@@ -36,7 +34,7 @@ export default function TeamMembers() {
       >
         <div className="w-[100%] xl:w-[80%] mx-auto flex flex-col gap-6">
           <h2 className="text-4xl  font-bold  text-[2.625rem] mb-[.5rem] text-center ">
-            <mark className=" px-6  rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
+            <mark className=" px-6 py-3 rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
               {" "}
               Our Team
             </mark>

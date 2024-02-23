@@ -47,7 +47,7 @@ export default function Teams() {
   ];
   return (
     <div className="flex justify-center">
-      <div className="flex justify-center   max-w-[1400px] overflow-hidden w-full ">
+      <div className="flex justify-center max-w-[1400px] overflow-hidden w-full ">
         <section
           data-aos="fade-up"
           data-aos-duration="1200"
@@ -55,7 +55,7 @@ export default function Teams() {
         >
           <div className="w-[100%] xl:w-[80%] mx-auto flex flex-col gap-6">
             <h2 className="text-4xl  font-bold  text-[2.625rem] max-sm:text-4xl mb-[.5rem] text-center ">
-              <mark className="px-6 py-2 max-sm:px-4 rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
+              <mark className="px-6 py-3 max-sm:px-4 rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
                 {" "}
                 Our Impact Makers
               </mark>

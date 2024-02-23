@@ -49,7 +49,7 @@ const Testimonials = () => {
           data-aos-duration="1000"
           data-aos="fade-down"
           >
-          <h1 className='mb-4 text-4xl  font-extrabold tracking-tight leading-none text-gray-100 capitalize'>
+          <h1 className='mb-4 text-3xl md:text-4xl font-bold md:font-extrabold md:tracking-tight leading-none text-gray-100 capitalize'>
             {sectionTitle}
           </h1>
           <div className='flex flex-col overflow-hidden md:flex-row md:items-start gap-6 md:max-w-[39.25rem] md:max-[679px]:max-w-[360px]'>
