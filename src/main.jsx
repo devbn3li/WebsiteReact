@@ -16,6 +16,7 @@ import SolutionPage from './Pages/SolutionPage/SolutionPage';
 import LevelUpO2 from './Pages/LevelUpO2/LevelUpO2';
 import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
 import Resources from './Pages/Resources/Resources';
+import AiChatbot from './Pages/AiInternalAudit/AiInternalAudit';
 
 // Service Pages Imports
 import EsgServices from './Pages/Services/EsgServices';
@@ -82,6 +83,7 @@ export function Application() {
           <Route path="waiting-list" element={<WaitingListPage />} />
           <Route path="academy/blogs" element={<BlogsDiscoveryPage />} />
           <Route path="resources" element={<Resources />} />
+          <Route path="ai-chatbot" element={<AiChatbot />} />
 
           {/* Legal pages */}
           <Route path="legal/privacy-policy" element={<PrivacyPolicyPage />} />

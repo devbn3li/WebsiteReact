@@ -111,7 +111,6 @@ function InternalAudit() {
       />
       <Why />
       <ImageGrid />
-      <Chatbot/>
     </div>
   );
 }
