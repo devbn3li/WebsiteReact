@@ -31,6 +31,7 @@ import {
   FaChalkboardTeacher,
   FaBlog,
   FaBroadcastTower,
+  FaRobot,
 } from "react-icons/fa";
 import Dropdown_V2 from "./Dropdown_V.2";
 import business_img from '/assets/Dash/Solutions/Biz.png';
@@ -144,7 +145,7 @@ const servicesTabData = {
       },
       {
         title: "Ai Internal Audit",
-        Icon: IoShieldCheckmarkOutline,
+        Icon: FaRobot,
         path: "ai-chatbot",
       },
       {
