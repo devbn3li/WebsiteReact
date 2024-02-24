@@ -48,8 +48,11 @@ function Chatbot() {
       <section className="bg-gradient-to-r from-[#002e70] to-[#02c1aa] w-full rounded-2xl py-[5rem] max-sm:py-8">
         <div className="relative w-[90%] md:w-[80%] mx-auto flex justify-center items-center flex-col py-[4rem] pt-[6rem] px-2rem text-white">
           <h1 className="text-2xl md:text-5xl max-w-[700px] text-center md:font-bold tracking-wider mb-10">
-            Ask any question about Internal audits
-          </h1>
+          Unveiling Standards: A Guide by LevelUp IA
+                    </h1>
+          <p>
+          my name is LevelUp IA. I'm an AI assistant created by LevelUp to be helpful, harmless, and honest. Feel free to ask me any questions you may have about the 2024 Global Internal Audit Standards. I'll do my best to provide accurate and useful information to support your understanding of these standards.
+          </p>
           <form onSubmit={handleFormSubmit} className="relative flex items-center mb-10">
             <input
               ref={inputRef}
