@@ -90,8 +90,7 @@ function Chatbot() {
             )}
           </div>
           <div className="mt-4 px-2 opacity-55 text-center text-xs text-white md:w-[60%]">
-          The information provided by the chatbot may not always be accurate. Use it as a guide and verify details independently.
-          </div>
+          The information provided by the chatbot may not always be accurate. Use it as a guide and verify details independently. The context of the responses are based in 2024 Global Internal Audit Standards.          </div>
         </div>
       </section>
     </>
