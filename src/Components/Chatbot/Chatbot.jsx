@@ -50,7 +50,7 @@ function Chatbot() {
           <h1 className="text-2xl md:text-5xl max-w-[700px] text-center md:font-bold tracking-wider mb-10">
           Unveiling Standards: A Guide by LevelUp IA
                     </h1>
-          <p>
+          <p className="my-12 md:w-[70%] text-white text-xl leading-[1.7] aos-init aos-animate">
           my name is LevelUp IA. I'm an AI assistant created by LevelUp to be helpful, harmless, and honest. Feel free to ask me any questions you may have about the 2024 Global Internal Audit Standards. I'll do my best to provide accurate and useful information to support your understanding of these standards.
           </p>
           <form onSubmit={handleFormSubmit} className="relative flex items-center mb-10">
