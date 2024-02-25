@@ -106,7 +106,7 @@ function InternalAudit() {
       <How />
       <ImgCompo
         img="/assets/Business/Picture1.png"
-        title="purpose-driven approach"
+        title="Purpose-driven approach"
         description="With a purpose-driven approach, IA becomes a proactive strategic advisor in enabling ethical, sustainable growth rather than a reactive compliance function."
       />
       <Why />
