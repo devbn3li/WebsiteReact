@@ -3,7 +3,6 @@ import React from "react";
 const ImageGrid = () => {
   const images = [
     "/assets/Business/img3.png",
-    "/assets/Business/img6.png",
   ];
 
   return (

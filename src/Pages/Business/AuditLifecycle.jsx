@@ -17,7 +17,7 @@ const AuditLifecycle = () => {
         <div className="flex max-md:flex-col-reverse justify-center items-center mt-10">
           <div className="md:w-1/2">
             <h1 className="text-5xl font-bold text-[#002E70] mb-4">
-              IA Mandate & Strategy
+              <span>1-</span>{" "}IA Mandate & Strategy
             </h1>
             <ul>
               <li className="text-xl text-[#002E70] mb-2">
@@ -57,7 +57,7 @@ const AuditLifecycle = () => {
           </div>
           <div className="md:w-1/2">
             <h1 className="text-4xl font-bold text-[#002E70] mb-4">
-              Risk assessment
+            <span>2-</span>{" "}Risk assessment
             </h1>
             <ul>
               <li className="text-xl text-[#002E70] mb-2">
@@ -93,7 +93,7 @@ const AuditLifecycle = () => {
         <div className="flex max-md:flex-col-reverse justify-center items-center mt-10">
           <div className="md:w-1/2">
             <h1 className="text-4xl font-bold text-[#002E70] mb-4">
-              Audit Plan
+            <span>3-</span>{" "}Audit Plan
             </h1>
             <ul>
               <li className="text-xl text-[#002E70] mb-2">
@@ -140,7 +140,7 @@ const AuditLifecycle = () => {
           </div>
           <div className="md:w-1/2">
             <h1 className="text-4xl font-bold text-[#002E70] mb-4">
-              Methodology & Execution
+            <span>4-</span>{" "}Methodology & Execution
             </h1>
             <ul>
               <li className="text-xl text-[#002E70] mb-2">
@@ -172,7 +172,7 @@ const AuditLifecycle = () => {
         <div className="flex max-md:flex-col-reverse justify-center items-center mt-10">
           <div className="md:w-1/2">
             <h1 className="text-4xl font-bold text-[#002E70] mb-4">
-              Engagement & Communication
+            <span>5-</span>{" "}Engagement & Communication
             </h1>
             <ul>
               <li className="text-xl text-[#002E70] mb-2">

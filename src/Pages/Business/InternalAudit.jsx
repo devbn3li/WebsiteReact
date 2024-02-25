@@ -4,8 +4,8 @@ import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 import How from "./How";
 import Why from "./Why";
-import ImageGrid from "./ImageGrid";
 import AuditLifecycle from './AuditLifecycle';
+import ESGPillar from './ESGPillar';
 
 // Icons
 const LeafIcon = () => (
@@ -112,7 +112,8 @@ function InternalAudit() {
         buttonPath="/contact"
       />
       <Why />
-      <ImageGrid />
+
+      <ESGPillar />
     </div>
   );
 }
