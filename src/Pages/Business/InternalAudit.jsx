@@ -6,7 +6,6 @@ import How from "./How";
 import ImgCompo from "./ImgCompo";
 import Why from "./Why";
 import ImageGrid from "./ImageGrid";
-import Chatbot from "../../Components/Chatbot/Chatbot"
 
 // Icons
 const LeafIcon = () => (
