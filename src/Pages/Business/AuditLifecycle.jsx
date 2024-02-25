@@ -1,4 +1,5 @@
 import React from "react";
+import img from "/assets/Business/Picture1.png";
 
 const AuditLifecycle = () => {
   return (
@@ -7,11 +8,12 @@ const AuditLifecycle = () => {
         <h1 className="text-5xl font-bold text-[#002E70] mb-4">
           Purpose Driven Internal Audit
         </h1>
-        <p className="text-xl text-[#002E70]">
+        <p className="text-xl text-[#002E70] mb-4">
           Organisations today need internal audit functions that look beyond
           narrow compliance to help advance corporate purpose, ethics, and
           long-term strategic objectives.
         </p>
+        <img src={img} alt="Internal audit lifecycle" />
       </div>
       <div>
         <div className="flex max-md:flex-col-reverse justify-center items-center mt-10">
