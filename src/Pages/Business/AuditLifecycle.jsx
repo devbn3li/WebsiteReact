@@ -4,7 +4,7 @@ const AuditLifecycle = () => {
   return (
     <div className="px-[5%]">
       <div className="text-center">
-        <h1 className="text-6xl font-bold text-[#002E70] mb-4">
+        <h1 className="text-5xl font-bold text-[#002E70] mb-4">
           Purpose Driven Internal Audit
         </h1>
         <p className="text-xl text-[#002E70]">
@@ -56,7 +56,7 @@ const AuditLifecycle = () => {
             />
           </div>
           <div className="md:w-1/2">
-            <h1 className="text-5xl font-bold text-[#002E70] mb-4">
+            <h1 className="text-4xl font-bold text-[#002E70] mb-4">
               Risk assessment
             </h1>
             <ul>
@@ -92,7 +92,7 @@ const AuditLifecycle = () => {
         </div>
         <div className="flex max-md:flex-col-reverse justify-center items-center mt-10">
           <div className="md:w-1/2">
-            <h1 className="text-5xl font-bold text-[#002E70] mb-4">
+            <h1 className="text-4xl font-bold text-[#002E70] mb-4">
               Audit Plan
             </h1>
             <ul>
@@ -139,7 +139,7 @@ const AuditLifecycle = () => {
             />
           </div>
           <div className="md:w-1/2">
-            <h1 className="text-5xl font-bold text-[#002E70] mb-4">
+            <h1 className="text-4xl font-bold text-[#002E70] mb-4">
               Methodology & Execution
             </h1>
             <ul>
@@ -171,7 +171,7 @@ const AuditLifecycle = () => {
         </div>
         <div className="flex max-md:flex-col-reverse justify-center items-center mt-10">
           <div className="md:w-1/2">
-            <h1 className="text-5xl font-bold text-[#002E70] mb-4">
+            <h1 className="text-4xl font-bold text-[#002E70] mb-4">
               Engagement & Communication
             </h1>
             <ul>
