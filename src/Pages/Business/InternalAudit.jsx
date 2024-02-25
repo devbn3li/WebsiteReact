@@ -3,9 +3,9 @@ import DynamicLandingHero from "../../Components/DynamicLandingHero";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 import How from "./How";
-import ImgCompo from "./ImgCompo";
 import Why from "./Why";
 import ImageGrid from "./ImageGrid";
+import AuditLifecycle from './AuditLifecycle';
 
 // Icons
 const LeafIcon = () => (
@@ -102,11 +102,14 @@ function InternalAudit() {
         buttonTitle="Get in Touch"
         buttonPath="/contact"
       />
+      <AuditLifecycle />
       <How />
-      <ImgCompo
-        img="/assets/Business/Picture1.png"
-        title="Purpose-driven approach"
-        description="With a purpose-driven approach, IA becomes a proactive strategic advisor in enabling ethical, sustainable growth rather than a reactive compliance function."
+      <Call
+        imgSrc="/assets/call.png"
+        title="Reinforce your company's purpose today"
+        paragraph="With a purpose-driven approach, IA becomes a proactive strategic advisor in enabling ethical, sustainable growth rather than a reactive compliance function. "
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
       />
       <Why />
       <ImageGrid />

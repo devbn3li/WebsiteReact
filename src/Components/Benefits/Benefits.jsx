@@ -23,10 +23,10 @@ const Benefits = ({ title, description, benefits }) => {
           data-aos="fade-down"
           data-aos-duration="1600"
         >
-          <h1 className="mb-4 text-3xl md:text-4xl max-w-[1200px] leading-[1.2] font-extrabold tracking-[.5px]  text-[#002E70]  ">
+          <h1 className="mb-4 text-3xl md:text-4xl text-center max-w-[1200px] leading-[1.2] font-extrabold tracking-[.5px]  text-[#002E70]  ">
             {title}
           </h1>
-          <p className="mb-8 text-lg font-normal text-[#002E70]/80  leading-[1.5] ">
+          <p className="mb-8 text-xl text-center font-normal text-[#002E70]  leading-[1.5] ">
             {description}
           </p>
         </div>

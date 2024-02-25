@@ -54,9 +54,6 @@ const How = () => {
           <div className="mx-auto pt-12 h-full p-2">
             <HoverEffect items={purposeDrivenAuditSolutions} />
           </div>
-          <div className="text-center mt-8">
-            <PrimaryButton path="/contact" title="Learn More" />
-          </div>
         </div>
       </section>
     </div>
