@@ -2,39 +2,46 @@ import React, { useEffect } from "react";
 import PrimaryButton from "../../Components/Buttons/PrimaryButton";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import { HoverEffect } from "../../Components/Ui/card-hover-effect";
 
 // Data for purpose-driven internal audit solutions
 const purposeDrivenAuditSolutions = [
   {
-    name: "Purpose Integration",
-    description: "Integrating your purpose statement and ethics into the IA charter, strategy, and mission.",
+    title: "Purpose Integration",
+    description:
+      "Integrating your purpose statement and ethics into the IA charter, strategy, and mission.",
   },
   {
-    name: "Risk Identification",
-    description: "Identifying risks that could undermine the achievement of your purpose through stakeholder engagement and impact analysis.",
+    title: "Risk Identification",
+    description:
+      "Identifying risks that could undermine the achievement of your purpose through stakeholder engagement and impact analysis.",
   },
   {
-    name: "Assurance Activity Prioritization",
-    description: "Prioritizing assurance activities that help fulfil purpose-critical objectives.",
+    title: "Assurance Activity Prioritization",
+    description:
+      "Prioritizing assurance activities that help fulfil purpose-critical objectives.",
   },
   {
-    name: "Actionable Insights",
-    description: "Using techniques like root cause analysis and success cause analysis to provide actionable insights.",
+    title: "Actionable Insights",
+    description:
+      "Using techniques like root cause analysis and success cause analysis to provide actionable insights.",
   },
   {
-    name: "Impact-focused Reporting",
-    description: "Framing findings and recommendations around impacts on purpose and stakeholders.",
+    title: "Impact-focused Reporting",
+    description:
+      "Framing findings and recommendations around impacts on purpose and stakeholders.",
   },
   {
-    name: "Persuasive Communication",
-    description: "Leveraging data visualization and storytelling techniques for persuasive communication.",
+    title: "Persuasive Communication",
+    description:
+      "Leveraging data visualization and storytelling techniques for persuasive communication.",
   },
   {
-    name: "Purpose-related KPIs Reporting",
-    description: "Reporting regularly on IA contributions and impact on purpose-related KPIs.",
+    title: "Purpose-related KPIs Reporting",
+    description:
+      "Reporting regularly on IA contributions and impact on purpose-related KPIs.",
   },
 ];
-
 
 const How = () => {
   return (
@@ -45,21 +52,7 @@ const How = () => {
             Aligning Internal Audit with Corporate Purpose
           </h2>
           <div className="mx-auto pt-12 h-full p-2">
-            <div className="grid grid-cols-1 justify-center gap-6 md:grid-cols-2 ">
-              {purposeDrivenAuditSolutions.map((solution, index) => (
-                <div
-                  key={index}
-                  className="p-6 bg-[#02c2ab]/30 hover:bg-[#02c2ab] duration-500 cursor-pointer hover:scale-105 rounded-lg shadow-md"
-                >
-                  <h3 className="text-xl font-extrabold text-[#112b65] mb-4">
-                    {solution.name}
-                  </h3>
-                  <p className="text-lg text-[#112b65]">
-                    {solution.description}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <HoverEffect items={purposeDrivenAuditSolutions} />
           </div>
           <div className="text-center mt-8">
             <PrimaryButton path="/contact" title="Learn More" />
