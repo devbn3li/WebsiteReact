@@ -1,5 +1,5 @@
 import React from "react";
-import img from "/assets/Business/Picture1.png";
+import img from "/assets/Business/InternalAuditLifecycle.png";
 
 const AuditLifecycle = () => {
   return (
@@ -19,7 +19,7 @@ const AuditLifecycle = () => {
         <div className="flex max-md:flex-col-reverse justify-center items-center mt-10">
           <div className="md:w-1/2">
             <h1 className="text-5xl font-bold text-[#002E70] mb-4">
-              <span>1-</span>{" "}IA Mandate & Strategy
+              <span>1-</span>{" "}Mandate & Strategy
             </h1>
             <ul>
               <li className="text-xl text-[#002E70] mb-2">

@@ -25,10 +25,10 @@ import charlene from "/assets/Teams/charlene.png";
 
 export default function Teams() {
   const dataTeam = [
-    // { id: 1, photo: Elvis, userName: "Elvis Shoko" },
+    { id: 1, photo: Elvis, userName: "Elvis Shoko" },
     { id: 2, photo: Josly, userName: "Josly Jose", Class: "pt-1" },
     { id: 3, photo: seyit, userName: "Seyit A. Colak" },
-    { id: 4, photo: Marko, userName: "Marko Peric" },
+    // { id: 4, photo: Marko, userName: "Marko Peric" },
     { id: 5, photo: Harsh, userName: "Harsh Parmar" },
     { id: 6, photo: Luana, userName: "Luana Izzicupo", Class: "" },
     { id: 7, photo: FLORENCE, userName: "Florence Adedigba" },
