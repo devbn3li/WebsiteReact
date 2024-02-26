@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SubNavbarLink_V2 from "./SubNavbarLink_V.2";
 import { MdArrowRight } from "react-icons/md";
 import SubNavbarLink from "./SubNavbarLink";
+import AiInternalAuditIMG from "../../../public/assets/Premasset/bot.png"
 
 const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
 
@@ -62,12 +63,34 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
 
               {/* Start Other Tabs Two */}
               <div className={`flex flex-col max-[1130px]:w-[90%] max-[1130px]:mx-[5%] max-[1130px]:my-5 gap-4`}>
-                <div className={`text-black font-bold text-lg min-[1130px]:hidden ${!data.moreLinks2.title && 'hidden'}`}> - {data.moreLinks2.title}: </div>
-                <div className="flex flex-col flex-wrap ml-12 gap-5 mt-4">
-                  {data.moreLinks2.links.map((link, index) => (
-                    <SubNavbarLink title={link.title} Icon={link.Icon} path={link.path} clear={closeTab} key={index} className='!justify-start scale-125'/>
-                  ))}
-                </div>
+                <div className={`text-black  font-bold text-lg min-[1130px]:hidden ${!data.moreLinks2.title && 'hidden'}`}> - {data.moreLinks2.title}: </div>
+                 
+                 <div className="flex gap-2 -sm:flex-wrap  ">
+                      <div className="flex flex-col w-full flex-wrap ml-12 gap-5 mt-4">
+                        {data.moreLinks2.links.map((link, index) => (
+                          <SubNavbarLink title={link.title} Icon={link.Icon} path={link.path} clear={closeTab} key={index} className='!justify-start scale-125'/>
+                        ))}
+                      </div>
+                      {/*  ai internal Audit Nav Component */}
+                  <div className="w-full min-h-[240px] group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2">
+            <div className="w-full  flex justify-center">
+        
+            <div className="flex flex-col gap-2">
+            <div>
+              <img src={AiInternalAuditIMG} alt="ai internal Audit" />
+              </div>
+
+              <div>
+                <span className="font-bold">
+                Ai Internal Audit</span>
+              </div>
+            </div>
+              
+              </div>
+                    </div>
+
+                 </div>
+                 
               </div>
               {/* End Other Tabs Two */}
             </div>

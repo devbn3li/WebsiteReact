@@ -143,11 +143,11 @@ const servicesTabData = {
         Icon: IoSearchSharp,
         path: "service/internal-audit",
       },
-      {
-        title: "Ai Internal Audit",
-        Icon: FaRobot,
-        path: "ai-chatbot",
-      },
+      // {
+      //   title: "Ai Internal Audit",
+      //   Icon: FaRobot,
+      //   path: "ai-chatbot",
+      // },
       {
         title: "Compliance",
         Icon: IoShieldCheckmarkOutline,
