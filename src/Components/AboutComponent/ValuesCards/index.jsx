@@ -44,7 +44,7 @@ const dataValue = [
 const Card = ({num, title, description,Class }) => (
   <div className={`${Class} relative border-[1px] border-l-[#1C4987] hover:border-[#1C4987]  p-6 bg-[#02c2ab]/30 hover:bg-[#02c2ab] duration-500 cursor-pointer hover:scale-105 rounded-lg shadow-md`}>
     <div className='flex justify-center w-[30px] h-[30px] bg-gradient-to-r from-[#1C4987] to-[#159D9B] text-white absolute top-[-.5rem] rounded-full left-[-.5rem] text-2xl font-bold '>{num}</div>
-    <h3 className="text-2xl !font-extrabold text-[#112b65]  mb-2"> {title}</h3>
+    <h3 className="text-xl !font-extrabold text-[#112b65]  mb-2"> {title}</h3>
     <p className="text-sm text-[#112b65]">{description}</p>
   </div>
 );

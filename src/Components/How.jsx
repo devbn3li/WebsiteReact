@@ -23,7 +23,7 @@ const How = ({ solutions, buttonTitle, buttonPath }) => {
           </div>
         </div>
         <div className="container text-[#002E70] mx-auto">
-          <h2 className="mb-4 text-4xl text-center max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl ">
+          <h2 className="mb-4 text-4xl text-center max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70]  ">
             Here&apos;s how we can help
           </h2>
           <div className="mx-auto pt-12 h-full max-w-[1400px] p-2">
@@ -34,10 +34,10 @@ const How = ({ solutions, buttonTitle, buttonPath }) => {
                   key={index}
                   className="p-6 bg-[#02c2ab]/30 hover:bg-[#02c2ab] duration-500 cursor-pointer hover:scale-105 rounded-lg shadow-md"
                 >
-                  <h3 className="text-2xl !font-extrabold text-[#112b65]  mb-4">
+                  <h3 className="text-xl !font-extrabold text-[#112b65]  mb-4">
                     {solution.name}
                   </h3>
-                  <p className="text-lg text-[#112b65]">
+                  <p className="text-md text-[#112b65] leading-[2]">
                     {solution.description}
                   </p>
                 </div>

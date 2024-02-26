@@ -80,9 +80,9 @@ const OfferItem = ({ icon, title, description }, index) => {
       <div className="mb-3  flex items-center justify-center rounded-md bg-[#02c2ab] aspect-square w-10 p-2">
         {icon}
       </div>
-      <h1 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-[#002E70] md:text-2xl lg:text-3xl ">
+      <h1 className="mb-4 text-xl max-w-[1000px] font-extrabold tracking-tight leading-[1.5] text-[#002E70]  ">
         {title}</h1>
-      <p className="mb-8 text-lg font-normal text-[#002E70] lg:text-xl ">
+      <p className="mb-8 text-lg font-normal text-[#002E70]  ">
         {description}</p>
     </div>
   );
@@ -121,10 +121,10 @@ const Offer = () => {
       data-aos-duration="1000"
       >
         <h1
-          className="mb-4 text-4xl  max-w-[1200px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl "
+          className="mb-4 text-3xl md:text-4xl  max-w-[1200px] font-extrabold leading-[1.5] tracking-[.5px]  text-[#002E70]  "
         >
           {sectionTitle}</h1>
-        <p className=" text-lg font-normal text-[#002E70] lg:text-xl  ">
+        <p className=" text-lg font-normal text-[#002E70]  leading-[1.5] ">
 
           {sectionDescription}</p>
       </div>

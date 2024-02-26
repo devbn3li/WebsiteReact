@@ -130,8 +130,6 @@ const LandingPage = () => {
       description: "Our centralized data platform simplifies ESG management, supporting coherent reporting and audit preparation."
     },
   ];
-  
-
 
   const benefitsData2 = {
     title: 'Benefits and Impact of LevelUp',
@@ -185,13 +183,15 @@ const LandingPage = () => {
       <LandingSection />
       <Benefits {...benefitsData1} />
       <Offer />
+
+      
       <Testimonials />
       <Why />
       <Comparison challenges={challengesData} solutions={solutionsData} />
       <Benefits {...benefitsData2} />
       <BlogCardsList />
       <SliderLogos />
-      <FAQs />
+      <FAQs />  
     </div>
   );
 }

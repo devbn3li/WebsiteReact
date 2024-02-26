@@ -15,7 +15,8 @@ import CookiesPolicyPage from './Pages/LegelPages/CookiesPolicyPage';
 import SolutionPage from './Pages/SolutionPage/SolutionPage';
 import LevelUpO2 from './Pages/LevelUpO2/LevelUpO2';
 import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
-// import BlogPage from './Pages/BlogPage';
+import Resources from './Pages/Resources/Resources';
+import AiChatbot from './Pages/AiInternalAudit/AiInternalAudit';
 
 // Service Pages Imports
 import EsgServices from './Pages/Services/EsgServices';
@@ -26,24 +27,35 @@ import ESGGovernance from './Pages/ServicePages/ESGGovernancePage';
 import ESGAssurance from './Pages/ServicePages/ESGAssurancePage';
 import StrategicStakeholder from './Pages/ServicePages/StrategicStakeholderPage';
 import ESGStrategy from './Pages/ServicePages/ESGStrategyPage';
-import ESGCompliance from './Pages/ServicePages/ESGCompliancePage';
 import ERMProgram from './Pages/ServicePages/ERMProgramPage';
 import ESGDiagnostic from './Pages/ServicePages/ESGDiagnosticPage';
 import BoardLevel from './Pages/ServicePages/BoardLevelPage';
 import ESGPluse from './Pages/PulsePage/PulsePage';    // ESGPluse
-import InternalAudit from './Pages/BusinessServices/InternalAudit';
 import Compliance from './Pages/BusinessServices/Compliance';
 import RiskManagement from './Pages/BusinessServices/RiskManagement';
 import Finance from './Pages/BusinessServices/Finance';
 import DataLab from './Pages/DataLab/DataLab';
 
+import ESGProgramEstablishment from './Pages/GettingStarted/ESGProgramEstablishment';
+import ESGGAp from './Pages/GettingStarted/ESGGAp';
+import MaterialityAssessmentStrategy from './Pages/GettingStarted/MaterialityAssessmentStrategy';
+import ESGSustainabilityManagedServices from './Pages/GettingStarted/ESGSustainabilityManagedServices';
+import ESGGovern from './Pages/Levelling-Up/ESGGovernance';
+import ESGDataManagement from './Pages/Levelling-Up/ESGDataManagement';
+import GreenwashingControls from './Pages/Levelling-Up/GreenwashingControls';
+import ESGDisclosuresReporting from './Pages/Levelling-Up/ESGDisclosuresReporting';
+import ESGThirdPartyAssurance from './Pages/Assurance/ESGThirdPartyAssurance';
+import ESGSupplyChainAudits from './Pages/Assurance/ESGSupplyChainAudits';
+import CorporateSustainabilityDueDiligence from './Pages/Assurance/CorporateSustainabilityDueDiligence';
+import InternalAudit from './Pages/Business/InternalAudit';
+import ESGCompliance from './Pages/Business/ESGCompliance';
+import ESGERMResilience from './Pages/Business/ESGERMResilience';
+
 import SustainabilityTracker from './Pages/ESGsoftwarePages/SustainabilityTracker';
 
 // Blog Pages Imports
+import BlogDashBoard from './Pages/DashBoards/BlogDashBoard/BlogDashBoard';
 import BlogsDiscoveryPage from './Pages/Blogs/BlogsDiscoveryPage';
-import EmpoweringCSuiteBlog from './Pages/Blogs/ALL/EmpoweringCSuiteBlog';
-import EmpoweringForSuccessBlog from './Pages/Blogs/ALL/EmpoweringForSuccessBlog';
-import UnderstandingGreenwashingBlog from './Pages/Blogs/ALL/UnderstandingGreenwashingBlog';
 import BlogTemplete from './Pages/Blogs/blogTemplete';
 
 // Style Sheets Imports
@@ -70,6 +82,8 @@ export function Application() {
           <Route path="solution/level-up-o2" element={<LevelUpO2 />} />
           <Route path="waiting-list" element={<WaitingListPage />} />
           <Route path="academy/blogs" element={<BlogsDiscoveryPage />} />
+          <Route path="resources" element={<Resources />} />
+          <Route path="ai-chatbot" element={<AiChatbot />} />
 
           {/* Legal pages */}
           <Route path="legal/privacy-policy" element={<PrivacyPolicyPage />} />
@@ -96,19 +110,30 @@ export function Application() {
           <Route path="service/risk-management" element={<RiskManagement />} />
           <Route path="service/finance" element={<Finance />} />
           <Route path="service/data-lab" element={<DataLab />} />
-
+          <Route path="service/esg-erm-resilience" element={<ESGERMResilience />} />
+          
+          <Route path="services/esg-program-establishment" element={<ESGProgramEstablishment />} />
+          <Route path="services/esg-gap-assessment-&-benchmarking" element={<ESGGAp />} />
+          <Route path="services/materiality-assessment-&-strategy" element={<MaterialityAssessmentStrategy />} />
+          <Route path="services/sustainability-managed-services" element={<ESGSustainabilityManagedServices />} />
+          <Route path="services/esg-governance" element={<ESGGovern />} />
+          <Route path="services/esg-data-management" element={<ESGDataManagement />} />  
+          <Route path="services/greenwashing-controls" element={<GreenwashingControls />} />
+          <Route path="services/esg-disclosures-&-reporting" element={<ESGDisclosuresReporting />} />
+          <Route path="services/esg-third-party-assurance" element={<ESGThirdPartyAssurance />} />
+          <Route path="services/esg-supply-chain-audits" element={<ESGSupplyChainAudits />} />
+          <Route path="services/corporate-sustainability-due-diligence" element={<CorporateSustainabilityDueDiligence />} />
+          
           {/* esg-software */}
           <Route path="esg-software" element={<ESGSoftware />} />
           <Route path="esg-software/sustainability-tracker" element={<SustainabilityTracker />} />
 
           {/* Blog article pages */}
-          <Route path="blog/all/Empowering-the-C-Suite-for-Sustainable-Success" element={<EmpoweringCSuiteBlog />} />
-          <Route path="blog/all/Empowering-for-Sustainable-Success" element={<EmpoweringForSuccessBlog />} />
-          <Route path="blog/all/Understanding-Greenwashing-and-Its-Consequences" element={<EmpoweringForSuccessBlog />} />
-          <Route path="blog/all/Understanding-Green-washing" element={<UnderstandingGreenwashingBlog />} />
-          
           <Route path="academy/blogs/:id" element={<BlogTemplete />} />
+          <Route path="academy/resources" element={<Resources />} />
           
+          {/* Dashboards */}
+          <Route path='dashboards/blog-dashboard' element={<BlogDashBoard />} />
 
           {/* Waiting Page */}
           <Route path="waiting-page" element={<WaitingListPage />} />

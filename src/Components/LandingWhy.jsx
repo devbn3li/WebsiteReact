@@ -90,13 +90,13 @@ const Why = () => {
         <div className="px-[5%] w-full pb-20">
           <div className="flex flex-col gap-1">
             <div className="flex flex-col max-w-[90.25rem] gap-3">
-              <h1 className="mb-4 text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70] md:text-5xl lg:text-6xl "
+              <h1 className="mb-4 text-3xl md:text-4xl max-w-[1000px] font-extrabold tracking-tight leading-none text-[#002E70]  "
                 data-aos="fade-down"
                 data-aos-duration="1600"
               >
                 Why Choosing LevelUp
               </h1>
-              <p className="mb-8 text-lg font-normal text-[#002E70]/80 lg:text-xl  "
+              <p className="mb-8 text-lg font-normal text-[#002E70]/80   "
                 data-aos="fade-down"
                 data-aos-duration="1000"
               >
@@ -125,13 +125,13 @@ const Why = () => {
                       </div>
                       <div className="grid place-items-center">
                         {" "}
-                        <h3 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-[#002E70] md:text-2xl lg:text-3xl ">
+                        <h3 className="mb-4 text-2xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-[#002E70]  ">
                           {reason.title}
                         </h3>
                       </div>
                     </div>
                     <div className="min-h-[100px] grid place-items-center">
-                      <p className="mb-8 text-lg font-normal text-[#002E70] lg:text-xl ">
+                      <p className="mb-8 text-lg font-normal text-[#002E70]  ">
                         {reason.description}
                       </p>
                     </div>

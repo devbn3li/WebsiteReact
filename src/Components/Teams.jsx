@@ -4,7 +4,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 import Slider from "react-infinite-logo-slider";
 
 import Elvis from "/assets/Teams/Elvis.png";
-import Josly from "/assets/Josly.png";
+import Josly from "/assets/Teams/josly.png";
 import Marko from "/assets/Marko.png";
 import Harsh from "/assets/Harsh.png";
 import FLORENCE from "/assets/FLORENCE.png";
@@ -21,17 +21,18 @@ import muhamed from "/assets/Teams/Muhamed.png";
 import maria from "/assets/Teams/Maria.png";
 import eleonora from "/assets/Teams/eleonora.png";
 import Fabio from "/assets/Teams/Fabio.png";
+import charlene from "/assets/Teams/charlene.png";
 
 export default function Teams() {
   const dataTeam = [
     // { id: 1, photo: Elvis, userName: "Elvis Shoko" },
-    { id: 2, photo: Josly, userName: "Josly jose", Class: "pt-1" },
-    { id: 3, photo: seyit, userName: "seyit A. Colak" },
+    { id: 2, photo: Josly, userName: "Josly Jose", Class: "pt-1" },
+    { id: 3, photo: seyit, userName: "Seyit A. Colak" },
     { id: 4, photo: Marko, userName: "Marko Peric" },
     { id: 5, photo: Harsh, userName: "Harsh Parmar" },
     { id: 6, photo: Luana, userName: "Luana Izzicupo", Class: "" },
     { id: 7, photo: FLORENCE, userName: "Florence Adedigba" },
-    { id: 8, photo: Kavya, userName: "Kavya Gowda" },
+    // { id: 8, photo: Kavya, userName: "Kavya Gowda" },
     // { id: 9, photo: Maribel, userName: "Maribel Esparcia" },
     { id: 10, photo: Jun, userName: "Jun Jie Choo" },
     // { id: 11, photo: nonie, userName: "Nonie Mohd" },
@@ -42,18 +43,19 @@ export default function Teams() {
     { id: 16, photo: maria, userName: "Maria Siddiqui" },
     { id: 17, photo: eleonora, userName: "Eleonora Tossini" },
     { id: 18, photo: Fabio, userName: "Dr. Fabio Puntillo" },
+    { id: 19, photo: charlene, userName: "Charlene Gabrielle" },
   ];
   return (
     <div className="flex justify-center">
-      <div className="flex justify-center   max-w-[1400px] overflow-hidden w-full ">
+      <div className="flex justify-center max-w-[1400px] overflow-hidden w-full ">
         <section
           data-aos="fade-up"
           data-aos-duration="1200"
           className="relative w-full  max-w-[1400px] py-[4rem] sm:px-[3rem] "
         >
           <div className="w-[100%] xl:w-[80%] mx-auto flex flex-col gap-6">
-            <h2 className="text-3xl md:text-7xl font-bold  text-[2.625rem] max-sm:text-4xl mb-[.5rem] text-center ">
-              <mark className="px-6 max-sm:px-4 rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
+            <h2 className="text-4xl  font-bold  text-[2.625rem] max-sm:text-4xl mb-[.5rem] text-center ">
+              <mark className="px-6 py-3 max-sm:px-4 rounded-3xl text-white bg-gradient-to-r from-[#1C4987] to-[#159D9B]">
                 {" "}
                 Our Impact Makers
               </mark>

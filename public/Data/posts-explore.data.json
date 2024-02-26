@@ -1,23 +1,49 @@
 [
   {
     "_id": 0,
-    "title": "Exploring the Future of Technology",
-    "image": "/assets/images/business-people-shaking-hands-together.avif",
-    "keywords": ["Technology", "Innovation"],
-    "summary": "A deep dive into how emerging technologies are shaping our future."
+    "image": "/assets/images/blogs/blog_1.jpg",
+    "title": "Shaping a Sustainable Future: Decoding the Environmental, Social, and Governance Factors",
+    "keywords": [
+      "ESG",
+      "sustainability",
+      "environmental",
+      "social",
+      "governance",
+      "ethical investing",
+      "corporate responsibility"
+    ],
+    "summary": "Exploring ESG: Understanding Environmental, Social, Governance factors for a sustainable future"
   },
   {
     "_id": 1,
-    "title": "The Impact of Globalization on Local Cultures",
-    "image": "/assets/images/business-people-shaking-hands-together.avif",
-    "keywords": ["Globalization", "Culture"],
-    "summary": "An analysis of globalization's effects on the preservation of local cultural identities."
+    "image": "/assets/images/blogs/blog_2.png",
+    "title": "Empowering business leaders for Sustainable Success: Navigating Complexities and Driving Unified Action",
+    "keywords": [
+      "sustainability",
+      "business leadership",
+      "sustainable success",
+      "greenwashing",
+      "sustainability initiatives",
+      "LevelUp"
+    ],
+    "summary": "Empowering leaders for sustainability success through collective action, skill enhancement, and the LevelUp program."
   },
   {
     "_id": 2,
-    "title": "Sustainable Living: Practices for a Healthier Planet",
-    "image": "/assets/images/business-people-shaking-hands-together.avif",
-    "keywords": ["Sustainability", "Environment"],
-    "summary": "Practical tips for living in a way that supports environmental sustainability."
+    "image": "/assets/images/blogs/blog_3.png",
+    "title": "Understanding Greenwashing and Its Consequences",
+    "keywords": [
+      "greenwashing",
+      "environmental claims",
+      "ESAs",
+      "corporate sustainability",
+      "legal risks",
+      "reputational risk",
+      "shareholder activism",
+      "EU Taxonomy",
+      "CSRD",
+      "sustainability reporting"
+    ],
+    "summary": "Exploring greenwashing: risks, consequences, and strategies for companies to ensure authentic environmental stewardship."
   }
 ]

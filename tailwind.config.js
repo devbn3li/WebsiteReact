@@ -14,11 +14,23 @@ export default {
         slideFromRightToLeft: {
           '0%': { right: '100%' },
           '100%': { right: '-20%' },
-        }
+        },
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
       },
       animation: {
         slider: 'slider 40s linear infinite',
         'slideFromRightToLeft': 'slideFromRightToLeft 12s linear',
+        spotlight: "spotlight 2s ease .75s 1 forwards",
+
       },
     },
   },

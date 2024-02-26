@@ -47,7 +47,7 @@ const BlogTemplete = () => {
       .then((response) => response.json())
       .then((data) => {
         if (process.env.BLOG_API_URL == '/Data/posts.data.json') {
-          const matchingPost = data.find((p) => p['id'].toString() === id);
+          const matchingPost = data.find((p) => p['_id'].toString() === id);
           setPost(matchingPost);
         }else setPost(data);
       }).catch((error) => console.error(error));
@@ -61,7 +61,6 @@ const BlogTemplete = () => {
       <div className='flex flex-col max-w-[80rem] mt-24 gap-[40px] pb-[40px]'>
         <H1 text={post.title} />
         <div>
-          <h4 className='font-bold'>LevelUp</h4>
         </div>
       </div>
       <div className='overflow-hidden rounded-xl mb-24 aspect-[2/1] '>

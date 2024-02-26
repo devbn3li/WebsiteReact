@@ -39,14 +39,14 @@ const FeatureCard = ({ title, description, imageUrl }) => {
 
 const FeatureSection = () => {
   return (
-    <div className="py-12 ">
+    <div className="py-[12rem] ">
       <div
         data-aos="fade-up"
         data-aos-duration="1200"
         className="max-w-[1400px] mx-auto"
       >
         <div className="text-center mb-12">
-          <h2 className="text-3xl leading-8 max-w-[580px] inline-block box-border font-extrabold tracking-tight text-[#002e70] sm:text-4xl">
+          <h2 className="text-4xl  max-w-[580px] inline-block box-border font-extrabold tracking-[1px] leading-[1.5] text-[#002e70] ">
             Your carbon footprint is now
             <span className="relative inline-block w-[80px] mx-2">
               <span className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-[75%] text-white z-30">
