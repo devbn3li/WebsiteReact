@@ -117,7 +117,7 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
                 </div>
 
                 <div className="flex gap-2 pt-2 -sm:flex-wrap  ">
-                  <div className="flex flex-col w-full flex-wrap ml-12 gap-5 mt-4">
+                  <div className="flex flex-col w-full flex-wrap md:ml-12 gap-5 mt-4">
                     {data.moreLinks2.links.map((link, index) => (
                       <SubNavbarLink
                         title={link.title}
@@ -135,15 +135,16 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
                     className="w-full flex justify-center items-center"
                     onClick={closeTab}
                   >
-                    <div className="min-h-[240px] group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2">
-                      <div className="flex flex-col gap-2">
+                    <div className="min-h-[240px] group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all md:px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2">
+                      <div className="flex flex-col  gap-2">
                         <div>
                           <img
                             src={AiInternalAuditIMG}
                             alt="AI Internal Audit"
+                            className="w-24 h-24 mx-auto object-cover"
                           />
                         </div>
-                        <div>
+                        <div className="text-center">
                           <span className="font-bold">Ai Internal Audit</span>
                         </div>
                       </div>
