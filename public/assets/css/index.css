@@ -11,6 +11,6 @@ body {
   }
 
   .input-placeholder::placeholder {
-    color: white;
+    color: #002e70;
   }
   
