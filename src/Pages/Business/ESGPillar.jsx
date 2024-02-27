@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaLeaf, FaUsers } from "react-icons/fa";
-import { RiGovernmentLine } from "react-icons/ri";
+import { RiGovernmentFill } from "react-icons/ri";
 
 function ESGPillar() {
   return (
@@ -203,7 +203,7 @@ function ESGPillar() {
             </div>
             <div className="lg:w-1/3 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
               <div className="px-2 text-left h-48 flex flex-col items-center justify-center">
-                <RiGovernmentLine className="text-[#002E70] text-5xl" />
+                <RiGovernmentFill className="text-[#002E70] text-5xl" />
                 <h2 className="text-5xl lg:text-4xl text-[#002E70] font-medium flex items-center justify-center leading-none mb-4 mt-2">
                   Governance
                 </h2>
