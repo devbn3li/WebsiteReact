@@ -131,6 +131,11 @@ export function Application() {
           {/* Blog article pages */}
           <Route path="academy/blogs/:id" element={<BlogTemplete />} />
           <Route path="academy/resources" element={<Resources />} />
+          <Route path="academy/workshops-training" element={<WaitingListPage />} />
+          <Route path="academy/news-podcast" element={<WaitingListPage />} />
+          <Route path="academy/corporate-workshops" element={<WaitingListPage />} />
+          <Route path="academy/board-leadership" element={<WaitingListPage />} />
+          <Route path="academy/coaching-mentoring" element={<WaitingListPage />} />
           
           {/* Dashboards */}
           <Route path='dashboards/blog-dashboard' element={<BlogDashBoard />} />

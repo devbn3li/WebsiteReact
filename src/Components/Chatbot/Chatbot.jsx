@@ -1,10 +1,8 @@
 import React, { useState, useRef } from "react";
 import axios from "axios";
 import { FiSearch, FiX } from "react-icons/fi"; // Import icons
-import { TextGenerateEffect } from '../Ui/text-generate-effect'; // Adjust the import path as needed
+import { TextGenerateEffect } from "../Ui/text-generate-effect"; // Adjust the import path as needed
 import { Sparkels } from "./Sparkels";
-
-
 
 function Chatbot() {
   const [inputText, setInputText] = useState("");
@@ -48,20 +46,24 @@ function Chatbot() {
   };
 
   return (
-    <>    
-      <section
-      
-      className=" w-full rounded-2xl py-[5rem] max-sm:py-8">
- 
+    <>
+      <section className=" w-full rounded-2xl py-[5rem] max-sm:py-8">
         <div className="relative w-[90%] md:w-[80%] mx-auto flex justify-center items-center flex-col py-[4rem] pt-[6rem] px-2rem text-[#002E70]">
           <h1 className="text-2xl md:text-5xl max-w-[700px] text-center md:font-bold tracking-wider mb-3">
             The 2024 Global Internal Audit Standards
           </h1>
-<Sparkels/>
+          <Sparkels />
           <p className="my-6 mt-4 md:w-[70%] text-center text-[#002E70] text-xl leading-[1.7] aos-init aos-animate">
-            👋 I am LevelUp IA, an AI assistant created by LevelUp to be helpful, harmless, and honest. Feel free to ask me any questions you may have about the 2024 Global Internal Audit Standards. I&apos;ll do my best to provide accurate and useful information to support your understanding of these standards.
+            👋 I am LevelUp IA, an AI assistant created by LevelUp to be
+            helpful, harmless, and honest. Feel free to ask me any questions you
+            may have about the 2024 Global Internal Audit Standards. I&apos;ll
+            do my best to provide accurate and useful information to support
+            your understanding of these standards.
           </p>
-          <form onSubmit={handleFormSubmit} className="relative flex items-center mb-10">
+          <form
+            onSubmit={handleFormSubmit}
+            className="relative flex items-center mb-10"
+          >
             <input
               ref={inputRef}
               type="text"
@@ -76,10 +78,18 @@ function Chatbot() {
               className="flex justify-center items-center cursor-pointer absolute right-2 font-bold w-[30px] h-[30px] rounded-full text-xl"
               onClick={iconType === "search" ? handleFormSubmit : clearInput}
             >
-              {iconType === "search" ? <FiSearch className="text-[#002E70]" /> : <FiX className="text-[#002E70]" />}
+              {iconType === "search" ? (
+                <FiSearch className="text-[#002E70]" />
+              ) : (
+                <FiX className="text-[#002E70]" />
+              )}
             </div>
           </form>
-          <div className={`relative border-[#002E70]/30 max-[400px]:w-[330px] w-[350px] sm:w-[500px] md:w-[700px] h-[350px] bg-white/30 p-4 rounded-xl outline-none text-[#002E70] text-xl overflow-auto backdrop-blur-lg border-2 ${isLoading ? "border-[#002E70]" : ""}`}>
+          <div
+            className={`relative border-[#002E70]/30 max-[400px]:w-[330px] w-[350px] sm:w-[500px] md:w-[700px] h-[350px] bg-white/30 p-4 rounded-xl outline-none text-[#002E70] text-xl overflow-auto backdrop-blur-lg border-2 ${
+              isLoading ? "border-[#002E70]" : ""
+            }`}
+          >
             {isLoading ? (
               <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-opacity-50 backdrop-blur-sm">
                 <div className="w-8 h-8 border-4 border-t-blue-500 border-r-blue-500 border-b-transparent border-l-transparent rounded-full animate-spin"></div>
@@ -88,18 +98,29 @@ function Chatbot() {
               <div className="text-red-500">{error}</div>
             ) : (
               <>
-                {finalData && <TextGenerateEffect words={finalData} className="text-animation" />}
+                {finalData && (
+                  <TextGenerateEffect
+                    words={finalData}
+                    className="text-animation"
+                  />
+                )}
                 <div className="flex flex-wrap justify-center">
                   {options.length > 0 &&
                     options.map((option, index) => (
-                      <TextGenerateEffect key={index} words={option} className="options-animation" />
+                      <TextGenerateEffect
+                        key={index}
+                        words={option}
+                        className="options-animation"
+                      />
                     ))}
                 </div>
               </>
             )}
           </div>
           <div className="mt-4 px-2 opacity-90 font-bold text-center text-xs text-[#002E70]  md:w-[60%]">
-            The information provided by the chatbot may not always be accurate. Use it as a guide and verify details independently. The context of the responses are based in 2024 Global Internal Audit Standards.
+            The information provided by the chatbot may not always be accurate.
+            Use it as a guide and verify details independently. The context of
+            the responses are based in 2024 Global Internal Audit Standards.
           </div>
         </div>
       </section>
