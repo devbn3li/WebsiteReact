@@ -1,5 +1,10 @@
 import React from "react";
 import img from "/assets/Business/InternalAuditLifecycle.png";
+import img2 from "/assets/Premasset/strategy2.png";
+import img3 from "/assets/Premasset/risk.png";
+import img4 from "/assets/Premasset/plan.png";
+import img5 from "/assets/Premasset/method.png";
+import img6 from "/assets/Premasset/communication.png";
 
 const AuditLifecycle = () => {
   return (
@@ -43,18 +48,18 @@ const AuditLifecycle = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="/assets/call.png"
+              src={img2}
               alt="audit-lifecycle"
-              className="w-full"
+              className="w-[70%] m-auto"
             />
           </div>
         </div>
         <div className="flex max-md:flex-col justify-center items-center mt-10">
           <div className="md:w-1/2">
             <img
-              src="/assets/call.png"
+              src={img3}
               alt="purpose-driven-internal-audit"
-              className="w-full"
+              className="w-[70%] m-auto"
             />
           </div>
           <div className="md:w-1/2">
@@ -126,18 +131,18 @@ const AuditLifecycle = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="/assets/call.png"
+              src={img4}
               alt="audit-lifecycle"
-              className="w-full"
+              className="w-[70%] m-auto"
             />
           </div>
         </div>
         <div className="flex max-md:flex-col justify-center items-center mt-10">
           <div className="md:w-1/2">
             <img
-              src="/assets/call.png"
+              src={img5}
               alt="methodology-and-execution"
-              className="w-full"
+              className="w-[80%] m-auto"
             />
           </div>
           <div className="md:w-1/2">
@@ -199,9 +204,9 @@ const AuditLifecycle = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="/assets/call.png"
+              src={img6}
               alt="methodology-and-execution"
-              className="w-full"
+              className="w-full m-auto"
             />
           </div>
         </div>
