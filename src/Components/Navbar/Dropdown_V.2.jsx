@@ -130,18 +130,25 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
                     ))}
                   </div>
                   {/*  ai internal Audit Nav Component */}
-                  <Link to="/ai-chatbot" className="w-full flex justify-center items-center">
-                <div className="min-h-[240px] group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2">
-                  <div className="flex flex-col gap-2">
-                    <div>
-                      <img src={AiInternalAuditIMG} alt="AI Internal Audit" />
+                  <Link
+                    to="/ai-chatbot"
+                    className="w-full flex justify-center items-center"
+                    onClick={closeTab}
+                  >
+                    <div className="min-h-[240px] group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2">
+                      <div className="flex flex-col gap-2">
+                        <div>
+                          <img
+                            src={AiInternalAuditIMG}
+                            alt="AI Internal Audit"
+                          />
+                        </div>
+                        <div>
+                          <span className="font-bold">Ai Internal Audit</span>
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                      <span className="font-bold">Ai Internal Audit</span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+                  </Link>
                 </div>
               </div>
               {/* End Other Tabs Two */}
