@@ -6,6 +6,7 @@ import How from "./How";
 import Why from "./Why";
 import AuditLifecycle from './AuditLifecycle';
 import ESGPillar from './ESGPillar';
+import IAProgram from "../../Components/IAProgram";
 
 // Icons
 const LeafIcon = () => (
@@ -114,6 +115,7 @@ function InternalAudit() {
       <Why />
 
       <ESGPillar />
+      <IAProgram/>
     </div>
   );
 }
