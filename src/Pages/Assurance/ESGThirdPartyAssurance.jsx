@@ -80,7 +80,7 @@ function ESGThirdPartyAssurance() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/trust.png"
         title="Build Trust with ESG Assurance"
         paragraph="With ESG assurance from our licensed professionals, you can credibly demonstrate your commitment to transparent and reliable sustainability performance disclosure. Contact us to learn more about enhancing your ESG reporting credibility."
         buttonTitle="Get in Touch"

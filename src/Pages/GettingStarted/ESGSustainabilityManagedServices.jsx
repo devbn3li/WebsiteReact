@@ -92,7 +92,7 @@ function ESGSustainabilityManagedServices() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/arrow.png"
         title="Advance Your ESG Initiatives"
         paragraph="Our managed services deliver targeted, flexible ESG support scaled to your needs, enabling you to advance key initiatives without significant internal resource investment. Contact us to discuss outsourcing your sustainability and ESG programs to our experts."
         buttonTitle="Get Started"

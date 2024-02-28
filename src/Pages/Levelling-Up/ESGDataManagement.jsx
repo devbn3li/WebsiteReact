@@ -86,7 +86,7 @@ function ESGDataManagement() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/data.png"
         title="Master Your ESG Data"
         paragraph="With rigorous ESG data management, gain trusted insights to set baselines, identify hotspots, track performance, and inform strategic decisions. Contact us to gain greater control over your ESG data."
         buttonTitle="Get in Touch"

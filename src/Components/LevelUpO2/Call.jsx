@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import img from "/assets/call.png";
+import img from "/assets/calc.png";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles

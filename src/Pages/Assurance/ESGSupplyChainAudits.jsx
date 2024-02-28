@@ -86,7 +86,7 @@ function ESGSupplyChainAudits() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/strenth.png"
         title="Strengthen Your Supply Chain Sustainability"
         paragraph="With our ESG supply chain audit, equip your procurement team to make informed supplier decisions, drive continuous ESG performance improvement, and collaborate on sustainability initiatives. Contact us to systematically address the ESG hotspots in your supply chain."
         buttonTitle="Get in Touch"

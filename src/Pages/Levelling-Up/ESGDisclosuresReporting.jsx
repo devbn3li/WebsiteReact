@@ -80,7 +80,7 @@ function ESGDisclosuresReporting() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Dashboard.png"
         title="Enhance Your ESG Reporting"
         paragraph="With our end-to-end guidance, elevate your ESG disclosures and reporting to be more strategic, comprehensive, and responsive to stakeholder needs. Contact us to take your sustainability reporting to the next level."
         buttonTitle="Get in Touch"

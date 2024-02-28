@@ -92,7 +92,7 @@ function CorporateSustainabilityDueDiligence() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/photo18.png"
         title="Empower Strategic ESG Decisions"
         paragraph="Our service culminates in a detailed risk analysis and roadmap, equipping your leadership team to make informed strategic decisions, strengthen existing initiatives, and communicate credibly with stakeholders. Contact us to learn more about enhancing your corporate sustainability."
         buttonTitle="Get in Touch"

@@ -86,7 +86,7 @@ function GreenwashingControls() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/earth.png"
         title="Align Your Sustainability Communications"
         paragraph="Our proactive Greenwashing Controls services help organizations build credibility with stakeholders while minimizing legal and reputational risks. Contact us to learn more about how we can assist you."
         buttonTitle="Get in Touch"

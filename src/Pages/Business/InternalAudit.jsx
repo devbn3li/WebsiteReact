@@ -96,7 +96,7 @@ function InternalAudit() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/box.png"
         title="Elevate Your IA Capabilities"
         paragraph="Our proven Internal Audit Transformation methodology delivers an IA function aligned to today's risks and positioned to proactively meet the needs of tomorrow. Contact us to learn how we can assist in transforming your internal audit strategies and operations."
         buttonTitle="Get in Touch"
@@ -105,7 +105,7 @@ function InternalAudit() {
       <AuditLifecycle />
       <How />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/CTA.png"
         title="Reinforce your company's purpose today"
         paragraph="With a purpose-driven approach, IA becomes a proactive strategic advisor in enabling ethical, sustainable growth rather than a reactive compliance function. "
         buttonTitle="Contact Us"

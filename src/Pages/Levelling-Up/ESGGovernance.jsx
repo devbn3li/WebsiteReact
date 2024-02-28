@@ -92,7 +92,7 @@ function ESGGovern() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/photo12.png"
         title="Solidify Your ESG Governance"
         paragraph="With robust ESG governance, empower organizational leadership to effectively guide, support, oversee, and enable your sustainability programs. Contact us to ensure your ESG efforts have solid foundations."
         buttonTitle="Get in Touch"

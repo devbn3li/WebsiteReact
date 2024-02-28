@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SubNavbarLink_V2 from "./SubNavbarLink_V.2";
 import { MdArrowRight } from "react-icons/md";
 import SubNavbarLink from "./SubNavbarLink";
-import AiInternalAuditIMG from "../../../public/assets/Premasset/bot.png";
+import AiInternalAuditIMG from "/assets/Premasset/bot.png";
 
 const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
   return (

@@ -80,7 +80,7 @@ function ESGGAp() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/strategy.png"
         title="Empower Your ESG Strategy"
         paragraph="With data-driven insights and actionable roadmaps, focus your sustainability investments on the initiatives that matter most. Contact us to start your insightful ESG gap assessment."
         buttonTitle="Start Now"

@@ -80,7 +80,7 @@ function MaterialityAssessmentStrategy() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/strategy2.png"
         title="Forge a Strategic ESG Path"
         paragraph="With an ESG materiality assessment tailored to your unique business, you can craft an impactful sustainability strategy that delivers value for shareholders, society, and the environment. Contact us to get started."
         buttonTitle="Learn More"

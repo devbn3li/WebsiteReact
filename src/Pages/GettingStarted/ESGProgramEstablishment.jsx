@@ -93,7 +93,7 @@ function ESGProgramEstablishment() {
       />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/ESG.webp"
         title="Build Your ESG Program Today"
         paragraph="With our step-by-step approach, we empower you to build an ESG program that drives long-term value, meets stakeholder expectations, and positions your organization for success."
         buttonTitle="Contact Us"
