@@ -278,7 +278,7 @@ const Navbar = () => {
 
   // Academy tab functions
   const toggleAcademy = () => {
-    setAcademyOpen(!isServicesOpen);
+    setAcademyOpen(!isAcademyOpen);
   };
   const closeAcademy = () => {
     setAcademyOpen(false);
@@ -287,7 +287,7 @@ const Navbar = () => {
 
   // Academy tab functions
   const toggleESGSoftware = () => {
-    setESGSoftwareOpen(!isServicesOpen);
+    setESGSoftwareOpen(!isESGSoftwareOpen);
   };
   const closeESGSoftware = () => {
     setESGSoftwareOpen(false);
