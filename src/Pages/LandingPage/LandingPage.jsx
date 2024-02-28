@@ -183,8 +183,6 @@ const LandingPage = () => {
       <LandingSection />
       <Benefits {...benefitsData1} />
       <Offer />
-
-      
       <Testimonials />
       <Why />
       <Comparison challenges={challengesData} solutions={solutionsData} />
