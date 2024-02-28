@@ -117,7 +117,7 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
                   - {data.moreLinks2.title}:{" "}
                 </div>
 
-                <div className="flex justify-between gap-2 pt-2 -sm:flex-wrap  ">
+                <div className="flex justify-between gap-2 pt-2 -sm:flex-wrap max-[550px]:flex-col">
                   <div className="flex flex-col w-full flex-wrap gap-5 justify-center">
                     {data.moreLinks2.links.map((link, index) => (
                       <SubNavbarLink_V3
@@ -132,7 +132,7 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
                   {/*  ai internal Audit Nav Component */}
                   <Link
                     to="/ai-chatbot"
-                    className="w-full flex justify-center items-center"
+                    className="w-full flex justify-center items-center active:scale-90 transition-all"
                     onClick={closeTab}
                   >
                     <div className="min-h-[240px] group/learn max-[1130px]:w-[90%] w-full max-[1130px]:mx-[5%] hover:shadow-md hover:border-2 transition-all flex justify-center items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2">
