@@ -121,7 +121,6 @@ const Footer = () => {
           </div>
           <div className="flex max-md:flex-col max-w-2xl:flex-col md:justify-between items-center gap-3 pt-4 mt-6 lg:mt-20 border-t-[1px]">
             <div className="flex gap-4 place-content-center justify-center  ">
-              
               {/* <div className="grid place-items-center ">
                 <img
                   className="w-[50px] scale-75"
@@ -129,15 +128,22 @@ const Footer = () => {
                   alt="Reward logo"
                 />
               </div> */}
- 
               <div className="grid place-items-center  ">
-                <img className="w-[100px]" src={reward2} alt="" />
+                <img className="w-[100px]" src={reward2} alt="Innovator logo" />
               </div>
               <div className="grid place-items-center scale-90">
-                <img className="w-[100px]" src={reward3} alt="" />
+                <img
+                  className="w-[100px]"
+                  src={reward3}
+                  alt="Home office logo"
+                />
               </div>
               <div className="grid place-items-center ">
-                <img className="w-[100px]" src={reward4} alt="" />
+                <img
+                  className="w-[100px]"
+                  src={reward4}
+                  alt="GDPR Ready logo"
+                />
               </div>
             </div>
             <div>
