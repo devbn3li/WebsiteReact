@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -75,7 +76,7 @@ function ESGDataManagement() {
       },
     ],
   };
-
+  const dynamicQuote = `Unlock the potential of high-quality ESG data for robust sustainability reporting, performance management, and strategic decision-making with our ESG Data Management services. From conducting comprehensive assessments to designing centralized data management systems, we ensure your ESG data is consistent, complete, and readily accessible. Our services include establishing data collection protocols, implementing technology for data quality checks, providing staff training, and advising on data governance structures. Gain trusted insights to inform your sustainability strategy and achieve performance targets.`;
   return (
     <div>
       <DynamicLandingHero
@@ -83,6 +84,11 @@ function ESGDataManagement() {
         subtitle="Gain trusted insights for sustainability with rigorous ESG data management."
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Learn More" }}
+      />
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
       />
       <Benefits {...benefitsData} />
       <Call

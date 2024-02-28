@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -75,7 +76,7 @@ function GreenwashingControls() {
       },
     ],
   };
-
+  const dynamicQuote = `Navigate the complexities of corporate sustainability claims and mitigate the risks of greenwashing with our specialized Greenwashing Controls services. We offer comprehensive reviews of your public sustainability communications, from marketing materials to corporate reports, ensuring they are not only precise and substantiated but also aligned with regulatory guidance and industry best practices. Our services include in-depth evidence assessment, language adjustment advice, sustainability messaging benchmarking, risk evaluation for high-risk claims, implementation of legal and marketing controls, team training on sustainable communication, and monitoring of regulatory trends. Protect your brand from backlash, legal liability, and reputational damage by ensuring your sustainability claims are credible and defensible.`;
   return (
     <div>
       <DynamicLandingHero
@@ -83,6 +84,11 @@ function GreenwashingControls() {
         subtitle="Minimize legal and reputational risks by aligning sustainability communications with leading practices."
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Learn More" }}
+      />
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
       />
       <Benefits {...benefitsData} />
       <Call

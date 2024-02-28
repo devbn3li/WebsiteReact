@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -69,7 +70,7 @@ function ESGDisclosuresReporting() {
       },
     ],
   };
-
+  const dynamicQuote = `Meet and exceed stakeholder expectations with our ESG Disclosures & Reporting services, designed to enhance the completeness, accuracy, and strategic value of your sustainability efforts. Our comprehensive support includes a thorough review of existing disclosures, benchmarking, advisory on reporting framework selection and KPIs, implementation of ESG data management systems, material risk and opportunity identification, and team training on key reporting frameworks like GRI and SASB. We also refine your report's messaging and design, ensuring your disclosures effectively communicate your ESG journey. Elevate your sustainability reporting to reflect your commitment to transparency and strategic growth.`;
   return (
     <div>
       <DynamicLandingHero
@@ -77,6 +78,11 @@ function ESGDisclosuresReporting() {
         subtitle="Elevate your sustainability reporting to meet stakeholder expectations and drive strategic value."
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Learn More" }}
+      />
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
       />
       <Benefits {...benefitsData} />
       <Call

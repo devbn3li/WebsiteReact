@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -81,7 +82,7 @@ function ESGGovern() {
       },
     ],
   };
-
+  const dynamicQuote = `Strengthen your sustainability strategy with our ESG Governance Services, designed to support boards and leadership teams in developing robust governance frameworks for effective ESG management. Our comprehensive approach includes advising on board oversight structures, developing ESG charters and policies, creating cross-functional committees, integrating ESG metrics into executive compensation, and more. We also focus on ESG education for boards, aligning leadership on ESG priorities, and assessing board competencies to ensure your efforts are built on a solid foundation. Empower your organization's leadership to effectively guide and oversee sustainability initiatives.`;
   return (
     <div>
       <DynamicLandingHero
@@ -89,6 +90,11 @@ function ESGGovern() {
         subtitle="Empower your leadership with robust structures for effective ESG management and oversight."
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Learn More" }}
+      />
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
       />
       <Benefits {...benefitsData} />
       <Call

@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -69,6 +70,7 @@ function ESGThirdPartyAssurance() {
       },
     ],
   };
+  const dynamicQuote = `Boost the credibility of your ESG disclosures with our ESG Third-Party Assurance services. Our licensed professionals provide rigorous verification of your core ESG metrics, data processes, and disclosure procedures against leading frameworks like GRI, SASB, and TCFD. Our standardized approach includes evaluating reporting conformance, assessing data management maturity, verifying performance indicators, and providing an independent opinion on disclosure reliability. By following professional standards like ISAE 3000, we ensure your reporting meets the highest levels of accuracy and transparency. Demonstrate your commitment to sustainable performance and build trust with key stakeholders through credible ESG assurance.`;
 
   return (
     <div>
@@ -77,6 +79,11 @@ function ESGThirdPartyAssurance() {
         subtitle="Enhance the credibility of your ESG disclosures with rigorous, independent verification."
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Learn More" }}
+      />
+            <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
       />
       <Benefits {...benefitsData} />
       <Call
