@@ -31,7 +31,7 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
             {/* Start Main Tabs */}
             <div className='flex w-full gap-2 h-[200px] max-[1130px]:flex-col max-[1130px]:h-auto '>
               {/* Start Tab One */}
-              <Link to={data.tab1.path} className="w-1/2 group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2" onClick={closeTab}>
+              <Link to={data.tab1.path} className="active:scale-90 w-1/2 group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2" onClick={closeTab}>
                 <span className='flex flex-col items-start gap-2 pt-4'>
                   <span className='font-bold'>{data.tab1.title}</span>
                   <span className=''>{data.tab1.description}</span>
@@ -42,7 +42,7 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
               {/* End Tab One */}
 
               {/* Start Tab Two */}
-              <Link to={data.tab2.path} className="group/learn max-[1130px]:w-[90%] border-dashed hover:border-solid max-[1130px]:mx-[5%] box-border hover:shadow-md px-12 w-1/2 flex group/learn justify-center items-center rounded-xl gap-2 transition-all border border-gray-200 hover:border-[#02c2ab] hover:border-2" onClick={closeTab}>
+              <Link to={data.tab2.path} className="active:scale-90 group/learn max-[1130px]:w-[90%] border-dashed hover:border-solid max-[1130px]:mx-[5%] box-border hover:shadow-md px-12 w-1/2 flex group/learn justify-center items-center rounded-xl gap-2 transition-all border border-gray-200 hover:border-[#02c2ab] hover:border-2" onClick={closeTab}>
                 <span className='flex flex-col items-start gap-2 pt-4 '>
                   <span className='font-bold'>{data.tab2.title}</span>
                   <span className=''>{data.tab2.description}</span>
@@ -58,7 +58,7 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
             {(data.subTab1 &&
               <div className='flex w-full gap-2 h-[80px] mt-5 max-[1130px]:flex-col max-[1130px]:h-auto '>
                 {/* Start SubTab One */}
-                <Link to={data.subTab1.path} className="max-[1130px]:py-3 w-1/2 max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border border-dashed hover:border-solid hover:shadow-md px-12 flex justify-between items-center rounded-xl gap-2 transition-all border border-gray-200 hover:border-[#02c2ab] hover:border-2" onClick={closeTab}>
+                <Link to={data.subTab1.path} className="active:scale-90 max-[1130px]:py-3 w-1/2 max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border border-dashed hover:border-solid hover:shadow-md px-12 flex justify-between items-center rounded-xl gap-2 transition-all border border-gray-200 hover:border-[#02c2ab] hover:border-2" onClick={closeTab}>
                   <span className='flex items-start gap-2'>
                     <span className='font-bold'>{data.subTab1.title}</span>
                   </span>
@@ -67,7 +67,7 @@ const Dropdown = ({ isTabOpen, toggleTab, closeTab, data }) => {
                 {/* End SubTab One */}
 
                 {/* Start SubTab Two */}
-                <Link to={data.subTab2.path} className="max-[1130px]:py-3 w-1/2 max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2" onClick={closeTab}>
+                <Link to={data.subTab2.path} className="active:scale-90 max-[1130px]:py-3 w-1/2 max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2" onClick={closeTab}>
                   <span className='flex flex-col items-start'>
                     <span className='font-bold'>{data.subTab2.title}</span>
                   </span>

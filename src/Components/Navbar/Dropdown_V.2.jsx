@@ -35,7 +35,7 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
               {/* Start Tab One */}
               <Link
                 to={data.tab1.path}
-                className="w-full min-h-[240px] group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2"
+                className="active:scale-90 w-full min-h-[240px] group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2"
                 onClick={closeTab}
               >
                 <span className="flex flex-col items-start gap-2 pt-4">
@@ -86,7 +86,7 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
               {/* Start Tab Two */}
               <Link
                 to={data.tab2.path}
-                className="min-h-[240px] w-full group/learn max-[1130px]:w-[90%] border-dashed hover:border-solid max-[1130px]:mx-[5%] box-border hover:shadow-md px-12 flex group/learn justify-center items-center rounded-xl gap-2 transition-all border border-gray-200 hover:border-[#02c2ab] hover:border-2"
+                className="active:scale-90 min-h-[240px] w-full group/learn max-[1130px]:w-[90%] border-dashed hover:border-solid max-[1130px]:mx-[5%] box-border hover:shadow-md px-12 flex group/learn justify-center items-center rounded-xl gap-2 transition-all border border-gray-200 hover:border-[#02c2ab] hover:border-2"
                 onClick={closeTab}
               >
                 <span className="flex flex-col items-start gap-2 pt-4 ">
