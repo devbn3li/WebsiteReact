@@ -22,8 +22,8 @@ import {
   IoAnalytics,
   IoTrendingUp,
   IoWarning,
-  IoSearchSharp, 
-  IoShieldCheckmarkOutline, 
+  IoSearchSharp,
+  IoShieldCheckmarkOutline,
   IoWarningOutline
 } from 'react-icons/io5';
 
@@ -63,9 +63,10 @@ const servicesTabData = {
       "Business Services offer essential support for enhancing company efficiency and growth.",
     Icon: <motion.img src={business_img} alt="icon" animate={simpleFloatAnimation} />,
   },
-  cat: [
+  cats: [
     {
       title: "Getting Started",
+      color: "#02c2ab",
       links: [
         {
           Icon: IoStatsChart,
@@ -91,6 +92,7 @@ const servicesTabData = {
     },
     {
       title: "Levelling-Up",
+      color: "#168996",
       links: [
         {
           Icon: IoBusiness,
@@ -116,6 +118,7 @@ const servicesTabData = {
     },
     {
       title: "Assurance",
+      color: "#112b65",
       links: [
         {
           Icon: IoTrendingUp,
@@ -143,11 +146,6 @@ const servicesTabData = {
         Icon: IoSearchSharp,
         path: "service/internal-audit",
       },
-      // {
-      //   title: "Ai Internal Audit",
-      //   Icon: FaRobot,
-      //   path: "ai-chatbot",
-      // },
       {
         title: "Compliance",
         Icon: IoShieldCheckmarkOutline,

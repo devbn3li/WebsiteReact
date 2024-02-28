@@ -4,6 +4,7 @@ import SubNavbarLink_V2 from "./SubNavbarLink_V.2";
 import { MdArrowRight } from "react-icons/md";
 import SubNavbarLink from "./SubNavbarLink";
 import AiInternalAuditIMG from "/assets/Premasset/bot.png";
+import SubNavbarLink_V3 from "./SubNavbarLink_V.3";
 
 const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
   return (
@@ -25,9 +26,8 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
 
         {/* Start Dropdown */}
         <div
-          className={`w-screen transition-all flex justify-center items-center min-[1130px]:absolute min-[1130px]:left-1/2 min-[1130px]:top-[calc(100%+1px)] box-border min-[1130px]:-translate-x-1/2 min-[1130px]:shadow-md group-hover:border-b border-b-[#02c2ab] bg-white h-0 ${
-            isTabOpen && "max-[1130px]:h-auto max-[1130px]:py-5"
-          } overflow-hidden min-[1190px]:group-hover:h-[622px] min-[1130px]:group-hover:h-[640px]`}
+          className={`w-screen transition-all flex justify-center items-center min-[1130px]:absolute min-[1130px]:left-1/2 min-[1130px]:top-[calc(100%+1px)] box-border min-[1130px]:-translate-x-1/2 min-[1130px]:shadow-md group-hover:border-b border-b-[#02c2ab] bg-white h-0 ${isTabOpen && "max-[1130px]:h-auto max-[1130px]:py-5"
+            } overflow-hidden min-[1190px]:group-hover:h-[622px] min-[1130px]:group-hover:h-[640px]`}
         >
           {/* Start Inner Container */}
           <div className="max-w-[1400px] text-start gap-3 w-full justify-start flex items-start pt-10 transition-all px-4 box-border max-[1130px]:flex-col h-full">
@@ -55,12 +55,12 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
               {/* End Tab One */}
               {/* Start Other Tabs One */}
               <div className="max-w-[1400px] text-start gap-3 w-full justify-start flex items-start pt-10 transition-all px-4 box-border max-[1130px]:flex-col h-full">
-                {data.cat.map((cat, catIndex) => (
+                {data.cats.map((cat, catIndex) => (
                   <div
                     className="flex-grow flex flex-col gap-6 max-[1150px]:pl-5"
                     key={catIndex}
                   >
-                    <h1 className="font-bold text-[#02c2ab] text-lg">
+                    <h1 className={`font-bold text-[${cat.color}] text-lg`}>
                       {cat.title}
                     </h1>
                     <div className="flex flex-col justify-start w-full text-start ">
@@ -71,6 +71,8 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
                           path={link.path}
                           Icon={link.Icon}
                           clear={closeTab}
+                          className={`!justify-start scale-125`}
+                          color={cat.color}
                         />
                       ))}
                     </div>
@@ -108,24 +110,22 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
                 className={`flex flex-col max-[1130px]:w-[90%] max-[1130px]:mx-[5%] max-[1130px]:my-5 gap-4`}
               >
                 <div
-                  className={`text-black  font-bold text-lg min-[1130px]:hidden ${
-                    !data.moreLinks2.title && "hidden"
-                  }`}
+                  className={`text-black  font-bold text-lg min-[1130px]:hidden ${!data.moreLinks2.title && "hidden"
+                    }`}
                 >
                   {" "}
                   - {data.moreLinks2.title}:{" "}
                 </div>
 
-                <div className="flex gap-2 pt-2 -sm:flex-wrap  ">
-                  <div className="flex flex-col w-full flex-wrap md:ml-12 gap-5 mt-4">
+                <div className="flex justify-between gap-2 pt-2 -sm:flex-wrap  ">
+                  <div className="flex flex-col w-full flex-wrap gap-5 mt-4">
                     {data.moreLinks2.links.map((link, index) => (
-                      <SubNavbarLink
+                      <SubNavbarLink_V3
                         title={link.title}
                         Icon={link.Icon}
                         path={link.path}
                         clear={closeTab}
                         key={index}
-                        className="!justify-start scale-125"
                       />
                     ))}
                   </div>
@@ -169,9 +169,10 @@ Dropdown_V2.propTypes = {
   isTabOpen: PropTypes.bool.isRequired,
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    cat: PropTypes.arrayOf(
+    cats: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired,
         links: PropTypes.arrayOf(
           PropTypes.shape({
             Icon: PropTypes.element.isRequired,
