@@ -1,8 +1,8 @@
 import React from "react";
 import img from "/assets/Business/InternalAuditLifecycle.png";
-import img2 from "/assets/Premasset/strategy2.png";
-import img3 from "/assets/Premasset/risk.png";
-import img4 from "/assets/Premasset/plan.png";
+import img2 from "/assets/presentation.png";
+import img3 from "/assets/risk.png";
+import img4 from "/assets/planning.png";
 import img5 from "/assets/Premasset/method.png";
 import img6 from "/assets/Premasset/communication.png";
 
