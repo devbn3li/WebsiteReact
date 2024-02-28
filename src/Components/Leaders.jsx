@@ -14,14 +14,14 @@ import MaribelEsparcia from "/assets/images/Leaders/MaribelEsparcia.png";
 
 export default function TeamMembers() {
   const dataTeam = [
-    { id: 1, photo: Ahmed, userName: "Ahmed Shawky" },
+    { id: 1, photo: Ahmed, userName: "Dr. Ahmed Shawky" },
 
-    { id: 2, photo: Don, userName: "Don Liyanage", Class: "" },
+    { id: 2, photo: Don, userName: "Dr. Don Liyanage", Class: "" },
     { id: 3, photo: Ekta, userName: "Ekta Soni" },
     { id: 6, photo: yana, userName: "Yana Moldovan" },
     { id: 4, photo: Prasad, userName: "Prasad Bhalerao" },
     { id: 5, photo: Hamdy, userName: "Hamdy Saad" },
-    { id: 6, photo: Ramin, userName: "Ramin Takin" },
+    { id: 6, photo: Ramin, userName: "Dr. Ramin Takin" },
     { id: 7, photo: Wang, userName: "Wan Norashikin" },
     { id: 8, photo: MaribelEsparcia, userName: "Maribel Esparcia" },
   ];
