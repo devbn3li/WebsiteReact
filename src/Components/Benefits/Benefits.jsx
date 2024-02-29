@@ -34,7 +34,7 @@ const Benefits = ({ title, description, benefits }) => {
           {benefits.map((benefit, index) => (
             <BenefitsCard key={index} {...benefit} />
           ))}
-        </div>
+        </div> 
       </section>
     </div>
   );
