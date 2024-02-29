@@ -88,9 +88,9 @@ const Why = () => {
                     </div>
                     <div className="grid place-items-center">
                       {" "}
-                      <h3 className="mb-4 text-xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-[#002E70]  ">
+                      <h2 className="mb-4 text-xl max-w-[1000px] font-extrabold tracking-tight leading-6 text-[#002E70]  ">
                         {reason.title}
-                      </h3>
+                      </h2>
                     </div>
                   </div>
                   <div className="min-h-[100px] grid place-items-center">
