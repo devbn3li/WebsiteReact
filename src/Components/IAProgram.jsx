@@ -75,7 +75,7 @@ function IAProgram() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 ">
             <div className="">
               <div className="w-[90%] h-[280px] xl:h-[330px]">
-                <img src={growth} className="w-full h-full" />
+                <img src={growth} className="w-full h-full object-cover" />
               </div>
               <h2 className="text-[#002E70] uppercase text-2xl font-[600] tracking-[.5px] mb-5 mt-10 lg:mt-0">
                 governance
@@ -96,7 +96,7 @@ function IAProgram() {
             </div>
             <div className="">
               <div className="w-[90%] h-[280px] xl:h-[330px]">
-                <img src={plan} className="w-full h-full" />
+                <img src={plan} className="w-full h-full object-cover" />
               </div>
               <h2 className="text-[#002E70] uppercase text-2xl font-[600] tracking-[.5px] mb-5 mt-10 lg:mt-0">
                 planning
@@ -117,7 +117,7 @@ function IAProgram() {
             </div>
             <div className="">
               <div className="w-[90%] h-[280px] xl:h-[330px]">
-                <img src={report} className="w-full h-full" />
+                <img src={report} className="w-full h-full object-cover" />
               </div>
               <h2 className="text-[#002E70] uppercase text-2xl font-[600] tracking-[.5px] mb-5 mt-10 lg:mt-0">
                 Execution & reporting
