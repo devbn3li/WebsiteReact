@@ -18,7 +18,7 @@ import LevelUpO2 from './Pages/LevelUpO2/LevelUpO2';
 import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
 import Resources from './Pages/Resources/Resources';
 import AiChatbot from './Pages/AiInternalAudit/AiInternalAudit';
-
+import Principles from '../src/Components/AboutComponent/Principles';
 // Service Pages Imports
 import EsgServices from './Pages/Services/EsgServices';
 import BusinessServices from './Pages/Services/BusinessServices';
@@ -90,7 +90,7 @@ export function Application() {
           {/* Legal pages */}
           <Route path="legal/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="legal/cookies" element={<CookiesPolicyPage />} />
-
+          <Route path="principles" element={<Principles />} />
           {/* Service pages */}
           <Route path="service/esg" element={<EsgServices />} />
           <Route path="service/business" element={<BusinessServices />} />
