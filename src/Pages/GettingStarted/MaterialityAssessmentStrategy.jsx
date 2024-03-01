@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -69,7 +70,7 @@ function MaterialityAssessmentStrategy() {
       },
     ],
   };
-
+  const dynamicQuote = `Identify the sustainability issues that matter most to your business and stakeholders with our Materiality Assessment & Strategy services. Through detailed research, stakeholder engagement, and targeted surveys, we guide you in understanding the ESG topics of highest significance. Our process includes developing a ranked materiality matrix, validating findings with leadership, and facilitating strategy workshops to set aligned ESG goals and targets. Tailored to your unique business context, our services ensure your sustainability strategy is impactful, strategic, and value-driven.`;
   return (
     <div>
       <DynamicLandingHero
@@ -78,9 +79,14 @@ function MaterialityAssessmentStrategy() {
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Start Your Assessment" }}
       />
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
+      />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/strategy2.png"
         title="Forge a Strategic ESG Path"
         paragraph="With an ESG materiality assessment tailored to your unique business, you can craft an impactful sustainability strategy that delivers value for shareholders, society, and the environment. Contact us to get started."
         buttonTitle="Learn More"

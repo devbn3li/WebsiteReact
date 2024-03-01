@@ -9,6 +9,7 @@ import CTA1 from "../../Components/CTA/CTA_1";
 import { FaTools, FaChartLine, FaUserTie } from "react-icons/fa";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
 
+
 const ServiceTempletePage = () => {
   const challengeData = {
     title: "Navigating Business Challenges",
@@ -125,6 +126,7 @@ const ServiceTempletePage = () => {
       <Benefits {...benefitsData} />
       <CardData {...howToData} />
       <CTA2 {...CTA2Data} />
+      
     </div>
   );
 };

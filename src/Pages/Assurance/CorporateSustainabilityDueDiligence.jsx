@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -81,6 +82,7 @@ function CorporateSustainabilityDueDiligence() {
       },
     ],
   };
+  const dynamicQuote = `Transform ESG risks into strategic opportunities with our Corporate Sustainability Due Diligence service. Our ESG experts collaborate with your leadership to provide an in-depth analysis of your sustainability policies, performance, and risk exposure. We review your strategies, conduct materiality assessments, identify key risks and impacts, benchmark performance, and pinpoint improvement areas to align with best practices. Our service evaluates your sustainability goals, data management processes, compliance gaps, and uncovers opportunities for value creation. The result is a comprehensive risk analysis and strategic roadmap, empowering informed decision-making, strengthening initiatives, and enhancing stakeholder communication.`;
 
   return (
     <div>
@@ -90,9 +92,14 @@ function CorporateSustainabilityDueDiligence() {
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Learn More" }}
       />
+            <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
+      />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/photo18.png"
         title="Empower Strategic ESG Decisions"
         paragraph="Our service culminates in a detailed risk analysis and roadmap, equipping your leadership team to make informed strategic decisions, strengthen existing initiatives, and communicate credibly with stakeholders. Contact us to learn more about enhancing your corporate sustainability."
         buttonTitle="Get in Touch"

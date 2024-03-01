@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -75,6 +76,7 @@ function ESGSupplyChainAudits() {
       },
     ],
   };
+  const dynamicQuote = `Enhance your sustainability performance and mitigate risk with our comprehensive ESG Supply Chain Audits. Our service provides a detailed assessment of your suppliers’ sustainability policies, practices, and performance, ensuring they align with your company's ESG objectives. From mapping your supply chain and prioritizing suppliers for audits to conducting thorough assessments and providing corrective action plans, we offer end-to-end support to uncover and address ESG risks and opportunities. Gain visibility into your supply chain's ESG performance, improve supplier decisions, and drive continuous improvement in sustainability practices. Equip your procurement team with the insights needed to collaborate effectively with suppliers towards shared sustainability goals. `;
 
   return (
     <div>
@@ -84,9 +86,14 @@ function ESGSupplyChainAudits() {
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Learn More" }}
       />
+            <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
+      />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/strenth.png"
         title="Strengthen Your Supply Chain Sustainability"
         paragraph="With our ESG supply chain audit, equip your procurement team to make informed supplier decisions, drive continuous ESG performance improvement, and collaborate on sustainability initiatives. Contact us to systematically address the ESG hotspots in your supply chain."
         buttonTitle="Get in Touch"

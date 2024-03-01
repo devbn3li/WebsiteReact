@@ -9,6 +9,7 @@ import NotFoundPage from './Pages/NotFoundPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import AcademyPage from './Pages/AcademyPage/AcademyPage';
+// import WorkShop from '../src/Components/Acamedy/WorkShop';
 import Pricing from './Pages/AcademyPage/Pricing';
 import PrivacyPolicyPage from './Pages/LegelPages/PrivacyPolicyPage';
 import CookiesPolicyPage from './Pages/LegelPages/CookiesPolicyPage';
@@ -17,7 +18,7 @@ import LevelUpO2 from './Pages/LevelUpO2/LevelUpO2';
 import WaitingListPage from './Pages/WaitingListPage/WaitingListPage';
 import Resources from './Pages/Resources/Resources';
 import AiChatbot from './Pages/AiInternalAudit/AiInternalAudit';
-
+import Principles from '../src/Components/AboutComponent/Principles';
 // Service Pages Imports
 import EsgServices from './Pages/Services/EsgServices';
 import BusinessServices from './Pages/Services/BusinessServices';
@@ -77,6 +78,7 @@ export function Application() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="academy" element={<AcademyPage />} />
+          {/* <Route path="academy/workshops-training" element={<WorkShop />} /> */}
           <Route path="pricing" element={<Pricing />} />
           <Route path="solution" element={<SolutionPage />} />
           <Route path="solution/level-up-o2" element={<LevelUpO2 />} />
@@ -88,7 +90,7 @@ export function Application() {
           {/* Legal pages */}
           <Route path="legal/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="legal/cookies" element={<CookiesPolicyPage />} />
-
+          <Route path="principles" element={<Principles />} />
           {/* Service pages */}
           <Route path="service/esg" element={<EsgServices />} />
           <Route path="service/business" element={<BusinessServices />} />

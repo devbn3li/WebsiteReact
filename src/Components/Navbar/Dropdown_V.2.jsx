@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import SubNavbarLink_V2 from "./SubNavbarLink_V.2";
 import { MdArrowRight } from "react-icons/md";
 import SubNavbarLink from "./SubNavbarLink";
-import AiInternalAuditIMG from "../../../public/assets/Premasset/bot.png";
+import AiInternalAuditIMG from "/assets/Premasset/bot.png";
+import SubNavbarLink_V3 from "./SubNavbarLink_V.3";
 
 const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
   return (
@@ -25,9 +26,8 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
 
         {/* Start Dropdown */}
         <div
-          className={`w-screen transition-all flex justify-center items-center min-[1130px]:absolute min-[1130px]:left-1/2 min-[1130px]:top-[calc(100%+1px)] box-border min-[1130px]:-translate-x-1/2 min-[1130px]:shadow-md group-hover:border-b border-b-[#02c2ab] bg-white h-0 ${
-            isTabOpen && "max-[1130px]:h-auto max-[1130px]:py-5"
-          } overflow-hidden min-[1190px]:group-hover:h-[622px] min-[1130px]:group-hover:h-[640px]`}
+          className={`w-screen transition-all flex justify-center items-center min-[1130px]:absolute min-[1130px]:left-1/2 min-[1130px]:top-[calc(100%+1px)] box-border min-[1130px]:-translate-x-1/2 min-[1130px]:shadow-md group-hover:border-b border-b-[#02c2ab] bg-white h-0 ${isTabOpen && "max-[1130px]:h-auto max-[1130px]:py-5"
+            } overflow-hidden min-[1190px]:group-hover:h-[622px] min-[1130px]:group-hover:h-[640px]`}
         >
           {/* Start Inner Container */}
           <div className="max-w-[1400px] text-start gap-3 w-full justify-start flex items-start pt-10 transition-all px-4 box-border max-[1130px]:flex-col h-full">
@@ -35,7 +35,7 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
               {/* Start Tab One */}
               <Link
                 to={data.tab1.path}
-                className="w-full min-h-[240px] group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2"
+                className="active:scale-90 w-full min-h-[240px] group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2"
                 onClick={closeTab}
               >
                 <span className="flex flex-col items-start gap-2 pt-4">
@@ -55,12 +55,12 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
               {/* End Tab One */}
               {/* Start Other Tabs One */}
               <div className="max-w-[1400px] text-start gap-3 w-full justify-start flex items-start pt-10 transition-all px-4 box-border max-[1130px]:flex-col h-full">
-                {data.cat.map((cat, catIndex) => (
+                {data.cats.map((cat, catIndex) => (
                   <div
                     className="flex-grow flex flex-col gap-6 max-[1150px]:pl-5"
                     key={catIndex}
                   >
-                    <h1 className="font-bold text-[#02c2ab] text-lg">
+                    <h1 className={`font-bold text-[${cat.color}] text-lg`}>
                       {cat.title}
                     </h1>
                     <div className="flex flex-col justify-start w-full text-start ">
@@ -71,6 +71,8 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
                           path={link.path}
                           Icon={link.Icon}
                           clear={closeTab}
+                          className={`!justify-start scale-125`}
+                          color={cat.color}
                         />
                       ))}
                     </div>
@@ -84,7 +86,7 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
               {/* Start Tab Two */}
               <Link
                 to={data.tab2.path}
-                className="min-h-[240px] w-full group/learn max-[1130px]:w-[90%] border-dashed hover:border-solid max-[1130px]:mx-[5%] box-border hover:shadow-md px-12 flex group/learn justify-center items-center rounded-xl gap-2 transition-all border border-gray-200 hover:border-[#02c2ab] hover:border-2"
+                className="active:scale-90 min-h-[240px] w-full group/learn max-[1130px]:w-[90%] border-dashed hover:border-solid max-[1130px]:mx-[5%] box-border hover:shadow-md px-12 flex group/learn justify-center items-center rounded-xl gap-2 transition-all border border-gray-200 hover:border-[#02c2ab] hover:border-2"
                 onClick={closeTab}
               >
                 <span className="flex flex-col items-start gap-2 pt-4 ">
@@ -108,40 +110,46 @@ const Dropdown_V2 = ({ isTabOpen, toggleTab, closeTab, data }) => {
                 className={`flex flex-col max-[1130px]:w-[90%] max-[1130px]:mx-[5%] max-[1130px]:my-5 gap-4`}
               >
                 <div
-                  className={`text-black  font-bold text-lg min-[1130px]:hidden ${
-                    !data.moreLinks2.title && "hidden"
-                  }`}
+                  className={`text-black  font-bold text-lg min-[1130px]:hidden ${!data.moreLinks2.title && "hidden"
+                    }`}
                 >
                   {" "}
                   - {data.moreLinks2.title}:{" "}
                 </div>
 
-                <div className="flex gap-2 pt-2 -sm:flex-wrap  ">
-                  <div className="flex flex-col w-full flex-wrap ml-12 gap-5 mt-4">
+                <div className="flex justify-between gap-2 pt-2 -sm:flex-wrap max-[550px]:flex-col">
+                  <div className="flex flex-col w-full flex-wrap gap-5 justify-center">
                     {data.moreLinks2.links.map((link, index) => (
-                      <SubNavbarLink
+                      <SubNavbarLink_V3
                         title={link.title}
                         Icon={link.Icon}
                         path={link.path}
                         clear={closeTab}
                         key={index}
-                        className="!justify-start scale-125"
                       />
                     ))}
                   </div>
                   {/*  ai internal Audit Nav Component */}
-                  <Link to="/ai-chatbot" className="w-full flex justify-center items-center">
-                <div className="min-h-[240px] group/learn max-[1130px]:w-[90%] max-[1130px]:mx-[5%] box-border hover:shadow-md hover:border-2 transition-all px-12 flex justify-between items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2">
-                  <div className="flex flex-col gap-2">
-                    <div>
-                      <img src={AiInternalAuditIMG} alt="AI Internal Audit" />
+                  <Link
+                    to="/ai-chatbot"
+                    className="w-full flex justify-center items-center active:scale-90 transition-all"
+                    onClick={closeTab}
+                  >
+                    <div className="min-h-[240px] group/learn max-[1130px]:w-[90%] w-full max-[1130px]:mx-[5%] hover:shadow-md hover:border-2 transition-all flex justify-center items-center bg-[#02c2ab]/40 border border-[#02c2ab] rounded-xl gap-2">
+                      <div className="flex flex-col  gap-2">
+                        <div>
+                          <img
+                            src={AiInternalAuditIMG}
+                            alt="AI Internal Audit"
+                            className="w-24 h-24 mx-auto object-cover"
+                          />
+                        </div>
+                        <div className="text-center">
+                          <span className="font-bold">Ai Internal Audit</span>
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                      <span className="font-bold">Ai Internal Audit</span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+                  </Link>
                 </div>
               </div>
               {/* End Other Tabs Two */}
@@ -161,9 +169,10 @@ Dropdown_V2.propTypes = {
   isTabOpen: PropTypes.bool.isRequired,
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    cat: PropTypes.arrayOf(
+    cats: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired,
         links: PropTypes.arrayOf(
           PropTypes.shape({
             Icon: PropTypes.element.isRequired,

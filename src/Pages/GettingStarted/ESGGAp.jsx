@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -69,7 +70,7 @@ function ESGGAp() {
       },
     ],
   };
-
+  const dynamicQuote = `Discover how your organization measures up in environmental, social, and governance (ESG) performance with our comprehensive ESG Gap Assessment & Benchmarking services. By thoroughly reviewing your policies, conducting industry-specific benchmarking, and evaluating performance against major frameworks, we provide data-driven insights to highlight strengths, uncover gaps, and identify improvement areas. Our actionable roadmaps aim to enhance your sustainability practices, focusing on emissions, diversity, governance, and more, to ensure you meet stakeholder expectations and seize strategic advantages.`;
   return (
     <div>
       <DynamicLandingHero
@@ -78,9 +79,14 @@ function ESGGAp() {
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Begin Assessment" }}
       />
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
+      />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/strategy.png"
         title="Empower Your ESG Strategy"
         paragraph="With data-driven insights and actionable roadmaps, focus your sustainability investments on the initiatives that matter most. Contact us to start your insightful ESG gap assessment."
         buttonTitle="Start Now"

@@ -9,6 +9,10 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "build": {
+    "outDir": "build"
+  },
+
   "dependencies": {
     "@dotlottie/react-player": "^1.6.3",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
@@ -56,5 +60,9 @@
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
     "vite": "^5.0.8"
-  }
+  },
+  "engines": {
+        "node": ">=18.0.0"
+      }
+  
 }

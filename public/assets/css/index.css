@@ -11,6 +11,9 @@ body {
   }
 
   .input-placeholder::placeholder {
-    color: white;
+    color: #002e70;
   }
-  
+ ::selection{
+    background-color: #018A94;
+    color: #fff;
+ } 

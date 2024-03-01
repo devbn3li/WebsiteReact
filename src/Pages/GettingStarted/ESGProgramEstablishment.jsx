@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -82,7 +83,7 @@ function ESGProgramEstablishment() {
       },
     ],
   };
-
+  const dynamicQuote = `Launch and manage a high-impact ESG program with our end-to-end services. From conducting thorough assessments, guiding through materiality and strategy workshops, to establishing robust governance structures and data strategies, we provide comprehensive support. Our methodology also includes developing a multi-year ESG roadmap, staff training, goal setting, crafting effective communications plans, and offering ongoing counsel. Empower your organization to meet stakeholder expectations and drive long-term value.`;
   return (
     <div>
       <DynamicLandingHero
@@ -91,9 +92,14 @@ function ESGProgramEstablishment() {
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Make an Impact, Together" }}
       />
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
+      />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/ESG.webp"
         title="Build Your ESG Program Today"
         paragraph="With our step-by-step approach, we empower you to build an ESG program that drives long-term value, meets stakeholder expectations, and positions your organization for success."
         buttonTitle="Contact Us"

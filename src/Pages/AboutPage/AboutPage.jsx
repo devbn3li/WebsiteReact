@@ -15,7 +15,7 @@ import { FaTools } from "react-icons/fa";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
 import { GrTechnology } from "react-icons/gr";
 import Teams from "../../Components/Teams";
-
+import PrincipelCompo from "../../Components/AboutComponent/PrincipelCompo";
 
 function About() {
   const benefitsData = {
@@ -59,6 +59,7 @@ function About() {
       <Why />
       <Founders />
       <Jobs />
+      <PrincipelCompo />
       <Values />
       <FounderNote />
       <Leaders />

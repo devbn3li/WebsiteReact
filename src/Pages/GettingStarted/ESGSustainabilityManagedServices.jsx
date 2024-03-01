@@ -1,5 +1,6 @@
 import React from "react";
 import DynamicLandingHero from "../../Components/DynamicLandingHero";
+import Qoute from "./Call";
 import Benefits from "../../Components/Benefits/Benefits";
 import Call from "../../Components/Call";
 
@@ -81,7 +82,7 @@ function ESGSustainabilityManagedServices() {
       },
     ],
   };
-
+  const dynamicQuote = `Enhance your sustainability efforts with our ESG Managed Services, providing specialized expertise and day-to-day execution support. From assigning an outsourced Chief Sustainability Officer to managing key sustainability programs and ensuring compliance with ESG reporting regulations, our flexible model is designed to refine your ESG strategy, track performance, and advance initiatives efficiently. We focus on building internal capabilities, monitoring the evolving ESG landscape, and providing ongoing counsel, allowing you to focus on core business activities while driving sustainability forward. Tailored to meet your needs, our services offer a strategic approach to sustainability without the need for significant internal resource investment.`;
   return (
     <div>
       <DynamicLandingHero
@@ -90,9 +91,14 @@ function ESGSustainabilityManagedServices() {
         button1={{ path: "/contact", label: "Contact Us" }}
         button2={{ path: "/contact", label: "Learn More" }}
       />
+      <Qoute
+        quoteText={dynamicQuote}
+        buttonTitle="Contact Us"
+        buttonPath="/contact"
+      />
       <Benefits {...benefitsData} />
       <Call
-        imgSrc="/assets/call.png"
+        imgSrc="/assets/Premasset/arrow.png"
         title="Advance Your ESG Initiatives"
         paragraph="Our managed services deliver targeted, flexible ESG support scaled to your needs, enabling you to advance key initiatives without significant internal resource investment. Contact us to discuss outsourcing your sustainability and ESG programs to our experts."
         buttonTitle="Get Started"

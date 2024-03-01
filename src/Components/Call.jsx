@@ -12,7 +12,7 @@ const Call = ({ imgSrc, title, paragraph, buttonTitle, buttonPath }) => {
         className="container gap-4 mx-auto px-[5%] flex flex-col lg:flex-row items-center justify-center"
       >
         <div data-aos="fade-up" data-aos-duration="1400" className="lg:w-1/2">
-          <img src={imgSrc} alt="Hero Image" className="w-full" />
+          <img src={imgSrc} alt="Hero Image" className="w-[80%] object-cover" />
         </div>
         <div className="lg:w-1/2 lg:pr-10 mb-10 lg:mb-0 max-sm:text-center">
           <h1 className="mb-4 leading-[1.5] text-4xl max-w-[1000px] font-extrabold tracking-tight  text-[#002e70] ">
