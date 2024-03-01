@@ -21,5 +21,8 @@ export default defineConfig({
     },
     chunkSizeWarningLimit: 600, // Adjust the chunk size warning limit
   },
+  server: {
+    host: true,
+  },
 });
 
