@@ -10,18 +10,19 @@ export default defineConfig({
   plugins: [million.vite({ auto: true }), react()],
   define: {'process.env': process.env},
   build: {
+    chunkSizeWarningLimit: 1000, // Adjust the chunk size warning limit (value is in KB)
     rollupOptions: {
       output: {
+        // Use manualChunks to split vendor code into separate chunks
         manualChunks(id) {
-          if (id.includes('node_modules/lodash')) {
-            return 'lodash'; // separates lodash into its own chunk
+          if (id.includes('node_modules')) {
+            return 'vendor'; // split vendor code into its standalone chunk
           }
-        }
-      }
+        },
+      },
     },
-    chunkSizeWarningLimit: 600, // Adjust the chunk size warning limit
   },
-  server: {
+   server: {
     host: true,
   },
 });
