@@ -36,6 +36,7 @@ jobs:
 
           output_location: "dist" # Change from build to dist if your build output is in the dist directory          ###### End of Repository/Build Configurations ######
 
+
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
