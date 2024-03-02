@@ -8,6 +8,9 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install app dependencies
+RUN npm upgrade
+
+# Install app dependencies
 RUN npm install
 
 # Install Vite globally
