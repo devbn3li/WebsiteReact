@@ -8,7 +8,7 @@ import img6 from "/assets/Premasset/communication.png";
 
 const AuditLifecycle = () => {
   return (
-    <div className="px-[5%]">
+    <div className="px-[5%] max-w-[1400px] mx-auto">
       <div className="text-center">
         <h1 className="text-5xl font-bold text-[#002E70] mb-4">
           Purpose Driven Internal Audit
