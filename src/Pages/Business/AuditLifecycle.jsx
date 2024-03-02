@@ -5,6 +5,7 @@ import img3 from "/assets/risk.png";
 import img4 from "/assets/planning.png";
 import img5 from "/assets/Premasset/method.png";
 import img6 from "/assets/Premasset/communication.png";
+import PrimaryButton from "../../Components/Buttons/PrimaryButton";
 
 const AuditLifecycle = () => {
   return (
@@ -21,192 +22,116 @@ const AuditLifecycle = () => {
         <img src={img} alt="Internal audit lifecycle" />
       </div>
       <div>
-        <div className="flex max-md:flex-col-reverse justify-center items-center mt-10">
+        <div className="flex max-md:flex-col-reverse justify-center items-center mt-10 bg-[#02c1ab22] p-6 md:p-14 rounded-xl">
           <div className="md:w-1/2">
-            <h1 className="text-5xl font-bold text-[#002E70] mb-4 tracking-[1px]">
-              <span>1-</span>{" "}Mandate & Strategy
+            <h1 className="text-4xl md:text-5xl font-bold text-[#002E70] mb-4 tracking-[1px] ">
+              Mandate & Strategy
             </h1>
-            <ul>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">
-                  Purpose Discovery & Integration:
-                </span>{" "}
-                Embed the corporate purpose and values into the IA charter,
-                mandate statement, and strategy.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Stakeholder Collaboration: </span>{" "}
-                Conduct workshops with key stakeholders to define their
-                expectations for IA&apos;s contribution to fulfilling the
-                purpose.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Impact Mapping:</span> Defined key
-                metrics to measure impact not only activities.
-              </li>
-            </ul>
-          </div>
-          <div className="md:w-1/2">
-            <img
-              src={img2}
-              alt="audit-lifecycle"
-              className="w-[70%] m-auto"
+            <p className="mb-6 text-lg before:content-[''] before:w-40 before:h-[6px] before:rounded-md before:bg-[#02c1ab] before:block before:my-14">
+              We embed corporate purpose and values into our IA charter and
+              mandate, collaborating with stakeholders to define expectations
+              and measure impact through key metrics.
+            </p>
+            <PrimaryButton
+              path="/contact"
+              title="Learn more"
+              classes="max-md:w-full text-lg"
             />
           </div>
+          <div className="md:w-1/2 max-md:mb-6">
+            <img src={img2} alt="audit-lifecycle" className="w-full" />
+          </div>
         </div>
-        <div className="flex max-md:flex-col justify-center items-center mt-10">
-          <div className="md:w-1/2">
+        <div className="flex max-md:flex-col justify-center items-center mt-10 bg-[#4e85d33c] p-6 md:p-14 rounded-xl">
+          <div className="md:w-1/2 max-md:mb-6">
             <img
               src={img3}
               alt="purpose-driven-internal-audit"
-              className="w-[70%] m-auto"
+              className="w-full" 
             />
           </div>
-          <div className="md:w-1/2">
-            <h1 className="text-4xl font-bold text-[#002E70] mb-4 tracking-[1px]">
-            <span>2-</span>{" "}Risk assessment
+          <div className="md:w-1/2 md:ml-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#002E70] mb-4 tracking-[1px] ">
+              Risk assessment
             </h1>
-            <ul>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">
-                  Purpose-Aligned Risk Identification:
-                </span>{" "}
-                Risks directly impacting achieving the corp. purpose.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Stakeholder Perspective:</span>{" "}
-                Consider the risk concerns and priorities of diverse
-                stakeholders when identifying and assessing risks.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Broad approach:</span> Monitor
-                external trends, explore potential future challenges and
-                opportunities
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Data-driven insights:</span> Uncover
-                hidden patterns and correlations between risks and the
-                organisation&apos;s purpose.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">
-                  Ethical and sustainability assessments:{" "}
-                </span>{" "}
-                Human rights DD, Environmental & social impact analysis.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex max-md:flex-col-reverse justify-center items-center mt-10">
-          <div className="md:w-1/2">
-            <h1 className="text-4xl font-bold text-[#002E70] mb-4 tracking-[1px]">
-            <span>3-</span>{" "}Audit Plan
-            </h1>
-            <ul>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Purpose-Based Scope:</span>{" "}
-                Prioritise audits aligned with the most significant risks to the
-                organization&apos;s purpose and values.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Sustainability Integration:</span>{" "}
-                Incorporate sustainability considerations into relevant audit
-                scopes (e.g., env. impact of ops, responsible sourcing).
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Innovation Adoption:</span> Consider
-                emerging technologies and data analytics techniques to enhance
-                audit efficiency and effectiveness.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Dynamic Audit Planning: </span>{" "}
-                Continuously re-evaluate priorities and modify plans.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Impact Modelling: </span> Estimate
-                potential impacts of audit activities to inform priority setting
-                and resource allocation
-              </li>
-            </ul>
-          </div>
-          <div className="md:w-1/2">
-            <img
-              src={img4}
-              alt="audit-lifecycle"
-              className="w-[70%] m-auto"
+            <p className="mb-6 text-lg before:content-[''] before:w-40 before:h-[6px] before:rounded-md before:bg-[#02c1ab] before:block before:my-14">
+              We identify purpose-aligned risks, incorporating diverse
+              stakeholder perspectives, monitoring external trends, leveraging
+              data-driven insights, and conducting ethical and sustainability
+              assessments.
+            </p>
+            <PrimaryButton
+              path="/contact"
+              title="Learn more"
+              classes="max-md:w-full"
             />
           </div>
         </div>
-        <div className="flex max-md:flex-col justify-center items-center mt-10">
+        <div className="flex max-md:flex-col-reverse justify-center items-center mt-10 bg-[#02c1ab22] p-6 md:p-14 rounded-xl">
           <div className="md:w-1/2">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#002E70] mb-4 tracking-[1px] ">
+              Audit Plan
+            </h1>
+            <p className="mb-6 text-lg before:content-[''] before:w-40 before:h-[6px] before:rounded-md before:bg-[#02c1ab] before:block before:my-14">
+              Align audits with purpose, integrate sustainability, adopt
+              innovation. Model impacts for dynamic planning and resource
+              allocation.
+            </p>
+            <PrimaryButton
+              path="/contact"
+              title="Learn more"
+              classes="max-md:w-full"
+            />
+          </div>
+          <div className="md:w-1/2 max-md:mb-6">
+            <img src={img4} alt="audit-lifecycle" className="w-full"  />
+          </div>
+        </div>
+        <div className="flex max-md:flex-col justify-center items-center mt-10 bg-[#4e85d33c] p-6 md:p-14 rounded-xl">
+          <div className="md:w-1/2 max-md:mb-6">
             <img
               src={img5}
               alt="methodology-and-execution"
               className="w-[80%] m-auto"
             />
           </div>
-          <div className="md:w-1/2">
-            <h1 className="text-4xl font-bold text-[#002E70] mb-4 tracking-[1px]">
-            <span>4-</span>{" "}Methodology & Execution
+          <div className="md:w-1/2 md:ml-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#002E70] mb-4 tracking-[1px] ">
+              Methodology & Execution
             </h1>
-            <ul>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Collaborative Approach:</span>{" "}
-                Foster a solutions-oriented mindset and engage audit clients.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Beyond Compliance:</span> Design
-                audit procedures to assess not just compliance but also the
-                impact of processes and controls on achieving the purpose and
-                goals.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Data Visualization:</span> Employ
-                data visualization tools to effectively communicate complex
-                findings and their impact on corporate purpose.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Impacting Success:</span>{" "}
-                Identifying the factors contributing to success.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Continuous Improvement:</span>{" "}
-                Continuously seek opportunities for improvement.
-              </li>
-            </ul>
+            <p className="mb-6 text-lg before:content-[''] before:w-40 before:h-[6px] before:rounded-md before:bg-[#02c1ab] before:block before:my-14">
+              Foster collaboration, design audits beyond compliance, and utilize
+              data visualization for impact assessment. Identify success factors
+              and pursue continuous improvement.
+            </p>
+            <PrimaryButton
+              path="/contact"
+              title="Learn more"
+              classes="max-md:w-full"
+            />
           </div>
         </div>
-        <div className="flex max-md:flex-col-reverse justify-center items-center mt-10">
+        <div className="flex max-md:flex-col-reverse justify-center items-center mt-10 bg-[#02c1ab22] p-6 md:p-14 rounded-xl">
           <div className="md:w-1/2">
-            <h1 className="text-4xl font-bold text-[#002E70] mb-4 tracking-[1px]">
-            <span>5-</span>{" "}Engagement & Communication
+            <h1 className="text-4xl md:text-5xl font-bold text-[#002E70] mb-4 tracking-[1px] ">
+              Engagement & Communication
             </h1>
-            <ul>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Purpose Narrative:</span> Frame
-                audit findings and recommendations in a narrative that connects
-                them to purpose and impact on stakeholders.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">
-                  Multi-Channel Communication & Storytelling:
-                </span>{" "}
-                Utilize diverse communication channels like targeted reports,
-                interactive dashboards, visuals, and town hall meetings to
-                engage key stakeholders.
-              </li>
-              <li className="text-xl text-[#002E70] mb-2 tracking-[.5px] leading-[1.6]">
-                <span className="font-bold">Impact Reporting:</span> Quantify
-                and report the impact of IA activities on achieving purpose and
-                related KPIs in financial and non-financial terms.
-              </li>
-            </ul>
+            <p className="mb-6 text-lg before:content-[''] before:w-40 before:h-[6px] before:rounded-md before:bg-[#02c1ab] before:block before:my-14">
+              Craft purpose-driven narratives for audit findings, engage
+              stakeholders through multi-channel communication, and report IA
+              impact quantitatively and qualitatively.
+            </p>
+            <PrimaryButton
+              path="/contact"
+              title="Learn more"
+              classes="max-md:w-full"
+            />
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 max-md:mb-6 ">
             <img
               src={img6}
               alt="methodology-and-execution"
-              className="w-full m-auto"
+              className="w-full" 
             />
           </div>
         </div>
