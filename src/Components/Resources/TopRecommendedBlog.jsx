@@ -16,7 +16,7 @@ const TopRecommendedBlog = () => {
   const hashtag = "Sustainablity"; // Replace with your actual hashtag
 
   return (
-    <section className="my-20 px-[5%]">
+    <section className="my-20 px-[5%] max-w-[1400px] mx-auto">
       <h2 className="text-2xl font-bold mb-8 text-center text-[#112b65]">
         Top Recommended Blog
       </h2>

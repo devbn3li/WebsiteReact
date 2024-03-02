@@ -16,7 +16,7 @@ const LatestNews = () => {
   ];
 
   return (
-    <section className="my-8 py-16">
+    <section className="my-8 py-16 max-w-[1400px] mx-auto">
       <h2 className="text-2xl font-bold mb-8 text-center text-[#002E70]">Our Latest News</h2>
       <div className="flex max-md:flex-col gap-10 justify-center  ">
         {newsItems.map((newsItem) => (
