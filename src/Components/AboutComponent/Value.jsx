@@ -7,7 +7,7 @@ function Values() {
     <section
       data-aos="fade-up"
       data-aos-duration="1200"
-      className="w-full h-full rounded-3xl py-2  flex justify-center bg-[#002E70]  "
+      className="w-full h-full rounded-3xl py-2  flex justify-center bg-[#002E70] max-w-[1400px] mx-auto"
     >
       <div
         data-aos="fade-up"

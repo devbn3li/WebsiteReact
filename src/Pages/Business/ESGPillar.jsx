@@ -5,7 +5,7 @@ import { RiGovernmentFill } from "react-icons/ri";
 
 function ESGPillar() {
   return (
-    <div>
+    <div className="max-w-[1400px] mx-auto">
       <section className="text-gray-700 body-font overflow-hidden border-t border-gray-200">
         <h1 className="text-center mt-24 font-bold text-5xl text-[#002E70] tracking-[.5px]">
           ESG Internal Audit

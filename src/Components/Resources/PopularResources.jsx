@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 function PopularResources() {
   return (
-    <div className=' bg-gradient-to-r from-[#1C4987] to-[#159D9B]  my-[2rem]'>
+    <div className=' bg-gradient-to-r from-[#1C4987] to-[#159D9B]  my-[2rem] max-w-[1400px] mx-auto'>
         <div className='flex justify-between flex-col md:flex-row gap-5 w-[90%] lg:w-[70%] mx-auto text-white py-[2rem]'>
             <div className='flex justify-center items-center flex-row md:flex-col'>
                 <div className='text-[1.5rem] font-bold'>Popular</div>

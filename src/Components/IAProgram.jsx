@@ -64,7 +64,7 @@ function IAProgram() {
   ];
 
   return (
-    <section className="py-[4rem]">
+    <section className="py-[4rem] max-w-[1400px] mx-auto">
       <div className="w-[80%] mx-auto mb-5">
         <h1 className="uppercase text-[#002E70] text-3xl md:text-5xl font-semibold md:font-bold text-center">
           key components of IA Audit program
