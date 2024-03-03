@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import BlogCard from "../BlogCard/BlogCard";
+import BlogCard from "../BlogCard/TopBlogCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -21,7 +21,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block" }}
+      style={{ ...style, display: "block"}}
       onClick={onClick}
     />
   );
@@ -42,12 +42,12 @@ const BlogHero = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1024,
@@ -66,7 +66,7 @@ const BlogHero = () => {
 
   if (!blogs) return <div>Loading...</div>;
   return (
-    <div className="container pt-28 pb-20 mx-auto px-[5%] md:h-[700px]  bg-gradient-to-b from-[#112b65] to-[#02c2ab] rounded-b-[40px]">
+    <div className="container pt-28 pb-20 mx-auto px-[5%]  bg-gradient-to-b from-[#112b65] to-[#02c2ab] rounded-b-[40px]">
       <h1 className="text-center font-bold text-4xl mb-4 text-white">
         Top Selected Blogs for You
       </h1>
