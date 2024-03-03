@@ -154,7 +154,7 @@ const BlogShow = () => {
   };
 
   return (
-    <div className="px-[5%] mt-20">
+    <div className="container px-[5%] mt-20 mx-auto">
       <h2 className="text-center text-5xl font-bold text-[#002E70] mb-4">
         Learn from our impact makers
       </h2>

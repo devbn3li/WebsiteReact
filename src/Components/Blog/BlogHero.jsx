@@ -66,7 +66,7 @@ const BlogHero = () => {
 
   if (!blogs) return <div>Loading...</div>;
   return (
-    <div className="container pt-28 pb-20 mx-auto px-[5%] md:h-[700px] overflow-hidden bg-gradient-to-b from-[#112b65] to-[#02c2ab] rounded-b-[40px]">
+    <div className="container pt-28 pb-20 mx-auto px-[5%] md:h-[700px]  bg-gradient-to-b from-[#112b65] to-[#02c2ab] rounded-b-[40px]">
       <h1 className="text-center font-bold text-4xl mb-4 text-white">
         Top Selected Blogs for You
       </h1>
