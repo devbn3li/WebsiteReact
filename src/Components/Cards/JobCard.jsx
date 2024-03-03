@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { IoShareSocialSharp } from "react-icons/io5";
 
-const Property = ({text}) => (
+const Property = ({ text }) => (
     <span className='rounded-full px-2 py-1 border capitalize border-slate-700 select-none'>{text}</span>
 );
 
-export default function JobCard({date, jobTitle, companyName, companyLogoUrl, properties, salary, location, link}) {
-    
+export default function JobCard({ date, jobTitle, companyName, companyLogoUrl, properties, salary, location, link }) {
+
     return (
         <div className='rounded-xl p-1 shadow-lg min-w-64 w-full pb-6'>
             {/* Start Header ====================================== */}
@@ -19,20 +19,20 @@ export default function JobCard({date, jobTitle, companyName, companyLogoUrl, pr
                         <span className="aspect-square rounded-full hover:rounded-xl bg-white box-border w-8 justify-center items-center shadow-lg hover:shadow-xl flex  hover:scale-105 active:scale-95 hover:bg-opacity-80 active:bg-opacity-100 bg-opacity-90 transition-all cursor-pointer"><IoShareSocialSharp /></span>
                     </div>
 
-                    {/* Job Title & Company (name\logo) */} 
+                    {/* Job Title & Company (name\logo) */}
                     <div className="flex flex-col gap-3">
                         <span className="font-semibold ">{companyName}</span>
                         <div className="flex justify-between gap-3 items-center">
                             <span className="text-3xl font-semibold whitespace-break-spaces break-all capitalize">{jobTitle}</span>
-                            {companyLogoUrl && 
-                            <div className="rounded-full aspect-square bg-white w-10 flex-shrink-0 shadow-lg cursor-pointer hover:scale-105 transition-all">
-                                <img src={companyLogoUrl} alt={companyName} className="w-full object-cover" />
-                            </div>
+                            {companyLogoUrl &&
+                                <div className="rounded-full aspect-square bg-white w-10 flex-shrink-0 shadow-lg cursor-pointer hover:scale-105 transition-all">
+                                    <img src={companyLogoUrl} alt={companyName} className="w-full object-cover" />
+                                </div>
                             }
                         </div>
                     </div>
                 </div>
-                
+
                 {/* Properties */}
                 <div className="flex flex-wrap gap-2">{properties.map((text, index) => (<Property key={index} text={text} />))}</div>
             </div>
