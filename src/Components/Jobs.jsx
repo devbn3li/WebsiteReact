@@ -7,75 +7,51 @@ import JobCard from "./Cards/JobCard";
 
 const jobs = [
   {
-    "date": "February 24, 2024",
-    "jobTitle": "Social worker",
-    "companyName": "LevelUp",
-    "companyLogoUrl": "/public/assets/images/logo.png",
-    "properties": ["check", "amount", "support"],
-    "salary": "$92308 - $14367",
-    "link": "#",
-    "location": "Barretthaven"
-  },
-  {
-    "date": "February 04, 2024",
-    "jobTitle": "Tree surgeon",
-    "companyName": "LevelUp",
-    "companyLogoUrl": "/public/assets/images/logo.png",
-    "properties": ["southern", "camera"],
-    "salary": "$9180 - $95099",
-    "link": "#",
-    "location": "Staceyburgh"
-  },
-  {
     "date": "February 11, 2024",
-    "jobTitle": "Immunologist",
+    "jobTitle": "UI/UX Design Service",
     "companyName": "LevelUp",
-    "companyLogoUrl": "/public/assets/images/logo.png",
-    "properties": ["which"],
-    "salary": "$51444 - $68278",
+    "companyLogoUrl": "/assets/images/logo.png",
+    "properties": [""],
+    
     "link": "#",
-    "location": "Anthonyland"
   },
   {
-    "date": "February 10, 2024",
-    "jobTitle": "Geoscientist",
+    "date": "February 21, 2024",
+    "jobTitle": "Senior ESG Consultant",
     "companyName": "LevelUp",
-    "companyLogoUrl": "/public/assets/images/logo.png",
-    "properties": ["foot", "sport", "western"],
-    "salary": "$93405 - $11852",
+    "companyLogoUrl": "/assets/images/logo.png",
+    "properties": [""],
+    
     "link": "#",
-    "location": "New Charlesburgh"
   },
   {
-    "date": "February 10, 2024",
-    "jobTitle": "Chiropractor",
+    "date": "February 22, 2024",
+    "jobTitle": "Sustainable Procurement Subject Matter Resource (SMR)",
     "companyName": "LevelUp",
-    "companyLogoUrl": "/public/assets/images/logo.png",
-    "properties": ["themselves"],
-    "salary": "$72571 - $10386",
+    "companyLogoUrl": "/assets/images/logo.png",
+    "properties": [""],
+    
     "link": "#",
-    "location": "East Rebeccatown"
   },
   {
-    "date": "February 14, 2024",
-    "jobTitle": "Equities trader",
+    "date": "February 22, 2024",
+    "jobTitle": "Carbon Specialist ",
     "companyName": "LevelUp",
-    "companyLogoUrl": "/public/assets/images/logo.png",
-    "properties": ["us", "full"],
-    "salary": "$34909 - $72493",
+    "companyLogoUrl": "/assets/images/logo.png",
+    "properties": [""],
+    
     "link": "#",
-    "location": "South Jay"
   },
   {
-    "date": "February 02, 2024",
-    "jobTitle": "Fast food restaurant manager",
+    "date": "February 22, 2024",
+    "jobTitle": "Circular Economy Subject Matter Resource (SMR)",
     "companyName": "LevelUp",
-    "companyLogoUrl": "/public/assets/images/logo.png",
-    "properties": ["same"],
-    "salary": "$60698 - $73136",
+    "companyLogoUrl": "/assets/images/logo.png",
+    "properties": [""],
+    
     "link": "#",
-    "location": "Rachelhaven"
-  }
+  },
+
 ];
 
 

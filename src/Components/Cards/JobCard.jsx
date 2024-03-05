@@ -9,7 +9,7 @@ const Property = ({ text }) => (
 export default function JobCard({ date, jobTitle, companyName, companyLogoUrl, properties, salary, location, link }) {
 
     return (
-        <div className='rounded-xl p-1 shadow-lg min-w-64 w-full pb-6'>
+        <div className='rounded-xl p-1  bg-gradient-to-r from-[#1C4987] to-[#159D9B] shadow-lg min-w-64 w-full pb-6'>
             {/* Start Header ====================================== */}
             <div className="rounded-xl bg-[#62e7d7] p-4 flex flex-col justify-between h-[300px]">
                 <div className="flex flex-col gap-4">
@@ -23,9 +23,9 @@ export default function JobCard({ date, jobTitle, companyName, companyLogoUrl, p
                     <div className="flex flex-col gap-3">
                         <span className="font-semibold ">{companyName}</span>
                         <div className="flex justify-between gap-3 items-center">
-                            <span className="text-3xl font-semibold whitespace-break-spaces break-all capitalize">{jobTitle}</span>
+                            <span className="text-2xl font-bold whitespace-break-spaces break-all capitalize  break-keep">{jobTitle}</span>
                             {companyLogoUrl &&
-                                <div className="rounded-full aspect-square bg-white w-10 flex-shrink-0 shadow-lg cursor-pointer hover:scale-105 transition-all">
+                                <div className="rounded-full aspect-square bg-gray-200 w-10 flex-shrink-0 shadow-lg cursor-pointer hover:scale-105 transition-all">
                                     <img src={companyLogoUrl} alt={companyName} className="w-full object-cover" />
                                 </div>
                             }
@@ -39,7 +39,7 @@ export default function JobCard({ date, jobTitle, companyName, companyLogoUrl, p
             {/* End Header ====================================== */}
 
             {/* Start Details ======================================= */}
-            <div className="pt-6 flex justify-between items-center px-4">
+            <div className="pt-6 flex justify-between  items-center px-4">
                 <div className='flex flex-col'>
                     <span className="font-semibold text-xl">{salary}</span>
                     <span className='text-gray-800'>{location}</span>

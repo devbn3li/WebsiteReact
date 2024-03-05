@@ -57,7 +57,7 @@ function IAProgram() {
     },
     {
       id: 3,
-      subtitle: "Follow-ip and Corrective",
+      subtitle: "Follow-up",
       description:
         "Track and monitor the implementation of corrective actions in response to audit findings.",
     },
