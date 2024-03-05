@@ -44,7 +44,7 @@ export default function JobCard({ date, jobTitle, companyName, companyLogoUrl, p
                     <span className="font-semibold text-xl">{salary}</span>
                     <span className='text-gray-800'>{location}</span>
                 </div>
-                <a href={link} className='font-semibold text-white p-2 px-5 bg-[#002E70] rounded-full hover:rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 hover:bg-opacity-80 active:bg-opacity-100 bg-opacity-90 transition-all'>Details</a>
+                <a  className='font-semibold text-white p-2 px-5 bg-[#002E70] rounded-full hover:rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 hover:bg-opacity-80 active:bg-opacity-100 bg-opacity-90 transition-all cursor-not-allowed'>Opening Soon</a>
             </div>
             {/* End Details ======================================= */}
         </div>
